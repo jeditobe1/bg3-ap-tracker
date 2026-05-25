@@ -76,10 +76,10 @@ ACT_GROUPS: dict[str, list[str]] = {
     "Act 3": [],
 }
 
-# Overworld maps -- composited from BG3 WorldMap patches via
-# texture_bank_scratch/build_overworld.py. These are pin-less backdrop maps
-# that go at the front of each act's tab list to give the player an "where
-# am I in the world" anchor before drilling into a specific region.
+# Overworld maps -- pre-composited from BG3 WorldMap patches and shipped
+# as image assets under images/maps/. Pin-less backdrop maps that go at
+# the front of each act's tab list to give the player an "where am I in
+# the world" anchor before drilling into a specific region.
 # Each entry is (act_name, map_slug, display_name).
 ACT_OVERWORLDS: list[tuple[str, str, str]] = [
     ("Act 1", "act1_overworld", "Overview"),
@@ -175,8 +175,8 @@ QUEST_GRID_COLS = 8
 QUEST_PANEL_HEIGHT_FRAC = 0.20   # bottom 20% of the map is the quest panel
 
 # Per-map pixel dimensions. Maps not listed here use (MAP_WIDTH, MAP_HEIGHT).
-# Multi-zone composites are 960x640; the composer in
-# texture_bank_scratch/build_multi_zone_region.py emits at that resolution.
+# Multi-zone composites ship at 960x640 -- the shipped images/maps/<slug>.png
+# assets for those regions are pre-rendered at that resolution.
 MAP_DIMS_OVERRIDES: dict[str, tuple[int, int]] = {
     "tutorial": (960, 640),
     "goblin_camp": (960, 640),
@@ -184,8 +184,8 @@ MAP_DIMS_OVERRIDES: dict[str, tuple[int, int]] = {
     "grymforge": (960, 640),
     "monastery": (960, 640),
     "creche": (960, 640),
-    # Act 2 regions are all built by build_multi_zone_region.py at the
-    # 960x640 multi-zone canvas, even the single-zone ones.
+    # Act 2 regions all use the 960x640 multi-zone canvas, even the
+    # single-zone ones, for visual consistency across the act.
     "last_light": (960, 640),
     "east_act2": (960, 640),
     "mindflayer": (960, 640),
@@ -423,7 +423,7 @@ def load_npc_pins(pack_root: Path) -> dict[str, dict[str, dict]]:
 def load_overworld_pins(pack_root: Path) -> dict[str, dict]:
     """Load tools/overworld_pins.json if present. Returns
     {overworld_slug: {map_dims, world_bbox, regions: {region_slug: {x,y,...}}}}.
-    Emitted by texture_bank_scratch/build_overworld.py --overworld-slug X."""
+    The file is committed alongside the pack and consumed at generate time."""
     p = pack_root / "tools" / "overworld_pins.json"
     if not p.exists():
         return {}
@@ -517,8 +517,8 @@ def emit_locations_json(
 
     Pin coordinates:
     - Kill locations (id >= 10000) use real BG3 NPC positions from
-      tools/npc_pins.json where available, emitted by the scratch-side
-      build_multi_zone_region.py / build_region_map.py compositors.
+      tools/npc_pins.json where available (one entry per AP location
+      name with canvas-pixel x/y per region's map).
     - Quest locations (id < 10000) project into the bottom quest-panel
       strip on the same per-region map.
     - Un-projected kills fall back to a grid layout (rare in practice).
