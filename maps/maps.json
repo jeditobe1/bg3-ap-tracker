@@ -121,8 +121,8 @@
     },
     {
         "name": "act3_overworld",
-        "location_size": 60,
-        "location_border_thickness": 7,
+        "location_size": 28,
+        "location_border_thickness": 3,
         "img": "images/maps/act3_overworld.png"
     }
 ]
