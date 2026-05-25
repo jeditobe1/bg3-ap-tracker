@@ -55,6 +55,31 @@ def should_include(path: Path) -> bool:
     return True
 
 
+def _load_dotenv(path: Path) -> None:
+    """Minimal .env loader so the build script can pick up local
+    maintainer config (chiefly BG3_PRIVACY_EXTRA -- the extra regex
+    tokens used by the privacy sanity check) without anyone having to
+    set shell env vars by hand each session. Format: one KEY=VALUE per
+    line, blank lines and `#` comments ignored, no quoting. Existing
+    process env wins over .env so an explicit `KEY=... python ...`
+    invocation still overrides.
+
+    The file is gitignored on purpose. Don't move it into a tracked
+    path; the whole point is that its contents (which may include
+    maintainer-name regex tokens) never enter version control.
+    """
+    if not path.exists():
+        return
+    for line in path.read_text(encoding="utf-8").splitlines():
+        s = line.strip()
+        if not s or s.startswith("#"):
+            continue
+        if "=" not in s:
+            continue
+        k, v = s.split("=", 1)
+        os.environ.setdefault(k.strip(), v.strip())
+
+
 def read_manifest() -> dict:
     return json.loads((PACK_ROOT / "manifest.json").read_text(encoding="utf-8"))
 
@@ -74,6 +99,12 @@ def release_version(base_version: str) -> str:
 
 
 def main() -> int:
+    # Auto-load maintainer config from a gitignored .env at the pack
+    # root. Most relevant key today is BG3_PRIVACY_EXTRA (see the
+    # privacy-check section below). Loader is a no-op if the file
+    # doesn't exist, so first-time checkouts still work.
+    _load_dotenv(PACK_ROOT / ".env")
+
     p = argparse.ArgumentParser(description=__doc__,
                                 formatter_class=argparse.RawDescriptionHelpFormatter)
     p.add_argument("--out", type=Path, default=None,

@@ -14,3 +14,9 @@ maps/acts/
 
 # Release-zip output (regenerated on demand by tools/build_release.py).
 build/
+
+# Local maintainer config auto-loaded by tools/build_release.py.
+# Holds private tokens (e.g. name fragments for the privacy-check
+# regex) that must never enter version control. There is intentionally
+# no template / example file committed -- writing one would be a leak.
+.env
