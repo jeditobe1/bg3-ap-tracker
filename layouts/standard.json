@@ -1,0 +1,76 @@
+{
+    "tracker_default": {
+        "type": "container",
+        "content": {
+            "type": "array",
+            "orientation": "vertical",
+            "content": [
+                {
+                    "type": "itemgrid",
+                    "h_alignment": "center",
+                    "rows": [
+                        [ "level_fragment", "boots_of_speed", "shadow_lantern", "spear_of_night", "stat_boost", "filler", "trap" ],
+                        [ "equipment_common", "equipment_uncommon", "equipment_rare", "equipment_very_rare" ],
+                        [ "udf_auntie_ethel", "udf_spider_queen", "udf_spectator", "udf_bulette", "udf_nere", "udf_grym", "udf_ch_r_ai_w_wargaz" ],
+                        [ "udf_shambling_mound", "udf_cursed_kuo_toa_chief", "udf_malus_thorm", "udf_gerringothe_thorm", "udf_thisobald_thorm", "udf_ch_r_ai_tska_an", "udf_yurgir", "udf_balthazar", "udf_myrkul" ]
+                    ]
+                },
+                {
+                    "type": "layout",
+                    "key": "regions_block"
+                }
+            ]
+        }
+    },
+    "settings_popup": {
+        "type": "container",
+        "margin": "16,16",
+        "content": {
+            "type": "group",
+            "header": "Randomizer Options",
+            "header_background": "#3e4b57",
+            "content": {
+                "type": "array",
+                "orientation": "vertical",
+                "margin": "12,8",
+                "content": [
+                    {
+                        "type": "array",
+                        "orientation": "horizontal",
+                        "v_alignment": "center",
+                        "margin": "0,8",
+                        "content": [
+                            { "type": "item", "item": "goal", "item_size": "48,48" },
+                            { "type": "text", "text": "  Goal  —  click to cycle (left = next, right = previous)" }
+                        ]
+                    },
+                    {
+                        "type": "array",
+                        "orientation": "horizontal",
+                        "v_alignment": "center",
+                        "margin": "0,8",
+                        "content": [
+                            { "type": "item", "item": "killsanity", "item_size": "48,48" },
+                            { "type": "text", "text": "  Killsanity  —  creature-kill checks (IDs ≥ 10000)" }
+                        ]
+                    },
+                    {
+                        "type": "array",
+                        "orientation": "horizontal",
+                        "v_alignment": "center",
+                        "margin": "0,8",
+                        "content": [
+                            { "type": "item", "item": "questsanity", "item_size": "48,48" },
+                            { "type": "text", "text": "  Questsanity  —  quest-update checks (IDs < 10000)" }
+                        ]
+                    },
+                    {
+                        "type": "text",
+                        "text": "Toggles: left = ON, right = OFF, middle = flip. Auto-set from slot_data when AP is connected; manual changes revert until you disconnect.",
+                        "margin": "0,16"
+                    }
+                ]
+            }
+        }
+    }
+}

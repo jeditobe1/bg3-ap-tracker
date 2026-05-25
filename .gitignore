@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/
+.claude/
+
+# P7 reference material — large in-game map screenshots from the maintainer.
+# Kept locally for the map phase; not part of the shipped pack.
+maps/bg3maps.zip
+maps/acts/
+
+# Release-zip output (regenerated on demand by tools/build_release.py).
+build/

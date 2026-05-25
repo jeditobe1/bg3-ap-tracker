@@ -1,0 +1,218 @@
+{
+    "regions_block": {
+        "type": "tabbed",
+        "tabs": [
+            {
+                "title": "Prologue",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Nautiloid",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "tutorial"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Act 1",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Overview",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "act1_overworld"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Ravaged Beach",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "beach"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Dank Crypt",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "crypt"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Druid Grove",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "grove"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Blighted Village",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "blighted_village"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Goblin Camp",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "goblin_camp"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Waukeen's Rest",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "waukeen"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Riverside",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "hag"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Underdark",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "underdark"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Grymforge",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "grymforge"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Rosymorn Monastery",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "monastery"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Creche Y'llek",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "creche"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Act 2",
+                "content": {
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Overview",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "act2_overworld"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Shadow-Cursed Lands (East)",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "east_act2"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Shadow-Cursed Lands (West)",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "west_act2"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Last Light Inn",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "last_light"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Moonrise Towers",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "moonrise"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Gauntlet of Shar",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "shar_gauntlet"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Mindflayer Colony",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "mindflayer"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "title": "Act 3",
+                "content": {
+                    "type": "group",
+                    "header": "Act 3 regions are not yet supported by the BG3 apworld."
+                }
+            }
+        ]
+    }
+}

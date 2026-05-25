@@ -1,0 +1,122 @@
+[
+    {
+        "name": "tutorial",
+        "location_size": 16,
+        "location_border_thickness": 2,
+        "img": "images/maps/tutorial.png"
+    },
+    {
+        "name": "beach",
+        "location_size": 8,
+        "location_border_thickness": 2,
+        "img": "images/maps/beach.png"
+    },
+    {
+        "name": "crypt",
+        "location_size": 8,
+        "location_border_thickness": 2,
+        "img": "images/maps/crypt.png"
+    },
+    {
+        "name": "grove",
+        "location_size": 8,
+        "location_border_thickness": 2,
+        "img": "images/maps/grove.png"
+    },
+    {
+        "name": "blighted_village",
+        "location_size": 16,
+        "location_border_thickness": 2,
+        "img": "images/maps/blighted_village.png"
+    },
+    {
+        "name": "goblin_camp",
+        "location_size": 16,
+        "location_border_thickness": 2,
+        "img": "images/maps/goblin_camp.png"
+    },
+    {
+        "name": "waukeen",
+        "location_size": 8,
+        "location_border_thickness": 2,
+        "img": "images/maps/waukeen.png"
+    },
+    {
+        "name": "hag",
+        "location_size": 8,
+        "location_border_thickness": 2,
+        "img": "images/maps/hag.png"
+    },
+    {
+        "name": "underdark",
+        "location_size": 8,
+        "location_border_thickness": 2,
+        "img": "images/maps/underdark.png"
+    },
+    {
+        "name": "grymforge",
+        "location_size": 16,
+        "location_border_thickness": 2,
+        "img": "images/maps/grymforge.png"
+    },
+    {
+        "name": "monastery",
+        "location_size": 16,
+        "location_border_thickness": 2,
+        "img": "images/maps/monastery.png"
+    },
+    {
+        "name": "creche",
+        "location_size": 16,
+        "location_border_thickness": 2,
+        "img": "images/maps/creche.png"
+    },
+    {
+        "name": "east_act2",
+        "location_size": 16,
+        "location_border_thickness": 2,
+        "img": "images/maps/east_act2.png"
+    },
+    {
+        "name": "west_act2",
+        "location_size": 16,
+        "location_border_thickness": 2,
+        "img": "images/maps/west_act2.png"
+    },
+    {
+        "name": "last_light",
+        "location_size": 16,
+        "location_border_thickness": 2,
+        "img": "images/maps/last_light.png"
+    },
+    {
+        "name": "moonrise",
+        "location_size": 16,
+        "location_border_thickness": 2,
+        "img": "images/maps/moonrise.png"
+    },
+    {
+        "name": "shar_gauntlet",
+        "location_size": 16,
+        "location_border_thickness": 2,
+        "img": "images/maps/shar_gauntlet.png"
+    },
+    {
+        "name": "mindflayer",
+        "location_size": 16,
+        "location_border_thickness": 2,
+        "img": "images/maps/mindflayer.png"
+    },
+    {
+        "name": "act1_overworld",
+        "location_size": 50,
+        "location_border_thickness": 6,
+        "img": "images/maps/act1_overworld.png"
+    },
+    {
+        "name": "act2_overworld",
+        "location_size": 73,
+        "location_border_thickness": 9,
+        "img": "images/maps/act2_overworld.png"
+    }
+]

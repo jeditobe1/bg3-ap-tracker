@@ -1,0 +1,2919 @@
+{
+  "pins": {
+    "beach": {
+      "Beach: Kill Int Devourer 1": {
+        "level": "WLD_Main_A",
+        "x": 297,
+        "y": 121
+      },
+      "Beach: Kill Int Devourer 2": {
+        "level": "WLD_Main_A",
+        "x": 296,
+        "y": 132
+      },
+      "Beach: Kill Int Devourer 3": {
+        "level": "WLD_Main_A",
+        "x": 183,
+        "y": 134
+      }
+    },
+    "blighted_village": {
+      "Village: Kill Andrick": {
+        "level": "WLD_Main_A",
+        "x": 876,
+        "y": 150
+      },
+      "Village: Kill Brawler Brek": {
+        "level": "WLD_Main_A",
+        "x": 679,
+        "y": 350
+      },
+      "Village: Kill Brynna": {
+        "level": "WLD_Main_A",
+        "x": 904,
+        "y": 157
+      },
+      "Village: Kill Chock": {
+        "level": "WLD_Main_A",
+        "x": 566,
+        "y": 331
+      },
+      "Village: Kill Ettercap 1": {
+        "level": "WLD_Main_A",
+        "x": 379,
+        "y": 347
+      },
+      "Village: Kill Ettercap 2": {
+        "level": "WLD_Main_A",
+        "x": 406,
+        "y": 209
+      },
+      "Village: Kill Fank": {
+        "level": "WLD_Main_A",
+        "x": 572,
+        "y": 360
+      },
+      "Village: Kill Goblin Booyahg 1": {
+        "level": "WLD_Main_A",
+        "x": 686,
+        "y": 241
+      },
+      "Village: Kill Goblin Booyahg 2": {
+        "level": "WLD_Main_A",
+        "x": 666,
+        "y": 307
+      },
+      "Village: Kill Goblin Brawler": {
+        "level": "WLD_Main_A",
+        "x": 596,
+        "y": 293
+      },
+      "Village: Kill Goblin Sharp-Eye 1": {
+        "level": "WLD_Main_A",
+        "x": 634,
+        "y": 389
+      },
+      "Village: Kill Goblin Sharp-Eye 2": {
+        "level": "WLD_Main_A",
+        "x": 663,
+        "y": 279
+      },
+      "Village: Kill Goblin Tracker 1": {
+        "level": "WLD_Main_A",
+        "x": 664,
+        "y": 221
+      },
+      "Village: Kill Goblin Tracker 2": {
+        "level": "WLD_Main_A",
+        "x": 638,
+        "y": 233
+      },
+      "Village: Kill Goblin Warrior 1": {
+        "level": "WLD_Main_A",
+        "x": 606,
+        "y": 392
+      },
+      "Village: Kill Goblin Warrior 2": {
+        "level": "WLD_Main_A",
+        "x": 654,
+        "y": 364
+      },
+      "Village: Kill Lump the Enlightened": {
+        "level": "WLD_Main_A",
+        "x": 543,
+        "y": 358
+      },
+      "Village: Kill Sleeping Bugbear": {
+        "level": "WLD_Main_A",
+        "x": 631,
+        "y": 162
+      },
+      "Village: Kill Tracker Slice": {
+        "level": "WLD_Main_A",
+        "x": 627,
+        "y": 354
+      },
+      "Village: Kill Well Spider 1": {
+        "level": "WLD_Main_A",
+        "x": 386,
+        "y": 284
+      },
+      "Village: Kill Well Spider 2": {
+        "level": "WLD_Main_A",
+        "x": 246,
+        "y": 288
+      },
+      "Village: Kill Well Spider 3": {
+        "level": "WLD_Main_A",
+        "x": 83,
+        "y": 319
+      },
+      "Village: Kill Well Spider 4": {
+        "level": "WLD_Main_A",
+        "x": 386,
+        "y": 319
+      },
+      "Village: Kill Well Spider Queen": {
+        "level": "WLD_Main_A",
+        "x": 68,
+        "y": 264
+      }
+    },
+    "creche": {
+      "Creche: Kill A'jak'nir Jeera": {
+        "level": "CRE_Main_A",
+        "x": 545,
+        "y": 376
+      },
+      "Creche: Kill Ardent G'nuril": {
+        "level": "CRE_Main_A",
+        "x": 548,
+        "y": 286
+      },
+      "Creche: Kill Ardent Jhe'rezath": {
+        "level": "CRE_Main_A",
+        "x": 516,
+        "y": 105
+      },
+      "Creche: Kill Ardent Kur'ashk": {
+        "level": "CRE_Main_A",
+        "x": 422,
+        "y": 427
+      },
+      "Creche: Kill Ardent Lin'a'an": {
+        "level": "CRE_Main_A",
+        "x": 520,
+        "y": 402
+      },
+      "Creche: Kill Ardent Qu'th": {
+        "level": "CRE_Main_A",
+        "x": 483,
+        "y": 101
+      },
+      "Creche: Kill Ardent Vraalsith": {
+        "level": "CRE_Main_A",
+        "x": 504,
+        "y": 264
+      },
+      "Creche: Kill Ch'r'ai W'wargaz": {
+        "level": "CRE_Main_A",
+        "x": 566,
+        "y": 263
+      },
+      "Creche: Kill D'hak": {
+        "level": "CRE_Main_A",
+        "x": 616,
+        "y": 307
+      },
+      "Creche: Kill Ghustil Stornugoss": {
+        "level": "CRE_Main_A",
+        "x": 362,
+        "y": 370
+      },
+      "Creche: Kill Gish Far'aag": {
+        "level": "CRE_Main_A",
+        "x": 516,
+        "y": 436
+      },
+      "Creche: Kill Gish Umr'a'ac": {
+        "level": "CRE_Main_A",
+        "x": 386,
+        "y": 407
+      },
+      "Creche: Kill Gremishka in a Box": {
+        "level": "CRE_Main_A",
+        "x": 393,
+        "y": 376
+      },
+      "Creche: Kill Kith'rak Therezzyn": {
+        "level": "CRE_Main_A",
+        "x": 577,
+        "y": 290
+      },
+      "Creche: Kill Raider Add'ath": {
+        "level": "CRE_Main_A",
+        "x": 538,
+        "y": 345
+      },
+      "Creche: Kill Raider Ahu'u'rag": {
+        "level": "CRE_Main_A",
+        "x": 463,
+        "y": 344
+      },
+      "Creche: Kill Raider Chy'raagh": {
+        "level": "CRE_Main_A",
+        "x": 564,
+        "y": 330
+      },
+      "Creche: Kill Raider G'r'ath": {
+        "level": "CRE_Main_A",
+        "x": 566,
+        "y": 446
+      },
+      "Creche: Kill Raider Jy'ir": {
+        "level": "CRE_Main_A",
+        "x": 394,
+        "y": 435
+      },
+      "Creche: Kill Raider Kyrr'a'ath": {
+        "level": "CRE_Main_A",
+        "x": 515,
+        "y": 133
+      },
+      "Creche: Kill Raider Ra'gur": {
+        "level": "CRE_Main_A",
+        "x": 471,
+        "y": 435
+      },
+      "Creche: Kill Raider Zar'an": {
+        "level": "CRE_Main_A",
+        "x": 381,
+        "y": 267
+      },
+      "Creche: Kill Sa'varsh Kethk": {
+        "level": "CRE_Main_A",
+        "x": 488,
+        "y": 288
+      },
+      "Creche: Kill Ur'uth": {
+        "level": "CRE_Main_A",
+        "x": 589,
+        "y": 316
+      },
+      "Creche: Kill Varsh Ko'kuu": {
+        "level": "CRE_Main_A",
+        "x": 366,
+        "y": 291
+      },
+      "Creche: Kill Warrior Brelal'reth": {
+        "level": "CRE_Main_A",
+        "x": 486,
+        "y": 132
+      },
+      "Creche: Kill Warrior Ith'dul": {
+        "level": "CRE_Main_A",
+        "x": 568,
+        "y": 359
+      },
+      "Creche: Kill Warrior Khunaruth": {
+        "level": "CRE_Main_A",
+        "x": 494,
+        "y": 417
+      },
+      "Creche: Kill Warrior Qen": {
+        "level": "CRE_Main_A",
+        "x": 594,
+        "y": 436
+      },
+      "Creche: Kill Warrior Vu'un": {
+        "level": "CRE_Main_A",
+        "x": 408,
+        "y": 307
+      },
+      "Creche: Kill Warrior Yr'rk": {
+        "level": "CRE_Main_A",
+        "x": 517,
+        "y": 370
+      },
+      "Creche: Kill Youth Astyl": {
+        "level": "CRE_Main_A",
+        "x": 510,
+        "y": 342
+      },
+      "Creche: Kill Youth Ba'akreth": {
+        "level": "CRE_Main_A",
+        "x": 469,
+        "y": 316
+      },
+      "Creche: Kill Youth Dyrr'kas": {
+        "level": "CRE_Main_A",
+        "x": 413,
+        "y": 396
+      },
+      "Creche: Kill Youth Mirya'al": {
+        "level": "CRE_Main_A",
+        "x": 441,
+        "y": 405
+      },
+      "Creche: Kill Youth Pyrindath": {
+        "level": "CRE_Main_A",
+        "x": 424,
+        "y": 369
+      },
+      "Creche: Kill Youth Qun'irel": {
+        "level": "CRE_Main_A",
+        "x": 487,
+        "y": 360
+      },
+      "Creche: Kill Youth Rheg'zel": {
+        "level": "CRE_Main_A",
+        "x": 498,
+        "y": 315
+      },
+      "Creche: Kill Youth Tra'an": {
+        "level": "CRE_Main_A",
+        "x": 494,
+        "y": 388
+      },
+      "Creche: Kill Youth Vis'kiir": {
+        "level": "CRE_Main_A",
+        "x": 455,
+        "y": 379
+      },
+      "Creche: Kill Youth Zar'a'ath": {
+        "level": "CRE_Main_A",
+        "x": 522,
+        "y": 299
+      }
+    },
+    "crypt": {
+      "Crypt: Kill Andorn": {
+        "level": "WLD_Main_A",
+        "x": 371,
+        "y": 106
+      },
+      "Crypt: Kill Barton": {
+        "level": "WLD_Main_A",
+        "x": 347,
+        "y": 193
+      },
+      "Crypt: Kill Cefrey": {
+        "level": "WLD_Main_A",
+        "x": 345,
+        "y": 219
+      },
+      "Crypt: Kill Haseid": {
+        "level": "WLD_Main_A",
+        "x": 338,
+        "y": 199
+      },
+      "Crypt: Kill Mari": {
+        "level": "WLD_Main_A",
+        "x": 339,
+        "y": 162
+      },
+      "Crypt: Kill Skel. Caster 1": {
+        "level": "WLD_Main_A",
+        "x": 109,
+        "y": 39
+      },
+      "Crypt: Kill Skel. Caster 2": {
+        "level": "WLD_Main_A",
+        "x": 170,
+        "y": 37
+      },
+      "Crypt: Kill Skel. Caster 3": {
+        "level": "WLD_Main_A",
+        "x": 157,
+        "y": 64
+      },
+      "Crypt: Kill Skel. Caster 4": {
+        "level": "WLD_Main_A",
+        "x": 137,
+        "y": 51
+      },
+      "Crypt: Kill Skel. Melee": {
+        "level": "WLD_Main_A",
+        "x": 142,
+        "y": 41
+      },
+      "Crypt: Kill Torgga": {
+        "level": "WLD_Main_A",
+        "x": 359,
+        "y": 203
+      }
+    },
+    "east_act2": {
+      "East Act 2: Kill Bedi": {
+        "level": "SCL_Main_A",
+        "x": 462,
+        "y": 267
+      },
+      "East Act 2: Kill Kansif": {
+        "level": "SCL_Main_A",
+        "x": 513,
+        "y": 254
+      },
+      "East Act 2: Kill Kar'niss": {
+        "level": "SCL_Main_A",
+        "x": 485,
+        "y": 250
+      },
+      "East Act 2: Kill Meazel 1": {
+        "level": "SCL_Main_A",
+        "x": 337,
+        "y": 451
+      },
+      "East Act 2: Kill Meazel 2": {
+        "level": "SCL_Main_A",
+        "x": 302,
+        "y": 440
+      },
+      "East Act 2: Kill Meazel 3": {
+        "level": "SCL_Main_A",
+        "x": 307,
+        "y": 409
+      },
+      "East Act 2: Kill Meazel 4": {
+        "level": "SCL_Main_A",
+        "x": 333,
+        "y": 422
+      },
+      "East Act 2: Kill Needle Blight 1": {
+        "level": "SCL_Main_A",
+        "x": 645,
+        "y": 159
+      },
+      "East Act 2: Kill Needle Blight 2": {
+        "level": "SCL_Main_A",
+        "x": 613,
+        "y": 158
+      },
+      "East Act 2: Kill Needle Blight 3": {
+        "level": "SCL_Main_A",
+        "x": 671,
+        "y": 172
+      },
+      "East Act 2: Kill Needle Blight 4": {
+        "level": "SCL_Main_A",
+        "x": 655,
+        "y": 204
+      },
+      "East Act 2: Kill Needle Blight 5": {
+        "level": "SCL_Main_A",
+        "x": 630,
+        "y": 134
+      },
+      "East Act 2: Kill Needle Blight 6": {
+        "level": "SCL_Main_A",
+        "x": 655,
+        "y": 118
+      },
+      "East Act 2: Kill SM Cursed Shadow 1": {
+        "level": "SCL_Main_A",
+        "x": 595,
+        "y": 276
+      },
+      "East Act 2: Kill SM Cursed Shadow 2": {
+        "level": "SCL_Main_A",
+        "x": 597,
+        "y": 305
+      },
+      "East Act 2: Kill SM Needle 1": {
+        "level": "SCL_Main_A",
+        "x": 539,
+        "y": 305
+      },
+      "East Act 2: Kill SM Needle 2": {
+        "level": "SCL_Main_A",
+        "x": 521,
+        "y": 282
+      },
+      "East Act 2: Kill SM Needle 3": {
+        "level": "SCL_Main_A",
+        "x": 542,
+        "y": 258
+      },
+      "East Act 2: Kill SM Needle 4": {
+        "level": "SCL_Main_A",
+        "x": 568,
+        "y": 307
+      },
+      "East Act 2: Kill SM Needle 5": {
+        "level": "SCL_Main_A",
+        "x": 584,
+        "y": 333
+      },
+      "East Act 2: Kill SM Needle 6": {
+        "level": "SCL_Main_A",
+        "x": 569,
+        "y": 248
+      },
+      "East Act 2: Kill SM Vine 1": {
+        "level": "SCL_Main_A",
+        "x": 555,
+        "y": 333
+      },
+      "East Act 2: Kill SM Vine 2": {
+        "level": "SCL_Main_A",
+        "x": 566,
+        "y": 277
+      },
+      "East Act 2: Kill Shadow Bird 1": {
+        "level": "SCL_Main_A",
+        "x": 541,
+        "y": 148
+      },
+      "East Act 2: Kill Shadow Bird 10": {
+        "level": "SCL_Main_A",
+        "x": 520,
+        "y": 89
+      },
+      "East Act 2: Kill Shadow Bird 11": {
+        "level": "SCL_Main_A",
+        "x": 548,
+        "y": 92
+      },
+      "East Act 2: Kill Shadow Bird 12": {
+        "level": "SCL_Main_A",
+        "x": 578,
+        "y": 111
+      },
+      "East Act 2: Kill Shadow Bird 2": {
+        "level": "SCL_Main_A",
+        "x": 540,
+        "y": 177
+      },
+      "East Act 2: Kill Shadow Bird 3": {
+        "level": "SCL_Main_A",
+        "x": 493,
+        "y": 101
+      },
+      "East Act 2: Kill Shadow Bird 4": {
+        "level": "SCL_Main_A",
+        "x": 551,
+        "y": 121
+      },
+      "East Act 2: Kill Shadow Bird 5": {
+        "level": "SCL_Main_A",
+        "x": 513,
+        "y": 155
+      },
+      "East Act 2: Kill Shadow Bird 6": {
+        "level": "SCL_Main_A",
+        "x": 571,
+        "y": 142
+      },
+      "East Act 2: Kill Shadow Bird 7": {
+        "level": "SCL_Main_A",
+        "x": 493,
+        "y": 130
+      },
+      "East Act 2: Kill Shadow Bird 8": {
+        "level": "SCL_Main_A",
+        "x": 522,
+        "y": 126
+      },
+      "East Act 2: Kill Shadow Bird 9": {
+        "level": "SCL_Main_A",
+        "x": 575,
+        "y": 79
+      },
+      "East Act 2: Kill Shadow Mastiff 1": {
+        "level": "SCL_Main_A",
+        "x": 294,
+        "y": 354
+      },
+      "East Act 2: Kill Shadow Mastiff 2": {
+        "level": "SCL_Main_A",
+        "x": 316,
+        "y": 308
+      },
+      "East Act 2: Kill Shadow Mastiff 3": {
+        "level": "SCL_Main_A",
+        "x": 329,
+        "y": 372
+      },
+      "East Act 2: Kill Shadow Mastiff 4": {
+        "level": "SCL_Main_A",
+        "x": 350,
+        "y": 341
+      },
+      "East Act 2: Kill Shambling Mound": {
+        "level": "SCL_Main_A",
+        "x": 512,
+        "y": 314
+      },
+      "East Act 2: Kill Sharp-Eye Lora": {
+        "level": "SCL_Main_A",
+        "x": 492,
+        "y": 281
+      },
+      "East Act 2: Kill Vine Blight": {
+        "level": "SCL_Main_A",
+        "x": 633,
+        "y": 185
+      }
+    },
+    "goblin_camp": {
+      "Gobs: Kill Bao'ek'nuk": {
+        "level": "WLD_Main_A",
+        "x": 260,
+        "y": 164
+      },
+      "Gobs: Kill Booyahg Culk": {
+        "level": "WLD_Main_A",
+        "x": 207,
+        "y": 94
+      },
+      "Gobs: Kill Booyahg Gnat": {
+        "level": "WLD_Main_A",
+        "x": 635,
+        "y": 155
+      },
+      "Gobs: Kill Booyahg Shekt": {
+        "level": "WLD_Main_A",
+        "x": 668,
+        "y": 278
+      },
+      "Gobs: Kill Brawler Gurd": {
+        "level": "WLD_Main_A",
+        "x": 585,
+        "y": 174
+      },
+      "Gobs: Kill Brawler Rot": {
+        "level": "WLD_Main_A",
+        "x": 177,
+        "y": 168
+      },
+      "Gobs: Kill Brawler Tiny": {
+        "level": "WLD_Main_A",
+        "x": 294,
+        "y": 182
+      },
+      "Gobs: Kill Crusher": {
+        "level": "WLD_Main_A",
+        "x": 322,
+        "y": 192
+      },
+      "Gobs: Kill Devout Cry": {
+        "level": "WLD_Main_A",
+        "x": 596,
+        "y": 148
+      },
+      "Gobs: Kill Devout Mezzka": {
+        "level": "WLD_Main_A",
+        "x": 155,
+        "y": 221
+      },
+      "Gobs: Kill Devout Mrak": {
+        "level": "WLD_Main_A",
+        "x": 593,
+        "y": 300
+      },
+      "Gobs: Kill Devout Muzul": {
+        "level": "WLD_Main_A",
+        "x": 619,
+        "y": 311
+      },
+      "Gobs: Kill Devout Wasp": {
+        "level": "WLD_Main_A",
+        "x": 166,
+        "y": 452
+      },
+      "Gobs: Kill Dror Ragzlin": {
+        "level": "WLD_Main_A",
+        "x": 642,
+        "y": 112
+      },
+      "Gobs: Kill Grat the Trader": {
+        "level": "WLD_Main_A",
+        "x": 230,
+        "y": 237
+      },
+      "Gobs: Kill Gribbo": {
+        "level": "WLD_Main_A",
+        "x": 225,
+        "y": 208
+      },
+      "Gobs: Kill Guard Gurgon": {
+        "level": "WLD_Main_A",
+        "x": 208,
+        "y": 125
+      },
+      "Gobs: Kill Klaw": {
+        "level": "WLD_Main_A",
+        "x": 267,
+        "y": 418
+      },
+      "Gobs: Kill Krolla": {
+        "level": "WLD_Main_A",
+        "x": 183,
+        "y": 211
+      },
+      "Gobs: Kill Larger Giant Spider": {
+        "level": "WLD_Main_A",
+        "x": 614,
+        "y": 175
+      },
+      "Gobs: Kill Lookout Grush": {
+        "level": "WLD_Main_A",
+        "x": 738,
+        "y": 354
+      },
+      "Gobs: Kill Polma": {
+        "level": "WLD_Main_A",
+        "x": 892,
+        "y": 201
+      },
+      "Gobs: Kill Rozzak": {
+        "level": "WLD_Main_A",
+        "x": 740,
+        "y": 119
+      },
+      "Gobs: Kill Scrying Eye": {
+        "level": "WLD_Main_A",
+        "x": 723,
+        "y": 192
+      },
+      "Gobs: Kill Sentinel Olak": {
+        "level": "WLD_Main_A",
+        "x": 285,
+        "y": 394
+      },
+      "Gobs: Kill Sharp Eye Zami": {
+        "level": "WLD_Main_A",
+        "x": 566,
+        "y": 197
+      },
+      "Gobs: Kill Sharp-Eye Aggy": {
+        "level": "WLD_Main_A",
+        "x": 201,
+        "y": 188
+      },
+      "Gobs: Kill Sharp-Eye Breg": {
+        "level": "WLD_Main_A",
+        "x": 279,
+        "y": 207
+      },
+      "Gobs: Kill Sharp-Eye Eef": {
+        "level": "WLD_Main_A",
+        "x": 764,
+        "y": 202
+      },
+      "Gobs: Kill Sharp-Eye Gruz": {
+        "level": "WLD_Main_A",
+        "x": 601,
+        "y": 424
+      },
+      "Gobs: Kill Sharp-Eye Mirg": {
+        "level": "WLD_Main_A",
+        "x": 228,
+        "y": 178
+      },
+      "Gobs: Kill Sharp-Eye Nass": {
+        "level": "WLD_Main_A",
+        "x": 771,
+        "y": 174
+      },
+      "Gobs: Kill Sharp-Eye Neem": {
+        "level": "WLD_Main_A",
+        "x": 742,
+        "y": 171
+      },
+      "Gobs: Kill Sharp-Eye Nozk": {
+        "level": "WLD_Main_A",
+        "x": 669,
+        "y": 418
+      },
+      "Gobs: Kill Sharp-Eye Raagg": {
+        "level": "WLD_Main_A",
+        "x": 245,
+        "y": 123
+      },
+      "Gobs: Kill Sharp-Eye Roo": {
+        "level": "WLD_Main_A",
+        "x": 620,
+        "y": 130
+      },
+      "Gobs: Kill Sharp-Eye Sluck": {
+        "level": "WLD_Main_A",
+        "x": 158,
+        "y": 424
+      },
+      "Gobs: Kill Sharp-Eye Snurd": {
+        "level": "WLD_Main_A",
+        "x": 308,
+        "y": 376
+      },
+      "Gobs: Kill Skrut": {
+        "level": "WLD_Main_A",
+        "x": 699,
+        "y": 161
+      },
+      "Gobs: Kill Small Klaw": {
+        "level": "WLD_Main_A",
+        "x": 257,
+        "y": 391
+      },
+      "Gobs: Kill Smaller Giant Spider": {
+        "level": "WLD_Main_A",
+        "x": 643,
+        "y": 183
+      },
+      "Gobs: Kill Stimk": {
+        "level": "WLD_Main_A",
+        "x": 274,
+        "y": 120
+      },
+      "Gobs: Kill Teghun": {
+        "level": "WLD_Main_A",
+        "x": 240,
+        "y": 94
+      },
+      "Gobs: Kill Torturer Spike": {
+        "level": "WLD_Main_A",
+        "x": 738,
+        "y": 324
+      },
+      "Gobs: Kill Tracker Azak": {
+        "level": "WLD_Main_A",
+        "x": 643,
+        "y": 261
+      },
+      "Gobs: Kill Tracker Bal": {
+        "level": "WLD_Main_A",
+        "x": 252,
+        "y": 443
+      },
+      "Gobs: Kill Tracker Dullwill": {
+        "level": "WLD_Main_A",
+        "x": 182,
+        "y": 110
+      },
+      "Gobs: Kill Tracker Fezk": {
+        "level": "WLD_Main_A",
+        "x": 647,
+        "y": 398
+      },
+      "Gobs: Kill Tracker Grikka": {
+        "level": "WLD_Main_A",
+        "x": 235,
+        "y": 150
+      },
+      "Gobs: Kill Tracker Kirz": {
+        "level": "WLD_Main_A",
+        "x": 288,
+        "y": 154
+      },
+      "Gobs: Kill Tracker Klagga": {
+        "level": "WLD_Main_A",
+        "x": 183,
+        "y": 140
+      },
+      "Gobs: Kill Tracker Puli": {
+        "level": "WLD_Main_A",
+        "x": 205,
+        "y": 160
+      },
+      "Gobs: Kill Tracker Rindle": {
+        "level": "WLD_Main_A",
+        "x": 236,
+        "y": 411
+      },
+      "Gobs: Kill Tracker Tak": {
+        "level": "WLD_Main_A",
+        "x": 160,
+        "y": 192
+      },
+      "Gobs: Kill Tracker Tizg": {
+        "level": "WLD_Main_A",
+        "x": 618,
+        "y": 396
+      },
+      "Gobs: Kill Tracker Tozad": {
+        "level": "WLD_Main_A",
+        "x": 701,
+        "y": 294
+      },
+      "Gobs: Kill True Soul Gut": {
+        "level": "WLD_Main_A",
+        "x": 638,
+        "y": 289
+      },
+      "Gobs: Kill Warlock Bolt": {
+        "level": "WLD_Main_A",
+        "x": 664,
+        "y": 132
+      },
+      "Gobs: Kill Warlock Greez": {
+        "level": "WLD_Main_A",
+        "x": 648,
+        "y": 316
+      },
+      "Gobs: Kill Warlock Gurk": {
+        "level": "WLD_Main_A",
+        "x": 253,
+        "y": 193
+      },
+      "Gobs: Kill Warlock Tud": {
+        "level": "WLD_Main_A",
+        "x": 195,
+        "y": 450
+      },
+      "Gobs: Kill Warrior Bez": {
+        "level": "WLD_Main_A",
+        "x": 663,
+        "y": 226
+      },
+      "Gobs: Kill Warrior Clack": {
+        "level": "WLD_Main_A",
+        "x": 537,
+        "y": 193
+      },
+      "Gobs: Kill Warrior Druk": {
+        "level": "WLD_Main_A",
+        "x": 603,
+        "y": 209
+      },
+      "Gobs: Kill Warrior Huk": {
+        "level": "WLD_Main_A",
+        "x": 663,
+        "y": 161
+      },
+      "Gobs: Kill Warrior Nrog": {
+        "level": "WLD_Main_A",
+        "x": 630,
+        "y": 423
+      },
+      "Gobs: Kill Warrior Puce": {
+        "level": "WLD_Main_A",
+        "x": 290,
+        "y": 436
+      },
+      "Gobs: Kill Warrior Sul": {
+        "level": "WLD_Main_A",
+        "x": 201,
+        "y": 233
+      },
+      "Gobs: Kill Warrior Trinzas": {
+        "level": "WLD_Main_A",
+        "x": 652,
+        "y": 441
+      },
+      "Gobs: Kill Zurga": {
+        "level": "WLD_Main_A",
+        "x": 675,
+        "y": 306
+      }
+    },
+    "grove": {
+      "Grove: Kill Bugbear": {
+        "level": "WLD_Main_A",
+        "x": 249,
+        "y": 143
+      },
+      "Grove: Kill Goblin Brawler 1": {
+        "level": "WLD_Main_A",
+        "x": 257,
+        "y": 134
+      },
+      "Grove: Kill Goblin Brawler 2": {
+        "level": "WLD_Main_A",
+        "x": 254,
+        "y": 122
+      },
+      "Grove: Kill Goblin Tracker 1": {
+        "level": "WLD_Main_A",
+        "x": 239,
+        "y": 110
+      },
+      "Grove: Kill Goblin Tracker 2": {
+        "level": "WLD_Main_A",
+        "x": 225,
+        "y": 142
+      },
+      "Grove: Kill Goblin Tracker 3": {
+        "level": "WLD_Main_A",
+        "x": 237,
+        "y": 144
+      },
+      "Grove: Kill Worg": {
+        "level": "WLD_Main_A",
+        "x": 242,
+        "y": 121
+      },
+      "Grove: Kill Za'krug": {
+        "level": "WLD_Main_A",
+        "x": 243,
+        "y": 133
+      }
+    },
+    "grymforge": {
+      "Forge: Kill Animated Armor 1": {
+        "level": "WLD_Main_A",
+        "x": 570,
+        "y": 244
+      },
+      "Forge: Kill Animated Armor 2": {
+        "level": "WLD_Main_A",
+        "x": 598,
+        "y": 280
+      },
+      "Forge: Kill Animated Armor 3": {
+        "level": "WLD_Main_A",
+        "x": 655,
+        "y": 254
+      },
+      "Forge: Kill Animated Armor 4": {
+        "level": "WLD_Main_A",
+        "x": 546,
+        "y": 226
+      },
+      "Forge: Kill Grym": {
+        "level": "WLD_Main_A",
+        "x": 891,
+        "y": 373
+      },
+      "Forge: Kill Hellsboar 1": {
+        "level": "WLD_Main_A",
+        "x": 406,
+        "y": 235
+      },
+      "Forge: Kill Hellsboar 2": {
+        "level": "WLD_Main_A",
+        "x": 412,
+        "y": 263
+      },
+      "Forge: Kill Hellsboar 3": {
+        "level": "WLD_Main_A",
+        "x": 381,
+        "y": 253
+      },
+      "Forge: Kill Magma Mephit 1": {
+        "level": "WLD_Main_A",
+        "x": 807,
+        "y": 193
+      },
+      "Forge: Kill Magma Mephit 2": {
+        "level": "WLD_Main_A",
+        "x": 843,
+        "y": 177
+      },
+      "Forge: Kill Magma Mephit 3": {
+        "level": "WLD_Main_A",
+        "x": 834,
+        "y": 204
+      },
+      "Forge: Kill Magma Mephit 4": {
+        "level": "WLD_Main_A",
+        "x": 767,
+        "y": 206
+      },
+      "Forge: Kill Magma Mephit 5": {
+        "level": "WLD_Main_A",
+        "x": 871,
+        "y": 185
+      },
+      "Forge: Kill Magma Mephit 6": {
+        "level": "WLD_Main_A",
+        "x": 781,
+        "y": 180
+      },
+      "Forge: Kill Magma Mephit 7": {
+        "level": "WLD_Main_A",
+        "x": 817,
+        "y": 165
+      },
+      "Forge: Kill Magma Mephit 8": {
+        "level": "WLD_Main_A",
+        "x": 843,
+        "y": 231
+      },
+      "Forge: Kill Magma Mephit 9": {
+        "level": "WLD_Main_A",
+        "x": 899,
+        "y": 180
+      },
+      "Forge: Kill Merregon Legionnaire": {
+        "level": "WLD_Main_A",
+        "x": 399,
+        "y": 289
+      },
+      "Grym: Kill Corsair Greymon": {
+        "level": "WLD_Main_A",
+        "x": 244,
+        "y": 112
+      },
+      "Grym: Kill Dalthar": {
+        "level": "WLD_Main_A",
+        "x": 289,
+        "y": 394
+      },
+      "Grym: Kill Drar": {
+        "level": "WLD_Main_A",
+        "x": 222,
+        "y": 421
+      },
+      "Grym: Kill Grundril": {
+        "level": "WLD_Main_A",
+        "x": 147,
+        "y": 117
+      },
+      "Grym: Kill Headmaster Skarjall": {
+        "level": "WLD_Main_A",
+        "x": 171,
+        "y": 101
+      },
+      "Grym: Kill Mimic 1": {
+        "level": "WLD_Main_A",
+        "x": 93,
+        "y": 268
+      },
+      "Grym: Kill Mimic 2": {
+        "level": "WLD_Main_A",
+        "x": 64,
+        "y": 284
+      },
+      "Grym: Kill Mimic 3": {
+        "level": "WLD_Main_A",
+        "x": 88,
+        "y": 300
+      },
+      "Grym: Kill Mind Master Dunnol": {
+        "level": "WLD_Main_A",
+        "x": 262,
+        "y": 446
+      },
+      "Grym: Kill Mind Master Fonmara": {
+        "level": "WLD_Main_A",
+        "x": 245,
+        "y": 404
+      },
+      "Grym: Kill Morgya": {
+        "level": "WLD_Main_A",
+        "x": 121,
+        "y": 104
+      },
+      "Grym: Kill Nere": {
+        "level": "WLD_Main_A",
+        "x": 192,
+        "y": 421
+      },
+      "Grym: Kill Ochre Jelly 1": {
+        "level": "WLD_Main_A",
+        "x": 370,
+        "y": 115
+      },
+      "Grym: Kill Ochre Jelly 2": {
+        "level": "WLD_Main_A",
+        "x": 385,
+        "y": 154
+      },
+      "Grym: Kill Ochre Jelly 3": {
+        "level": "WLD_Main_A",
+        "x": 342,
+        "y": 122
+      },
+      "Grym: Kill Scrying Eye": {
+        "level": "WLD_Main_A",
+        "x": 264,
+        "y": 380
+      },
+      "Grym: Kill Sergeant Thrinn": {
+        "level": "WLD_Main_A",
+        "x": 271,
+        "y": 418
+      }
+    },
+    "hag": {
+      "Hag: Kill Auntie Ethel": {
+        "level": "WLD_Main_A",
+        "x": 69,
+        "y": 73
+      },
+      "Hag: Kill Mephit 1": {
+        "level": "WLD_Main_A",
+        "x": 388,
+        "y": 202
+      },
+      "Hag: Kill Mephit 2": {
+        "level": "WLD_Main_A",
+        "x": 411,
+        "y": 206
+      },
+      "Hag: Kill Mephit 3": {
+        "level": "WLD_Main_A",
+        "x": 376,
+        "y": 204
+      },
+      "Hag: Kill Mephit 4": {
+        "level": "WLD_Main_A",
+        "x": 371,
+        "y": 193
+      },
+      "Hag: Kill Redcap 1": {
+        "level": "WLD_Main_A",
+        "x": 196,
+        "y": 80
+      },
+      "Hag: Kill Redcap 2": {
+        "level": "WLD_Main_A",
+        "x": 181,
+        "y": 101
+      },
+      "Hag: Kill Redcap 3": {
+        "level": "WLD_Main_A",
+        "x": 153,
+        "y": 74
+      },
+      "Hag: Kill Redcap 4": {
+        "level": "WLD_Main_A",
+        "x": 190,
+        "y": 50
+      },
+      "Hag: Kill Wood Woad 1": {
+        "level": "WLD_Main_A",
+        "x": 411,
+        "y": 194
+      },
+      "Hag: Kill Wood Woad 2": {
+        "level": "WLD_Main_A",
+        "x": 393,
+        "y": 191
+      }
+    },
+    "last_light": {
+      "LL Inn: Kill Cursed Flaming Fist 1": {
+        "level": "SCL_Main_A",
+        "x": 707,
+        "y": 112
+      },
+      "LL Inn: Kill Cursed Flaming Fist 2": {
+        "level": "SCL_Main_A",
+        "x": 859,
+        "y": 121
+      },
+      "LL Inn: Kill Cursed Flaming Fist 3": {
+        "level": "SCL_Main_A",
+        "x": 713,
+        "y": 83
+      },
+      "LL Inn: Kill Cursed Flaming Fist 4": {
+        "level": "SCL_Main_A",
+        "x": 866,
+        "y": 93
+      },
+      "LL Inn: Kill Cursed Flaming Fist 5": {
+        "level": "SCL_Main_A",
+        "x": 834,
+        "y": 107
+      },
+      "LL Inn: Kill Cursed Githyanki 1": {
+        "level": "SCL_Main_A",
+        "x": 803,
+        "y": 95
+      },
+      "LL Inn: Kill Cursed Githyanki 2": {
+        "level": "SCL_Main_A",
+        "x": 761,
+        "y": 41
+      },
+      "LL Inn: Kill Cursed Githyanki 3": {
+        "level": "SCL_Main_A",
+        "x": 808,
+        "y": 66
+      },
+      "LL Inn: Kill Cursed Harper 1": {
+        "level": "SCL_Main_A",
+        "x": 819,
+        "y": 132
+      },
+      "LL Inn: Kill Cursed Harper 2": {
+        "level": "SCL_Main_A",
+        "x": 800,
+        "y": 180
+      },
+      "LL Inn: Kill Cursed Harper 3": {
+        "level": "SCL_Main_A",
+        "x": 834,
+        "y": 157
+      },
+      "LL Inn: Kill Cursed Harper 4": {
+        "level": "SCL_Main_A",
+        "x": 773,
+        "y": 135
+      },
+      "LL Inn: Kill Cursed Raven 1": {
+        "level": "SCL_Main_A",
+        "x": 757,
+        "y": 159
+      },
+      "LL Inn: Kill Cursed Raven 2": {
+        "level": "SCL_Main_A",
+        "x": 728,
+        "y": 157
+      },
+      "LL Inn: Kill Cursed Raven 3": {
+        "level": "SCL_Main_A",
+        "x": 746,
+        "y": 187
+      },
+      "LL Inn: Kill Cursed Raven 4": {
+        "level": "SCL_Main_A",
+        "x": 717,
+        "y": 185
+      },
+      "LL Inn: Kill Cursed Raven 5": {
+        "level": "SCL_Main_A",
+        "x": 677,
+        "y": 192
+      },
+      "LL Inn: Kill Cursed Raven 6": {
+        "level": "SCL_Main_A",
+        "x": 648,
+        "y": 189
+      },
+      "LL Inn: Kill Cursed Raven 7": {
+        "level": "SCL_Main_A",
+        "x": 665,
+        "y": 159
+      },
+      "LL Inn: Kill Cursed Raven 8": {
+        "level": "SCL_Main_A",
+        "x": 675,
+        "y": 220
+      },
+      "LL Inn: Kill Cursed Warrior 1": {
+        "level": "SCL_Main_A",
+        "x": 732,
+        "y": 37
+      },
+      "LL Inn: Kill Cursed Warrior 2": {
+        "level": "SCL_Main_A",
+        "x": 790,
+        "y": 44
+      },
+      "LL Inn: Kill Cursed Warrior 3": {
+        "level": "SCL_Main_A",
+        "x": 754,
+        "y": 88
+      },
+      "LL Inn: Kill Cursed Warrior 4": {
+        "level": "SCL_Main_A",
+        "x": 777,
+        "y": 106
+      },
+      "LL Inn: Kill Cursed Warrior 5": {
+        "level": "SCL_Main_A",
+        "x": 778,
+        "y": 72
+      },
+      "LL Inn: Kill Cursed Zealot 1": {
+        "level": "SCL_Main_A",
+        "x": 736,
+        "y": 111
+      },
+      "LL Inn: Kill Cursed Zealot 2": {
+        "level": "SCL_Main_A",
+        "x": 798,
+        "y": 151
+      },
+      "LL Inn: Kill Cursed Zealot 3": {
+        "level": "SCL_Main_A",
+        "x": 736,
+        "y": 66
+      },
+      "LL Inn: Kill Dark Vine Tentacle 1": {
+        "level": "SCL_Main_A",
+        "x": 704,
+        "y": 141
+      },
+      "LL Inn: Kill Dark Vine Tentacle 2": {
+        "level": "SCL_Main_A",
+        "x": 645,
+        "y": 219
+      },
+      "LL Inn: Kill Dark Vine Tentacle 3": {
+        "level": "SCL_Main_A",
+        "x": 693,
+        "y": 168
+      },
+      "LL Inn: Kill Fist Marcus": {
+        "level": "SCL_Main_A",
+        "x": 406,
+        "y": 405
+      },
+      "LL Inn: Kill Meenlock 1": {
+        "level": "SCL_Main_A",
+        "x": 826,
+        "y": 349
+      },
+      "LL Inn: Kill Meenlock 2": {
+        "level": "SCL_Main_A",
+        "x": 841,
+        "y": 481
+      },
+      "LL Inn: Kill Meenlock 3": {
+        "level": "SCL_Main_A",
+        "x": 843,
+        "y": 401
+      },
+      "LL Inn: Kill Meenlock 4": {
+        "level": "SCL_Main_A",
+        "x": 666,
+        "y": 377
+      },
+      "LL Inn: Kill Meenlock 5": {
+        "level": "SCL_Main_A",
+        "x": 701,
+        "y": 325
+      },
+      "LL Inn: Kill Meenlock 6": {
+        "level": "SCL_Main_A",
+        "x": 603,
+        "y": 337
+      },
+      "LL Inn: Kill Shadow 1": {
+        "level": "SCL_Main_A",
+        "x": 593,
+        "y": 203
+      },
+      "LL Inn: Kill Shadow 2": {
+        "level": "SCL_Main_A",
+        "x": 627,
+        "y": 168
+      },
+      "LL Inn: Kill Shadow 3": {
+        "level": "SCL_Main_A",
+        "x": 565,
+        "y": 197
+      },
+      "LL Inn: Kill Shadow 4": {
+        "level": "SCL_Main_A",
+        "x": 621,
+        "y": 234
+      },
+      "LL Inn: Kill Shadow Mastiff 1": {
+        "level": "SCL_Main_A",
+        "x": 859,
+        "y": 61
+      },
+      "LL Inn: Kill Shadow Mastiff 2": {
+        "level": "SCL_Main_A",
+        "x": 835,
+        "y": 78
+      },
+      "LL Inn: Kill Winged Horror 1": {
+        "level": "SCL_Main_A",
+        "x": 69,
+        "y": 368
+      },
+      "LL Inn: Kill Winged Horror 2": {
+        "level": "SCL_Main_A",
+        "x": 162,
+        "y": 335
+      },
+      "LL Inn: Kill Winged Horror 3": {
+        "level": "SCL_Main_A",
+        "x": 255,
+        "y": 326
+      },
+      "LL Inn: Kill Winged Horror 4": {
+        "level": "SCL_Main_A",
+        "x": 116,
+        "y": 284
+      },
+      "LL Inn: Kill Winged Horror 5": {
+        "level": "SCL_Main_A",
+        "x": 68,
+        "y": 246
+      },
+      "LL Inn: Kill Winged Horror 6": {
+        "level": "SCL_Main_A",
+        "x": 172,
+        "y": 139
+      },
+      "LL Inn: Kill Wraith 1": {
+        "level": "SCL_Main_A",
+        "x": 592,
+        "y": 232
+      },
+      "LL Inn: Kill Wraith 2": {
+        "level": "SCL_Main_A",
+        "x": 622,
+        "y": 201
+      }
+    },
+    "mindflayer": {
+      "Colony Showdown: Kill Int. Devourer 1": {
+        "level": "SCL_Main_A",
+        "x": 728,
+        "y": 337
+      },
+      "Colony Showdown: Kill Int. Devourer 2": {
+        "level": "SCL_Main_A",
+        "x": 752,
+        "y": 287
+      },
+      "Colony Showdown: Kill Int. Devourer 3": {
+        "level": "SCL_Main_A",
+        "x": 732,
+        "y": 308
+      },
+      "Colony Showdown: Kill Int. Devourer 4": {
+        "level": "SCL_Main_A",
+        "x": 775,
+        "y": 305
+      },
+      "Colony Showdown: Kill Myrkul": {
+        "level": "SCL_Main_A",
+        "x": 732,
+        "y": 237
+      },
+      "Colony Showdown: Kill Necromite 1": {
+        "level": "SCL_Main_A",
+        "x": 710,
+        "y": 209
+      },
+      "Colony Showdown: Kill Necromite 2": {
+        "level": "SCL_Main_A",
+        "x": 740,
+        "y": 210
+      },
+      "Colony Showdown: Kill Necromite 3": {
+        "level": "SCL_Main_A",
+        "x": 721,
+        "y": 264
+      },
+      "Colony Showdown: Kill Necromite 4": {
+        "level": "SCL_Main_A",
+        "x": 761,
+        "y": 235
+      },
+      "Colony: Kill Chop": {
+        "level": "SCL_Main_A",
+        "x": 236,
+        "y": 374
+      },
+      "Colony: Kill Death Shepherd": {
+        "level": "SCL_Main_A",
+        "x": 379,
+        "y": 395
+      },
+      "Colony: Kill Flying Ghoul 1": {
+        "level": "SCL_Main_A",
+        "x": 322,
+        "y": 393
+      },
+      "Colony: Kill Flying Ghoul 2": {
+        "level": "SCL_Main_A",
+        "x": 406,
+        "y": 382
+      },
+      "Colony: Kill Flying Ghoul 3": {
+        "level": "SCL_Main_A",
+        "x": 403,
+        "y": 452
+      },
+      "Colony: Kill Flying Ghoul 4": {
+        "level": "SCL_Main_A",
+        "x": 336,
+        "y": 456
+      },
+      "Colony: Kill Greater Zombie 1": {
+        "level": "SCL_Main_A",
+        "x": 405,
+        "y": 411
+      },
+      "Colony: Kill Greater Zombie 2": {
+        "level": "SCL_Main_A",
+        "x": 329,
+        "y": 422
+      },
+      "Colony: Kill Greater Zombie 3": {
+        "level": "SCL_Main_A",
+        "x": 355,
+        "y": 434
+      },
+      "Colony: Kill Greater Zombie 4": {
+        "level": "SCL_Main_A",
+        "x": 384,
+        "y": 431
+      },
+      "Colony: Kill Hairy Henry": {
+        "level": "SCL_Main_A",
+        "x": 373,
+        "y": 137
+      },
+      "Colony: Kill Int Devourer 1": {
+        "level": "SCL_Main_A",
+        "x": 274,
+        "y": 261
+      },
+      "Colony: Kill Int Devourer 2": {
+        "level": "SCL_Main_A",
+        "x": 352,
+        "y": 261
+      },
+      "Colony: Kill Int Devourer 3": {
+        "level": "SCL_Main_A",
+        "x": 427,
+        "y": 274
+      },
+      "Colony: Kill Int Devourer 4": {
+        "level": "SCL_Main_A",
+        "x": 349,
+        "y": 303
+      },
+      "Colony: Kill Int Devourer 5": {
+        "level": "SCL_Main_A",
+        "x": 289,
+        "y": 286
+      },
+      "Colony: Kill Int Devourer 6": {
+        "level": "SCL_Main_A",
+        "x": 212,
+        "y": 273
+      },
+      "Colony: Kill Int Devourer 7": {
+        "level": "SCL_Main_A",
+        "x": 293,
+        "y": 240
+      },
+      "Colony: Kill Int Devourer 8": {
+        "level": "SCL_Main_A",
+        "x": 406,
+        "y": 238
+      },
+      "Colony: Kill Ironfinger": {
+        "level": "SCL_Main_A",
+        "x": 406,
+        "y": 98
+      },
+      "Colony: Kill Kitchen Int Dev 1": {
+        "level": "SCL_Main_A",
+        "x": 269,
+        "y": 394
+      },
+      "Colony: Kill Kitchen Int Dev 2": {
+        "level": "SCL_Main_A",
+        "x": 264,
+        "y": 366
+      },
+      "Colony: Kill Kitchen Int Dev 3": {
+        "level": "SCL_Main_A",
+        "x": 242,
+        "y": 403
+      },
+      "Colony: Kill Kitchen Int Dev 4": {
+        "level": "SCL_Main_A",
+        "x": 219,
+        "y": 351
+      },
+      "Colony: Kill Kitchen Int Dev 5": {
+        "level": "SCL_Main_A",
+        "x": 252,
+        "y": 340
+      },
+      "Colony: Kill Kressa Bonedaughter": {
+        "level": "SCL_Main_A",
+        "x": 391,
+        "y": 73
+      },
+      "Colony: Kill Maghtew Budj": {
+        "level": "SCL_Main_A",
+        "x": 401,
+        "y": 126
+      },
+      "Colony: Kill Mindflayer": {
+        "level": "SCL_Main_A",
+        "x": 706,
+        "y": 296
+      },
+      "Colony: Kill Mindflayer 1": {
+        "level": "SCL_Main_A",
+        "x": 261,
+        "y": 206
+      },
+      "Colony: Kill Mindflayer 2": {
+        "level": "SCL_Main_A",
+        "x": 244,
+        "y": 182
+      },
+      "Colony: Kill Mindflayer 3": {
+        "level": "SCL_Main_A",
+        "x": 317,
+        "y": 195
+      },
+      "Colony: Kill Mindflayer 4": {
+        "level": "SCL_Main_A",
+        "x": 291,
+        "y": 156
+      },
+      "Colony: Kill Tadpoling Int Dev 1": {
+        "level": "SCL_Main_A",
+        "x": 289,
+        "y": 203
+      },
+      "Colony: Kill Tadpoling Int Dev 2": {
+        "level": "SCL_Main_A",
+        "x": 273,
+        "y": 178
+      },
+      "Colony: Kill Tadpoling Int Dev 3": {
+        "level": "SCL_Main_A",
+        "x": 268,
+        "y": 138
+      },
+      "Colony: Kill Tadpoling Int Dev 4": {
+        "level": "SCL_Main_A",
+        "x": 318,
+        "y": 166
+      },
+      "Colony: Kill Tadpoling Int Dev 5": {
+        "level": "SCL_Main_A",
+        "x": 316,
+        "y": 117
+      },
+      "Colony: Kill Tadpoling Int Dev 6": {
+        "level": "SCL_Main_A",
+        "x": 286,
+        "y": 114
+      },
+      "Colony: Kill Undead 1": {
+        "level": "SCL_Main_A",
+        "x": 429,
+        "y": 426
+      },
+      "Colony: Kill Undead 2": {
+        "level": "SCL_Main_A",
+        "x": 345,
+        "y": 372
+      },
+      "Colony: Kill Undead 3": {
+        "level": "SCL_Main_A",
+        "x": 351,
+        "y": 401
+      },
+      "Colony: Kill Undead 4": {
+        "level": "SCL_Main_A",
+        "x": 371,
+        "y": 458
+      },
+      "Colony: Kill Undead 5": {
+        "level": "SCL_Main_A",
+        "x": 381,
+        "y": 366
+      },
+      "Colony: Kill Undead 6": {
+        "level": "SCL_Main_A",
+        "x": 302,
+        "y": 433
+      }
+    },
+    "monastery": {
+      "Monastery: Kill Death Sheperd 1": {
+        "level": "CRE_Main_A",
+        "x": 248,
+        "y": 423
+      },
+      "Monastery: Kill Death Sheperd 2": {
+        "level": "CRE_Main_A",
+        "x": 194,
+        "y": 374
+      },
+      "Monastery: Kill Ghast": {
+        "level": "CRE_Main_A",
+        "x": 212,
+        "y": 351
+      },
+      "Monastery: Kill Ghoul 1": {
+        "level": "CRE_Main_A",
+        "x": 193,
+        "y": 406
+      },
+      "Monastery: Kill Ghoul 2": {
+        "level": "CRE_Main_A",
+        "x": 249,
+        "y": 392
+      },
+      "Monastery: Kill Ghoul 3": {
+        "level": "CRE_Main_A",
+        "x": 221,
+        "y": 413
+      },
+      "Monastery: Kill Ghoul 4": {
+        "level": "CRE_Main_A",
+        "x": 221,
+        "y": 384
+      },
+      "Monastery: Kill Giant Eagle 1": {
+        "level": "CRE_Main_A",
+        "x": 775,
+        "y": 245
+      },
+      "Monastery: Kill Giant Eagle 2": {
+        "level": "CRE_Main_A",
+        "x": 738,
+        "y": 242
+      },
+      "Monastery: Kill Gish For'reth": {
+        "level": "WLD_Main_A",
+        "x": 226,
+        "y": 228
+      },
+      "Monastery: Kill Gremishka 1": {
+        "level": "CRE_Main_A",
+        "x": 574,
+        "y": 200
+      },
+      "Monastery: Kill Gremishka 2": {
+        "level": "CRE_Main_A",
+        "x": 582,
+        "y": 228
+      },
+      "Monastery: Kill Gremishka 3": {
+        "level": "CRE_Main_A",
+        "x": 551,
+        "y": 274
+      },
+      "Monastery: Kill Gremishka 4": {
+        "level": "CRE_Main_A",
+        "x": 533,
+        "y": 322
+      },
+      "Monastery: Kill Gremishka 5": {
+        "level": "CRE_Main_A",
+        "x": 535,
+        "y": 232
+      },
+      "Monastery: Kill Gremishka 6": {
+        "level": "CRE_Main_A",
+        "x": 526,
+        "y": 259
+      },
+      "Monastery: Kill Gremishka 7": {
+        "level": "CRE_Main_A",
+        "x": 528,
+        "y": 292
+      },
+      "Monastery: Kill Gremishka 8": {
+        "level": "CRE_Main_A",
+        "x": 565,
+        "y": 357
+      },
+      "Monastery: Kill Gremishka 9": {
+        "level": "CRE_Main_A",
+        "x": 569,
+        "y": 328
+      },
+      "Monastery: Kill Guardian of Faith": {
+        "level": "CRE_Main_A",
+        "x": 892,
+        "y": 215
+      },
+      "Monastery: Kill Kobold Inventor": {
+        "level": "CRE_Main_A",
+        "x": 602,
+        "y": 250
+      },
+      "Monastery: Kill Kobold Looter 1": {
+        "level": "CRE_Main_A",
+        "x": 631,
+        "y": 330
+      },
+      "Monastery: Kill Kobold Looter 2": {
+        "level": "CRE_Main_A",
+        "x": 606,
+        "y": 314
+      },
+      "Monastery: Kill Kobold Looter 3": {
+        "level": "CRE_Main_A",
+        "x": 555,
+        "y": 303
+      },
+      "Monastery: Kill Kobold Looter 4": {
+        "level": "CRE_Main_A",
+        "x": 595,
+        "y": 341
+      },
+      "Monastery: Kill Kobold Looter 5": {
+        "level": "CRE_Main_A",
+        "x": 583,
+        "y": 297
+      },
+      "Monastery: Kill Kobold Looter 6": {
+        "level": "CRE_Main_A",
+        "x": 602,
+        "y": 191
+      },
+      "Monastery: Kill Kobold Looter 7": {
+        "level": "CRE_Main_A",
+        "x": 629,
+        "y": 241
+      },
+      "Monastery: Kill Kobold Scout 1": {
+        "level": "CRE_Main_A",
+        "x": 579,
+        "y": 268
+      },
+      "Monastery: Kill Kobold Scout 2": {
+        "level": "CRE_Main_A",
+        "x": 625,
+        "y": 292
+      },
+      "Monastery: Kill Kobold Scout 3": {
+        "level": "CRE_Main_A",
+        "x": 560,
+        "y": 246
+      },
+      "Monastery: Kill Kobold Scout 4": {
+        "level": "CRE_Main_A",
+        "x": 621,
+        "y": 213
+      },
+      "Monastery: Kill Raider Ghost": {
+        "level": "WLD_Main_A",
+        "x": 230,
+        "y": 190
+      },
+      "Monastery: Kill Raider Zastri": {
+        "level": "WLD_Main_A",
+        "x": 205,
+        "y": 207
+      },
+      "Monastery: Kill Sarth Baretha": {
+        "level": "WLD_Main_A",
+        "x": 203,
+        "y": 178
+      }
+    },
+    "moonrise": {
+      "Moonrise: Kill 'Barnabus'": {
+        "level": "SCL_Main_A",
+        "x": 299,
+        "y": 292
+      },
+      "Moonrise: Kill 'Timothy'": {
+        "level": "SCL_Main_A",
+        "x": 272,
+        "y": 276
+      },
+      "Moonrise: Kill 'Tomelia'": {
+        "level": "SCL_Main_A",
+        "x": 301,
+        "y": 263
+      },
+      "Moonrise: Kill Arden": {
+        "level": "SCL_Main_A",
+        "x": 406,
+        "y": 280
+      },
+      "Moonrise: Kill Audience Guard 1 TBD": {
+        "level": "SCL_Main_A",
+        "x": 159,
+        "y": 301
+      },
+      "Moonrise: Kill Audience Guard 2 TBD": {
+        "level": "SCL_Main_A",
+        "x": 140,
+        "y": 350
+      },
+      "Moonrise: Kill Audience Guard 3 TBD": {
+        "level": "SCL_Main_A",
+        "x": 209,
+        "y": 330
+      },
+      "Moonrise: Kill Belub": {
+        "level": "SCL_Main_A",
+        "x": 144,
+        "y": 249
+      },
+      "Moonrise: Kill Brinn": {
+        "level": "SCL_Main_A",
+        "x": 190,
+        "y": 214
+      },
+      "Moonrise: Kill Daine": {
+        "level": "SCL_Main_A",
+        "x": 245,
+        "y": 284
+      },
+      "Moonrise: Kill Dorikel": {
+        "level": "SCL_Main_A",
+        "x": 211,
+        "y": 234
+      },
+      "Moonrise: Kill Duckie Verish": {
+        "level": "SCL_Main_A",
+        "x": 892,
+        "y": 224
+      },
+      "Moonrise: Kill Furek": {
+        "level": "SCL_Main_A",
+        "x": 171,
+        "y": 239
+      },
+      "Moonrise: Kill Glourik": {
+        "level": "SCL_Main_A",
+        "x": 108,
+        "y": 327
+      },
+      "Moonrise: Kill Iogar": {
+        "level": "SCL_Main_A",
+        "x": 93,
+        "y": 247
+      },
+      "Moonrise: Kill Kimmeral": {
+        "level": "SCL_Main_A",
+        "x": 68,
+        "y": 270
+      },
+      "Moonrise: Kill Lann Tarv": {
+        "level": "SCL_Main_A",
+        "x": 153,
+        "y": 216
+      },
+      "Moonrise: Kill Linsella": {
+        "level": "SCL_Main_A",
+        "x": 277,
+        "y": 247
+      },
+      "Moonrise: Kill Marls": {
+        "level": "SCL_Main_A",
+        "x": 372,
+        "y": 273
+      },
+      "Moonrise: Kill Mimic": {
+        "level": "SCL_Main_A",
+        "x": 114,
+        "y": 288
+      },
+      "Moonrise: Kill Munish": {
+        "level": "SCL_Main_A",
+        "x": 169,
+        "y": 274
+      },
+      "Moonrise: Kill Necromite 1": {
+        "level": "SCL_Main_A",
+        "x": 237,
+        "y": 337
+      },
+      "Moonrise: Kill Necromite 2": {
+        "level": "SCL_Main_A",
+        "x": 170,
+        "y": 358
+      },
+      "Moonrise: Kill Necromite 3": {
+        "level": "SCL_Main_A",
+        "x": 222,
+        "y": 304
+      },
+      "Moonrise: Kill Necromite 4": {
+        "level": "SCL_Main_A",
+        "x": 185,
+        "y": 314
+      },
+      "Moonrise: Kill Necromite 5": {
+        "level": "SCL_Main_A",
+        "x": 141,
+        "y": 277
+      },
+      "Moonrise: Kill Necromite 6": {
+        "level": "SCL_Main_A",
+        "x": 220,
+        "y": 269
+      },
+      "Moonrise: Kill Necromite 7": {
+        "level": "SCL_Main_A",
+        "x": 237,
+        "y": 246
+      },
+      "Moonrise: Kill Necromite 8": {
+        "level": "SCL_Main_A",
+        "x": 193,
+        "y": 257
+      },
+      "Moonrise: Kill Nola": {
+        "level": "SCL_Main_A",
+        "x": 132,
+        "y": 311
+      },
+      "Moonrise: Kill Radija": {
+        "level": "SCL_Main_A",
+        "x": 160,
+        "y": 330
+      },
+      "Moonrise: Kill Sarabayle": {
+        "level": "SCL_Main_A",
+        "x": 890,
+        "y": 320
+      },
+      "Moonrise: Kill Squire": {
+        "level": "SCL_Main_A",
+        "x": 199,
+        "y": 357
+      },
+      "Moonrise: Kill The Warden": {
+        "level": "SCL_Main_A",
+        "x": 554,
+        "y": 311
+      },
+      "Moonrise: Kill Willinx Jindlebee": {
+        "level": "SCL_Main_A",
+        "x": 882,
+        "y": 272
+      },
+      "Moonrise: Kill Z'rell": {
+        "level": "SCL_Main_A",
+        "x": 198,
+        "y": 288
+      }
+    },
+    "shar_gauntlet": {
+      "Shar: Kill Animated Justiciar TBD": {
+        "level": "SCL_Main_A",
+        "x": 347,
+        "y": 239
+      },
+      "Shar: Kill Balthazar": {
+        "level": "SCL_Main_A",
+        "x": 256,
+        "y": 224
+      },
+      "Shar: Kill Caster Skeleton": {
+        "level": "SCL_Main_A",
+        "x": 560,
+        "y": 256
+      },
+      "Shar: Kill Caster Skeleton 2": {
+        "level": "SCL_Main_A",
+        "x": 332,
+        "y": 264
+      },
+      "Shar: Kill Cloaker": {
+        "level": "SCL_Main_A",
+        "x": 347,
+        "y": 443
+      },
+      "Shar: Kill Displacer": {
+        "level": "SCL_Main_A",
+        "x": 656,
+        "y": 256
+      },
+      "Shar: Kill Flesh": {
+        "level": "SCL_Main_A",
+        "x": 256,
+        "y": 271
+      },
+      "Shar: Kill Ghoul 1": {
+        "level": "SCL_Main_A",
+        "x": 283,
+        "y": 235
+      },
+      "Shar: Kill Ghoul 2": {
+        "level": "SCL_Main_A",
+        "x": 285,
+        "y": 275
+      },
+      "Shar: Kill Ghoul 3": {
+        "level": "SCL_Main_A",
+        "x": 239,
+        "y": 247
+      },
+      "Shar: Kill Library Caster 1": {
+        "level": "SCL_Main_A",
+        "x": 461,
+        "y": 160
+      },
+      "Shar: Kill Library Caster 2": {
+        "level": "SCL_Main_A",
+        "x": 432,
+        "y": 157
+      },
+      "Shar: Kill Library Caster 3": {
+        "level": "SCL_Main_A",
+        "x": 451,
+        "y": 215
+      },
+      "Shar: Kill Library Melee": {
+        "level": "SCL_Main_A",
+        "x": 433,
+        "y": 186
+      },
+      "Shar: Kill Library Ranger 1": {
+        "level": "SCL_Main_A",
+        "x": 404,
+        "y": 192
+      },
+      "Shar: Kill Library Ranger 2": {
+        "level": "SCL_Main_A",
+        "x": 422,
+        "y": 214
+      },
+      "Shar: Kill Melee Skeleton 1": {
+        "level": "SCL_Main_A",
+        "x": 528,
+        "y": 259
+      },
+      "Shar: Kill Melee Skeleton 2": {
+        "level": "SCL_Main_A",
+        "x": 528,
+        "y": 303
+      },
+      "Shar: Kill Melee Skeleton 3": {
+        "level": "SCL_Main_A",
+        "x": 585,
+        "y": 293
+      },
+      "Shar: Kill Melee Skeleton 4": {
+        "level": "SCL_Main_A",
+        "x": 314,
+        "y": 287
+      },
+      "Shar: Kill Melee Skeleton 5": {
+        "level": "SCL_Main_A",
+        "x": 289,
+        "y": 304
+      },
+      "Shar: Kill Merregon 1": {
+        "level": "SCL_Main_A",
+        "x": 705,
+        "y": 181
+      },
+      "Shar: Kill Merregon 2": {
+        "level": "SCL_Main_A",
+        "x": 729,
+        "y": 198
+      },
+      "Shar: Kill Merregon 3": {
+        "level": "SCL_Main_A",
+        "x": 720,
+        "y": 155
+      },
+      "Shar: Kill Merregon 4": {
+        "level": "SCL_Main_A",
+        "x": 677,
+        "y": 191
+      },
+      "Shar: Kill Merregon 5": {
+        "level": "SCL_Main_A",
+        "x": 690,
+        "y": 157
+      },
+      "Shar: Kill Merregon 6": {
+        "level": "SCL_Main_A",
+        "x": 699,
+        "y": 210
+      },
+      "Shar: Kill Merregon 7": {
+        "level": "SCL_Main_A",
+        "x": 672,
+        "y": 221
+      },
+      "Shar: Kill Merregon 8": {
+        "level": "SCL_Main_A",
+        "x": 663,
+        "y": 166
+      },
+      "Shar: Kill Mirror 1": {
+        "level": "SCL_Main_A",
+        "x": 320,
+        "y": 129
+      },
+      "Shar: Kill Mirror 2": {
+        "level": "SCL_Main_A",
+        "x": 292,
+        "y": 125
+      },
+      "Shar: Kill Mirror 3": {
+        "level": "SCL_Main_A",
+        "x": 297,
+        "y": 155
+      },
+      "Shar: Kill Mirror 4": {
+        "level": "SCL_Main_A",
+        "x": 298,
+        "y": 96
+      },
+      "Shar: Kill Ranged Skeleton": {
+        "level": "SCL_Main_A",
+        "x": 587,
+        "y": 264
+      },
+      "Shar: Kill Ranger Skeleton": {
+        "level": "SCL_Main_A",
+        "x": 305,
+        "y": 255
+      },
+      "Shar: Kill Skelly TBD": {
+        "level": "SCL_Main_A",
+        "x": 548,
+        "y": 282
+      },
+      "Shar: Kill Yurgir": {
+        "level": "SCL_Main_A",
+        "x": 722,
+        "y": 228
+      }
+    },
+    "tutorial": {
+      "Tut: Kill Helm Bkup 1": {
+        "level": "TUT_Avernus_C",
+        "x": 636,
+        "y": 284
+      },
+      "Tut: Kill Helm Bkup 2": {
+        "level": "TUT_Avernus_C",
+        "x": 649,
+        "y": 258
+      },
+      "Tut: Kill Helm Bkup 3": {
+        "level": "TUT_Avernus_C",
+        "x": 665,
+        "y": 290
+      },
+      "Tut: Kill Helm Fodder 1": {
+        "level": "TUT_Avernus_C",
+        "x": 791,
+        "y": 269
+      },
+      "Tut: Kill Helm Fodder 2": {
+        "level": "TUT_Avernus_C",
+        "x": 795,
+        "y": 299
+      },
+      "Tut: Kill Helm Fodder 3": {
+        "level": "TUT_Avernus_C",
+        "x": 763,
+        "y": 244
+      },
+      "Tut: Kill Imp 1": {
+        "level": "TUT_Avernus_C",
+        "x": 303,
+        "y": 287
+      },
+      "Tut: Kill Imp 2": {
+        "level": "TUT_Avernus_C",
+        "x": 241,
+        "y": 278
+      },
+      "Tut: Kill Imp 3": {
+        "level": "TUT_Avernus_C",
+        "x": 193,
+        "y": 261
+      }
+    },
+    "underdark": {
+      "Grotto: Kill one of the Sovereigns": {
+        "level": "WLD_Main_A",
+        "x": 262,
+        "y": 37
+      },
+      "Underdark: Kill Animated Armor 1": {
+        "level": "WLD_Main_A",
+        "x": 145,
+        "y": 199
+      },
+      "Underdark: Kill Animated Armor 2": {
+        "level": "WLD_Main_A",
+        "x": 158,
+        "y": 198
+      },
+      "Underdark: Kill Animated Armor 3": {
+        "level": "WLD_Main_A",
+        "x": 154,
+        "y": 221
+      },
+      "Underdark: Kill Animated Armor 4": {
+        "level": "WLD_Main_A",
+        "x": 136,
+        "y": 218
+      },
+      "Underdark: Kill Bernard": {
+        "level": "WLD_Main_A",
+        "x": 159,
+        "y": 210
+      },
+      "Underdark: Kill Bulette": {
+        "level": "WLD_Main_A",
+        "x": 155,
+        "y": 121
+      },
+      "Underdark: Kill Filro the Forgotten": {
+        "level": "WLD_Main_A",
+        "x": 129,
+        "y": 91
+      },
+      "Underdark: Kill Fort Minotaur": {
+        "level": "WLD_Main_A",
+        "x": 344,
+        "y": 113
+      },
+      "Underdark: Kill Gekh Coal": {
+        "level": "WLD_Main_A",
+        "x": 193,
+        "y": 123
+      },
+      "Underdark: Kill Holvik": {
+        "level": "WLD_Main_A",
+        "x": 195,
+        "y": 102
+      },
+      "Underdark: Kill Hook Horror 1": {
+        "level": "WLD_Main_A",
+        "x": 144,
+        "y": 55
+      },
+      "Underdark: Kill Hook Horror 2": {
+        "level": "WLD_Main_A",
+        "x": 132,
+        "y": 80
+      },
+      "Underdark: Kill Hook Horror 3": {
+        "level": "WLD_Main_A",
+        "x": 148,
+        "y": 94
+      },
+      "Underdark: Kill Hook Horror 4": {
+        "level": "WLD_Main_A",
+        "x": 165,
+        "y": 72
+      },
+      "Underdark: Kill Lurgan": {
+        "level": "WLD_Main_A",
+        "x": 205,
+        "y": 119
+      },
+      "Underdark: Kill Minotaur 1": {
+        "level": "WLD_Main_A",
+        "x": 341,
+        "y": 75
+      },
+      "Underdark: Kill Minotaur 2": {
+        "level": "WLD_Main_A",
+        "x": 350,
+        "y": 52
+      },
+      "Underdark: Kill Novice Garmor": {
+        "level": "WLD_Main_A",
+        "x": 180,
+        "y": 133
+      },
+      "Underdark: Kill Sovereign Glut": {
+        "level": "WLD_Main_A",
+        "x": 242,
+        "y": 40
+      },
+      "Underdark: Kill Spectator": {
+        "level": "WLD_Main_A",
+        "x": 294,
+        "y": 177
+      }
+    },
+    "waukeen": {
+      "Waukeen: Kill Flind": {
+        "level": "WLD_Main_A",
+        "x": 197,
+        "y": 56
+      },
+      "Waukeen: Kill Gnoll Fang of Yeenoghu": {
+        "level": "WLD_Main_A",
+        "x": 172,
+        "y": 48
+      },
+      "Waukeen: Kill Gnoll Flesh Gnawer": {
+        "level": "WLD_Main_A",
+        "x": 221,
+        "y": 44
+      },
+      "Waukeen: Kill Gnoll Hunter 1": {
+        "level": "WLD_Main_A",
+        "x": 191,
+        "y": 33
+      },
+      "Waukeen: Kill Gnoll Hunter 2": {
+        "level": "WLD_Main_A",
+        "x": 198,
+        "y": 42
+      },
+      "Waukeen: Kill Gnoll Hunter 3": {
+        "level": "WLD_Main_A",
+        "x": 208,
+        "y": 36
+      },
+      "Waukeen: Kill Hyena 1": {
+        "level": "WLD_Main_A",
+        "x": 157,
+        "y": 203
+      },
+      "Waukeen: Kill Hyena 2": {
+        "level": "WLD_Main_A",
+        "x": 174,
+        "y": 213
+      },
+      "Waukeen: Kill Hyena 3": {
+        "level": "WLD_Main_A",
+        "x": 152,
+        "y": 219
+      },
+      "Waukeen: Kill Hyena 4": {
+        "level": "WLD_Main_A",
+        "x": 168,
+        "y": 225
+      },
+      "Waukeen: Kill Hyena 5": {
+        "level": "WLD_Main_A",
+        "x": 115,
+        "y": 159
+      },
+      "Waukeen: Kill Hyena 6": {
+        "level": "WLD_Main_A",
+        "x": 107,
+        "y": 169
+      },
+      "Waukeen: Kill Hyena 7": {
+        "level": "WLD_Main_A",
+        "x": 118,
+        "y": 172
+      },
+      "Waukeen: Kill Hyena 8": {
+        "level": "WLD_Main_A",
+        "x": 127,
+        "y": 164
+      },
+      "Waukeen: Kill Hyena 9": {
+        "level": "WLD_Main_A",
+        "x": 162,
+        "y": 214
+      },
+      "Waukeen: Kill Hyena at Cave 1": {
+        "level": "WLD_Main_A",
+        "x": 166,
+        "y": 37
+      },
+      "Waukeen: Kill Hyena at Cave 2": {
+        "level": "WLD_Main_A",
+        "x": 181,
+        "y": 39
+      },
+      "Waukeen: Kill Paladin Anders": {
+        "level": "WLD_Main_A",
+        "x": 367,
+        "y": 135
+      },
+      "Waukeen: Kill Paladin Cyrel": {
+        "level": "WLD_Main_A",
+        "x": 371,
+        "y": 146
+      },
+      "Waukeen: Kill Paladin Trynn": {
+        "level": "WLD_Main_A",
+        "x": 361,
+        "y": 124
+      }
+    },
+    "west_act2": {
+      "Brewery: Kill Thisobald Thorm": {
+        "level": "SCL_Main_A",
+        "x": 147,
+        "y": 400
+      },
+      "Brewery: Kill Zombie 1": {
+        "level": "SCL_Main_A",
+        "x": 184,
+        "y": 419
+      },
+      "Brewery: Kill Zombie 2": {
+        "level": "SCL_Main_A",
+        "x": 155,
+        "y": 427
+      },
+      "Brewery: Kill Zombie 3": {
+        "level": "SCL_Main_A",
+        "x": 203,
+        "y": 385
+      },
+      "Brewery: Kill Zombie 4": {
+        "level": "SCL_Main_A",
+        "x": 174,
+        "y": 391
+      },
+      "HoH: Kill Animated Armor": {
+        "level": "SCL_Main_A",
+        "x": 720,
+        "y": 352
+      },
+      "HoH: Kill Fetid Ooze 1": {
+        "level": "SCL_Main_A",
+        "x": 712,
+        "y": 321
+      },
+      "HoH: Kill Fetid Ooze 2": {
+        "level": "SCL_Main_A",
+        "x": 740,
+        "y": 331
+      },
+      "HoH: Kill Fetid Ooze 3": {
+        "level": "SCL_Main_A",
+        "x": 691,
+        "y": 352
+      },
+      "HoH: Kill Malus Thorm": {
+        "level": "SCL_Main_A",
+        "x": 197,
+        "y": 233
+      },
+      "HoH: Kill Shadow 1": {
+        "level": "SCL_Main_A",
+        "x": 108,
+        "y": 307
+      },
+      "HoH: Kill Shadow 2": {
+        "level": "SCL_Main_A",
+        "x": 136,
+        "y": 303
+      },
+      "HoH: Kill Shadow Cursed 1": {
+        "level": "SCL_Main_A",
+        "x": 114,
+        "y": 278
+      },
+      "HoH: Kill Shadow Cursed 2": {
+        "level": "SCL_Main_A",
+        "x": 164,
+        "y": 311
+      },
+      "HoH: Kill Shadow Cursed 3": {
+        "level": "SCL_Main_A",
+        "x": 127,
+        "y": 250
+      },
+      "HoH: Kill Shadow Mastiff": {
+        "level": "SCL_Main_A",
+        "x": 171,
+        "y": 282
+      },
+      "HoH: Kill Sister Anya": {
+        "level": "SCL_Main_A",
+        "x": 215,
+        "y": 255
+      },
+      "HoH: Kill Sister Geanne": {
+        "level": "SCL_Main_A",
+        "x": 177,
+        "y": 253
+      },
+      "HoH: Kill Sister Hunna": {
+        "level": "SCL_Main_A",
+        "x": 172,
+        "y": 214
+      },
+      "HoH: Kill Sister Vanessa": {
+        "level": "SCL_Main_A",
+        "x": 208,
+        "y": 206
+      },
+      "HoH: Kill Wraith": {
+        "level": "SCL_Main_A",
+        "x": 143,
+        "y": 274
+      },
+      "HoH: Kill Zombie 1": {
+        "level": "SCL_Main_A",
+        "x": 700,
+        "y": 481
+      },
+      "HoH: Kill Zombie 2": {
+        "level": "SCL_Main_A",
+        "x": 713,
+        "y": 455
+      },
+      "HoH: Kill Zombie 3": {
+        "level": "SCL_Main_A",
+        "x": 729,
+        "y": 482
+      },
+      "HoH: Kill Zombie 4": {
+        "level": "SCL_Main_A",
+        "x": 748,
+        "y": 458
+      },
+      "HoH: Kill Zombie 5": {
+        "level": "SCL_Main_A",
+        "x": 671,
+        "y": 481
+      },
+      "HoH: Kill Zombie 6": {
+        "level": "SCL_Main_A",
+        "x": 766,
+        "y": 482
+      },
+      "Reithwin: Kill Arabella's Shadow 1": {
+        "level": "SCL_Main_A",
+        "x": 276,
+        "y": 284
+      },
+      "Reithwin: Kill Arabella's Shadow 2": {
+        "level": "SCL_Main_A",
+        "x": 248,
+        "y": 273
+      },
+      "Reithwin: Kill Bradi'ith": {
+        "level": "SCL_Main_A",
+        "x": 144,
+        "y": 332
+      },
+      "Reithwin: Kill Ch'r'ai Tska'an": {
+        "level": "SCL_Main_A",
+        "x": 129,
+        "y": 357
+      },
+      "Reithwin: Kill Cursed Kuo-Toa 1": {
+        "level": "SCL_Main_A",
+        "x": 328,
+        "y": 125
+      },
+      "Reithwin: Kill Cursed Kuo-Toa 10": {
+        "level": "SCL_Main_A",
+        "x": 245,
+        "y": 140
+      },
+      "Reithwin: Kill Cursed Kuo-Toa 11": {
+        "level": "SCL_Main_A",
+        "x": 293,
+        "y": 172
+      },
+      "Reithwin: Kill Cursed Kuo-Toa 12": {
+        "level": "SCL_Main_A",
+        "x": 299,
+        "y": 123
+      },
+      "Reithwin: Kill Cursed Kuo-Toa 2": {
+        "level": "SCL_Main_A",
+        "x": 248,
+        "y": 111
+      },
+      "Reithwin: Kill Cursed Kuo-Toa 3": {
+        "level": "SCL_Main_A",
+        "x": 262,
+        "y": 81
+      },
+      "Reithwin: Kill Cursed Kuo-Toa 4": {
+        "level": "SCL_Main_A",
+        "x": 276,
+        "y": 106
+      },
+      "Reithwin: Kill Cursed Kuo-Toa 5": {
+        "level": "SCL_Main_A",
+        "x": 314,
+        "y": 99
+      },
+      "Reithwin: Kill Cursed Kuo-Toa 6": {
+        "level": "SCL_Main_A",
+        "x": 232,
+        "y": 87
+      },
+      "Reithwin: Kill Cursed Kuo-Toa 7": {
+        "level": "SCL_Main_A",
+        "x": 312,
+        "y": 150
+      },
+      "Reithwin: Kill Cursed Kuo-Toa 8": {
+        "level": "SCL_Main_A",
+        "x": 261,
+        "y": 165
+      },
+      "Reithwin: Kill Cursed Kuo-Toa 9": {
+        "level": "SCL_Main_A",
+        "x": 275,
+        "y": 139
+      },
+      "Reithwin: Kill Cursed Kuo-Toa Chief": {
+        "level": "SCL_Main_A",
+        "x": 291,
+        "y": 81
+      },
+      "Reithwin: Kill Ma'athal": {
+        "level": "SCL_Main_A",
+        "x": 158,
+        "y": 360
+      },
+      "Reithwin: Kill Nimba'as": {
+        "level": "SCL_Main_A",
+        "x": 104,
+        "y": 373
+      },
+      "Reithwin: Kill Shadow 1": {
+        "level": "SCL_Main_A",
+        "x": 554,
+        "y": 103
+      },
+      "Reithwin: Kill Shadow 2": {
+        "level": "SCL_Main_A",
+        "x": 839,
+        "y": 157
+      },
+      "Reithwin: Kill Shadow 3": {
+        "level": "SCL_Main_A",
+        "x": 892,
+        "y": 106
+      },
+      "Reithwin: Kill Shadow 4": {
+        "level": "SCL_Main_A",
+        "x": 608,
+        "y": 155
+      },
+      "Reithwin: Kill Shadow 5": {
+        "level": "SCL_Main_A",
+        "x": 691,
+        "y": 179
+      },
+      "Reithwin: Kill Shadow Cursed Harper 1": {
+        "level": "SCL_Main_A",
+        "x": 275,
+        "y": 354
+      },
+      "Reithwin: Kill Shadow Cursed Harper 2": {
+        "level": "SCL_Main_A",
+        "x": 254,
+        "y": 392
+      },
+      "Reithwin: Kill Shadow Cursed Harper 3": {
+        "level": "SCL_Main_A",
+        "x": 311,
+        "y": 311
+      },
+      "Reithwin: Kill Shadow Cursed Harper 4": {
+        "level": "SCL_Main_A",
+        "x": 231,
+        "y": 340
+      },
+      "Reithwin: Kill Wraith": {
+        "level": "SCL_Main_A",
+        "x": 775,
+        "y": 167
+      },
+      "Reithwin: Kill Zunii": {
+        "level": "SCL_Main_A",
+        "x": 106,
+        "y": 339
+      },
+      "Thaniel: Kill Dad": {
+        "level": "SCL_Main_A",
+        "x": 286,
+        "y": 327
+      },
+      "Thaniel: Kill Mom": {
+        "level": "SCL_Main_A",
+        "x": 262,
+        "y": 312
+      },
+      "Tollhouse: Kill Face of Cowardice": {
+        "level": "SCL_Main_A",
+        "x": 294,
+        "y": 391
+      },
+      "Tollhouse: Kill Face of Greed": {
+        "level": "SCL_Main_A",
+        "x": 305,
+        "y": 417
+      },
+      "Tollhouse: Kill Face of Guilt": {
+        "level": "SCL_Main_A",
+        "x": 356,
+        "y": 444
+      },
+      "Tollhouse: Kill Face of Heartlessness": {
+        "level": "SCL_Main_A",
+        "x": 354,
+        "y": 381
+      },
+      "Tollhouse: Kill Face of Obedience": {
+        "level": "SCL_Main_A",
+        "x": 325,
+        "y": 381
+      },
+      "Tollhouse: Kill Face of Regret": {
+        "level": "SCL_Main_A",
+        "x": 311,
+        "y": 455
+      },
+      "Tollhouse: Kill Gerringothe Thorm": {
+        "level": "SCL_Main_A",
+        "x": 329,
+        "y": 433
+      }
+    }
+  },
+  "stats": {
+    "missing_character": 0,
+    "missing_position": 0,
+    "missing_uuid": 2,
+    "pin_map_height": 320,
+    "pin_map_width": 480,
+    "regions_with_pins": 18,
+    "total_pins_emitted": 574
+  }
+}

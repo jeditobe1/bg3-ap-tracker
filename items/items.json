@@ -1,0 +1,102 @@
+[
+    {
+        "name": "Level Fragment",
+        "type": "consumable",
+        "img": "images/items/level_fragment.png",
+        "codes": "level_fragment",
+        "min_quantity": 0,
+        "max_quantity": 30,
+        "initial_quantity": 0,
+        "overlay_align": "right",
+        "overlay_background": "#000000"
+    },
+    {
+        "name": "Boots of Speed",
+        "type": "toggle",
+        "img": "images/items/boots_of_speed.png",
+        "codes": "boots_of_speed"
+    },
+    {
+        "name": "Shadow Lantern",
+        "type": "toggle",
+        "img": "images/items/shadow_lantern.png",
+        "codes": "shadow_lantern"
+    },
+    {
+        "name": "Spear of Night",
+        "type": "toggle",
+        "img": "images/items/spear_of_night.png",
+        "codes": "spear_of_night"
+    },
+    {
+        "name": "Stat Boosts",
+        "type": "consumable",
+        "img": "images/items/stat_boost.png",
+        "codes": "stat_boost",
+        "overlay_align": "right"
+    },
+    {
+        "name": "Filler",
+        "type": "consumable",
+        "img": "images/items/filler.png",
+        "codes": "filler",
+        "overlay_align": "right"
+    },
+    {
+        "name": "Traps Received",
+        "type": "consumable",
+        "img": "images/items/trap.png",
+        "codes": "trap",
+        "overlay_align": "right"
+    },
+    { "name": "Equipment (Common)",    "type": "consumable", "img": "images/items/equipment_common.png",    "codes": "equipment_common",    "overlay_align": "right" },
+    { "name": "Equipment (Uncommon)",  "type": "consumable", "img": "images/items/equipment_uncommon.png",  "codes": "equipment_uncommon",  "overlay_align": "right" },
+    { "name": "Equipment (Rare)",      "type": "consumable", "img": "images/items/equipment_rare.png",      "codes": "equipment_rare",      "overlay_align": "right" },
+    { "name": "Equipment (Very Rare)", "type": "consumable", "img": "images/items/equipment_very_rare.png", "codes": "equipment_very_rare", "overlay_align": "right" },
+    {
+        "name": "Goal",
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
+        "initial_stage_idx": 0,
+        "stages": [
+            { "name": "Goal: Rescue Halsin",                   "img": "images/items/goal_halsin.png",   "codes": "goal,goal_halsin" },
+            { "name": "Goal: Kill Inquisitor Wwargaz",         "img": "images/items/goal_wwargaz.png",  "codes": "goal,goal_wwargaz" },
+            { "name": "Goal: Act 1 User-Defined Fights",       "img": "images/items/goal_act1udf.png",  "codes": "goal,goal_act1udf" },
+            { "name": "Goal: Kill Myrkul",                     "img": "images/items/goal_myrkul.png",   "codes": "goal,goal_myrkul" },
+            { "name": "Goal: Act 2 User-Defined Fights",       "img": "images/items/goal_act2udf.png",  "codes": "goal,goal_act2udf" }
+        ]
+    },
+    {
+        "name": "Killsanity",
+        "type": "toggle",
+        "img": "images/items/killsanity_on.png",
+        "disabled_img": "images/items/killsanity_off.png",
+        "codes": "killsanity",
+        "initial_active_state": true
+    },
+    {
+        "name": "Questsanity",
+        "type": "toggle",
+        "img": "images/items/questsanity_on.png",
+        "disabled_img": "images/items/questsanity_off.png",
+        "codes": "questsanity",
+        "initial_active_state": true
+    },
+    { "name": "Fight: Auntie Ethel",         "type": "toggle", "img": "images/items/udf_auntie_ethel.png",         "codes": "udf_auntie_ethel" },
+    { "name": "Fight: Spider Queen",         "type": "toggle", "img": "images/items/udf_spider_queen.png",         "codes": "udf_spider_queen" },
+    { "name": "Fight: Spectator",            "type": "toggle", "img": "images/items/udf_spectator.png",            "codes": "udf_spectator" },
+    { "name": "Fight: Bulette",              "type": "toggle", "img": "images/items/udf_bulette.png",              "codes": "udf_bulette" },
+    { "name": "Fight: Nere",                 "type": "toggle", "img": "images/items/udf_nere.png",                 "codes": "udf_nere" },
+    { "name": "Fight: Grym",                 "type": "toggle", "img": "images/items/udf_grym.png",                 "codes": "udf_grym" },
+    { "name": "Fight: Ch'r'ai W'wargaz",     "type": "toggle", "img": "images/items/udf_ch_r_ai_w_wargaz.png",     "codes": "udf_ch_r_ai_w_wargaz" },
+    { "name": "Fight: Shambling Mound",      "type": "toggle", "img": "images/items/udf_shambling_mound.png",      "codes": "udf_shambling_mound" },
+    { "name": "Fight: Cursed Kuo-Toa Chief", "type": "toggle", "img": "images/items/udf_cursed_kuo_toa_chief.png", "codes": "udf_cursed_kuo_toa_chief" },
+    { "name": "Fight: Malus Thorm",          "type": "toggle", "img": "images/items/udf_malus_thorm.png",          "codes": "udf_malus_thorm" },
+    { "name": "Fight: Gerringothe Thorm",    "type": "toggle", "img": "images/items/udf_gerringothe_thorm.png",    "codes": "udf_gerringothe_thorm" },
+    { "name": "Fight: Thisobald Thorm",      "type": "toggle", "img": "images/items/udf_thisobald_thorm.png",      "codes": "udf_thisobald_thorm" },
+    { "name": "Fight: Ch'r'ai Tska'an",      "type": "toggle", "img": "images/items/udf_ch_r_ai_tska_an.png",      "codes": "udf_ch_r_ai_tska_an" },
+    { "name": "Fight: Yurgir",               "type": "toggle", "img": "images/items/udf_yurgir.png",               "codes": "udf_yurgir" },
+    { "name": "Fight: Balthazar",            "type": "toggle", "img": "images/items/udf_balthazar.png",            "codes": "udf_balthazar" },
+    { "name": "Fight: Myrkul",               "type": "toggle", "img": "images/items/udf_myrkul.png",               "codes": "udf_myrkul" }
+]
