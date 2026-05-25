@@ -25,3 +25,9 @@ build/
 # overworld centroids -- derived from tools/projections.json and
 # tools/pin_overrides.json, not consumed by anything. Inspect-only.
 tools/_debug_*.json
+
+# Working directory for the texture renderers (render_region_map.py,
+# render_multi_zone_map.py, render_overworld.py, build_texture_index.py).
+# Holds the extracted Granite VT DDS cache (~25 GB), preview PNGs, and
+# debug intermediates. Re-derivable per MAINTAINER_GUIDE.md.
+tools/_texture_work/

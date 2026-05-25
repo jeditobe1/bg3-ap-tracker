@@ -1,0 +1,2382 @@
+{
+  "0096bdd7-2f6e-a2ad-c662-781d82306927": {
+    "gtex": "44be98386456362277fc6d6fdd34ec34",
+    "name": "BGO_Main_A_FloorTrigger_Fort_F2"
+  },
+  "009e1d5b-8add-6038-982a-3fd8a08273c8": {
+    "gtex": "664c303c4574c96163544063e96be321",
+    "name": "CTY_Main_A_FloorTrigger_FoundrySideB_B_F1_000"
+  },
+  "0147b1bd-b0f8-dd95-166c-b2d1f8cdb028": {
+    "gtex": "ee41bbb0397cb9374f206cc4a873f3ad",
+    "name": "BGO_Main_A_FloorTrigger_MerchantHouse0"
+  },
+  "020cf0e9-d395-01e7-f35f-16c2151bf0af": {
+    "gtex": "6682b23a245a0c8d8f16afe3fe4764a5",
+    "name": "END_Main_RegionTrigger_HighhallSewer"
+  },
+  "0248b93a-e4f8-a166-fac7-19002f181094": {
+    "gtex": "b45dc3d6635b6f2c34ffbe2ea6b66dd7",
+    "name": "SCL_Main_A_FloorTrigger_CursedForestHovelA_1"
+  },
+  "024adbec-78e4-eea1-93e1-37a7cb954463": {
+    "gtex": "bae3176ca62f6224b272e3d9eff8b968",
+    "name": "CTY_Main_A_FloorTrigger_Golbraith_f0"
+  },
+  "02e9c5a0-f06a-af38-e47b-2060eb1eb1fc": {
+    "gtex": "5168dd5ebcc9e9fa64e52268227dd7cc",
+    "name": "CTY_Main_A_FloorTrigger_GHA_F0"
+  },
+  "03a18f6f-7338-fa6b-2eab-6ee84c0d30ef": {
+    "gtex": "0a765fb07c6dc125251895d77b883638",
+    "name": "BGO_Main_A_RegionTrigger_WyrmRockPrison_000"
+  },
+  "04205abe-148f-2ddf-392d-8b016d187036": {
+    "gtex": "c68ef8156e0f3c3a67186355fe5aa9c7",
+    "name": "SCL_Main_A_FloorTrigger_Moonrise3"
+  },
+  "04682bde-1310-3160-55bc-f3c22d8b45b4": {
+    "gtex": "80c15bc064b176c290d990cdc5b65444",
+    "name": "BGO_Main_A_RegionTrigger_JungleOfChult"
+  },
+  "055ad269-b62a-a650-fa1b-a6792c69df72": {
+    "gtex": "a0bc9d996450a448ee04dce6c73b471f",
+    "name": "WLD_Main_A_RegionTrigger_Underdark"
+  },
+  "05826a40-344a-142d-afeb-aa6ddea92e0a": {
+    "gtex": "f3005557fe0d105852a5d98d06a8804d",
+    "name": "BGO_Main_A_FloorTrigger_TileBarn0"
+  },
+  "0583cb4f-202f-a891-abda-1078c78f963f": {
+    "gtex": "5aef3ed3aa11ea30c77dbc49e98a2b12",
+    "name": "SCL_Main_A_RegionTrigger_HospitalBasement"
+  },
+  "0587ef23-c563-81ba-1bf3-7936d0e8334a": {
+    "gtex": "558205c718d14d3efcdb22e180bcb43f",
+    "name": "SCL_Main_A_FloorTrigger_HospitalSurgeon_F0"
+  },
+  "062bb2db-84bb-4947-bb49-56585b8366ab": {
+    "gtex": "f74d34a5f33d00c560d34ecaf2b4c20a",
+    "name": "WLD_Main_A_RegionTrigger_Dungeon"
+  },
+  "06a2eb27-5c40-8d8e-5d78-0be5349081d0": {
+    "gtex": "cd38741a8c98fdcca943ac9fa9bf6e64",
+    "name": "WLD_Main_A_RegionTrigger_WLD_Main_001"
+  },
+  "07354b5d-a478-58ab-d0a7-b9ccd730f8e6": {
+    "gtex": "3b8795a63bf08732848e52d069630e0f",
+    "name": "BGO_Main_A_FloorTrigger_ForgeBalconyA_0"
+  },
+  "07ffdaaf-16bd-1d62-9ed5-55dc93008639": {
+    "gtex": "32dc634ef48f449337f911246a4633a1",
+    "name": "SCL_Main_A_FloorTrigger_GraveyardCryptA_0"
+  },
+  "088a6171-43b1-5285-a900-0cd0189a05bd": {
+    "gtex": "f4c0d5349444ef2e3b9c29ec519053a1",
+    "name": "END_Main_FloorTrigger_Ribs"
+  },
+  "08d18af8-5a9d-2c5a-9469-ac92b1757c8e": {
+    "gtex": "fef92b748cd55f22e79a4fe5e7c003ce",
+    "name": "CTY_Main_A_FloorTrigger_AmbushBuilding_F1"
+  },
+  "094ce1b2-3144-826c-52ea-6bdf36b48241": {
+    "gtex": "8c0f37a8da13a47a52a9a8ae41607db5",
+    "name": "CTY_Main_A_FloorTrigger_LodgeBasementA_F0"
+  },
+  "0953c2be-b004-32c7-82dd-c774a5f5b6bb": {
+    "gtex": "b79597fe5f31cd1e84f64ae610f9d3ac",
+    "name": "END_Main_FloorTrigger_MainGate_F0"
+  },
+  "09b367dd-13ac-d41c-c123-a8f15a57c6d5": {
+    "gtex": "2870ef159495b77892d63e4ecf2f61ed",
+    "name": "CTY_Main_A_FloorTrigger_UnderboardwalkA_F0_000"
+  },
+  "09ec628e-295d-e8ed-5fb1-c3589929632d": {
+    "gtex": "6e17987e6d9df4801e10e3d46bbded37",
+    "name": "BGO_Main_A_FloorTrigger_ChapelOuter_F0"
+  },
+  "0a957335-8c4c-b2eb-0cce-2c7b789ec849": {
+    "gtex": "d8488f40ba9e7cc31db8909b9746cff5",
+    "name": "INT_Main_A_FloorTrigger_SideBuildingB"
+  },
+  "0aac04e5-694a-564b-e92c-f26fc259cfda": {
+    "gtex": "a9073d696878d96dd9543973d4064959",
+    "name": "END_Main_RegionTrigger_AstralPlaneFull"
+  },
+  "0b4f4c42-921f-4749-738f-d60757257efd": {
+    "gtex": "ec6b0897986d3fab5424adcbdd707ef3",
+    "name": "CTY_Main_A_RegionTrigger_JaheiraBasement"
+  },
+  "0b626862-ebc6-ed09-7b49-59657dd2eb19": {
+    "gtex": "3c5e5ca7681fe63e3848e57348ad72cc",
+    "name": "CTY_Main_A_RegionTrigger_Catacomb_1_Combat"
+  },
+  "0b758a58-6747-2841-ec49-c41875f8e982": {
+    "gtex": "8cd5f70439a003c17854a51d61bea52f",
+    "name": "CTY_Main_A_FloorTrigger_SeaTower_F2"
+  },
+  "0c00ee49-6fd6-6294-f393-a0d7eb6a2140": {
+    "gtex": "6de05848ac8df6e84e72ca39904b99d0",
+    "name": "END_Main_FloorTrigger_FarCorner_F1"
+  },
+  "0c955c65-1fce-ace8-95ce-be01ec43c782": {
+    "gtex": "8295f7d7da442f24971e70d1f0f2738c",
+    "name": "BGO_Main_A_FloorTrigger_GurCampAwning0"
+  },
+  "0d87aa3b-823b-9bca-27e1-c8228799ace7": {
+    "gtex": "ffed0e5716410670a092379ff5ff6939",
+    "name": "SCL_Main_A_FloorTrigger_Moonrise1"
+  },
+  "0dda72eb-73a1-c6b7-c7f9-32632c79f7cc": {
+    "gtex": "5f8374a8cf72556bd99418d2df101278",
+    "name": "BGO_Main_A_FloorTrigger_Chapel1"
+  },
+  "0de36fc1-dc07-777c-5268-31e6c6952a43": {
+    "gtex": "0586d39c8f795e6527a75410a0a99443",
+    "name": "WLD_Main_A_FloorTrigger_TunnelB_F0"
+  },
+  "0def32de-6446-24e9-f93a-47b926770ae2": {
+    "gtex": "85bbb5ef00f5c86b757ca602b0ade7e4",
+    "name": "INT_Main_A_RegionTrigger_Intermezzo"
+  },
+  "0ffe7aa3-94ca-1871-cd58-0196785e0286": {
+    "gtex": "c1d0d4331817ca0e2198fe126bc846ed",
+    "name": "CTY_Main_A_FloorTrigger_BarracksSideShed"
+  },
+  "10500962-4936-9c57-0c70-6f512951fbab": {
+    "gtex": "11e8f0e4c576b9ad806c0a1d550e5f55",
+    "name": "WLD_Main_A_FloorTrigger_Underdark_F2"
+  },
+  "121c4a89-0310-0aeb-8165-8f112e6348d1": {
+    "gtex": "ae642b71a4bea5102697f10baaee8111",
+    "name": "WLD_Main_A_FloorTrigger_RuinedBuildingTopA_F1"
+  },
+  "125e9b92-4036-1846-96f8-1c108a1f866a": {
+    "gtex": "09611e2c616b9bb3004f502ba7755af3",
+    "name": "CRE_Main_A_FloorTrigger_GC_LeftStack_F3"
+  },
+  "12bd0fde-cddc-39fb-01e8-fbe51c246adc": {
+    "gtex": "8f39c0678a961406d91b7d3f8c4327eb",
+    "name": "WLD_Main_A_FloorTrigger_CrashsiteB_F0"
+  },
+  "134f9d96-e991-98c1-ea9d-bf6ad2165931": {
+    "gtex": "01152a517b8fde802af11b4420a94f9d",
+    "name": "CTY_Main_A_FloorTrigger_WQH_F0_Upper"
+  },
+  "1364db58-ea37-d7b3-56eb-f295cae88b44": {
+    "gtex": "38fb5d969a391a3a819971b5709e6024",
+    "name": "BGO_Main_A_FloorTrigger_ForgeOverhangA_0"
+  },
+  "13af40f8-4765-2be3-4cba-72a233652167": {
+    "gtex": "1ee573673dd7a4f6ce200be5a7e32bee",
+    "name": "CTY_Main_A_FloorTrigger_DockWalkway_B"
+  },
+  "13b9bef0-4737-c909-4bef-37de3e484325": {
+    "gtex": "4540fe2beae207cad728ec860de98e28",
+    "name": "BGO_Main_A_RegionTrigger_BGO_Wyrmsway_C"
+  },
+  "13c2223f-1ec7-5eda-41c5-4abf19dd47da": {
+    "gtex": "d29b79700a4df3443f420c2daa60ad4a",
+    "name": "CRE_Main_A_FloorTrigger_GC_Balcony_F0"
+  },
+  "14324a30-4a96-20b9-496c-491fca31c496": {
+    "gtex": "982f4187a672a42407a64dcc471bffa6",
+    "name": "SCL_Main_A_FloorTrigger_MasonShedA0_000"
+  },
+  "1443d7b7-f117-2981-b1a7-aca1cb853523": {
+    "gtex": "d58fcd95a21631b7fa70f2274925370b",
+    "name": "WLD_Main_A_FloorTrigger_OwlbearCave_0"
+  },
+  "15e952f8-44bd-b35c-cb31-e2d3df9054b9": {
+    "gtex": "c5f124270b7525a3eb1852c236bd387b",
+    "name": "CTY_Main_A_FloorTrigger_FloraHouse_F1"
+  },
+  "160ada44-c9ef-bb94-bcd9-2212a6418684": {
+    "gtex": "432b1f253bc087673dc81b82359d479a",
+    "name": "WLD_Main_A_FloorTrigger_Tollhouse_F1"
+  },
+  "17aac192-e70d-bdb0-7f72-fc683676c236": {
+    "gtex": "8884b9b72227cd2124cad82f720820cc",
+    "name": "CTY_Main_A_FloorTrigger_FigaroInterior_F1"
+  },
+  "1845f609-1597-9d9b-ef30-c9de496add22": {
+    "gtex": "38050b9527767bab252ec878afb5350b",
+    "name": "CTY_Main_A_FloorTrigger_Lodge_F1"
+  },
+  "193c9b2c-a31d-88e5-8072-0840a4a55591": {
+    "gtex": "3827e3cb3e593abb4b210c8ec6f0cb1d",
+    "name": "CRE_Main_A_FloorTrigger_GC_Monastary_F1"
+  },
+  "196bec02-ec9b-9448-697f-886c5971f702": {
+    "gtex": "b21a33de3a1513e07e770f0dc69d1d1f",
+    "name": "CTY_Main_A_FloorTrigger_GortashHouse_f0"
+  },
+  "1a179d57-005e-6caf-61c5-6c920d04a73c": {
+    "gtex": "3a5eb0c89a7d106e8084a7c5da922f0f",
+    "name": "CTY_Main_A_FloorTrigger_BellTower_f2"
+  },
+  "1a648ad6-3999-4b0a-0769-322ea8b6193b": {
+    "gtex": "4fec01a9756e4db6ccb1168706fc0632",
+    "name": "INT_Main_A_FloorTrigger_VillageBuildingA"
+  },
+  "1a745967-db55-554b-7294-e8f9d0e0b815": {
+    "gtex": "e9cdc091b99ebef332ff73a5ea6a334b",
+    "name": "CTY_Main_A_FloorTrigger_GHB_F0"
+  },
+  "1b09cc25-ec5e-87a6-4f2e-7f94fa94cc8a": {
+    "gtex": "006895a8318e150c56ea5ca9988efef3",
+    "name": "WLD_Main_A_FloorTrigger_CaravanSeraiC_F0"
+  },
+  "1b0feb05-a317-2840-ac70-4260d691d0d9": {
+    "gtex": "70fb13aa0452547b9cc6ec2e2f3cf2b5",
+    "name": "BGO_Main_A_RegionTrigger_BlacksmithCellar"
+  },
+  "1b443ac2-a069-ed86-2c59-5dc82c4bfc74": {
+    "gtex": "a685634017cf5ce680da27d8e70b7e90",
+    "name": "SCL_Main_A_FloorTrigger_MasonShedB0"
+  },
+  "1b800a36-f1e8-438e-940d-0dad1eeeaafc": {
+    "gtex": "48c880213472c097a14aa6483134a3da",
+    "name": "CTY_Main_A_FloorTrigger_ArchwayUnderWall_B"
+  },
+  "1b95b3d6-6a44-e16b-bd66-77fd768b700d": {
+    "gtex": "9a378080ebf856eaa2f1ba555c2fcbff",
+    "name": "CTY_Main_A_FloorTrigger_SerialKiller_F1"
+  },
+  "1c12989f-5e54-5331-fe43-6470c0a2fb22": {
+    "gtex": "2bd587e918aca0643062511486b79bbe",
+    "name": "SCL_Main_A_RegionTrigger_SCL_MindflayerColony"
+  },
+  "1c45b484-79d7-ce14-5fc1-00c40ed24b28": {
+    "gtex": "bfab2351f20f11ee4c66247273019dde",
+    "name": "WLD_Main_A_FloorTrigger_GoblinCamp_F1"
+  },
+  "1cdb1b71-9123-ae7d-1105-c39bcd1a46f2": {
+    "gtex": "2b0d6ef2a954b2d277ef41f6bae78923",
+    "name": "CTY_Main_A_RegionTrigger"
+  },
+  "1d38f1e1-65e3-4c5d-f75a-bcbb572b381f": {
+    "gtex": "32413c57c6e282192a70690a45bcce58",
+    "name": "SCL_Main_A_RegionTrigger_Foundation"
+  },
+  "1d4d08d1-7dcb-b044-41b2-3e4fd413d5e6": {
+    "gtex": "85e5b353a4a0f24d771f0075b3bea2b1",
+    "name": "WLD_Main_A_RegionTrigger__Pit_CIN_A"
+  },
+  "1e5a4dcd-fba4-8c79-80c6-b34fcf359192": {
+    "gtex": "7bf9e47166eec1c59c9b01feff8f274f",
+    "name": "CTY_Main_A_FloorTrigger_FakeSendai_F0"
+  },
+  "1e6772c6-202c-ce8d-b154-68ff97880aac": {
+    "gtex": "37269f8fbce7c5959c05231c8230fc57",
+    "name": "SCL_Main_A_FloorTrigger_Arm"
+  },
+  "1eb6fb73-f4d1-4b29-0f9d-0d14cb759277": {
+    "gtex": "fe854eca7e9493c84e3a789af3f6c7f1",
+    "name": "BGO_Main_A_FloorTrigger_Chapel2"
+  },
+  "1f70ae6a-b5ce-4888-4103-1bb40c30e3e0": {
+    "gtex": "414537f4e6bf1b8cf8ac60da925d7629",
+    "name": "END_Main_FloorTrigger_MainGate_F1"
+  },
+  "1f778778-7d68-b621-3f66-5f122265611f": {
+    "gtex": "7a7ed5bf3345c8ea037571087c0817ee",
+    "name": "BGO_Main_A_FloorTrigger_TentF_0"
+  },
+  "1fc196fd-1c95-c3cd-5d93-5ceacee30e0a": {
+    "gtex": "3948747e2ca7b1cbe0944c7a7cbfa262",
+    "name": "END_Main_FloorTrigger_CupolaBridge2_F0"
+  },
+  "1fc9c7ce-aec4-881f-7702-3eb5bd6e2a38": {
+    "gtex": "0cc8d9b1dface839ed69ebe5e8ea58f1",
+    "name": "CTY_Main_A_FloorTrigger_CazadorUnderchamber_F1"
+  },
+  "1fe31b47-8ca9-4627-be13-117c7c80a750": {
+    "gtex": "d6ff285337a8174856aade37f83c3ea3",
+    "name": "WLD_Main_A_RegionTrigger_VFX_Pocket_Dimension"
+  },
+  "208aee8f-c82c-e1ba-bdfa-b0a57ded0d10": {
+    "gtex": "9db25fa232dc1a05543aa0bc12f6808b",
+    "name": "CTY_Main_A_FloorTrigger_SingingLute_f2"
+  },
+  "210f80fe-446d-2ab7-1a79-91cfd84c12c0": {
+    "gtex": "78fa732bb190555f624f1b5dfd821553",
+    "name": "CTY_Main_A_FloorTrigger_Elfsong_F0"
+  },
+  "22170db1-f085-c3d4-660a-d4bb9f710847": {
+    "gtex": "5da5411e2ff0fe1d843b33aaecb64002",
+    "name": "SCL_Main_A_FloorTrigger_Shar_F1"
+  },
+  "2252fd4e-aaec-1bfd-f7ec-3924902a816c": {
+    "gtex": "5ffaaf662db10914af12b033127142c7",
+    "name": "CTY_Main_A_FloorTrigger_BellTower_f4"
+  },
+  "2294cfaa-7e27-0865-fbfa-716831eb4823": {
+    "gtex": "a4b68fc3d56df5caf563e7f3c9472d69",
+    "name": "CTY_Main_A_FloorTrigger_UnderboardwalkA_F0_001"
+  },
+  "22dcf3fe-baa8-d051-cd5c-1c392c522434": {
+    "gtex": "448b252cdb048764c9033bc679022aff",
+    "name": "CTY_Main_A_RegionTrigger_LowerCity"
+  },
+  "2329e967-b03e-53ea-59d5-9389c913f88b": {
+    "gtex": "486814db863f74ef2950d2339e06a35c",
+    "name": "SCL_Main_A_FloorTrigger_Brewery1_Crosswalk"
+  },
+  "23407f36-a0ff-ced6-ac57-9efd4894cbe7": {
+    "gtex": "0cb70b72f4205b4e4084a6a85c9a784d",
+    "name": "WLD_Main_A_RegionTrigger_HagLairD"
+  },
+  "2356ca9f-df3f-3043-724f-72b49869bc1d": {
+    "gtex": "7fa2f509854e52e7fab758f064533808",
+    "name": "INT_Main_A_FloorTrigger_SmallShedA"
+  },
+  "23986e48-3288-5c92-4760-4c76699ec62d": {
+    "gtex": "e43bcabcd6425bf9b0988d714c032984",
+    "name": "SCL_Main_A_FloorTrigger_Moonrise0"
+  },
+  "23993747-58c6-0fcf-7162-be3701692b60": {
+    "gtex": "7b0e271fea3420f899980f21ef1d345d",
+    "name": "CTY_Main_A_RegionTrigger_CazadorPalace"
+  },
+  "23c371ba-d8e8-d877-a129-168d7bfe0259": {
+    "gtex": "0cd9300ae6e9ac9ddc133a475ee0301d",
+    "name": "BGO_Main_A_FloorTrigger_TentE_0"
+  },
+  "24b0bec0-e517-c5de-fdfc-23a116f7be7e": {
+    "gtex": "bff660b06e624e64adb361f1d2c44c71",
+    "name": "WLD_Main_A_RegionTrigger_VillageSubs_Basement"
+  },
+  "254e5571-7faf-8054-5cfa-66fb6a6db8c8": {
+    "gtex": "f60b36c938ff8825f84f97a93aba86fc",
+    "name": "WLD_Main_A_FloorTrigger_CaravanSeraiA_F1"
+  },
+  "25c77706-2c9d-e630-7d6a-864e33b5e064": {
+    "gtex": "f3599608512729239aff317e3ed524e6",
+    "name": "BGO_Main_A_FloorTrigger_ForgeBalconyA_1"
+  },
+  "26182a44-6e95-fa39-0a74-6bd910db8f08": {
+    "gtex": "047db7ed3b942911f0c7f422e6b2d7bf",
+    "name": "SCL_Main_A_FloorTrigger_TaxVinebridge0"
+  },
+  "269d498f-1637-8ec9-b7e7-54915cf77679": {
+    "gtex": "bd7b4eb8a73ff06d45f95fdda936c804",
+    "name": "BGO_Main_A_FloorTrigger_BridgeTopA__2"
+  },
+  "2728ffb1-d014-ad13-c707-cc2e5dbb07cf": {
+    "gtex": "7f2e2ab1a76463fb35ab270956243d67",
+    "name": "END_Main_FloorTrigger_GateTowerB_F1"
+  },
+  "277bf2cc-fb51-cc03-99f3-cae4fe2ce040": {
+    "gtex": "e98b33c8c7500e4e1ab57597e65ce3a7",
+    "name": "CTY_Main_A_FloorTrigger_Lodge_F2"
+  },
+  "27c64460-5304-17b3-007b-09da09d352e7": {
+    "gtex": "41672dd2ea7366050eeb75b650fd0748",
+    "name": "WLD_Main_A_RegionTrigger_CMP_CaveGranite_A"
+  },
+  "27c79855-7c0e-079b-4458-28e5a795877b": {
+    "gtex": "6d412b23cc5742753d688bd0b45b1f01",
+    "name": "SCL_Main_A_FloorTrigger_HospitalHall_F0"
+  },
+  "281343d5-b791-00df-4dcc-b2b48ac81e19": {
+    "gtex": "be5659af8daacd65ba82f072b0b61eb4",
+    "name": "CTY_Main_A_RegionTrigger_BonecloakApothecaryBasement"
+  },
+  "2863ad53-5cc7-9f95-a72d-19fa14df56f7": {
+    "gtex": "bcee66dce259e2eaaba9cda45a8e4fea",
+    "name": "WLD_Main_A_FloorTrigger_GoblinCampPrison_F1"
+  },
+  "28c21f0e-6efb-fa86-91b9-1cdcc2ae3bb1": {
+    "gtex": "958e35557da4cf69580b2447e0977e2f",
+    "name": "END_Main_FloorTrigger_GateTowerA_F1"
+  },
+  "29404458-e4af-f5f1-10b1-86aa2aed5088": {
+    "gtex": "f8b7cdfd3dcf21ceaa8a210dbef48380",
+    "name": "WLD_Main_A_FloorTrigger_CaravanSeraiA_F0"
+  },
+  "2a69fab1-a5bf-7df3-5d62-f1f484724bf0": {
+    "gtex": "48dd1fc88f5185511a5ba010eb3efe1c",
+    "name": "END_Main_FloorTrigger_Skull"
+  },
+  "2aa360e3-ca70-fe1c-6fb0-61e4abba5904": {
+    "gtex": "fc14a38d7a64652c997e53d547510540",
+    "name": "WLD_Main_A_RegionTrigger_DruidSubsA"
+  },
+  "2b9ce86b-4b85-8394-2a56-50adce1399ad": {
+    "gtex": "897d6f3068f9b8024a886619e770171c",
+    "name": "END_Main_RegionTrigger_HighHall"
+  },
+  "2ba766b8-3527-f192-c3e8-68a9047da70d": {
+    "gtex": "c2586e1a04b0f291a16f17a5fc827d5b",
+    "name": "SCL_Main_A_FloorTrigger_UnderMoonriseBridge0"
+  },
+  "2cbec45f-4e6b-5702-5759-c09c29296645": {
+    "gtex": "6f67f5f774e97c2f9e184f12f7742a78",
+    "name": "END_Main_FloorTrigger_CupolaBridge_F1"
+  },
+  "2ce31acd-0390-f650-c05d-032a17e30047": {
+    "gtex": "2429ea164591bfbfda2642113ad51c7b",
+    "name": "CTY_Main_A_RegionTrigger_AstralPlaneFull"
+  },
+  "2e0bd005-01b1-d2c0-8d71-02b2f39b59c1": {
+    "gtex": "d916db375a70abf98d6b28e55442da1a",
+    "name": "WLD_Main_A_FloorTrigger_Bridge_F0"
+  },
+  "2fb533ac-fc6d-239d-3b5e-e941c46d5a2e": {
+    "gtex": "90e2191014f198794d27a9993551a99a",
+    "name": "CTY_Main_A_FloorTrigger_TinyHouse_F0"
+  },
+  "2fd1bebe-e7f8-6d43-caef-158232982be4": {
+    "gtex": "847ea8bfe9db96624b79c0fa48ad96aa",
+    "name": "BGO_Main_A_FloorTrigger_TentH_0"
+  },
+  "3064d4a6-28a2-489d-add4-a9e7173e874a": {
+    "gtex": "b30967cef49208daf22a82e4d6da898d",
+    "name": "CTY_Main_A_FloorTrigger_Jeweler_f1"
+  },
+  "30f54cbe-e7ce-393b-2eeb-e7ccf273bebe": {
+    "gtex": "73a00095729867610419cdc650e7a894",
+    "name": "SCL_Main_A_FloorTrigger_CursedForestHovelA_0"
+  },
+  "3103680a-2533-78cd-4210-ee6f1baad45b": {
+    "gtex": "3dd8594d16bc3afdaadd1783291af658",
+    "name": "BGO_Main_A_FloorTrigger_LogA_F0"
+  },
+  "3158cd19-a7a3-52c4-a9ff-d882d3e07a0b": {
+    "gtex": "05127d4abe931023e364c6f87d6e8d7d",
+    "name": "CTY_Main_A_FloorTrigger_BloodMerchantLab"
+  },
+  "3167dae5-4386-a507-241b-a941d44f8e38": {
+    "gtex": "c744b4555eac7d33e9a14d76777ccaeb",
+    "name": "CTY_Main_A_FloorTrigger_SeaTower_F1"
+  },
+  "31851c1b-040a-dd48-f4a9-9adf220eb1ba": {
+    "gtex": "d7850d988573aef7473bf09b5c9c36bc",
+    "name": "CTY_Main_A_RegionTrigger_Room4"
+  },
+  "319c77e4-abac-d61b-cb64-af99490fd33a": {
+    "gtex": "2f9f1e6670a34f070810589f82cf3ca0",
+    "name": "CTY_Main_A_FloorTrigger_SundriesExt_F0"
+  },
+  "330fe97b-4cd1-2afd-bf9f-6d754b83e77c": {
+    "gtex": "75c0ca31f0a8ffc04a20acc95265c4dc",
+    "name": "SCL_Main_A_FloorTrigger_Moonrise2"
+  },
+  "33877686-a2da-c55f-a2a5-8b9a1e52091a": {
+    "gtex": "c0081bf24653453e25407306fd6c869b",
+    "name": "CTY_Main_A_FloorTrigger_DebrisHouse"
+  },
+  "33954f04-4d58-4e07-446c-93cbb0331dcf": {
+    "gtex": "9748f1f38d93f4852e54c9f70974ec2d",
+    "name": "SCL_Main_A_FloorTrigger_Tax1"
+  },
+  "34069f5c-4d9a-b761-2bb3-27e9242f0e6d": {
+    "gtex": "18e856e07f1b14102d2bd35a7896a30c",
+    "name": "WLD_Main_A_FloorTrigger_Underdark_F1"
+  },
+  "348ccb15-7b81-69d9-34c5-4548d13627c9": {
+    "gtex": "b09f6dd8505f3174e044a655ecd7601e",
+    "name": "CTY_Main_A_RegionTrigger_Room2"
+  },
+  "34991e20-015d-7b70-95e4-7552c6f510b3": {
+    "gtex": "655402ad01434bf3a2fbaaf36a0ca581",
+    "name": "WLD_Main_A_FloorTrigger_Apothercary2_F0"
+  },
+  "34a804b6-b5d9-9843-b753-663abdd0c73d": {
+    "gtex": "ffdd945b7d44133f4ae128cbc8d58afd",
+    "name": "CTY_Main_A_FloorTrigger_PrisonCells_F0"
+  },
+  "34c26483-088c-364a-f107-6449cf365451": {
+    "gtex": "2eb490670d2cc5950c6f57ab9a0ba7c7",
+    "name": "CRE_Main_A_FloorTrigger_GC_PointyFloor_F_-3"
+  },
+  "34ec4949-ef66-5b45-9f44-b16c01fede67": {
+    "gtex": "b43d55f1080f31b08713a22420a51143",
+    "name": "SCL_Main_A_FloorTrigger_Tax0_overhang_000"
+  },
+  "3502034d-31ca-44e9-3e9c-ef896a7cc7df": {
+    "gtex": "b22111f442a99980b73cd338071085c6",
+    "name": "BGO_Main_A_FloorTrigger_BGOStartTowerA_0"
+  },
+  "35592822-6eab-022e-6266-00705b634373": {
+    "gtex": "94c003f5f0b548110ce1e8e5035d78b2",
+    "name": "SCL_Main_A_FloorTrigger_SharB_F3"
+  },
+  "37126934-e791-3a4c-dbc5-cbb201ea49d0": {
+    "gtex": "4751965d064444fd083622a1cce28577",
+    "name": "CTY_Main_A_FloorTrigger_FoundryCrosswalk_F1_000"
+  },
+  "38e3da2c-6441-ed19-ac6d-7e8db90df6d4": {
+    "gtex": "329f0462206d1b4426c665888e9dab20",
+    "name": "CTY_Main_A_RegionTrigger_BGH_CountingHouseVaultC"
+  },
+  "38ef2c22-0f9c-f5eb-07f0-c3c2cd464454": {
+    "gtex": "8dde03fd1e66e91e3bd9cefacf15cc88",
+    "name": "CTY_Main_A_FloorTrigger_Raz_F0"
+  },
+  "3924452f-ffcb-47d4-5f79-99d5ebe5af90": {
+    "gtex": "a37e32edd4fa38b10627e35d4a45135e",
+    "name": "CTY_Main_A_FloorTrigger_Elfsong_F1"
+  },
+  "39a39b03-aaf6-7822-e7b8-bb1a0b3a85f9": {
+    "gtex": "6db6cf1ce38ceb0f649d7ce1917ac911",
+    "name": "BGO_Main_A_FloorTrigger_Barn0"
+  },
+  "39bcdda7-4dd0-a987-1553-d947b96ce6e5": {
+    "gtex": "bb1b2f0deabc194e9f84ff978dee53c1",
+    "name": "SCL_Main_A_FloorTrigger_ArenaA"
+  },
+  "3a7533b1-4ac2-bd4b-845d-46c790c7a705": {
+    "gtex": "753eb6bb6dcaf24bc932bdc0d754d048",
+    "name": "SCL_Main_A_FloorTrigger_AcidPit0"
+  },
+  "3b249952-1dae-cc4c-2db8-53ed1f9f9b42": {
+    "gtex": "32797f1447ff14a18554109d5604605a",
+    "name": "CTY_Main_A_FloorTrigger_CazadorGuardTowerUpper_F0"
+  },
+  "3bb97a68-4e7e-8780-522b-dfd0f60acb12": {
+    "gtex": "8986305bcb07eafc07ecb90aa1735566",
+    "name": "EPI_Main_A_RegionTrigger_EPI_Camp"
+  },
+  "3cd384f8-b132-6a09-3352-fbccf9ea2b81": {
+    "gtex": "e48715bf8e9c7aa5ec077b07cc64fcb7",
+    "name": "SCL_Main_A_FloorTrigger_Tax0_overhang"
+  },
+  "3d2857f0-28bf-129a-d3a1-1e7f076d965c": {
+    "gtex": "c866b56f1febbcab68160d5a19db8cbb",
+    "name": "CTY_Main_A_FloorTrigger_Raz_F1"
+  },
+  "3d9e9c45-c005-fd8f-a3f5-296b50fa0f3c": {
+    "gtex": "bfcd2d0eb0d2a359037d3b4a73d4c49b",
+    "name": "SCL_Main_A_FloorTrigger_HavenCellar1"
+  },
+  "3dc7bc12-f86d-ec0c-80ea-8b8fe78e2a1f": {
+    "gtex": "69de91390d48c3e786151dd3052511b5",
+    "name": "BGO_Main_A_FloorTrigger_KidnapperCave0"
+  },
+  "3eba89f7-bcc6-95d4-9993-38c876af65c5": {
+    "gtex": "7c6d6e810960863db1948bf9c928d6bb",
+    "name": "CTY_Main_A_FloorTrigger_Artist_F1"
+  },
+  "3ec56d1e-09e5-0ab5-1c79-e108ff7097f5": {
+    "gtex": "aa95cec5a084c6a5174327bca0528f08",
+    "name": "CTY_Main_A_FloorTrigger_Sewer_ValvePuzzle"
+  },
+  "3f1d5ac0-29df-2f0d-1892-e20711a6665f": {
+    "gtex": "1e5e29049456c1b713301161100a3014",
+    "name": "BGO_Main_A_RegionTrigger_BGO_MerchantHouseBasement"
+  },
+  "3f3e7b88-1843-fd1a-2925-bfeb042f6fe2": {
+    "gtex": "9c550e4f4427ce9b35baa96edf3d3478",
+    "name": "CTY_Main_A_FloorTrigger_PortHut"
+  },
+  "3f54ac7a-c430-380c-a251-0a70ac38e940": {
+    "gtex": "31c2572a170bb4d6edb9d7a1a2c48ebd",
+    "name": "BGO_Main_A_FloorTrigger_BridgeApproach__-3"
+  },
+  "3f89bc32-e64f-9054-2ebe-7baf51a0e90d": {
+    "gtex": "dcd314efa7ae659fb035051f6b36837f",
+    "name": "WLD_Main_A_FloorTrigger_Underdark_F4"
+  },
+  "3f9c2904-2d9f-e7cc-5375-11e1033ad639": {
+    "gtex": "9d5ecc294b948e2b1d05dd3a7c7d56f8",
+    "name": "CTY_Main_A_RegionTrigger_Catacomb_2_Noble"
+  },
+  "3feac6cb-eaa8-6c12-a6c5-208cc32ee5fc": {
+    "gtex": "55d20b093deb35b4581438acb30d5ee3",
+    "name": "END_Main_RegionTrigger_ENDRamazithTower"
+  },
+  "400a7d3e-fcf3-95c4-1054-dc508e4ef5d8": {
+    "gtex": "88a3cd07ab05cc4ed9dd35d9397a9874",
+    "name": "CTY_Main_A_FloorTrigger_Raz_F2b"
+  },
+  "409578e9-6ee1-2a2c-7f4e-093ab73966ef": {
+    "gtex": "65fd1dea07e24bbf51d882b902a0b5be",
+    "name": "CTY_Main_A_RegionTrigger_CTY_GolbraithBasementA"
+  },
+  "424d537c-eb19-c9e7-8b59-798fb109579b": {
+    "gtex": "c69582ceb8c144ea83187b5bd14f7f4a",
+    "name": "WLD_Main_A_RegionTrigger_WLDGoblinCampD"
+  },
+  "42679ca9-766a-08ed-3438-b852f5d52e16": {
+    "gtex": "c51a965ddd98dbd09c5764354e2aeea2",
+    "name": "CTY_Main_A_FloorTrigger_Artist_F0"
+  },
+  "446da5cb-11c3-98ad-a99c-4966485609c6": {
+    "gtex": "62fe43182e30effa8e0a2ad3b7ef3d00",
+    "name": "SCL_Main_A_RegionTrigger_SCL_Campfire"
+  },
+  "4470968e-efca-95dc-230a-f782fa702afb": {
+    "gtex": "5356b60e790ca1a03bd71979e011b421",
+    "name": "CTY_Main_A_FloorTrigger_CountingHouse_F3_000"
+  },
+  "448caa9c-9019-53ae-25de-c269368efc84": {
+    "gtex": "649783d3414f791d5c3e32a1d9233fc7",
+    "name": "CTY_Main_A_FloorTrigger_CundaHollow_F0"
+  },
+  "448ed696-61cb-f2aa-e705-bd4d3c74b7f1": {
+    "gtex": "8c0710ded2acd79b73aaf3357d75dd5a",
+    "name": "WLD_Main_A_FloorTrigger_HagSecretLair"
+  },
+  "4575481f-cb67-e37c-274d-efc3f586c17c": {
+    "gtex": "d6e78174c09f07d0e7c5b6339647a095",
+    "name": "SCL_Main_A_FloorTrigger_Skull"
+  },
+  "46bf57f5-a544-e55a-4037-11ba99fc21cf": {
+    "gtex": "f24c374763b5dd6e4c80ea08901069b0",
+    "name": "CRE_Main_A_FloorTrigger_GC_Monastary_F3"
+  },
+  "46f2f095-239a-a26b-95a7-bcf91463b302": {
+    "gtex": "244eae6ccce863ac300e5900f9f03a18",
+    "name": "CTY_Main_A_FloorTrigger_WQH_F0"
+  },
+  "48109c28-c7bf-5910-f92f-91334604fb76": {
+    "gtex": "1a169ab70d2577c59542987484e2b619",
+    "name": "CTY_Main_A_FloorTrigger_AmruthHouse_F0"
+  },
+  "48caa910-c74f-f5a5-a826-f73f6dca9a70": {
+    "gtex": "d4a16aa5649e4ebdb6b65a4c757c2e12",
+    "name": "CTY_Main_A_FloorTrigger_Foundry_F0_000"
+  },
+  "49908118-f729-25e6-3e7a-491d6016214d": {
+    "gtex": "9cf6cf6907565975a6b3ab7139a2fe56",
+    "name": "WLD_Main_A_S_DEN_DruidsLairRegion"
+  },
+  "49a82f9d-086e-05d9-9f57-75dae8fad63a": {
+    "gtex": "4b3fea47d55ebe749f47afc75e5458e5",
+    "name": "SCL_Main_A_FloorTrigger_HavenStable_1"
+  },
+  "4a2aa81a-0171-3d44-dc53-465598f64595": {
+    "gtex": "7b6c7050a6160f662fa85352c2f829ed",
+    "name": "SCL_Main_A_RegionTrigger_KethericEntrance"
+  },
+  "4b631b5e-cf35-4c18-7aaa-34bdd7cac3b7": {
+    "gtex": "13064779749ff3f8a8a2e4686a39f9da",
+    "name": "SCL_Main_A_FloorTrigger_Shar_F0"
+  },
+  "4beb9c59-3f29-e448-4de2-94ecb3506f5e": {
+    "gtex": "3a3ba7a357d3f2b16cff2c7596ad7e7a",
+    "name": "CTY_Main_A_FloorTrigger_Raz_F2a"
+  },
+  "4c315bbb-4d95-9ed9-c94b-041f88cdf5c4": {
+    "gtex": "de07dd04ab4f837a47ece86dc393b014",
+    "name": "CTY_Main_A_FloorTrigger_DockWalkway_A"
+  },
+  "4c97350a-afcc-fb6e-92e0-d8686f4c428b": {
+    "gtex": "3368d26b99ec9fea308b7ac2e5f6386b",
+    "name": "BGO_Main_A_FloorTrigger_BridgeTopB__2"
+  },
+  "4cf7840f-39a6-8767-e70d-9ed824e7c1d0": {
+    "gtex": "9782d9fd17a236f0e1ea53f2e7e4103c",
+    "name": "CTY_Main_A_RegionTrigger_CMP_CTY_Slums"
+  },
+  "4d8be765-9623-12d3-6e06-530d0aa20aa4": {
+    "gtex": "6660fad3ea331dd6972fe9277b80a2af",
+    "name": "CTY_Main_A_FloorTrigger_Balcony_F2"
+  },
+  "4e92f874-0d66-9b6b-183e-353961b202ba": {
+    "gtex": "825b5c7d59f0eae73698f7bd39ddc81d",
+    "name": "CTY_Main_A_FloorTrigger_CazadorAttic_F0"
+  },
+  "4f1211e3-f592-ed29-c10e-7c12729ac8a3": {
+    "gtex": "eeb77d4636d85d9ebc57020698c7e6f4",
+    "name": "WLD_Main_A_FloorTrigger_KethericCity_F0"
+  },
+  "4f4cb134-3f64-ff50-602c-151cecaaaf3e": {
+    "gtex": "d6cd24e9b772881fc6f4b200388d6937",
+    "name": "SCL_Main_A_FloorTrigger_Brewery2_Crosswalk"
+  },
+  "4fd9cdc6-b997-6ce9-69f1-a8e03e706036": {
+    "gtex": "ef0dff937bc4f5e87ca57fb75c73c4e9",
+    "name": "SCL_Main_A_S_RegionTrigger_HavenBeachSideCamp"
+  },
+  "504f67af-244b-5940-f9cb-afc5d1289102": {
+    "gtex": "c0d2cf5927f4571c4e8267c036febf5f",
+    "name": "CTY_Main_A_FloorTrigger_CountingHouse_F0_000"
+  },
+  "50e6d4e9-d0ad-fa74-9743-2fc6da361dcc": {
+    "gtex": "3d84da3bf691d48289a09bb44383778c",
+    "name": "CTY_Main_A_FloorTrigger_CazadorGuardTower_F2"
+  },
+  "51099ae9-ead9-c75c-631e-d739afa1ab63": {
+    "gtex": "7c8e8a15ff01382575df8cc9ec73ff49",
+    "name": "WLD_Main_A_FloorTrigger_KethericCity_F2"
+  },
+  "516f84a7-e9c2-f184-fab0-a81dc66da24e": {
+    "gtex": "f5e65fa0e218168b3215cb75af27e57f",
+    "name": "WLD_Main_A_RegionTrigger_DruidSubsB"
+  },
+  "517ac8ce-7169-95a5-6ba5-2d7b9ed0ba0b": {
+    "gtex": "e1be02212d64337789ee688d27f2ae87",
+    "name": "WLD_Main_A_FloorTrigger_KethericCity_F1"
+  },
+  "5198be38-49b8-56d9-06a3-4891fa21c21f": {
+    "gtex": "2c0d5690999e4fe20f1daf148b04c857",
+    "name": "END_Main_FloorTrigger_WeirdBrokenRoof_F0"
+  },
+  "531b80a8-01eb-1a17-c137-bac268730718": {
+    "gtex": "0ef0b016f332a7935974165f004c773f",
+    "name": "SCL_Main_A_FloorTrigger_UnderMoonriseBridge0_000"
+  },
+  "5364ff6a-90fb-1bbe-281a-1b1ebb90c927": {
+    "gtex": "d421e4ea55f601db38a7478b68a6fc62",
+    "name": "CTY_Main_A_RegionTrigger_CTY_Figaro_Basement"
+  },
+  "542fd72c-0640-f362-4e7f-1493e2825586": {
+    "gtex": "e660aa81c57ca8013266f206192d3465",
+    "name": "CTY_Main_A_FloorTrigger_Sewer_MinscHideout"
+  },
+  "54ed69ee-121f-8ff5-a670-4cd20bd0a134": {
+    "gtex": "2e78cc2cbc608e40d2e6a60522d34c7d",
+    "name": "WLD_Main_A_FloorTrigger_Bridge_F0"
+  },
+  "54f64a45-5f0e-ad5b-d64e-7011d6345f3e": {
+    "gtex": "a29db3682f9dbed75f30bbb1b89012ca",
+    "name": "SCL_Main_A_FloorTrigger_Moonrise5"
+  },
+  "551ca5f0-a681-33f6-203e-94ad59e879a4": {
+    "gtex": "c69b955b2452ae999ce45d6b17913c5c",
+    "name": "CTY_Main_A_FloorTrigger_Golbraith_f1"
+  },
+  "55346423-2e26-e9c8-da26-f924f75c1e3c": {
+    "gtex": "73e3613e73faa08bc1ce2e4c9ddfce25",
+    "name": "SCL_Main_A_FloorTrigger_Fishery_0"
+  },
+  "55c17115-2d15-5438-48e1-736a52eca04c": {
+    "gtex": "80889cdbafa93268b67d2a61810417ef",
+    "name": "CRE_Main_A_RegionTrigger_000"
+  },
+  "56d5ea98-1f5b-6bc8-b90e-f877d6454b8e": {
+    "gtex": "f557e8742aad6d736618c69704d67f58",
+    "name": "CTY_Main_A_FloorTrigger_Hag_F1"
+  },
+  "57126459-444e-b661-9664-3c2087e0a58d": {
+    "gtex": "2f208f896f83ea140afa91e8da6363be",
+    "name": "CTY_Main_A_RegionTrigger_Room1"
+  },
+  "5716780a-3129-9eaa-ec84-bcb951560a37": {
+    "gtex": "85f68afd94c9c93676920149383dc03f",
+    "name": "CTY_Main_A_RegionTrigger_MusicStoreBasement"
+  },
+  "57a46e07-5c2d-d293-7b81-ad3a3b9e5223": {
+    "gtex": "d179c59d0793ecf4aedd5246962aabab",
+    "name": "END_Main_FloorTrigger_CornerTowerInterior_F0"
+  },
+  "57b349e6-7486-1d99-0736-8e969edcd5a1": {
+    "gtex": "773fdb60c7cbbf8a30fb8a4a6df8f935",
+    "name": "SCL_Main_A_FloorTrigger_AcidPit1"
+  },
+  "583dd435-9644-85d6-cb41-b1efc22fe04e": {
+    "gtex": "c03d9e0a0fd7811d949bca0ce46958bd",
+    "name": "WLD_Main_A_RegionTrigger_CMP_DungeonAbbey_A"
+  },
+  "5868c69f-b8a9-4dda-da10-b7dcdbd857c1": {
+    "gtex": "bf5ec5261d9e34886a5c9b4fcae24178",
+    "name": "CTY_Main_A_FloorTrigger_DH_F1"
+  },
+  "5887560c-cd92-90f6-eff4-98ff253e1309": {
+    "gtex": "3fb7fe79265dcdad2a98de65c94792fd",
+    "name": "BGO_Main_A_FloorTrigger_ThinwallB_0"
+  },
+  "58a20ce7-af0f-41ff-efc2-2255a640e3e1": {
+    "gtex": "6b3c39a809f8332cda199479a321e3df",
+    "name": "SCL_Main_A_FloorTrigger_Tax0_000"
+  },
+  "590f9cbd-8b41-c778-670a-fbc1e754ff66": {
+    "gtex": "264877b6acbd456e5a7a34c3b1ee6326",
+    "name": "BGO_Main_A_FloorTrigger_LogB_F0"
+  },
+  "5958a199-e8d5-2e93-6c47-be5e2de85420": {
+    "gtex": "c01f905d9643d977d212f14e192fbd3e",
+    "name": "CTY_Main_A_FloorTrigger_AmbushBuilding_F0"
+  },
+  "597e7825-7708-42e2-8cf6-0d681ae32601": {
+    "gtex": "2818b8b0f61676469b81b0b1d1dcd705",
+    "name": "SCL_Main_A_FloorTrigger_Brewery0_2"
+  },
+  "5b3ef143-6630-aa35-861b-8c7e899a831d": {
+    "gtex": "37b895ec3f1d2127f068dbfae741f066",
+    "name": "CTY_Main_A_FloorTrigger_FloraHouse_F0"
+  },
+  "5b706269-95bb-05c4-e7a0-9046d8b3f9f7": {
+    "gtex": "37cf3bb07e85e86a61d84cdb919b69a6",
+    "name": "CTY_Main_A_RegionTrigger_RamazithTower"
+  },
+  "5b957e94-2c5b-f439-cc0a-67f2c2cb3ae3": {
+    "gtex": "08c521192afbdf2ca920de0ea3242525",
+    "name": "SCL_Main_A_FloorTrigger_MasonGuild1"
+  },
+  "5bb25d8f-809b-4596-7931-34d80c969747": {
+    "gtex": "f6a006787b5801f6660f05bd3a9cd142",
+    "name": "SCL_Main_A_FloorTrigger_Moonrise4_000"
+  },
+  "5bfde8f1-4e23-2816-8430-aed9f62209d5": {
+    "gtex": "9d787a480a7a4a82771dae2943aa5a91",
+    "name": "CTY_Main_A_FloorTrigger_AmbushExtraBuilding_F1"
+  },
+  "5c31086a-3a62-bb3c-a91f-4d1252b6c334": {
+    "gtex": "f750318948b70c73ec1daf472f3e1dff",
+    "name": "SCL_Main_A_FloorTrigger_Brewery0_000"
+  },
+  "5c5e7d18-502b-4bd9-7beb-9ccf7b186283": {
+    "gtex": "1017742ea390320f6fae9fd67ccf954b",
+    "name": "CTY_Main_A_FloorTrigger_BellTower_f0"
+  },
+  "5c75fa74-f642-3ff6-0c82-b24154f31414": {
+    "gtex": "7b8b93c8d72abe80012ea5712b7e09d7",
+    "name": "WLD_Main_A_FloorTrigger_GoblinCampPrison_F0"
+  },
+  "5cbd91b2-8a8b-c6b7-981c-aa0c4229f881": {
+    "gtex": "84db9b90dad180be2081fb6c3be0753d",
+    "name": "IRN_Main_A_FloorTrigger_IRN_Base"
+  },
+  "5d9780f3-49ba-d442-81e0-b3bc9998b9cd": {
+    "gtex": "b980c2e972c990e459f14fb3bfed74ee",
+    "name": "CTY_Main_A_RegionTrigger_CTY_WQHBasement"
+  },
+  "5db9ea66-193d-cfeb-7d30-4912047fb5c3": {
+    "gtex": "e1476324b0904d1a52b8170a94417a6f",
+    "name": "IRN_Main_A_RegionTrigger_IronThrone"
+  },
+  "5de942e4-8c73-1c89-8294-eaf9f091a08d": {
+    "gtex": "42cb113f580123abe494ce2a155c590f",
+    "name": "BGO_Main_A_RegionTrigger_SmugglerTunnel"
+  },
+  "5df07fbb-10f3-e6f6-c0a6-e55f55d5b04b": {
+    "gtex": "a0bdc87fe19eb7688ae2a2f7981be033",
+    "name": "WLD_Main_A_RegionTrigger_Cave"
+  },
+  "5e0c7381-4bc1-5400-952b-6d84b8a46c72": {
+    "gtex": "bf6d0f8295bd2758f773b27a60b78171",
+    "name": "SCL_Main_A_FloorTrigger_CursedForestTower_0"
+  },
+  "5e6f6ebc-6354-2a0e-1c7a-5dabbfb73eaf": {
+    "gtex": "50dacc9e65001ef524fa7a1c17c243f2",
+    "name": "CTY_Main_A_RegionTrigger_CTY_PhilgraveBasement"
+  },
+  "5e8d800c-7e16-9f37-40fd-b19a8fe718fb": {
+    "gtex": "65ba2a7f9381121a524026f8f02289f9",
+    "name": "SCL_Main_A_FloorTrigger_TaxVinebridge0_000"
+  },
+  "5ea62aab-fade-c460-8fcf-f47ed6b77877": {
+    "gtex": "f9962f6b5f866f2e8e6b5399ad9230cb",
+    "name": "WLD_Main_A_FloorTrigger_GoblinCampB_F2"
+  },
+  "5eb214fe-b28f-fc2a-0801-d184bbdb4a17": {
+    "gtex": "6f5b6774b6d19e26a56d4c127ea14566",
+    "name": "CTY_Main_A_FloorTrigger_AmruthHouse_F1"
+  },
+  "5ed23d4f-88e9-a7c7-68ab-9b11e8400c62": {
+    "gtex": "962647425b27d7c84a4d79897c8736f9",
+    "name": "CRE_Main_A_FloorTrigger_GC_Monastary_F_-1"
+  },
+  "602f4cdf-c456-0faa-e96f-742813130fbb": {
+    "gtex": "948e65790094851e1b47a4512e7d1040",
+    "name": "CTY_Main_A_RegionTrigger_FireworksBasement"
+  },
+  "6093422c-6fc3-08ae-ff3e-199a9d087c51": {
+    "gtex": "644e98bb4c3c2b95498893617a778bcd",
+    "name": "CTY_Main_A_FloorTrigger_JaheiraPatio_F0"
+  },
+  "611e6791-34b9-2d7a-dcf3-43bf0fded1a4": {
+    "gtex": "5bb7e114e18c5c0fe23dc4e093baabd7",
+    "name": "SCL_Main_A_FloorTrigger_Moonrise5_000"
+  },
+  "62a66a7c-ab7b-04c4-2876-bb0a3ffe6155": {
+    "gtex": "e8f25f751d9d67c8120879573093af61",
+    "name": "CTY_Main_A_FloorTrigger_FoundrySideB_C_F1_000"
+  },
+  "632aff51-6777-eb05-2182-c3610702ddfc": {
+    "gtex": "e803a2199b7a5c798fc5728773e1c578",
+    "name": "SCL_Main_A_FloorTrigger_SharTemple_NecromancerJunction_F5"
+  },
+  "63b5a51c-05e0-9437-8299-b4780334e06a": {
+    "gtex": "34aa3cf49d2a3034c15d5a60da34e29e",
+    "name": "CTY_Main_A_FloorTrigger_FloraSideCover"
+  },
+  "63cb27ad-94ac-699f-2f25-87ef0f87ffa6": {
+    "gtex": "1ea1fb7582493b43973d3941ff51d5a2",
+    "name": "BGO_Main_A_FloorTrigger_Fort_F1_Spot1"
+  },
+  "63e1cf9e-2d24-bd9a-0abc-44ca0cec6220": {
+    "gtex": "5d9984294de9d17855f8c2c5797d3652",
+    "name": "CTY_Main_A_RegionTrigger_SteelWatchLab_A"
+  },
+  "640e57f4-8b7c-e9ae-88cd-db9e811e70d3": {
+    "gtex": "31182460117eed7badf55ca9c6ac153a",
+    "name": "CTY_Main_A_RegionTrigger_UnderChamber"
+  },
+  "6454ad80-5951-480a-0904-811b7feb2a91": {
+    "gtex": "fb7e6d3a8b305d21688604c2a425d558",
+    "name": "CTY_Main_A_RegionTrigger_PearTreeBasement"
+  },
+  "655f6e48-3c23-6cab-3f2b-d232afe201b7": {
+    "gtex": "435f16f9989b2a1588016e0ed750d599",
+    "name": "CTY_Main_A_FloorTrigger_LeftSide"
+  },
+  "6580e832-d3d2-ce7e-8c4e-519695718cbd": {
+    "gtex": "2d804b62a222655127626a27a00f4e7f",
+    "name": "CTY_Main_A_FloorTrigger_DockWarehouse_F1"
+  },
+  "65b6f6ff-6e1e-9fd6-0a96-9bf090ac353d": {
+    "gtex": "3387594db7617bdb6d24d9c2a50ebd01",
+    "name": "BGO_Main_A_FloorTrigger_BridgeTopC__2"
+  },
+  "6678efec-5024-95ac-91ff-8a34fabb0d06": {
+    "gtex": "933a7583ce2508ef738906e11dd0a79c",
+    "name": "END_Main_FloorTrigger_Courtard_F0"
+  },
+  "66da3899-6843-687f-02b9-93c79d34d816": {
+    "gtex": "667e763673210cd7e1877cf539192aa3",
+    "name": "CTY_Main_A_RegionTrigger_GeneralStoreBasement"
+  },
+  "66f30283-63c8-69ec-3896-c4aa5b6f44fe": {
+    "gtex": "2e0e89c321c8287a35cefe10b898d332",
+    "name": "CTY_Main_A_RegionTrigger_ThumboBasement"
+  },
+  "681c4bf6-ec0c-14b9-5fc2-426bfbaada2d": {
+    "gtex": "248f601137f5492f2b80987680531551",
+    "name": "INT_Main_A_RegionTrigger_VFX_Pocket_Dimension"
+  },
+  "682cddbd-5e9b-06bb-3839-c19527257328": {
+    "gtex": "c7ed5e2dd3d3226145dee58896e43571",
+    "name": "WLD_Main_A_FloorTrigger_Apothercary_F0"
+  },
+  "6860fbaf-0549-a3ce-a074-7813b3e498bc": {
+    "gtex": "96060dceb35f7da63c59781cd801003e",
+    "name": "END_Main_RegionTrigger_MorphicPool"
+  },
+  "689d193b-0495-34fc-838c-5b9a7649c401": {
+    "gtex": "378117008980ff25ad14eeb934de341e",
+    "name": "CTY_Main_A_RegionTrigger_Room3"
+  },
+  "69288e60-42de-7b81-e20b-551b582f463c": {
+    "gtex": "c96ed27051e38df0caa186f98cab52a3",
+    "name": "CTY_Main_A_FloorTrigger_CountingHouse_F2_000"
+  },
+  "698f98b1-747e-e17f-8ac2-18f5ef28fb4b": {
+    "gtex": "f69b403c111d563a11c843c18b8a12ba",
+    "name": "SCL_Main_A_FloorTrigger_Brewery2_1"
+  },
+  "69bcea79-22d6-dfaf-44af-ef23282bd5b6": {
+    "gtex": "8fb4ed809d040f22e37d1992e10a7d16",
+    "name": "CRE_Main_A_FloorTrigger_GC_PointyFloor_F_-2"
+  },
+  "69c1ca98-ae29-5678-515f-a19636ab7a24": {
+    "gtex": "b960f3b978e8a9a76fb7c0406c92edce",
+    "name": "IRN_Main_A_FloorTrigger_IRN_Lobby"
+  },
+  "6aae7ebd-7159-1948-b770-dc6153d2279a": {
+    "gtex": "4885b64cbfc747764dbac8bdad204c76",
+    "name": "BGO_Main_A_FloorTrigger_PostHouseAwningA_F0"
+  },
+  "6bfcc9dd-3bb4-96c9-f0fd-826a96e350ba": {
+    "gtex": "2aed0fab8982eceff953f056708432ef",
+    "name": "BGO_Main_A_FloorTrigger_Fort_F1_Spot3"
+  },
+  "6cafaa97-3930-02bc-4e7f-0e7c737740bb": {
+    "gtex": "05081cafd89876bf5e313b2866a0b2c4",
+    "name": "SCL_Main_A_FloorTrigger_GraveyardCryptB_0"
+  },
+  "6cda038e-9a98-815b-34d4-af2f75175647": {
+    "gtex": "f8ce0d051b0084d8970d1c5d02894b9b",
+    "name": "CRE_Main_A_FloorTrigger_Skull"
+  },
+  "6d2140e7-a243-357b-90fa-62599e84c2ba": {
+    "gtex": "7d2a73c458d8a45b12e5f150da905ee5",
+    "name": "BGO_Main_A_FloorTrigger_Fort_F4"
+  },
+  "6d75901e-d36b-7178-5d25-bb8c9079687a": {
+    "gtex": "da26e556f8252e58792c975e29f8859b",
+    "name": "CTY_Main_A_FloorTrigger_Skull"
+  },
+  "6dc5174a-c568-1688-c5a7-840e13840605": {
+    "gtex": "8d4acaf3579d4cdea99d3e5a857b7ca9",
+    "name": "WLD_Main_A_FloorTrigger_KethericCity_F1_001"
+  },
+  "6dcbbab3-ea7c-c52d-ad72-fd32726881e3": {
+    "gtex": "12e7c93f2d959158c72b52f7e4d246af",
+    "name": "WLD_Main_A_RegionTrigger_SpiderCave"
+  },
+  "6dd4a88b-42df-d5f7-abc0-657d3e623b93": {
+    "gtex": "efe8ec6d423d9a77564fc404853013de",
+    "name": "END_Main_FloorTrigger_DifficultRuin_F0"
+  },
+  "6dfaaf11-18f0-9cbc-be85-ec917049ee86": {
+    "gtex": "3d59faa4c08848826a6cdf4228e29620",
+    "name": "WLD_Main_A_FloorTrigger_RuinedBuildingGround_F0"
+  },
+  "6eb46e8c-2ae2-8973-4cf7-e48e5d002468": {
+    "gtex": "e3f495be8b9977b378ad12d9ec5da731",
+    "name": "CTY_Main_A_RegionTrigger_GraveKeeperBasement"
+  },
+  "6f005c60-8b7f-e69f-c4e8-129c2782bc44": {
+    "gtex": "169b14643c9aa87330e7f84a4c7a08f6",
+    "name": "CRE_Main_A_FloorTrigger_Ribs"
+  },
+  "6f176b48-3046-99b2-9164-28be6374f865": {
+    "gtex": "cede01f2a3b185b29c0504f754a45d9c",
+    "name": "CTY_Main_A_FloorTrigger_Artist_F3"
+  },
+  "703cbecc-1d79-8e70-d834-28b7c1eba8cc": {
+    "gtex": "87f8458f2e9f338046d5e0a10bfcc85c",
+    "name": "WLD_Main_A_FloorTrigger_ThieflingHouse_F0"
+  },
+  "7046fd3b-fdc2-a2a2-6c1e-9e9dd130d94d": {
+    "gtex": "21c2d333734021ad680ae3cfc0e89e38",
+    "name": "BGO_Main_A_FloorTrigger_Skull"
+  },
+  "7055ec53-b66a-2c83-9017-a5018208cce3": {
+    "gtex": "a3abcbf5af31527575879c53acbd3eca",
+    "name": "SCL_Main_A_FloorTrigger_MasonGuild0"
+  },
+  "706dad8f-cb71-6f58-74a2-77be4113b8c7": {
+    "gtex": "7ffa5471b1422c52769bcd9ac7a1b168",
+    "name": "BGO_Main_A_FloorTrigger_ChapelGate2_F0"
+  },
+  "707af9ba-97c6-f1f7-ebd3-baa8141b29fe": {
+    "gtex": "82f2032165dc7bf4b4082109235a1548",
+    "name": "CTY_Main_A_FloorTrigger_SlumCampChapelInterior"
+  },
+  "7086f3f0-3366-733b-56ea-1a58fb6dd39d": {
+    "gtex": "dca630857a338c25a06556325966be5a",
+    "name": "WLD_Main_A_FloorTrigger_Underdark_F5"
+  },
+  "70ab2971-8fe3-32e5-524d-2b66bab5a6b4": {
+    "gtex": "2c68748ebe8d9dbf612d8db4eac8d99e",
+    "name": "CTY_Main_A_FloorTrigger_Hag_F2"
+  },
+  "70c3e531-d869-b8f4-d29a-013278100e50": {
+    "gtex": "d61103dff529812d8715fe24756c83db",
+    "name": "BGO_Main_A_FloorTrigger_GurCampHouse0"
+  },
+  "715f04f0-b9c9-33e1-cf61-a6463cac6d49": {
+    "gtex": "19d4d07ca120f4d56553aa99c4b4bea8",
+    "name": "BGO_Main_A_FloorTrigger_ChapelOuter_F-1"
+  },
+  "71a1ae05-a9b4-9588-4938-9d2e75dde905": {
+    "gtex": "21136d85cd6a539d493bec6c19bcdcc2",
+    "name": "SCL_Main_A_FloorTrigger_Ribs"
+  },
+  "71d854aa-e655-89ea-4b97-a2a355f7e37a": {
+    "gtex": "49e48f236bd10eff52eebd4503442d74",
+    "name": "CTY_Main_A_FloorTrigger_Jeweler_f0"
+  },
+  "71e5566e-5e12-ce27-a0e5-898c0564aa18": {
+    "gtex": "de09b6d55aaec2ff86701f21e8747c85",
+    "name": "IRN_Main_A_FloorTrigger_IRN_Sub"
+  },
+  "71e8dff9-9c36-e65e-0096-3091418f0779": {
+    "gtex": "4b7ae04d3c8c29d593cacd6d65618f13",
+    "name": "BGO_Main_A_FloorTrigger_Fort_F0"
+  },
+  "7319802a-21bd-c1f1-e74a-ca82d36641d2": {
+    "gtex": "cfc0a42d5cac6726692c7a2d2609f50a",
+    "name": "CTY_Main_A_FloorTrigger_Grief_F0"
+  },
+  "7320c9b2-b078-7f37-635a-4f0fa6efef05": {
+    "gtex": "8dfc63a8477ae52ab7b027fa343c50a9",
+    "name": "WLD_Main_A_FloorTrigger_ZhentarimLowerFloor_F0"
+  },
+  "7371a4d4-41fd-78eb-fa64-102c6159f0f1": {
+    "gtex": "843f411ff89c4adbdd53f49c2f2b9823",
+    "name": "CTY_Main_A_FloorTrigger_DockWalkwayC"
+  },
+  "73b21bb4-680b-85b4-b6cf-315ead57d090": {
+    "gtex": "64bbf97c69e211a5e6e0960a2a6017ab",
+    "name": "END_Main_FloorTrigger_FarCorner_F0"
+  },
+  "73f3f938-4769-3b8a-8656-66aff4cd7785": {
+    "gtex": "9c55cd782b4f92ffb7334554dd3d0034",
+    "name": "WLD_Main_A_RegionTrigger_VillageSubs_WindmillCellar"
+  },
+  "74727205-6d78-09d4-d8e2-f7349fd11274": {
+    "gtex": "24651422249abba2a3a9d1646efe5680",
+    "name": "CTY_Main_A_RegionTrigger_MurderTribunal"
+  },
+  "74b3688d-f64f-f3bd-1758-78697889d7f9": {
+    "gtex": "47872b0ac2bd162e549be6e0a4c53e31",
+    "name": "WLD_Main_A_FloorTrigger_KethericCity_F1_000"
+  },
+  "74e796cb-3772-9a04-a3e6-d86594b55809": {
+    "gtex": "198f070559927d1ac79f72d332e5e832",
+    "name": "SCL_Main_A_RegionTrigger_CMP_SharTemple"
+  },
+  "754e7b05-3498-eea2-24a0-b118a72cc033": {
+    "gtex": "c2d6b9f48e440553f984221ab810cc1f",
+    "name": "WLD_Main_A_RegionTrigger_ThayanCellar"
+  },
+  "77672164-8e3e-23e7-3383-e02a1272e408": {
+    "gtex": "2a682f7c4cdd91e5072ed683e1d996a7",
+    "name": "BGO_Main_A_FloorTrigger_TentA_0"
+  },
+  "778ed171-2200-7294-1d7b-9f2167a34615": {
+    "gtex": "270bfa228e174f5d75c017303086a295",
+    "name": "CTY_Main_A_FloorTrigger_WQH_F1"
+  },
+  "77b0563b-10a0-eb54-c4ec-e9e4ee4e3f95": {
+    "gtex": "6aaa8ec80cad9493eefbd575cdaebbbd",
+    "name": "CTY_Main_A_RegionTrigger_AncientLair"
+  },
+  "786394d1-b75f-07d5-32bf-f6e5f1b186f4": {
+    "gtex": "74dee0c3b1776b31d65cbd186789a88d",
+    "name": "CTY_Main_A_RegionTrigger_KnightsOfTheShield"
+  },
+  "786dbac8-e4e4-3884-334f-d03b2b95fbdc": {
+    "gtex": "c247af6119672cdae896a0692992f44a",
+    "name": "WLD_Main_A_RegionTrigger_UnderdarkSubs_C"
+  },
+  "7990b8d2-ee7d-036a-539a-5feb7b563039": {
+    "gtex": "052c08e1da2a249ddf03ac4d2b4cd21e",
+    "name": "WLD_Main_A_RegionTrigger_Chapel_Bandits"
+  },
+  "79df3030-8c52-4fe1-bec3-798ef35f7dc2": {
+    "gtex": "a81794a64b9156dd416d5cc07c5210c9",
+    "name": "BGO_Main_A_FloorTrigger_TentB_0"
+  },
+  "7a1743c8-7b54-6924-3d36-2ed67ae447d5": {
+    "gtex": "4364a9ee745e1295d0bcccca21ab1db7",
+    "name": "WLD_Main_A_FloorTrigger_KethericCity_F2_000"
+  },
+  "7a1752c4-c790-b8c6-e973-82792725b920": {
+    "gtex": "404c19df20cfd1074f199f983ff0268b",
+    "name": "SCL_Main_A_FloorTrigger_Shar_F5"
+  },
+  "7ada85ef-116f-14ae-1d89-845956436023": {
+    "gtex": "e591e64cb0268410d71ed79f0bff1899",
+    "name": "CTY_Main_A_RegionTrigger_BGH_BaldursMouthBasementA"
+  },
+  "7c19d8d4-0eea-3f53-ec64-2cf5ebc58cdf": {
+    "gtex": "501319decbd480a4a05bc2353dd24651",
+    "name": "CTY_Main_A_RegionTrigger_CTY_DevilAndSmithBasement"
+  },
+  "7c1fec0b-9ec3-92b6-89d9-41c5224016ae": {
+    "gtex": "11ce40702f53df1e2378cba54d0ab8d7",
+    "name": "TUT_Avernus_C_FloorTrigger_Tutorial_Upper"
+  },
+  "7c727b77-0aba-6325-1217-2676b9b88a9e": {
+    "gtex": "acdf73febab9c1c2081c620202fcdabb",
+    "name": "CTY_Main_A_RegionTrigger_BlushingMermaidCellar"
+  },
+  "7cef459a-500a-08b8-d44f-5510ab9b9041": {
+    "gtex": "b8781ea31d3f5033941dce152382c9cc",
+    "name": "END_Main_FloorTrigger_SideStairsBridge_F0"
+  },
+  "7e14cb3d-51b4-888a-6c89-191be8c7707b": {
+    "gtex": "212e8f127081763eca2beb86dd6040dd",
+    "name": "BGO_Main_A_FloorTrigger_UnderHeapside_F1"
+  },
+  "7e709023-7d02-2938-2ed1-a74873fee2ed": {
+    "gtex": "a4d801b97722c96370c73e923b0efc90",
+    "name": "CTY_Main_A_FloorTrigger_GuildhallEntry_f1"
+  },
+  "7ed0a5db-d809-a3c8-90a1-f7f9e32f9c6d": {
+    "gtex": "6385888b9b1e7e79a19459e52afb2b98",
+    "name": "CTY_Main_A_RegionTrigger"
+  },
+  "7f50a3be-9cbd-903f-e895-507c3060d576": {
+    "gtex": "9afa9a1c180b77ad824b4d48429962d6",
+    "name": "BGO_Main_A_FloorTrigger_PostHouse1"
+  },
+  "7f68c0a0-e1d3-58cc-929b-c3a9372d82b9": {
+    "gtex": "9c72a82b9ba5988a614005ccc022fa33",
+    "name": "SCL_Main_A_FloorTrigger_SharB_F4"
+  },
+  "7fa70a9c-486c-f052-f962-e70cfeb4a23b": {
+    "gtex": "bdd74fc88cbfa942a5c222bd06968386",
+    "name": "CRE_Main_A_FloorTrigger_GC_GroundCourtyard0"
+  },
+  "7fff9dc0-d429-2463-0d85-4810edd31aa2": {
+    "gtex": "76a63899e98b9b92c3ad6bcb94d7ef8f",
+    "name": "BGO_Main_A_RegionTrigger_BGO_WellDepthsLower"
+  },
+  "8088d3b9-7064-2ed3-b610-4260843adc65": {
+    "gtex": "74b0f336e169339f694effa88036a405",
+    "name": "CTY_Main_A_RegionTrigger_ElfsongCellar"
+  },
+  "808c31e7-f5a7-d864-fede-71ccded86947": {
+    "gtex": "c1ddc48d38fe2c301bd0154fb2580793",
+    "name": "WLD_Main_A_RegionTrigger_Chapel_Crypt"
+  },
+  "809324b5-d2d0-1b16-0125-6bb01b60695c": {
+    "gtex": "1c6bf6585368a2c7c65368aca38cae64",
+    "name": "BGO_Main_A_FloorTrigger_Chapel3"
+  },
+  "80f3a6d4-1b09-476a-f1ea-092ba0fb7db0": {
+    "gtex": "c6ee288a8f328e74860c12fd99cd3288",
+    "name": "BGO_Main_A_RegionTrigger_BGO_SmugglersCaveBasement"
+  },
+  "80ff196e-610a-6a43-8afe-49ece61577a5": {
+    "gtex": "b1413433fe2e88899eebab7536150009",
+    "name": "SCL_Main_A_FloorTrigger_Brewery_SideStairway"
+  },
+  "8155a36e-429f-90d4-0dbd-3ab4b46e331d": {
+    "gtex": "051891a0ce3bd9b979be67daa1e5687c",
+    "name": "CRE_Main_A_FloorTrigger_GC_LeftStack_F2"
+  },
+  "81cf8c82-f67f-a142-ae2a-750bb7c574bb": {
+    "gtex": "ad215553660611ae06514aa6797b5841",
+    "name": "SCL_Main_A_FloorTrigger_CMP_SCL_Campfire_001"
+  },
+  "82189120-e385-8d9b-3a05-1329c4212c66": {
+    "gtex": "8e2ee6ec7949db8b1198b584e9d628f8",
+    "name": "CTY_Main_A_RegionTrigger_CTY_LodgeBasement"
+  },
+  "8318ca45-64cd-21f5-7dc1-bb441c36aa84": {
+    "gtex": "67ff524b16a562e3811ad1403db060d3",
+    "name": "WLD_Main_A_FloorTrigger_ForestBridge_F0"
+  },
+  "83ba53d8-1a3b-d424-027e-099adc2f2a14": {
+    "gtex": "9e27e05ffb6e0bc5ecb6bc725f069137",
+    "name": "SCL_Main_A_FloorTrigger_LastLightInn_0"
+  },
+  "845a23d5-96a2-51c7-e466-ff8f72f412da": {
+    "gtex": "ae69d8cbfb70e7565c9de136590399d7",
+    "name": "BGO_Main_A_FloorTrigger_FarmBarn_F0"
+  },
+  "8461824d-137b-bf3b-1374-b5d1a59d9d2f": {
+    "gtex": "f5f480e6dafc3f3325ef7385711f6bdc",
+    "name": "WLD_Main_A_RegionTrigger_Main"
+  },
+  "85334f16-4702-49cf-bc7c-3a7e8e0a99f8": {
+    "gtex": "2458202d790d9bc4225b1670d25dbc89",
+    "name": "WLD_Main_A_FloorTrigger_SecretStash_F0"
+  },
+  "856d9a39-8a5d-6b8c-0970-f71a4be4fce5": {
+    "gtex": "bfb9c5e22c7ff369560652872ed36e74",
+    "name": "CRE_Main_A_FloorTrigger_GC_MonastaryRight_F2"
+  },
+  "859c504e-081e-49d9-e404-b9016529a8b9": {
+    "gtex": "6e94030a823d4c83ee649350a4c983ba",
+    "name": "CTY_Main_A_FloorTrigger_CountingHouse_F1_000"
+  },
+  "8603bdef-6cbc-451a-8f92-168d3bebc0a6": {
+    "gtex": "0072e3eb66c3f16a3bea5d87291f3d25",
+    "name": "SCL_Main_A_FloorTrigger_LastLightInn_1"
+  },
+  "8659927a-91ea-bb8d-e4b4-13522b687f73": {
+    "gtex": "e20960fb257b81571dbad4acd56ce0d4",
+    "name": "CTY_Main_A_RegionTrigger_BGO_BloodmerchantLab"
+  },
+  "866978fe-67ed-da24-7a2b-426ba8249051": {
+    "gtex": "b0b30c1bdf6dc0d2fd034baf10b57e44",
+    "name": "CTY_Main_A_FloorTrigger_FigaroBalcony_F2"
+  },
+  "86d9c303-d9ad-46d2-266d-fa9066fa062f": {
+    "gtex": "79db56eef32f68f21ce5be77df5acaf9",
+    "name": "CTY_Main_A_RegionTrigger_CTY_GuildhallBasementA"
+  },
+  "87726fb0-e89b-4cb4-0968-6a4b0646bd9a": {
+    "gtex": "9bce0c4100dfd0c0bcf02a4533c5d02a",
+    "name": "END_Main_FloorTrigger_DifficultRuin_F1"
+  },
+  "879d54e2-cd81-5a98-f2bc-641b4c4d55be": {
+    "gtex": "4703624d287cfbeb7374bd2ee3cf5c9f",
+    "name": "CTY_Main_A_FloorTrigger_BlushingMermaid_Interior_F0_000"
+  },
+  "88376728-5464-f467-204f-5916bc8442a9": {
+    "gtex": "f2080f66c26b63e07d02f7f78a100de5",
+    "name": "SCL_Main_A_FloorTrigger_HospitalKiddyWard_F0"
+  },
+  "887bb66c-1e31-4540-853d-7dd91939fdd1": {
+    "gtex": "3d58b861bfb52d5ab988058ed1f2730e",
+    "name": "CTY_Main_A_RegionTrigger_HeapsidePrison"
+  },
+  "8914f480-d740-2447-56b3-09e0269271e4": {
+    "gtex": "67a506da62329773a2916103382ffea3",
+    "name": "BGO_Main_A_FloorTrigger_Forge0"
+  },
+  "893279b8-873c-8c36-9164-2be520f6652d": {
+    "gtex": "5ff1f94faae85f700356c92b64dc071d",
+    "name": "SCL_Main_A_FloorTrigger_SmallStable0"
+  },
+  "89455876-6d97-6b54-bab9-97987895528a": {
+    "gtex": "fb233e0e0a256567f44c1663f39dc646",
+    "name": "CTY_Main_A_FloorTrigger_SingingLute_f1"
+  },
+  "894aa446-6ccc-e916-f200-215fda2d1e55": {
+    "gtex": "aa04284b52b19cdec5399178835abae9",
+    "name": "CTY_Main_A_FloorTrigger_GuildhallTreasureRoom"
+  },
+  "897c50e2-9332-4166-cc4e-f38945333bb9": {
+    "gtex": "de7a7d0c4ef7fc8c2e2bf5c87cfa2c17",
+    "name": "CTY_Main_A_FloorTrigger_Philgrave_F1"
+  },
+  "8a0dcb91-4f16-d82e-1856-d7c45945b634": {
+    "gtex": "05ab48e46a9d1963b3b97f56b64f6169",
+    "name": "WLD_Main_A_FloorTrigger_RuinedBuildingTopB_F1"
+  },
+  "8a2cb289-8559-3c28-aaab-a8f736ddd322": {
+    "gtex": "18b4d8163c0ac5ebd30c4558cf644f45",
+    "name": "END_Main_FloorTrigger_CupolaBridge_F0"
+  },
+  "8a2de7b4-e67f-2f07-8fab-f28babf84ab5": {
+    "gtex": "55e6f8b85f9ba487370a286b32667514",
+    "name": "CRE_Main_A_FloorTrigger_GC_Monastary_F0"
+  },
+  "8a39d975-3545-063f-447d-e30a7d72a386": {
+    "gtex": "1af9372debd24c84cb2f61c54cd0a0dd",
+    "name": "SCL_Main_A_FloorTrigger_Foundation"
+  },
+  "8a7a6980-55e9-e760-dd54-7a14857b48e6": {
+    "gtex": "b4b25682a54c11f9caeea26bf1de6a3f",
+    "name": "CRE_Main_A_RegionTrigger_Gauntlet"
+  },
+  "8abd6dbe-b82e-0788-d4c4-e34e9f038822": {
+    "gtex": "9ba6e686fac1fd5e0aceb8c409cfcb03",
+    "name": "CTY_Main_A_FloorTrigger_LowerFloorA"
+  },
+  "8bebac10-6ead-8550-4105-e9fca1463f1d": {
+    "gtex": "e31c73c9f68c9c7b7d2a3f352a8462d2",
+    "name": "BGO_Main_A_FloorTrigger_TentG_0"
+  },
+  "8ef21f50-3473-1a17-9844-d46422b1dfc0": {
+    "gtex": "cc4ccd22ddfa416f532a751baf331b00",
+    "name": "CTY_Main_A_FloorTrigger_GuildhallEntry_f0"
+  },
+  "8f15d21b-205a-26fa-554e-ae4f8a60c3f2": {
+    "gtex": "8752ac25fef9c46c48f42830d40e20a2",
+    "name": "BGO_Main_A_FloorTrigger_TentC_0"
+  },
+  "8fda31e2-caf5-4f52-83cb-cf29a7fc78d4": {
+    "gtex": "4e6464e1c271a1b6f3c8270330d892d6",
+    "name": "CTY_Main_A_FloorTrigger_GHStack_F1"
+  },
+  "9086ac98-4c47-5552-25ce-85907e38333b": {
+    "gtex": "940e1d1de4c11c5c7b68d061af88e6f7",
+    "name": "CTY_Main_A_FloorTrigger_KegsHaunt_F0"
+  },
+  "90d3d23d-ff5e-7ded-8ef8-679be1d2e7b2": {
+    "gtex": "5df5e823268146c7759916c813f2f108",
+    "name": "BGO_Main_A_FloorTrigger_Fort_F3New_Spot1"
+  },
+  "90f6cb1e-0750-43c4-e03e-1668eed4a470": {
+    "gtex": "31f1d91d9e2340d1998aa9a7fb99afb7",
+    "name": "CTY_Main_A_FloorTrigger_DH_F0"
+  },
+  "9100f508-00c6-7eb1-e596-d72a6c8fb1ec": {
+    "gtex": "296db469a59c746789818bababa3e49b",
+    "name": "SCL_Main_A_FloorTrigger_Brewery0_1"
+  },
+  "925c1986-9fb0-3ada-704a-12389dfc63d5": {
+    "gtex": "4db478a5704dafeed2690fade8ee3b3f",
+    "name": "CTY_Main_A_FloorTrigger_Base_f0"
+  },
+  "928b8dbf-65c4-3a18-777f-6fda9071d07b": {
+    "gtex": "aaaec2ef0c45c58a950c1f352cd81dcd",
+    "name": "BGO_Main_A_FloorTrigger_OxShed_F0"
+  },
+  "947f5e59-fe4d-f827-0839-532ec3ea10bb": {
+    "gtex": "c676601d252daec37bcc239695bf7da5",
+    "name": "END_Main_FloorTrigger_SideStairsBridge_F1"
+  },
+  "949c5cba-fe23-87e4-b001-1c07d3aebeb5": {
+    "gtex": "deb27b5cce79f50c86511e462c7ff369",
+    "name": "CTY_Main_A_FloorTrigger_Interior_F1"
+  },
+  "94c2455c-fb35-12c8-89f0-00b6fbaf4a88": {
+    "gtex": "e75d10430e1c96851380e21df877a54e",
+    "name": "CTY_Main_A_RegionTrigger_VFX_Pocket_Dimension"
+  },
+  "94e253f5-9c24-97ee-b2f3-5da15ab708d6": {
+    "gtex": "50c1a253779cec455eeea37ac772c0ea",
+    "name": "BGO_Main_A_FloorTrigger_Bridge__1"
+  },
+  "95402fc1-98e1-f3fc-4daa-5c6dfb75e1bf": {
+    "gtex": "85af7c60b106403940fb30f74516a420",
+    "name": "TUT_Avernus_C_RegionTrigger_Avernus"
+  },
+  "956bae7c-995d-eef7-f9a9-b1c034e8b57b": {
+    "gtex": "847e9de286e49a66c7cb9ed3fc65adf5",
+    "name": "BGO_Main_A_RegionTrigger_VFX_Pocket_Dimension"
+  },
+  "9757b811-58b4-3cb5-893c-2b4393a12277": {
+    "gtex": "18cbd50fc1055e16ff9d61bab25e7645",
+    "name": "CRE_Main_A_FloorTrigger_GithDungeon_B"
+  },
+  "9768d2e1-eaa8-d4a2-8aa9-15ae8b2f7921": {
+    "gtex": "7e2628b9a22ea5eefd848e15416e339b",
+    "name": "BGO_Main_A_FloorTrigger_BorderGateTowers_F0"
+  },
+  "97691ddc-5105-38fb-3b36-1a48b055f435": {
+    "gtex": "76a4fdbefed86a9020ccdf81cc7cbfd5",
+    "name": "CTY_Main_A_FloorTrigger_GazetteLoft_F1"
+  },
+  "9787ad45-ca91-d990-0268-f9ead0fc43cc": {
+    "gtex": "bc3fd4b9d913c54ce715b94702e0ac32",
+    "name": "CRE_Main_A_RegionTrigger_000"
+  },
+  "98c5c5b8-6b37-ca67-3407-49257a4e5c56": {
+    "gtex": "d30c24c99428ea9262d527591e63de7e",
+    "name": "SCL_Main_A_FloorTrigger_SharB_F2"
+  },
+  "9a6befef-a65c-b98f-35a9-3a6181dc7c4b": {
+    "gtex": "11a23084ce330af6d7f8e120ebd6de23",
+    "name": "CRE_Main_A_RegionTrigger_GithCreche"
+  },
+  "9aa94c26-3a11-59e5-5815-cb0597f8bb5f": {
+    "gtex": "5690ada959010c351e217548c81aa2f6",
+    "name": "CTY_Main_A_FloorTrigger_DockWarehouse_F0"
+  },
+  "9ace9254-1430-896d-964c-32e143faef29": {
+    "gtex": "2cf9f8b4d326081a0453a01e30bf4030",
+    "name": "INT_Main_A_FloorTrigger_TentA"
+  },
+  "9af44927-821f-b80a-ecf1-13aef1dcb0c6": {
+    "gtex": "727457e3508b2edf805e05a49dec3c60",
+    "name": "CRE_Main_A_FloorTrigger_GC_LeftStack_F0"
+  },
+  "9b39bb15-b3eb-933e-6ae3-c889701950be": {
+    "gtex": "9c6dcb4c918c9d72bd19ce991a551637",
+    "name": "BGO_Main_A_RegionTrigger_AnsurDungeon_000"
+  },
+  "9b4a6f76-7615-dfcc-ebe8-950d68243e15": {
+    "gtex": "622e09391f50cb052d1d00bcbd4cce8e",
+    "name": "CTY_Main_A_RegionTrigger_SteelWatchLab_B"
+  },
+  "9b93b59c-bdce-fd94-e726-c49fc543252f": {
+    "gtex": "d6e9697735cab4a248a470491a58c743",
+    "name": "CTY_Main_A_FloorTrigger_CazadorPalace_F0"
+  },
+  "9bcb50eb-06db-c573-b8b6-fe1432d2a475": {
+    "gtex": "7f9132affe19f5d911811a9ab49f04a9",
+    "name": "SCL_Main_A_FloorTrigger_FoundationUpper"
+  },
+  "9c1da9be-38c1-46c2-8fa9-b29da60f4b48": {
+    "gtex": "4c31a9539069ac41a07f19ca364983af",
+    "name": "SCL_Main_A_FloorTrigger_Dungeon0"
+  },
+  "9c4b7987-f79d-765d-9b38-ee08933bd6b8": {
+    "gtex": "493ee2f15605ebc532ef975bc3a71c55",
+    "name": "CTY_Main_A_FloorTrigger_SeaTower_F0"
+  },
+  "9cad71d7-3ecd-9efd-b718-cab4cd8bb61e": {
+    "gtex": "f1a69173b801a72e59d13383fc1bfc3f",
+    "name": "END_Main_FloorTrigger_GateTowerB_F0"
+  },
+  "9ccbccc0-a819-cf22-97fa-4ba33bf2229d": {
+    "gtex": "3a92108914d767ec1a222b8c8ba9d356",
+    "name": "CTY_Main_A_FloorTrigger_SteepsTrader_F1"
+  },
+  "9d0f1273-2e06-996a-e54f-f8360117b170": {
+    "gtex": "1fca63ecded91228e63a19eab20987c1",
+    "name": "SCL_Main_A_RegionTrigger_CMP_Moonrise"
+  },
+  "9d3c2f9b-ad53-69ed-9651-ffd484037efc": {
+    "gtex": "c7ea23bcd017d3a407c08005d1c53a6a",
+    "name": "WLD_Main_A_S_RegionTrigger_WLD_Campfire"
+  },
+  "9e4bf3db-ffac-f5d0-59c4-d18306ad47e4": {
+    "gtex": "d218ada20d7f39335b8c86ebb55bcbb3",
+    "name": "WLD_Main_A_FloorTrigger_ZhentarimLowerFloor_F0"
+  },
+  "9ecf1ce9-10f0-1165-3a85-83febbf91093": {
+    "gtex": "8622f4a9a5d6f032e9686be839be5438",
+    "name": "END_Main_FloorTrigger_BaseOfLadder"
+  },
+  "9fb59821-d193-8ef4-8351-32eec7d1d780": {
+    "gtex": "739df0da2794143e010e3192e655e5c9",
+    "name": "WLD_Main_A_FloorTrigger_Barn_F0"
+  },
+  "9fbb958e-91af-f92e-7e9d-cf6a11e556d1": {
+    "gtex": "644f0a6b24fe77900de11b311e7750a6",
+    "name": "WLD_Main_A_RegionTrigger_WLD_DenSubs_ChildrenHideout"
+  },
+  "a099f1eb-542b-ed1d-f954-db07df430003": {
+    "gtex": "54a991d4191eabba03804265a3f51cd6",
+    "name": "CTY_Main_A_RegionTrigger_Undercity"
+  },
+  "a0d10517-75ff-5d61-3532-e7464d7aa4c3": {
+    "gtex": "926548ae1ef038f961a077e88cff7316",
+    "name": "INT_Main_A_FloorTrigger_Skull"
+  },
+  "a117f779-822d-346d-1cc8-ae428522ac71": {
+    "gtex": "455577e395415171065f7bd24a2b6e28",
+    "name": "CTY_Main_A_FloorTrigger_JaheiraHouse_f0"
+  },
+  "a17ddf97-5daa-b9ed-cb4a-816cde313a12": {
+    "gtex": "e59161a7306645b19478c355218f4394",
+    "name": "BGO_Main_A_FloorTrigger_MerchantHouse1"
+  },
+  "a1c8c0d8-a490-a4e6-4b74-170fc976b425": {
+    "gtex": "1241d0829dbc89882c3008369015f7e9",
+    "name": "WLD_Main_A_S_PLA_TollhouseBasement_SUB"
+  },
+  "a1cee0a0-d57b-5cc5-2a53-0e929f6dcac1": {
+    "gtex": "d14413c154ca0af063bba178b4fc2026",
+    "name": "CTY_Main_A_RegionTrigger_CountingHouseVaultConnection"
+  },
+  "a25d1ad9-5b2c-5a25-11f2-96b9565d6916": {
+    "gtex": "1c93ec5edf256003c2728165d6499b04",
+    "name": "CTY_Main_A_FloorTrigger_DiabolistForge_F1"
+  },
+  "a28927f4-765a-3c8e-864a-f1a9ab825579": {
+    "gtex": "ad7a0effc7331ada5529cc0fc53b457a",
+    "name": "CTY_Main_A_RegionTrigger_CazadorDungeon"
+  },
+  "a2cfc4f2-e354-121d-d025-68af094a4ac6": {
+    "gtex": "312ab1e82f2ec81946507232c030b4ee",
+    "name": "SCL_Main_A_FloorTrigger_SharA_F4"
+  },
+  "a3140b78-3dfc-a3c9-70ae-da5ef6d15964": {
+    "gtex": "24d3499c5191c76f5a2f16bfa3fe93a4",
+    "name": "BGO_Main_A_RegionTrigger_WyrmCrossingC"
+  },
+  "a3157ce3-dfa1-b90d-0433-8fa50ca54993": {
+    "gtex": "6970abd9eaf1bbb8954941ee5bd64776",
+    "name": "BGO_Main_A_FloorTrigger_Trellis0"
+  },
+  "a3e3dd17-822e-7bca-9489-d09a00a8cd76": {
+    "gtex": "0f8cb19087c8aacc035f1ca027254d8c",
+    "name": "END_Main_RegionTrigger_VFX_Pocket_Dimension"
+  },
+  "a44beeb1-aa40-7b04-fc33-6b617e67f3df": {
+    "gtex": "a4a447dd5f73a3fd92f76f1aa9b1275f",
+    "name": "CTY_Main_A_FloorTrigger_BellTower_f3"
+  },
+  "a4b90948-a286-4665-582a-ec1eafb70193": {
+    "gtex": "d0c9b999fd5e4c9263c5c9f411574fc1",
+    "name": "CTY_Main_A_FloorTrigger_Tabernacale_F0"
+  },
+  "a519bced-f737-c53a-8d31-8886547558ae": {
+    "gtex": "9b56d22a72c440453212d1a8a11d1cad",
+    "name": "SCL_Main_A_S_SHA_NightsongPrison_SUB"
+  },
+  "a60a44ae-17a9-eaea-1ff4-0fa22e597cb1": {
+    "gtex": "e529a853248cfef998c0a75039307b87",
+    "name": "CTY_Main_A_FloorTrigger_Lodge_F3"
+  },
+  "a627a2f8-545e-8415-ec58-b68ddc9cb3cb": {
+    "gtex": "5b342034c7bf5d43429c2140951d73db",
+    "name": "CTY_Main_A_RegionTrigger_BGH_HighberryCellarA"
+  },
+  "a6a5b89d-c069-a20f-495c-f9cbfa5e1022": {
+    "gtex": "ba49a97d1a1396d0027f34f27c506e93",
+    "name": "WLD_Main_A_FloorTrigger_Smithy_F0"
+  },
+  "a7be641b-6c31-634f-f791-c63cbb3a70e5": {
+    "gtex": "d186fca2f9891f8544a7f02a850ebea2",
+    "name": "BGO_Main_A_FloorTrigger_Forge1"
+  },
+  "a80a8518-8ab4-dc2d-1790-faa9d8585578": {
+    "gtex": "c48a82bfa4a69f036abb1d9a1b28bfc6",
+    "name": "CTY_Main_A_FloorTrigger_Ribs"
+  },
+  "a82c2c41-6df3-cf3f-c3fa-d3ca981db0c6": {
+    "gtex": "15f1ee2fc4fe907f3ace5bf48441568f",
+    "name": "TUT_Avernus_C_FloorTrigger_BackHole"
+  },
+  "a8521fc8-5db9-3aa4-0d29-77efbe611af3": {
+    "gtex": "d10909857c85bad0b7161da7224db314",
+    "name": "CTY_Main_A_FloorTrigger_ArchwayUnderWall_C"
+  },
+  "a88ac29e-b377-9ab3-1a3e-ec55dd819790": {
+    "gtex": "6289e05c7968f9ad83e36f6159aa471a",
+    "name": "BGO_Main_A_FloorTrigger_Bridge__0"
+  },
+  "a8b3f322-1b41-c6ed-fd0e-533c2e04620a": {
+    "gtex": "c5d66f90f0a08bc267de0a2ac41466d5",
+    "name": "CTY_Main_A_FloorTrigger_CazadorUnderChamber_F0"
+  },
+  "a8cfc8df-2fe4-60ab-6eff-68c340e1ad9d": {
+    "gtex": "f192751f718edea841a7593ec82cdecf",
+    "name": "BGO_Main_A_FloorTrigger_BridgeApproach__-2"
+  },
+  "a8fbb4d0-aa3b-0e10-5f38-1b8f6b7c3427": {
+    "gtex": "a19f1f5ef47099383f001a24f2083a5f",
+    "name": "CTY_Main_A_FloorTrigger_CazadorAttic_F1"
+  },
+  "aa710149-1a17-991a-7c3b-2418f1b46a94": {
+    "gtex": "014c794cb1a4facb9a80b8c5f7d0426f",
+    "name": "BGO_Main_A_FloorTrigger_Fort_F1_Spot2"
+  },
+  "aa7b094c-ac01-7850-2075-e45a48a3ea9a": {
+    "gtex": "165c72283d9985d61354eb0b0938817b",
+    "name": "SCL_Main_A_FloorTrigger_SeasideTower_0"
+  },
+  "aaf5334f-bc92-da60-ce74-f42bed678fda": {
+    "gtex": "b1a348f374731cb7520b6d93283a8399",
+    "name": "WLD_Main_A_FloorTrigger_Tollhouse_F0"
+  },
+  "ab487255-bbc0-6cd6-6285-a0f643aaec4f": {
+    "gtex": "93c70050d4d0b990b8275c38cb2435d4",
+    "name": "SCL_Main_A_FloorTrigger_HoneymoonLodge_0"
+  },
+  "ab683a0c-4c8c-dba8-0461-9b79491e9707": {
+    "gtex": "a3f1a619abb7c1e86e22ad1c03b6b369",
+    "name": "SCL_Main_A_FloorTrigger_Moonrise0_000"
+  },
+  "accb7cc3-dbf9-bda9-83b6-1f18454c8e7f": {
+    "gtex": "6e8a5b413d7788f4d47c2f65954f2a02",
+    "name": "BGO_Main_A_FloorTrigger_PostHouse0"
+  },
+  "acccfe65-1915-8ca7-1f7c-965feaf4c594": {
+    "gtex": "0b0700e519b3dabc53a33df4eb27489d",
+    "name": "BGO_Main_A_RegionTrigger_BGO_CampFarm"
+  },
+  "adcd035c-91e8-d14c-ef19-3334a3ba520f": {
+    "gtex": "23735666d49a72c5caa46792a6a825d0",
+    "name": "WLD_Main_A_RegionTrigger_CMP_DungeonShar_A"
+  },
+  "af2a2f3e-225a-4af5-5e8e-a733ef6d0c8b": {
+    "gtex": "3992e07d47b68f84fa7c6fa86a5a09ad",
+    "name": "CTY_Main_A_FloorTrigger_KurwinCoffin_F1"
+  },
+  "af4870bf-fb40-7d92-d37c-50dc2434435a": {
+    "gtex": "fc055607da48157f066cd6f99429a6cc",
+    "name": "CTY_Main_A_FloorTrigger_HeapsideBrampton_F0"
+  },
+  "af867300-83b6-dab9-0c70-3c7f97c91515": {
+    "gtex": "5559957cdc09de6f165188feae80a2c1",
+    "name": "BGO_Main_A_FloorTrigger_BridgeTopD__2"
+  },
+  "b034f9cc-0aae-c023-4856-b27617844f28": {
+    "gtex": "976f17c9824604830e7cff2f364e2be4",
+    "name": "CTY_Main_A_FloorTrigger_RightSide"
+  },
+  "b0e4fb43-aa4e-5a50-1490-0eae2f65e1d8": {
+    "gtex": "86a273b8444e7b85604862a5565fbaf0",
+    "name": "BGO_Main_A_FloorTrigger_Fort_F5"
+  },
+  "b1002db7-7fc4-2c4e-550c-d055e1b771a8": {
+    "gtex": "f136d5d2d5453f0f41f0ac0f45bfec66",
+    "name": "BGO_Main_A_FloorTrigger_ChapelAwning0"
+  },
+  "b1996eb5-7a1a-32f1-6dce-3349921a0623": {
+    "gtex": "5e601a69ab480db82f60b7cb84206569",
+    "name": "WLD_Main_A_FloorTrigger_Underdark_F3"
+  },
+  "b24b9241-638b-a936-c5f4-3f31873a50eb": {
+    "gtex": "27d25c7a4bd85fc9dc161ac2e0b2b771",
+    "name": "CTY_Main_A_RegionTrigger_Attic"
+  },
+  "b279d17a-527e-485d-5005-cb41643f65fd": {
+    "gtex": "4bbe263f4206f46227292d76ae8f413b",
+    "name": "END_Main_FloorTrigger_HouseB_F1"
+  },
+  "b283e461-47f1-1acf-0839-94255a9286c7": {
+    "gtex": "e8d0843c3d402611d2767d87deab8d49",
+    "name": "WLD_Main_A_RegionTrigger_WLD_OwlBearCave_B"
+  },
+  "b2c773ed-2371-1fcb-774a-276b1f157da6": {
+    "gtex": "b5a2cdb5f9664d81dcdd73e4ace216f9",
+    "name": "SCL_Main_A_FloorTrigger_HavenStable_0"
+  },
+  "b2eef47d-3270-ac61-2bed-1ebbaad39f8e": {
+    "gtex": "ed8149c59f587732ac09bbfb8ec7ea75",
+    "name": "END_Main_RegionTrigger_NetherBrainPlatforms"
+  },
+  "b2f7b237-8605-fbdb-6908-a39d87d563b3": {
+    "gtex": "791bc234f097103ff6fa8063d76c3b7c",
+    "name": "WLD_Main_A_RegionTrigger_CMP_Underdark"
+  },
+  "b318fa55-d392-acd8-d60c-b9d68ee7d372": {
+    "gtex": "8de9c677063ea2eb8b7bed4df47272a2",
+    "name": "CTY_Main_A_FloorTrigger_BloodMerchant_F1"
+  },
+  "b3641f95-f427-8c47-6fea-4e11dbcb86e5": {
+    "gtex": "2500ba3963e2205c46bf376ffb79f3f0",
+    "name": "WLD_Main_A_FloorTrigger_GoblinWalkwayB_F0"
+  },
+  "b37f8ecf-d65f-9162-4468-5a02b45f232b": {
+    "gtex": "a996881c7f86a085eea553bf1e625a76",
+    "name": "CTY_Main_A_FloorTrigger_HoH_EngineRoom_Outer"
+  },
+  "b4c2996c-8b86-3ada-f038-639214dab6a0": {
+    "gtex": "e23590b209638836ebef39c291078be2",
+    "name": "WLD_Main_A_FloorTrigger_TunnelA_F0"
+  },
+  "b4d0c5a2-6390-e818-eaa9-bbdd74ed56e6": {
+    "gtex": "6044087c01397f9b86800f9f9d1d42cd",
+    "name": "WLD_Main_A_FloorTrigger_CrashsiteA_F0"
+  },
+  "b554e8e5-8666-0c51-007f-f59d6c9ffe0e": {
+    "gtex": "936ef27334db21ef78c9b6a94942385c",
+    "name": "CTY_Main_A_FloorTrigger_BarracksArchway"
+  },
+  "b5843a00-9a3e-477a-8bac-51af04810ec8": {
+    "gtex": "c6a8ccec29947c4c8e006d27629fb8cb",
+    "name": "CRE_Main_A_FloorTrigger_GC_LeftStack_F1"
+  },
+  "b5cc697b-c960-ac64-eef2-94e34ec2dbda": {
+    "gtex": "d8f7362947537418f69b544fd7be4305",
+    "name": "WLD_Main_A_FloorTrigger_CMPBasement"
+  },
+  "b5da8225-011a-91ff-97c9-e5a1cca910e1": {
+    "gtex": "961a4b8c89878c327942af294fa43a19",
+    "name": "BGO_Main_A_FloorTrigger_BridgeTopTowers__3"
+  },
+  "b5eed6e3-01d2-a29d-5bd2-1a36817b78ba": {
+    "gtex": "9aa6c96b81178296ae98c6c70910dc0c",
+    "name": "CTY_Main_A_FloorTrigger_Bonecloak_F0"
+  },
+  "b71a274f-65cd-da5e-88cf-52f05ff5de80": {
+    "gtex": "10012ec1fa2d145d3d89f9482f5147d0",
+    "name": "SCL_Main_A_FloorTrigger_MasonShedB0_000"
+  },
+  "b892a73d-c84f-311e-6bfd-e90aea92a7b4": {
+    "gtex": "35fb5750a129702db79b7da8c49888f0",
+    "name": "CTY_Main_A_FloorTrigger_GortashHouse_f1"
+  },
+  "b8acdef7-ea9d-4cc9-322f-016ca305e6c9": {
+    "gtex": "61eb83df975fac221fc55b889c0a33e9",
+    "name": "SCL_Main_A_FloorTrigger_Hospital_1"
+  },
+  "b8ecc6ae-5808-6a27-0b15-cf2ba74a7b37": {
+    "gtex": "a7b9f0c2dff8092dc8468c9791cb9954",
+    "name": "BGO_Main_A_RegionTrigger_BGO_WindmillCellar"
+  },
+  "ba1814cd-3612-8d0e-d36e-ac900e46118b": {
+    "gtex": "b403af46240dd71a137c8a14844442b1",
+    "name": "BGO_Main_A_RegionTrigger_AstralPlaneFull"
+  },
+  "ba89551e-6265-bc59-3e88-711864b0e6e2": {
+    "gtex": "697debc4585a1facbeb0f2762185d50f",
+    "name": "CTY_Main_A_FloorTrigger_Interior_F0"
+  },
+  "ba94fa33-e1d2-1cf2-9c60-4e53f61708b4": {
+    "gtex": "6a76328d81a0c160f92482e591d61fc1",
+    "name": "WLD_Main_A_FloorTrigger_ZhenatrimBasementLowerFloor_F0"
+  },
+  "bb3af238-982d-d691-faf4-406663b0a871": {
+    "gtex": "283ae927ccbae3e14e171c9760bd5e28",
+    "name": "END_Main_RegionTrigger_BrainFight"
+  },
+  "bb7233c4-cbc0-209d-5ee9-9e8d0081674c": {
+    "gtex": "52c2a01cc40480537ab286dc2073405c",
+    "name": "CTY_Main_A_FloorTrigger_HaepsideManhole"
+  },
+  "bbeb46fe-644f-42b4-7335-0f5ca6acffcf": {
+    "gtex": "cb659665486a58c05746dbcf04f5da21",
+    "name": "WLD_Main_A_FloorTrigger_Mill_F1"
+  },
+  "bd1501ee-2d8e-5299-e2d9-7264d47a737e": {
+    "gtex": "25b55731f48356f4b4132fde061abb5e",
+    "name": "SCL_Main_A_FloorTrigger_WaterlocksKiln_0"
+  },
+  "be4c1d74-ba4a-e8a2-c346-40a45321377c": {
+    "gtex": "ebf3f0cd9af800347b958251b7f2ea21",
+    "name": "WLD_Main_A_FloorTrigger_GoblinFootbridge_001"
+  },
+  "bfdf5a35-7bd2-3e80-82c6-79c4cd92dc07": {
+    "gtex": "f0118673456f74d7ae57e53fae13ae16",
+    "name": "WLD_Main_A_FloorTrigger_Gate_F0"
+  },
+  "c1970d97-a2a9-fcb2-d95a-964644068589": {
+    "gtex": "e0bf8ca39f23a40e42cbd6b37e03ce1c",
+    "name": "WLD_Main_A_FloorTrigger_GoblinCamp_F0"
+  },
+  "c228ec5f-f0ad-3a58-d42d-75caf0e70638": {
+    "gtex": "64f147ee7cc71f8ef34f133d0a9171d9",
+    "name": "CTY_Main_A_FloorTrigger_BarracksInterior"
+  },
+  "c2b58060-7fad-bff4-bea6-3ed50f043b90": {
+    "gtex": "da5ae6156cc06aba9b019837eccbee0e",
+    "name": "CTY_Main_A_RegionTrigger_Room6"
+  },
+  "c2d14460-5a04-decc-4660-25a8c309a452": {
+    "gtex": "121bc6d9d5eb441fffd3d0a31361b082",
+    "name": "CTY_Main_A_FloorTrigger_CazadorUnderground_F0"
+  },
+  "c2d24a3e-8344-f8b5-fc51-4906cde59a5e": {
+    "gtex": "758fb2fb574baca3491a3ea8a8d2ed5e",
+    "name": "SCL_Main_A_FloorTrigger_Brewery1"
+  },
+  "c3342c94-64a1-46f6-6a4c-efecf026c3aa": {
+    "gtex": "a86e46672d0b0952b7c37be45e348128",
+    "name": "CRE_Main_A_RegionTrigger_AstralPlaneFull"
+  },
+  "c38be1de-36b4-0b97-3c23-5935627a658b": {
+    "gtex": "172f447b78f50fd282252f0dd3672402",
+    "name": "CTY_Main_A_FloorTrigger_WalkUnder_F0"
+  },
+  "c3daf740-91c2-ce4c-acd8-8839ea2316ad": {
+    "gtex": "9b44a3818f97938c8b6b67299d8e69f9",
+    "name": "CTY_Main_A_FloorTrigger_Jetty_f0"
+  },
+  "c3e2fff6-588c-4594-0c95-16c927e780b1": {
+    "gtex": "33d6ca0ccb922467e03a9abace643339",
+    "name": "WLD_Main_A_FloorTrigger_HagSecretLair_000"
+  },
+  "c3f3c134-14e6-ad0f-33ba-a242766659c1": {
+    "gtex": "b5e81c923d6e3cbdee7dbb81bbf917c1",
+    "name": "SCL_Main_A_RegionTrigger_SharSanctuary"
+  },
+  "c48c849c-5471-c88b-5edf-9990efa38acc": {
+    "gtex": "619137ba30efda8889a25f77ea2d8163",
+    "name": "CTY_Main_A_FloorTrigger_AmbushPostRoom_F0"
+  },
+  "c4e58817-51a1-fc03-f844-2e0e3a700c8b": {
+    "gtex": "6997680ff282ab6cec006a7fdda21dd8",
+    "name": "CTY_Main_A_RegionTrigger_Submersible"
+  },
+  "c5286898-2f0a-04d0-c8dd-0dc7b08c0da7": {
+    "gtex": "62283a490814c9a2b4ed64080754dbdc",
+    "name": "CTY_Main_A_FloorTrigger_KurwinCoffin_F0"
+  },
+  "c5b27e78-461e-f24e-75c1-d4c2b85be40d": {
+    "gtex": "4df67c88963ddd00a61edc2eeffc0526",
+    "name": "CTY_Main_A_FloorTrigger_BarracksWalkway"
+  },
+  "c70c45ea-0a8f-6b22-453a-a88047d0ae50": {
+    "gtex": "148f9063adcad3ccf2737272f1e96f5a",
+    "name": "SCL_Main_A_FloorTrigger_MasonShedA0"
+  },
+  "c712d5c0-e2b6-a51d-2d2f-7a0149a7ebdb": {
+    "gtex": "e0f8ec6a182818a60d0386ad5aa1eebe",
+    "name": "BGO_Main_A_FloorTrigger_MerchantHouse2"
+  },
+  "c8752a9b-e41e-3bfc-08d2-84cd7b439934": {
+    "gtex": "a1c6925d4671ab73844611005c796b75",
+    "name": "BGO_Main_A_FloorTrigger_Chapel0"
+  },
+  "c9b6ca39-afd6-fc1a-9695-7bf5228e7fb7": {
+    "gtex": "1afe0da6f044ca7447f38c0a4102fcf6",
+    "name": "SCL_Main_A_FloorTrigger_Hospital_0_001"
+  },
+  "c9d986c3-8cf3-339d-e15c-8c271bec332a": {
+    "gtex": "589552f3b92420951d51525920b1d5d7",
+    "name": "SCL_Main_A_RegionTrigger_SCL_Main"
+  },
+  "c9ddd58f-439e-ff08-9f9c-7673e3a86e27": {
+    "gtex": "a5d34862af35b3d06423dbbad94bf356",
+    "name": "BGO_Main_A_FloorTrigger_Fort_F3New_Spot2"
+  },
+  "ca7301d7-5998-ad43-22bd-3cabf37cd576": {
+    "gtex": "7ade43f5ee763edd53f1eda64d916358",
+    "name": "CTY_Main_A_FloorTrigger_HoH_Upper"
+  },
+  "caf9ca86-902d-29f9-cf54-c256ad4feaff": {
+    "gtex": "960369badc238b9831b450b61414bec3",
+    "name": "END_Main_FloorTrigger_IntroF1"
+  },
+  "cc488adb-aa56-303e-539e-2a4616879058": {
+    "gtex": "77b6b58386554dd969ce98721424de7b",
+    "name": "SCL_Main_A_FloorTrigger_Moonrise4"
+  },
+  "cc8fbc17-5aa0-f46c-c0db-fd3398284ea8": {
+    "gtex": "39edb856a4a8a2a28b0e9e70de922221",
+    "name": "CTY_Main_A_FloorTrigger_SteepsTrader_F0"
+  },
+  "cd4ab6fb-4008-8960-c519-83e2c06926ac": {
+    "gtex": "809d5f5b66ec1f7cf5ff7e562199a21f",
+    "name": "CTY_Main_A_FloorTrigger_GHStack_F0"
+  },
+  "cd55bfa2-43cc-98d5-c798-fd00fadd3a9f": {
+    "gtex": "c3d12dd5e66c60e30eac324e64be8b10",
+    "name": "CTY_Main_A_RegionTrigger_CTY_DockWarehouseBasement"
+  },
+  "cde5540f-e866-200f-58d1-7d662b55a58a": {
+    "gtex": "c7f091a781c755c291b2f31f74396402",
+    "name": "SCL_Main_A_FloorTrigger_LastLightInn_2"
+  },
+  "ce1e1d8c-e39a-3f24-b2fc-0100155c6b00": {
+    "gtex": "da3a2d799a4090030104887bee1c9780",
+    "name": "SCL_Main_A_FloorTrigger_Brewery1_000"
+  },
+  "cf04b535-4707-af00-ecc1-b77bbcd7dac8": {
+    "gtex": "7a7d450f1cbb376b588b4fafb6522570",
+    "name": "CTY_Main_A_FloorTrigger_BellTower_f1"
+  },
+  "d014fd3b-ee60-db4c-2606-864e3f470d68": {
+    "gtex": "367b4c6fe0a8c15f9d50b2634d4caea9",
+    "name": "WLD_Main_A_RegionTrigger_CMP_CaveSandstone"
+  },
+  "d07e188f-294b-fa1d-8c1f-0ebc258b65b8": {
+    "gtex": "7e36964d1d0c379b9ed9322d9fb9a6a8",
+    "name": "SCL_Main_A_FloorTrigger_CursedForestFarmHouseA_0"
+  },
+  "d07f7fa7-65df-e774-b706-989533452445": {
+    "gtex": "93504ec87a019e4e6415b8f3caace11a",
+    "name": "CTY_Main_A_FloorTrigger_FoundrySideB_A_F1_000"
+  },
+  "d08266aa-f484-8bf8-56cb-d0906e405bb3": {
+    "gtex": "81a44db2800ff4d5bcc9264702a45d6c",
+    "name": "CTY_Main_A_FloorTrigger_Fireworks_f1"
+  },
+  "d0a6f37b-7415-0970-bd66-62354c9c4f66": {
+    "gtex": "6194e7515fa114dede9861b6e6c77956",
+    "name": "WLD_Main_A_RegionTrigger_CMP_Basement_A"
+  },
+  "d1dfa753-6728-a2e4-c9e6-5b93dda70503": {
+    "gtex": "937a97e644c6adb5e16a03836b9ae3a9",
+    "name": "CTY_Main_A_FloorTrigger_TinyHouse_F1"
+  },
+  "d2056a0c-7197-61bc-0039-465e125c5b40": {
+    "gtex": "16c24485ddc4ab52a5ef93cdfcebe248",
+    "name": "CTY_Main_A_FloorTrigger_HeapsideBrampton_F-1"
+  },
+  "d286b316-e289-8592-f675-8fad70e890cb": {
+    "gtex": "2ab57d5a9e2b0bd118903826715225ad",
+    "name": "CRE_Main_A_RegionTrigger_Creche"
+  },
+  "d2dbda31-4906-4125-3431-64d8f554eaa3": {
+    "gtex": "0622e363bb03c2c7ab67153de095ad58",
+    "name": "BGO_Main_A_FloorTrigger_Ribs"
+  },
+  "d34abae9-d892-7e32-081f-35952cc998be": {
+    "gtex": "aec6a3140f6cdd35421d1cc2f95a8a9a",
+    "name": "CTY_Main_A_FloorTrigger_DiabolistForge_F0"
+  },
+  "d3db62cb-32c5-d182-ca19-ecaf9e6f52a9": {
+    "gtex": "ad1e7211988809a488d573f8a8e55c5d",
+    "name": "CTY_Main_A_FloorTrigger_Philgrave_F0"
+  },
+  "d4788159-5dbd-07e3-3f55-077afe684a43": {
+    "gtex": "d69ac1d5ee1640d0d12da21b460d68bf",
+    "name": "END_Main_FloorTrigger_HouseB_F4"
+  },
+  "d4be5dc9-44b0-82a9-bd72-ea04300bcd5f": {
+    "gtex": "c491bca3cbd116b7b2054ed886549c49",
+    "name": "CTY_Main_A_RegionTrigger_Room5"
+  },
+  "d54c825a-d0a7-8cc5-ac56-8c1914cc94bc": {
+    "gtex": "37427012aeb5fb227a40100168e8e456",
+    "name": "SCL_Main_A_FloorTrigger_Moonrise1_000"
+  },
+  "d563cc03-6f16-b392-1591-0643256e2dc9": {
+    "gtex": "2653c3fad7b80a0dd4f1acaa8c658cba",
+    "name": "CTY_Main_A_FloorTrigger_LodgeBasementB_F0"
+  },
+  "d5784d3e-1c10-bbaf-85da-f7554d469a8c": {
+    "gtex": "2f135bcb6bd2857e60f07c276b5e1092",
+    "name": "SCL_Main_A_FloorTrigger_CursedForestTower_1"
+  },
+  "d5cf252b-2ea8-5d6a-b6ff-4e28bb86ea59": {
+    "gtex": "b7b42d0b5ed5fc693bfcfcdae7c2dc12",
+    "name": "END_Main_FloorTrigger_GateTowerA_F0"
+  },
+  "d5fd095b-30f0-a710-30fa-2847713f5e99": {
+    "gtex": "dade179f1f4d33e8bab60235830f79f0",
+    "name": "SCL_Main_A_FloorTrigger_SharB_F1_Feet"
+  },
+  "d640df97-e086-aa68-5df9-e89d3463d0e9": {
+    "gtex": "a6728e9c82764fd629841f894ba2d0f7",
+    "name": "WLD_Main_A_FloorTrigger_Mushrooms"
+  },
+  "d7bc3548-a7a3-91fe-db2b-54cec9060e13": {
+    "gtex": "882dec075ee8a737f78202e1cf10789d",
+    "name": "WLD_Main_A_RegionTrigger_WLD_DenSubs_Zevlor"
+  },
+  "d7f43083-ad72-e757-0865-650a0aea2ac9": {
+    "gtex": "15b380cc64c982bc37672de3d43c897b",
+    "name": "CTY_Main_A_FloorTrigger_SteepsTrader_F2"
+  },
+  "d81240c9-d26c-92c8-6db3-8b3ae613cd86": {
+    "gtex": "402cd7407e18742ad08b1e22eb4274e4",
+    "name": "SCL_Main_A_FloorTrigger_HavenCellar0"
+  },
+  "d88731aa-8949-424f-4e39-9e24385498d2": {
+    "gtex": "cc6e7338dd83c52615f3a607e6beb4c6",
+    "name": "CTY_Main_A_FloorTrigger_CazadorGuardTowerUpper_F1"
+  },
+  "d93b83dc-3794-89ad-fe45-1a03afefe6c5": {
+    "gtex": "3b9d3046844cf6d02bb4c4cecf8038fa",
+    "name": "WLD_Main_A_FloorTrigger_Mill_F0"
+  },
+  "da7ffd46-1c23-8101-76d7-3a724dd243ef": {
+    "gtex": "209cda25117caeda785f60f346b0029d",
+    "name": "CTY_Main_A_FloorTrigger_AmbushExtraBuilding_F0"
+  },
+  "dbab1a47-da59-d2d7-b8bc-78bd8e4773a1": {
+    "gtex": "7fd2bac6b52b8c3a4744f62f12722777",
+    "name": "CTY_Main_A_FloorTrigger_CountingHouse_Exterior_000"
+  },
+  "dc476f41-e4cc-7b9d-efd4-187b159bd1f0": {
+    "gtex": "7e8ea5ce3a072cd1fb4e172e265f8d9e",
+    "name": "SCL_Main_A_FloorTrigger_CursedForestShedA_0"
+  },
+  "dc507f23-7d42-f073-1d05-81274de07551": {
+    "gtex": "65f73e3b484ee77ed50719ff2c004025",
+    "name": "CTY_Main_A_FloorTrigger_RefugeeHostel_F0"
+  },
+  "dcf039dd-8d13-7f1b-d602-a607bd4ab707": {
+    "gtex": "a008d6a3aef92819e0cae9d224dc6248",
+    "name": "WLD_Main_A_FloorTrigger_KethericCity_F2_001"
+  },
+  "dd18707b-1a36-8a28-723d-ec3ca53a812b": {
+    "gtex": "2e279cb3abf6198f196e17a5cddf6814",
+    "name": "CTY_Main_A_FloorTrigger_BloodMerchantHouseExterior_F0"
+  },
+  "dd6ac193-7d8a-94ea-1565-10ad6a8d4322": {
+    "gtex": "a50188985ae40d4a377139f80cab8acb",
+    "name": "SCL_Main_A_FloorTrigger_Hospital_2"
+  },
+  "dd81405f-efc5-bbe6-ef04-aa06ed67584e": {
+    "gtex": "2fa2aec3a553b9f59035299cc82ef197",
+    "name": "SCL_Main_A_FloorTrigger_MorgueDoor2"
+  },
+  "de2ebead-2da3-db1a-dbc6-d96717f86ec0": {
+    "gtex": "91d428453aeabe242f92f22112046eb4",
+    "name": "END_Main_FloorTrigger_HouseB_F3"
+  },
+  "de55eb6a-79e6-38ac-70cd-60053cfc4423": {
+    "gtex": "bed5a9e1d97601ae077cdda23794442e",
+    "name": "CTY_Main_A_FloorTrigger_SteepsTrader_F0_UnderArch"
+  },
+  "df04ff6c-c12e-2f7c-136c-d63f7e7ec1df": {
+    "gtex": "0ac8b10180e5602d76102a8b633994b5",
+    "name": "CTY_Main_A_FloorTrigger_ArchwayUnderWall_A"
+  },
+  "dfb1c7ae-e6b1-a1f1-be77-aea0145d72ea": {
+    "gtex": "f044de60dc5758add9648bde3dc28ae6",
+    "name": "CTY_Main_A_FloorTrigger_Fireworks_f0"
+  },
+  "e0163454-3592-ed42-8c0c-bfd5108ae63f": {
+    "gtex": "c92ae8851cb8672eef9783a6cdf10b25",
+    "name": "CTY_Main_A_FloorTrigger_JaheiraHouse_f1"
+  },
+  "e0228b73-0d66-4e2a-6d00-3c280bf16a04": {
+    "gtex": "79c3e80a60d1f35eb56aa52724a3ef46",
+    "name": "CTY_Main_A_RegionTrigger_Catacomb_3and4"
+  },
+  "e050e709-bc51-2e10-9f4d-5e71befeff55": {
+    "gtex": "147ebb10e38f2a6a30d51650720c46a3",
+    "name": "WLD_Main_A_FloorTrigger_Underdark_F0"
+  },
+  "e068d5f3-6364-e8da-d127-bc2be579ef21": {
+    "gtex": "59245cd8095a733da706923b67241b06",
+    "name": "CTY_Main_A_FloorTrigger_FoundryRear_F1_000"
+  },
+  "e0a19160-b137-3856-369f-480249ac9da3": {
+    "gtex": "04288b177846160283709b7860429515",
+    "name": "BGO_Main_A_FloorTrigger_BorderGateTowers_F1"
+  },
+  "e11016e7-9e1f-94bb-1bce-4b4673a8ed99": {
+    "gtex": "723172f7b0b5a74a1c25840dec24b906",
+    "name": "CTY_Main_A_FloorTrigger_Artist_F4"
+  },
+  "e112de19-5628-93ff-818a-18b1d21a957c": {
+    "gtex": "ea17d8fae43bdb8b5889b58a9261504d",
+    "name": "BGO_Main_A_FloorTrigger_Windmill0"
+  },
+  "e1e3ba20-e81c-28e9-d4c0-d0f4b5131d7e": {
+    "gtex": "daafd11baea319f00e74c1fbde90fa85",
+    "name": "CRE_Main_A_RegionTrigger_CMP_GithCrecheCave"
+  },
+  "e2419ddb-daa4-311a-0ce1-34860d0e92df": {
+    "gtex": "3535b9c97fdf428e91a861c306bf90ac",
+    "name": "CTY_Main_A_FloorTrigger_UnderboardwalkA_F0"
+  },
+  "e2f4029c-413d-8505-a5d4-e706e3a56277": {
+    "gtex": "9f897fd07804f3f3357ea640aac7d255",
+    "name": "CTY_Main_A_FloorTrigger_SundriesInt_F0"
+  },
+  "e351c7d8-d392-0b89-dc39-68d3078723bb": {
+    "gtex": "e056b7596705f81e7cf8aa2a51ccd7c3",
+    "name": "CTY_Main_A_FloorTrigger_GazetteUpper_F1"
+  },
+  "e4c0b3e4-58e2-5927-7637-2256ed13864b": {
+    "gtex": "86411cedfb139816217d20499b7cb136",
+    "name": "CTY_Main_A_FloorTrigger_HoH_EngineRoom_Inner"
+  },
+  "e4ca32f5-fdc9-eef3-cc43-000b48e243ea": {
+    "gtex": "16f52b39c3c3a0af2100574385aab797",
+    "name": "SCL_Main_A_FloorTrigger_MorgueDoor1"
+  },
+  "e4dd191b-ac75-30a5-0fbd-4f5f06b5afde": {
+    "gtex": "66bb3cff4282edcc9bebf8a7a8012047",
+    "name": "INT_Main_A_FloorTrigger_TowerA"
+  },
+  "e4dda0b2-0b86-8ef9-7fce-5bd09e78312b": {
+    "gtex": "aa9672cc2e66e75dd13f0b6740933a96",
+    "name": "CTY_Main_A_FloorTrigger_SundriesInt_F1"
+  },
+  "e552601f-85e6-9148-1b45-f2182216f16c": {
+    "gtex": "7590a573dc60d4721026922345320ef7",
+    "name": "CTY_Main_A_FloorTrigger_CazadorGuardTower_F1"
+  },
+  "e5e9fa97-438f-b02f-f7cf-2efe8a6a3e9f": {
+    "gtex": "3a216d9d75e571129da5524934b456e0",
+    "name": "SCL_Main_A_RegionTrigger_MoonriseDungeon"
+  },
+  "e5fb8836-8b23-0acc-b5f0-5d6fa064f9cb": {
+    "gtex": "07ef92fe8db5b739c7c934d91105fbba",
+    "name": "CTY_Main_A_FloorTrigger_BlushingMermaid_Interior_F1_000"
+  },
+  "e6482ac4-7a90-1009-c9ae-1f635404ce56": {
+    "gtex": "ee2009b53658ad92aaaf06320c752272",
+    "name": "CTY_Main_A_FloorTrigger_SecretExit_F0"
+  },
+  "e65665c7-3aed-509f-5cbd-9ceff3d5c4d6": {
+    "gtex": "7f4bd18a4e597677389682ffa79fdb2c",
+    "name": "CTY_Main_A_FloorTrigger_LowerFloorB_F0"
+  },
+  "e6aca0ed-25f4-5ab8-4809-a883f189829e": {
+    "gtex": "bd10a47c76591a447dd977eb2a584914",
+    "name": "INT_Main_A_FloorTrigger_Ribs"
+  },
+  "e790744b-07fa-cf30-66b0-8009af21a8e4": {
+    "gtex": "9d680922d303201603c03e5ab7c0abfe",
+    "name": "WLD_Main_A_FloorTrigger_MushroomsB"
+  },
+  "e8312d3d-b90a-d0a0-d9e5-057fb15f45eb": {
+    "gtex": "7daac2e0c91b6cf4505c5af895e36d56",
+    "name": "CTY_Main_A_RegionTrigger_GardenerShed"
+  },
+  "e871cda0-7eae-73f5-69c7-525c1e64ce83": {
+    "gtex": "feac94c4a0d7db0c873e89ef9b398eb7",
+    "name": "CTY_Main_A_FloorTrigger_Philgrave_F2"
+  },
+  "e874bde3-ed04-e446-a112-29d55d341a95": {
+    "gtex": "c633b0f1fba182d1e4579fafab2bc9b1",
+    "name": "BGO_Main_A_FloorTrigger_BridgeLegA__-3"
+  },
+  "e8eb9dac-0ca1-cb28-5d1f-793aa2a5a551": {
+    "gtex": "189e73289767c9545067ffed75e4d9e3",
+    "name": "TUT_Avernus_C_FloorTrigger_Tutorial_Lower"
+  },
+  "e91b2d1e-3339-8fd3-3e5c-e9f256096ef5": {
+    "gtex": "e6d78512c0903b80a698875b126cbd95",
+    "name": "SCL_Main_A_RegionTrigger_HavenCellar"
+  },
+  "ea1da5bf-08b5-43cd-76a3-7befb8d7ba4d": {
+    "gtex": "ca14adc0d0db63952a95ec5d2de7c1c5",
+    "name": "CTY_Main_A_RegionTrigger_RainforestBasement_1"
+  },
+  "eb63e0fa-975c-75b5-0a39-da51a7a7187d": {
+    "gtex": "7a73378619ba92929acfa29e983e4f0e",
+    "name": "BGO_Main_A_FloorTrigger_ChapelThinwall0"
+  },
+  "eb7b52fa-1e43-464a-a872-f01979f07501": {
+    "gtex": "1e3c61d9b61215de199e15184eb9bd8a",
+    "name": "CTY_Main_A_FloorTrigger_SerialKiller_F0"
+  },
+  "eb8ad76c-f9c1-b5b8-46cb-b343b0898cc0": {
+    "gtex": "dc9eea0e83174a074f6a57514c6e5397",
+    "name": "CTY_Main_A_FloorTrigger_Artist_F2"
+  },
+  "eb9478f7-cbd1-e411-f5c1-2dacce2014e8": {
+    "gtex": "1226d48606d158b646cb4f94477e490b",
+    "name": "BGO_Main_A_FloorTrigger_MiniBarn0"
+  },
+  "ebceb926-50d8-376c-228b-f9de9a6b46eb": {
+    "gtex": "c1b74132ba121ac9edee340d90a31b48",
+    "name": "WLD_Main_A_RegionTrigger_WLD_UnderdarkShrineA"
+  },
+  "ebd04046-9f97-5bc2-e476-2f3f390f2850": {
+    "gtex": "dae10bacf3025b55dcaf593cca8803c1",
+    "name": "WLD_Main_A_RegionTrigger_WizardTowerCellar"
+  },
+  "ebfdc7a8-ecca-3f7e-c32f-2fb12742b0ee": {
+    "gtex": "fb8891c31c98d75ba925d330cab4f874",
+    "name": "CTY_Main_A_FloorTrigger_Fireworks_f2"
+  },
+  "ec44baef-b1d8-993a-4702-74d345423872": {
+    "gtex": "671859cca3727821c7dab607c4175f16",
+    "name": "BGO_Main_A_FloorTrigger_UnderHeapside_F0"
+  },
+  "ec639988-724c-7e39-858c-8caa4f9d0e0f": {
+    "gtex": "4788817dc120a75552ccc9d4695d572d",
+    "name": "CTY_Main_A_RegionTrigger_BGOSharranGrotto"
+  },
+  "ee6db273-b09a-1375-4700-58cf7bc5d032": {
+    "gtex": "35a83326aeaba4af3c29e35e5e82a790",
+    "name": "CTY_Main_A_FloorTrigger_LodgeBasementC_F0"
+  },
+  "ee991126-e4df-bd3e-8d93-fa962880c768": {
+    "gtex": "a5e6778abeb7f89ed91dc64ce586c971",
+    "name": "CTY_Main_A_FloorTrigger_CazadorPalace_F1"
+  },
+  "eeae283b-516e-773d-0b7e-d58eb570748d": {
+    "gtex": "5d6751f396a2282bd9bccc4171adbf2f",
+    "name": "SCL_Main_A_RegionTrigger_SCL_Mausoleum"
+  },
+  "ef2e415f-1378-22a7-e2bc-3bb2e1d312d4": {
+    "gtex": "7908e426e71f12d5a054fe480314b3e7",
+    "name": "CTY_Main_A_FloorTrigger_HeapsideBrampton_F1"
+  },
+  "ef34197c-c513-470a-804f-0930a8bd3e04": {
+    "gtex": "8973afd23751efd6b60ed98794451113",
+    "name": "SCL_Main_A_FloorTrigger_SeasideTower_1"
+  },
+  "effbd6f0-2af5-5e20-fdf5-ed5eb4263ab5": {
+    "gtex": "5f0f7b47520d09539ad269f1c2b9c294",
+    "name": "BGO_Main_A_FloorTrigger_PostHouseAwningB_F0"
+  },
+  "f027215d-53ed-fb6f-bc04-c39bb211d7bc": {
+    "gtex": "3fa43c012a3859a78fe7fe4d21eb05fe",
+    "name": "CTY_Main_A_FloorTrigger_HagTop_F0"
+  },
+  "f0425ca0-0099-2170-99b4-544795497c85": {
+    "gtex": "bf30f52063416eb8aa55e0bb102795bf",
+    "name": "SCL_Main_A_FloorTrigger_SmallStable0_000"
+  },
+  "f048a4e9-e480-c2eb-e59c-125721e88c1d": {
+    "gtex": "8328c1e1125b500e5a94b130780c1659",
+    "name": "CTY_Main_A_FloorTrigger_AmbushBuildingApproach"
+  },
+  "f04b298c-9f2e-1d7c-2a8b-77de875714a9": {
+    "gtex": "927526c689cb7f7c44ff998cc96f96d8",
+    "name": "SCL_Main_A_FloorTrigger_SharA_F3"
+  },
+  "f0c74681-86e8-b475-6ccd-cfd278891e6e": {
+    "gtex": "b43c2275da40f6c177b3a79a5cf6c61c",
+    "name": "CTY_Main_A_FloorTrigger_FoundrySideA_F1_000"
+  },
+  "f0d18b96-0a11-c1b6-392a-3d6ec73f930f": {
+    "gtex": "9c4d4264b7fc43cddb5e96b281d689e4",
+    "name": "INT_Main_A_RegionTrigger_AstralPlaneFull"
+  },
+  "f10ca239-75c2-58ca-ddec-0be2bd993eb6": {
+    "gtex": "3a63a924fd17b109816fdee5b37f7356",
+    "name": "SCL_Main_A_FloorTrigger_Brewery2_001"
+  },
+  "f1118847-368d-1786-ff32-0b49e30b0413": {
+    "gtex": "db34bdd87e510889e0d65e81c74aa7a9",
+    "name": "CTY_Main_A_FloorTrigger_LowerCityStreetA"
+  },
+  "f3825e9d-c414-2a50-45a7-588c597a0add": {
+    "gtex": "15185b6f8282cc0ef6bd35d084747942",
+    "name": "CRE_Main_A_FloorTrigger_GithDungeon_A"
+  },
+  "f3fb1218-30a6-280d-6d37-65c503e8a888": {
+    "gtex": "7249f638db20d850db2fd84bdf234d0e",
+    "name": "BGO_Main_A_FloorTrigger_TentD_0"
+  },
+  "f4382516-5e60-091d-2a45-3d5619efcdd0": {
+    "gtex": "b84ae10d64190141bda6ef9d9555061d",
+    "name": "WLD_Main_A_FloorTrigger_CaravanSeraiA_F0_extended"
+  },
+  "f4f8be91-9f08-b28d-8427-9cac1bb83b51": {
+    "gtex": "d4154c01c385d23c96d0632e4668f273",
+    "name": "WLD_Main_A_FloorTrigger_GoblinWalkwayA_F0"
+  },
+  "f5727b7a-ac03-5f23-e885-2db04c6f8d2d": {
+    "gtex": "fec80aa7ec848e18a5edfee588174bc3",
+    "name": "BGO_Main_A_FloorTrigger_Bridge__-1"
+  },
+  "f5b9900b-7ec6-69d4-dd9c-b0977171435b": {
+    "gtex": "14d74b6d78cd587d3ae7863362aa1fd7",
+    "name": "END_Main_FloorTrigger_HouseB_F0"
+  },
+  "f5f99144-ea92-4c1a-5790-6356ef49101f": {
+    "gtex": "eefe59816e3072c6aa7a3677ea82f12e",
+    "name": "SCL_Main_A_FloorTrigger_SharA_F2"
+  },
+  "f600b4f8-4803-55ef-c276-09be5935e673": {
+    "gtex": "c08b78b543af5ef4f4021387cb57213c",
+    "name": "WLD_Main_A_S_GOB_Orpheus_Voices_RegionTrigger"
+  },
+  "f6c46776-4d0b-3868-e497-0e9ef9a58c0e": {
+    "gtex": "84bec9af4bc963f7a76b0997574e8671",
+    "name": "CTY_Main_A_FloorTrigger_RefugeeHostel_F1"
+  },
+  "f73afb9f-4d8a-31fd-865b-a2af4a0a6353": {
+    "gtex": "125a4dbba726780f99c2aeea6031b2f3",
+    "name": "SCL_Main_A_FloorTrigger_BreweryCave0_000"
+  },
+  "f750ab80-6ef5-a270-9dc3-114ed682de61": {
+    "gtex": "b84b2bbc64edba4caa32086dd52b5ca7",
+    "name": "WLD_Main_A_FloorTrigger_CaravanSeraiB_F0"
+  },
+  "f7a4c8e4-6e77-d5f2-579a-7425d1660d21": {
+    "gtex": "cffaef070afba4cbc645acba418851c1",
+    "name": "BGO_Main_A_FloorTrigger_BGOStartTowerB_0"
+  },
+  "f7b83c0d-24d5-f047-8ddf-6ea2ab5f8787": {
+    "gtex": "c25efed83b026847a6aa138d7becda6b",
+    "name": "CTY_Main_A_FloorTrigger_FigaroInterior_F0"
+  },
+  "f7f18be0-6f89-f3ac-0c48-0c13dec3c260": {
+    "gtex": "7f2f0ca810f2ebc44a3d9fc7cce816aa",
+    "name": "CTY_Main_A_FloorTrigger_SingingLute_f0"
+  },
+  "f80201d2-ca44-8857-6d72-98f18f57f387": {
+    "gtex": "0a73ae3724d0470937b0b42e4759870b",
+    "name": "CRE_Main_A_S_CRE_CAMP_SUB_000"
+  },
+  "f806c109-3b29-727f-0aa3-65dd7351dd3c": {
+    "gtex": "92186ac8ac68112435a9f351eba62c99",
+    "name": "CTY_Main_A_FloorTrigger_BloodMerchant_F0"
+  },
+  "f84d9b64-1e3d-6189-00fb-3d920854dcb5": {
+    "gtex": "e5c24212837b133478ba741c59584ac7",
+    "name": "SCL_Main_A_FloorTrigger_Brewery2_000"
+  },
+  "f8b518da-1aeb-0b79-aeca-bb4894d99f1d": {
+    "gtex": "bd1b319ef516562913ff0cb2e4cab3ac",
+    "name": "CTY_Main_A_FloorTrigger_Hag_F0"
+  },
+  "f943ddb2-9e26-25dd-dc44-309b90381d2d": {
+    "gtex": "6c3592e7214c0c96e25e36b32016898a",
+    "name": "CTY_Main_A_FloorTrigger_CazadorGuardTower_F0"
+  },
+  "f963987b-91c6-b5a2-d3ec-fbe994640adb": {
+    "gtex": "8e81729e25a82bc263eae75cad617c75",
+    "name": "WLD_Main_A_FloorTrigger_CaravanSeraiD_F0"
+  },
+  "f9849b9a-aae8-e226-0533-c972ea6354f4": {
+    "gtex": "38288e7dbb3596127d4c54734043f78c",
+    "name": "BGO_Main_A_FloorTrigger_ChapelGate0"
+  },
+  "fa3e7db2-3b53-6e92-da80-429248b9b33b": {
+    "gtex": "946868e570308682e2aed352de5d4117",
+    "name": "INT_Main_A_FloorTrigger_SideBuildingA"
+  },
+  "fb30fd24-0ecc-4b9d-b661-61dfa1c7dc04": {
+    "gtex": "82f18e602e28af7b285aa842f01b0c89",
+    "name": "CTY_Main_A_FloorTrigger_Lodge_F0"
+  },
+  "fb7c07e6-da94-f80e-2bf2-e65933d56d24": {
+    "gtex": "9b2933f68d01ca8eb42275c650e9b373",
+    "name": "SCL_Main_A_RegionTrigger_AstralPlaneFull"
+  },
+  "fba0e06a-1897-1d32-6124-0d3203a9f381": {
+    "gtex": "279f9a3e798a7326cf97f94f68afe746",
+    "name": "END_Main_FloorTrigger_HouseB_F2"
+  },
+  "fc934603-6d41-d2da-bfb4-0b1dd59f572c": {
+    "gtex": "9d4d4934a27219716d899c8d3f52f6b1",
+    "name": "WLD_Main_A_FloorTrigger_ZhenatrimBasementLowerFloor_F0"
+  },
+  "fca5c0ca-5b9c-0e10-5374-9b60859d19cd": {
+    "gtex": "9c5803e490289233be5ed7ae90028dd0",
+    "name": "CTY_Main_A_RegionTrigger_CTY_TabernacleBasement"
+  },
+  "fcaa994c-473c-e907-7e2c-0699ced23c50": {
+    "gtex": "deae7b67567f3eef5e5176660f309dbd",
+    "name": "SCL_Main_A_RegionTrigger_WLD_SharTemple_E"
+  },
+  "fcb7fd88-d583-f4be-32da-f70df63b937a": {
+    "gtex": "1ad3dafc3bd09b70da475fcedf02afce",
+    "name": "SCL_Main_A_FloorTrigger_Tax0"
+  },
+  "fe024faf-dcdc-c16b-bdb8-ec5edcfa3416": {
+    "gtex": "f4f7631f980b856c17f51d6607c19ea3",
+    "name": "WLD_Main_A_FloorTrigger_TrappedTunnel_F0"
+  },
+  "fe0a7a88-1cd1-a547-f8bb-df5aec2d8adf": {
+    "gtex": "d1c3e5b028b000cb15e25b690da3335b",
+    "name": "WLD_Main_A_FloorTrigger_HagSecretLair"
+  },
+  "fe3ff167-8e80-1a8b-5275-6e775219e215": {
+    "gtex": "9a03f4bbd2194e98ad1d0b13ed1cd5ba",
+    "name": "WLD_Main_A_RegionTrigger_WLD_DenSubs_Altar"
+  },
+  "fe99423b-67dc-1d2d-f70b-7cf487ba3a19": {
+    "gtex": "d847768d51e60927d599f2df7e97b7a3",
+    "name": "WLD_Main_A_FloorTrigger_BeneathClimbOnStones_F0"
+  },
+  "fea3cefd-28aa-f84e-3814-a1ead1885f61": {
+    "gtex": "822e5d8d4f2b3b9c6c0a00e90fc39aa3",
+    "name": "CTY_Main_A_FloorTrigger_BlushingMermaid_Underboat_000"
+  },
+  "fea8fd1f-c5a2-e033-643e-8ff595474812": {
+    "gtex": "2d4a165da834aa231ffe574370364199",
+    "name": "BGO_Main_A_FloorTrigger_PostHouseWallB_F0"
+  },
+  "ff775dda-6bde-ed50-063b-4e5cd06ab1a0": {
+    "gtex": "f07f90469b2c4e11611f481d1429c291",
+    "name": "CTY_Main_A_FloorTrigger_Bonecloak_F1"
+  },
+  "ffb859f7-a481-c4cf-5d31-d5b7b62135a2": {
+    "gtex": "6e29599464d3f25b266f88b8fe9ec8d2",
+    "name": "CTY_Main_A_RegionTrigger_ElfsongCamp"
+  },
+  "ffd2b73f-d724-cc28-839a-6f554e240aa5": {
+    "gtex": "a300e89d21f5ccb5ad4cd1b6eef5da73",
+    "name": "SCL_Main_A_RegionTrigger_MasonsGuildCellar"
+  }
+}

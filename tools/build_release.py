@@ -132,10 +132,20 @@ def main() -> int:
     # Privacy sanity check on text files. Catches drive-letter paths
     # that may have crept in via copy-paste. The build script intentionally
     # does NOT hardcode any personal-name tokens -- doing so would itself
-    # be a leak. To extend the check with maintainer-specific tokens at
-    # build time without committing them, set BG3_PRIVACY_EXTRA to a
-    # pipe-separated regex (e.g. "myname|someothertoken") in the local
-    # environment before running this script.
+    # be a leak.
+    #
+    # The base pattern (drive-letter + /Tools/BG3 path fragments) is the
+    # safe baseline that every fresh checkout gets out of the box -- no
+    # .env required. It catches the most common leak class (absolute
+    # paths from copy-pasted shell output) without anyone having to
+    # configure local secrets just to build a release.
+    #
+    # BG3_PRIVACY_EXTRA is opt-in: maintainers with additional PII
+    # concerns (e.g. a real-name token they want to belt-and-suspenders
+    # block from ever entering the zip) set it in a gitignored .env at
+    # the pack root. The token list lives ONLY in that .env -- it must
+    # never be written into a tracked file, including this one. A
+    # contributor without a .env still gets the baseline check.
     base_pattern = r"D:\\|C:\\Users|/Tools/BG3"
     extra = os.environ.get("BG3_PRIVACY_EXTRA", "").strip()
     if extra:

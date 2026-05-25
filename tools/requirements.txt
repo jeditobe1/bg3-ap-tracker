@@ -1,0 +1,19 @@
+# Build-time Python dependencies for the BG3 PopTracker pack pipeline.
+#
+# Used by:
+#   generate_pack.py           Pillow (placeholder + composited PNGs)
+#   build_release.py           (stdlib only; no third-party deps)
+#   build_npc_data.py          (stdlib only; Divine.exe does the heavy lifting)
+#   extract_icons.py           Pillow (DDS atlases + portrait PNGs)
+#   make_quest_marker.py       Pillow
+#   build_texture_index.py     (stdlib only)
+#   render_region_map.py       Pillow, numpy, scipy (via hole_fill)
+#   render_multi_zone_map.py   Pillow, numpy, scipy (via hole_fill)
+#   render_overworld.py        Pillow, numpy, scipy (via hole_fill)
+#   hole_fill.py               numpy, scipy, Pillow
+#
+# Versions pinned to a known-good combination.
+
+Pillow==12.2.0
+numpy==2.4.6
+scipy==1.17.1

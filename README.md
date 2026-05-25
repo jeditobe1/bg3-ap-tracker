@@ -93,66 +93,14 @@ These drive what locations are visible. When AP is connected, the values are set
 
 ## Maintainer guide
 
-### Regenerating after an apworld change
+Most maintenance happens by re-running `tools/generate_pack.py` after an apworld change. For deeper edits (region maps, NPC cache, texture pipeline, release zip, icon re-extraction) see **[MAINTAINER_GUIDE.md](MAINTAINER_GUIDE.md)** for the full pipeline.
 
-The pack is partially generated from the BG3 apworld's Python source. Run `tools/generate_pack.py` to rebuild:
+### Common updates
 
-```
-python tools/generate_pack.py --apworld "<path to>/ArchipelagoBG3/worlds/bg3"
-```
-
-The generator owns these files (do not edit by hand):
-
-- `locations/locations.json`
-- `maps/maps.json`
-- `layouts/regions.json`
-- `scripts/autotracking_generated.lua`
-- `images/maps/<region>.png`
-
-It reads `LOCATION_NAME_ID_REGION` from the apworld's `locationids.py` via AST (no apworld imports). Run with `--check` first to validate the data without writing files.
-
-Hand-authored files that the generator does NOT touch:
-
-- `manifest.json`
-- `items/items.json`
-- `layouts/standard.json`
-- `scripts/init.lua`
-- `scripts/autotracking.lua`
-- `images/items/*.png`
-
-If the apworld adds new region slugs, edit `REGION_DISPLAY_NAMES`, `REGION_ORDER`, `REGION_ACCESS_GATE`, and `REGION_GOAL_VISIBILITY` in `tools/generate_pack.py` — the generator will fail loudly with `unmapped region slug 'X'` if you forget the first.
-
-If item IDs change in items.py:
-- New toggle items: add to `AP_ITEM_TOGGLE_IDS` in `tools/generate_pack.py`.
-- New ID ranges for consumables (stat boosts, equipment, filler, traps): update `code_for_item` in `scripts/autotracking.lua`.
-- New sanity options: add a toggle item to `items/items.json` and emit `visibility_rules: ["<new_sanity_code>"]` per section from the generator.
-- New equipment in `equipment.py`: the generator picks them up automatically via the EQUIPMENT AST pass; only the 4 rarity buckets (`equipment_common` / `equipment_uncommon` / `equipment_rare` / `equipment_very_rare`) need to stay in items.json. New rarity tiers (>3) would need a corresponding entry in `RARITY_CODES` in `tools/generate_pack.py`.
-
-If the apworld changes `UserDefinedFights.valid_keys` in `options.py`:
-- The generator's `resolve_udf_to_locations` will fail loudly (unmatched / ambiguous fight) and refuse to write. Fix the apworld side or add a name to the matching logic.
-- Hand-add a matching `udf_<slug>` toggle entry to `items/items.json` (the toggle code follows `re.sub(r"[^a-z0-9]+", "_", fight.lower()).strip("_")`).
-- Add the new code to the appropriate row in `layouts/standard.json`.
-
-### Re-extracting item icons from BG3
-
-If you want to retarget icons (e.g. swap which BG3 item provides the placeholder for a Trap, or change one of the UDF boss portraits), see `tools/extract_icons.py`. It needs prior `Divine.exe extract-package` runs of:
-
-- `Icons.pak` — atlas `.dds` files
-- `Shared.pak` — `Icons_Items*.lsx` UV maps **and** the individual portrait `.dds` files under `Mods/Shared/GUI/Assets/Portraits/`
-- `Gustav_Textures.pak` — campaign-specific NPC portraits under `Mods/Gustav*/GUI/Assets/Portraits/` (needed for 13 of the 16 UDF portraits)
-
-Then run with all four roots:
-
-```
-python tools/extract_icons.py \
-  --icons-root "<extracted Icons.pak>" \
-  --shared-gui-root "<extracted Shared.pak>/Public/Shared/GUI" \
-  --ap-mod-root "<BG3ArchipelagoMod mod folder>" \
-  --portraits-shared-root "<extracted Shared.pak>" \
-  --portraits-gustav-root "<extracted Gustav_Textures.pak>"
-```
-
-The UDF portrait mapping lives in `PORTRAIT_ICON_TARGETS` — to swap a boss icon, update the DDS path next to its `udf_*` code there.
+- **Regenerate after an apworld change**: `python tools/generate_pack.py --apworld "<path to>/ArchipelagoBG3/worlds/bg3"`. The generator owns `locations/locations.json`, `maps/maps.json`, `layouts/regions.json`, `scripts/autotracking_generated.lua`, and placeholder `images/maps/<region>.png` files (do not hand-edit). Use `--check` first for a dry run.
+- **New region slugs**: edit `REGION_DISPLAY_NAMES`, `REGION_ORDER`, `REGION_ACCESS_GATE`, `REGION_GOAL_VISIBILITY` in `tools/generate_pack.py`. The generator fails loudly on an unmapped slug.
+- **Item ID / equipment / UDF / sanity changes**: see MAINTAINER_GUIDE.md for the per-case checklist.
+- **Re-extract item / portrait icons**: see `tools/extract_icons.py` and MAINTAINER_GUIDE.md. Needs prior `Divine.exe extract-package` of `Icons.pak`, `Shared.pak`, and `Gustav_Textures.pak`.
 
 ## Repo layout
 
