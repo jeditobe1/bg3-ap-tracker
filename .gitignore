@@ -20,3 +20,8 @@ build/
 # regex) that must never enter version control. There is intentionally
 # no template / example file committed -- writing one would be a leak.
 .env
+
+# Debug dumps from tools/generate_pack.py. Resolved pin coordinates +
+# overworld centroids -- derived from tools/projections.json and
+# tools/pin_overrides.json, not consumed by anything. Inspect-only.
+tools/_debug_*.json

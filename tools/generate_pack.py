@@ -84,6 +84,13 @@ ACT_GROUPS: dict[str, list[str]] = {
 ACT_OVERWORLDS: list[tuple[str, str, str]] = [
     ("Act 1", "act1_overworld", "Overview"),
     ("Act 2", "act2_overworld", "Overview"),
+    # Act 3 overworld is shipped as a backdrop-only test case: the
+    # projection exists (CTY_Main_A geometry) but the apworld hasn't
+    # defined Act 3 regions yet, so the per-region centroids dict is
+    # empty. Useful as the proof-of-concept for the "no-checks-yet,
+    # backdrop only" path. Remove the entry if Act 3 regions land and
+    # you want to gate on at-least-one region being present.
+    ("Act 3", "act3_overworld", "Overview"),
 ]
 
 # Flattened in act order for data-emitting passes (locations.json, maps.json,
@@ -405,34 +412,176 @@ def quest_grid_pin_position(idx: int, map_dims: tuple[int, int],
     return (x, y)
 
 
-def load_npc_pins(pack_root: Path) -> dict[str, dict[str, dict]]:
-    """Load tools/npc_pins.json if present. Returns {region_slug: {ap_name: {x,y,level}}}.
-    Returns empty dict if the projection file is missing (soft-fail: every pin
-    falls back to the grid layout)."""
-    pins_path = pack_root / "tools" / "npc_pins.json"
-    if not pins_path.exists():
-        return {}
-    try:
-        data = json.loads(pins_path.read_text(encoding="utf-8"))
-        return data.get("pins", {})
-    except Exception as e:
-        print(f"[warn] failed to load npc_pins.json: {e}")
-        return {}
+_KILL_RE = re.compile(
+    r"^Kill-(.+?)_([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})$"
+)
 
 
-def load_overworld_pins(pack_root: Path) -> dict[str, dict]:
-    """Load tools/overworld_pins.json if present. Returns
-    {overworld_slug: {map_dims, world_bbox, regions: {region_slug: {x,y,...}}}}.
-    The file is committed alongside the pack and consumed at generate time."""
-    p = pack_root / "tools" / "overworld_pins.json"
-    if not p.exists():
-        return {}
-    try:
-        data = json.loads(p.read_text(encoding="utf-8"))
-        return data.get("overworlds", {})
-    except Exception as e:
-        print(f"[warn] failed to load overworld_pins.json: {e}")
-        return {}
+def parse_kill_uuid_to_apname(apworld_path: Path) -> dict[str, str]:
+    """AST-parse apworld bg3_locations.py: returns {char_uuid: ap_location_name}
+    for every Kill-* entry. Accepts both the standard Kill-S_<level>_<creature>_<uuid>
+    pattern and the Thaniel-style Kill-UNI_TWN_<...>_<uuid> shape."""
+    src = (apworld_path / "bg3_locations.py").read_text(encoding="utf-8")
+    tree = ast.parse(src)
+    out: dict[str, str] = {}
+    for node in ast.walk(tree):
+        if not (isinstance(node, ast.Assign) and isinstance(node.value, ast.List)):
+            continue
+        for elt in node.value.elts:
+            if not (isinstance(elt, ast.List) and len(elt.elts) >= 2):
+                continue
+            try:
+                row = ast.literal_eval(elt)
+            except Exception:
+                continue
+            if not (isinstance(row[0], str) and _KILL_RE.match(row[0])):
+                continue
+            uid = _KILL_RE.match(row[0]).group(2)
+            rv = row[1]
+            if isinstance(rv, list):
+                if not rv:
+                    continue
+                name = rv[0]
+            else:
+                name = rv
+            out.setdefault(uid, str(name))
+    return out
+
+
+def compute_pin_outputs(pack_root: Path, apworld_path: Path
+                        ) -> tuple[dict[str, dict[str, dict]],
+                                   dict[str, dict]]:
+    """Build (npc_pins, overworld_pins) from projections.json + pin_overrides.json
+    + bg3_npc_data.json + the apworld's bg3_locations.py + locationids.py.
+
+    npc_pins matches the legacy `{slug: {ap_name: {x, y, level}}}` shape that
+    emit_locations_json expects. overworld_pins matches the legacy
+    `{overworld_slug: {map_dims, world_bbox, regions: {slug: {x, y, ...}}}}`
+    shape. Both are derived; running the renderers refreshes the projections
+    and per-uuid override files but pins are always re-computed here.
+    """
+    import project as P  # local import: tools/project.py
+    npc_pins: dict[str, dict[str, dict]] = {}
+    overworld_pins: dict[str, dict] = {}
+
+    proj = P.load_projections(pack_root)
+    if not proj["regions"] and not proj["overworlds"]:
+        return npc_pins, overworld_pins  # nothing rendered yet
+
+    overrides = P.load_overrides(pack_root)
+    cache_path = pack_root / "tools" / "bg3_npc_data.json"
+    if not cache_path.exists():
+        print(f"[warn] {cache_path.name} missing; skipping pin computation")
+        return npc_pins, overworld_pins
+    cache = json.loads(cache_path.read_text(encoding="utf-8"))
+    P.apply_overrides_to_cache(cache, overrides, verbose=False)
+
+    uuid_to_ap = parse_kill_uuid_to_apname(apworld_path)
+    ap_to_region = {ap: slug for ap, _lid, slug in
+                    parse_location_name_id_region(apworld_path)}
+
+    # --- npc_pins: per-AP-location pin coords -----------------------------
+    chars_by_region: dict[str, dict[str, dict]] = {}
+    for uuid, char in cache.get("characters", {}).items():
+        ap_name = uuid_to_ap.get(uuid)
+        if not ap_name:
+            continue
+        slug = ap_to_region.get(ap_name)
+        if not slug:
+            continue
+        chars_by_region.setdefault(slug, {})[ap_name] = char
+
+    for slug, region_proj in proj["regions"].items():
+        chars = chars_by_region.get(slug)
+        if not chars:
+            continue
+        # Match the legacy renderer's per-canvas declutter ratio:
+        # min_dist = max(12, round(canvas_w / 480 * 12 * 1.2)). Yields 12 at
+        # the default 480px single-zone canvas and 29 at the 960px multi-zone
+        # canvas, so adjacent pin circles (location_size 8 / 16 respectively)
+        # share at most a 1-px visual gap.
+        cw = region_proj.get("canvas", [MAP_WIDTH, MAP_HEIGHT])[0]
+        declutter_min = max(12, int(round(cw / MAP_WIDTH * 12 * 1.2)))
+        pins = P.compute_region_pins(slug, region_proj, chars,
+                                     overrides=overrides,
+                                     declutter_min_dist=declutter_min)
+        if pins:
+            npc_pins[slug] = pins
+
+    # --- overworld_pins: per-region centroid pins on each overworld -------
+    centroid_filters = overrides.get("overworld_centroid_filters") or {}
+    overworld_overrides_all = overrides.get("overworld_pin_overrides") or {}
+
+    for ov_slug, ov_proj in proj["overworlds"].items():
+        ov_level = ov_proj["level"]
+        cw, ch = ov_proj["canvas"]
+        ov_overrides = overworld_overrides_all.get(ov_slug, {})
+
+        # Collect per-region chars on this overworld's level.
+        region_chars_xz: dict[str, list[tuple[float, float, str | None]]] = {}
+        for uuid, char in cache.get("characters", {}).items():
+            if char.get("level") != ov_level or not char.get("position"):
+                continue
+            ap_name = uuid_to_ap.get(uuid)
+            if not ap_name:
+                continue
+            slug = ap_to_region.get(ap_name)
+            if not slug:
+                continue
+            region_chars_xz.setdefault(slug, []).append(
+                (char["position"][0], char["position"][2], char.get("building"))
+            )
+        # Seed regions named in overrides so override-only callouts surface.
+        for slug in ov_overrides:
+            region_chars_xz.setdefault(slug, [])
+
+        regions_out: dict[str, dict] = {}
+        for slug, char_tuples in region_chars_xz.items():
+            # Per-region centroid filter (multi-zone primary-zone restriction).
+            filt = centroid_filters.get(slug) or {}
+            filtered = char_tuples
+            if filt.get("buildings"):
+                filtered = [t for t in filtered
+                            if P.matches_building(t[2], filt["buildings"])]
+            if filt.get("world_bbox"):
+                fx0, fz0, fx1, fz1 = filt["world_bbox"]
+                filtered = [t for t in filtered
+                            if fx0 <= t[0] <= fx1 and fz0 <= t[1] <= fz1]
+            if filt and not filtered:
+                # Filter eliminated everything; fall back to all chars so the
+                # pin still appears (matches legacy build_overworld behavior).
+                filtered = char_tuples
+
+            ovr_entry = ov_overrides.get(slug)
+            if ovr_entry is not None:
+                cx_px, cy_px = ovr_entry["position"]
+                offscreen = False
+                source = "override"
+                count = len(filtered)
+            elif filtered:
+                avg_x = sum(t[0] for t in filtered) / len(filtered)
+                avg_z = sum(t[1] for t in filtered) / len(filtered)
+                cx_px, cy_px, offscreen = P.project_overworld_world(
+                    ov_proj, avg_x, avg_z,
+                )
+                source = "filtered" if filt else "centroid"
+                count = len(filtered)
+            else:
+                continue  # no chars and no override
+            regions_out[slug] = {
+                "x": int(cx_px), "y": int(cy_px),
+                "offscreen": bool(offscreen),
+                "count": int(count),
+                "source": source,
+            }
+
+        overworld_pins[ov_slug] = {
+            "map_dims": [int(cw), int(ch)],
+            "world_bbox": list(ov_proj["world_bbox"]),
+            "regions": regions_out,
+        }
+
+    return npc_pins, overworld_pins
 
 
 # Reverse-map ACT_OVERWORLDS so we can look up "act1_overworld" for a given
@@ -516,9 +665,11 @@ def emit_locations_json(
     Section codes resolved at runtime: `@<region-display>/<ap-name>/<ap-name>`.
 
     Pin coordinates:
-    - Kill locations (id >= 10000) use real BG3 NPC positions from
-      tools/npc_pins.json where available (one entry per AP location
-      name with canvas-pixel x/y per region's map).
+    - Kill locations (id >= 10000) use real BG3 NPC positions computed
+      at pack-build time from tools/projections.json (per-region zone
+      transforms) + tools/pin_overrides.json (manual fix-ups) +
+      tools/bg3_npc_data.json (the NPC cache). See compute_pin_outputs
+      above and the tools/project.py helper.
     - Quest locations (id < 10000) project into the bottom quest-panel
       strip on the same per-region map.
     - Un-projected kills fall back to a grid layout (rare in practice).
@@ -867,11 +1018,23 @@ def main(argv: list[str] | None = None) -> int:
 
     pack_root: Path = args.pack_root
 
-    npc_pins = load_npc_pins(pack_root)
-    overworld_pins = load_overworld_pins(pack_root)
+    npc_pins, overworld_pins = compute_pin_outputs(pack_root, args.apworld)
     projected_total = sum(len(p) for p in npc_pins.values())
-    print(f"[OK] NPC pins loaded: {projected_total} projections across {len(npc_pins)} regions"
-          if npc_pins else "[OK] No npc_pins.json -- all pins use grid layout")
+    print(f"[OK] Pins computed: {projected_total} kill projections across "
+          f"{len(npc_pins)} regions; {len(overworld_pins)} overworld(s)"
+          if npc_pins or overworld_pins
+          else "[OK] No projections.json yet -- all pins use grid layout")
+    # Dump derived pin coords for debugging. Files are gitignored. Inspect
+    # to see what coordinates a given AP location landed at without having
+    # to spelunk locations.json. NOT consumed by anything -- generate_pack
+    # always recomputes from projections.json + pin_overrides.json.
+    write_json(pack_root / "tools" / "_debug_pins.json",
+               {"pins": npc_pins, "stats": {
+                   "regions_with_pins": len(npc_pins),
+                   "total_pins_emitted": projected_total,
+               }})
+    write_json(pack_root / "tools" / "_debug_overworld_pins.json",
+               {"overworlds": overworld_pins})
 
     # 1. locations/locations.json
     write_json(pack_root / "locations" / "locations.json",

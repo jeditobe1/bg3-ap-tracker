@@ -1,0 +1,940 @@
+{
+  "overworlds": {
+    "act1_overworld": {
+      "canvas": [
+        2400,
+        2270
+      ],
+      "level": "WLD_Main_A",
+      "world_bbox": [
+        -885.8296236749999,
+        -638.774913,
+        595.4231971749999,
+        762.116953
+      ]
+    },
+    "act2_overworld": {
+      "canvas": [
+        2400,
+        2915
+      ],
+      "level": "SCL_Main_A",
+      "world_bbox": [
+        -380.0996,
+        -305.337714,
+        223.79996,
+        428.14167
+      ]
+    },
+    "act3_overworld": {
+      "canvas": [
+        2400,
+        2400
+      ],
+      "level": "CTY_Main_A",
+      "world_bbox": [
+        -12131.2836,
+        -8122.8888,
+        9858.6536,
+        13867.0484
+      ]
+    }
+  },
+  "regions": {
+    "beach": {
+      "canvas": [
+        480,
+        320
+      ],
+      "zones": [
+        {
+          "canvas_rect": [
+            0,
+            0,
+            480,
+            256
+          ],
+          "char_building": [
+            "*"
+          ],
+          "level": "WLD_Main_A",
+          "patch_building": [
+            "*"
+          ],
+          "title": "beach",
+          "world_bbox": [
+            169.675815,
+            240.00480000000005,
+            300.925815,
+            310.00480000000005
+          ]
+        }
+      ]
+    },
+    "blighted_village": {
+      "canvas": [
+        960,
+        640
+      ],
+      "zones": [
+        {
+          "canvas_rect": [
+            0,
+            32,
+            474,
+            480
+          ],
+          "char_building": [
+            null
+          ],
+          "level": "WLD_Main_A",
+          "patch_building": [
+            ""
+          ],
+          "title": "The Well",
+          "world_bbox": [
+            -582.406832,
+            -378.205036,
+            -491.81715799999995,
+            -344.600094
+          ],
+          "world_bbox_filter": [
+            -700.0,
+            -500.0,
+            -400.0,
+            -250.0
+          ]
+        },
+        {
+          "canvas_rect": [
+            486,
+            32,
+            474,
+            480
+          ],
+          "char_building": [
+            null,
+            "RuinedBuilding",
+            "Smithy",
+            "Apothercary"
+          ],
+          "level": "WLD_Main_A",
+          "patch_building": [
+            "",
+            "RuinedBuilding",
+            "Smithy",
+            "Apothercary"
+          ],
+          "title": "Village Surface",
+          "world_bbox": [
+            -25.398061360000003,
+            329.92396599999995,
+            167.11967356000002,
+            465.745904
+          ],
+          "world_bbox_filter": [
+            -50.0,
+            300.0,
+            200.0,
+            500.0
+          ]
+        }
+      ]
+    },
+    "creche": {
+      "canvas": [
+        960,
+        640
+      ],
+      "zones": [
+        {
+          "canvas_rect": [
+            0,
+            32,
+            960,
+            480
+          ],
+          "char_building": [
+            null
+          ],
+          "level": "CRE_Main_A",
+          "patch_building": [
+            ""
+          ],
+          "title": "Creche Y'llek",
+          "world_bbox": [
+            1261.0548000000001,
+            -875.184708,
+            1432.6885,
+            -625.134852
+          ],
+          "world_bbox_filter": [
+            1100.0,
+            -1100.0,
+            1500.0,
+            -500.0
+          ]
+        }
+      ]
+    },
+    "crypt": {
+      "canvas": [
+        480,
+        320
+      ],
+      "zones": [
+        {
+          "canvas_rect": [
+            0,
+            0,
+            480,
+            256
+          ],
+          "char_building": [
+            "*"
+          ],
+          "level": "WLD_Main_A",
+          "patch_building": [
+            "*"
+          ],
+          "title": "crypt",
+          "world_bbox": [
+            -373.19373750000005,
+            -376.71120400000007,
+            -97.59887249999991,
+            -229.72727599999996
+          ]
+        }
+      ]
+    },
+    "east_act2": {
+      "canvas": [
+        960,
+        640
+      ],
+      "zones": [
+        {
+          "canvas_rect": [
+            0,
+            32,
+            960,
+            480
+          ],
+          "char_building": [
+            null,
+            "CursedForestTower",
+            "WaterlocksKiln"
+          ],
+          "level": "SCL_Main_A",
+          "patch_building": [
+            "",
+            "CursedForestTower",
+            "WaterlocksKiln"
+          ],
+          "title": "Cursed Forest",
+          "world_bbox": [
+            -79.787656,
+            -20.3930198,
+            102.005396,
+            147.0239033
+          ]
+        }
+      ]
+    },
+    "goblin_camp": {
+      "canvas": [
+        960,
+        640
+      ],
+      "zones": [
+        {
+          "canvas_rect": [
+            0,
+            32,
+            474,
+            480
+          ],
+          "char_building": [
+            null,
+            "GoblinWalkway"
+          ],
+          "level": "WLD_Main_A",
+          "patch_building": [
+            ""
+          ],
+          "title": "Camp",
+          "world_bbox": [
+            -129.214908,
+            318.221406,
+            -60.077882,
+            494.935664
+          ]
+        },
+        {
+          "canvas_rect": [
+            486,
+            32,
+            474,
+            480
+          ],
+          "char_building": [
+            "GoblinCamp",
+            "GoblinCampPrison"
+          ],
+          "level": "WLD_Main_A",
+          "patch_building": [
+            "GoblinCamp",
+            "GoblinCampPrison"
+          ],
+          "title": "Shattered Sanctum",
+          "world_bbox": [
+            242.9983,
+            -87.559258,
+            414.35872,
+            66.897688
+          ]
+        }
+      ]
+    },
+    "grove": {
+      "canvas": [
+        480,
+        320
+      ],
+      "zones": [
+        {
+          "canvas_rect": [
+            0,
+            0,
+            480,
+            256
+          ],
+          "char_building": [
+            "*"
+          ],
+          "level": "WLD_Main_A",
+          "patch_building": [
+            "*"
+          ],
+          "title": "grove",
+          "world_bbox": [
+            146.43649499999998,
+            387.520645,
+            277.686495,
+            457.520645
+          ]
+        }
+      ]
+    },
+    "grymforge": {
+      "canvas": [
+        960,
+        640
+      ],
+      "zones": [
+        {
+          "canvas_rect": [
+            0,
+            32,
+            474,
+            480
+          ],
+          "char_building": [
+            "KethericCity"
+          ],
+          "level": "WLD_Main_A",
+          "patch_building": [
+            "KethericCity"
+          ],
+          "title": "Forge Approach",
+          "world_bbox": [
+            -729.679,
+            287.46767000000006,
+            -545.432,
+            468.48038999999994
+          ]
+        },
+        {
+          "canvas_rect": [
+            486,
+            32,
+            474,
+            480
+          ],
+          "char_building": [
+            null
+          ],
+          "level": "WLD_Main_A",
+          "patch_building": [
+            ""
+          ],
+          "title": "The Adamantine Forge",
+          "world_bbox": [
+            -638.946408,
+            226.124688,
+            -543.423162,
+            282.849342
+          ]
+        }
+      ]
+    },
+    "hag": {
+      "canvas": [
+        480,
+        320
+      ],
+      "zones": [
+        {
+          "canvas_rect": [
+            0,
+            0,
+            480,
+            256
+          ],
+          "char_building": [
+            "*"
+          ],
+          "level": "WLD_Main_A",
+          "patch_building": [
+            "*"
+          ],
+          "title": "hag",
+          "world_bbox": [
+            -54.23249200000001,
+            187.31051993333335,
+            115.39495199999999,
+            277.7784900666667
+          ]
+        }
+      ]
+    },
+    "last_light": {
+      "canvas": [
+        960,
+        640
+      ],
+      "zones": [
+        {
+          "canvas_rect": [
+            0,
+            32,
+            474,
+            480
+          ],
+          "char_building": [
+            null,
+            "LastLightInn"
+          ],
+          "level": "SCL_Main_A",
+          "patch_building": [
+            "",
+            "LastLightInn"
+          ],
+          "title": "Last Light Inn",
+          "world_bbox": [
+            -83.950896,
+            127.66056,
+            -18.603684,
+            179.04364
+          ],
+          "world_bbox_filter": [
+            -200.0,
+            100.0,
+            100.0,
+            190.0
+          ]
+        },
+        {
+          "canvas_rect": [
+            486,
+            32,
+            474,
+            218
+          ],
+          "char_building": [
+            null
+          ],
+          "level": "SCL_Main_A",
+          "patch_building": [
+            ""
+          ],
+          "title": "Defense",
+          "world_bbox": [
+            -90.51188400000001,
+            189.20593399999998,
+            -28.143641,
+            225.008106
+          ],
+          "world_bbox_filter": [
+            -100.0,
+            190.0,
+            0.0,
+            230.0
+          ]
+        },
+        {
+          "canvas_rect": [
+            486,
+            294,
+            474,
+            218
+          ],
+          "char_building": [
+            null
+          ],
+          "level": "SCL_Main_A",
+          "patch_building": [
+            ""
+          ],
+          "title": "Meenlock Cave",
+          "world_bbox": [
+            3.2445193999999997,
+            -706.7956879999999,
+            40.7409476,
+            -682.370252
+          ],
+          "world_bbox_filter": [
+            -50.0,
+            -720.0,
+            60.0,
+            -670.0
+          ]
+        }
+      ]
+    },
+    "mindflayer": {
+      "canvas": [
+        960,
+        640
+      ],
+      "zones": [
+        {
+          "canvas_rect": [
+            0,
+            32,
+            960,
+            480
+          ],
+          "char_building": [
+            null,
+            "MFC_Arena"
+          ],
+          "level": "SCL_Main_A",
+          "patch_building": [
+            "",
+            "MFC_Arena"
+          ],
+          "title": "Mindflayer Colony",
+          "world_bbox": [
+            612.895276,
+            -122.8768826,
+            912.845024,
+            68.8728756
+          ]
+        }
+      ]
+    },
+    "monastery": {
+      "canvas": [
+        960,
+        640
+      ],
+      "zones": [
+        {
+          "canvas_rect": [
+            0,
+            32,
+            474,
+            218
+          ],
+          "char_building": [
+            null
+          ],
+          "level": "WLD_Main_A",
+          "patch_building": [
+            ""
+          ],
+          "title": "Mountain Trailhead",
+          "world_bbox": [
+            -220.0,
+            530.0,
+            -40.0,
+            680.0
+          ]
+        },
+        {
+          "canvas_rect": [
+            0,
+            294,
+            474,
+            218
+          ],
+          "char_building": [
+            null
+          ],
+          "level": "CRE_Main_A",
+          "patch_building": [
+            ""
+          ],
+          "title": "Mountain Pass",
+          "world_bbox": [
+            -200.0,
+            -250.0,
+            50.0,
+            0.0
+          ]
+        },
+        {
+          "canvas_rect": [
+            486,
+            32,
+            474,
+            480
+          ],
+          "char_building": [
+            "Monastary"
+          ],
+          "level": "CRE_Main_A",
+          "patch_building": [
+            "",
+            "Monastary"
+          ],
+          "title": "Rosymorn Monastery",
+          "world_bbox": [
+            24.1290464,
+            15.777711999999998,
+            118.1600156,
+            51.941532
+          ]
+        }
+      ]
+    },
+    "moonrise": {
+      "canvas": [
+        960,
+        640
+      ],
+      "zones": [
+        {
+          "canvas_rect": [
+            0,
+            32,
+            474,
+            480
+          ],
+          "char_building": [
+            null,
+            "Moonrise",
+            "Moonrise4"
+          ],
+          "level": "SCL_Main_A",
+          "patch_building": [
+            "",
+            "Moonrise",
+            "Moonrise4"
+          ],
+          "title": "Moonrise Towers",
+          "world_bbox": [
+            -227.41700600000001,
+            -216.76391999999998,
+            -36.36505399999999,
+            -155.27228000000002
+          ],
+          "world_bbox_filter": [
+            -300.0,
+            -300.0,
+            0.0,
+            -150.0
+          ]
+        },
+        {
+          "canvas_rect": [
+            486,
+            32,
+            474,
+            480
+          ],
+          "char_building": [
+            "Dungeon"
+          ],
+          "level": "SCL_Main_A",
+          "patch_building": [
+            "Dungeon",
+            ""
+          ],
+          "title": "Towers Dungeon",
+          "world_bbox": [
+            563.4943380000001,
+            -656.832086,
+            602.471052,
+            -645.875084
+          ],
+          "world_bbox_filter": [
+            500.0,
+            -700.0,
+            700.0,
+            -600.0
+          ]
+        }
+      ]
+    },
+    "shar_gauntlet": {
+      "canvas": [
+        960,
+        640
+      ],
+      "zones": [
+        {
+          "canvas_rect": [
+            0,
+            32,
+            960,
+            480
+          ],
+          "char_building": [
+            null,
+            "Shar"
+          ],
+          "level": "SCL_Main_A",
+          "patch_building": [
+            "",
+            "Shar"
+          ],
+          "title": "Gauntlet of Shar",
+          "world_bbox": [
+            -904.9658000000001,
+            -902.5888199999999,
+            -610.8747999999999,
+            -683.50968
+          ],
+          "world_bbox_filter": [
+            -900.0,
+            -900.0,
+            -600.0,
+            -650.0
+          ]
+        }
+      ]
+    },
+    "tutorial": {
+      "canvas": [
+        960,
+        640
+      ],
+      "zones": [
+        {
+          "canvas_rect": [
+            0,
+            32,
+            474,
+            480
+          ],
+          "char_building": [
+            "LowerDeck"
+          ],
+          "level": "TUT_Avernus_C",
+          "patch_building": [
+            "Nautiloid"
+          ],
+          "patch_floors": [
+            0
+          ],
+          "title": "Lower Deck",
+          "world_bbox": [
+            -90.0,
+            -415.0,
+            -10.0,
+            -375.0
+          ]
+        },
+        {
+          "canvas_rect": [
+            486,
+            32,
+            474,
+            480
+          ],
+          "char_building": [
+            "Nautiloid"
+          ],
+          "level": "TUT_Avernus_C",
+          "patch_building": [
+            "Nautiloid"
+          ],
+          "patch_floors": [
+            1
+          ],
+          "title": "Helm",
+          "world_bbox": [
+            -115.0,
+            -415.0,
+            5.0,
+            -360.0
+          ]
+        }
+      ]
+    },
+    "underdark": {
+      "canvas": [
+        480,
+        320
+      ],
+      "zones": [
+        {
+          "canvas_rect": [
+            0,
+            0,
+            480,
+            256
+          ],
+          "char_building": [
+            "*"
+          ],
+          "level": "WLD_Main_A",
+          "patch_building": [
+            "*"
+          ],
+          "title": "underdark",
+          "world_bbox": [
+            -188.26510000000007,
+            -330.717414,
+            301.99544000000003,
+            -69.24512599999997
+          ]
+        }
+      ]
+    },
+    "waukeen": {
+      "canvas": [
+        480,
+        320
+      ],
+      "zones": [
+        {
+          "canvas_rect": [
+            0,
+            0,
+            480,
+            256
+          ],
+          "char_building": [
+            "*"
+          ],
+          "level": "WLD_Main_A",
+          "patch_building": [
+            "*"
+          ],
+          "title": "waukeen",
+          "world_bbox": [
+            -56.67843075000005,
+            505.76020000000005,
+            163.78481925000006,
+            623.3406000000001
+          ]
+        }
+      ]
+    },
+    "west_act2": {
+      "canvas": [
+        960,
+        640
+      ],
+      "zones": [
+        {
+          "canvas_rect": [
+            0,
+            32,
+            474,
+            480
+          ],
+          "char_building": [
+            null,
+            "Tax",
+            "Brewery",
+            "Hospital",
+            "Fishery"
+          ],
+          "level": "SCL_Main_A",
+          "patch_building": [
+            "",
+            "Tax",
+            "Brewery",
+            "Hospital",
+            "Fishery"
+          ],
+          "title": "Reithwin Town",
+          "world_bbox": [
+            -281.65166999999997,
+            -145.870292,
+            -57.93544999999999,
+            189.071322
+          ],
+          "world_bbox_filter": [
+            -300.0,
+            -150.0,
+            200.0,
+            250.0
+          ]
+        },
+        {
+          "canvas_rect": [
+            486,
+            32,
+            474,
+            218
+          ],
+          "char_building": [
+            null
+          ],
+          "level": "SCL_Main_A",
+          "patch_building": [
+            ""
+          ],
+          "title": "Town Basement",
+          "world_bbox": [
+            90.157484,
+            -755.3143279999999,
+            121.791296,
+            -748.243012
+          ],
+          "world_bbox_filter": [
+            60.0,
+            -800.0,
+            200.0,
+            -700.0
+          ]
+        },
+        {
+          "canvas_rect": [
+            486,
+            294,
+            474,
+            218
+          ],
+          "char_building": [
+            null,
+            "AcidPit"
+          ],
+          "level": "SCL_Main_A",
+          "patch_building": [
+            "",
+            "AcidPit"
+          ],
+          "title": "HoH Morgue",
+          "world_bbox": [
+            27.6573332,
+            -997.97234,
+            68.5526128,
+            -922.9569799999999
+          ],
+          "world_bbox_filter": [
+            0.0,
+            -1000.0,
+            100.0,
+            -900.0
+          ]
+        }
+      ]
+    }
+  }
+}

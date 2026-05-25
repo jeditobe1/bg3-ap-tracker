@@ -118,5 +118,11 @@
         "location_size": 73,
         "location_border_thickness": 9,
         "img": "images/maps/act2_overworld.png"
+    },
+    {
+        "name": "act3_overworld",
+        "location_size": 60,
+        "location_border_thickness": 7,
+        "img": "images/maps/act3_overworld.png"
     }
 ]
