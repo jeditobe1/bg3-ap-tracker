@@ -3529,8 +3529,8 @@
                         "name": "Gobs: Kill Priestess Gut"
                     },
                     {
-                        "ref": "Goblin Camp/Gobs: Kill Dror Ragzlin/Gobs: Kill Dror Ragzlin",
-                        "name": "Gobs: Kill Dror Ragzlin"
+                        "ref": "Goblin Camp/Gobs: Kill the Leader, Dror Ragzlin/Gobs: Kill the Leader, Dror Ragzlin",
+                        "name": "Gobs: Kill the Leader, Dror Ragzlin"
                     },
                     {
                         "ref": "Goblin Camp/Gobs: Defeat (Knock Out) Minthara/Gobs: Defeat (Knock Out) Minthara",
@@ -3709,8 +3709,8 @@
                         "name": "Gobs: Kill Devout Wasp"
                     },
                     {
-                        "ref": "Goblin Camp/Gobs: Kill Dror Ragzlin #2/Gobs: Kill Dror Ragzlin #2",
-                        "name": "Gobs: Kill Dror Ragzlin #2"
+                        "ref": "Goblin Camp/Gobs: Kill Dror Ragzlin/Gobs: Kill Dror Ragzlin",
+                        "name": "Gobs: Kill Dror Ragzlin"
                     },
                     {
                         "ref": "Goblin Camp/Gobs: Kill Grat the Trader/Gobs: Kill Grat the Trader",
@@ -4126,10 +4126,10 @@
                 ]
             },
             {
-                "name": "Gobs: Kill Dror Ragzlin",
+                "name": "Gobs: Kill the Leader, Dror Ragzlin",
                 "sections": [
                     {
-                        "name": "Gobs: Kill Dror Ragzlin",
+                        "name": "Gobs: Kill the Leader, Dror Ragzlin",
                         "chest_unopened_img": "images/items/quest_marker_unopened.png",
                         "chest_opened_img": "images/items/quest_marker_opened.png"
                     }
@@ -5000,10 +5000,10 @@
                 ]
             },
             {
-                "name": "Gobs: Kill Dror Ragzlin #2",
+                "name": "Gobs: Kill Dror Ragzlin",
                 "sections": [
                     {
-                        "name": "Gobs: Kill Dror Ragzlin #2"
+                        "name": "Gobs: Kill Dror Ragzlin"
                     }
                 ],
                 "visibility_rules": [
@@ -9393,16 +9393,12 @@
                         "name": "Grym: Take Nere's Head"
                     },
                     {
-                        "ref": "Grymforge/Grym: Kill Nere/Grym: Kill Nere",
-                        "name": "Grym: Kill Nere"
+                        "ref": "Grymforge/Grym: Make Nere Dead/Grym: Make Nere Dead",
+                        "name": "Grym: Make Nere Dead"
                     },
                     {
                         "ref": "Grymforge/Grym: Return Nere's Head to Sovereign/Grym: Return Nere's Head to Sovereign",
                         "name": "Grym: Return Nere's Head to Sovereign"
-                    },
-                    {
-                        "ref": "Grymforge/Grym: Take Nere's Head #2/Grym: Take Nere's Head #2",
-                        "name": "Grym: Take Nere's Head #2"
                     },
                     {
                         "ref": "Grymforge/Grym: Agree to Help Barcus/Grym: Agree to Help Barcus",
@@ -9429,8 +9425,8 @@
                         "name": "Grym: Agree to help Brithvar"
                     },
                     {
-                        "ref": "Grymforge/Grym: Kill Scrying Eye/Grym: Kill Scrying Eye",
-                        "name": "Grym: Kill Scrying Eye"
+                        "ref": "Grymforge/Grym: Kill the Scrying Eye/Grym: Kill the Scrying Eye",
+                        "name": "Grym: Kill the Scrying Eye"
                     },
                     {
                         "ref": "Grymforge/Grym: Learn about Philomeen/Grym: Learn about Philomeen",
@@ -9645,8 +9641,8 @@
                         "name": "Grym: Kill Morgya"
                     },
                     {
-                        "ref": "Grymforge/Grym: Kill Nere #2/Grym: Kill Nere #2",
-                        "name": "Grym: Kill Nere #2"
+                        "ref": "Grymforge/Grym: Kill Nere/Grym: Kill Nere",
+                        "name": "Grym: Kill Nere"
                     },
                     {
                         "ref": "Grymforge/Grym: Kill Ochre Jelly 1/Grym: Kill Ochre Jelly 1",
@@ -9661,8 +9657,8 @@
                         "name": "Grym: Kill Ochre Jelly 3"
                     },
                     {
-                        "ref": "Grymforge/Grym: Kill Scrying Eye #2/Grym: Kill Scrying Eye #2",
-                        "name": "Grym: Kill Scrying Eye #2"
+                        "ref": "Grymforge/Grym: Kill Scrying Eye/Grym: Kill Scrying Eye",
+                        "name": "Grym: Kill Scrying Eye"
                     },
                     {
                         "ref": "Grymforge/Grym: Kill Sergeant Thrinn/Grym: Kill Sergeant Thrinn",
@@ -9718,10 +9714,10 @@
                 ]
             },
             {
-                "name": "Grym: Kill Nere",
+                "name": "Grym: Make Nere Dead",
                 "sections": [
                     {
-                        "name": "Grym: Kill Nere",
+                        "name": "Grym: Make Nere Dead",
                         "chest_unopened_img": "images/items/quest_marker_unopened.png",
                         "chest_opened_img": "images/items/quest_marker_opened.png"
                     }
@@ -9758,26 +9754,6 @@
                 ]
             },
             {
-                "name": "Grym: Take Nere's Head #2",
-                "sections": [
-                    {
-                        "name": "Grym: Take Nere's Head #2",
-                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
-                        "chest_opened_img": "images/items/quest_marker_opened.png"
-                    }
-                ],
-                "visibility_rules": [
-                    "questsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "grymforge",
-                        "x": 160,
-                        "y": 536
-                    }
-                ]
-            },
-            {
                 "name": "Grym: Agree to Help Barcus",
                 "sections": [
                     {
@@ -9792,7 +9768,7 @@
                 "map_locations": [
                     {
                         "map": "grymforge",
-                        "x": 192,
+                        "x": 160,
                         "y": 536
                     }
                 ]
@@ -9812,7 +9788,7 @@
                 "map_locations": [
                     {
                         "map": "grymforge",
-                        "x": 224,
+                        "x": 192,
                         "y": 536
                     }
                 ]
@@ -9832,7 +9808,7 @@
                 "map_locations": [
                     {
                         "map": "grymforge",
-                        "x": 256,
+                        "x": 224,
                         "y": 536
                     }
                 ]
@@ -9852,7 +9828,7 @@
                 "map_locations": [
                     {
                         "map": "grymforge",
-                        "x": 288,
+                        "x": 256,
                         "y": 536
                     }
                 ]
@@ -9872,7 +9848,7 @@
                 "map_locations": [
                     {
                         "map": "grymforge",
-                        "x": 320,
+                        "x": 288,
                         "y": 536
                     }
                 ]
@@ -9892,16 +9868,16 @@
                 "map_locations": [
                     {
                         "map": "grymforge",
-                        "x": 352,
+                        "x": 320,
                         "y": 536
                     }
                 ]
             },
             {
-                "name": "Grym: Kill Scrying Eye",
+                "name": "Grym: Kill the Scrying Eye",
                 "sections": [
                     {
-                        "name": "Grym: Kill Scrying Eye",
+                        "name": "Grym: Kill the Scrying Eye",
                         "chest_unopened_img": "images/items/quest_marker_unopened.png",
                         "chest_opened_img": "images/items/quest_marker_opened.png"
                     }
@@ -9912,7 +9888,7 @@
                 "map_locations": [
                     {
                         "map": "grymforge",
-                        "x": 384,
+                        "x": 352,
                         "y": 536
                     }
                 ]
@@ -9932,7 +9908,7 @@
                 "map_locations": [
                     {
                         "map": "grymforge",
-                        "x": 416,
+                        "x": 384,
                         "y": 536
                     }
                 ]
@@ -9952,7 +9928,7 @@
                 "map_locations": [
                     {
                         "map": "grymforge",
-                        "x": 448,
+                        "x": 416,
                         "y": 536
                     }
                 ]
@@ -9972,7 +9948,7 @@
                 "map_locations": [
                     {
                         "map": "grymforge",
-                        "x": 480,
+                        "x": 448,
                         "y": 536
                     }
                 ]
@@ -9992,7 +9968,7 @@
                 "map_locations": [
                     {
                         "map": "grymforge",
-                        "x": 512,
+                        "x": 480,
                         "y": 536
                     }
                 ]
@@ -10012,7 +9988,7 @@
                 "map_locations": [
                     {
                         "map": "grymforge",
-                        "x": 544,
+                        "x": 512,
                         "y": 536
                     }
                 ]
@@ -10032,7 +10008,7 @@
                 "map_locations": [
                     {
                         "map": "grymforge",
-                        "x": 576,
+                        "x": 544,
                         "y": 536
                     }
                 ]
@@ -10052,7 +10028,7 @@
                 "map_locations": [
                     {
                         "map": "grymforge",
-                        "x": 608,
+                        "x": 576,
                         "y": 536
                     }
                 ]
@@ -10072,7 +10048,7 @@
                 "map_locations": [
                     {
                         "map": "grymforge",
-                        "x": 640,
+                        "x": 608,
                         "y": 536
                     }
                 ]
@@ -10092,7 +10068,7 @@
                 "map_locations": [
                     {
                         "map": "grymforge",
-                        "x": 672,
+                        "x": 640,
                         "y": 536
                     }
                 ]
@@ -10112,7 +10088,7 @@
                 "map_locations": [
                     {
                         "map": "grymforge",
-                        "x": 704,
+                        "x": 672,
                         "y": 536
                     }
                 ]
@@ -10132,7 +10108,7 @@
                 "map_locations": [
                     {
                         "map": "grymforge",
-                        "x": 736,
+                        "x": 704,
                         "y": 536
                     }
                 ]
@@ -10152,7 +10128,7 @@
                 "map_locations": [
                     {
                         "map": "grymforge",
-                        "x": 768,
+                        "x": 736,
                         "y": 536
                     }
                 ]
@@ -10172,7 +10148,7 @@
                 "map_locations": [
                     {
                         "map": "grymforge",
-                        "x": 800,
+                        "x": 768,
                         "y": 536
                     }
                 ]
@@ -10192,7 +10168,7 @@
                 "map_locations": [
                     {
                         "map": "grymforge",
-                        "x": 832,
+                        "x": 800,
                         "y": 536
                     }
                 ]
@@ -10212,7 +10188,7 @@
                 "map_locations": [
                     {
                         "map": "grymforge",
-                        "x": 864,
+                        "x": 832,
                         "y": 536
                     }
                 ]
@@ -10232,7 +10208,7 @@
                 "map_locations": [
                     {
                         "map": "grymforge",
-                        "x": 896,
+                        "x": 864,
                         "y": 536
                     }
                 ]
@@ -10252,7 +10228,7 @@
                 "map_locations": [
                     {
                         "map": "grymforge",
-                        "x": 928,
+                        "x": 896,
                         "y": 536
                     }
                 ]
@@ -10272,8 +10248,8 @@
                 "map_locations": [
                     {
                         "map": "grymforge",
-                        "x": 32,
-                        "y": 568
+                        "x": 928,
+                        "y": 536
                     }
                 ]
             },
@@ -10292,7 +10268,7 @@
                 "map_locations": [
                     {
                         "map": "grymforge",
-                        "x": 64,
+                        "x": 32,
                         "y": 568
                     }
                 ]
@@ -10312,7 +10288,7 @@
                 "map_locations": [
                     {
                         "map": "grymforge",
-                        "x": 96,
+                        "x": 64,
                         "y": 568
                     }
                 ]
@@ -10332,7 +10308,7 @@
                 "map_locations": [
                     {
                         "map": "grymforge",
-                        "x": 128,
+                        "x": 96,
                         "y": 568
                     }
                 ]
@@ -10352,7 +10328,7 @@
                 "map_locations": [
                     {
                         "map": "grymforge",
-                        "x": 160,
+                        "x": 128,
                         "y": 568
                     }
                 ]
@@ -10372,7 +10348,7 @@
                 "map_locations": [
                     {
                         "map": "grymforge",
-                        "x": 192,
+                        "x": 160,
                         "y": 568
                     }
                 ]
@@ -10392,7 +10368,7 @@
                 "map_locations": [
                     {
                         "map": "grymforge",
-                        "x": 224,
+                        "x": 192,
                         "y": 568
                     }
                 ]
@@ -10920,10 +10896,10 @@
                 ]
             },
             {
-                "name": "Grym: Kill Nere #2",
+                "name": "Grym: Kill Nere",
                 "sections": [
                     {
-                        "name": "Grym: Kill Nere #2"
+                        "name": "Grym: Kill Nere"
                     }
                 ],
                 "visibility_rules": [
@@ -10992,10 +10968,10 @@
                 ]
             },
             {
-                "name": "Grym: Kill Scrying Eye #2",
+                "name": "Grym: Kill Scrying Eye",
                 "sections": [
                     {
-                        "name": "Grym: Kill Scrying Eye #2"
+                        "name": "Grym: Kill Scrying Eye"
                     }
                 ],
                 "visibility_rules": [
@@ -14881,24 +14857,24 @@
                         "name": "Reithwin: Kill Wraith"
                     },
                     {
-                        "ref": "Shadow-Cursed Lands (West)/Reithwin: Kill Shadow 1 #2/Reithwin: Kill Shadow 1 #2",
-                        "name": "Reithwin: Kill Shadow 1 #2"
+                        "ref": "Shadow-Cursed Lands (West)/Reithwin: Kill Basement Shadow 1/Reithwin: Kill Basement Shadow 1",
+                        "name": "Reithwin: Kill Basement Shadow 1"
                     },
                     {
-                        "ref": "Shadow-Cursed Lands (West)/Reithwin: Kill Shadow 2 #2/Reithwin: Kill Shadow 2 #2",
-                        "name": "Reithwin: Kill Shadow 2 #2"
+                        "ref": "Shadow-Cursed Lands (West)/Reithwin: Kill Basement Shadow 2/Reithwin: Kill Basement Shadow 2",
+                        "name": "Reithwin: Kill Basement Shadow 2"
                     },
                     {
-                        "ref": "Shadow-Cursed Lands (West)/Reithwin: Kill Shadow 3 #2/Reithwin: Kill Shadow 3 #2",
-                        "name": "Reithwin: Kill Shadow 3 #2"
+                        "ref": "Shadow-Cursed Lands (West)/Reithwin: Kill Basement Shadow 3/Reithwin: Kill Basement Shadow 3",
+                        "name": "Reithwin: Kill Basement Shadow 3"
                     },
                     {
-                        "ref": "Shadow-Cursed Lands (West)/Reithwin: Kill Shadow 4/Reithwin: Kill Shadow 4",
-                        "name": "Reithwin: Kill Shadow 4"
+                        "ref": "Shadow-Cursed Lands (West)/Reithwin: Kill Basement Shadow 4/Reithwin: Kill Basement Shadow 4",
+                        "name": "Reithwin: Kill Basement Shadow 4"
                     },
                     {
-                        "ref": "Shadow-Cursed Lands (West)/Reithwin: Kill Shadow 5/Reithwin: Kill Shadow 5",
-                        "name": "Reithwin: Kill Shadow 5"
+                        "ref": "Shadow-Cursed Lands (West)/Reithwin: Kill Basement Shadow 5/Reithwin: Kill Basement Shadow 5",
+                        "name": "Reithwin: Kill Basement Shadow 5"
                     },
                     {
                         "ref": "Shadow-Cursed Lands (West)/HoH: Kill Sister Hunna/HoH: Kill Sister Hunna",
@@ -15238,8 +15214,8 @@
                 "map_locations": [
                     {
                         "map": "west_act2",
-                        "x": 554,
-                        "y": 103
+                        "x": 247,
+                        "y": 363
                     }
                 ]
             },
@@ -15256,8 +15232,8 @@
                 "map_locations": [
                     {
                         "map": "west_act2",
-                        "x": 839,
-                        "y": 157
+                        "x": 302,
+                        "y": 363
                     }
                 ]
             },
@@ -15274,8 +15250,8 @@
                 "map_locations": [
                     {
                         "map": "west_act2",
-                        "x": 892,
-                        "y": 106
+                        "x": 232,
+                        "y": 311
                     }
                 ]
             },
@@ -15292,8 +15268,8 @@
                 "map_locations": [
                     {
                         "map": "west_act2",
-                        "x": 293,
-                        "y": 358
+                        "x": 275,
+                        "y": 354
                     }
                 ]
             },
@@ -15310,8 +15286,8 @@
                 "map_locations": [
                     {
                         "map": "west_act2",
-                        "x": 250,
-                        "y": 375
+                        "x": 254,
+                        "y": 392
                     }
                 ]
             },
@@ -15328,8 +15304,8 @@
                 "map_locations": [
                     {
                         "map": "west_act2",
-                        "x": 243,
-                        "y": 319
+                        "x": 311,
+                        "y": 311
                     }
                 ]
             },
@@ -15346,8 +15322,8 @@
                 "map_locations": [
                     {
                         "map": "west_act2",
-                        "x": 254,
-                        "y": 346
+                        "x": 231,
+                        "y": 340
                     }
                 ]
             },
@@ -15364,8 +15340,8 @@
                 "map_locations": [
                     {
                         "map": "west_act2",
-                        "x": 275,
-                        "y": 280
+                        "x": 276,
+                        "y": 284
                     }
                 ]
             },
@@ -15382,7 +15358,7 @@
                 "map_locations": [
                     {
                         "map": "west_act2",
-                        "x": 247,
+                        "x": 248,
                         "y": 273
                     }
                 ]
@@ -15496,10 +15472,10 @@
                 ]
             },
             {
-                "name": "Reithwin: Kill Shadow 1 #2",
+                "name": "Reithwin: Kill Basement Shadow 1",
                 "sections": [
                     {
-                        "name": "Reithwin: Kill Shadow 1 #2"
+                        "name": "Reithwin: Kill Basement Shadow 1"
                     }
                 ],
                 "visibility_rules": [
@@ -15514,10 +15490,10 @@
                 ]
             },
             {
-                "name": "Reithwin: Kill Shadow 2 #2",
+                "name": "Reithwin: Kill Basement Shadow 2",
                 "sections": [
                     {
-                        "name": "Reithwin: Kill Shadow 2 #2"
+                        "name": "Reithwin: Kill Basement Shadow 2"
                     }
                 ],
                 "visibility_rules": [
@@ -15532,10 +15508,10 @@
                 ]
             },
             {
-                "name": "Reithwin: Kill Shadow 3 #2",
+                "name": "Reithwin: Kill Basement Shadow 3",
                 "sections": [
                     {
-                        "name": "Reithwin: Kill Shadow 3 #2"
+                        "name": "Reithwin: Kill Basement Shadow 3"
                     }
                 ],
                 "visibility_rules": [
@@ -15550,10 +15526,10 @@
                 ]
             },
             {
-                "name": "Reithwin: Kill Shadow 4",
+                "name": "Reithwin: Kill Basement Shadow 4",
                 "sections": [
                     {
-                        "name": "Reithwin: Kill Shadow 4"
+                        "name": "Reithwin: Kill Basement Shadow 4"
                     }
                 ],
                 "visibility_rules": [
@@ -15568,10 +15544,10 @@
                 ]
             },
             {
-                "name": "Reithwin: Kill Shadow 5",
+                "name": "Reithwin: Kill Basement Shadow 5",
                 "sections": [
                     {
-                        "name": "Reithwin: Kill Shadow 5"
+                        "name": "Reithwin: Kill Basement Shadow 5"
                     }
                 ],
                 "visibility_rules": [
@@ -16228,7 +16204,7 @@
                 "map_locations": [
                     {
                         "map": "west_act2",
-                        "x": 355,
+                        "x": 356,
                         "y": 444
                     }
                 ]
@@ -16246,8 +16222,8 @@
                 "map_locations": [
                     {
                         "map": "west_act2",
-                        "x": 324,
-                        "y": 380
+                        "x": 325,
+                        "y": 381
                     }
                 ]
             },
@@ -16265,7 +16241,7 @@
                     {
                         "map": "west_act2",
                         "x": 305,
-                        "y": 415
+                        "y": 417
                     }
                 ]
             },
@@ -16300,7 +16276,7 @@
                 "map_locations": [
                     {
                         "map": "west_act2",
-                        "x": 353,
+                        "x": 354,
                         "y": 381
                     }
                 ]
@@ -16318,8 +16294,8 @@
                 "map_locations": [
                     {
                         "map": "west_act2",
-                        "x": 296,
-                        "y": 388
+                        "x": 294,
+                        "y": 391
                     }
                 ]
             },
@@ -16337,7 +16313,7 @@
                     {
                         "map": "west_act2",
                         "x": 329,
-                        "y": 432
+                        "y": 433
                     }
                 ]
             },
@@ -16444,8 +16420,8 @@
                 "map_locations": [
                     {
                         "map": "west_act2",
-                        "x": 289,
-                        "y": 305
+                        "x": 262,
+                        "y": 312
                     }
                 ]
             },
@@ -16462,8 +16438,8 @@
                 "map_locations": [
                     {
                         "map": "west_act2",
-                        "x": 279,
-                        "y": 332
+                        "x": 286,
+                        "y": 327
                     }
                 ]
             }
