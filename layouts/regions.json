@@ -70,20 +70,20 @@
                             }
                         },
                         {
-                            "title": "Goblin Camp",
-                            "content": {
-                                "type": "map",
-                                "maps": [
-                                    "goblin_camp"
-                                ]
-                            }
-                        },
-                        {
                             "title": "Waukeen's Rest",
                             "content": {
                                 "type": "map",
                                 "maps": [
                                     "waukeen"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Goblin Camp",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "goblin_camp"
                                 ]
                             }
                         },

@@ -66,8 +66,8 @@ REGION_DISPLAY_NAMES: dict[str, str] = {
 ACT_GROUPS: dict[str, list[str]] = {
     "Prologue": ["tutorial"],
     "Act 1": [
-        "beach", "crypt", "grove", "blighted_village", "goblin_camp",
-        "waukeen", "hag", "underdark", "grymforge", "monastery", "creche",
+        "beach", "crypt", "grove", "blighted_village",
+        "waukeen", "goblin_camp", "hag", "underdark", "grymforge", "monastery", "creche",
     ],
     "Act 2": [
         "east_act2", "west_act2", "last_light", "moonrise",

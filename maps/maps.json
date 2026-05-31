@@ -30,16 +30,16 @@
         "img": "images/maps/blighted_village.png"
     },
     {
-        "name": "goblin_camp",
-        "location_size": 16,
-        "location_border_thickness": 2,
-        "img": "images/maps/goblin_camp.png"
-    },
-    {
         "name": "waukeen",
         "location_size": 8,
         "location_border_thickness": 2,
         "img": "images/maps/waukeen.png"
+    },
+    {
+        "name": "goblin_camp",
+        "location_size": 16,
+        "location_border_thickness": 2,
+        "img": "images/maps/goblin_camp.png"
     },
     {
         "name": "hag",
