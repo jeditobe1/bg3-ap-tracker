@@ -72,15 +72,17 @@ DERIVED_OFF_ICONS = [
     ("questsanity_off", "questsanity_on"),
 ]
 
-# Color-tinted variants: take a base icon and apply a rarity color cast so the
-# four equipment-by-rarity counters are visually distinct. Tints use BG3's
-# tooltip-border palette convention (matching common/uncommon/rare/very-rare).
+# Color-tinted variants: take a base icon and apply a color cast so the
+# four equipment-by-act-gate counters are visually distinct. Colors are
+# legacy rarity-themed (grey/green/blue/purple) from when the buckets
+# were misinterpreted as rarity tiers; the underlying apworld data is
+# act-gate (pre-Halsin / Act 1 / Act 2 / Act 3 per items.py:36).
 # Tuple is (output_code, source_code, "#RRGGBB" tint).
 TINTED_ICONS = [
-    ("equipment_common",    "equipment_base", "#bdbdbd"),  # neutral grey
-    ("equipment_uncommon",  "equipment_base", "#1eff00"),  # green
-    ("equipment_rare",      "equipment_base", "#0070dd"),  # blue
-    ("equipment_very_rare", "equipment_base", "#a335ee"),  # purple
+    ("equipment_pre_halsin", "equipment_base", "#bdbdbd"),  # grey
+    ("equipment_act1",       "equipment_base", "#1eff00"),  # green
+    ("equipment_act2",       "equipment_base", "#0070dd"),  # blue
+    ("equipment_act3",       "equipment_base", "#a335ee"),  # purple
 ]
 
 # AP-mod icons (level fragment uses the AP project logo from the mod's atlas).

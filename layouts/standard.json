@@ -10,7 +10,7 @@
                     "h_alignment": "center",
                     "rows": [
                         [ "level_fragment", "boots_of_speed", "shadow_lantern", "spear_of_night", "stat_boost", "filler", "trap" ],
-                        [ "equipment_common", "equipment_uncommon", "equipment_rare", "equipment_very_rare" ],
+                        [ "equipment_pre_halsin", "equipment_act1", "equipment_act2", "equipment_act3" ],
                         [ "udf_auntie_ethel", "udf_spider_queen", "udf_spectator", "udf_bulette", "udf_nere", "udf_grym", "udf_ch_r_ai_w_wargaz" ],
                         [ "udf_shambling_mound", "udf_cursed_kuo_toa_chief", "udf_malus_thorm", "udf_gerringothe_thorm", "udf_thisobald_thorm", "udf_ch_r_ai_tska_an", "udf_yurgir", "udf_balthazar", "udf_myrkul" ]
                     ]

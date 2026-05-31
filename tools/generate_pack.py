@@ -256,13 +256,15 @@ def parse_location_name_id_region(apworld_path: Path) -> list[tuple[str, int, st
     raise RuntimeError("LOCATION_NAME_ID_REGION not found in locationids.py")
 
 
-def parse_equipment_rarities(apworld_path: Path) -> dict[int, int]:
-    """AST-parse the EQUIPMENT list from equipment.py and return AP item id -> rarity tier.
+def parse_equipment_act_gates(apworld_path: Path) -> dict[int, int]:
+    """AST-parse the EQUIPMENT list from equipment.py and return AP item id -> act-gate tier.
 
     The apworld assigns AP IDs to equipment via items.py:70 as
     `index + 1000` over the EQUIPMENT list, so AP id 1000 = EQUIPMENT[0],
     1001 = EQUIPMENT[1], and so on. Each EQUIPMENT entry is
-    [name, uuid, rarity_tier]; we only need the rarity_tier here (0..3).
+    [name, uuid, act_gate]; the act-gate tier (0..3) maps to the apworld's
+    filter-level convention documented in items.py:36
+    (0 = pre-Halsin, 1 = Act 1, 2 = Act 2, 3 = Act 3).
     """
     src = (apworld_path / "equipment.py").read_text(encoding="utf-8")
     tree = ast.parse(src)
@@ -887,18 +889,18 @@ def emit_regions_layout() -> dict:
     }
 
 
-RARITY_CODES = {
-    0: "equipment_common",
-    1: "equipment_uncommon",
-    2: "equipment_rare",
-    3: "equipment_very_rare",
+ACT_GATE_CODES = {
+    0: "equipment_pre_halsin",
+    1: "equipment_act1",
+    2: "equipment_act2",
+    3: "equipment_act3",
 }
 
 
 def emit_autotracking_generated(
     by_region: dict[str, list[tuple[str, int]]],
     udf_resolved: list[tuple[str, str, int, str]],
-    equipment_rarities: dict[int, int],
+    equipment_act_gates: dict[int, int],
 ) -> str:
     """Return the contents of scripts/autotracking_generated.lua as a string."""
     lines: list[str] = [
@@ -938,14 +940,15 @@ def emit_autotracking_generated(
         lines.append(f"    [{lid}] = {udf_toggle_code(_fight)!r},")
     lines.append("}")
     lines.append("")
-    # Equipment AP id -> per-rarity counter code. The apworld assigns IDs
-    # 1000+index over EQUIPMENT in equipment.py, where each entry carries a
-    # rarity tier 0..3. Lua's code_for_item routes equipment-range IDs into
-    # the right rarity bucket via this table.
-    lines.append("AP_EQUIPMENT_ID_TO_RARITY_CODE = {")
-    for ap_id in sorted(equipment_rarities):
-        tier = equipment_rarities[ap_id]
-        lines.append(f"    [{ap_id}] = {RARITY_CODES[tier]!r},")
+    # Equipment AP id -> per-act-gate counter code. The apworld assigns IDs
+    # 1000+index over EQUIPMENT in equipment.py, where each entry carries an
+    # act-gate tier 0..3 (pre-Halsin / Act 1 / Act 2 / Act 3 per items.py:36).
+    # Lua's code_for_item routes equipment-range IDs into the right bucket
+    # via this table.
+    lines.append("AP_EQUIPMENT_ID_TO_ACT_GATE_CODE = {")
+    for ap_id in sorted(equipment_act_gates):
+        tier = equipment_act_gates[ap_id]
+        lines.append(f"    [{ap_id}] = {ACT_GATE_CODES[tier]!r},")
     lines.append("}")
     lines.append("")
     lines.append("REGION_SECTION_CODES = {")
@@ -1005,12 +1008,12 @@ def main(argv: list[str] | None = None) -> int:
     for fight, name, lid, slug in udf_resolved:
         print(f"     {fight:24s} -> {name} (id={lid}, {slug})")
 
-    equipment_rarities = parse_equipment_rarities(args.apworld)
-    rarity_counts = {tier: 0 for tier in RARITY_CODES}
-    for tier in equipment_rarities.values():
-        rarity_counts[tier] += 1
-    print(f"[OK] Equipment: {len(equipment_rarities)} items, "
-          + ", ".join(f"{rarity_counts[t]} {RARITY_CODES[t]}" for t in RARITY_CODES))
+    equipment_act_gates = parse_equipment_act_gates(args.apworld)
+    gate_counts = {tier: 0 for tier in ACT_GATE_CODES}
+    for tier in equipment_act_gates.values():
+        gate_counts[tier] += 1
+    print(f"[OK] Equipment: {len(equipment_act_gates)} items, "
+          + ", ".join(f"{gate_counts[t]} {ACT_GATE_CODES[t]}" for t in ACT_GATE_CODES))
 
     if args.check:
         print("[OK] --check passed; no files written.")
@@ -1051,7 +1054,7 @@ def main(argv: list[str] | None = None) -> int:
     print(f"[OK] Wrote layouts/regions.json")
 
     # 4. scripts/autotracking_generated.lua
-    lua = emit_autotracking_generated(by_region, udf_resolved, equipment_rarities)
+    lua = emit_autotracking_generated(by_region, udf_resolved, equipment_act_gates)
     out_lua = pack_root / "scripts" / "autotracking_generated.lua"
     out_lua.parent.mkdir(parents=True, exist_ok=True)
     out_lua.write_text(lua, encoding="utf-8", newline="\n")

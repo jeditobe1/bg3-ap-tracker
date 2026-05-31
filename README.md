@@ -63,7 +63,7 @@ These drive what locations are visible. When AP is connected, the values are set
 | `stat_boost` | counter | Aggregate of all 30 stat-boost item variants |
 | `filler` | counter | Aggregate of filler (Lockpick, Supply Pack, Gold, etc.) |
 | `trap` | counter | Aggregate of all trap variants (IDs 7000–7006) |
-| `equipment_common` / `equipment_uncommon` / `equipment_rare` / `equipment_very_rare` | 4 counters | Per-rarity equipment received. The generator AST-reads `EQUIPMENT` from the apworld's `equipment.py` and emits an AP-id → rarity-code map. |
+| `equipment_pre_halsin` / `equipment_act1` / `equipment_act2` / `equipment_act3` | 4 counters | Per-act-gate equipment received (pre-Halsin / Act 1 / Act 2 / Act 3 per the apworld's filter-level convention in `items.py:36`). The generator AST-reads `EQUIPMENT` from the apworld's `equipment.py` and emits an AP-id → act-gate-code map. |
 | `udf_<fight>` × 16 | toggles | Driven by the matching kill location; UDF goal-progress row. Each fight has its own NPC portrait icon (sourced from BG3's `Portraits/` DDS files) — see `tools/extract_icons.py PORTRAIT_ICON_TARGETS`. |
 
 **Locations** are organized into 18 tabs, one per region (Nautiloid → Mindflayer Colony). Each location is a clickable pin on a placeholder per-region map. Pins color by reachability: green = the region is reachable with the player's current Level Fragment count; red = not yet (the access threshold per region matches the apworld's `regions.py` gates). Clicking a pin opens a popup with the section name verbatim from the apworld; left-click marks cleared, right-click reverts.
@@ -87,7 +87,7 @@ These drive what locations are visible. When AP is connected, the values are set
 - **Region display names are first-pass** — some sub-cell labels (e.g. "Town Basement", "HoH Morgue") are working names; a maintainer naming pass is planned.
 - **PopTracker tabs are not visibility-aware** — when a goal hides a region's contents, the tab itself stays visible (just empty). PopTracker doesn't support hiding tabs at runtime per Lua state.
 - **Thaniel: Kill Mom / Kill Dad fall to a grid position** — these two quest-spawned kills aren't in the NPC position cache, so they grid into the bottom of the West Act 2 map. Cosmetic; the locations themselves track correctly.
-- **Equipment is bucketed by rarity, not per-item** — equipment shows as 4 rarity counters (common / uncommon / rare / very rare). Per-item visibility plus an `X of Y` denominator would need `add_act1a_treasure` / `add_act2_treasure` and a derived `expected_equipment_count` in slot_data; deferred until the apworld exposes those.
+- **Equipment is bucketed by act gate, not per-item** — equipment shows as 4 act-gate counters (pre-Halsin / Act 1 / Act 2 / Act 3). Per-item visibility plus an `X of Y` denominator would need `add_act1a_treasure` / `add_act2_treasure` and a derived `expected_equipment_count` in slot_data; deferred until the apworld exposes those. The apworld currently exposes act gate (not rarity) on equipment, so per-rarity counters are not possible without scraping rarity from BG3 game data.
 - **Trap variants are aggregated** — all 7 trap types collapse into a single `trap` counter. Per-trap-type counters were removed to keep the items grid focused on tracking that's relevant to most seeds (trap-disabled seeds simply leave the counter at 0).
 - **Statsanity unsupported** — the apworld's statsanity option is hidden / unimplemented; the tracker treats it as off (stat-boost items are still counted, just not gated).
 

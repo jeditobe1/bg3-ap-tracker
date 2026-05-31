@@ -455,11 +455,12 @@ the upstream apworld renames or restructures things the pack pins on.
 - New sanity options: add a toggle item to `items/items.json` and emit
   `visibility_rules: ["<new_sanity_code>"]` per section from the generator.
 - New equipment in `equipment.py`: the generator picks them up
-  automatically via the EQUIPMENT AST pass; only the 4 rarity buckets
-  (`equipment_common` / `equipment_uncommon` / `equipment_rare` /
-  `equipment_very_rare`) need to stay in items.json. New rarity tiers
-  (>3) would need a corresponding entry in `RARITY_CODES` in
-  `tools/generate_pack.py`.
+  automatically via the EQUIPMENT AST pass; only the 4 act-gate buckets
+  (`equipment_pre_halsin` / `equipment_act1` / `equipment_act2` /
+  `equipment_act3`) need to stay in items.json. New act-gate tiers (>3)
+  would need a corresponding entry in `ACT_GATE_CODES` in
+  `tools/generate_pack.py`. (The third column on each EQUIPMENT row is
+  the apworld's act-gate / filter-level per items.py:36, NOT a rarity.)
 
 ### `UserDefinedFights.valid_keys` changes in `options.py`
 

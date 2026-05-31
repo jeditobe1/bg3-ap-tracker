@@ -49,10 +49,10 @@
         "codes": "trap",
         "overlay_align": "right"
     },
-    { "name": "Equipment (Common)",    "type": "consumable", "img": "images/items/equipment_common.png",    "codes": "equipment_common",    "overlay_align": "right" },
-    { "name": "Equipment (Uncommon)",  "type": "consumable", "img": "images/items/equipment_uncommon.png",  "codes": "equipment_uncommon",  "overlay_align": "right" },
-    { "name": "Equipment (Rare)",      "type": "consumable", "img": "images/items/equipment_rare.png",      "codes": "equipment_rare",      "overlay_align": "right" },
-    { "name": "Equipment (Very Rare)", "type": "consumable", "img": "images/items/equipment_very_rare.png", "codes": "equipment_very_rare", "overlay_align": "right" },
+    { "name": "Equipment (Pre-Halsin)", "type": "consumable", "img": "images/items/equipment_pre_halsin.png", "codes": "equipment_pre_halsin", "overlay_align": "right" },
+    { "name": "Equipment (Act 1)",      "type": "consumable", "img": "images/items/equipment_act1.png",       "codes": "equipment_act1",       "overlay_align": "right" },
+    { "name": "Equipment (Act 2)",      "type": "consumable", "img": "images/items/equipment_act2.png",       "codes": "equipment_act2",       "overlay_align": "right" },
+    { "name": "Equipment (Act 3)",      "type": "consumable", "img": "images/items/equipment_act3.png",       "codes": "equipment_act3",       "overlay_align": "right" },
     {
         "name": "Goal",
         "type": "progressive",

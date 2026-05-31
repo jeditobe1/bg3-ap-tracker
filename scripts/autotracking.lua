@@ -13,7 +13,7 @@ SLOT_DATA = {}
 
 local DISTINCT_CONSUMABLE_CODES = {
     "level_fragment", "stat_boost", "filler", "trap",
-    "equipment_common", "equipment_uncommon", "equipment_rare", "equipment_very_rare",
+    "equipment_pre_halsin", "equipment_act1", "equipment_act2", "equipment_act3",
 }
 
 local function code_for_item(item_id)
@@ -21,8 +21,8 @@ local function code_for_item(item_id)
     if item_id == 1 then return "level_fragment", "consumable" end
     if item_id >= 5 and item_id <= 34 then return "stat_boost", "consumable" end
     if item_id >= 1000 and item_id < 5000 then
-        -- Equipment: routed to per-rarity counter via the generated table.
-        local code = AP_EQUIPMENT_ID_TO_RARITY_CODE and AP_EQUIPMENT_ID_TO_RARITY_CODE[item_id]
+        -- Equipment: routed to per-act-gate counter via the generated table.
+        local code = AP_EQUIPMENT_ID_TO_ACT_GATE_CODE and AP_EQUIPMENT_ID_TO_ACT_GATE_CODE[item_id]
         if code then return code, "consumable" end
         return nil, nil
     end
