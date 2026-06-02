@@ -98,6 +98,13 @@ AP_ICON_TARGETS = [
 # one of {"shared", "gustav"} (mapped to the corresponding --portraits-shared-root
 # and --portraits-gustav-root CLI arguments below).
 PORTRAIT_ICON_TARGETS = [
+    # Primary goal target: Halsin (rescue, goal=0). Not in UserDefinedFights
+    # valid_keys but tracked in bg3_client.act1bosses; the autotracker wires
+    # AP location 114 to this toggle. Portrait DDS path is a TODO -- fill in
+    # the Mods/Gustav/GUI/Assets/Portraits/<uuid>-S_DEN_Halsin_*.DDS path
+    # when re-extracting; the placeholder image is currently a copy of
+    # images/items/goal_halsin.png.
+    # ("udf_rescue_halsin",      "Mods/Gustav/GUI/Assets/Portraits/<TBD>-S_DEN_Halsin_<Icon>.DDS",                "gustav"),
     # Act 1 UDF
     ("udf_auntie_ethel",         "Mods/Shared/GUI/Assets/Portraits/0797903d-f96a-2ad2-2760-2b840f3f01b4-_(Icon_Hag).DDS",                          "shared"),
     ("udf_spider_queen",         "Mods/Shared/GUI/Assets/Portraits/bb6176cf-33cb-c60d-531c-57744789c198-_(Icon_Spider_Queen).DDS",                 "shared"),

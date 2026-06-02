@@ -938,6 +938,13 @@ def emit_autotracking_generated(
     lines.append("AP_UDF_LOCATION_ID_TO_TOGGLE = {")
     for _fight, _ap_name, lid, _slug in udf_resolved:
         lines.append(f"    [{lid}] = {udf_toggle_code(_fight)!r},")
+    # Halsin rescue: not in UserDefinedFights.valid_keys (it's a quest event,
+    # not a kill), but it is one of the primary goal targets (option=0) and
+    # bg3_client.act1bosses tracks it as Victory_Halsin. The Victory_Halsin
+    # event has no AP location id of its own; per bg3_locations.py:131 it
+    # fires alongside "Gobs-Halsin: Tell Halsin about Victory" (id 114),
+    # which we use as the autotracker proxy.
+    lines.append("    [114] = 'udf_rescue_halsin',")
     lines.append("}")
     lines.append("")
     # Equipment AP id -> per-act-gate counter code. The apworld assigns IDs

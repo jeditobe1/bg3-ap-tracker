@@ -98,5 +98,6 @@
     { "name": "Fight: Ch'r'ai Tska'an",      "type": "toggle", "img": "images/items/udf_ch_r_ai_tska_an.png",      "codes": "udf_ch_r_ai_tska_an" },
     { "name": "Fight: Yurgir",               "type": "toggle", "img": "images/items/udf_yurgir.png",               "codes": "udf_yurgir" },
     { "name": "Fight: Balthazar",            "type": "toggle", "img": "images/items/udf_balthazar.png",            "codes": "udf_balthazar" },
-    { "name": "Fight: Myrkul",               "type": "toggle", "img": "images/items/udf_myrkul.png",               "codes": "udf_myrkul" }
+    { "name": "Fight: Myrkul",               "type": "toggle", "img": "images/items/udf_myrkul.png",               "codes": "udf_myrkul" },
+    { "name": "Rescue: Halsin",              "type": "toggle", "img": "images/items/udf_rescue_halsin.png",        "codes": "udf_rescue_halsin" }
 ]

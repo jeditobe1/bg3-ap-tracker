@@ -95,10 +95,11 @@ local function mark_location_cleared(location_id)
         local s = Tracker:FindObjectForCode(section_code)
         if s then s.AvailableChestCount = 0 end
     end
-    -- UDF goal-progress toggle: if this AP location corresponds to one of the
-    -- 16 User Defined Fights, flip its toggle item on so the items-grid row
-    -- shows progression. AP_UDF_LOCATION_ID_TO_TOGGLE is emitted by the
-    -- generator from options.py UserDefinedFights.valid_keys.
+    -- Goal-progress toggle: if this AP location corresponds to one of the
+    -- 16 User Defined Fights (or the Halsin rescue), flip its toggle on so
+    -- the items-grid row shows progression. AP_UDF_LOCATION_ID_TO_TOGGLE is
+    -- emitted by the generator from UserDefinedFights.valid_keys plus a
+    -- hardcoded entry for the Halsin rescue (id 114 -> udf_rescue_halsin).
     local udf_code = AP_UDF_LOCATION_ID_TO_TOGGLE and AP_UDF_LOCATION_ID_TO_TOGGLE[location_id]
     if udf_code then
         local t = Tracker:FindObjectForCode(udf_code)

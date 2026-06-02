@@ -963,6 +963,7 @@ AP_UDF_LOCATION_ID_TO_TOGGLE = {
     [10536] = 'udf_yurgir',
     [10541] = 'udf_balthazar',
     [10647] = 'udf_myrkul',
+    [114] = 'udf_rescue_halsin',
 }
 
 AP_EQUIPMENT_ID_TO_ACT_GATE_CODE = {
