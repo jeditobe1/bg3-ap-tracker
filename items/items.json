@@ -83,6 +83,14 @@
         "codes": "questsanity",
         "initial_active_state": true
     },
+    {
+        "name": "Follow Player Location",
+        "type": "toggle",
+        "img": "images/items/opt_follow_tab_on.png",
+        "disabled_img": "images/items/opt_follow_tab_off.png",
+        "codes": "opt_follow_tab",
+        "initial_active_state": true
+    },
     { "name": "Fight: Auntie Ethel",         "type": "toggle", "img": "images/items/udf_auntie_ethel.png",         "codes": "udf_auntie_ethel" },
     { "name": "Fight: Spider Queen",         "type": "toggle", "img": "images/items/udf_spider_queen.png",         "codes": "udf_spider_queen" },
     { "name": "Fight: Spectator",            "type": "toggle", "img": "images/items/udf_spectator.png",            "codes": "udf_spectator" },

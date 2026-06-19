@@ -958,6 +958,18 @@ def emit_autotracking_generated(
         lines.append(f"    [{ap_id}] = {ACT_GATE_CODES[tier]!r},")
     lines.append("}")
     lines.append("")
+    # Region display name -> parent act tab title. The "Follow Player Location"
+    # option fires ActivateTab for the act first, then the region, because the
+    # regions_block layout nests region tabs inside per-act tabs and each tab
+    # widget only reacts to ActivateTab if it owns a tab of that name (see
+    # PopTracker tabs.cpp setActiveTab). Activating only the leaf would switch
+    # the (possibly hidden) act's inner tabs without bringing the act forward.
+    lines.append("AP_REGION_TO_ACT_TAB = {")
+    for act_name, slugs in ACT_GROUPS.items():
+        for slug in slugs:
+            lines.append(f"    [{REGION_DISPLAY_NAMES[slug]!r}] = {act_name!r},")
+    lines.append("}")
+    lines.append("")
     lines.append("REGION_SECTION_CODES = {")
     for code in region_codes:
         lines.append(f"    {code!r},")

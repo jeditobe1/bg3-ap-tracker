@@ -107,12 +107,42 @@ local function mark_location_cleared(location_id)
     end
 end
 
+-- "Follow Player Location": when the opt_follow_tab toggle is on, switch the
+-- active tab to the region of the most recent *live* check. Region name is the
+-- segment of the section code between "@" and the first "/", which matches the
+-- layout tab titles ("@Druid Grove/..." -> tab "Druid Grove").
+--
+-- On connect, PopTracker replays every already-checked location through the
+-- location handler. We suppress tab-following for a short settle window after
+-- on_clear so that backlog doesn't yank the UI to whatever check happens to be
+-- last. Live checks (made while playing) arrive well after the window closes.
+local TAB_FOLLOW_SETTLE = 0  -- seconds remaining during which checks won't switch tabs
+
+local function follow_tab_to_location(location_id)
+    if TAB_FOLLOW_SETTLE > 0 then return end
+    local opt = Tracker:FindObjectForCode("opt_follow_tab")
+    if not (opt and opt.Active) then return end
+    local section_code = AP_LOCATION_ID_TO_SECTION[location_id]
+    if not section_code then return end
+    local region = section_code:match("^@([^/]+)/")
+    if not region then return end
+    -- Region tabs are nested inside per-act tabs; activate the act first so the
+    -- region's tab group is the visible one, then the region itself. Each tab
+    -- widget ignores names it doesn't own, so sending both is safe.
+    local act = AP_REGION_TO_ACT_TAB and AP_REGION_TO_ACT_TAB[region]
+    if act then Tracker:UiHint("ActivateTab", act) end
+    Tracker:UiHint("ActivateTab", region)
+end
+
 local function on_clear(slot_data)
     Tracker.BulkUpdate = true
     SLOT_DATA = slot_data or {}
     reset_all_items()
     local cleared = reconcile_sections()
     apply_status_badges()
+    -- Suppress tab-following while the connect backlog replays. If frame handlers
+    -- aren't available (older PopTracker), leave it at 0 so the feature still works.
+    if ScriptHost.AddOnFrameHandler then TAB_FOLLOW_SETTLE = 2.0 end
     print(string.format("BG3 AP: connected. %d locations already cleared. goal=%s ks=%s qs=%s",
         cleared,
         tostring(SLOT_DATA.goal), tostring(SLOT_DATA.killsanity), tostring(SLOT_DATA.questsanity)))
@@ -136,6 +166,7 @@ end
 
 local function on_location(location_id, location_name)
     mark_location_cleared(location_id)
+    follow_tab_to_location(location_id)
 end
 
 -- Locking: when AP is connected the slot's goal/killsanity/questsanity are
@@ -159,5 +190,10 @@ Archipelago:AddLocationHandler("bg3_loc", on_location)
 ScriptHost:AddWatchForCode("bg3_lock_goal",        "goal",        lock_setting_if_ap)
 ScriptHost:AddWatchForCode("bg3_lock_killsanity",  "killsanity",  lock_setting_if_ap)
 ScriptHost:AddWatchForCode("bg3_lock_questsanity", "questsanity", lock_setting_if_ap)
+if ScriptHost.AddOnFrameHandler then
+    ScriptHost:AddOnFrameHandler("bg3_tab_settle", function(elapsed)
+        if TAB_FOLLOW_SETTLE > 0 then TAB_FOLLOW_SETTLE = TAB_FOLLOW_SETTLE - elapsed end
+    end)
+end
 
 print("BG3 AP autotracker loaded")

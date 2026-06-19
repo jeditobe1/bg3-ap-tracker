@@ -1398,6 +1398,27 @@ AP_EQUIPMENT_ID_TO_ACT_GATE_CODE = {
     [1428] = 'equipment_act1',
 }
 
+AP_REGION_TO_ACT_TAB = {
+    ['Nautiloid'] = 'Prologue',
+    ['Ravaged Beach'] = 'Act 1',
+    ['Dank Crypt'] = 'Act 1',
+    ['Druid Grove'] = 'Act 1',
+    ['Blighted Village'] = 'Act 1',
+    ["Waukeen's Rest"] = 'Act 1',
+    ['Goblin Camp'] = 'Act 1',
+    ['Riverside'] = 'Act 1',
+    ['Underdark'] = 'Act 1',
+    ['Grymforge'] = 'Act 1',
+    ['Rosymorn Monastery'] = 'Act 1',
+    ["Creche Y'llek"] = 'Act 1',
+    ['Shadow-Cursed Lands (East)'] = 'Act 2',
+    ['Shadow-Cursed Lands (West)'] = 'Act 2',
+    ['Last Light Inn'] = 'Act 2',
+    ['Moonrise Towers'] = 'Act 2',
+    ['Gauntlet of Shar'] = 'Act 2',
+    ['Mindflayer Colony'] = 'Act 2',
+}
+
 REGION_SECTION_CODES = {
     '@Nautiloid/Tut: Learn about the Helm/Tut: Learn about the Helm',
     '@Nautiloid/Tut: Reach the Helm/Tut: Reach the Helm',

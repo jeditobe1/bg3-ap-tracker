@@ -65,8 +65,18 @@
                         ]
                     },
                     {
+                        "type": "array",
+                        "orientation": "horizontal",
+                        "v_alignment": "center",
+                        "margin": "0,8",
+                        "content": [
+                            { "type": "item", "item": "opt_follow_tab", "item_size": "48,48" },
+                            { "type": "text", "text": "  Follow Player Location  —  switch to a region's tab when a check there is found" }
+                        ]
+                    },
+                    {
                         "type": "text",
-                        "text": "Toggles: left = ON, right = OFF, middle = flip. Auto-set from slot_data when AP is connected; manual changes revert until you disconnect.",
+                        "text": "Toggles: left = ON, right = OFF, middle = flip. Killsanity/Questsanity auto-set from slot_data when AP is connected (manual changes revert until you disconnect). Follow Player Location is a local preference and is never overridden.",
                         "margin": "0,16"
                     }
                 ]
