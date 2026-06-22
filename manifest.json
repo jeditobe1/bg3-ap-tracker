@@ -2,7 +2,7 @@
     "name": "Baldur's Gate 3 Archipelago",
     "game_name": "Baldur's Gate 3",
     "platform": "pc",
-    "package_version": "0.7.0",
+    "package_version": "0.7.0-alpha",
     "package_uid": "bg3-ap-tracker",
     "author": "BG3 AP community",
     "variants": {
