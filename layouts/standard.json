@@ -11,6 +11,8 @@
                     "rows": [
                         [ "level_fragment", "boots_of_speed", "shadow_lantern", "spear_of_night", "stat_boost", "filler", "trap" ],
                         [ "equipment_pre_halsin", "equipment_act1", "equipment_act2", "equipment_act3" ],
+                        [ "gate_nautiloid_control_panel", "gate_withers_crypt", "gate_blighted_village_well", "gate_goblin_camp", "gate_underdark", "gate_hags_fireplace", "gate_zhentarim_basement", "gate_grymforge" ],
+                        [ "gate_mountain_pass", "gate_creche", "gate_act2", "gate_last_light_basement", "gate_reithwins_masons_guild", "gate_shar_trials", "gate_progressive_moonlight_towers" ],
                         [ "udf_rescue_halsin", "udf_auntie_ethel", "udf_spider_queen", "udf_spectator", "udf_bulette", "udf_nere", "udf_grym", "udf_ch_r_ai_w_wargaz" ],
                         [ "udf_shambling_mound", "udf_cursed_kuo_toa_chief", "udf_malus_thorm", "udf_gerringothe_thorm", "udf_thisobald_thorm", "udf_ch_r_ai_tska_an", "udf_yurgir", "udf_balthazar", "udf_myrkul" ]
                     ]
@@ -70,13 +72,23 @@
                         "v_alignment": "center",
                         "margin": "0,8",
                         "content": [
+                            { "type": "item", "item": "block_entrances", "item_size": "48,48" },
+                            { "type": "text", "text": "  Block Entrances  —  region-locking via gate items (apworld v0.6.0+)" }
+                        ]
+                    },
+                    {
+                        "type": "array",
+                        "orientation": "horizontal",
+                        "v_alignment": "center",
+                        "margin": "0,8",
+                        "content": [
                             { "type": "item", "item": "opt_follow_tab", "item_size": "48,48" },
                             { "type": "text", "text": "  Follow Player Location  —  switch to a region's tab when a check there is found" }
                         ]
                     },
                     {
                         "type": "text",
-                        "text": "Toggles: left = ON, right = OFF, middle = flip. Killsanity/Questsanity auto-set from slot_data when AP is connected (manual changes revert until you disconnect). Follow Player Location is a local preference and is never overridden.",
+                        "text": "Toggles: left = ON, right = OFF, middle = flip. Killsanity/Questsanity/Block Entrances auto-set from slot_data when AP is connected (manual changes revert until you disconnect). Follow Player Location is a local preference and is never overridden.",
                         "margin": "0,16"
                     }
                 ]

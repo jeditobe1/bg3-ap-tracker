@@ -773,7 +773,7 @@
             }
         ],
         "access_rules": [
-            "level_fragment:1"
+            "level_fragment:1,gate_nautiloid_control_panel"
         ]
     },
     {
@@ -1131,7 +1131,7 @@
             }
         ],
         "access_rules": [
-            "level_fragment:1"
+            "level_fragment:1,gate_withers_crypt"
         ]
     },
     {
@@ -3483,7 +3483,7 @@
             }
         ],
         "access_rules": [
-            "level_fragment:3"
+            "level_fragment:3,gate_blighted_village_well,gate_underdark"
         ]
     },
     {
@@ -4831,7 +4831,7 @@
             }
         ],
         "access_rules": [
-            "level_fragment:6"
+            "level_fragment:6,gate_zhentarim_basement"
         ]
     },
     {
@@ -7375,7 +7375,7 @@
             }
         ],
         "access_rules": [
-            "level_fragment:8"
+            "level_fragment:8,gate_goblin_camp"
         ]
     },
     {
@@ -7949,7 +7949,7 @@
             }
         ],
         "access_rules": [
-            "level_fragment:10"
+            "level_fragment:10,gate_hags_fireplace"
         ]
     },
     {
@@ -9369,7 +9369,7 @@
             }
         ],
         "access_rules": [
-            "level_fragment:10"
+            "level_fragment:10,gate_underdark"
         ],
         "visibility_rules": [
             "goal_wwargaz",
@@ -11005,7 +11005,7 @@
             }
         ],
         "access_rules": [
-            "level_fragment:14"
+            "level_fragment:14,gate_grymforge"
         ],
         "visibility_rules": [
             "goal_wwargaz",
@@ -12137,7 +12137,7 @@
             }
         ],
         "access_rules": [
-            "level_fragment:18"
+            "level_fragment:18,gate_goblin_camp,gate_mountain_pass"
         ],
         "visibility_rules": [
             "goal_wwargaz",
@@ -13497,7 +13497,7 @@
             }
         ],
         "access_rules": [
-            "level_fragment:18"
+            "level_fragment:18,gate_creche"
         ],
         "visibility_rules": [
             "goal_wwargaz",
@@ -14759,7 +14759,7 @@
             }
         ],
         "access_rules": [
-            "level_fragment:22"
+            "level_fragment:22,gate_act2"
         ],
         "visibility_rules": [
             "goal_myrkul",
@@ -16445,7 +16445,7 @@
             }
         ],
         "access_rules": [
-            "level_fragment:26"
+            "level_fragment:26,gate_reithwins_masons_guild"
         ],
         "visibility_rules": [
             "goal_myrkul",
@@ -18117,7 +18117,7 @@
             }
         ],
         "access_rules": [
-            "level_fragment:26"
+            "level_fragment:26,gate_last_light_basement"
         ],
         "visibility_rules": [
             "goal_myrkul",
@@ -19269,7 +19269,7 @@
             }
         ],
         "access_rules": [
-            "level_fragment:26"
+            "level_fragment:26,gate_progressive_moonlight_towers:4"
         ],
         "visibility_rules": [
             "goal_myrkul",
@@ -20347,7 +20347,7 @@
             }
         ],
         "access_rules": [
-            "level_fragment:26"
+            "level_fragment:26,gate_underdark,gate_grymforge,gate_shar_trials"
         ],
         "visibility_rules": [
             "goal_myrkul",
@@ -21633,7 +21633,7 @@
             }
         ],
         "access_rules": [
-            "level_fragment:30"
+            "level_fragment:30,gate_progressive_moonlight_towers:5"
         ],
         "visibility_rules": [
             "goal_myrkul",

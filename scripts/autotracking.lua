@@ -14,12 +14,18 @@ SLOT_DATA = {}
 local DISTINCT_CONSUMABLE_CODES = {
     "level_fragment", "stat_boost", "filler", "trap",
     "equipment_pre_halsin", "equipment_act1", "equipment_act2", "equipment_act3",
+    "gate_progressive_moonlight_towers",
 }
 
 local function code_for_item(item_id)
     if AP_ITEM_ID_TO_CODE[item_id] then return AP_ITEM_ID_TO_CODE[item_id], "toggle" end
     if item_id == 1 then return "level_fragment", "consumable" end
     if item_id >= 5 and item_id <= 34 then return "stat_boost", "consumable" end
+    -- Region-locking Progressive Moonlight Towers (apworld v0.6.0+, AP id
+    -- 114). Receivable up to 5 times: 4 unlocks Moonrise, 5 unlocks the
+    -- Mindflayer Colony. Single-receive gates 100..113 are routed via
+    -- AP_ITEM_ID_TO_CODE; 114 is the only counter and lands here.
+    if item_id == 114 then return "gate_progressive_moonlight_towers", "consumable" end
     if item_id >= 1000 and item_id < 5000 then
         -- Equipment: routed to per-act-gate counter via the generated table.
         local code = AP_EQUIPMENT_ID_TO_ACT_GATE_CODE and AP_EQUIPMENT_ID_TO_ACT_GATE_CODE[item_id]
@@ -48,6 +54,71 @@ local function reset_all_items()
     end
 end
 
+-- Goal stage codes from items.json Goal progressive (matches the values in
+-- apworld options.py: 0=Halsin, 1=Wwargaz, 2=Act1UDF, 3=Myrkul, 4=Act2UDF).
+local GOAL_HALSIN, GOAL_WWARGAZ, GOAL_ACT1_UDF, GOAL_MYRKUL, GOAL_ACT2_UDF = 0, 1, 2, 3, 4
+
+-- Region-locking gate items (apworld v0.6.0+). When BlockEntrances is on,
+-- the items in this player's pool depend on goal -- the rest are auto-enabled
+-- so access_rules referencing them still pass. Mirrors items.py:159-181.
+local ALL_GATE_TOGGLES = {
+    "gate_nautiloid_control_panel", "gate_withers_crypt",
+    "gate_blighted_village_well", "gate_goblin_camp",
+    "gate_underdark", "gate_hags_fireplace", "gate_zhentarim_basement",
+    "gate_grymforge", "gate_mountain_pass", "gate_creche",
+    "gate_act2", "gate_last_light_basement", "gate_reithwins_masons_guild",
+    "gate_shar_trials",
+}
+local ALL_GATE_COUNTERS = { "gate_progressive_moonlight_towers" }
+
+local function pool_gates_for_goal(goal)
+    -- Return the set of gate codes that ARE in the player's pool for this
+    -- goal when BlockEntrances is on. Codes outside this set get
+    -- auto-enabled so they don't block access_rules pointlessly.
+    local pool = {
+        gate_nautiloid_control_panel = true,
+        gate_withers_crypt = true,
+        gate_goblin_camp = true,
+    }
+    if goal == GOAL_HALSIN then
+        pool.gate_blighted_village_well = true
+    else
+        pool.gate_underdark = true
+        pool.gate_hags_fireplace = true
+        pool.gate_zhentarim_basement = true
+        pool.gate_grymforge = true
+        pool.gate_mountain_pass = true
+        pool.gate_creche = true
+        if goal ~= GOAL_WWARGAZ and goal ~= GOAL_ACT1_UDF then
+            pool.gate_act2 = true
+            pool.gate_last_light_basement = true
+            pool.gate_reithwins_masons_guild = true
+            pool.gate_shar_trials = true
+            pool.gate_progressive_moonlight_towers = true  -- counter, max 5
+        end
+    end
+    return pool
+end
+
+local function apply_gate_auto_enable()
+    -- When BlockEntrances is off, every gate is "given" so access_rules
+    -- referencing them pass trivially. When BlockEntrances is on, gates
+    -- outside the player's goal-pool get the same treatment (they'd never
+    -- arrive otherwise). Gates inside the pool are left to natural item
+    -- receipt via on_item.
+    local block_on = (SLOT_DATA.block_entrances or 0) ~= 0
+    local goal = SLOT_DATA.goal or 0
+    local pool = block_on and pool_gates_for_goal(goal) or {}
+    for _, code in ipairs(ALL_GATE_TOGGLES) do
+        local t = Tracker:FindObjectForCode(code)
+        if t and not pool[code] then t.Active = true end
+    end
+    for _, code in ipairs(ALL_GATE_COUNTERS) do
+        local c = Tracker:FindObjectForCode(code)
+        if c and not pool[code] then c.AcquiredCount = 5 end
+    end
+end
+
 local function apply_status_badges()
     local goal_item = Tracker:FindObjectForCode("goal")
     if goal_item and SLOT_DATA.goal ~= nil then
@@ -57,6 +128,9 @@ local function apply_status_badges()
     if ks then ks.Active = (SLOT_DATA.killsanity or 0) ~= 0 end
     local qs = Tracker:FindObjectForCode("questsanity")
     if qs then qs.Active = (SLOT_DATA.questsanity or 0) ~= 0 end
+    local be = Tracker:FindObjectForCode("block_entrances")
+    if be then be.Active = (SLOT_DATA.block_entrances or 0) ~= 0 end
+    apply_gate_auto_enable()
 end
 
 local function reconcile_sections()
@@ -143,9 +217,10 @@ local function on_clear(slot_data)
     -- Suppress tab-following while the connect backlog replays. If frame handlers
     -- aren't available (older PopTracker), leave it at 0 so the feature still works.
     if ScriptHost.AddOnFrameHandler then TAB_FOLLOW_SETTLE = 2.0 end
-    print(string.format("BG3 AP: connected. %d locations already cleared. goal=%s ks=%s qs=%s",
+    print(string.format("BG3 AP: connected. %d locations already cleared. goal=%s ks=%s qs=%s be=%s",
         cleared,
-        tostring(SLOT_DATA.goal), tostring(SLOT_DATA.killsanity), tostring(SLOT_DATA.questsanity)))
+        tostring(SLOT_DATA.goal), tostring(SLOT_DATA.killsanity), tostring(SLOT_DATA.questsanity),
+        tostring(SLOT_DATA.block_entrances)))
     Tracker.BulkUpdate = false
 end
 
@@ -187,9 +262,10 @@ end
 Archipelago:AddClearHandler("bg3_clear", on_clear)
 Archipelago:AddItemHandler("bg3_items", on_item)
 Archipelago:AddLocationHandler("bg3_loc", on_location)
-ScriptHost:AddWatchForCode("bg3_lock_goal",        "goal",        lock_setting_if_ap)
-ScriptHost:AddWatchForCode("bg3_lock_killsanity",  "killsanity",  lock_setting_if_ap)
-ScriptHost:AddWatchForCode("bg3_lock_questsanity", "questsanity", lock_setting_if_ap)
+ScriptHost:AddWatchForCode("bg3_lock_goal",             "goal",             lock_setting_if_ap)
+ScriptHost:AddWatchForCode("bg3_lock_killsanity",       "killsanity",       lock_setting_if_ap)
+ScriptHost:AddWatchForCode("bg3_lock_questsanity",      "questsanity",      lock_setting_if_ap)
+ScriptHost:AddWatchForCode("bg3_lock_block_entrances",  "block_entrances",  lock_setting_if_ap)
 if ScriptHost.AddOnFrameHandler then
     ScriptHost:AddOnFrameHandler("bg3_tab_settle", function(elapsed)
         if TAB_FOLLOW_SETTLE > 0 then TAB_FOLLOW_SETTLE = TAB_FOLLOW_SETTLE - elapsed end
