@@ -118,15 +118,29 @@ local function apply_gate_auto_enable()
     local block_on = (SLOT_DATA.block_entrances or 0) ~= 0
     local goal = SLOT_DATA.goal or 0
     local pool = block_on and pool_gates_for_goal(goal) or {}
+    -- For overlay rendering on toggles, getOverlayAlign defaults to "right"
+    -- but the overlay font color also defaults to ~white. We use the methods
+    -- documented for JsonItem (PopTracker PACKS.md): :SetOverlay,
+    -- :SetOverlayColor, :SetOverlayBackground, :SetOverlayAlign.
+    local function badge_off(o)
+        o:SetOverlay("")
+        o:SetOverlayBackground("")
+    end
+    local function badge_na(o)
+        o:SetOverlay("N/A")
+        o:SetOverlayColor("#ffffff")
+        o:SetOverlayBackground("#cc2222")
+        o:SetOverlayAlign("center")
+        o:SetOverlayFontSize(12)
+    end
     for _, code in ipairs(ALL_GATE_TOGGLES) do
         local t = Tracker:FindObjectForCode(code)
         if t then
             if not pool[code] then
                 t.Active = true
-                t.BadgeText = "N/A"
-                t.BadgeTextColor = "#ff8080"
+                badge_na(t)
             else
-                t.BadgeText = ""
+                badge_off(t)
             end
         end
     end
@@ -135,10 +149,9 @@ local function apply_gate_auto_enable()
         if c then
             if not pool[code] then
                 c.AcquiredCount = 5
-                c.BadgeText = "N/A"
-                c.BadgeTextColor = "#ff8080"
+                badge_na(c)
             else
-                c.BadgeText = ""
+                badge_off(c)
             end
         end
     end
