@@ -106,16 +106,36 @@ local function apply_gate_auto_enable()
     -- outside the player's goal-pool get the same treatment (they'd never
     -- arrive otherwise). Gates inside the pool are left to natural item
     -- receipt via on_item.
+    --
+    -- Visual hint: auto-enabled (out-of-pool) gates get IconMods="@disabled"
+    -- so they render greyed -- the user can tell at a glance that those
+    -- aren't actually receivable items but virtual bypasses for access
+    -- rule purposes. In-pool gates clear IconMods so they show in their
+    -- normal bright-on / dim-off styling.
     local block_on = (SLOT_DATA.block_entrances or 0) ~= 0
     local goal = SLOT_DATA.goal or 0
     local pool = block_on and pool_gates_for_goal(goal) or {}
     for _, code in ipairs(ALL_GATE_TOGGLES) do
         local t = Tracker:FindObjectForCode(code)
-        if t and not pool[code] then t.Active = true end
+        if t then
+            if not pool[code] then
+                t.Active = true
+                t.IconMods = "@disabled"
+            else
+                t.IconMods = ""
+            end
+        end
     end
     for _, code in ipairs(ALL_GATE_COUNTERS) do
         local c = Tracker:FindObjectForCode(code)
-        if c and not pool[code] then c.AcquiredCount = 5 end
+        if c then
+            if not pool[code] then
+                c.AcquiredCount = 5
+                c.IconMods = "@disabled"
+            else
+                c.IconMods = ""
+            end
+        end
     end
 end
 

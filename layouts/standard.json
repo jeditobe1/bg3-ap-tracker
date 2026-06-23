@@ -38,52 +38,14 @@
                             "type": "group",
                             "header": "Region Gates",
                             "dock": "top",
-                            "visibility_rules": ["block_entrances"],
                             "content": {
-                                "type": "array",
-                                "orientation": "vertical",
-                                "content": [
-                                    {
-                                        "type": "itemgrid",
-                                        "h_alignment": "center",
-                                        "rows": [
-                                            [ "gate_nautiloid_control_panel", "gate_withers_crypt", "gate_goblin_camp" ]
-                                        ]
-                                    },
-                                    {
-                                        "type": "itemgrid",
-                                        "h_alignment": "center",
-                                        "visibility_rules": ["goal_halsin"],
-                                        "rows": [
-                                            [ "gate_blighted_village_well" ]
-                                        ]
-                                    },
-                                    {
-                                        "type": "itemgrid",
-                                        "h_alignment": "center",
-                                        "visibility_rules": [
-                                            "goal_wwargaz",
-                                            "goal_act1udf",
-                                            "goal_myrkul",
-                                            "goal_act2udf"
-                                        ],
-                                        "rows": [
-                                            [ "gate_underdark", "gate_hags_fireplace", "gate_zhentarim_basement" ],
-                                            [ "gate_grymforge", "gate_mountain_pass", "gate_creche" ]
-                                        ]
-                                    },
-                                    {
-                                        "type": "itemgrid",
-                                        "h_alignment": "center",
-                                        "visibility_rules": [
-                                            "goal_myrkul",
-                                            "goal_act2udf"
-                                        ],
-                                        "rows": [
-                                            [ "gate_act2", "gate_last_light_basement", "gate_reithwins_masons_guild" ],
-                                            [ "gate_shar_trials", "gate_progressive_moonlight_towers" ]
-                                        ]
-                                    }
+                                "type": "itemgrid",
+                                "h_alignment": "center",
+                                "rows": [
+                                    [ "gate_nautiloid_control_panel", "gate_withers_crypt", "gate_blighted_village_well", "gate_goblin_camp" ],
+                                    [ "gate_underdark", "gate_hags_fireplace", "gate_zhentarim_basement", "gate_grymforge" ],
+                                    [ "gate_mountain_pass", "gate_creche", "gate_act2", "gate_last_light_basement" ],
+                                    [ "gate_reithwins_masons_guild", "gate_shar_trials", "gate_progressive_moonlight_towers" ]
                                 ]
                             }
                         },
