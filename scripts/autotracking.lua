@@ -107,53 +107,21 @@ local function apply_gate_auto_enable()
     -- arrive otherwise). Gates inside the pool are left to natural item
     -- receipt via on_item.
     --
-    -- Visual hint: auto-enabled (out-of-pool) gates get a "N/A" overlay
-    -- badge so the user can tell at a glance that those aren't actually
-    -- receivable items but virtual bypasses for access-rule purposes.
-    -- The icon stays bright because Active=true (needed so access_rules
-    -- pass); the badge is the visual cue. In-pool gates clear the badge.
-    -- (PopTracker's .IconMods Lua property is implemented on LuaItem only,
-    -- not JsonItem -- src/core/jsonitem.cpp -- so we use .BadgeText which
-    -- JsonItem does support.)
+    -- Known cosmetic: out-of-pool gates render the same as in-pool received
+    -- ones (bright icon, no badge). Attempts to mark them differently via
+    -- .IconMods or :SetOverlay didn't render in PopTracker; left as-is for
+    -- now so the lua stays simple. Pin coloring stays correct because
+    -- access_rules see the gate as supplied either way.
     local block_on = (SLOT_DATA.block_entrances or 0) ~= 0
     local goal = SLOT_DATA.goal or 0
     local pool = block_on and pool_gates_for_goal(goal) or {}
-    -- For overlay rendering on toggles, getOverlayAlign defaults to "right"
-    -- but the overlay font color also defaults to ~white. We use the methods
-    -- documented for JsonItem (PopTracker PACKS.md): :SetOverlay,
-    -- :SetOverlayColor, :SetOverlayBackground, :SetOverlayAlign.
-    local function badge_off(o)
-        o:SetOverlay("")
-        o:SetOverlayBackground("")
-    end
-    local function badge_na(o)
-        o:SetOverlay("N/A")
-        o:SetOverlayColor("#ffffff")
-        o:SetOverlayBackground("#cc2222")
-        o:SetOverlayAlign("center")
-        o:SetOverlayFontSize(12)
-    end
     for _, code in ipairs(ALL_GATE_TOGGLES) do
         local t = Tracker:FindObjectForCode(code)
-        if t then
-            if not pool[code] then
-                t.Active = true
-                badge_na(t)
-            else
-                badge_off(t)
-            end
-        end
+        if t and not pool[code] then t.Active = true end
     end
     for _, code in ipairs(ALL_GATE_COUNTERS) do
         local c = Tracker:FindObjectForCode(code)
-        if c then
-            if not pool[code] then
-                c.AcquiredCount = 5
-                badge_na(c)
-            else
-                badge_off(c)
-            end
-        end
+        if c and not pool[code] then c.AcquiredCount = 5 end
     end
 end
 
