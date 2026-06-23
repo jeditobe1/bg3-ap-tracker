@@ -2,34 +2,79 @@
     "tracker_default": {
         "type": "container",
         "content": {
-            "type": "array",
-            "orientation": "horizontal",
-            "v_alignment": "stretch",
+            "type": "dock",
             "content": [
                 {
-                    "type": "container",
-                    "margin": "4,4",
-                    "content": {
-                        "type": "itemgrid",
-                        "h_alignment": "center",
-                        "rows": [
-                            [ "level_fragment", "boots_of_speed", "shadow_lantern", "spear_of_night", "stat_boost", "filler", "trap" ],
-                            [ "equipment_pre_halsin", "equipment_act1", "equipment_act2", "equipment_act3" ],
-                            [ "gate_nautiloid_control_panel", "gate_withers_crypt", "gate_blighted_village_well", "gate_goblin_camp" ],
-                            [ "gate_underdark", "gate_hags_fireplace", "gate_zhentarim_basement", "gate_grymforge" ],
-                            [ "gate_mountain_pass", "gate_creche", "gate_act2", "gate_last_light_basement" ],
-                            [ "gate_reithwins_masons_guild", "gate_shar_trials", "gate_progressive_moonlight_towers" ],
-                            [ "udf_rescue_halsin", "udf_auntie_ethel", "udf_spider_queen", "udf_spectator" ],
-                            [ "udf_bulette", "udf_nere", "udf_grym", "udf_ch_r_ai_w_wargaz" ],
-                            [ "udf_shambling_mound", "udf_cursed_kuo_toa_chief", "udf_malus_thorm", "udf_gerringothe_thorm" ],
-                            [ "udf_thisobald_thorm", "udf_ch_r_ai_tska_an", "udf_yurgir", "udf_balthazar" ],
-                            [ "udf_myrkul" ]
-                        ]
-                    }
+                    "type": "dock",
+                    "dock": "left",
+                    "v_alignment": "stretch",
+                    "content": [
+                        {
+                            "type": "group",
+                            "header": "Progression",
+                            "dock": "top",
+                            "content": {
+                                "type": "itemgrid",
+                                "h_alignment": "center",
+                                "rows": [
+                                    [ "level_fragment", "boots_of_speed", "shadow_lantern", "spear_of_night" ],
+                                    [ "stat_boost", "filler", "trap" ]
+                                ]
+                            }
+                        },
+                        {
+                            "type": "group",
+                            "header": "Equipment Received",
+                            "dock": "top",
+                            "content": {
+                                "type": "itemgrid",
+                                "h_alignment": "center",
+                                "rows": [
+                                    [ "equipment_pre_halsin", "equipment_act1", "equipment_act2", "equipment_act3" ]
+                                ]
+                            }
+                        },
+                        {
+                            "type": "group",
+                            "header": "Region Gates",
+                            "dock": "top",
+                            "content": {
+                                "type": "itemgrid",
+                                "h_alignment": "center",
+                                "rows": [
+                                    [ "gate_nautiloid_control_panel", "gate_withers_crypt", "gate_blighted_village_well", "gate_goblin_camp" ],
+                                    [ "gate_underdark", "gate_hags_fireplace", "gate_zhentarim_basement", "gate_grymforge" ],
+                                    [ "gate_mountain_pass", "gate_creche", "gate_act2", "gate_last_light_basement" ],
+                                    [ "gate_reithwins_masons_guild", "gate_shar_trials", "gate_progressive_moonlight_towers" ]
+                                ]
+                            }
+                        },
+                        {
+                            "type": "group",
+                            "header": "Goal Progress",
+                            "dock": "top",
+                            "content": {
+                                "type": "itemgrid",
+                                "h_alignment": "center",
+                                "rows": [
+                                    [ "udf_rescue_halsin", "udf_auntie_ethel", "udf_spider_queen", "udf_spectator" ],
+                                    [ "udf_bulette", "udf_nere", "udf_grym", "udf_ch_r_ai_w_wargaz" ],
+                                    [ "udf_shambling_mound", "udf_cursed_kuo_toa_chief", "udf_malus_thorm", "udf_gerringothe_thorm" ],
+                                    [ "udf_thisobald_thorm", "udf_ch_r_ai_tska_an", "udf_yurgir", "udf_balthazar" ],
+                                    [ "udf_myrkul" ]
+                                ]
+                            }
+                        }
+                    ]
                 },
                 {
-                    "type": "layout",
-                    "key": "regions_block"
+                    "type": "dock",
+                    "content": [
+                        {
+                            "type": "layout",
+                            "key": "regions_block"
+                        }
+                    ]
                 }
             ]
         }
