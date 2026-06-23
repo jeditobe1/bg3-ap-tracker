@@ -107,11 +107,14 @@ local function apply_gate_auto_enable()
     -- arrive otherwise). Gates inside the pool are left to natural item
     -- receipt via on_item.
     --
-    -- Visual hint: auto-enabled (out-of-pool) gates get IconMods="@disabled"
-    -- so they render greyed -- the user can tell at a glance that those
-    -- aren't actually receivable items but virtual bypasses for access
-    -- rule purposes. In-pool gates clear IconMods so they show in their
-    -- normal bright-on / dim-off styling.
+    -- Visual hint: auto-enabled (out-of-pool) gates get a "N/A" overlay
+    -- badge so the user can tell at a glance that those aren't actually
+    -- receivable items but virtual bypasses for access-rule purposes.
+    -- The icon stays bright because Active=true (needed so access_rules
+    -- pass); the badge is the visual cue. In-pool gates clear the badge.
+    -- (PopTracker's .IconMods Lua property is implemented on LuaItem only,
+    -- not JsonItem -- src/core/jsonitem.cpp -- so we use .BadgeText which
+    -- JsonItem does support.)
     local block_on = (SLOT_DATA.block_entrances or 0) ~= 0
     local goal = SLOT_DATA.goal or 0
     local pool = block_on and pool_gates_for_goal(goal) or {}
@@ -120,9 +123,10 @@ local function apply_gate_auto_enable()
         if t then
             if not pool[code] then
                 t.Active = true
-                t.IconMods = "@disabled"
+                t.BadgeText = "N/A"
+                t.BadgeTextColor = "#ff8080"
             else
-                t.IconMods = ""
+                t.BadgeText = ""
             end
         end
     end
@@ -131,9 +135,10 @@ local function apply_gate_auto_enable()
         if c then
             if not pool[code] then
                 c.AcquiredCount = 5
-                c.IconMods = "@disabled"
+                c.BadgeText = "N/A"
+                c.BadgeTextColor = "#ff8080"
             else
-                c.IconMods = ""
+                c.BadgeText = ""
             end
         end
     end
