@@ -5,6 +5,20 @@ AP_ITEM_ID_TO_CODE = {
     [2] = 'boots_of_speed',
     [3] = 'shadow_lantern',
     [4] = 'spear_of_night',
+    [100] = 'gate_nautiloid_control_panel',
+    [101] = 'gate_withers_crypt',
+    [102] = 'gate_blighted_village_well',
+    [103] = 'gate_goblin_camp',
+    [104] = 'gate_underdark',
+    [105] = 'gate_hags_fireplace',
+    [106] = 'gate_zhentarim_basement',
+    [107] = 'gate_grymforge',
+    [108] = 'gate_mountain_pass',
+    [109] = 'gate_creche',
+    [110] = 'gate_act2',
+    [111] = 'gate_last_light_basement',
+    [112] = 'gate_reithwins_masons_guild',
+    [113] = 'gate_shar_trials',
 }
 
 AP_LOCATION_ID_TO_SECTION = {

@@ -144,6 +144,41 @@ REGION_ACCESS_GATE: dict[str, int] = {
     "mindflayer":       30,
 }
 
+# Per-region gate items required when the slot has BlockEntrances enabled
+# (apworld v0.6.0+, regions.py _connect block_items kwarg). Each list is
+# AND'd: a region's pins gate green only when the player has received every
+# listed gate item plus the level-fragment threshold above. Values are
+# tracker item codes (matching items.json), with one count-bearing entry
+# `gate_progressive_moonlight_towers:N` for the Moonlight Towers progressive
+# (4 unlocks Moonrise, 5 unlocks Mindflayer).
+#
+# `gate_blighted_village_well` is only in the pool on Rescue-Halsin slots;
+# `gate_underdark` is the equivalent gate for non-Halsin slots. The Lua
+# autotracker auto-enables whichever one isn't in the slot's pool so the
+# Blighted Village access_rule passes regardless of goal.
+#
+# When BlockEntrances is OFF, all gate items are auto-enabled on connect so
+# these access_rules pass trivially -- the level-fragment threshold is the
+# only effective constraint.
+REGION_BLOCK_ITEMS: dict[str, list[str]] = {
+    "beach":            ["gate_nautiloid_control_panel"],
+    "crypt":            ["gate_withers_crypt"],
+    "blighted_village": ["gate_blighted_village_well", "gate_underdark"],
+    "waukeen":          ["gate_zhentarim_basement"],
+    "goblin_camp":      ["gate_goblin_camp"],
+    "hag":              ["gate_hags_fireplace"],
+    "underdark":        ["gate_underdark"],
+    "grymforge":        ["gate_grymforge"],
+    "monastery":        ["gate_goblin_camp", "gate_mountain_pass"],
+    "creche":           ["gate_creche"],
+    "east_act2":        ["gate_act2"],
+    "west_act2":        ["gate_reithwins_masons_guild"],
+    "last_light":       ["gate_last_light_basement"],
+    "moonrise":         ["gate_progressive_moonlight_towers:4"],
+    "shar_gauntlet":    ["gate_underdark", "gate_grymforge", "gate_shar_trials"],
+    "mindflayer":       ["gate_progressive_moonlight_towers:5"],
+}
+
 # Hand-curated item ID -> tracker code mapping for toggle-type items.
 # Consumables (Level Fragment, stat boosts, equipment, filler, traps) are resolved
 # at handler time via integer-range logic in autotracking.lua; only toggles need
@@ -152,6 +187,26 @@ AP_ITEM_TOGGLE_IDS: dict[int, str] = {
     2: "boots_of_speed",
     3: "shadow_lantern",
     4: "spear_of_night",
+    # Region-locking gate items (apworld v0.6.0+, items.py:69-83). Only land
+    # in the slot's pool when the BlockEntrances option is on; the Lua
+    # autotracker auto-enables the ones outside the slot's goal-pool so
+    # access_rules still pass on non-block-entrances slots.
+    100: "gate_nautiloid_control_panel",
+    101: "gate_withers_crypt",
+    102: "gate_blighted_village_well",
+    103: "gate_goblin_camp",
+    104: "gate_underdark",
+    105: "gate_hags_fireplace",
+    106: "gate_zhentarim_basement",
+    107: "gate_grymforge",
+    108: "gate_mountain_pass",
+    109: "gate_creche",
+    110: "gate_act2",
+    111: "gate_last_light_basement",
+    112: "gate_reithwins_masons_guild",
+    113: "gate_shar_trials",
+    # 114 ("Progressive Moonlight Towers") is a consumable counter (max 5)
+    # handled by integer-range logic in autotracking.lua, not this toggle map.
 }
 
 # Regions that belong to Act 1 vs Act 2 for the UDF goal-progress block.
@@ -771,11 +826,21 @@ def emit_locations_json(
                 }
                 children.insert(0, overview_child)
         gate = REGION_ACCESS_GATE.get(slug, 0)
+        block_items = REGION_BLOCK_ITEMS.get(slug, [])
+        rule_parts: list[str] = []
         if gate > 0:
+            rule_parts.append(f"level_fragment:{gate}")
+        rule_parts.extend(block_items)
+        if rule_parts:
+            # PopTracker access_rules entries are AND-joined within a single
+            # string and OR-joined across the list. We emit one string so
+            # all conditions must hold for the region's pins to color green.
             # Children inherit parent access_rules; PopTracker auto-recomputes
-            # reachability when the player's level_fragment count crosses the
-            # threshold.
-            region_entry["access_rules"] = [f"level_fragment:{gate}"]
+            # reachability when any of the underlying item counts/toggles
+            # changes. The Lua autotracker auto-enables block-items that
+            # aren't in the slot's pool so non-BlockEntrances and goal-pruned
+            # gates still pass.
+            region_entry["access_rules"] = [",".join(rule_parts)]
         goals = REGION_GOAL_VISIBILITY.get(slug)
         if goals:
             # OR-list: visible if any of these Goal stage codes is currently

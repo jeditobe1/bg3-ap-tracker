@@ -53,6 +53,21 @@
     { "name": "Equipment (Act 1)",      "type": "consumable", "img": "images/items/equipment_act1.png",       "codes": "equipment_act1",       "overlay_align": "right" },
     { "name": "Equipment (Act 2)",      "type": "consumable", "img": "images/items/equipment_act2.png",       "codes": "equipment_act2",       "overlay_align": "right" },
     { "name": "Equipment (Act 3)",      "type": "consumable", "img": "images/items/equipment_act3.png",       "codes": "equipment_act3",       "overlay_align": "right" },
+    { "name": "Entrance: Nautiloid Control Panel",   "type": "toggle", "img": "images/items/gate_nautiloid_control_panel.png",   "codes": "gate_nautiloid_control_panel" },
+    { "name": "Entrance: Wither's Crypt",            "type": "toggle", "img": "images/items/gate_withers_crypt.png",             "codes": "gate_withers_crypt" },
+    { "name": "Entrance: Blighted Village Well",     "type": "toggle", "img": "images/items/gate_blighted_village_well.png",     "codes": "gate_blighted_village_well" },
+    { "name": "Entrance: Goblin Camp",               "type": "toggle", "img": "images/items/gate_goblin_camp.png",               "codes": "gate_goblin_camp" },
+    { "name": "Entrance: Underdark",                 "type": "toggle", "img": "images/items/gate_underdark.png",                 "codes": "gate_underdark" },
+    { "name": "Entrance: Hag's Fireplace",           "type": "toggle", "img": "images/items/gate_hags_fireplace.png",            "codes": "gate_hags_fireplace" },
+    { "name": "Entrance: Zhentarim Basement",        "type": "toggle", "img": "images/items/gate_zhentarim_basement.png",        "codes": "gate_zhentarim_basement" },
+    { "name": "Entrance: Grymforge",                 "type": "toggle", "img": "images/items/gate_grymforge.png",                 "codes": "gate_grymforge" },
+    { "name": "Entrance: Mountain Pass",             "type": "toggle", "img": "images/items/gate_mountain_pass.png",             "codes": "gate_mountain_pass" },
+    { "name": "Entrance: Creche",                    "type": "toggle", "img": "images/items/gate_creche.png",                    "codes": "gate_creche" },
+    { "name": "Entrance: Act 2",                     "type": "toggle", "img": "images/items/gate_act2.png",                      "codes": "gate_act2" },
+    { "name": "Entrance: Last Light Basement",       "type": "toggle", "img": "images/items/gate_last_light_basement.png",       "codes": "gate_last_light_basement" },
+    { "name": "Entrance: Reithwin's Mason's Guild",  "type": "toggle", "img": "images/items/gate_reithwins_masons_guild.png",    "codes": "gate_reithwins_masons_guild" },
+    { "name": "Entrance: Shar Trials",               "type": "toggle", "img": "images/items/gate_shar_trials.png",               "codes": "gate_shar_trials" },
+    { "name": "Entrance: Moonlight Towers (Progressive)", "type": "consumable", "img": "images/items/gate_progressive_moonlight_towers.png", "codes": "gate_progressive_moonlight_towers", "min_quantity": 0, "max_quantity": 5, "initial_quantity": 0, "overlay_align": "right", "overlay_background": "#000000" },
     {
         "name": "Goal",
         "type": "progressive",
@@ -82,6 +97,14 @@
         "disabled_img": "images/items/questsanity_off.png",
         "codes": "questsanity",
         "initial_active_state": true
+    },
+    {
+        "name": "Block Entrances (Region Locking)",
+        "type": "toggle",
+        "img": "images/items/block_entrances_on.png",
+        "disabled_img": "images/items/block_entrances_off.png",
+        "codes": "block_entrances",
+        "initial_active_state": false
     },
     {
         "name": "Follow Player Location",

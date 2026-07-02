@@ -63,13 +63,35 @@ BG3_ICON_TARGETS = [
     # Base icon for the 4 rarity-tinted equipment counters; tinted variants
     # are derived below in TINTED_ICONS.
     ("equipment_base",     "GEN_Armor",                                   "Icons_Items.lsx"),
+    # Region-locking gate items (apworld v0.6.0+). Each entry maps to a
+    # thematically-matched key/puzzle item from BG3's Icons_Items atlases.
+    ("gate_nautiloid_control_panel",   "Item_PUZ_GTY_Ubiquity_Key_A",                "Icons_Items_2.lsx"),
+    ("gate_withers_crypt",             "Item_QUEST_FOR_TomeKey",                     "Icons_Items.lsx"),
+    ("gate_blighted_village_well",     "Item_PUZ_GEN_Key_Silver_A",                  "Icons_Items.lsx"),
+    ("gate_goblin_camp",               "Item_CONT_KeyRing",                          "Icons_Items_2.lsx"),
+    ("gate_underdark",                 "Item_QUEST_UND_SovereignKey",                "Icons_Items_2.lsx"),
+    ("gate_hags_fireplace",            "Item_PUZ_GEN_Key_Flower_A",                  "Icons_Items_2.lsx"),
+    ("gate_zhentarim_basement",        "Item_S_FOR_IncompleteMasterwork_CellarKey",  "Icons_Items.lsx"),
+    ("gate_grymforge",                 "Item_PUZ_GEN_Key_Gold_A",                    "Icons_Items.lsx"),
+    ("gate_mountain_pass",             "Item_PUZ_Lathander_Key_A",                   "Icons_Items_3.lsx"),
+    ("gate_creche",                    "Item_QUEST_CRE_CaptainsBarrierKey",          "Icons_Items_4.lsx"),
+    ("gate_act2",                      "Item_PUZ_GEN_Key_Flower_B",                  "Icons_Items_2.lsx"),
+    ("gate_last_light_basement",       "Item_LOOT_City_Counting_House_Vault_Key_A_1","Icons_Items_3.lsx"),
+    ("gate_reithwins_masons_guild",    "Item_PUZ_GEN_Key_MasonGuild_A_Silver_A",     "Icons_Items_2.lsx"),
+    ("gate_shar_trials",               "Item_QUEST_SHA_TrialOrb",                    "Icons_Items_4.lsx"),
+    ("gate_progressive_moonlight_towers", "Item_LOOT_MF_Rune_Key_A",                 "Icons_Items_3.lsx"),
+    # Block Entrances toggle (Randomizer Options popup). Reuses an existing
+    # key icon (Item_CONT_KeyRing is one of the most "lock and key" silhouettes
+    # in the atlas) as the ON state; OFF is derived via DERIVED_OFF_ICONS.
+    ("block_entrances_on",             "Item_CONT_KeyRing",                          "Icons_Items_2.lsx"),
 ]
 
 # Derived "_off" variants: produced by desaturating + dimming an existing icon.
 # Tuple is (output code, source code -- must appear above in BG3_ICON_TARGETS).
 DERIVED_OFF_ICONS = [
-    ("killsanity_off",  "killsanity_on"),
-    ("questsanity_off", "questsanity_on"),
+    ("killsanity_off",       "killsanity_on"),
+    ("questsanity_off",      "questsanity_on"),
+    ("block_entrances_off",  "block_entrances_on"),
 ]
 
 # Color-tinted variants: take a base icon and apply a color cast so the
