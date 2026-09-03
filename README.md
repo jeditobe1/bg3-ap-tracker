@@ -6,7 +6,9 @@ Items received from the multiworld auto-track. Locations the slot has checked au
 
 ## Status
 
-**0.7.0.** Wired to BG3 apworld v0.4.5+ (region locking requires apworld v0.6.0+). Tracks all items, all 937 locations across 18 regions, with reachability colored by Level Fragment count plus per-region BlockEntrances gate items, and visibility filtered by the slot's goal + sanity options. The items grid includes a 17-toggle goal-progress row (Halsin rescue + 16 UDF fights) and a region-locking row for the 14 entrance gates + 1 Progressive Moonlight Towers counter.
+**0.7.1.** Wired to BG3 apworld v0.7.0 (region locking requires apworld v0.6.0+). Tracks all items, all 885 displayed locations across 21 regions, with reachability colored by Level Fragment count plus per-region BlockEntrances gate items, and visibility filtered by the slot's goal + sanity options. The items grid includes an 18-toggle goal-progress row (Halsin rescue + 17 UDF fights) and a region-locking row for the 15 entrance gates + 1 Progressive Moonlight Towers counter.
+
+Act 3 and containersanity are out of scope for this release — see [Known limitations](#known-limitations).
 
 Also works as the [Universal Tracker](https://github.com/FarisTheAncient/Archipelago/tree/tracker) map tab — UT prompts for the pack zip the first time it loads a BG3 slot.
 
@@ -14,7 +16,7 @@ Region maps render real BG3 worldmap textures composited from the game atlas. Ea
 
 ## Compatibility
 
-- **BG3 apworld**: v0.4.5 or later. The pack maps to the v0.4.5 region layout (Last Light Inn was split out of West Act 2 at that release).
+- **BG3 apworld**: v0.7.0. The pack maps to the v0.7.0 region layout, which split Underwell out of Blighted Village, Inside Goblin Camp out of Goblin Camp, and Zhentarim Basement out of Waukeen's Rest. Older apworlds will mis-bucket equipment (the v0.7.0 equipment table dropped two duplicate entries, shifting ~426 AP item ids).
 - **PopTracker**: any recent version. Tested against PopTracker 0.31.x.
 - **Universal Tracker**: any recent version. The apworld carries `tracker_world` + YAML-free re-gen support, so UT picks up the map tab and regenerates the world from slot_data without needing the player's YAML on disk.
 
@@ -29,7 +31,7 @@ Region maps render real BG3 worldmap textures composited from the game atlas. Ea
 
 ## Install — Universal Tracker
 
-1. Make sure the BG3 apworld (v0.4.5+) is in UT's `custom_worlds/` directory.
+1. Make sure the BG3 apworld (v0.7.0) is in UT's `custom_worlds/` directory.
 2. Launch UT and connect to your BG3 slot as normal. The first time it loads a BG3 slot, UT pops a file-picker asking for the pack zip — point it at `bg3-poptracker-<version>+release.zip` from the Releases page (no need to unzip). The path is remembered for subsequent launches.
 3. To change the path later, edit `bg3_options.ut_pack_path` in `host.yaml` (UT only prompts once; clearing the value back to `""` makes it re-prompt on next launch).
 
@@ -46,7 +48,7 @@ On connect the pack:
 ## What's tracked
 
 **Randomizer Options** (PopTracker gear-icon → "Randomizer Options" popup):
-- **Goal** — 5-stage progressive (left-click = next, right-click = previous): Rescue Halsin / Kill Inquisitor Wwargaz / Act 1 UDF / Kill Myrkul / Act 2 UDF.
+- **Goal** — 7-stage progressive (left-click = next, right-click = previous): Rescue Halsin / Kill Inquisitor Wwargaz / Act 1 UDF / Kill Myrkul / Act 2 UDF / Kill the Netherbrain / Act 3 UDF.
 - **Killsanity** — toggle for creature-kill checks (IDs ≥ 10000): left-click ON, right-click OFF, middle-click flips.
 - **Questsanity** — toggle for quest-update checks (IDs < 10000): same click semantics.
 
@@ -56,7 +58,7 @@ These drive what locations are visible. When AP is connected, the values are set
 
 | Code | Type | Source |
 | --- | --- | --- |
-| `level_fragment` | counter 0–30 | Progression — every level-up |
+| `level_fragment` | counter 0–78 | Progression — every level-up |
 | `boots_of_speed` | toggle | Progression |
 | `shadow_lantern` | toggle | Progression |
 | `spear_of_night` | toggle | Progression |
@@ -64,14 +66,14 @@ These drive what locations are visible. When AP is connected, the values are set
 | `filler` | counter | Aggregate of filler (Lockpick, Supply Pack, Gold, etc.) |
 | `trap` | counter | Aggregate of all trap variants (IDs 7000–7006) |
 | `equipment_pre_halsin` / `equipment_act1` / `equipment_act2` / `equipment_act3` | 4 counters | Per-act-gate equipment received (pre-Halsin / Act 1 / Act 2 / Act 3 per the apworld's filter-level convention in `items.py:36`). The generator AST-reads `EQUIPMENT` from the apworld's `equipment.py` and emits an AP-id → act-gate-code map. |
-| `udf_rescue_halsin` + `udf_<fight>` × 16 | 17 toggles | Goal-progress row. `udf_rescue_halsin` flips on the Halsin rescue (driven by AP location id 114, the apworld event paired with `Victory_Halsin`); the 16 `udf_<fight>` toggles flip on the matching kill locations from `UserDefinedFights.valid_keys`. Each toggle has its own NPC portrait icon (sourced from BG3's `Portraits/` DDS files) — see `tools/extract_icons.py PORTRAIT_ICON_TARGETS`. |
-| `gate_<entrance>` × 14 + `gate_progressive_moonlight_towers` | 14 toggles + 1 counter (0–5) | Region-locking row (apworld v0.6.0+ `BlockEntrances` option). Each toggle flips on when the matching entrance-gate progression item is received (AP IDs 100–113); the counter ticks per Progressive Moonlight Towers item (AP id 114, max 5). The Lua autotracker auto-enables gates that aren't in the slot's pool (either because BlockEntrances is off, or because the player's goal stage skips them) so per-region access_rules pass correctly. |
+| `udf_rescue_halsin` + `udf_<fight>` × 17 | 18 toggles | Goal-progress row. `udf_rescue_halsin` flips on the Halsin rescue (driven by AP location id 114, the apworld event paired with `Victory_Halsin`); the 17 `udf_<fight>` toggles flip on the matching kill locations from `UserDefinedFights.valid_keys`. Each toggle has its own NPC portrait icon (sourced from BG3's `Portraits/` DDS files) — see `tools/extract_icons.py PORTRAIT_ICON_TARGETS`. |
+| `gate_<entrance>` × 15 + `gate_progressive_moonlight_towers` | 15 toggles + 1 counter (0–5) | Region-locking row (apworld v0.6.0+ `BlockEntrances` option). Each toggle flips on when the matching entrance-gate progression item is received (AP IDs 100–113 and 115); the counter ticks per Progressive Moonlight Towers item (AP id 114, max 5). The Lua autotracker auto-enables gates that aren't in the slot's pool (either because BlockEntrances is off, or because the player's goal stage skips them) so per-region access_rules pass correctly. |
 
-**Locations** are organized into 18 tabs, one per region (Nautiloid → Mindflayer Colony). Each location is a clickable pin on a placeholder per-region map. Pins color by reachability: green = the region is reachable with the player's current Level Fragment count AND any required BlockEntrances gate items have been received; red = not yet. The access rules per region mirror the apworld's `regions.py` gates. Clicking a pin opens a popup with the section name verbatim from the apworld; left-click marks cleared, right-click reverts.
+**Locations** are organized into 21 tabs, one per region (Nautiloid → Mindflayer Colony). Each location is a clickable pin on a placeholder per-region map. Pins color by reachability: green = the region is reachable with the player's current Level Fragment count AND any required BlockEntrances gate items have been received; red = not yet. The access rules per region mirror the apworld's `regions.py` gates. Clicking a pin opens a popup with the section name verbatim from the apworld; left-click marks cleared, right-click reverts.
 
-**Region-locking row** (apworld v0.6.0+ BlockEntrances) is two rows of the items grid: 14 entrance gate toggles (Nautiloid Control Panel through Shar Trials) plus one progressive counter for Moonlight Towers (4 unlocks Moonrise, 5 unlocks the Mindflayer Colony). When the slot has BlockEntrances off, the autotracker auto-enables every gate on connect so per-region access_rules referencing them pass trivially -- only the Level Fragment threshold gates pins for those slots. When BlockEntrances is on, gates outside the player's goal-pool (e.g. all Act 2 gates on a Rescue-Halsin slot) get the same treatment, and the in-pool gates flip on as the items arrive.
+**Region-locking row** (apworld v0.6.0+ BlockEntrances) is two rows of the items grid: 15 entrance gate toggles (Nautiloid Control Panel through Act 3) plus one progressive counter for Moonlight Towers (4 unlocks Moonrise, 5 unlocks the Mindflayer Colony). When the slot has BlockEntrances off, the autotracker auto-enables every gate on connect so per-region access_rules referencing them pass trivially -- only the Level Fragment threshold gates pins for those slots. When BlockEntrances is on, gates outside the player's goal-pool (e.g. all Act 2 gates on a Rescue-Halsin slot) get the same treatment, and the in-pool gates flip on as the items arrive.
 
-**Goal-progress row** lives in the items grid as a third row of 17 toggle items: the Halsin rescue (`udf_rescue_halsin`, fires on AP location id 114 which the apworld pairs with `Victory_Halsin`) plus one toggle per fight in the apworld's `UserDefinedFights.valid_keys`. Each toggle flips on when the corresponding AP location is checked (driven by the same AP event that updates the kill / quest section on the region tab). The full row matches `bg3_client.act1bosses + act2bosses` — the set of bosses/objectives the client tracks for any of the primary goals plus User Defined Fights. Toggles light up as you complete fights regardless of your goal — on non-applicable goals they sit greyed in the row as a passive "haven't done this yet" indicator. PopTracker doesn't support hiding layout widgets at runtime, so the row is always visible; the visual style follows the existing progression-item convention (greyed = off, bright = on).
+**Goal-progress row** lives in the items grid as a third row of 18 toggle items: the Halsin rescue (`udf_rescue_halsin`, fires on AP location id 114 which the apworld pairs with `Victory_Halsin`) plus one toggle per fight in the apworld's `UserDefinedFights.valid_keys`. Each toggle flips on when the corresponding AP location is checked (driven by the same AP event that updates the kill / quest section on the region tab). The full row matches `bg3_client.act1bosses + act2bosses` — the set of bosses/objectives the client tracks for any of the primary goals plus User Defined Fights. Toggles light up as you complete fights regardless of your goal — on non-applicable goals they sit greyed in the row as a passive "haven't done this yet" indicator. PopTracker doesn't support hiding layout widgets at runtime, so the row is always visible; the visual style follows the existing progression-item convention (greyed = off, bright = on).
 
 **Visibility filtering** (driven by the Randomizer Options popup):
 - Goal stage controls which regions are visible (e.g. Halsin hides Act 1 underdark + Act 2; Wwargaz adds Act 1 underdark; Kill Myrkul / Act 2 UDF show everything).
@@ -89,7 +91,9 @@ These drive what locations are visible. When AP is connected, the values are set
 - **A few sub-cells render dim** — some regions with sparse Granite virtual-texture coverage in the source game (e.g. cliff-trail strips) composite to a darker backdrop. The pins still place correctly.
 - **Region display names are first-pass** — some sub-cell labels (e.g. "Town Basement", "HoH Morgue") are working names; a maintainer naming pass is planned.
 - **PopTracker tabs are not visibility-aware** — when a goal hides a region's contents, the tab itself stays visible (just empty). PopTracker doesn't support hiding tabs at runtime per Lua state.
-- **Thaniel: Kill Mom / Kill Dad fall to a grid position** — these two quest-spawned kills aren't in the NPC position cache, so they grid into the bottom of the West Act 2 map. Cosmetic; the locations themselves track correctly.
+- **Act 3 is not displayed** — apworld v0.7.0 added eleven Act 3 regions, but they carry no questsanity or killsanity locations. The single non-container Act 3 check, `Endgame: Kill the Netherbrain`, is surfaced as the `udf_netherbrain` goal-progress toggle rather than as its own region tab and map. Act 3 region maps land when there are locations to put on them.
+- **Containersanity is not tracked** — the apworld's `containersanity: 2` option adds ~10,000 container checks. They are not in `locationids.py` (the apworld merges them at runtime), so the pack does not see them. Beyond scale, the coordinates embedded in container location names are level-space rather than region-space and collide within a region, so they cannot drive map pins as-is.
+- **`characters_in_logic` is not applied** — apworld v0.7.0 can drop 55 character-specific locations when a companion is excluded. The pack still displays them; on a slot that excludes a tagged companion those checks are unobtainable.
 - **Halsin rescue toggle on killsanity-only slots** — `udf_rescue_halsin` auto-fires via AP location id 114 (a quest location). On slots without questsanity the apworld never sends a location check for the rescue (the `Victory_Halsin` event has no AP id of its own), so the toggle stays off until manually clicked. A sanity-independent AP location id for the rescue would need an apworld change.
 - **Equipment is bucketed by act gate, not per-item** — equipment shows as 4 act-gate counters (pre-Halsin / Act 1 / Act 2 / Act 3). Per-item visibility plus an `X of Y` denominator would need `add_act1a_treasure` / `add_act2_treasure` and a derived `expected_equipment_count` in slot_data; deferred until the apworld exposes those. The apworld currently exposes act gate (not rarity) on equipment, so per-rarity counters are not possible without scraping rarity from BG3 game data.
 - **Trap variants are aggregated** — all 7 trap types collapse into a single `trap` counter. Per-trap-type counters were removed to keep the items grid focused on tracking that's relevant to most seeds (trap-disabled seeds simply leave the counter at 0).

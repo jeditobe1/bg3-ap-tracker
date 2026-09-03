@@ -40,8 +40,11 @@ REGION_DISPLAY_NAMES: dict[str, str] = {
     "crypt":            "Dank Crypt",
     "grove":            "Druid Grove",
     "blighted_village": "Blighted Village",
+    "underwell":        "Whispering Depths",
     "goblin_camp":      "Goblin Camp",
+    "inside_goblin_camp": "Shattered Sanctum",
     "waukeen":          "Waukeen's Rest",
+    "zhentarim_basement": "Zhentarim Hideout",
     "hag":              "Riverside",
     "underdark":        "Underdark",
     "grymforge":        "Grymforge",
@@ -60,14 +63,17 @@ REGION_DISPLAY_NAMES: dict[str, str] = {
 # of each act becoming the inner per-region tabs. Order within each list
 # is the inner tab order.
 #
-# Act 3 has no entries yet -- apworld regions.py:160-165 has them commented
-# out (design doc P8). We keep the tab so the structure is stable when
-# Act 3 lands; the stub layout below renders an explanatory message.
+# Act 3 regions exist in the apworld (v0.7.0) but carry no questsanity or
+# killsanity locations -- the only non-container Act 3 check is
+# "Endgame: Kill the Netherbrain". Supporting them properly means a full
+# worldmap carving pass for 11 regions to host a single pin, so Act 3 is
+# deliberately out of scope; see EXCLUDED_REGIONS.
 ACT_GROUPS: dict[str, list[str]] = {
     "Prologue": ["tutorial"],
     "Act 1": [
-        "beach", "crypt", "grove", "blighted_village",
-        "waukeen", "goblin_camp", "hag", "underdark", "grymforge", "monastery", "creche",
+        "beach", "crypt", "grove", "blighted_village", "underwell",
+        "waukeen", "zhentarim_basement", "goblin_camp", "inside_goblin_camp",
+        "hag", "underdark", "grymforge", "monastery", "creche",
     ],
     "Act 2": [
         "east_act2", "west_act2", "last_light", "moonrise",
@@ -75,6 +81,17 @@ ACT_GROUPS: dict[str, list[str]] = {
     ],
     "Act 3": [],
 }
+
+# Region slugs present in the apworld's location table that this pack
+# deliberately does not display. Locations in these regions are dropped
+# before validation, so `validate()` won't flag them as unmapped.
+#
+# `endgame` is the apworld's Act 3 terminal region (renamed from
+# `netherbrain` in v0.7.0). It holds exactly one non-container location,
+# "Endgame: Kill the Netherbrain" -- a goal check the player cannot miss.
+# Displaying it would require an Act 3 tab, an Act 3 map, and the region
+# plumbing for ten sibling regions that have no locations at all.
+EXCLUDED_REGIONS: set[str] = {"endgame"}
 
 # Overworld maps -- pre-composited from BG3 WorldMap patches and shipped
 # as image assets under images/maps/. Pin-less backdrop maps that go at
@@ -108,19 +125,29 @@ REGION_ORDER: list[str] = [slug for slugs in ACT_GROUPS.values() for slug in slu
 # to be visible. Tutorial + Act 1 base regions are always visible (any goal);
 # omitting a region from this map means "no goal restriction".
 # Apworld reference: locations.py:115-187 region inclusion by goal.
+# Act 3 goals (netherbrain, act3udf) reach every Act 1 and Act 2 region, so
+# they appear in every list here. The Act 3 regions those goals additionally
+# unlock are out of scope (see EXCLUDED_REGIONS).
+_NON_HALSIN_GOALS = ["goal_wwargaz", "goal_act1udf", "goal_myrkul", "goal_act2udf",
+                     "goal_netherbrain", "goal_act3udf"]
+_ACT2_PLUS_GOALS = ["goal_myrkul", "goal_act2udf", "goal_netherbrain", "goal_act3udf"]
+
 REGION_GOAL_VISIBILITY: dict[str, list[str]] = {
     # Act 1 underdark/mountain cluster: visible for goals other than Halsin.
-    "underdark":     ["goal_wwargaz", "goal_act1udf", "goal_myrkul", "goal_act2udf"],
-    "grymforge":     ["goal_wwargaz", "goal_act1udf", "goal_myrkul", "goal_act2udf"],
-    "monastery":     ["goal_wwargaz", "goal_act1udf", "goal_myrkul", "goal_act2udf"],
-    "creche":        ["goal_wwargaz", "goal_act1udf", "goal_myrkul", "goal_act2udf"],
-    # Act 2: visible only for Act 2-tier goals.
-    "east_act2":     ["goal_myrkul", "goal_act2udf"],
-    "west_act2":     ["goal_myrkul", "goal_act2udf"],
-    "last_light":    ["goal_myrkul", "goal_act2udf"],
-    "moonrise":      ["goal_myrkul", "goal_act2udf"],
-    "shar_gauntlet": ["goal_myrkul", "goal_act2udf"],
-    "mindflayer":    ["goal_myrkul", "goal_act2udf"],
+    "underdark":     _NON_HALSIN_GOALS,
+    "grymforge":     _NON_HALSIN_GOALS,
+    "monastery":     _NON_HALSIN_GOALS,
+    "creche":        _NON_HALSIN_GOALS,
+    # Act 2: visible only for Act 2-tier goals and later.
+    "east_act2":     _ACT2_PLUS_GOALS,
+    "west_act2":     _ACT2_PLUS_GOALS,
+    "last_light":    _ACT2_PLUS_GOALS,
+    "moonrise":      _ACT2_PLUS_GOALS,
+    "shar_gauntlet": _ACT2_PLUS_GOALS,
+    "mindflayer":    _ACT2_PLUS_GOALS,
+    # underwell / inside_goblin_camp / zhentarim_basement are reached by
+    # entrances outside the goal conditionals in regions.py, so they carry no
+    # goal restriction -- same as their parent regions.
 }
 
 REGION_ACCESS_GATE: dict[str, int] = {
@@ -129,8 +156,11 @@ REGION_ACCESS_GATE: dict[str, int] = {
     "crypt":             1,
     "grove":             3,
     "blighted_village":  3,
+    "underwell":         3,
     "waukeen":           6,
+    "zhentarim_basement": 6,
     "goblin_camp":       8,
+    "inside_goblin_camp": 8,
     "hag":              10,
     "underdark":        10,
     "grymforge":        14,
@@ -160,12 +190,18 @@ REGION_ACCESS_GATE: dict[str, int] = {
 # When BlockEntrances is OFF, all gate items are auto-enabled on connect so
 # these access_rules pass trivially -- the level-fragment threshold is the
 # only effective constraint.
+# apworld v0.7.0 moved three Act 1 gates off their parent region and onto a
+# new child region, so the checks reachable before the lockout separate from
+# the ones behind it. The parent is now ungated and the gate sits on the
+# child: Blighted Village -> Underwell, Goblin Camp -> Inside Goblin Camp,
+# Waukeen -> Zhentarim Basement.
 REGION_BLOCK_ITEMS: dict[str, list[str]] = {
     "beach":            ["gate_nautiloid_control_panel"],
     "crypt":            ["gate_withers_crypt"],
-    "blighted_village": ["gate_blighted_village_well", "gate_underdark"],
-    "waukeen":          ["gate_zhentarim_basement"],
-    "goblin_camp":      ["gate_goblin_camp"],
+    # blighted_village / goblin_camp / waukeen are ungated as of v0.7.0.
+    "underwell":        ["gate_blighted_village_well", "gate_underdark"],
+    "inside_goblin_camp": ["gate_goblin_camp"],
+    "zhentarim_basement": ["gate_zhentarim_basement"],
     "hag":              ["gate_hags_fireplace"],
     "underdark":        ["gate_underdark"],
     "grymforge":        ["gate_grymforge"],
@@ -207,6 +243,11 @@ AP_ITEM_TOGGLE_IDS: dict[int, str] = {
     113: "gate_shar_trials",
     # 114 ("Progressive Moonlight Towers") is a consumable counter (max 5)
     # handled by integer-range logic in autotracking.lua, not this toggle map.
+    # 115 ("Act 3", apworld v0.7.0) gates Mindflayer Colony -> Astral Plane.
+    # No displayed region depends on it -- Act 3 is out of scope -- but it
+    # lands in the pool on netherbrain/act3udf goals, so it is mapped here to
+    # show in the Region Gates row instead of logging as an unhandled item.
+    115: "gate_act3",
 }
 
 # Regions that belong to Act 1 vs Act 2 for the UDF goal-progress block.
@@ -299,7 +340,21 @@ REGION_PALETTE: list[tuple[int, int, int]] = [
 
 
 def parse_location_name_id_region(apworld_path: Path) -> list[tuple[str, int, str]]:
-    """AST-parse LOCATION_NAME_ID_REGION from locationids.py. Returns list of (name, id, slug)."""
+    """AST-parse LOCATION_NAME_ID_REGION from locationids.py. Returns list of (name, id, slug).
+
+    Rows are indexed positionally, so the 4th field added in apworld v0.7.0
+    (the CharactersInLogic tag list) is read past harmlessly.
+
+    Containersanity locations are not in this table -- the apworld keeps them
+    in containers.py / container_locations.py and merges them at runtime in
+    locations.py, so they are excluded here for free.
+
+    Returns every row, including EXCLUDED_REGIONS ones. Those are filtered at
+    the region-emission stage instead, so a location in an undisplayed region
+    can still back a goal-progress item -- "Endgame: Kill the Netherbrain" is
+    the Netherbrain user-defined fight, which needs to resolve here even
+    though the `endgame` region gets no tab or map.
+    """
     src = (apworld_path / "locationids.py").read_text(encoding="utf-8")
     tree = ast.parse(src)
     for node in ast.walk(tree):
@@ -399,7 +454,7 @@ def validate(locations: list[tuple[str, int, str]]) -> list[str]:
     for name, lid, slug in locations:
         if not name:
             errors.append(f"empty location name for id {lid}")
-        if slug not in REGION_DISPLAY_NAMES:
+        if slug not in REGION_DISPLAY_NAMES and slug not in EXCLUDED_REGIONS:
             errors.append(f"unmapped region slug {slug!r} (location {name!r} id={lid}). "
                           f"Add to REGION_DISPLAY_NAMES or update REGION_ORDER.")
         if lid in seen_ids:
@@ -417,7 +472,7 @@ def validate(locations: list[tuple[str, int, str]]) -> list[str]:
             errors.append(f"region {slug!r} is in REGION_ORDER but has no locations")
     # Slugs that exist in the data but aren't in REGION_ORDER are warnings, not errors.
     for slug in by_region:
-        if slug not in REGION_ORDER:
+        if slug not in REGION_ORDER and slug not in EXCLUDED_REGIONS:
             errors.append(f"region {slug!r} has data but isn't in REGION_ORDER (would not display)")
     return errors
 

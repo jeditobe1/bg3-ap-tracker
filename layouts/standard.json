@@ -61,7 +61,7 @@
                                     [ "udf_bulette", "udf_nere", "udf_grym", "udf_ch_r_ai_w_wargaz" ],
                                     [ "udf_shambling_mound", "udf_cursed_kuo_toa_chief", "udf_malus_thorm", "udf_gerringothe_thorm" ],
                                     [ "udf_thisobald_thorm", "udf_ch_r_ai_tska_an", "udf_yurgir", "udf_balthazar" ],
-                                    [ "udf_myrkul" ]
+                                    [ "udf_myrkul", "udf_netherbrain" ]
                                 ]
                             }
                         }

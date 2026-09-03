@@ -5,7 +5,7 @@
         "img": "images/items/level_fragment.png",
         "codes": "level_fragment",
         "min_quantity": 0,
-        "max_quantity": 30,
+        "max_quantity": 78,
         "initial_quantity": 0,
         "overlay_align": "right",
         "overlay_background": "#000000"
@@ -67,6 +67,7 @@
     { "name": "Entrance: Last Light Basement",       "type": "toggle", "img": "images/items/gate_last_light_basement.png",       "codes": "gate_last_light_basement" },
     { "name": "Entrance: Reithwin's Mason's Guild",  "type": "toggle", "img": "images/items/gate_reithwins_masons_guild.png",    "codes": "gate_reithwins_masons_guild" },
     { "name": "Entrance: Shar Trials",               "type": "toggle", "img": "images/items/gate_shar_trials.png",               "codes": "gate_shar_trials" },
+    { "name": "Entrance: Act 3",                     "type": "toggle", "img": "images/items/gate_act3.png",                     "codes": "gate_act3" },
     { "name": "Entrance: Moonlight Towers (Progressive)", "type": "consumable", "img": "images/items/gate_progressive_moonlight_towers.png", "codes": "gate_progressive_moonlight_towers", "min_quantity": 0, "max_quantity": 5, "initial_quantity": 0, "overlay_align": "right", "overlay_background": "#000000" },
     {
         "name": "Goal",
@@ -79,7 +80,9 @@
             { "name": "Goal: Kill Inquisitor Wwargaz",         "img": "images/items/goal_wwargaz.png",  "codes": "goal,goal_wwargaz" },
             { "name": "Goal: Act 1 User-Defined Fights",       "img": "images/items/goal_act1udf.png",  "codes": "goal,goal_act1udf" },
             { "name": "Goal: Kill Myrkul",                     "img": "images/items/goal_myrkul.png",   "codes": "goal,goal_myrkul" },
-            { "name": "Goal: Act 2 User-Defined Fights",       "img": "images/items/goal_act2udf.png",  "codes": "goal,goal_act2udf" }
+            { "name": "Goal: Act 2 User-Defined Fights",       "img": "images/items/goal_act2udf.png",  "codes": "goal,goal_act2udf" },
+            { "name": "Goal: Kill the Netherbrain",            "img": "images/items/goal_netherbrain.png", "codes": "goal,goal_netherbrain" },
+            { "name": "Goal: Act 3 User-Defined Fights",       "img": "images/items/goal_act3udf.png",  "codes": "goal,goal_act3udf" }
         ]
     },
     {
@@ -130,5 +133,6 @@
     { "name": "Fight: Yurgir",               "type": "toggle", "img": "images/items/udf_yurgir.png",               "codes": "udf_yurgir" },
     { "name": "Fight: Balthazar",            "type": "toggle", "img": "images/items/udf_balthazar.png",            "codes": "udf_balthazar" },
     { "name": "Fight: Myrkul",               "type": "toggle", "img": "images/items/udf_myrkul.png",               "codes": "udf_myrkul" },
+    { "name": "Fight: Netherbrain",          "type": "toggle", "img": "images/items/udf_netherbrain.png",          "codes": "udf_netherbrain" },
     { "name": "Rescue: Halsin",              "type": "toggle", "img": "images/items/udf_rescue_halsin.png",        "codes": "udf_rescue_halsin" }
 ]

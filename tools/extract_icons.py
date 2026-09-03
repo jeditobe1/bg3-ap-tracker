@@ -53,11 +53,20 @@ BG3_ICON_TARGETS = [
     ("goal_act1udf",       "Item_ARM_Shar_Crown_A_Broken",                "Icons_Items.lsx"),
     ("goal_myrkul",        "Item_WPN_HUM_Flail_Myrkul_A_0",               "Icons_Items_3.lsx"),
     ("goal_act2udf",       "Item_ARM_Shar_Crown_A",                       "Icons_Items_2.lsx"),
+    # Act 3 goals (apworld v0.7.0). The netherstone trio is the Act 3 endgame
+    # macguffin; the Netherbrain's crown continues the crown motif the other
+    # two user-defined-fight goals already use.
+    ("goal_netherbrain",   "Item_QUEST_Netherstone_Complete",             "Icons_Items_3.lsx"),
+    ("goal_act3udf",       "Item_DEC_MF_Netherbrain_Crown_Regalia_A",     "Icons_Items_5.lsx"),
     ("killsanity_on",      "Item_WPN_HUM_Spear_A_0",                      "Icons_Items.lsx"),
     ("questsanity_on",     "Item_BOOK_Wizards_Tome_Generic_A",            "Icons_Items_2.lsx"),
-    # UDF: Spectator gets its own item-atlas icon (no individual NPC portrait
-    # found). The other 15 UDF toggles get NPC portraits, see PORTRAIT_ICON_TARGETS.
+    # UDF: Spectator and Netherbrain get item-atlas icons rather than NPC
+    # portraits. Spectator has no individual portrait; the Netherbrain's four
+    # Icon_Elder_Brain portraits are all so dark they render as a black tile
+    # next to the other bosses. The other 15 UDF toggles get NPC portraits,
+    # see PORTRAIT_ICON_TARGETS.
     ("udf_spectator",      "Item_DEC_GEN_Spectator_Trophy_A",             "Icons_Items.lsx"),
+    ("udf_netherbrain",    "Item_LOOT_GEN_Brain_A",                       "Icons_Items_2.lsx"),
     # Generic catch-all trap counter (aggregates all 7000-range AP trap IDs).
     ("trap",               "Item_PUZ_GEN_Trap_Spikes_Metal_A",            "Icons_Items_2.lsx"),
     # Base icon for the 4 rarity-tinted equipment counters; tinted variants
@@ -80,6 +89,9 @@ BG3_ICON_TARGETS = [
     ("gate_reithwins_masons_guild",    "Item_PUZ_GEN_Key_MasonGuild_A_Silver_A",     "Icons_Items_2.lsx"),
     ("gate_shar_trials",               "Item_QUEST_SHA_TrialOrb",                    "Icons_Items_4.lsx"),
     ("gate_progressive_moonlight_towers", "Item_LOOT_MF_Rune_Key_A",                 "Icons_Items_3.lsx"),
+    # Act 3 gate (apworld v0.7.0) opens Mindflayer Colony -> Astral Plane, so
+    # the githyanki portal tool stands in for the usual key silhouette.
+    ("gate_act3",                      "Item_TOOL_GTY_Portal_A",                     "Icons_Items_4.lsx"),
     # Block Entrances toggle (Randomizer Options popup). Reuses an existing
     # key icon (Item_CONT_KeyRing is one of the most "lock and key" silhouettes
     # in the atlas) as the ON state; OFF is derived via DERIVED_OFF_ICONS.
@@ -146,6 +158,8 @@ PORTRAIT_ICON_TARGETS = [
     ("udf_yurgir",               "Mods/GustavDev/GUI/Assets/Portraits/c3c1482a-ef9e-c05e-093e-3e75b6581b0e-EQP_Orthon_Crossbow_Shortsword_(Icon_Orthon).DDS", "gustav"),
     ("udf_balthazar",            "Mods/GustavDev/GUI/Assets/Portraits/5dbde3ef-2023-bbbf-b24a-d23e25575d8b-SHA_Necromancer_(Icon_Necromancer).DDS", "gustav"),
     ("udf_myrkul",               "Mods/GustavDev/GUI/Assets/Portraits/6a7ff3a3-e87a-1e36-986f-0513f5ec085a-EQP_Apostle_(Icon_ApostleOfMyrkul).DDS", "gustav"),
+    # Act 3 UDF (apworld v0.7.0): udf_netherbrain is deliberately NOT here --
+    # see the item-atlas entry in BG3_ICON_TARGETS for why.
 ]
 
 
