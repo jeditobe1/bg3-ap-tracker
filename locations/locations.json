@@ -2361,6 +2361,34 @@
                         "name": "Village-Book: Learn about Lab"
                     },
                     {
+                        "ref": "Blighted Village/Village-Book: Find Lab/Village-Book: Find Lab",
+                        "name": "Village-Book: Find Lab"
+                    },
+                    {
+                        "ref": "Blighted Village/Village-Book: Find Tome/Village-Book: Find Tome",
+                        "name": "Village-Book: Find Tome"
+                    },
+                    {
+                        "ref": "Blighted Village/Village-Book: Find Gem/Village-Book: Find Gem",
+                        "name": "Village-Book: Find Gem"
+                    },
+                    {
+                        "ref": "Blighted Village/Village-Book: Unlock Tome/Village-Book: Unlock Tome",
+                        "name": "Village-Book: Unlock Tome"
+                    },
+                    {
+                        "ref": "Blighted Village/Village-Book: Read Tome/Village-Book: Read Tome",
+                        "name": "Village-Book: Read Tome"
+                    },
+                    {
+                        "ref": "Blighted Village/Village-Book: Learn about Gem/Village-Book: Learn about Gem",
+                        "name": "Village-Book: Learn about Gem"
+                    },
+                    {
+                        "ref": "Blighted Village/Village-Forge: Find Plans/Village-Forge: Find Plans",
+                        "name": "Village-Forge: Find Plans"
+                    },
+                    {
                         "ref": "Blighted Village/Village-Gnome: Find Windmill/Village-Gnome: Find Windmill",
                         "name": "Village-Gnome: Find Windmill"
                     },
@@ -2401,12 +2429,24 @@
                         "name": "Village: Open Selune's Stash"
                     },
                     {
+                        "ref": "Blighted Village/Village-Book: Open Lab Mirror/Village-Book: Open Lab Mirror",
+                        "name": "Village-Book: Open Lab Mirror"
+                    },
+                    {
                         "ref": "Blighted Village/Village: Kill Brawler Brek/Village: Kill Brawler Brek",
                         "name": "Village: Kill Brawler Brek"
                     },
                     {
                         "ref": "Blighted Village/Village: Kill Chock/Village: Kill Chock",
                         "name": "Village: Kill Chock"
+                    },
+                    {
+                        "ref": "Blighted Village/Village: Kill Ettercap 1/Village: Kill Ettercap 1",
+                        "name": "Village: Kill Ettercap 1"
+                    },
+                    {
+                        "ref": "Blighted Village/Village: Kill Ettercap 2/Village: Kill Ettercap 2",
+                        "name": "Village: Kill Ettercap 2"
                     },
                     {
                         "ref": "Blighted Village/Village: Kill Fank/Village: Kill Fank",
@@ -2459,6 +2499,26 @@
                     {
                         "ref": "Blighted Village/Village: Kill Tracker Slice/Village: Kill Tracker Slice",
                         "name": "Village: Kill Tracker Slice"
+                    },
+                    {
+                        "ref": "Blighted Village/Village: Kill Well Spider 1/Village: Kill Well Spider 1",
+                        "name": "Village: Kill Well Spider 1"
+                    },
+                    {
+                        "ref": "Blighted Village/Village: Kill Well Spider 2/Village: Kill Well Spider 2",
+                        "name": "Village: Kill Well Spider 2"
+                    },
+                    {
+                        "ref": "Blighted Village/Village: Kill Well Spider 3/Village: Kill Well Spider 3",
+                        "name": "Village: Kill Well Spider 3"
+                    },
+                    {
+                        "ref": "Blighted Village/Village: Kill Well Spider 4/Village: Kill Well Spider 4",
+                        "name": "Village: Kill Well Spider 4"
+                    },
+                    {
+                        "ref": "Blighted Village/Village: Kill Well Spider Queen/Village: Kill Well Spider Queen",
+                        "name": "Village: Kill Well Spider Queen"
                     },
                     {
                         "ref": "Blighted Village/Village: Kill Andrick/Village: Kill Andrick",
@@ -2538,6 +2598,167 @@
                 ]
             },
             {
+                "name": "Village-Book: Find Lab",
+                "sections": [
+                    {
+                        "name": "Village-Book: Find Lab",
+                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
+                        "chest_opened_img": "images/items/quest_marker_opened.png"
+                    }
+                ],
+                "visibility_rules": [
+                    "questsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:3,gate_blighted_village_well,gate_underdark"
+                ],
+                "map_locations": [
+                    {
+                        "map": "blighted_village",
+                        "x": 128,
+                        "y": 536
+                    }
+                ]
+            },
+            {
+                "name": "Village-Book: Find Tome",
+                "sections": [
+                    {
+                        "name": "Village-Book: Find Tome",
+                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
+                        "chest_opened_img": "images/items/quest_marker_opened.png"
+                    }
+                ],
+                "visibility_rules": [
+                    "questsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:3,gate_blighted_village_well,gate_underdark"
+                ],
+                "map_locations": [
+                    {
+                        "map": "blighted_village",
+                        "x": 160,
+                        "y": 536
+                    }
+                ]
+            },
+            {
+                "name": "Village-Book: Find Gem",
+                "sections": [
+                    {
+                        "name": "Village-Book: Find Gem",
+                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
+                        "chest_opened_img": "images/items/quest_marker_opened.png"
+                    }
+                ],
+                "visibility_rules": [
+                    "questsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:3,gate_blighted_village_well,gate_underdark"
+                ],
+                "map_locations": [
+                    {
+                        "map": "blighted_village",
+                        "x": 192,
+                        "y": 536
+                    }
+                ]
+            },
+            {
+                "name": "Village-Book: Unlock Tome",
+                "sections": [
+                    {
+                        "name": "Village-Book: Unlock Tome",
+                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
+                        "chest_opened_img": "images/items/quest_marker_opened.png"
+                    }
+                ],
+                "visibility_rules": [
+                    "questsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:3,gate_blighted_village_well,gate_underdark"
+                ],
+                "map_locations": [
+                    {
+                        "map": "blighted_village",
+                        "x": 224,
+                        "y": 536
+                    }
+                ]
+            },
+            {
+                "name": "Village-Book: Read Tome",
+                "sections": [
+                    {
+                        "name": "Village-Book: Read Tome",
+                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
+                        "chest_opened_img": "images/items/quest_marker_opened.png"
+                    }
+                ],
+                "visibility_rules": [
+                    "questsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:3,gate_blighted_village_well,gate_underdark"
+                ],
+                "map_locations": [
+                    {
+                        "map": "blighted_village",
+                        "x": 256,
+                        "y": 536
+                    }
+                ]
+            },
+            {
+                "name": "Village-Book: Learn about Gem",
+                "sections": [
+                    {
+                        "name": "Village-Book: Learn about Gem",
+                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
+                        "chest_opened_img": "images/items/quest_marker_opened.png"
+                    }
+                ],
+                "visibility_rules": [
+                    "questsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:3,gate_blighted_village_well,gate_underdark"
+                ],
+                "map_locations": [
+                    {
+                        "map": "blighted_village",
+                        "x": 288,
+                        "y": 536
+                    }
+                ]
+            },
+            {
+                "name": "Village-Forge: Find Plans",
+                "sections": [
+                    {
+                        "name": "Village-Forge: Find Plans",
+                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
+                        "chest_opened_img": "images/items/quest_marker_opened.png"
+                    }
+                ],
+                "visibility_rules": [
+                    "questsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:3,gate_blighted_village_well,gate_underdark"
+                ],
+                "map_locations": [
+                    {
+                        "map": "blighted_village",
+                        "x": 320,
+                        "y": 536
+                    }
+                ]
+            },
+            {
                 "name": "Village-Gnome: Find Windmill",
                 "sections": [
                     {
@@ -2552,7 +2773,7 @@
                 "map_locations": [
                     {
                         "map": "blighted_village",
-                        "x": 128,
+                        "x": 352,
                         "y": 536
                     }
                 ]
@@ -2572,7 +2793,7 @@
                 "map_locations": [
                     {
                         "map": "blighted_village",
-                        "x": 160,
+                        "x": 384,
                         "y": 536
                     }
                 ]
@@ -2592,7 +2813,7 @@
                 "map_locations": [
                     {
                         "map": "blighted_village",
-                        "x": 192,
+                        "x": 416,
                         "y": 536
                     }
                 ]
@@ -2612,7 +2833,7 @@
                 "map_locations": [
                     {
                         "map": "blighted_village",
-                        "x": 224,
+                        "x": 448,
                         "y": 536
                     }
                 ]
@@ -2632,7 +2853,7 @@
                 "map_locations": [
                     {
                         "map": "blighted_village",
-                        "x": 256,
+                        "x": 480,
                         "y": 536
                     }
                 ]
@@ -2652,7 +2873,7 @@
                 "map_locations": [
                     {
                         "map": "blighted_village",
-                        "x": 288,
+                        "x": 512,
                         "y": 536
                     }
                 ]
@@ -2672,7 +2893,7 @@
                 "map_locations": [
                     {
                         "map": "blighted_village",
-                        "x": 320,
+                        "x": 544,
                         "y": 536
                     }
                 ]
@@ -2692,7 +2913,7 @@
                 "map_locations": [
                     {
                         "map": "blighted_village",
-                        "x": 352,
+                        "x": 576,
                         "y": 536
                     }
                 ]
@@ -2712,7 +2933,7 @@
                 "map_locations": [
                     {
                         "map": "blighted_village",
-                        "x": 384,
+                        "x": 608,
                         "y": 536
                     }
                 ]
@@ -2732,7 +2953,30 @@
                 "map_locations": [
                     {
                         "map": "blighted_village",
-                        "x": 416,
+                        "x": 640,
+                        "y": 536
+                    }
+                ]
+            },
+            {
+                "name": "Village-Book: Open Lab Mirror",
+                "sections": [
+                    {
+                        "name": "Village-Book: Open Lab Mirror",
+                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
+                        "chest_opened_img": "images/items/quest_marker_opened.png"
+                    }
+                ],
+                "visibility_rules": [
+                    "questsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:3,gate_blighted_village_well,gate_underdark"
+                ],
+                "map_locations": [
+                    {
+                        "map": "blighted_village",
+                        "x": 672,
                         "y": 536
                     }
                 ]
@@ -2770,6 +3014,48 @@
                         "map": "blighted_village",
                         "x": 80,
                         "y": 331
+                    }
+                ]
+            },
+            {
+                "name": "Village: Kill Ettercap 1",
+                "sections": [
+                    {
+                        "name": "Village: Kill Ettercap 1"
+                    }
+                ],
+                "visibility_rules": [
+                    "killsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:3,gate_blighted_village_well,gate_underdark"
+                ],
+                "map_locations": [
+                    {
+                        "map": "blighted_village",
+                        "x": 865,
+                        "y": 347
+                    }
+                ]
+            },
+            {
+                "name": "Village: Kill Ettercap 2",
+                "sections": [
+                    {
+                        "name": "Village: Kill Ettercap 2"
+                    }
+                ],
+                "visibility_rules": [
+                    "killsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:3,gate_blighted_village_well,gate_underdark"
+                ],
+                "map_locations": [
+                    {
+                        "map": "blighted_village",
+                        "x": 892,
+                        "y": 209
                     }
                 ]
             },
@@ -3008,6 +3294,111 @@
                 ]
             },
             {
+                "name": "Village: Kill Well Spider 1",
+                "sections": [
+                    {
+                        "name": "Village: Kill Well Spider 1"
+                    }
+                ],
+                "visibility_rules": [
+                    "killsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:3,gate_blighted_village_well,gate_underdark"
+                ],
+                "map_locations": [
+                    {
+                        "map": "blighted_village",
+                        "x": 872,
+                        "y": 284
+                    }
+                ]
+            },
+            {
+                "name": "Village: Kill Well Spider 2",
+                "sections": [
+                    {
+                        "name": "Village: Kill Well Spider 2"
+                    }
+                ],
+                "visibility_rules": [
+                    "killsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:3,gate_blighted_village_well,gate_underdark"
+                ],
+                "map_locations": [
+                    {
+                        "map": "blighted_village",
+                        "x": 732,
+                        "y": 288
+                    }
+                ]
+            },
+            {
+                "name": "Village: Kill Well Spider 3",
+                "sections": [
+                    {
+                        "name": "Village: Kill Well Spider 3"
+                    }
+                ],
+                "visibility_rules": [
+                    "killsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:3,gate_blighted_village_well,gate_underdark"
+                ],
+                "map_locations": [
+                    {
+                        "map": "blighted_village",
+                        "x": 569,
+                        "y": 319
+                    }
+                ]
+            },
+            {
+                "name": "Village: Kill Well Spider 4",
+                "sections": [
+                    {
+                        "name": "Village: Kill Well Spider 4"
+                    }
+                ],
+                "visibility_rules": [
+                    "killsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:3,gate_blighted_village_well,gate_underdark"
+                ],
+                "map_locations": [
+                    {
+                        "map": "blighted_village",
+                        "x": 872,
+                        "y": 319
+                    }
+                ]
+            },
+            {
+                "name": "Village: Kill Well Spider Queen",
+                "sections": [
+                    {
+                        "name": "Village: Kill Well Spider Queen"
+                    }
+                ],
+                "visibility_rules": [
+                    "killsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:3,gate_blighted_village_well,gate_underdark"
+                ],
+                "map_locations": [
+                    {
+                        "map": "blighted_village",
+                        "x": 554,
+                        "y": 264
+                    }
+                ]
+            },
+            {
                 "name": "Village: Kill Andrick",
                 "sections": [
                     {
@@ -3049,372 +3440,6 @@
         ]
     },
     {
-        "name": "Whispering Depths",
-        "children": [
-            {
-                "name": "Whispering Depths (Overview)",
-                "sections": [
-                    {
-                        "ref": "Whispering Depths/Village-Book: Find Lab/Village-Book: Find Lab",
-                        "name": "Village-Book: Find Lab"
-                    },
-                    {
-                        "ref": "Whispering Depths/Village-Book: Find Tome/Village-Book: Find Tome",
-                        "name": "Village-Book: Find Tome"
-                    },
-                    {
-                        "ref": "Whispering Depths/Village-Book: Find Gem/Village-Book: Find Gem",
-                        "name": "Village-Book: Find Gem"
-                    },
-                    {
-                        "ref": "Whispering Depths/Village-Book: Unlock Tome/Village-Book: Unlock Tome",
-                        "name": "Village-Book: Unlock Tome"
-                    },
-                    {
-                        "ref": "Whispering Depths/Village-Book: Read Tome/Village-Book: Read Tome",
-                        "name": "Village-Book: Read Tome"
-                    },
-                    {
-                        "ref": "Whispering Depths/Village-Book: Learn about Gem/Village-Book: Learn about Gem",
-                        "name": "Village-Book: Learn about Gem"
-                    },
-                    {
-                        "ref": "Whispering Depths/Village-Forge: Find Plans/Village-Forge: Find Plans",
-                        "name": "Village-Forge: Find Plans"
-                    },
-                    {
-                        "ref": "Whispering Depths/Village-Book: Open Lab Mirror/Village-Book: Open Lab Mirror",
-                        "name": "Village-Book: Open Lab Mirror"
-                    },
-                    {
-                        "ref": "Whispering Depths/Village: Kill Ettercap 1/Village: Kill Ettercap 1",
-                        "name": "Village: Kill Ettercap 1"
-                    },
-                    {
-                        "ref": "Whispering Depths/Village: Kill Ettercap 2/Village: Kill Ettercap 2",
-                        "name": "Village: Kill Ettercap 2"
-                    },
-                    {
-                        "ref": "Whispering Depths/Village: Kill Well Spider 1/Village: Kill Well Spider 1",
-                        "name": "Village: Kill Well Spider 1"
-                    },
-                    {
-                        "ref": "Whispering Depths/Village: Kill Well Spider 2/Village: Kill Well Spider 2",
-                        "name": "Village: Kill Well Spider 2"
-                    },
-                    {
-                        "ref": "Whispering Depths/Village: Kill Well Spider 3/Village: Kill Well Spider 3",
-                        "name": "Village: Kill Well Spider 3"
-                    },
-                    {
-                        "ref": "Whispering Depths/Village: Kill Well Spider 4/Village: Kill Well Spider 4",
-                        "name": "Village: Kill Well Spider 4"
-                    },
-                    {
-                        "ref": "Whispering Depths/Village: Kill Well Spider Queen/Village: Kill Well Spider Queen",
-                        "name": "Village: Kill Well Spider Queen"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "act1_overworld",
-                        "x": 578,
-                        "y": 1826
-                    }
-                ]
-            },
-            {
-                "name": "Village-Book: Find Lab",
-                "sections": [
-                    {
-                        "name": "Village-Book: Find Lab",
-                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
-                        "chest_opened_img": "images/items/quest_marker_opened.png"
-                    }
-                ],
-                "visibility_rules": [
-                    "questsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "underwell",
-                        "x": 32,
-                        "y": 536
-                    }
-                ]
-            },
-            {
-                "name": "Village-Book: Find Tome",
-                "sections": [
-                    {
-                        "name": "Village-Book: Find Tome",
-                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
-                        "chest_opened_img": "images/items/quest_marker_opened.png"
-                    }
-                ],
-                "visibility_rules": [
-                    "questsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "underwell",
-                        "x": 64,
-                        "y": 536
-                    }
-                ]
-            },
-            {
-                "name": "Village-Book: Find Gem",
-                "sections": [
-                    {
-                        "name": "Village-Book: Find Gem",
-                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
-                        "chest_opened_img": "images/items/quest_marker_opened.png"
-                    }
-                ],
-                "visibility_rules": [
-                    "questsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "underwell",
-                        "x": 96,
-                        "y": 536
-                    }
-                ]
-            },
-            {
-                "name": "Village-Book: Unlock Tome",
-                "sections": [
-                    {
-                        "name": "Village-Book: Unlock Tome",
-                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
-                        "chest_opened_img": "images/items/quest_marker_opened.png"
-                    }
-                ],
-                "visibility_rules": [
-                    "questsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "underwell",
-                        "x": 128,
-                        "y": 536
-                    }
-                ]
-            },
-            {
-                "name": "Village-Book: Read Tome",
-                "sections": [
-                    {
-                        "name": "Village-Book: Read Tome",
-                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
-                        "chest_opened_img": "images/items/quest_marker_opened.png"
-                    }
-                ],
-                "visibility_rules": [
-                    "questsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "underwell",
-                        "x": 160,
-                        "y": 536
-                    }
-                ]
-            },
-            {
-                "name": "Village-Book: Learn about Gem",
-                "sections": [
-                    {
-                        "name": "Village-Book: Learn about Gem",
-                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
-                        "chest_opened_img": "images/items/quest_marker_opened.png"
-                    }
-                ],
-                "visibility_rules": [
-                    "questsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "underwell",
-                        "x": 192,
-                        "y": 536
-                    }
-                ]
-            },
-            {
-                "name": "Village-Forge: Find Plans",
-                "sections": [
-                    {
-                        "name": "Village-Forge: Find Plans",
-                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
-                        "chest_opened_img": "images/items/quest_marker_opened.png"
-                    }
-                ],
-                "visibility_rules": [
-                    "questsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "underwell",
-                        "x": 224,
-                        "y": 536
-                    }
-                ]
-            },
-            {
-                "name": "Village-Book: Open Lab Mirror",
-                "sections": [
-                    {
-                        "name": "Village-Book: Open Lab Mirror",
-                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
-                        "chest_opened_img": "images/items/quest_marker_opened.png"
-                    }
-                ],
-                "visibility_rules": [
-                    "questsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "underwell",
-                        "x": 256,
-                        "y": 536
-                    }
-                ]
-            },
-            {
-                "name": "Village: Kill Ettercap 1",
-                "sections": [
-                    {
-                        "name": "Village: Kill Ettercap 1"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "underwell",
-                        "x": 769,
-                        "y": 409
-                    }
-                ]
-            },
-            {
-                "name": "Village: Kill Ettercap 2",
-                "sections": [
-                    {
-                        "name": "Village: Kill Ettercap 2"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "underwell",
-                        "x": 823,
-                        "y": 145
-                    }
-                ]
-            },
-            {
-                "name": "Village: Kill Well Spider 1",
-                "sections": [
-                    {
-                        "name": "Village: Kill Well Spider 1"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "underwell",
-                        "x": 783,
-                        "y": 296
-                    }
-                ]
-            },
-            {
-                "name": "Village: Kill Well Spider 2",
-                "sections": [
-                    {
-                        "name": "Village: Kill Well Spider 2"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "underwell",
-                        "x": 499,
-                        "y": 304
-                    }
-                ]
-            },
-            {
-                "name": "Village: Kill Well Spider 3",
-                "sections": [
-                    {
-                        "name": "Village: Kill Well Spider 3"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "underwell",
-                        "x": 168,
-                        "y": 368
-                    }
-                ]
-            },
-            {
-                "name": "Village: Kill Well Spider 4",
-                "sections": [
-                    {
-                        "name": "Village: Kill Well Spider 4"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "underwell",
-                        "x": 780,
-                        "y": 382
-                    }
-                ]
-            },
-            {
-                "name": "Village: Kill Well Spider Queen",
-                "sections": [
-                    {
-                        "name": "Village: Kill Well Spider Queen"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "underwell",
-                        "x": 137,
-                        "y": 256
-                    }
-                ]
-            }
-        ],
-        "access_rules": [
-            "level_fragment:3,gate_blighted_village_well,gate_underdark"
-        ]
-    },
-    {
         "name": "Waukeen's Rest",
         "children": [
             {
@@ -3427,6 +3452,22 @@
                     {
                         "ref": "Waukeen's Rest/Gale: Fed an Item/Gale: Fed an Item",
                         "name": "Gale: Fed an Item"
+                    },
+                    {
+                        "ref": "Waukeen's Rest/Waukeen-Zhent: Meet Oskar/Waukeen-Zhent: Meet Oskar",
+                        "name": "Waukeen-Zhent: Meet Oskar"
+                    },
+                    {
+                        "ref": "Waukeen's Rest/Waukeen-Zhent: Agree to Free Oskar/Waukeen-Zhent: Agree to Free Oskar",
+                        "name": "Waukeen-Zhent: Agree to Free Oskar"
+                    },
+                    {
+                        "ref": "Waukeen's Rest/Waukeen-Zhent: Learn Oskar's Price/Waukeen-Zhent: Learn Oskar's Price",
+                        "name": "Waukeen-Zhent: Learn Oskar's Price"
+                    },
+                    {
+                        "ref": "Waukeen's Rest/Waukeen-Zhent: Free Oskar/Waukeen-Zhent: Free Oskar",
+                        "name": "Waukeen-Zhent: Free Oskar"
                     },
                     {
                         "ref": "Waukeen's Rest/Waukeen-Fire: Notice Fire/Waukeen-Fire: Notice Fire",
@@ -3511,6 +3552,10 @@
                     {
                         "ref": "Waukeen's Rest/Waukeen-Zhent: Learn Password/Waukeen-Zhent: Learn Password",
                         "name": "Waukeen-Zhent: Learn Password"
+                    },
+                    {
+                        "ref": "Waukeen's Rest/Waukeen-Zhent: Return Cargo/Waukeen-Zhent: Return Cargo",
+                        "name": "Waukeen-Zhent: Return Cargo"
                     },
                     {
                         "ref": "Waukeen's Rest/Karlach-Heart: Learn about Heart Upgrades/Karlach-Heart: Learn about Heart Upgrades",
@@ -3678,6 +3723,98 @@
                 ]
             },
             {
+                "name": "Waukeen-Zhent: Meet Oskar",
+                "sections": [
+                    {
+                        "name": "Waukeen-Zhent: Meet Oskar",
+                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
+                        "chest_opened_img": "images/items/quest_marker_opened.png"
+                    }
+                ],
+                "visibility_rules": [
+                    "questsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:6,gate_zhentarim_basement"
+                ],
+                "map_locations": [
+                    {
+                        "map": "waukeen",
+                        "x": 96,
+                        "y": 536
+                    }
+                ]
+            },
+            {
+                "name": "Waukeen-Zhent: Agree to Free Oskar",
+                "sections": [
+                    {
+                        "name": "Waukeen-Zhent: Agree to Free Oskar",
+                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
+                        "chest_opened_img": "images/items/quest_marker_opened.png"
+                    }
+                ],
+                "visibility_rules": [
+                    "questsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:6,gate_zhentarim_basement"
+                ],
+                "map_locations": [
+                    {
+                        "map": "waukeen",
+                        "x": 128,
+                        "y": 536
+                    }
+                ]
+            },
+            {
+                "name": "Waukeen-Zhent: Learn Oskar's Price",
+                "sections": [
+                    {
+                        "name": "Waukeen-Zhent: Learn Oskar's Price",
+                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
+                        "chest_opened_img": "images/items/quest_marker_opened.png"
+                    }
+                ],
+                "visibility_rules": [
+                    "questsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:6,gate_zhentarim_basement"
+                ],
+                "map_locations": [
+                    {
+                        "map": "waukeen",
+                        "x": 160,
+                        "y": 536
+                    }
+                ]
+            },
+            {
+                "name": "Waukeen-Zhent: Free Oskar",
+                "sections": [
+                    {
+                        "name": "Waukeen-Zhent: Free Oskar",
+                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
+                        "chest_opened_img": "images/items/quest_marker_opened.png"
+                    }
+                ],
+                "visibility_rules": [
+                    "questsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:6,gate_zhentarim_basement"
+                ],
+                "map_locations": [
+                    {
+                        "map": "waukeen",
+                        "x": 192,
+                        "y": 536
+                    }
+                ]
+            },
+            {
                 "name": "Waukeen-Fire: Notice Fire",
                 "sections": [
                     {
@@ -3692,7 +3829,7 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 96,
+                        "x": 224,
                         "y": 536
                     }
                 ]
@@ -3712,7 +3849,7 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 128,
+                        "x": 256,
                         "y": 536
                     }
                 ]
@@ -3732,7 +3869,7 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 160,
+                        "x": 288,
                         "y": 536
                     }
                 ]
@@ -3752,7 +3889,7 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 192,
+                        "x": 320,
                         "y": 536
                     }
                 ]
@@ -3772,7 +3909,7 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 224,
+                        "x": 352,
                         "y": 536
                     }
                 ]
@@ -3792,7 +3929,7 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 256,
+                        "x": 384,
                         "y": 536
                     }
                 ]
@@ -3812,7 +3949,7 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 288,
+                        "x": 416,
                         "y": 536
                     }
                 ]
@@ -3832,7 +3969,7 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 320,
+                        "x": 448,
                         "y": 536
                     }
                 ]
@@ -3852,7 +3989,7 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 352,
+                        "x": 480,
                         "y": 536
                     }
                 ]
@@ -3872,7 +4009,7 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 384,
+                        "x": 512,
                         "y": 536
                     }
                 ]
@@ -3892,7 +4029,7 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 416,
+                        "x": 544,
                         "y": 536
                     }
                 ]
@@ -3912,7 +4049,7 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 448,
+                        "x": 576,
                         "y": 536
                     }
                 ]
@@ -3932,7 +4069,7 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 480,
+                        "x": 608,
                         "y": 536
                     }
                 ]
@@ -3952,7 +4089,7 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 512,
+                        "x": 640,
                         "y": 536
                     }
                 ]
@@ -3972,7 +4109,7 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 544,
+                        "x": 672,
                         "y": 536
                     }
                 ]
@@ -3992,7 +4129,7 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 576,
+                        "x": 704,
                         "y": 536
                     }
                 ]
@@ -4012,7 +4149,7 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 608,
+                        "x": 736,
                         "y": 536
                     }
                 ]
@@ -4032,7 +4169,7 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 640,
+                        "x": 768,
                         "y": 536
                     }
                 ]
@@ -4052,7 +4189,7 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 672,
+                        "x": 800,
                         "y": 536
                     }
                 ]
@@ -4072,7 +4209,7 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 704,
+                        "x": 832,
                         "y": 536
                     }
                 ]
@@ -4092,7 +4229,30 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 736,
+                        "x": 864,
+                        "y": 536
+                    }
+                ]
+            },
+            {
+                "name": "Waukeen-Zhent: Return Cargo",
+                "sections": [
+                    {
+                        "name": "Waukeen-Zhent: Return Cargo",
+                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
+                        "chest_opened_img": "images/items/quest_marker_opened.png"
+                    }
+                ],
+                "visibility_rules": [
+                    "questsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:6,gate_zhentarim_basement"
+                ],
+                "map_locations": [
+                    {
+                        "map": "waukeen",
+                        "x": 896,
                         "y": 536
                     }
                 ]
@@ -4112,7 +4272,7 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 768,
+                        "x": 928,
                         "y": 536
                     }
                 ]
@@ -4132,8 +4292,8 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 800,
-                        "y": 536
+                        "x": 32,
+                        "y": 568
                     }
                 ]
             },
@@ -4152,8 +4312,8 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 832,
-                        "y": 536
+                        "x": 64,
+                        "y": 568
                     }
                 ]
             },
@@ -4172,8 +4332,8 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 864,
-                        "y": 536
+                        "x": 96,
+                        "y": 568
                     }
                 ]
             },
@@ -4192,8 +4352,8 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 896,
-                        "y": 536
+                        "x": 128,
+                        "y": 568
                     }
                 ]
             },
@@ -4212,8 +4372,8 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 928,
-                        "y": 536
+                        "x": 160,
+                        "y": 568
                     }
                 ]
             },
@@ -4232,7 +4392,7 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 32,
+                        "x": 192,
                         "y": 568
                     }
                 ]
@@ -4252,7 +4412,7 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 64,
+                        "x": 224,
                         "y": 568
                     }
                 ]
@@ -4272,7 +4432,7 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 96,
+                        "x": 256,
                         "y": 568
                     }
                 ]
@@ -4643,134 +4803,126 @@
         ]
     },
     {
-        "name": "Zhentarim Hideout",
-        "children": [
-            {
-                "name": "Waukeen-Zhent: Meet Oskar",
-                "sections": [
-                    {
-                        "name": "Waukeen-Zhent: Meet Oskar",
-                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
-                        "chest_opened_img": "images/items/quest_marker_opened.png"
-                    }
-                ],
-                "visibility_rules": [
-                    "questsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "zhentarim_basement",
-                        "x": 32,
-                        "y": 536
-                    }
-                ]
-            },
-            {
-                "name": "Waukeen-Zhent: Agree to Free Oskar",
-                "sections": [
-                    {
-                        "name": "Waukeen-Zhent: Agree to Free Oskar",
-                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
-                        "chest_opened_img": "images/items/quest_marker_opened.png"
-                    }
-                ],
-                "visibility_rules": [
-                    "questsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "zhentarim_basement",
-                        "x": 64,
-                        "y": 536
-                    }
-                ]
-            },
-            {
-                "name": "Waukeen-Zhent: Learn Oskar's Price",
-                "sections": [
-                    {
-                        "name": "Waukeen-Zhent: Learn Oskar's Price",
-                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
-                        "chest_opened_img": "images/items/quest_marker_opened.png"
-                    }
-                ],
-                "visibility_rules": [
-                    "questsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "zhentarim_basement",
-                        "x": 96,
-                        "y": 536
-                    }
-                ]
-            },
-            {
-                "name": "Waukeen-Zhent: Free Oskar",
-                "sections": [
-                    {
-                        "name": "Waukeen-Zhent: Free Oskar",
-                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
-                        "chest_opened_img": "images/items/quest_marker_opened.png"
-                    }
-                ],
-                "visibility_rules": [
-                    "questsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "zhentarim_basement",
-                        "x": 128,
-                        "y": 536
-                    }
-                ]
-            },
-            {
-                "name": "Waukeen-Zhent: Return Cargo",
-                "sections": [
-                    {
-                        "name": "Waukeen-Zhent: Return Cargo",
-                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
-                        "chest_opened_img": "images/items/quest_marker_opened.png"
-                    }
-                ],
-                "visibility_rules": [
-                    "questsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "zhentarim_basement",
-                        "x": 160,
-                        "y": 536
-                    }
-                ]
-            }
-        ],
-        "access_rules": [
-            "level_fragment:6,gate_zhentarim_basement"
-        ]
-    },
-    {
         "name": "Goblin Camp",
         "children": [
             {
                 "name": "Goblin Camp (Overview)",
                 "sections": [
                     {
+                        "ref": "Goblin Camp/Grove: Open the Vault/Grove: Open the Vault",
+                        "name": "Grove: Open the Vault"
+                    },
+                    {
                         "ref": "Goblin Camp/Gobs: Tame Owlbear Cub/Gobs: Tame Owlbear Cub",
                         "name": "Gobs: Tame Owlbear Cub"
+                    },
+                    {
+                        "ref": "Goblin Camp/Gobs-Halsin: Found Halsin/Gobs-Halsin: Found Halsin",
+                        "name": "Gobs-Halsin: Found Halsin"
+                    },
+                    {
+                        "ref": "Goblin Camp/Gobs-Halsin: Tell Tieflings about Halsin's Freedom/Gobs-Halsin: Tell Tieflings about Halsin's Freedom",
+                        "name": "Gobs-Halsin: Tell Tieflings about Halsin's Freedom"
+                    },
+                    {
+                        "ref": "Goblin Camp/Gobs-Halsin: Celebrate with Tieflings/Gobs-Halsin: Celebrate with Tieflings",
+                        "name": "Gobs-Halsin: Celebrate with Tieflings"
+                    },
+                    {
+                        "ref": "Goblin Camp/Gobs-Halsin: Tieflings left for Baldur's Gate/Gobs-Halsin: Tieflings left for Baldur's Gate",
+                        "name": "Gobs-Halsin: Tieflings left for Baldur's Gate"
                     },
                     {
                         "ref": "Goblin Camp/Gobs: Arrive at Goblin Camp/Gobs: Arrive at Goblin Camp",
                         "name": "Gobs: Arrive at Goblin Camp"
                     },
                     {
+                        "ref": "Goblin Camp/Gobs-Halsin: Defeated all Goblin Leaders/Gobs-Halsin: Defeated all Goblin Leaders",
+                        "name": "Gobs-Halsin: Defeated all Goblin Leaders"
+                    },
+                    {
+                        "ref": "Goblin Camp/Gobs: Kill Priestess Gut/Gobs: Kill Priestess Gut",
+                        "name": "Gobs: Kill Priestess Gut"
+                    },
+                    {
+                        "ref": "Goblin Camp/Gobs: Kill the Leader, Dror Ragzlin/Gobs: Kill the Leader, Dror Ragzlin",
+                        "name": "Gobs: Kill the Leader, Dror Ragzlin"
+                    },
+                    {
+                        "ref": "Goblin Camp/Gobs: Defeat (Knock Out) Minthara/Gobs: Defeat (Knock Out) Minthara",
+                        "name": "Gobs: Defeat (Knock Out) Minthara"
+                    },
+                    {
+                        "ref": "Goblin Camp/Gobs: Learn the Priestess' Name/Gobs: Learn the Priestess' Name",
+                        "name": "Gobs: Learn the Priestess' Name"
+                    },
+                    {
+                        "ref": "Goblin Camp/Gobs: Learn the Drow's Name/Gobs: Learn the Drow's Name",
+                        "name": "Gobs: Learn the Drow's Name"
+                    },
+                    {
+                        "ref": "Goblin Camp/Gobs: Learn the King's Name/Gobs: Learn the King's Name",
+                        "name": "Gobs: Learn the King's Name"
+                    },
+                    {
+                        "ref": "Goblin Camp/Gobs-Halsin: Tell Halsin about Victory/Gobs-Halsin: Tell Halsin about Victory",
+                        "name": "Gobs-Halsin: Tell Halsin about Victory"
+                    },
+                    {
+                        "ref": "Goblin Camp/Gobs-Halsin: Learn Halsin is a Bear/Gobs-Halsin: Learn Halsin is a Bear",
+                        "name": "Gobs-Halsin: Learn Halsin is a Bear"
+                    },
+                    {
                         "ref": "Goblin Camp/Gobs-Halsin: Learn Halsin is Missing/Gobs-Halsin: Learn Halsin is Missing",
                         "name": "Gobs-Halsin: Learn Halsin is Missing"
                     },
                     {
+                        "ref": "Goblin Camp/Gobs-Halsin: Get Reward from Rath/Gobs-Halsin: Get Reward from Rath",
+                        "name": "Gobs-Halsin: Get Reward from Rath"
+                    },
+                    {
+                        "ref": "Goblin Camp/Grove-Sazza: Find Sazza at Minthara/Grove-Sazza: Find Sazza at Minthara",
+                        "name": "Grove-Sazza: Find Sazza at Minthara"
+                    },
+                    {
+                        "ref": "Goblin Camp/Grove-Sazza: Save Sazza Again/Grove-Sazza: Save Sazza Again",
+                        "name": "Grove-Sazza: Save Sazza Again"
+                    },
+                    {
                         "ref": "Goblin Camp/Gobs-Volo: Watch Volo get Escorted Away/Gobs-Volo: Watch Volo get Escorted Away",
                         "name": "Gobs-Volo: Watch Volo get Escorted Away"
+                    },
+                    {
+                        "ref": "Goblin Camp/Gobs-Volo: Find Volo in Cage/Gobs-Volo: Find Volo in Cage",
+                        "name": "Gobs-Volo: Find Volo in Cage"
+                    },
+                    {
+                        "ref": "Goblin Camp/Gobs-Volo: Free Volo/Gobs-Volo: Free Volo",
+                        "name": "Gobs-Volo: Free Volo"
+                    },
+                    {
+                        "ref": "Goblin Camp/Gobs-Volo: Meet Volo in Camp/Gobs-Volo: Meet Volo in Camp",
+                        "name": "Gobs-Volo: Meet Volo in Camp"
+                    },
+                    {
+                        "ref": "Goblin Camp/Grove-Idol: Steal the Idol/Grove-Idol: Steal the Idol",
+                        "name": "Grove-Idol: Steal the Idol"
+                    },
+                    {
+                        "ref": "Goblin Camp/Grove-Idol: Give Idol to Mol/Grove-Idol: Give Idol to Mol",
+                        "name": "Grove-Idol: Give Idol to Mol"
+                    },
+                    {
+                        "ref": "Goblin Camp/Gobs-Nightsong: Find Clues to Nightsong/Gobs-Nightsong: Find Clues to Nightsong",
+                        "name": "Gobs-Nightsong: Find Clues to Nightsong"
+                    },
+                    {
+                        "ref": "Goblin Camp/Plot-Art: Hear Minthara talk about Artefact/Plot-Art: Hear Minthara talk about Artefact",
+                        "name": "Plot-Art: Hear Minthara talk about Artefact"
+                    },
+                    {
+                        "ref": "Goblin Camp/Plot-Art: Hear Ragzlin talk about Artefact/Plot-Art: Hear Ragzlin talk about Artefact",
+                        "name": "Plot-Art: Hear Ragzlin talk about Artefact"
                     },
                     {
                         "ref": "Goblin Camp/Tadpole: Told by Guardian to find Tadpoles/Tadpole: Told by Guardian to find Tadpoles",
@@ -4781,6 +4933,10 @@
                         "name": "Tadpole: Guardian Suggests Consuming Tadpole"
                     },
                     {
+                        "ref": "Goblin Camp/Gobs-Halsin: Tell Ormn that Halsin was Saved/Gobs-Halsin: Tell Ormn that Halsin was Saved",
+                        "name": "Gobs-Halsin: Tell Ormn that Halsin was Saved"
+                    },
+                    {
                         "ref": "Goblin Camp/Gobs: Win the Chicken Chase/Gobs: Win the Chicken Chase",
                         "name": "Gobs: Win the Chicken Chase"
                     },
@@ -4789,12 +4945,48 @@
                         "name": "Gobs: Crush Crusher (steal ring or win duel)"
                     },
                     {
+                        "ref": "Goblin Camp/Gobs: Scry with Ragzlin/Gobs: Scry with Ragzlin",
+                        "name": "Gobs: Scry with Ragzlin"
+                    },
+                    {
+                        "ref": "Goblin Camp/Gobs: Free Brakkal/Gobs: Free Brakkal",
+                        "name": "Gobs: Free Brakkal"
+                    },
+                    {
+                        "ref": "Goblin Camp/Gobs: Experience Abdirak's Penance/Gobs: Experience Abdirak's Penance",
+                        "name": "Gobs: Experience Abdirak's Penance"
+                    },
+                    {
+                        "ref": "Goblin Camp/Gobs: Find Moon Puzzle in Temple/Gobs: Find Moon Puzzle in Temple",
+                        "name": "Gobs: Find Moon Puzzle in Temple"
+                    },
+                    {
+                        "ref": "Goblin Camp/Gobs: Solve Moon Puzzle in Temple/Gobs: Solve Moon Puzzle in Temple",
+                        "name": "Gobs: Solve Moon Puzzle in Temple"
+                    },
+                    {
+                        "ref": "Goblin Camp/Gobs: Free Liam/Gobs: Free Liam",
+                        "name": "Gobs: Free Liam"
+                    },
+                    {
                         "ref": "Goblin Camp/Gobs: Kill Bao'ek'nuk/Gobs: Kill Bao'ek'nuk",
                         "name": "Gobs: Kill Bao'ek'nuk"
                     },
                     {
                         "ref": "Goblin Camp/Gobs: Kill Booyahg Culk/Gobs: Kill Booyahg Culk",
                         "name": "Gobs: Kill Booyahg Culk"
+                    },
+                    {
+                        "ref": "Goblin Camp/Gobs: Kill Booyahg Gnat/Gobs: Kill Booyahg Gnat",
+                        "name": "Gobs: Kill Booyahg Gnat"
+                    },
+                    {
+                        "ref": "Goblin Camp/Gobs: Kill Booyahg Shekt/Gobs: Kill Booyahg Shekt",
+                        "name": "Gobs: Kill Booyahg Shekt"
+                    },
+                    {
+                        "ref": "Goblin Camp/Gobs: Kill Brawler Gurd/Gobs: Kill Brawler Gurd",
+                        "name": "Gobs: Kill Brawler Gurd"
                     },
                     {
                         "ref": "Goblin Camp/Gobs: Kill Brawler Rot/Gobs: Kill Brawler Rot",
@@ -4809,12 +5001,28 @@
                         "name": "Gobs: Kill Crusher"
                     },
                     {
+                        "ref": "Goblin Camp/Gobs: Kill Devout Cry/Gobs: Kill Devout Cry",
+                        "name": "Gobs: Kill Devout Cry"
+                    },
+                    {
                         "ref": "Goblin Camp/Gobs: Kill Devout Mezzka/Gobs: Kill Devout Mezzka",
                         "name": "Gobs: Kill Devout Mezzka"
                     },
                     {
+                        "ref": "Goblin Camp/Gobs: Kill Devout Mrak/Gobs: Kill Devout Mrak",
+                        "name": "Gobs: Kill Devout Mrak"
+                    },
+                    {
+                        "ref": "Goblin Camp/Gobs: Kill Devout Muzul/Gobs: Kill Devout Muzul",
+                        "name": "Gobs: Kill Devout Muzul"
+                    },
+                    {
                         "ref": "Goblin Camp/Gobs: Kill Devout Wasp/Gobs: Kill Devout Wasp",
                         "name": "Gobs: Kill Devout Wasp"
+                    },
+                    {
+                        "ref": "Goblin Camp/Gobs: Kill Dror Ragzlin/Gobs: Kill Dror Ragzlin",
+                        "name": "Gobs: Kill Dror Ragzlin"
                     },
                     {
                         "ref": "Goblin Camp/Gobs: Kill Grat the Trader/Gobs: Kill Grat the Trader",
@@ -4837,8 +5045,32 @@
                         "name": "Gobs: Kill Krolla"
                     },
                     {
+                        "ref": "Goblin Camp/Gobs: Kill Larger Giant Spider/Gobs: Kill Larger Giant Spider",
+                        "name": "Gobs: Kill Larger Giant Spider"
+                    },
+                    {
+                        "ref": "Goblin Camp/Gobs: Kill Lookout Grush/Gobs: Kill Lookout Grush",
+                        "name": "Gobs: Kill Lookout Grush"
+                    },
+                    {
+                        "ref": "Goblin Camp/Gobs: Kill Polma/Gobs: Kill Polma",
+                        "name": "Gobs: Kill Polma"
+                    },
+                    {
+                        "ref": "Goblin Camp/Gobs: Kill Rozzak/Gobs: Kill Rozzak",
+                        "name": "Gobs: Kill Rozzak"
+                    },
+                    {
+                        "ref": "Goblin Camp/Gobs: Kill Scrying Eye/Gobs: Kill Scrying Eye",
+                        "name": "Gobs: Kill Scrying Eye"
+                    },
+                    {
                         "ref": "Goblin Camp/Gobs: Kill Sentinel Olak/Gobs: Kill Sentinel Olak",
                         "name": "Gobs: Kill Sentinel Olak"
+                    },
+                    {
+                        "ref": "Goblin Camp/Gobs: Kill Sharp Eye Zami/Gobs: Kill Sharp Eye Zami",
+                        "name": "Gobs: Kill Sharp Eye Zami"
                     },
                     {
                         "ref": "Goblin Camp/Gobs: Kill Sharp-Eye Aggy/Gobs: Kill Sharp-Eye Aggy",
@@ -4849,12 +5081,36 @@
                         "name": "Gobs: Kill Sharp-Eye Breg"
                     },
                     {
+                        "ref": "Goblin Camp/Gobs: Kill Sharp-Eye Eef/Gobs: Kill Sharp-Eye Eef",
+                        "name": "Gobs: Kill Sharp-Eye Eef"
+                    },
+                    {
+                        "ref": "Goblin Camp/Gobs: Kill Sharp-Eye Gruz/Gobs: Kill Sharp-Eye Gruz",
+                        "name": "Gobs: Kill Sharp-Eye Gruz"
+                    },
+                    {
                         "ref": "Goblin Camp/Gobs: Kill Sharp-Eye Mirg/Gobs: Kill Sharp-Eye Mirg",
                         "name": "Gobs: Kill Sharp-Eye Mirg"
                     },
                     {
+                        "ref": "Goblin Camp/Gobs: Kill Sharp-Eye Nass/Gobs: Kill Sharp-Eye Nass",
+                        "name": "Gobs: Kill Sharp-Eye Nass"
+                    },
+                    {
+                        "ref": "Goblin Camp/Gobs: Kill Sharp-Eye Neem/Gobs: Kill Sharp-Eye Neem",
+                        "name": "Gobs: Kill Sharp-Eye Neem"
+                    },
+                    {
+                        "ref": "Goblin Camp/Gobs: Kill Sharp-Eye Nozk/Gobs: Kill Sharp-Eye Nozk",
+                        "name": "Gobs: Kill Sharp-Eye Nozk"
+                    },
+                    {
                         "ref": "Goblin Camp/Gobs: Kill Sharp-Eye Raagg/Gobs: Kill Sharp-Eye Raagg",
                         "name": "Gobs: Kill Sharp-Eye Raagg"
+                    },
+                    {
+                        "ref": "Goblin Camp/Gobs: Kill Sharp-Eye Roo/Gobs: Kill Sharp-Eye Roo",
+                        "name": "Gobs: Kill Sharp-Eye Roo"
                     },
                     {
                         "ref": "Goblin Camp/Gobs: Kill Sharp-Eye Sluck/Gobs: Kill Sharp-Eye Sluck",
@@ -4865,8 +5121,16 @@
                         "name": "Gobs: Kill Sharp-Eye Snurd"
                     },
                     {
+                        "ref": "Goblin Camp/Gobs: Kill Skrut/Gobs: Kill Skrut",
+                        "name": "Gobs: Kill Skrut"
+                    },
+                    {
                         "ref": "Goblin Camp/Gobs: Kill Small Klaw/Gobs: Kill Small Klaw",
                         "name": "Gobs: Kill Small Klaw"
+                    },
+                    {
+                        "ref": "Goblin Camp/Gobs: Kill Smaller Giant Spider/Gobs: Kill Smaller Giant Spider",
+                        "name": "Gobs: Kill Smaller Giant Spider"
                     },
                     {
                         "ref": "Goblin Camp/Gobs: Kill Stimk/Gobs: Kill Stimk",
@@ -4877,12 +5141,24 @@
                         "name": "Gobs: Kill Teghun"
                     },
                     {
+                        "ref": "Goblin Camp/Gobs: Kill Torturer Spike/Gobs: Kill Torturer Spike",
+                        "name": "Gobs: Kill Torturer Spike"
+                    },
+                    {
+                        "ref": "Goblin Camp/Gobs: Kill Tracker Azak/Gobs: Kill Tracker Azak",
+                        "name": "Gobs: Kill Tracker Azak"
+                    },
+                    {
                         "ref": "Goblin Camp/Gobs: Kill Tracker Bal/Gobs: Kill Tracker Bal",
                         "name": "Gobs: Kill Tracker Bal"
                     },
                     {
                         "ref": "Goblin Camp/Gobs: Kill Tracker Dullwill/Gobs: Kill Tracker Dullwill",
                         "name": "Gobs: Kill Tracker Dullwill"
+                    },
+                    {
+                        "ref": "Goblin Camp/Gobs: Kill Tracker Fezk/Gobs: Kill Tracker Fezk",
+                        "name": "Gobs: Kill Tracker Fezk"
                     },
                     {
                         "ref": "Goblin Camp/Gobs: Kill Tracker Grikka/Gobs: Kill Tracker Grikka",
@@ -4909,6 +5185,26 @@
                         "name": "Gobs: Kill Tracker Tak"
                     },
                     {
+                        "ref": "Goblin Camp/Gobs: Kill Tracker Tizg/Gobs: Kill Tracker Tizg",
+                        "name": "Gobs: Kill Tracker Tizg"
+                    },
+                    {
+                        "ref": "Goblin Camp/Gobs: Kill Tracker Tozad/Gobs: Kill Tracker Tozad",
+                        "name": "Gobs: Kill Tracker Tozad"
+                    },
+                    {
+                        "ref": "Goblin Camp/Gobs: Kill True Soul Gut/Gobs: Kill True Soul Gut",
+                        "name": "Gobs: Kill True Soul Gut"
+                    },
+                    {
+                        "ref": "Goblin Camp/Gobs: Kill Warlock Bolt/Gobs: Kill Warlock Bolt",
+                        "name": "Gobs: Kill Warlock Bolt"
+                    },
+                    {
+                        "ref": "Goblin Camp/Gobs: Kill Warlock Greez/Gobs: Kill Warlock Greez",
+                        "name": "Gobs: Kill Warlock Greez"
+                    },
+                    {
                         "ref": "Goblin Camp/Gobs: Kill Warlock Gurk/Gobs: Kill Warlock Gurk",
                         "name": "Gobs: Kill Warlock Gurk"
                     },
@@ -4917,12 +5213,40 @@
                         "name": "Gobs: Kill Warlock Tud"
                     },
                     {
+                        "ref": "Goblin Camp/Gobs: Kill Warrior Bez/Gobs: Kill Warrior Bez",
+                        "name": "Gobs: Kill Warrior Bez"
+                    },
+                    {
+                        "ref": "Goblin Camp/Gobs: Kill Warrior Clack/Gobs: Kill Warrior Clack",
+                        "name": "Gobs: Kill Warrior Clack"
+                    },
+                    {
+                        "ref": "Goblin Camp/Gobs: Kill Warrior Druk/Gobs: Kill Warrior Druk",
+                        "name": "Gobs: Kill Warrior Druk"
+                    },
+                    {
+                        "ref": "Goblin Camp/Gobs: Kill Warrior Huk/Gobs: Kill Warrior Huk",
+                        "name": "Gobs: Kill Warrior Huk"
+                    },
+                    {
+                        "ref": "Goblin Camp/Gobs: Kill Warrior Nrog/Gobs: Kill Warrior Nrog",
+                        "name": "Gobs: Kill Warrior Nrog"
+                    },
+                    {
                         "ref": "Goblin Camp/Gobs: Kill Warrior Puce/Gobs: Kill Warrior Puce",
                         "name": "Gobs: Kill Warrior Puce"
                     },
                     {
                         "ref": "Goblin Camp/Gobs: Kill Warrior Sul/Gobs: Kill Warrior Sul",
                         "name": "Gobs: Kill Warrior Sul"
+                    },
+                    {
+                        "ref": "Goblin Camp/Gobs: Kill Warrior Trinzas/Gobs: Kill Warrior Trinzas",
+                        "name": "Gobs: Kill Warrior Trinzas"
+                    },
+                    {
+                        "ref": "Goblin Camp/Gobs: Kill Zurga/Gobs: Kill Zurga",
+                        "name": "Gobs: Kill Zurga"
                     }
                 ],
                 "map_locations": [
@@ -4930,6 +5254,29 @@
                         "map": "act1_overworld",
                         "x": 1278,
                         "y": 559
+                    }
+                ]
+            },
+            {
+                "name": "Grove: Open the Vault",
+                "sections": [
+                    {
+                        "name": "Grove: Open the Vault",
+                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
+                        "chest_opened_img": "images/items/quest_marker_opened.png"
+                    }
+                ],
+                "visibility_rules": [
+                    "questsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
+                "map_locations": [
+                    {
+                        "map": "goblin_camp",
+                        "x": 32,
+                        "y": 536
                     }
                 ]
             },
@@ -4948,7 +5295,99 @@
                 "map_locations": [
                     {
                         "map": "goblin_camp",
-                        "x": 32,
+                        "x": 64,
+                        "y": 536
+                    }
+                ]
+            },
+            {
+                "name": "Gobs-Halsin: Found Halsin",
+                "sections": [
+                    {
+                        "name": "Gobs-Halsin: Found Halsin",
+                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
+                        "chest_opened_img": "images/items/quest_marker_opened.png"
+                    }
+                ],
+                "visibility_rules": [
+                    "questsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
+                "map_locations": [
+                    {
+                        "map": "goblin_camp",
+                        "x": 96,
+                        "y": 536
+                    }
+                ]
+            },
+            {
+                "name": "Gobs-Halsin: Tell Tieflings about Halsin's Freedom",
+                "sections": [
+                    {
+                        "name": "Gobs-Halsin: Tell Tieflings about Halsin's Freedom",
+                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
+                        "chest_opened_img": "images/items/quest_marker_opened.png"
+                    }
+                ],
+                "visibility_rules": [
+                    "questsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
+                "map_locations": [
+                    {
+                        "map": "goblin_camp",
+                        "x": 128,
+                        "y": 536
+                    }
+                ]
+            },
+            {
+                "name": "Gobs-Halsin: Celebrate with Tieflings",
+                "sections": [
+                    {
+                        "name": "Gobs-Halsin: Celebrate with Tieflings",
+                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
+                        "chest_opened_img": "images/items/quest_marker_opened.png"
+                    }
+                ],
+                "visibility_rules": [
+                    "questsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
+                "map_locations": [
+                    {
+                        "map": "goblin_camp",
+                        "x": 160,
+                        "y": 536
+                    }
+                ]
+            },
+            {
+                "name": "Gobs-Halsin: Tieflings left for Baldur's Gate",
+                "sections": [
+                    {
+                        "name": "Gobs-Halsin: Tieflings left for Baldur's Gate",
+                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
+                        "chest_opened_img": "images/items/quest_marker_opened.png"
+                    }
+                ],
+                "visibility_rules": [
+                    "questsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
+                "map_locations": [
+                    {
+                        "map": "goblin_camp",
+                        "x": 192,
                         "y": 536
                     }
                 ]
@@ -4968,7 +5407,214 @@
                 "map_locations": [
                     {
                         "map": "goblin_camp",
-                        "x": 64,
+                        "x": 224,
+                        "y": 536
+                    }
+                ]
+            },
+            {
+                "name": "Gobs-Halsin: Defeated all Goblin Leaders",
+                "sections": [
+                    {
+                        "name": "Gobs-Halsin: Defeated all Goblin Leaders",
+                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
+                        "chest_opened_img": "images/items/quest_marker_opened.png"
+                    }
+                ],
+                "visibility_rules": [
+                    "questsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
+                "map_locations": [
+                    {
+                        "map": "goblin_camp",
+                        "x": 256,
+                        "y": 536
+                    }
+                ]
+            },
+            {
+                "name": "Gobs: Kill Priestess Gut",
+                "sections": [
+                    {
+                        "name": "Gobs: Kill Priestess Gut",
+                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
+                        "chest_opened_img": "images/items/quest_marker_opened.png"
+                    }
+                ],
+                "visibility_rules": [
+                    "questsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
+                "map_locations": [
+                    {
+                        "map": "goblin_camp",
+                        "x": 288,
+                        "y": 536
+                    }
+                ]
+            },
+            {
+                "name": "Gobs: Kill the Leader, Dror Ragzlin",
+                "sections": [
+                    {
+                        "name": "Gobs: Kill the Leader, Dror Ragzlin",
+                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
+                        "chest_opened_img": "images/items/quest_marker_opened.png"
+                    }
+                ],
+                "visibility_rules": [
+                    "questsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
+                "map_locations": [
+                    {
+                        "map": "goblin_camp",
+                        "x": 320,
+                        "y": 536
+                    }
+                ]
+            },
+            {
+                "name": "Gobs: Defeat (Knock Out) Minthara",
+                "sections": [
+                    {
+                        "name": "Gobs: Defeat (Knock Out) Minthara",
+                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
+                        "chest_opened_img": "images/items/quest_marker_opened.png"
+                    }
+                ],
+                "visibility_rules": [
+                    "questsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
+                "map_locations": [
+                    {
+                        "map": "goblin_camp",
+                        "x": 352,
+                        "y": 536
+                    }
+                ]
+            },
+            {
+                "name": "Gobs: Learn the Priestess' Name",
+                "sections": [
+                    {
+                        "name": "Gobs: Learn the Priestess' Name",
+                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
+                        "chest_opened_img": "images/items/quest_marker_opened.png"
+                    }
+                ],
+                "visibility_rules": [
+                    "questsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
+                "map_locations": [
+                    {
+                        "map": "goblin_camp",
+                        "x": 384,
+                        "y": 536
+                    }
+                ]
+            },
+            {
+                "name": "Gobs: Learn the Drow's Name",
+                "sections": [
+                    {
+                        "name": "Gobs: Learn the Drow's Name",
+                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
+                        "chest_opened_img": "images/items/quest_marker_opened.png"
+                    }
+                ],
+                "visibility_rules": [
+                    "questsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
+                "map_locations": [
+                    {
+                        "map": "goblin_camp",
+                        "x": 416,
+                        "y": 536
+                    }
+                ]
+            },
+            {
+                "name": "Gobs: Learn the King's Name",
+                "sections": [
+                    {
+                        "name": "Gobs: Learn the King's Name",
+                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
+                        "chest_opened_img": "images/items/quest_marker_opened.png"
+                    }
+                ],
+                "visibility_rules": [
+                    "questsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
+                "map_locations": [
+                    {
+                        "map": "goblin_camp",
+                        "x": 448,
+                        "y": 536
+                    }
+                ]
+            },
+            {
+                "name": "Gobs-Halsin: Tell Halsin about Victory",
+                "sections": [
+                    {
+                        "name": "Gobs-Halsin: Tell Halsin about Victory",
+                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
+                        "chest_opened_img": "images/items/quest_marker_opened.png"
+                    }
+                ],
+                "visibility_rules": [
+                    "questsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
+                "map_locations": [
+                    {
+                        "map": "goblin_camp",
+                        "x": 480,
+                        "y": 536
+                    }
+                ]
+            },
+            {
+                "name": "Gobs-Halsin: Learn Halsin is a Bear",
+                "sections": [
+                    {
+                        "name": "Gobs-Halsin: Learn Halsin is a Bear",
+                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
+                        "chest_opened_img": "images/items/quest_marker_opened.png"
+                    }
+                ],
+                "visibility_rules": [
+                    "questsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
+                "map_locations": [
+                    {
+                        "map": "goblin_camp",
+                        "x": 512,
                         "y": 536
                     }
                 ]
@@ -4988,7 +5634,76 @@
                 "map_locations": [
                     {
                         "map": "goblin_camp",
-                        "x": 96,
+                        "x": 544,
+                        "y": 536
+                    }
+                ]
+            },
+            {
+                "name": "Gobs-Halsin: Get Reward from Rath",
+                "sections": [
+                    {
+                        "name": "Gobs-Halsin: Get Reward from Rath",
+                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
+                        "chest_opened_img": "images/items/quest_marker_opened.png"
+                    }
+                ],
+                "visibility_rules": [
+                    "questsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
+                "map_locations": [
+                    {
+                        "map": "goblin_camp",
+                        "x": 576,
+                        "y": 536
+                    }
+                ]
+            },
+            {
+                "name": "Grove-Sazza: Find Sazza at Minthara",
+                "sections": [
+                    {
+                        "name": "Grove-Sazza: Find Sazza at Minthara",
+                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
+                        "chest_opened_img": "images/items/quest_marker_opened.png"
+                    }
+                ],
+                "visibility_rules": [
+                    "questsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
+                "map_locations": [
+                    {
+                        "map": "goblin_camp",
+                        "x": 608,
+                        "y": 536
+                    }
+                ]
+            },
+            {
+                "name": "Grove-Sazza: Save Sazza Again",
+                "sections": [
+                    {
+                        "name": "Grove-Sazza: Save Sazza Again",
+                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
+                        "chest_opened_img": "images/items/quest_marker_opened.png"
+                    }
+                ],
+                "visibility_rules": [
+                    "questsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
+                "map_locations": [
+                    {
+                        "map": "goblin_camp",
+                        "x": 640,
                         "y": 536
                     }
                 ]
@@ -5008,7 +5723,191 @@
                 "map_locations": [
                     {
                         "map": "goblin_camp",
-                        "x": 128,
+                        "x": 672,
+                        "y": 536
+                    }
+                ]
+            },
+            {
+                "name": "Gobs-Volo: Find Volo in Cage",
+                "sections": [
+                    {
+                        "name": "Gobs-Volo: Find Volo in Cage",
+                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
+                        "chest_opened_img": "images/items/quest_marker_opened.png"
+                    }
+                ],
+                "visibility_rules": [
+                    "questsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
+                "map_locations": [
+                    {
+                        "map": "goblin_camp",
+                        "x": 704,
+                        "y": 536
+                    }
+                ]
+            },
+            {
+                "name": "Gobs-Volo: Free Volo",
+                "sections": [
+                    {
+                        "name": "Gobs-Volo: Free Volo",
+                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
+                        "chest_opened_img": "images/items/quest_marker_opened.png"
+                    }
+                ],
+                "visibility_rules": [
+                    "questsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
+                "map_locations": [
+                    {
+                        "map": "goblin_camp",
+                        "x": 736,
+                        "y": 536
+                    }
+                ]
+            },
+            {
+                "name": "Gobs-Volo: Meet Volo in Camp",
+                "sections": [
+                    {
+                        "name": "Gobs-Volo: Meet Volo in Camp",
+                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
+                        "chest_opened_img": "images/items/quest_marker_opened.png"
+                    }
+                ],
+                "visibility_rules": [
+                    "questsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
+                "map_locations": [
+                    {
+                        "map": "goblin_camp",
+                        "x": 768,
+                        "y": 536
+                    }
+                ]
+            },
+            {
+                "name": "Grove-Idol: Steal the Idol",
+                "sections": [
+                    {
+                        "name": "Grove-Idol: Steal the Idol",
+                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
+                        "chest_opened_img": "images/items/quest_marker_opened.png"
+                    }
+                ],
+                "visibility_rules": [
+                    "questsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
+                "map_locations": [
+                    {
+                        "map": "goblin_camp",
+                        "x": 800,
+                        "y": 536
+                    }
+                ]
+            },
+            {
+                "name": "Grove-Idol: Give Idol to Mol",
+                "sections": [
+                    {
+                        "name": "Grove-Idol: Give Idol to Mol",
+                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
+                        "chest_opened_img": "images/items/quest_marker_opened.png"
+                    }
+                ],
+                "visibility_rules": [
+                    "questsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
+                "map_locations": [
+                    {
+                        "map": "goblin_camp",
+                        "x": 832,
+                        "y": 536
+                    }
+                ]
+            },
+            {
+                "name": "Gobs-Nightsong: Find Clues to Nightsong",
+                "sections": [
+                    {
+                        "name": "Gobs-Nightsong: Find Clues to Nightsong",
+                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
+                        "chest_opened_img": "images/items/quest_marker_opened.png"
+                    }
+                ],
+                "visibility_rules": [
+                    "questsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
+                "map_locations": [
+                    {
+                        "map": "goblin_camp",
+                        "x": 864,
+                        "y": 536
+                    }
+                ]
+            },
+            {
+                "name": "Plot-Art: Hear Minthara talk about Artefact",
+                "sections": [
+                    {
+                        "name": "Plot-Art: Hear Minthara talk about Artefact",
+                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
+                        "chest_opened_img": "images/items/quest_marker_opened.png"
+                    }
+                ],
+                "visibility_rules": [
+                    "questsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
+                "map_locations": [
+                    {
+                        "map": "goblin_camp",
+                        "x": 896,
+                        "y": 536
+                    }
+                ]
+            },
+            {
+                "name": "Plot-Art: Hear Ragzlin talk about Artefact",
+                "sections": [
+                    {
+                        "name": "Plot-Art: Hear Ragzlin talk about Artefact",
+                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
+                        "chest_opened_img": "images/items/quest_marker_opened.png"
+                    }
+                ],
+                "visibility_rules": [
+                    "questsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
+                "map_locations": [
+                    {
+                        "map": "goblin_camp",
+                        "x": 928,
                         "y": 536
                     }
                 ]
@@ -5028,8 +5927,8 @@
                 "map_locations": [
                     {
                         "map": "goblin_camp",
-                        "x": 160,
-                        "y": 536
+                        "x": 32,
+                        "y": 568
                     }
                 ]
             },
@@ -5048,8 +5947,31 @@
                 "map_locations": [
                     {
                         "map": "goblin_camp",
-                        "x": 192,
-                        "y": 536
+                        "x": 64,
+                        "y": 568
+                    }
+                ]
+            },
+            {
+                "name": "Gobs-Halsin: Tell Ormn that Halsin was Saved",
+                "sections": [
+                    {
+                        "name": "Gobs-Halsin: Tell Ormn that Halsin was Saved",
+                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
+                        "chest_opened_img": "images/items/quest_marker_opened.png"
+                    }
+                ],
+                "visibility_rules": [
+                    "questsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
+                "map_locations": [
+                    {
+                        "map": "goblin_camp",
+                        "x": 96,
+                        "y": 568
                     }
                 ]
             },
@@ -5068,8 +5990,8 @@
                 "map_locations": [
                     {
                         "map": "goblin_camp",
-                        "x": 224,
-                        "y": 536
+                        "x": 128,
+                        "y": 568
                     }
                 ]
             },
@@ -5088,8 +6010,146 @@
                 "map_locations": [
                     {
                         "map": "goblin_camp",
+                        "x": 160,
+                        "y": 568
+                    }
+                ]
+            },
+            {
+                "name": "Gobs: Scry with Ragzlin",
+                "sections": [
+                    {
+                        "name": "Gobs: Scry with Ragzlin",
+                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
+                        "chest_opened_img": "images/items/quest_marker_opened.png"
+                    }
+                ],
+                "visibility_rules": [
+                    "questsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
+                "map_locations": [
+                    {
+                        "map": "goblin_camp",
+                        "x": 192,
+                        "y": 568
+                    }
+                ]
+            },
+            {
+                "name": "Gobs: Free Brakkal",
+                "sections": [
+                    {
+                        "name": "Gobs: Free Brakkal",
+                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
+                        "chest_opened_img": "images/items/quest_marker_opened.png"
+                    }
+                ],
+                "visibility_rules": [
+                    "questsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
+                "map_locations": [
+                    {
+                        "map": "goblin_camp",
+                        "x": 224,
+                        "y": 568
+                    }
+                ]
+            },
+            {
+                "name": "Gobs: Experience Abdirak's Penance",
+                "sections": [
+                    {
+                        "name": "Gobs: Experience Abdirak's Penance",
+                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
+                        "chest_opened_img": "images/items/quest_marker_opened.png"
+                    }
+                ],
+                "visibility_rules": [
+                    "questsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
+                "map_locations": [
+                    {
+                        "map": "goblin_camp",
                         "x": 256,
-                        "y": 536
+                        "y": 568
+                    }
+                ]
+            },
+            {
+                "name": "Gobs: Find Moon Puzzle in Temple",
+                "sections": [
+                    {
+                        "name": "Gobs: Find Moon Puzzle in Temple",
+                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
+                        "chest_opened_img": "images/items/quest_marker_opened.png"
+                    }
+                ],
+                "visibility_rules": [
+                    "questsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
+                "map_locations": [
+                    {
+                        "map": "goblin_camp",
+                        "x": 288,
+                        "y": 568
+                    }
+                ]
+            },
+            {
+                "name": "Gobs: Solve Moon Puzzle in Temple",
+                "sections": [
+                    {
+                        "name": "Gobs: Solve Moon Puzzle in Temple",
+                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
+                        "chest_opened_img": "images/items/quest_marker_opened.png"
+                    }
+                ],
+                "visibility_rules": [
+                    "questsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
+                "map_locations": [
+                    {
+                        "map": "goblin_camp",
+                        "x": 320,
+                        "y": 568
+                    }
+                ]
+            },
+            {
+                "name": "Gobs: Free Liam",
+                "sections": [
+                    {
+                        "name": "Gobs: Free Liam",
+                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
+                        "chest_opened_img": "images/items/quest_marker_opened.png"
+                    }
+                ],
+                "visibility_rules": [
+                    "questsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
+                "map_locations": [
+                    {
+                        "map": "goblin_camp",
+                        "x": 352,
+                        "y": 568
                     }
                 ]
             },
@@ -5126,6 +6186,69 @@
                         "map": "goblin_camp",
                         "x": 207,
                         "y": 94
+                    }
+                ]
+            },
+            {
+                "name": "Gobs: Kill Booyahg Gnat",
+                "sections": [
+                    {
+                        "name": "Gobs: Kill Booyahg Gnat"
+                    }
+                ],
+                "visibility_rules": [
+                    "killsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
+                "map_locations": [
+                    {
+                        "map": "goblin_camp",
+                        "x": 635,
+                        "y": 155
+                    }
+                ]
+            },
+            {
+                "name": "Gobs: Kill Booyahg Shekt",
+                "sections": [
+                    {
+                        "name": "Gobs: Kill Booyahg Shekt"
+                    }
+                ],
+                "visibility_rules": [
+                    "killsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
+                "map_locations": [
+                    {
+                        "map": "goblin_camp",
+                        "x": 668,
+                        "y": 278
+                    }
+                ]
+            },
+            {
+                "name": "Gobs: Kill Brawler Gurd",
+                "sections": [
+                    {
+                        "name": "Gobs: Kill Brawler Gurd"
+                    }
+                ],
+                "visibility_rules": [
+                    "killsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
+                "map_locations": [
+                    {
+                        "map": "goblin_camp",
+                        "x": 585,
+                        "y": 174
                     }
                 ]
             },
@@ -5184,6 +6307,27 @@
                 ]
             },
             {
+                "name": "Gobs: Kill Devout Cry",
+                "sections": [
+                    {
+                        "name": "Gobs: Kill Devout Cry"
+                    }
+                ],
+                "visibility_rules": [
+                    "killsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
+                "map_locations": [
+                    {
+                        "map": "goblin_camp",
+                        "x": 596,
+                        "y": 148
+                    }
+                ]
+            },
+            {
                 "name": "Gobs: Kill Devout Mezzka",
                 "sections": [
                     {
@@ -5202,6 +6346,48 @@
                 ]
             },
             {
+                "name": "Gobs: Kill Devout Mrak",
+                "sections": [
+                    {
+                        "name": "Gobs: Kill Devout Mrak"
+                    }
+                ],
+                "visibility_rules": [
+                    "killsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
+                "map_locations": [
+                    {
+                        "map": "goblin_camp",
+                        "x": 593,
+                        "y": 300
+                    }
+                ]
+            },
+            {
+                "name": "Gobs: Kill Devout Muzul",
+                "sections": [
+                    {
+                        "name": "Gobs: Kill Devout Muzul"
+                    }
+                ],
+                "visibility_rules": [
+                    "killsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
+                "map_locations": [
+                    {
+                        "map": "goblin_camp",
+                        "x": 619,
+                        "y": 311
+                    }
+                ]
+            },
+            {
                 "name": "Gobs: Kill Devout Wasp",
                 "sections": [
                     {
@@ -5216,6 +6402,27 @@
                         "map": "goblin_camp",
                         "x": 166,
                         "y": 452
+                    }
+                ]
+            },
+            {
+                "name": "Gobs: Kill Dror Ragzlin",
+                "sections": [
+                    {
+                        "name": "Gobs: Kill Dror Ragzlin"
+                    }
+                ],
+                "visibility_rules": [
+                    "killsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
+                "map_locations": [
+                    {
+                        "map": "goblin_camp",
+                        "x": 642,
+                        "y": 112
                     }
                 ]
             },
@@ -5310,6 +6517,111 @@
                 ]
             },
             {
+                "name": "Gobs: Kill Larger Giant Spider",
+                "sections": [
+                    {
+                        "name": "Gobs: Kill Larger Giant Spider"
+                    }
+                ],
+                "visibility_rules": [
+                    "killsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
+                "map_locations": [
+                    {
+                        "map": "goblin_camp",
+                        "x": 614,
+                        "y": 175
+                    }
+                ]
+            },
+            {
+                "name": "Gobs: Kill Lookout Grush",
+                "sections": [
+                    {
+                        "name": "Gobs: Kill Lookout Grush"
+                    }
+                ],
+                "visibility_rules": [
+                    "killsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
+                "map_locations": [
+                    {
+                        "map": "goblin_camp",
+                        "x": 738,
+                        "y": 354
+                    }
+                ]
+            },
+            {
+                "name": "Gobs: Kill Polma",
+                "sections": [
+                    {
+                        "name": "Gobs: Kill Polma"
+                    }
+                ],
+                "visibility_rules": [
+                    "killsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
+                "map_locations": [
+                    {
+                        "map": "goblin_camp",
+                        "x": 892,
+                        "y": 201
+                    }
+                ]
+            },
+            {
+                "name": "Gobs: Kill Rozzak",
+                "sections": [
+                    {
+                        "name": "Gobs: Kill Rozzak"
+                    }
+                ],
+                "visibility_rules": [
+                    "killsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
+                "map_locations": [
+                    {
+                        "map": "goblin_camp",
+                        "x": 740,
+                        "y": 119
+                    }
+                ]
+            },
+            {
+                "name": "Gobs: Kill Scrying Eye",
+                "sections": [
+                    {
+                        "name": "Gobs: Kill Scrying Eye"
+                    }
+                ],
+                "visibility_rules": [
+                    "killsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
+                "map_locations": [
+                    {
+                        "map": "goblin_camp",
+                        "x": 723,
+                        "y": 192
+                    }
+                ]
+            },
+            {
                 "name": "Gobs: Kill Sentinel Olak",
                 "sections": [
                     {
@@ -5324,6 +6636,27 @@
                         "map": "goblin_camp",
                         "x": 285,
                         "y": 394
+                    }
+                ]
+            },
+            {
+                "name": "Gobs: Kill Sharp Eye Zami",
+                "sections": [
+                    {
+                        "name": "Gobs: Kill Sharp Eye Zami"
+                    }
+                ],
+                "visibility_rules": [
+                    "killsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
+                "map_locations": [
+                    {
+                        "map": "goblin_camp",
+                        "x": 566,
+                        "y": 197
                     }
                 ]
             },
@@ -5364,6 +6697,48 @@
                 ]
             },
             {
+                "name": "Gobs: Kill Sharp-Eye Eef",
+                "sections": [
+                    {
+                        "name": "Gobs: Kill Sharp-Eye Eef"
+                    }
+                ],
+                "visibility_rules": [
+                    "killsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
+                "map_locations": [
+                    {
+                        "map": "goblin_camp",
+                        "x": 764,
+                        "y": 202
+                    }
+                ]
+            },
+            {
+                "name": "Gobs: Kill Sharp-Eye Gruz",
+                "sections": [
+                    {
+                        "name": "Gobs: Kill Sharp-Eye Gruz"
+                    }
+                ],
+                "visibility_rules": [
+                    "killsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
+                "map_locations": [
+                    {
+                        "map": "goblin_camp",
+                        "x": 601,
+                        "y": 424
+                    }
+                ]
+            },
+            {
                 "name": "Gobs: Kill Sharp-Eye Mirg",
                 "sections": [
                     {
@@ -5382,6 +6757,69 @@
                 ]
             },
             {
+                "name": "Gobs: Kill Sharp-Eye Nass",
+                "sections": [
+                    {
+                        "name": "Gobs: Kill Sharp-Eye Nass"
+                    }
+                ],
+                "visibility_rules": [
+                    "killsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
+                "map_locations": [
+                    {
+                        "map": "goblin_camp",
+                        "x": 771,
+                        "y": 174
+                    }
+                ]
+            },
+            {
+                "name": "Gobs: Kill Sharp-Eye Neem",
+                "sections": [
+                    {
+                        "name": "Gobs: Kill Sharp-Eye Neem"
+                    }
+                ],
+                "visibility_rules": [
+                    "killsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
+                "map_locations": [
+                    {
+                        "map": "goblin_camp",
+                        "x": 742,
+                        "y": 171
+                    }
+                ]
+            },
+            {
+                "name": "Gobs: Kill Sharp-Eye Nozk",
+                "sections": [
+                    {
+                        "name": "Gobs: Kill Sharp-Eye Nozk"
+                    }
+                ],
+                "visibility_rules": [
+                    "killsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
+                "map_locations": [
+                    {
+                        "map": "goblin_camp",
+                        "x": 669,
+                        "y": 418
+                    }
+                ]
+            },
+            {
                 "name": "Gobs: Kill Sharp-Eye Raagg",
                 "sections": [
                     {
@@ -5396,6 +6834,27 @@
                         "map": "goblin_camp",
                         "x": 245,
                         "y": 123
+                    }
+                ]
+            },
+            {
+                "name": "Gobs: Kill Sharp-Eye Roo",
+                "sections": [
+                    {
+                        "name": "Gobs: Kill Sharp-Eye Roo"
+                    }
+                ],
+                "visibility_rules": [
+                    "killsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
+                "map_locations": [
+                    {
+                        "map": "goblin_camp",
+                        "x": 620,
+                        "y": 130
                     }
                 ]
             },
@@ -5436,6 +6895,27 @@
                 ]
             },
             {
+                "name": "Gobs: Kill Skrut",
+                "sections": [
+                    {
+                        "name": "Gobs: Kill Skrut"
+                    }
+                ],
+                "visibility_rules": [
+                    "killsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
+                "map_locations": [
+                    {
+                        "map": "goblin_camp",
+                        "x": 699,
+                        "y": 161
+                    }
+                ]
+            },
+            {
                 "name": "Gobs: Kill Small Klaw",
                 "sections": [
                     {
@@ -5450,6 +6930,27 @@
                         "map": "goblin_camp",
                         "x": 257,
                         "y": 391
+                    }
+                ]
+            },
+            {
+                "name": "Gobs: Kill Smaller Giant Spider",
+                "sections": [
+                    {
+                        "name": "Gobs: Kill Smaller Giant Spider"
+                    }
+                ],
+                "visibility_rules": [
+                    "killsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
+                "map_locations": [
+                    {
+                        "map": "goblin_camp",
+                        "x": 643,
+                        "y": 183
                     }
                 ]
             },
@@ -5490,6 +6991,48 @@
                 ]
             },
             {
+                "name": "Gobs: Kill Torturer Spike",
+                "sections": [
+                    {
+                        "name": "Gobs: Kill Torturer Spike"
+                    }
+                ],
+                "visibility_rules": [
+                    "killsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
+                "map_locations": [
+                    {
+                        "map": "goblin_camp",
+                        "x": 738,
+                        "y": 324
+                    }
+                ]
+            },
+            {
+                "name": "Gobs: Kill Tracker Azak",
+                "sections": [
+                    {
+                        "name": "Gobs: Kill Tracker Azak"
+                    }
+                ],
+                "visibility_rules": [
+                    "killsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
+                "map_locations": [
+                    {
+                        "map": "goblin_camp",
+                        "x": 643,
+                        "y": 261
+                    }
+                ]
+            },
+            {
                 "name": "Gobs: Kill Tracker Bal",
                 "sections": [
                     {
@@ -5522,6 +7065,27 @@
                         "map": "goblin_camp",
                         "x": 182,
                         "y": 110
+                    }
+                ]
+            },
+            {
+                "name": "Gobs: Kill Tracker Fezk",
+                "sections": [
+                    {
+                        "name": "Gobs: Kill Tracker Fezk"
+                    }
+                ],
+                "visibility_rules": [
+                    "killsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
+                "map_locations": [
+                    {
+                        "map": "goblin_camp",
+                        "x": 647,
+                        "y": 398
                     }
                 ]
             },
@@ -5634,6 +7198,111 @@
                 ]
             },
             {
+                "name": "Gobs: Kill Tracker Tizg",
+                "sections": [
+                    {
+                        "name": "Gobs: Kill Tracker Tizg"
+                    }
+                ],
+                "visibility_rules": [
+                    "killsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
+                "map_locations": [
+                    {
+                        "map": "goblin_camp",
+                        "x": 618,
+                        "y": 396
+                    }
+                ]
+            },
+            {
+                "name": "Gobs: Kill Tracker Tozad",
+                "sections": [
+                    {
+                        "name": "Gobs: Kill Tracker Tozad"
+                    }
+                ],
+                "visibility_rules": [
+                    "killsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
+                "map_locations": [
+                    {
+                        "map": "goblin_camp",
+                        "x": 701,
+                        "y": 294
+                    }
+                ]
+            },
+            {
+                "name": "Gobs: Kill True Soul Gut",
+                "sections": [
+                    {
+                        "name": "Gobs: Kill True Soul Gut"
+                    }
+                ],
+                "visibility_rules": [
+                    "killsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
+                "map_locations": [
+                    {
+                        "map": "goblin_camp",
+                        "x": 638,
+                        "y": 289
+                    }
+                ]
+            },
+            {
+                "name": "Gobs: Kill Warlock Bolt",
+                "sections": [
+                    {
+                        "name": "Gobs: Kill Warlock Bolt"
+                    }
+                ],
+                "visibility_rules": [
+                    "killsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
+                "map_locations": [
+                    {
+                        "map": "goblin_camp",
+                        "x": 664,
+                        "y": 132
+                    }
+                ]
+            },
+            {
+                "name": "Gobs: Kill Warlock Greez",
+                "sections": [
+                    {
+                        "name": "Gobs: Kill Warlock Greez"
+                    }
+                ],
+                "visibility_rules": [
+                    "killsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
+                "map_locations": [
+                    {
+                        "map": "goblin_camp",
+                        "x": 648,
+                        "y": 316
+                    }
+                ]
+            },
+            {
                 "name": "Gobs: Kill Warlock Gurk",
                 "sections": [
                     {
@@ -5666,6 +7335,111 @@
                         "map": "goblin_camp",
                         "x": 195,
                         "y": 450
+                    }
+                ]
+            },
+            {
+                "name": "Gobs: Kill Warrior Bez",
+                "sections": [
+                    {
+                        "name": "Gobs: Kill Warrior Bez"
+                    }
+                ],
+                "visibility_rules": [
+                    "killsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
+                "map_locations": [
+                    {
+                        "map": "goblin_camp",
+                        "x": 663,
+                        "y": 226
+                    }
+                ]
+            },
+            {
+                "name": "Gobs: Kill Warrior Clack",
+                "sections": [
+                    {
+                        "name": "Gobs: Kill Warrior Clack"
+                    }
+                ],
+                "visibility_rules": [
+                    "killsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
+                "map_locations": [
+                    {
+                        "map": "goblin_camp",
+                        "x": 537,
+                        "y": 193
+                    }
+                ]
+            },
+            {
+                "name": "Gobs: Kill Warrior Druk",
+                "sections": [
+                    {
+                        "name": "Gobs: Kill Warrior Druk"
+                    }
+                ],
+                "visibility_rules": [
+                    "killsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
+                "map_locations": [
+                    {
+                        "map": "goblin_camp",
+                        "x": 603,
+                        "y": 209
+                    }
+                ]
+            },
+            {
+                "name": "Gobs: Kill Warrior Huk",
+                "sections": [
+                    {
+                        "name": "Gobs: Kill Warrior Huk"
+                    }
+                ],
+                "visibility_rules": [
+                    "killsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
+                "map_locations": [
+                    {
+                        "map": "goblin_camp",
+                        "x": 663,
+                        "y": 161
+                    }
+                ]
+            },
+            {
+                "name": "Gobs: Kill Warrior Nrog",
+                "sections": [
+                    {
+                        "name": "Gobs: Kill Warrior Nrog"
+                    }
+                ],
+                "visibility_rules": [
+                    "killsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
+                "map_locations": [
+                    {
+                        "map": "goblin_camp",
+                        "x": 630,
+                        "y": 423
                     }
                 ]
             },
@@ -5704,1550 +7478,6 @@
                         "y": 233
                     }
                 ]
-            }
-        ],
-        "access_rules": [
-            "level_fragment:8"
-        ]
-    },
-    {
-        "name": "Shattered Sanctum",
-        "children": [
-            {
-                "name": "Shattered Sanctum (Overview)",
-                "sections": [
-                    {
-                        "ref": "Shattered Sanctum/Grove: Open the Vault/Grove: Open the Vault",
-                        "name": "Grove: Open the Vault"
-                    },
-                    {
-                        "ref": "Shattered Sanctum/Gobs-Halsin: Found Halsin/Gobs-Halsin: Found Halsin",
-                        "name": "Gobs-Halsin: Found Halsin"
-                    },
-                    {
-                        "ref": "Shattered Sanctum/Gobs-Halsin: Tell Tieflings about Halsin's Freedom/Gobs-Halsin: Tell Tieflings about Halsin's Freedom",
-                        "name": "Gobs-Halsin: Tell Tieflings about Halsin's Freedom"
-                    },
-                    {
-                        "ref": "Shattered Sanctum/Gobs-Halsin: Celebrate with Tieflings/Gobs-Halsin: Celebrate with Tieflings",
-                        "name": "Gobs-Halsin: Celebrate with Tieflings"
-                    },
-                    {
-                        "ref": "Shattered Sanctum/Gobs-Halsin: Tieflings left for Baldur's Gate/Gobs-Halsin: Tieflings left for Baldur's Gate",
-                        "name": "Gobs-Halsin: Tieflings left for Baldur's Gate"
-                    },
-                    {
-                        "ref": "Shattered Sanctum/Gobs-Halsin: Defeated all Goblin Leaders/Gobs-Halsin: Defeated all Goblin Leaders",
-                        "name": "Gobs-Halsin: Defeated all Goblin Leaders"
-                    },
-                    {
-                        "ref": "Shattered Sanctum/Gobs: Kill Priestess Gut/Gobs: Kill Priestess Gut",
-                        "name": "Gobs: Kill Priestess Gut"
-                    },
-                    {
-                        "ref": "Shattered Sanctum/Gobs: Kill the Leader, Dror Ragzlin/Gobs: Kill the Leader, Dror Ragzlin",
-                        "name": "Gobs: Kill the Leader, Dror Ragzlin"
-                    },
-                    {
-                        "ref": "Shattered Sanctum/Gobs: Defeat (Knock Out) Minthara/Gobs: Defeat (Knock Out) Minthara",
-                        "name": "Gobs: Defeat (Knock Out) Minthara"
-                    },
-                    {
-                        "ref": "Shattered Sanctum/Gobs: Learn the Priestess' Name/Gobs: Learn the Priestess' Name",
-                        "name": "Gobs: Learn the Priestess' Name"
-                    },
-                    {
-                        "ref": "Shattered Sanctum/Gobs: Learn the Drow's Name/Gobs: Learn the Drow's Name",
-                        "name": "Gobs: Learn the Drow's Name"
-                    },
-                    {
-                        "ref": "Shattered Sanctum/Gobs: Learn the King's Name/Gobs: Learn the King's Name",
-                        "name": "Gobs: Learn the King's Name"
-                    },
-                    {
-                        "ref": "Shattered Sanctum/Gobs-Halsin: Tell Halsin about Victory/Gobs-Halsin: Tell Halsin about Victory",
-                        "name": "Gobs-Halsin: Tell Halsin about Victory"
-                    },
-                    {
-                        "ref": "Shattered Sanctum/Gobs-Halsin: Learn Halsin is a Bear/Gobs-Halsin: Learn Halsin is a Bear",
-                        "name": "Gobs-Halsin: Learn Halsin is a Bear"
-                    },
-                    {
-                        "ref": "Shattered Sanctum/Gobs-Halsin: Get Reward from Rath/Gobs-Halsin: Get Reward from Rath",
-                        "name": "Gobs-Halsin: Get Reward from Rath"
-                    },
-                    {
-                        "ref": "Shattered Sanctum/Grove-Sazza: Find Sazza at Minthara/Grove-Sazza: Find Sazza at Minthara",
-                        "name": "Grove-Sazza: Find Sazza at Minthara"
-                    },
-                    {
-                        "ref": "Shattered Sanctum/Grove-Sazza: Save Sazza Again/Grove-Sazza: Save Sazza Again",
-                        "name": "Grove-Sazza: Save Sazza Again"
-                    },
-                    {
-                        "ref": "Shattered Sanctum/Gobs-Volo: Find Volo in Cage/Gobs-Volo: Find Volo in Cage",
-                        "name": "Gobs-Volo: Find Volo in Cage"
-                    },
-                    {
-                        "ref": "Shattered Sanctum/Gobs-Volo: Free Volo/Gobs-Volo: Free Volo",
-                        "name": "Gobs-Volo: Free Volo"
-                    },
-                    {
-                        "ref": "Shattered Sanctum/Gobs-Volo: Meet Volo in Camp/Gobs-Volo: Meet Volo in Camp",
-                        "name": "Gobs-Volo: Meet Volo in Camp"
-                    },
-                    {
-                        "ref": "Shattered Sanctum/Grove-Idol: Steal the Idol/Grove-Idol: Steal the Idol",
-                        "name": "Grove-Idol: Steal the Idol"
-                    },
-                    {
-                        "ref": "Shattered Sanctum/Grove-Idol: Give Idol to Mol/Grove-Idol: Give Idol to Mol",
-                        "name": "Grove-Idol: Give Idol to Mol"
-                    },
-                    {
-                        "ref": "Shattered Sanctum/Gobs-Nightsong: Find Clues to Nightsong/Gobs-Nightsong: Find Clues to Nightsong",
-                        "name": "Gobs-Nightsong: Find Clues to Nightsong"
-                    },
-                    {
-                        "ref": "Shattered Sanctum/Plot-Art: Hear Minthara talk about Artefact/Plot-Art: Hear Minthara talk about Artefact",
-                        "name": "Plot-Art: Hear Minthara talk about Artefact"
-                    },
-                    {
-                        "ref": "Shattered Sanctum/Plot-Art: Hear Ragzlin talk about Artefact/Plot-Art: Hear Ragzlin talk about Artefact",
-                        "name": "Plot-Art: Hear Ragzlin talk about Artefact"
-                    },
-                    {
-                        "ref": "Shattered Sanctum/Gobs-Halsin: Tell Ormn that Halsin was Saved/Gobs-Halsin: Tell Ormn that Halsin was Saved",
-                        "name": "Gobs-Halsin: Tell Ormn that Halsin was Saved"
-                    },
-                    {
-                        "ref": "Shattered Sanctum/Gobs: Scry with Ragzlin/Gobs: Scry with Ragzlin",
-                        "name": "Gobs: Scry with Ragzlin"
-                    },
-                    {
-                        "ref": "Shattered Sanctum/Gobs: Free Brakkal/Gobs: Free Brakkal",
-                        "name": "Gobs: Free Brakkal"
-                    },
-                    {
-                        "ref": "Shattered Sanctum/Gobs: Experience Abdirak's Penance/Gobs: Experience Abdirak's Penance",
-                        "name": "Gobs: Experience Abdirak's Penance"
-                    },
-                    {
-                        "ref": "Shattered Sanctum/Gobs: Find Moon Puzzle in Temple/Gobs: Find Moon Puzzle in Temple",
-                        "name": "Gobs: Find Moon Puzzle in Temple"
-                    },
-                    {
-                        "ref": "Shattered Sanctum/Gobs: Solve Moon Puzzle in Temple/Gobs: Solve Moon Puzzle in Temple",
-                        "name": "Gobs: Solve Moon Puzzle in Temple"
-                    },
-                    {
-                        "ref": "Shattered Sanctum/Gobs: Free Liam/Gobs: Free Liam",
-                        "name": "Gobs: Free Liam"
-                    },
-                    {
-                        "ref": "Shattered Sanctum/Gobs: Kill Booyahg Gnat/Gobs: Kill Booyahg Gnat",
-                        "name": "Gobs: Kill Booyahg Gnat"
-                    },
-                    {
-                        "ref": "Shattered Sanctum/Gobs: Kill Booyahg Shekt/Gobs: Kill Booyahg Shekt",
-                        "name": "Gobs: Kill Booyahg Shekt"
-                    },
-                    {
-                        "ref": "Shattered Sanctum/Gobs: Kill Brawler Gurd/Gobs: Kill Brawler Gurd",
-                        "name": "Gobs: Kill Brawler Gurd"
-                    },
-                    {
-                        "ref": "Shattered Sanctum/Gobs: Kill Devout Cry/Gobs: Kill Devout Cry",
-                        "name": "Gobs: Kill Devout Cry"
-                    },
-                    {
-                        "ref": "Shattered Sanctum/Gobs: Kill Devout Mrak/Gobs: Kill Devout Mrak",
-                        "name": "Gobs: Kill Devout Mrak"
-                    },
-                    {
-                        "ref": "Shattered Sanctum/Gobs: Kill Devout Muzul/Gobs: Kill Devout Muzul",
-                        "name": "Gobs: Kill Devout Muzul"
-                    },
-                    {
-                        "ref": "Shattered Sanctum/Gobs: Kill Dror Ragzlin/Gobs: Kill Dror Ragzlin",
-                        "name": "Gobs: Kill Dror Ragzlin"
-                    },
-                    {
-                        "ref": "Shattered Sanctum/Gobs: Kill Larger Giant Spider/Gobs: Kill Larger Giant Spider",
-                        "name": "Gobs: Kill Larger Giant Spider"
-                    },
-                    {
-                        "ref": "Shattered Sanctum/Gobs: Kill Lookout Grush/Gobs: Kill Lookout Grush",
-                        "name": "Gobs: Kill Lookout Grush"
-                    },
-                    {
-                        "ref": "Shattered Sanctum/Gobs: Kill Polma/Gobs: Kill Polma",
-                        "name": "Gobs: Kill Polma"
-                    },
-                    {
-                        "ref": "Shattered Sanctum/Gobs: Kill Rozzak/Gobs: Kill Rozzak",
-                        "name": "Gobs: Kill Rozzak"
-                    },
-                    {
-                        "ref": "Shattered Sanctum/Gobs: Kill Scrying Eye/Gobs: Kill Scrying Eye",
-                        "name": "Gobs: Kill Scrying Eye"
-                    },
-                    {
-                        "ref": "Shattered Sanctum/Gobs: Kill Sharp Eye Zami/Gobs: Kill Sharp Eye Zami",
-                        "name": "Gobs: Kill Sharp Eye Zami"
-                    },
-                    {
-                        "ref": "Shattered Sanctum/Gobs: Kill Sharp-Eye Eef/Gobs: Kill Sharp-Eye Eef",
-                        "name": "Gobs: Kill Sharp-Eye Eef"
-                    },
-                    {
-                        "ref": "Shattered Sanctum/Gobs: Kill Sharp-Eye Gruz/Gobs: Kill Sharp-Eye Gruz",
-                        "name": "Gobs: Kill Sharp-Eye Gruz"
-                    },
-                    {
-                        "ref": "Shattered Sanctum/Gobs: Kill Sharp-Eye Nass/Gobs: Kill Sharp-Eye Nass",
-                        "name": "Gobs: Kill Sharp-Eye Nass"
-                    },
-                    {
-                        "ref": "Shattered Sanctum/Gobs: Kill Sharp-Eye Neem/Gobs: Kill Sharp-Eye Neem",
-                        "name": "Gobs: Kill Sharp-Eye Neem"
-                    },
-                    {
-                        "ref": "Shattered Sanctum/Gobs: Kill Sharp-Eye Nozk/Gobs: Kill Sharp-Eye Nozk",
-                        "name": "Gobs: Kill Sharp-Eye Nozk"
-                    },
-                    {
-                        "ref": "Shattered Sanctum/Gobs: Kill Sharp-Eye Roo/Gobs: Kill Sharp-Eye Roo",
-                        "name": "Gobs: Kill Sharp-Eye Roo"
-                    },
-                    {
-                        "ref": "Shattered Sanctum/Gobs: Kill Skrut/Gobs: Kill Skrut",
-                        "name": "Gobs: Kill Skrut"
-                    },
-                    {
-                        "ref": "Shattered Sanctum/Gobs: Kill Smaller Giant Spider/Gobs: Kill Smaller Giant Spider",
-                        "name": "Gobs: Kill Smaller Giant Spider"
-                    },
-                    {
-                        "ref": "Shattered Sanctum/Gobs: Kill Torturer Spike/Gobs: Kill Torturer Spike",
-                        "name": "Gobs: Kill Torturer Spike"
-                    },
-                    {
-                        "ref": "Shattered Sanctum/Gobs: Kill Tracker Azak/Gobs: Kill Tracker Azak",
-                        "name": "Gobs: Kill Tracker Azak"
-                    },
-                    {
-                        "ref": "Shattered Sanctum/Gobs: Kill Tracker Fezk/Gobs: Kill Tracker Fezk",
-                        "name": "Gobs: Kill Tracker Fezk"
-                    },
-                    {
-                        "ref": "Shattered Sanctum/Gobs: Kill Tracker Tizg/Gobs: Kill Tracker Tizg",
-                        "name": "Gobs: Kill Tracker Tizg"
-                    },
-                    {
-                        "ref": "Shattered Sanctum/Gobs: Kill Tracker Tozad/Gobs: Kill Tracker Tozad",
-                        "name": "Gobs: Kill Tracker Tozad"
-                    },
-                    {
-                        "ref": "Shattered Sanctum/Gobs: Kill True Soul Gut/Gobs: Kill True Soul Gut",
-                        "name": "Gobs: Kill True Soul Gut"
-                    },
-                    {
-                        "ref": "Shattered Sanctum/Gobs: Kill Warlock Bolt/Gobs: Kill Warlock Bolt",
-                        "name": "Gobs: Kill Warlock Bolt"
-                    },
-                    {
-                        "ref": "Shattered Sanctum/Gobs: Kill Warlock Greez/Gobs: Kill Warlock Greez",
-                        "name": "Gobs: Kill Warlock Greez"
-                    },
-                    {
-                        "ref": "Shattered Sanctum/Gobs: Kill Warrior Bez/Gobs: Kill Warrior Bez",
-                        "name": "Gobs: Kill Warrior Bez"
-                    },
-                    {
-                        "ref": "Shattered Sanctum/Gobs: Kill Warrior Clack/Gobs: Kill Warrior Clack",
-                        "name": "Gobs: Kill Warrior Clack"
-                    },
-                    {
-                        "ref": "Shattered Sanctum/Gobs: Kill Warrior Druk/Gobs: Kill Warrior Druk",
-                        "name": "Gobs: Kill Warrior Druk"
-                    },
-                    {
-                        "ref": "Shattered Sanctum/Gobs: Kill Warrior Huk/Gobs: Kill Warrior Huk",
-                        "name": "Gobs: Kill Warrior Huk"
-                    },
-                    {
-                        "ref": "Shattered Sanctum/Gobs: Kill Warrior Nrog/Gobs: Kill Warrior Nrog",
-                        "name": "Gobs: Kill Warrior Nrog"
-                    },
-                    {
-                        "ref": "Shattered Sanctum/Gobs: Kill Warrior Trinzas/Gobs: Kill Warrior Trinzas",
-                        "name": "Gobs: Kill Warrior Trinzas"
-                    },
-                    {
-                        "ref": "Shattered Sanctum/Gobs: Kill Zurga/Gobs: Kill Zurga",
-                        "name": "Gobs: Kill Zurga"
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "act1_overworld",
-                        "x": 1932,
-                        "y": 1238
-                    }
-                ]
-            },
-            {
-                "name": "Grove: Open the Vault",
-                "sections": [
-                    {
-                        "name": "Grove: Open the Vault",
-                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
-                        "chest_opened_img": "images/items/quest_marker_opened.png"
-                    }
-                ],
-                "visibility_rules": [
-                    "questsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "inside_goblin_camp",
-                        "x": 32,
-                        "y": 536
-                    }
-                ]
-            },
-            {
-                "name": "Gobs-Halsin: Found Halsin",
-                "sections": [
-                    {
-                        "name": "Gobs-Halsin: Found Halsin",
-                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
-                        "chest_opened_img": "images/items/quest_marker_opened.png"
-                    }
-                ],
-                "visibility_rules": [
-                    "questsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "inside_goblin_camp",
-                        "x": 64,
-                        "y": 536
-                    }
-                ]
-            },
-            {
-                "name": "Gobs-Halsin: Tell Tieflings about Halsin's Freedom",
-                "sections": [
-                    {
-                        "name": "Gobs-Halsin: Tell Tieflings about Halsin's Freedom",
-                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
-                        "chest_opened_img": "images/items/quest_marker_opened.png"
-                    }
-                ],
-                "visibility_rules": [
-                    "questsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "inside_goblin_camp",
-                        "x": 96,
-                        "y": 536
-                    }
-                ]
-            },
-            {
-                "name": "Gobs-Halsin: Celebrate with Tieflings",
-                "sections": [
-                    {
-                        "name": "Gobs-Halsin: Celebrate with Tieflings",
-                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
-                        "chest_opened_img": "images/items/quest_marker_opened.png"
-                    }
-                ],
-                "visibility_rules": [
-                    "questsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "inside_goblin_camp",
-                        "x": 128,
-                        "y": 536
-                    }
-                ]
-            },
-            {
-                "name": "Gobs-Halsin: Tieflings left for Baldur's Gate",
-                "sections": [
-                    {
-                        "name": "Gobs-Halsin: Tieflings left for Baldur's Gate",
-                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
-                        "chest_opened_img": "images/items/quest_marker_opened.png"
-                    }
-                ],
-                "visibility_rules": [
-                    "questsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "inside_goblin_camp",
-                        "x": 160,
-                        "y": 536
-                    }
-                ]
-            },
-            {
-                "name": "Gobs-Halsin: Defeated all Goblin Leaders",
-                "sections": [
-                    {
-                        "name": "Gobs-Halsin: Defeated all Goblin Leaders",
-                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
-                        "chest_opened_img": "images/items/quest_marker_opened.png"
-                    }
-                ],
-                "visibility_rules": [
-                    "questsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "inside_goblin_camp",
-                        "x": 192,
-                        "y": 536
-                    }
-                ]
-            },
-            {
-                "name": "Gobs: Kill Priestess Gut",
-                "sections": [
-                    {
-                        "name": "Gobs: Kill Priestess Gut",
-                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
-                        "chest_opened_img": "images/items/quest_marker_opened.png"
-                    }
-                ],
-                "visibility_rules": [
-                    "questsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "inside_goblin_camp",
-                        "x": 224,
-                        "y": 536
-                    }
-                ]
-            },
-            {
-                "name": "Gobs: Kill the Leader, Dror Ragzlin",
-                "sections": [
-                    {
-                        "name": "Gobs: Kill the Leader, Dror Ragzlin",
-                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
-                        "chest_opened_img": "images/items/quest_marker_opened.png"
-                    }
-                ],
-                "visibility_rules": [
-                    "questsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "inside_goblin_camp",
-                        "x": 256,
-                        "y": 536
-                    }
-                ]
-            },
-            {
-                "name": "Gobs: Defeat (Knock Out) Minthara",
-                "sections": [
-                    {
-                        "name": "Gobs: Defeat (Knock Out) Minthara",
-                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
-                        "chest_opened_img": "images/items/quest_marker_opened.png"
-                    }
-                ],
-                "visibility_rules": [
-                    "questsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "inside_goblin_camp",
-                        "x": 288,
-                        "y": 536
-                    }
-                ]
-            },
-            {
-                "name": "Gobs: Learn the Priestess' Name",
-                "sections": [
-                    {
-                        "name": "Gobs: Learn the Priestess' Name",
-                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
-                        "chest_opened_img": "images/items/quest_marker_opened.png"
-                    }
-                ],
-                "visibility_rules": [
-                    "questsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "inside_goblin_camp",
-                        "x": 320,
-                        "y": 536
-                    }
-                ]
-            },
-            {
-                "name": "Gobs: Learn the Drow's Name",
-                "sections": [
-                    {
-                        "name": "Gobs: Learn the Drow's Name",
-                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
-                        "chest_opened_img": "images/items/quest_marker_opened.png"
-                    }
-                ],
-                "visibility_rules": [
-                    "questsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "inside_goblin_camp",
-                        "x": 352,
-                        "y": 536
-                    }
-                ]
-            },
-            {
-                "name": "Gobs: Learn the King's Name",
-                "sections": [
-                    {
-                        "name": "Gobs: Learn the King's Name",
-                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
-                        "chest_opened_img": "images/items/quest_marker_opened.png"
-                    }
-                ],
-                "visibility_rules": [
-                    "questsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "inside_goblin_camp",
-                        "x": 384,
-                        "y": 536
-                    }
-                ]
-            },
-            {
-                "name": "Gobs-Halsin: Tell Halsin about Victory",
-                "sections": [
-                    {
-                        "name": "Gobs-Halsin: Tell Halsin about Victory",
-                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
-                        "chest_opened_img": "images/items/quest_marker_opened.png"
-                    }
-                ],
-                "visibility_rules": [
-                    "questsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "inside_goblin_camp",
-                        "x": 416,
-                        "y": 536
-                    }
-                ]
-            },
-            {
-                "name": "Gobs-Halsin: Learn Halsin is a Bear",
-                "sections": [
-                    {
-                        "name": "Gobs-Halsin: Learn Halsin is a Bear",
-                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
-                        "chest_opened_img": "images/items/quest_marker_opened.png"
-                    }
-                ],
-                "visibility_rules": [
-                    "questsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "inside_goblin_camp",
-                        "x": 448,
-                        "y": 536
-                    }
-                ]
-            },
-            {
-                "name": "Gobs-Halsin: Get Reward from Rath",
-                "sections": [
-                    {
-                        "name": "Gobs-Halsin: Get Reward from Rath",
-                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
-                        "chest_opened_img": "images/items/quest_marker_opened.png"
-                    }
-                ],
-                "visibility_rules": [
-                    "questsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "inside_goblin_camp",
-                        "x": 480,
-                        "y": 536
-                    }
-                ]
-            },
-            {
-                "name": "Grove-Sazza: Find Sazza at Minthara",
-                "sections": [
-                    {
-                        "name": "Grove-Sazza: Find Sazza at Minthara",
-                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
-                        "chest_opened_img": "images/items/quest_marker_opened.png"
-                    }
-                ],
-                "visibility_rules": [
-                    "questsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "inside_goblin_camp",
-                        "x": 512,
-                        "y": 536
-                    }
-                ]
-            },
-            {
-                "name": "Grove-Sazza: Save Sazza Again",
-                "sections": [
-                    {
-                        "name": "Grove-Sazza: Save Sazza Again",
-                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
-                        "chest_opened_img": "images/items/quest_marker_opened.png"
-                    }
-                ],
-                "visibility_rules": [
-                    "questsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "inside_goblin_camp",
-                        "x": 544,
-                        "y": 536
-                    }
-                ]
-            },
-            {
-                "name": "Gobs-Volo: Find Volo in Cage",
-                "sections": [
-                    {
-                        "name": "Gobs-Volo: Find Volo in Cage",
-                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
-                        "chest_opened_img": "images/items/quest_marker_opened.png"
-                    }
-                ],
-                "visibility_rules": [
-                    "questsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "inside_goblin_camp",
-                        "x": 576,
-                        "y": 536
-                    }
-                ]
-            },
-            {
-                "name": "Gobs-Volo: Free Volo",
-                "sections": [
-                    {
-                        "name": "Gobs-Volo: Free Volo",
-                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
-                        "chest_opened_img": "images/items/quest_marker_opened.png"
-                    }
-                ],
-                "visibility_rules": [
-                    "questsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "inside_goblin_camp",
-                        "x": 608,
-                        "y": 536
-                    }
-                ]
-            },
-            {
-                "name": "Gobs-Volo: Meet Volo in Camp",
-                "sections": [
-                    {
-                        "name": "Gobs-Volo: Meet Volo in Camp",
-                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
-                        "chest_opened_img": "images/items/quest_marker_opened.png"
-                    }
-                ],
-                "visibility_rules": [
-                    "questsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "inside_goblin_camp",
-                        "x": 640,
-                        "y": 536
-                    }
-                ]
-            },
-            {
-                "name": "Grove-Idol: Steal the Idol",
-                "sections": [
-                    {
-                        "name": "Grove-Idol: Steal the Idol",
-                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
-                        "chest_opened_img": "images/items/quest_marker_opened.png"
-                    }
-                ],
-                "visibility_rules": [
-                    "questsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "inside_goblin_camp",
-                        "x": 672,
-                        "y": 536
-                    }
-                ]
-            },
-            {
-                "name": "Grove-Idol: Give Idol to Mol",
-                "sections": [
-                    {
-                        "name": "Grove-Idol: Give Idol to Mol",
-                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
-                        "chest_opened_img": "images/items/quest_marker_opened.png"
-                    }
-                ],
-                "visibility_rules": [
-                    "questsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "inside_goblin_camp",
-                        "x": 704,
-                        "y": 536
-                    }
-                ]
-            },
-            {
-                "name": "Gobs-Nightsong: Find Clues to Nightsong",
-                "sections": [
-                    {
-                        "name": "Gobs-Nightsong: Find Clues to Nightsong",
-                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
-                        "chest_opened_img": "images/items/quest_marker_opened.png"
-                    }
-                ],
-                "visibility_rules": [
-                    "questsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "inside_goblin_camp",
-                        "x": 736,
-                        "y": 536
-                    }
-                ]
-            },
-            {
-                "name": "Plot-Art: Hear Minthara talk about Artefact",
-                "sections": [
-                    {
-                        "name": "Plot-Art: Hear Minthara talk about Artefact",
-                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
-                        "chest_opened_img": "images/items/quest_marker_opened.png"
-                    }
-                ],
-                "visibility_rules": [
-                    "questsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "inside_goblin_camp",
-                        "x": 768,
-                        "y": 536
-                    }
-                ]
-            },
-            {
-                "name": "Plot-Art: Hear Ragzlin talk about Artefact",
-                "sections": [
-                    {
-                        "name": "Plot-Art: Hear Ragzlin talk about Artefact",
-                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
-                        "chest_opened_img": "images/items/quest_marker_opened.png"
-                    }
-                ],
-                "visibility_rules": [
-                    "questsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "inside_goblin_camp",
-                        "x": 800,
-                        "y": 536
-                    }
-                ]
-            },
-            {
-                "name": "Gobs-Halsin: Tell Ormn that Halsin was Saved",
-                "sections": [
-                    {
-                        "name": "Gobs-Halsin: Tell Ormn that Halsin was Saved",
-                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
-                        "chest_opened_img": "images/items/quest_marker_opened.png"
-                    }
-                ],
-                "visibility_rules": [
-                    "questsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "inside_goblin_camp",
-                        "x": 832,
-                        "y": 536
-                    }
-                ]
-            },
-            {
-                "name": "Gobs: Scry with Ragzlin",
-                "sections": [
-                    {
-                        "name": "Gobs: Scry with Ragzlin",
-                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
-                        "chest_opened_img": "images/items/quest_marker_opened.png"
-                    }
-                ],
-                "visibility_rules": [
-                    "questsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "inside_goblin_camp",
-                        "x": 864,
-                        "y": 536
-                    }
-                ]
-            },
-            {
-                "name": "Gobs: Free Brakkal",
-                "sections": [
-                    {
-                        "name": "Gobs: Free Brakkal",
-                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
-                        "chest_opened_img": "images/items/quest_marker_opened.png"
-                    }
-                ],
-                "visibility_rules": [
-                    "questsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "inside_goblin_camp",
-                        "x": 896,
-                        "y": 536
-                    }
-                ]
-            },
-            {
-                "name": "Gobs: Experience Abdirak's Penance",
-                "sections": [
-                    {
-                        "name": "Gobs: Experience Abdirak's Penance",
-                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
-                        "chest_opened_img": "images/items/quest_marker_opened.png"
-                    }
-                ],
-                "visibility_rules": [
-                    "questsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "inside_goblin_camp",
-                        "x": 928,
-                        "y": 536
-                    }
-                ]
-            },
-            {
-                "name": "Gobs: Find Moon Puzzle in Temple",
-                "sections": [
-                    {
-                        "name": "Gobs: Find Moon Puzzle in Temple",
-                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
-                        "chest_opened_img": "images/items/quest_marker_opened.png"
-                    }
-                ],
-                "visibility_rules": [
-                    "questsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "inside_goblin_camp",
-                        "x": 32,
-                        "y": 568
-                    }
-                ]
-            },
-            {
-                "name": "Gobs: Solve Moon Puzzle in Temple",
-                "sections": [
-                    {
-                        "name": "Gobs: Solve Moon Puzzle in Temple",
-                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
-                        "chest_opened_img": "images/items/quest_marker_opened.png"
-                    }
-                ],
-                "visibility_rules": [
-                    "questsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "inside_goblin_camp",
-                        "x": 64,
-                        "y": 568
-                    }
-                ]
-            },
-            {
-                "name": "Gobs: Free Liam",
-                "sections": [
-                    {
-                        "name": "Gobs: Free Liam",
-                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
-                        "chest_opened_img": "images/items/quest_marker_opened.png"
-                    }
-                ],
-                "visibility_rules": [
-                    "questsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "inside_goblin_camp",
-                        "x": 96,
-                        "y": 568
-                    }
-                ]
-            },
-            {
-                "name": "Gobs: Kill Booyahg Gnat",
-                "sections": [
-                    {
-                        "name": "Gobs: Kill Booyahg Gnat"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "inside_goblin_camp",
-                        "x": 406,
-                        "y": 149
-                    }
-                ]
-            },
-            {
-                "name": "Gobs: Kill Booyahg Shekt",
-                "sections": [
-                    {
-                        "name": "Gobs: Kill Booyahg Shekt"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "inside_goblin_camp",
-                        "x": 408,
-                        "y": 286
-                    }
-                ]
-            },
-            {
-                "name": "Gobs: Kill Brawler Gurd",
-                "sections": [
-                    {
-                        "name": "Gobs: Kill Brawler Gurd"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "inside_goblin_camp",
-                        "x": 324,
-                        "y": 161
-                    }
-                ]
-            },
-            {
-                "name": "Gobs: Kill Devout Cry",
-                "sections": [
-                    {
-                        "name": "Gobs: Kill Devout Cry"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "inside_goblin_camp",
-                        "x": 344,
-                        "y": 138
-                    }
-                ]
-            },
-            {
-                "name": "Gobs: Kill Devout Mrak",
-                "sections": [
-                    {
-                        "name": "Gobs: Kill Devout Mrak"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "inside_goblin_camp",
-                        "x": 336,
-                        "y": 305
-                    }
-                ]
-            },
-            {
-                "name": "Gobs: Kill Devout Muzul",
-                "sections": [
-                    {
-                        "name": "Gobs: Kill Devout Muzul"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "inside_goblin_camp",
-                        "x": 364,
-                        "y": 313
-                    }
-                ]
-            },
-            {
-                "name": "Gobs: Kill Dror Ragzlin",
-                "sections": [
-                    {
-                        "name": "Gobs: Kill Dror Ragzlin"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "inside_goblin_camp",
-                        "x": 385,
-                        "y": 98
-                    }
-                ]
-            },
-            {
-                "name": "Gobs: Kill Larger Giant Spider",
-                "sections": [
-                    {
-                        "name": "Gobs: Kill Larger Giant Spider"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "inside_goblin_camp",
-                        "x": 365,
-                        "y": 158
-                    }
-                ]
-            },
-            {
-                "name": "Gobs: Kill Lookout Grush",
-                "sections": [
-                    {
-                        "name": "Gobs: Kill Lookout Grush"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "inside_goblin_camp",
-                        "x": 497,
-                        "y": 362
-                    }
-                ]
-            },
-            {
-                "name": "Gobs: Kill Polma",
-                "sections": [
-                    {
-                        "name": "Gobs: Kill Polma"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "inside_goblin_camp",
-                        "x": 670,
-                        "y": 193
-                    }
-                ]
-            },
-            {
-                "name": "Gobs: Kill Rozzak",
-                "sections": [
-                    {
-                        "name": "Gobs: Kill Rozzak"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "inside_goblin_camp",
-                        "x": 500,
-                        "y": 101
-                    }
-                ]
-            },
-            {
-                "name": "Gobs: Kill Scrying Eye",
-                "sections": [
-                    {
-                        "name": "Gobs: Kill Scrying Eye"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "inside_goblin_camp",
-                        "x": 481,
-                        "y": 181
-                    }
-                ]
-            },
-            {
-                "name": "Gobs: Kill Sharp Eye Zami",
-                "sections": [
-                    {
-                        "name": "Gobs: Kill Sharp Eye Zami"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "inside_goblin_camp",
-                        "x": 305,
-                        "y": 183
-                    }
-                ]
-            },
-            {
-                "name": "Gobs: Kill Sharp-Eye Eef",
-                "sections": [
-                    {
-                        "name": "Gobs: Kill Sharp-Eye Eef"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "inside_goblin_camp",
-                        "x": 526,
-                        "y": 190
-                    }
-                ]
-            },
-            {
-                "name": "Gobs: Kill Sharp-Eye Gruz",
-                "sections": [
-                    {
-                        "name": "Gobs: Kill Sharp-Eye Gruz"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "inside_goblin_camp",
-                        "x": 345,
-                        "y": 439
-                    }
-                ]
-            },
-            {
-                "name": "Gobs: Kill Sharp-Eye Nass",
-                "sections": [
-                    {
-                        "name": "Gobs: Kill Sharp-Eye Nass"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "inside_goblin_camp",
-                        "x": 533,
-                        "y": 162
-                    }
-                ]
-            },
-            {
-                "name": "Gobs: Kill Sharp-Eye Neem",
-                "sections": [
-                    {
-                        "name": "Gobs: Kill Sharp-Eye Neem"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "inside_goblin_camp",
-                        "x": 503,
-                        "y": 162
-                    }
-                ]
-            },
-            {
-                "name": "Gobs: Kill Sharp-Eye Nozk",
-                "sections": [
-                    {
-                        "name": "Gobs: Kill Sharp-Eye Nozk"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "inside_goblin_camp",
-                        "x": 417,
-                        "y": 434
-                    }
-                ]
-            },
-            {
-                "name": "Gobs: Kill Sharp-Eye Roo",
-                "sections": [
-                    {
-                        "name": "Gobs: Kill Sharp-Eye Roo"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "inside_goblin_camp",
-                        "x": 360,
-                        "y": 114
-                    }
-                ]
-            },
-            {
-                "name": "Gobs: Kill Skrut",
-                "sections": [
-                    {
-                        "name": "Gobs: Kill Skrut"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "inside_goblin_camp",
-                        "x": 454,
-                        "y": 148
-                    }
-                ]
-            },
-            {
-                "name": "Gobs: Kill Smaller Giant Spider",
-                "sections": [
-                    {
-                        "name": "Gobs: Kill Smaller Giant Spider"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "inside_goblin_camp",
-                        "x": 390,
-                        "y": 173
-                    }
-                ]
-            },
-            {
-                "name": "Gobs: Kill Torturer Spike",
-                "sections": [
-                    {
-                        "name": "Gobs: Kill Torturer Spike"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "inside_goblin_camp",
-                        "x": 497,
-                        "y": 333
-                    }
-                ]
-            },
-            {
-                "name": "Gobs: Kill Tracker Azak",
-                "sections": [
-                    {
-                        "name": "Gobs: Kill Tracker Azak"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "inside_goblin_camp",
-                        "x": 403,
-                        "y": 258
-                    }
-                ]
-            },
-            {
-                "name": "Gobs: Kill Tracker Fezk",
-                "sections": [
-                    {
-                        "name": "Gobs: Kill Tracker Fezk"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "inside_goblin_camp",
-                        "x": 395,
-                        "y": 416
-                    }
-                ]
-            },
-            {
-                "name": "Gobs: Kill Tracker Tizg",
-                "sections": [
-                    {
-                        "name": "Gobs: Kill Tracker Tizg"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "inside_goblin_camp",
-                        "x": 366,
-                        "y": 416
-                    }
-                ]
-            },
-            {
-                "name": "Gobs: Kill Tracker Tozad",
-                "sections": [
-                    {
-                        "name": "Gobs: Kill Tracker Tozad"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "inside_goblin_camp",
-                        "x": 455,
-                        "y": 296
-                    }
-                ]
-            },
-            {
-                "name": "Gobs: Kill True Soul Gut",
-                "sections": [
-                    {
-                        "name": "Gobs: Kill True Soul Gut"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "inside_goblin_camp",
-                        "x": 379,
-                        "y": 289
-                    }
-                ]
-            },
-            {
-                "name": "Gobs: Kill Warlock Bolt",
-                "sections": [
-                    {
-                        "name": "Gobs: Kill Warlock Bolt"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "inside_goblin_camp",
-                        "x": 408,
-                        "y": 118
-                    }
-                ]
-            },
-            {
-                "name": "Gobs: Kill Warlock Greez",
-                "sections": [
-                    {
-                        "name": "Gobs: Kill Warlock Greez"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "inside_goblin_camp",
-                        "x": 395,
-                        "y": 320
-                    }
-                ]
-            },
-            {
-                "name": "Gobs: Kill Warrior Bez",
-                "sections": [
-                    {
-                        "name": "Gobs: Kill Warrior Bez"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "inside_goblin_camp",
-                        "x": 412,
-                        "y": 220
-                    }
-                ]
-            },
-            {
-                "name": "Gobs: Kill Warrior Clack",
-                "sections": [
-                    {
-                        "name": "Gobs: Kill Warrior Clack"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "inside_goblin_camp",
-                        "x": 276,
-                        "y": 183
-                    }
-                ]
-            },
-            {
-                "name": "Gobs: Kill Warrior Druk",
-                "sections": [
-                    {
-                        "name": "Gobs: Kill Warrior Druk"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "inside_goblin_camp",
-                        "x": 345,
-                        "y": 201
-                    }
-                ]
-            },
-            {
-                "name": "Gobs: Kill Warrior Huk",
-                "sections": [
-                    {
-                        "name": "Gobs: Kill Warrior Huk"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "inside_goblin_camp",
-                        "x": 382,
-                        "y": 133
-                    }
-                ]
-            },
-            {
-                "name": "Gobs: Kill Warrior Nrog",
-                "sections": [
-                    {
-                        "name": "Gobs: Kill Warrior Nrog"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "inside_goblin_camp",
-                        "x": 373,
-                        "y": 445
-                    }
-                ]
             },
             {
                 "name": "Gobs: Kill Warrior Trinzas",
@@ -7259,11 +7489,14 @@
                 "visibility_rules": [
                     "killsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
                 "map_locations": [
                     {
-                        "map": "inside_goblin_camp",
-                        "x": 399,
-                        "y": 457
+                        "map": "goblin_camp",
+                        "x": 652,
+                        "y": 441
                     }
                 ]
             },
@@ -7277,17 +7510,20 @@
                 "visibility_rules": [
                     "killsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
                 "map_locations": [
                     {
-                        "map": "inside_goblin_camp",
-                        "x": 425,
-                        "y": 310
+                        "map": "goblin_camp",
+                        "x": 675,
+                        "y": 306
                     }
                 ]
             }
         ],
         "access_rules": [
-            "level_fragment:8,gate_goblin_camp"
+            "level_fragment:8"
         ]
     },
     {

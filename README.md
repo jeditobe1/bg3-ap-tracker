@@ -6,7 +6,7 @@ Items received from the multiworld auto-track. Locations the slot has checked au
 
 ## Status
 
-**0.7.1.** Wired to BG3 apworld v0.7.0 (region locking requires apworld v0.6.0+). Tracks all items, all 885 displayed locations across 21 regions, with reachability colored by Level Fragment count plus per-region BlockEntrances gate items, and visibility filtered by the slot's goal + sanity options. The items grid includes an 18-toggle goal-progress row (Halsin rescue + 17 UDF fights) and a region-locking row for the 15 entrance gates + 1 Progressive Moonlight Towers counter.
+**0.7.1.** Wired to BG3 apworld v0.7.0 (region locking requires apworld v0.6.0+). Tracks all items, all 885 displayed locations across 18 regions, with reachability colored by Level Fragment count plus per-region BlockEntrances gate items, and visibility filtered by the slot's goal + sanity options. The items grid includes an 18-toggle goal-progress row (Halsin rescue + 17 UDF fights) and a region-locking row for the 15 entrance gates + 1 Progressive Moonlight Towers counter.
 
 Act 3 and containersanity are out of scope for this release — see [Known limitations](#known-limitations).
 
@@ -16,7 +16,7 @@ Region maps render real BG3 worldmap textures composited from the game atlas. Ea
 
 ## Compatibility
 
-- **BG3 apworld**: v0.7.0. The pack maps to the v0.7.0 region layout, which split Underwell out of Blighted Village, Inside Goblin Camp out of Goblin Camp, and Zhentarim Basement out of Waukeen's Rest. Older apworlds will mis-bucket equipment (the v0.7.0 equipment table dropped two duplicate entries, shifting ~426 AP item ids).
+- **BG3 apworld**: v0.7.0. apworld v0.7.0 split Underwell out of Blighted Village, Inside Goblin Camp out of Goblin Camp and Zhentarim Basement out of Waukeen's Rest; the pack folds each back into its parent tab (they are the same physical space, already drawn as a labelled zone on the parent's map) while keeping the child's own access rules on its checks. Older apworlds will mis-bucket equipment (the v0.7.0 equipment table dropped two duplicate entries, shifting ~426 AP item ids).
 - **PopTracker**: any recent version. Tested against PopTracker 0.31.x.
 - **Universal Tracker**: any recent version. The apworld carries `tracker_world` + YAML-free re-gen support, so UT picks up the map tab and regenerates the world from slot_data without needing the player's YAML on disk.
 
@@ -69,7 +69,7 @@ These drive what locations are visible. When AP is connected, the values are set
 | `udf_rescue_halsin` + `udf_<fight>` × 17 | 18 toggles | Goal-progress row. `udf_rescue_halsin` flips on the Halsin rescue (driven by AP location id 114, the apworld event paired with `Victory_Halsin`); the 17 `udf_<fight>` toggles flip on the matching kill locations from `UserDefinedFights.valid_keys`. Each toggle has its own NPC portrait icon (sourced from BG3's `Portraits/` DDS files) — see `tools/extract_icons.py PORTRAIT_ICON_TARGETS`. |
 | `gate_<entrance>` × 15 + `gate_progressive_moonlight_towers` | 15 toggles + 1 counter (0–5) | Region-locking row (apworld v0.6.0+ `BlockEntrances` option). Each toggle flips on when the matching entrance-gate progression item is received (AP IDs 100–113 and 115); the counter ticks per Progressive Moonlight Towers item (AP id 114, max 5). The Lua autotracker auto-enables gates that aren't in the slot's pool (either because BlockEntrances is off, or because the player's goal stage skips them) so per-region access_rules pass correctly. |
 
-**Locations** are organized into 21 tabs, one per region (Nautiloid → Mindflayer Colony). Each location is a clickable pin on a placeholder per-region map. Pins color by reachability: green = the region is reachable with the player's current Level Fragment count AND any required BlockEntrances gate items have been received; red = not yet. The access rules per region mirror the apworld's `regions.py` gates. Clicking a pin opens a popup with the section name verbatim from the apworld; left-click marks cleared, right-click reverts.
+**Locations** are organized into 18 tabs, one per region (Nautiloid → Mindflayer Colony). Each location is a clickable pin on a placeholder per-region map. Pins color by reachability: green = the region is reachable with the player's current Level Fragment count AND any required BlockEntrances gate items have been received; red = not yet. The access rules per region mirror the apworld's `regions.py` gates. Clicking a pin opens a popup with the section name verbatim from the apworld; left-click marks cleared, right-click reverts.
 
 **Region-locking row** (apworld v0.6.0+ BlockEntrances) is two rows of the items grid: 15 entrance gate toggles (Nautiloid Control Panel through Act 3) plus one progressive counter for Moonlight Towers (4 unlocks Moonrise, 5 unlocks the Mindflayer Colony). When the slot has BlockEntrances off, the autotracker auto-enables every gate on connect so per-region access_rules referencing them pass trivially -- only the Level Fragment threshold gates pins for those slots. When BlockEntrances is on, gates outside the player's goal-pool (e.g. all Act 2 gates on a Rescue-Halsin slot) get the same treatment, and the in-pool gates flip on as the items arrive.
 

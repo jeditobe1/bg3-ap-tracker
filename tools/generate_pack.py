@@ -71,8 +71,8 @@ REGION_DISPLAY_NAMES: dict[str, str] = {
 ACT_GROUPS: dict[str, list[str]] = {
     "Prologue": ["tutorial"],
     "Act 1": [
-        "beach", "crypt", "grove", "blighted_village", "underwell",
-        "waukeen", "zhentarim_basement", "goblin_camp", "inside_goblin_camp",
+        "beach", "crypt", "grove", "blighted_village",
+        "waukeen", "goblin_camp",
         "hag", "underdark", "grymforge", "monastery", "creche",
     ],
     "Act 2": [
@@ -80,6 +80,22 @@ ACT_GROUPS: dict[str, list[str]] = {
         "shar_gauntlet", "mindflayer",
     ],
     "Act 3": [],
+}
+
+# apworld v0.7.0 split three Act 1 regions so the checks reachable before a
+# lockout separate from the ones behind it. Geographically each child is part
+# of its parent, and the parent's map already renders it as a labelled zone,
+# so the pack keeps one tab per physical area and folds the child's checks
+# into it. Giving each child its own tab would show the same space twice --
+# once with pins and once without.
+#
+# The child keeps its own gating: its checks are emitted with their own
+# access_rules (level threshold + gate items) rather than inheriting the
+# parent's, so pins behind a lockout still colour independently.
+MERGED_INTO: dict[str, str] = {
+    "underwell": "blighted_village",
+    "inside_goblin_camp": "goblin_camp",
+    "zhentarim_basement": "waukeen",
 }
 
 # Region slugs present in the apworld's location table that this pack
@@ -299,9 +315,6 @@ MAP_DIMS_OVERRIDES: dict[str, tuple[int, int]] = {
     # when it gained the Zhentarim Hideout inset -- it was 480x320 before,
     # so this entry is load-bearing for pin placement, not cosmetic.
     "waukeen": (960, 640),
-    "underwell": (960, 640),
-    "inside_goblin_camp": (960, 640),
-    "zhentarim_basement": (960, 640),
 }
 
 # Per-map location_size override. Higher-resolution maps get larger pin
@@ -320,9 +333,6 @@ MAP_SIZE_OVERRIDES: dict[str, int] = {
     "moonrise": 16,
     "west_act2": 16,
     "waukeen": 16,
-    "underwell": 16,
-    "inside_goblin_camp": 16,
-    "zhentarim_basement": 16,
 }
 
 # Distinct-ish background colors per region. Cycled deterministically through
@@ -373,8 +383,40 @@ def parse_location_name_id_region(apworld_path: Path) -> list[tuple[str, int, st
             for tgt in node.targets:
                 if isinstance(tgt, ast.Name) and tgt.id == "LOCATION_NAME_ID_REGION":
                     raw = ast.literal_eval(node.value)
-                    return [(entry[0], int(entry[1]), entry[2]) for entry in raw]
+                    return [(entry[0], int(entry[1]),
+                             MERGED_INTO.get(entry[2], entry[2]))
+                            for entry in raw]
     raise RuntimeError("LOCATION_NAME_ID_REGION not found in locationids.py")
+
+
+def merged_origin_by_id(apworld_path: Path) -> dict[int, str]:
+    """AP location id -> the MERGED_INTO child slug it came from.
+
+    parse_location_name_id_region rewrites merged children to their parent so
+    everything downstream (tabs, zone routing, pin projection) treats them as
+    the parent, exactly as it did before the apworld split them out. This
+    keeps the original slug for the one thing that must NOT be inherited:
+    the child's own access_rules.
+    """
+    src = (apworld_path / "locationids.py").read_text(encoding="utf-8")
+    tree = ast.parse(src)
+    for node in ast.walk(tree):
+        if isinstance(node, ast.Assign):
+            for tgt in node.targets:
+                if isinstance(tgt, ast.Name) and tgt.id == "LOCATION_NAME_ID_REGION":
+                    return {int(e[1]): e[2] for e in ast.literal_eval(node.value)
+                            if e[2] in MERGED_INTO}
+    raise RuntimeError("LOCATION_NAME_ID_REGION not found in locationids.py")
+
+
+def access_rule_for(slug: str) -> str | None:
+    """The AND-joined access_rule string for a region slug, or None."""
+    parts: list[str] = []
+    gate = REGION_ACCESS_GATE.get(slug, 0)
+    if gate > 0:
+        parts.append(f"level_fragment:{gate}")
+    parts.extend(REGION_BLOCK_ITEMS.get(slug, []))
+    return ",".join(parts) if parts else None
 
 
 def parse_equipment_act_gates(apworld_path: Path) -> dict[int, int]:
@@ -770,6 +812,7 @@ def emit_locations_json(
     by_region: dict[str, list[tuple[str, int]]],
     npc_pins: dict[str, dict[str, dict]],
     overworld_pins: dict[str, dict] | None = None,
+    merged_origin: dict[int, str] | None = None,
 ) -> list:
     """Return the locations.json payload as a Python list.
 
@@ -798,6 +841,7 @@ def emit_locations_json(
     - Un-projected kills fall back to a grid layout (rare in practice).
     """
     overworld_pins = overworld_pins or {}
+    merged_origin = merged_origin or {}
     region_to_overworld = _act_overworld_for_region()
     payload = []
     for slug in REGION_ORDER:
@@ -822,6 +866,14 @@ def emit_locations_json(
                 "sections": [section],
                 "visibility_rules": [sanity_code],
             }
+            # A check folded in from a MERGED_INTO child region carries that
+            # child's gating instead of inheriting the parent's, so the
+            # pins behind a lockout stay red while the parent's go green.
+            origin = merged_origin.get(lid)
+            if origin is not None:
+                child_rule = access_rule_for(origin)
+                if child_rule:
+                    child["access_rules"] = [child_rule]
             if lid >= 10000:
                 # Kill -> area map at the NPC's real position (or fallback grid).
                 # group_by_region appends ' #2'/'#3' to disambiguate duplicate
@@ -891,13 +943,8 @@ def emit_locations_json(
                     }],
                 }
                 children.insert(0, overview_child)
-        gate = REGION_ACCESS_GATE.get(slug, 0)
-        block_items = REGION_BLOCK_ITEMS.get(slug, [])
-        rule_parts: list[str] = []
-        if gate > 0:
-            rule_parts.append(f"level_fragment:{gate}")
-        rule_parts.extend(block_items)
-        if rule_parts:
+        region_rule = access_rule_for(slug)
+        if region_rule:
             # PopTracker access_rules entries are AND-joined within a single
             # string and OR-joined across the list. We emit one string so
             # all conditions must hold for the region's pins to color green.
@@ -906,7 +953,7 @@ def emit_locations_json(
             # changes. The Lua autotracker auto-enables block-items that
             # aren't in the slot's pool so non-BlockEntrances and goal-pruned
             # gates still pass.
-            region_entry["access_rules"] = [",".join(rule_parts)]
+            region_entry["access_rules"] = [region_rule]
         goals = REGION_GOAL_VISIBILITY.get(slug)
         if goals:
             # OR-list: visible if any of these Goal stage codes is currently
@@ -1191,7 +1238,8 @@ def main(argv: list[str] | None = None) -> int:
 
     # 1. locations/locations.json
     write_json(pack_root / "locations" / "locations.json",
-               emit_locations_json(by_region, npc_pins, overworld_pins))
+               emit_locations_json(by_region, npc_pins, overworld_pins,
+                                   merged_origin_by_id(args.apworld)))
     print(f"[OK] Wrote locations/locations.json ({len(locations)} sections)")
 
     # 2. maps/maps.json

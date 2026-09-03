@@ -70,15 +70,6 @@
                             }
                         },
                         {
-                            "title": "Whispering Depths",
-                            "content": {
-                                "type": "map",
-                                "maps": [
-                                    "underwell"
-                                ]
-                            }
-                        },
-                        {
                             "title": "Waukeen's Rest",
                             "content": {
                                 "type": "map",
@@ -88,29 +79,11 @@
                             }
                         },
                         {
-                            "title": "Zhentarim Hideout",
-                            "content": {
-                                "type": "map",
-                                "maps": [
-                                    "zhentarim_basement"
-                                ]
-                            }
-                        },
-                        {
                             "title": "Goblin Camp",
                             "content": {
                                 "type": "map",
                                 "maps": [
                                     "goblin_camp"
-                                ]
-                            }
-                        },
-                        {
-                            "title": "Shattered Sanctum",
-                            "content": {
-                                "type": "map",
-                                "maps": [
-                                    "inside_goblin_camp"
                                 ]
                             }
                         },
