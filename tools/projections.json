@@ -85,34 +85,6 @@
             480
           ],
           "char_building": [
-            null
-          ],
-          "level": "WLD_Main_A",
-          "patch_building": [
-            ""
-          ],
-          "title": "The Well",
-          "world_bbox": [
-            -582.406832,
-            -378.205036,
-            -491.81715799999995,
-            -344.600094
-          ],
-          "world_bbox_filter": [
-            -700.0,
-            -500.0,
-            -400.0,
-            -250.0
-          ]
-        },
-        {
-          "canvas_rect": [
-            486,
-            32,
-            474,
-            480
-          ],
-          "char_building": [
             null,
             "RuinedBuilding",
             "Smithy",
@@ -137,6 +109,34 @@
             300.0,
             200.0,
             500.0
+          ]
+        },
+        {
+          "canvas_rect": [
+            486,
+            32,
+            474,
+            480
+          ],
+          "char_building": [
+            null
+          ],
+          "level": "WLD_Main_A",
+          "patch_building": [
+            ""
+          ],
+          "title": "The Well",
+          "world_bbox": [
+            -582.407,
+            -378.205,
+            -491.817,
+            -344.6
+          ],
+          "world_bbox_filter": [
+            -700.0,
+            -500.0,
+            -400.0,
+            -250.0
           ]
         }
       ]
@@ -404,6 +404,38 @@
             187.31051993333335,
             115.39495199999999,
             277.7784900666667
+          ]
+        }
+      ]
+    },
+    "inside_goblin_camp": {
+      "canvas": [
+        960,
+        640
+      ],
+      "zones": [
+        {
+          "canvas_rect": [
+            0,
+            32,
+            960,
+            480
+          ],
+          "char_building": [
+            "GoblinCamp",
+            "GoblinCampPrison"
+          ],
+          "level": "WLD_Main_A",
+          "patch_building": [
+            "GoblinCamp",
+            "GoblinCampPrison"
+          ],
+          "title": "Shattered Sanctum",
+          "world_bbox": [
+            242.9983,
+            -87.559258,
+            414.35872,
+            66.897688
           ]
         }
       ]
@@ -804,18 +836,54 @@
         }
       ]
     },
-    "waukeen": {
+    "underwell": {
       "canvas": [
-        480,
-        320
+        960,
+        640
       ],
       "zones": [
         {
           "canvas_rect": [
             0,
+            32,
+            960,
+            480
+          ],
+          "char_building": [
+            null
+          ],
+          "level": "WLD_Main_A",
+          "patch_building": [
+            ""
+          ],
+          "title": "Whispering Depths",
+          "world_bbox": [
+            -582.406832,
+            -378.205036,
+            -491.81715799999995,
+            -344.600094
+          ],
+          "world_bbox_filter": [
+            -700.0,
+            -500.0,
+            -400.0,
+            -250.0
+          ]
+        }
+      ]
+    },
+    "waukeen": {
+      "canvas": [
+        960,
+        640
+      ],
+      "zones": [
+        {
+          "canvas_rect": [
             0,
-            480,
-            256
+            32,
+            960,
+            480
           ],
           "char_building": [
             "*"
@@ -824,12 +892,34 @@
           "patch_building": [
             "*"
           ],
-          "title": "waukeen",
+          "title": "Waukeen's Rest",
           "world_bbox": [
-            -56.67843075000005,
-            505.76020000000005,
-            163.78481925000006,
-            623.3406000000001
+            -160.0,
+            495.0,
+            175.0,
+            665.0
+          ]
+        },
+        {
+          "canvas_rect": [
+            19,
+            308,
+            288,
+            193
+          ],
+          "char_building": [
+            "ZhentarimLowerFloor"
+          ],
+          "level": "WLD_Main_A",
+          "patch_building": [
+            "ZhentarimLowerFloor"
+          ],
+          "title": "Zhentarim Hideout",
+          "world_bbox": [
+            227.0,
+            -269.0,
+            324.0,
+            -168.0
           ]
         }
       ]
@@ -932,6 +1022,38 @@
             -1000.0,
             100.0,
             -900.0
+          ]
+        }
+      ]
+    },
+    "zhentarim_basement": {
+      "canvas": [
+        960,
+        640
+      ],
+      "zones": [
+        {
+          "canvas_rect": [
+            0,
+            32,
+            960,
+            480
+          ],
+          "char_building": [
+            "ZhentarimLowerFloor",
+            "ZhenatrimBasementLowerFloor"
+          ],
+          "level": "WLD_Main_A",
+          "patch_building": [
+            "ZhentarimLowerFloor",
+            "ZhenatrimBasementLowerFloor"
+          ],
+          "title": "Zhentarim Hideout",
+          "world_bbox": [
+            227.0,
+            -296.0,
+            414.0,
+            -168.0
           ]
         }
       ]

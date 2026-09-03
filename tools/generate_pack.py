@@ -295,6 +295,13 @@ MAP_DIMS_OVERRIDES: dict[str, tuple[int, int]] = {
     "shar_gauntlet": (960, 640),
     "moonrise": (960, 640),
     "west_act2": (960, 640),
+    # apworld v0.7.0 Act 1 splits. waukeen moved onto the multi-zone canvas
+    # when it gained the Zhentarim Hideout inset -- it was 480x320 before,
+    # so this entry is load-bearing for pin placement, not cosmetic.
+    "waukeen": (960, 640),
+    "underwell": (960, 640),
+    "inside_goblin_camp": (960, 640),
+    "zhentarim_basement": (960, 640),
 }
 
 # Per-map location_size override. Higher-resolution maps get larger pin
@@ -312,6 +319,10 @@ MAP_SIZE_OVERRIDES: dict[str, int] = {
     "shar_gauntlet": 16,
     "moonrise": 16,
     "west_act2": 16,
+    "waukeen": 16,
+    "underwell": 16,
+    "inside_goblin_camp": 16,
+    "zhentarim_basement": 16,
 }
 
 # Distinct-ish background colors per region. Cycled deterministically through

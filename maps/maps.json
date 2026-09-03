@@ -31,19 +31,19 @@
     },
     {
         "name": "underwell",
-        "location_size": 8,
+        "location_size": 16,
         "location_border_thickness": 2,
         "img": "images/maps/underwell.png"
     },
     {
         "name": "waukeen",
-        "location_size": 8,
+        "location_size": 16,
         "location_border_thickness": 2,
         "img": "images/maps/waukeen.png"
     },
     {
         "name": "zhentarim_basement",
-        "location_size": 8,
+        "location_size": 16,
         "location_border_thickness": 2,
         "img": "images/maps/zhentarim_basement.png"
     },
@@ -55,7 +55,7 @@
     },
     {
         "name": "inside_goblin_camp",
-        "location_size": 8,
+        "location_size": 16,
         "location_border_thickness": 2,
         "img": "images/maps/inside_goblin_camp.png"
     },
