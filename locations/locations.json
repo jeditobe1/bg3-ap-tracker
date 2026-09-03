@@ -15427,6 +15427,9 @@
                 "visibility_rules": [
                     "killsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:26,gate_reithwins_masons_guild,gate_creche"
+                ],
                 "map_locations": [
                     {
                         "map": "west_act2",
@@ -15444,6 +15447,9 @@
                 ],
                 "visibility_rules": [
                     "killsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:26,gate_reithwins_masons_guild,gate_creche"
                 ],
                 "map_locations": [
                     {
@@ -15463,6 +15469,9 @@
                 "visibility_rules": [
                     "killsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:26,gate_reithwins_masons_guild,gate_creche"
+                ],
                 "map_locations": [
                     {
                         "map": "west_act2",
@@ -15481,6 +15490,9 @@
                 "visibility_rules": [
                     "killsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:26,gate_reithwins_masons_guild,gate_creche"
+                ],
                 "map_locations": [
                     {
                         "map": "west_act2",
@@ -15498,6 +15510,9 @@
                 ],
                 "visibility_rules": [
                     "killsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:26,gate_reithwins_masons_guild,gate_creche"
                 ],
                 "map_locations": [
                     {

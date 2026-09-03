@@ -409,14 +409,79 @@ def merged_origin_by_id(apworld_path: Path) -> dict[int, str]:
     raise RuntimeError("LOCATION_NAME_ID_REGION not found in locationids.py")
 
 
-def access_rule_for(slug: str) -> str | None:
-    """The AND-joined access_rule string for a region slug, or None."""
+def _rule_terms(slug: str) -> tuple[int, list[str]]:
+    """(level-fragment threshold, gate item codes) for a region slug."""
+    return REGION_ACCESS_GATE.get(slug, 0), list(REGION_BLOCK_ITEMS.get(slug, []))
+
+
+def _join_rule(level: int, gates: list[str]) -> str | None:
     parts: list[str] = []
-    gate = REGION_ACCESS_GATE.get(slug, 0)
-    if gate > 0:
-        parts.append(f"level_fragment:{gate}")
-    parts.extend(REGION_BLOCK_ITEMS.get(slug, []))
+    if level > 0:
+        parts.append(f"level_fragment:{level}")
+    seen: set[str] = set()
+    for g in gates:
+        if g not in seen:
+            seen.add(g)
+            parts.append(g)
     return ",".join(parts) if parts else None
+
+
+def access_rule_for(slug: str, *, also: tuple[str, ...] = ()) -> str | None:
+    """The AND-joined access_rule string for a region slug, or None.
+
+    `also` names further region slugs whose requirements must ALSO hold --
+    the apworld's LOCATION_EXTRA_REGIONS layers a second reachable-region
+    check onto individual locations. Level thresholds combine by taking the
+    max (the stricter one subsumes the other); gate items union.
+    """
+    level, gates = _rule_terms(slug)
+    for extra in also:
+        e_level, e_gates = _rule_terms(extra)
+        level = max(level, e_level)
+        gates.extend(e_gates)
+    return _join_rule(level, gates)
+
+
+# apworld Region() name -> pack slug, for LOCATION_EXTRA_REGIONS lookups.
+APWORLD_REGION_TO_SLUG: dict[str, str] = {
+    "Creche": "creche",
+    "Monastery": "monastery",
+    "Underdark": "underdark",
+    "Grymforge": "grymforge",
+    "Goblin Camp": "goblin_camp",
+}
+
+
+def parse_location_extra_regions(apworld_path: Path) -> dict[str, tuple[str, ...]]:
+    """AST-parse LOCATION_EXTRA_REGIONS: AP location name -> extra pack slugs.
+
+    apworld v0.7.0 added this to layer a second required region onto
+    individual checks (rules.py set_all_location_rules). Currently the five
+    Reithwin gith-patrol kills, which also need the Creche reachable.
+    """
+    src = (apworld_path / "locationids.py").read_text(encoding="utf-8")
+    tree = ast.parse(src)
+    for node in ast.walk(tree):
+        target = None
+        if isinstance(node, ast.Assign):
+            target, value = getattr(node.targets[0], "id", None), node.value
+        elif isinstance(node, ast.AnnAssign):
+            target, value = getattr(node.target, "id", None), node.value
+        if target != "LOCATION_EXTRA_REGIONS":
+            continue
+        out: dict[str, tuple[str, ...]] = {}
+        for name, regions in ast.literal_eval(value).items():
+            slugs = []
+            for r in regions:
+                slug = APWORLD_REGION_TO_SLUG.get(r)
+                if slug is None:
+                    raise RuntimeError(
+                        f"LOCATION_EXTRA_REGIONS names region {r!r} with no "
+                        f"entry in APWORLD_REGION_TO_SLUG")
+                slugs.append(slug)
+            out[name] = tuple(slugs)
+        return out
+    return {}
 
 
 def parse_equipment_act_gates(apworld_path: Path) -> dict[int, int]:
@@ -813,6 +878,7 @@ def emit_locations_json(
     npc_pins: dict[str, dict[str, dict]],
     overworld_pins: dict[str, dict] | None = None,
     merged_origin: dict[int, str] | None = None,
+    extra_regions: dict[str, tuple[str, ...]] | None = None,
 ) -> list:
     """Return the locations.json payload as a Python list.
 
@@ -842,6 +908,7 @@ def emit_locations_json(
     """
     overworld_pins = overworld_pins or {}
     merged_origin = merged_origin or {}
+    extra_regions = extra_regions or {}
     region_to_overworld = _act_overworld_for_region()
     payload = []
     for slug in REGION_ORDER:
@@ -866,12 +933,18 @@ def emit_locations_json(
                 "sections": [section],
                 "visibility_rules": [sanity_code],
             }
-            # A check folded in from a MERGED_INTO child region carries that
-            # child's gating instead of inheriting the parent's, so the
-            # pins behind a lockout stay red while the parent's go green.
+            # Per-check access rules, needed when a check is stricter than
+            # its tab's region rule:
+            #  - folded in from a MERGED_INTO child region, so it carries
+            #    that child's gating rather than inheriting the parent's;
+            #  - listed in the apworld's LOCATION_EXTRA_REGIONS, which
+            #    layers a second required region onto the check.
+            # group_by_region suffixes duplicate display names with
+            # ' #2'/'#3', so match LOCATION_EXTRA_REGIONS on the base name.
             origin = merged_origin.get(lid)
-            if origin is not None:
-                child_rule = access_rule_for(origin)
+            extra = extra_regions.get(re.sub(r" #\d+$", "", name), ())
+            if origin is not None or extra:
+                child_rule = access_rule_for(origin or slug, also=extra)
                 if child_rule:
                     child["access_rules"] = [child_rule]
             if lid >= 10000:
@@ -1239,7 +1312,8 @@ def main(argv: list[str] | None = None) -> int:
     # 1. locations/locations.json
     write_json(pack_root / "locations" / "locations.json",
                emit_locations_json(by_region, npc_pins, overworld_pins,
-                                   merged_origin_by_id(args.apworld)))
+                                   merged_origin_by_id(args.apworld),
+                                   parse_location_extra_regions(args.apworld)))
     print(f"[OK] Wrote locations/locations.json ({len(locations)} sections)")
 
     # 2. maps/maps.json
