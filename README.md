@@ -6,7 +6,7 @@ Items received from the multiworld auto-track. Locations the slot has checked au
 
 ## Status
 
-**0.7.0.** Wired to BG3 apworld v0.4.5+ (region locking requires apworld v0.6.0+). Tracks all items, all 937 locations across 18 regions, with reachability colored by Level Fragment count plus per-region BlockEntrances gate items, and visibility filtered by the slot's goal + sanity options. The items grid includes a 17-toggle goal-progress row (Halsin rescue + 16 UDF fights) and a region-locking row for the 14 entrance gates + 1 Progressive Moonlight Towers counter.
+**0.7.1.** Wired to BG3 apworld v0.6.3, the stable release line (region locking requires apworld v0.6.0+). For apworld v0.7.x, use the 0.8.x pre-release. Tracks all items, all 936 locations across 18 regions, with reachability colored by Level Fragment count plus per-region BlockEntrances gate items, and visibility filtered by the slot's goal + sanity options. The items grid includes a 17-toggle goal-progress row (Halsin rescue + 16 UDF fights) and a region-locking row for the 14 entrance gates + 1 Progressive Moonlight Towers counter.
 
 Also works as the [Universal Tracker](https://github.com/FarisTheAncient/Archipelago/tree/tracker) map tab — UT prompts for the pack zip the first time it loads a BG3 slot.
 
@@ -14,7 +14,7 @@ Region maps render real BG3 worldmap textures composited from the game atlas. Ea
 
 ## Compatibility
 
-- **BG3 apworld**: v0.4.5 or later. The pack maps to the v0.4.5 region layout (Last Light Inn was split out of West Act 2 at that release).
+- **BG3 apworld**: v0.6.3 (stable). v0.6.3 moved Face Ketheric, the eight Necromites and the Squire from Moonrise Towers into the Mindflayer Colony for logic; the pack still shows them on the Moonrise tab, where they physically are, with the Mindflayer Colony's gating. For apworld v0.7.x use the 0.8.x pre-release.
 - **PopTracker**: any recent version. Tested against PopTracker 0.31.x.
 - **Universal Tracker**: any recent version. The apworld carries `tracker_world` + YAML-free re-gen support, so UT picks up the map tab and regenerates the world from slot_data without needing the player's YAML on disk.
 
@@ -29,7 +29,7 @@ Region maps render real BG3 worldmap textures composited from the game atlas. Ea
 
 ## Install — Universal Tracker
 
-1. Make sure the BG3 apworld (v0.4.5+) is in UT's `custom_worlds/` directory.
+1. Make sure the BG3 apworld (v0.6.3) is in UT's `custom_worlds/` directory.
 2. Launch UT and connect to your BG3 slot as normal. The first time it loads a BG3 slot, UT pops a file-picker asking for the pack zip — point it at `bg3-poptracker-<version>+release.zip` from the Releases page (no need to unzip). The path is remembered for subsequent launches.
 3. To change the path later, edit `bg3_options.ut_pack_path` in `host.yaml` (UT only prompts once; clearing the value back to `""` makes it re-prompt on next launch).
 

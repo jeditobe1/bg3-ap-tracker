@@ -298,17 +298,66 @@ REGION_PALETTE: list[tuple[int, int, int]] = [
 ]
 
 
-def parse_location_name_id_region(apworld_path: Path) -> list[tuple[str, int, str]]:
-    """AST-parse LOCATION_NAME_ID_REGION from locationids.py. Returns list of (name, id, slug)."""
+# apworld 0.6.3 assigns these ten checks to the `mindflayer` region for logic,
+# but they physically sit on Moonrise Towers' rooftop -- apworld 0.7.1 later
+# split them into a dedicated `moonrise_rooftop` region to match. The
+# Mindflayer Colony map doesn't cover the rooftop, so on that tab their kills
+# fall back to grid positions. They are shown on the Moonrise tab, where the
+# map does cover them, and keep the mindflayer region's gating per check.
+LOCATION_TAB_OVERRIDE: dict[int, str] = {
+    375: "moonrise",    # Moonrise: Face Ketheric at Moonrise Towers
+    10587: "moonrise",  # Moonrise: Kill Necromite 1
+    10588: "moonrise",  # Moonrise: Kill Necromite 2
+    10589: "moonrise",  # Moonrise: Kill Necromite 3
+    10590: "moonrise",  # Moonrise: Kill Necromite 4
+    10591: "moonrise",  # Moonrise: Kill Necromite 5
+    10592: "moonrise",  # Moonrise: Kill Necromite 6
+    10593: "moonrise",  # Moonrise: Kill Necromite 7
+    10594: "moonrise",  # Moonrise: Kill Necromite 8
+    10595: "moonrise",  # Moonrise: Kill Squire
+}
+
+
+def _raw_location_rows(apworld_path: Path) -> list:
     src = (apworld_path / "locationids.py").read_text(encoding="utf-8")
     tree = ast.parse(src)
     for node in ast.walk(tree):
         if isinstance(node, ast.Assign):
             for tgt in node.targets:
                 if isinstance(tgt, ast.Name) and tgt.id == "LOCATION_NAME_ID_REGION":
-                    raw = ast.literal_eval(node.value)
-                    return [(entry[0], int(entry[1]), entry[2]) for entry in raw]
+                    return ast.literal_eval(node.value)
     raise RuntimeError("LOCATION_NAME_ID_REGION not found in locationids.py")
+
+
+def parse_location_name_id_region(apworld_path: Path) -> list[tuple[str, int, str]]:
+    """AST-parse LOCATION_NAME_ID_REGION from locationids.py. Returns list of (name, id, slug).
+
+    Ids in LOCATION_TAB_OVERRIDE get their display tab in place of the
+    apworld region, so tabs and pin projection both follow the override.
+    """
+    return [(entry[0], int(entry[1]),
+             LOCATION_TAB_OVERRIDE.get(int(entry[1]), entry[2]))
+            for entry in _raw_location_rows(apworld_path)]
+
+
+def tab_override_origin(apworld_path: Path) -> dict[int, str]:
+    """AP location id -> the apworld region for each LOCATION_TAB_OVERRIDE id.
+
+    Keeps the one thing the override must not change: the check's gating,
+    which comes from its apworld region rather than the tab it is shown on.
+    """
+    return {int(e[1]): e[2] for e in _raw_location_rows(apworld_path)
+            if int(e[1]) in LOCATION_TAB_OVERRIDE}
+
+
+def region_rule_for(slug: str) -> str | None:
+    """The AND-joined access_rule string for a region slug, or None."""
+    parts: list[str] = []
+    gate = REGION_ACCESS_GATE.get(slug, 0)
+    if gate > 0:
+        parts.append(f"level_fragment:{gate}")
+    parts.extend(REGION_BLOCK_ITEMS.get(slug, []))
+    return ",".join(parts) if parts else None
 
 
 def parse_equipment_act_gates(apworld_path: Path) -> dict[int, int]:
@@ -704,6 +753,7 @@ def emit_locations_json(
     by_region: dict[str, list[tuple[str, int]]],
     npc_pins: dict[str, dict[str, dict]],
     overworld_pins: dict[str, dict] | None = None,
+    tab_origin: dict[int, str] | None = None,
 ) -> list:
     """Return the locations.json payload as a Python list.
 
@@ -732,6 +782,7 @@ def emit_locations_json(
     - Un-projected kills fall back to a grid layout (rare in practice).
     """
     overworld_pins = overworld_pins or {}
+    tab_origin = tab_origin or {}
     region_to_overworld = _act_overworld_for_region()
     payload = []
     for slug in REGION_ORDER:
@@ -756,6 +807,14 @@ def emit_locations_json(
                 "sections": [section],
                 "visibility_rules": [sanity_code],
             }
+            # A LOCATION_TAB_OVERRIDE check is shown on a different tab from
+            # its apworld region, so it carries that region's gating instead
+            # of inheriting the tab's.
+            origin = tab_origin.get(lid)
+            if origin is not None:
+                origin_rule = region_rule_for(origin)
+                if origin_rule:
+                    child["access_rules"] = [origin_rule]
             if lid >= 10000:
                 # Kill -> area map at the NPC's real position (or fallback grid).
                 # group_by_region appends ' #2'/'#3' to disambiguate duplicate
@@ -825,13 +884,8 @@ def emit_locations_json(
                     }],
                 }
                 children.insert(0, overview_child)
-        gate = REGION_ACCESS_GATE.get(slug, 0)
-        block_items = REGION_BLOCK_ITEMS.get(slug, [])
-        rule_parts: list[str] = []
-        if gate > 0:
-            rule_parts.append(f"level_fragment:{gate}")
-        rule_parts.extend(block_items)
-        if rule_parts:
+        region_rule = region_rule_for(slug)
+        if region_rule:
             # PopTracker access_rules entries are AND-joined within a single
             # string and OR-joined across the list. We emit one string so
             # all conditions must hold for the region's pins to color green.
@@ -840,7 +894,7 @@ def emit_locations_json(
             # changes. The Lua autotracker auto-enables block-items that
             # aren't in the slot's pool so non-BlockEntrances and goal-pruned
             # gates still pass.
-            region_entry["access_rules"] = [",".join(rule_parts)]
+            region_entry["access_rules"] = [region_rule]
         goals = REGION_GOAL_VISIBILITY.get(slug)
         if goals:
             # OR-list: visible if any of these Goal stage codes is currently
@@ -1125,7 +1179,8 @@ def main(argv: list[str] | None = None) -> int:
 
     # 1. locations/locations.json
     write_json(pack_root / "locations" / "locations.json",
-               emit_locations_json(by_region, npc_pins, overworld_pins))
+               emit_locations_json(by_region, npc_pins, overworld_pins,
+                                   tab_override_origin(args.apworld)))
     print(f"[OK] Wrote locations/locations.json ({len(locations)} sections)")
 
     # 2. maps/maps.json

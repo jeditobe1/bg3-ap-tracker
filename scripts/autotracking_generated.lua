@@ -24,7 +24,7 @@ AP_ITEM_ID_TO_CODE = {
 AP_LOCATION_ID_TO_SECTION = {
     [1] = '@Nautiloid/Tut: Learn about the Helm/Tut: Learn about the Helm',
     [2] = '@Nautiloid/Tut: Reach the Helm/Tut: Reach the Helm',
-    [3] = '@Nautiloid/Tut: Connect the Transponder/Tut: Connect the Transponder',
+    [3] = '@Ravaged Beach/Tut: Connect the Transponder/Tut: Connect the Transponder',
     [4] = '@Nautiloid/Tut-SH: Find Captive/Tut-SH: Find Captive',
     [5] = '@Nautiloid/Tut-SH: Find the Rune/Tut-SH: Find the Rune',
     [6] = '@Nautiloid/Tut-SH: Open the Pod/Tut-SH: Open the Pod',
@@ -1436,7 +1436,6 @@ AP_REGION_TO_ACT_TAB = {
 REGION_SECTION_CODES = {
     '@Nautiloid/Tut: Learn about the Helm/Tut: Learn about the Helm',
     '@Nautiloid/Tut: Reach the Helm/Tut: Reach the Helm',
-    '@Nautiloid/Tut: Connect the Transponder/Tut: Connect the Transponder',
     '@Nautiloid/Tut-SH: Find Captive/Tut-SH: Find Captive',
     '@Nautiloid/Tut-SH: Find the Rune/Tut-SH: Find the Rune',
     '@Nautiloid/Tut-SH: Open the Pod/Tut-SH: Open the Pod',
@@ -1450,6 +1449,7 @@ REGION_SECTION_CODES = {
     '@Nautiloid/Tut: Kill Imp 1/Tut: Kill Imp 1',
     '@Nautiloid/Tut: Kill Imp 2/Tut: Kill Imp 2',
     '@Nautiloid/Tut: Kill Imp 3/Tut: Kill Imp 3',
+    '@Ravaged Beach/Tut: Connect the Transponder/Tut: Connect the Transponder',
     "@Ravaged Beach/Beach-LZ: Talk to Lae'zel/Beach-LZ: Talk to Lae'zel",
     '@Ravaged Beach/Beach-LZ: Get the Tieflings Away/Beach-LZ: Get the Tieflings Away',
     "@Ravaged Beach/Beach-LZ: Free Lae'zel/Beach-LZ: Free Lae'zel",
