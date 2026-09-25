@@ -68,7 +68,7 @@
     { "name": "Entrance: Reithwin's Mason's Guild",  "type": "toggle", "img": "images/items/gate_reithwins_masons_guild.png",    "codes": "gate_reithwins_masons_guild" },
     { "name": "Entrance: Shar Trials",               "type": "toggle", "img": "images/items/gate_shar_trials.png",               "codes": "gate_shar_trials" },
     { "name": "Entrance: Act 3",                     "type": "toggle", "img": "images/items/gate_act3.png",                     "codes": "gate_act3" },
-    { "name": "Entrance: Moonlight Towers (Progressive)", "type": "consumable", "img": "images/items/gate_progressive_moonlight_towers.png", "codes": "gate_progressive_moonlight_towers", "min_quantity": 0, "max_quantity": 5, "initial_quantity": 0, "overlay_align": "right", "overlay_background": "#000000" },
+    { "name": "Entrance: Moonlight Towers (Progressive)", "type": "consumable", "img": "images/items/gate_progressive_moonlight_towers.png", "codes": "gate_progressive_moonlight_towers", "min_quantity": 0, "max_quantity": 3, "initial_quantity": 0, "overlay_align": "right", "overlay_background": "#000000" },
     {
         "name": "Goal",
         "type": "progressive",

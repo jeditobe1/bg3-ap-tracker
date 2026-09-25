@@ -22,7 +22,8 @@ local function code_for_item(item_id)
     if item_id == 1 then return "level_fragment", "consumable" end
     if item_id >= 5 and item_id <= 34 then return "stat_boost", "consumable" end
     -- Region-locking Progressive Moonlight Towers (apworld v0.6.0+, AP id
-    -- 114). Receivable up to 5 times: 4 unlocks Moonrise, 5 unlocks the
+    -- 114). Receivable up to 3 times (5 before apworld v0.7.1): 1 unlocks
+    -- Moonrise Towers, 2 the rooftop, 3 the
     -- Mindflayer Colony. Single-receive gates 100..113 are routed via
     -- AP_ITEM_ID_TO_CODE; 114 is the only counter and lands here.
     if item_id == 114 then return "gate_progressive_moonlight_towers", "consumable" end
@@ -100,7 +101,7 @@ local function pool_gates_for_goal(goal)
             pool.gate_last_light_basement = true
             pool.gate_reithwins_masons_guild = true
             pool.gate_shar_trials = true
-            pool.gate_progressive_moonlight_towers = true  -- counter, max 5
+            pool.gate_progressive_moonlight_towers = true  -- counter, max 3
             if goal ~= GOAL_MYRKUL and goal ~= GOAL_ACT2_UDF then
                 pool.gate_act3 = true
             end
@@ -130,7 +131,7 @@ local function apply_gate_auto_enable()
     end
     for _, code in ipairs(ALL_GATE_COUNTERS) do
         local c = Tracker:FindObjectForCode(code)
-        if c and not pool[code] then c.AcquiredCount = 5 end
+        if c and not pool[code] then c.AcquiredCount = 3 end
     end
 end
 

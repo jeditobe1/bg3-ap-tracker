@@ -52,8 +52,11 @@ REGION_DISPLAY_NAMES: dict[str, str] = {
     "creche":           "Creche Y'llek",
     "east_act2":        "Shadow-Cursed Lands (East)",
     "west_act2":        "Shadow-Cursed Lands (West)",
+    "masons_guild":     "Reithwin's Mason's Guild",
     "last_light":       "Last Light Inn",
+    "last_light_basement": "Last Light Basement",
     "moonrise":         "Moonrise Towers",
+    "moonrise_rooftop": "Moonrise Rooftop",
     "shar_gauntlet":    "Gauntlet of Shar",
     "mindflayer":       "Mindflayer Colony",
 }
@@ -92,10 +95,19 @@ ACT_GROUPS: dict[str, list[str]] = {
 # The child keeps its own gating: its checks are emitted with their own
 # access_rules (level threshold + gate items) rather than inheriting the
 # parent's, so pins behind a lockout still colour independently.
+#
+# apworld v0.7.1 applied the same split to three Act 2 areas. Each again
+# matches a zone the parent map already draws: the Mason's Guild is West Act
+# 2's "Town Basement", the Last Light Basement is Last Light Inn's "Meenlock
+# Cave", and the rooftop (Ketheric, the Necromites, the Squire) is part of
+# Moonrise Towers.
 MERGED_INTO: dict[str, str] = {
     "underwell": "blighted_village",
     "inside_goblin_camp": "goblin_camp",
     "zhentarim_basement": "waukeen",
+    "masons_guild": "west_act2",
+    "last_light_basement": "last_light",
+    "moonrise_rooftop": "moonrise",
 }
 
 # Region slugs present in the apworld's location table that this pack
@@ -184,8 +196,13 @@ REGION_ACCESS_GATE: dict[str, int] = {
     "creche":           18,
     "east_act2":        22,
     "west_act2":        26,
+    "masons_guild":     26,
     "last_light":       26,
+    "last_light_basement": 26,
     "moonrise":         26,
+    # Reached from the Gauntlet of Shar; the edge has no level of its own,
+    # so it inherits the Gauntlet's cumulative threshold.
+    "moonrise_rooftop": 26,
     "shar_gauntlet":    26,
     "mindflayer":       30,
 }
@@ -195,8 +212,10 @@ REGION_ACCESS_GATE: dict[str, int] = {
 # AND'd: a region's pins gate green only when the player has received every
 # listed gate item plus the level-fragment threshold above. Values are
 # tracker item codes (matching items.json), with one count-bearing entry
-# `gate_progressive_moonlight_towers:N` for the Moonlight Towers progressive
-# (4 unlocks Moonrise, 5 unlocks Mindflayer).
+# `gate_progressive_moonlight_towers:N` for the Moonlight Towers progressive.
+# apworld v0.7.1 cut that item from 5 copies to 3, one per gate: 1 opens
+# Moonrise Towers, 2 the rooftop, 3 the Mindflayer Colony. (It was 4 and 5
+# for Moonrise and the colony before, with no rooftop gate.)
 #
 # `gate_blighted_village_well` is only in the pool on Rescue-Halsin slots;
 # `gate_underdark` is the equivalent gate for non-Halsin slots. The Lua
@@ -210,7 +229,9 @@ REGION_ACCESS_GATE: dict[str, int] = {
 # new child region, so the checks reachable before the lockout separate from
 # the ones behind it. The parent is now ungated and the gate sits on the
 # child: Blighted Village -> Underwell, Goblin Camp -> Inside Goblin Camp,
-# Waukeen -> Zhentarim Basement.
+# Waukeen -> Zhentarim Basement. apworld v0.7.1 did the same in Act 2:
+# West Act 2 -> Mason's Guild, Last Light Inn -> Last Light Basement, and a
+# new Moonrise Rooftop between the Gauntlet of Shar and the colony.
 REGION_BLOCK_ITEMS: dict[str, list[str]] = {
     "beach":            ["gate_nautiloid_control_panel"],
     "crypt":            ["gate_withers_crypt"],
@@ -224,11 +245,13 @@ REGION_BLOCK_ITEMS: dict[str, list[str]] = {
     "monastery":        ["gate_goblin_camp", "gate_mountain_pass"],
     "creche":           ["gate_creche"],
     "east_act2":        ["gate_act2"],
-    "west_act2":        ["gate_reithwins_masons_guild"],
-    "last_light":       ["gate_last_light_basement"],
-    "moonrise":         ["gate_progressive_moonlight_towers:4"],
+    # west_act2 / last_light are ungated as of v0.7.1.
+    "masons_guild":     ["gate_reithwins_masons_guild"],
+    "last_light_basement": ["gate_last_light_basement"],
+    "moonrise":         ["gate_progressive_moonlight_towers:1"],
     "shar_gauntlet":    ["gate_underdark", "gate_grymforge", "gate_shar_trials"],
-    "mindflayer":       ["gate_progressive_moonlight_towers:5"],
+    "moonrise_rooftop": ["gate_progressive_moonlight_towers:2"],
+    "mindflayer":       ["gate_progressive_moonlight_towers:3"],
 }
 
 # Hand-curated item ID -> tracker code mapping for toggle-type items.
