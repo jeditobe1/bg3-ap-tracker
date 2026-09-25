@@ -3,8 +3,8 @@
 Output: <pack-root>/build/bg3-poptracker-<package_version>.zip
 
 The zip excludes maintainer-only paths that PopTracker doesn't need at
-runtime: tools/, build/, .git, __pycache__, *.pyc, and any other
-gitignored cruft. The result drops directly into PopTracker's packs/
+runtime: tools/, build/, every dotfile and dot-directory (.env, .git,
+.claude, ...), CLAUDE.md, __pycache__ and *.pyc. The result drops directly into PopTracker's packs/
 directory and works without unzipping (PopTracker reads pack zips
 natively, as does Universal Tracker).
 
@@ -40,12 +40,24 @@ SKIP_DIR_NAMES = {
 
 # File patterns to skip (suffix or exact name).
 SKIP_SUFFIXES = {".pyc", ".swp"}
-SKIP_NAMES = {".DS_Store", "Thumbs.db", ".gitignore"}
+SKIP_NAMES = {
+    "Thumbs.db",
+    "CLAUDE.md",      # agent config for the repo, not pack content
+}
 
 
 def should_include(path: Path) -> bool:
-    """Decide whether `path` (relative to PACK_ROOT) should be in the zip."""
+    """Decide whether `path` (relative to PACK_ROOT) should be in the zip.
+
+    Anything whose name or any parent directory starts with "." is
+    excluded. That covers .git, .claude, .gitignore, .DS_Store -- and
+    above all .env, which holds the BG3_PRIVACY_EXTRA tokens. Excluding by
+    pattern rather than by listing names means a new dotfile is left out
+    by default instead of shipped by default.
+    """
     parts = path.parts
+    if any(part.startswith(".") for part in parts):
+        return False
     if any(part in SKIP_DIR_NAMES for part in parts):
         return False
     if path.suffix in SKIP_SUFFIXES:
@@ -129,7 +141,20 @@ def main() -> int:
         files.append(rel)
     files.sort()
 
-    # Privacy sanity check on text files. Catches drive-letter paths
+    # Hard stop, independent of should_include(): .env holds the
+    # BG3_PRIVACY_EXTRA tokens and must never reach a release zip. Before
+    # this guard existed it shipped in every release from v0.6.0 to v0.7.0
+    # -- nothing excluded it, and the privacy scan below skipped it because
+    # `.env` has no suffix.
+    leaked = [rel for rel in files if any(part.startswith(".") for part in rel.parts)]
+    if leaked:
+        print("[err] dotfile(s) would be packaged into the release zip:")
+        for rel in leaked:
+            print(f"  {rel}")
+        print("[err] refusing to write release zip.")
+        return 1
+
+    # Privacy sanity check on every non-binary file. Catches drive-letter paths
     # that may have crept in via copy-paste. The build script intentionally
     # does NOT hardcode any personal-name tokens -- doing so would itself
     # be a leak.
@@ -152,9 +177,14 @@ def main() -> int:
         base_pattern = f"{base_pattern}|{extra}"
     pii_re = re.compile(base_pattern, re.IGNORECASE)
     pii_hits: list[str] = []
-    text_exts = {".json", ".lua", ".md", ".py", ".yaml", ".yml", ".txt"}
+    # Skip known binaries and scan everything else, so a file type nobody
+    # anticipated is scanned by default rather than skipped by default. An
+    # allowlist of text extensions is what let the suffix-less .env
+    # through.
+    binary_exts = {".png", ".jpg", ".jpeg", ".gif", ".webp", ".ico", ".bmp",
+                   ".dds", ".zip", ".ttf", ".otf", ".woff", ".woff2"}
     for rel in files:
-        if rel.suffix.lower() not in text_exts:
+        if rel.suffix.lower() in binary_exts:
             continue
         try:
             content = (PACK_ROOT / rel).read_text(encoding="utf-8", errors="ignore")
