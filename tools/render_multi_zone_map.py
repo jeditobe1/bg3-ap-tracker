@@ -84,10 +84,16 @@ REGION_DEFINITIONS = {
                 "char_building": [None, "GoblinWalkway"],
                 "patch_building": [""],
             },
+            # apworld v0.7.0 moved this zone's kills to the
+            # `inside_goblin_camp` region, so no chars route here any more
+            # and the bbox can't be derived from them. The override is the
+            # bbox this zone rendered with before the split, keeping the
+            # parent tab showing the sanctum as context.
             {
                 "title": "Shattered Sanctum",
                 "char_building": ["GoblinCamp", "GoblinCampPrison"],
                 "patch_building": ["GoblinCamp", "GoblinCampPrison"],
+                "world_bbox_override": (242.998, -87.559, 414.359, 66.898),
             },
         ],
     },
@@ -117,20 +123,98 @@ REGION_DEFINITIONS = {
     # x[0..50], and the Well/Spider Queen lair ~500 world units SW. Both
     # are tagged with building="" (exterior) in the patch data, so we
     # split by world position rather than building tag.
+    # Zone order follows in-game encounter order -- approach on the left,
+    # the area behind the lockout on the right -- matching goblin_camp's
+    # Camp -> Shattered Sanctum reading order.
     "blighted_village": {
         "level": "WLD_Main_A",
         "zones": [
-            {
-                "title": "The Well",
-                "char_building": [None],
-                "patch_building": [""],
-                "world_bbox_filter": (-700, -500, -400, -250),  # x0,z0,x1,z1
-            },
             {
                 "title": "Village Surface",
                 "char_building": [None, "RuinedBuilding", "Smithy", "Apothercary"],
                 "patch_building": ["", "RuinedBuilding", "Smithy", "Apothercary"],
                 "world_bbox_filter": (-50, 300, 200, 500),
+            },
+            # Kills moved to the `underwell` region in apworld v0.7.0; the
+            # override is the bbox this zone rendered with before the
+            # split. See the goblin_camp note above.
+            {
+                "title": "The Well",
+                "char_building": [None],
+                "patch_building": [""],
+                "world_bbox_filter": (-700, -500, -400, -250),  # x0,z0,x1,z1
+                "world_bbox_override": (-582.407, -378.205, -491.817, -344.600),
+            },
+        ],
+    },
+    # apworld v0.7.0 split the area behind each Act 1 lockout into its own
+    # region. These reuse the parent's zone definition verbatim so the
+    # region tab gets the same rendered space on its own canvas; the parent
+    # keeps both zones so its tab still shows the area in context.
+    "underwell": {
+        "level": "WLD_Main_A",
+        "zones": [
+            {
+                "title": "Whispering Depths",
+                "char_building": [None],
+                "patch_building": [""],
+                "world_bbox_filter": (-700, -500, -400, -250),
+            },
+        ],
+    },
+    "inside_goblin_camp": {
+        "level": "WLD_Main_A",
+        "zones": [
+            {
+                "title": "Shattered Sanctum",
+                "char_building": ["GoblinCamp", "GoblinCampPrison"],
+                "patch_building": ["GoblinCamp", "GoblinCampPrison"],
+            },
+        ],
+    },
+    # All 5 Zhentarim Basement checks are questsanity, so this zone has no
+    # kill chars to frame it -- the bbox comes from the two hideout patch
+    # tags instead (Larian spells the basement one "Zhenatrim").
+    "zhentarim_basement": {
+        "level": "WLD_Main_A",
+        "zones": [
+            {
+                "title": "Zhentarim Hideout",
+                "char_building": ["ZhentarimLowerFloor", "ZhenatrimBasementLowerFloor"],
+                "patch_building": ["ZhentarimLowerFloor", "ZhenatrimBasementLowerFloor"],
+                "world_bbox_override": (227.0, -296.0, 414.0, -168.0),
+            },
+        ],
+    },
+    # Waukeen's Rest. The bbox is set explicitly rather than derived from
+    # kill chars: all 20 kills are gnolls on the road and paladins at the
+    # Tollhouse (x[-6,114]), while the caravan serai the region is named
+    # after sits at x[-137,-34] -- entirely west of them. Framing on kills
+    # alone clips the inn, which is where the quest checks are. The
+    # override covers the kills, the serai and the Tollhouse.
+    "waukeen": {
+        "level": "WLD_Main_A",
+        "zones": [
+            {
+                "title": "Waukeen's Rest",
+                "char_building": ["*"],
+                "patch_building": ["*"],
+                "world_bbox_override": (-160.0, 495.0, 175.0, 665.0),
+            },
+            # The hideout is a separate underground space ~750 units north
+            # on the worldmap; as a corner cutout it stays visible without
+            # taking half the canvas from the surface area.
+            # Inset frames the main hideout floor only. The separate
+            # ZhenatrimBasementLowerFloor cluster sits ~45 units further
+            # east with a gap between; including it would nearly double the
+            # bbox width to show one small blob. The standalone
+            # zhentarim_basement map has the canvas room for both.
+            {
+                "title": "Zhentarim Hideout",
+                "char_building": ["ZhentarimLowerFloor"],
+                "patch_building": ["ZhentarimLowerFloor"],
+                "world_bbox_override": (227.0, -269.0, 324.0, -168.0),
+                "inset": (0.02, 0.54, 0.30, 0.44),
             },
         ],
     },
@@ -431,17 +515,23 @@ def load_apworld_indexes(apworld: Path) -> tuple[dict[str, str], dict[str, str]]
         if isinstance(n, ast.Assign):
             for t in n.targets:
                 if isinstance(t, ast.Name) and t.id == "LOCATION_NAME_ID_REGION":
-                    for ap_name, _lid, region in ast.literal_eval(n.value):
-                        name_to_region[ap_name] = region
+                    # Index positionally: apworld v0.7.0 widened these rows
+                    # to 4 fields (the trailing CharactersInLogic tag list).
+                    for row in ast.literal_eval(n.value):
+                        name_to_region[row[0]] = row[2]
     return uuid_to_name, name_to_region
 
 
 def matches_building(value: str | None, want: list) -> bool:
     """Building-tag matcher. `want` is a list of accepted values where
     None matches a char/patch with empty/missing building, and strings
-    match the literal building UUID."""
+    match the literal building UUID. "*" matches anything -- use it for a
+    zone framed by world_bbox_override, where the bbox already says what
+    belongs and enumerating every interior tag would just be brittle."""
     norm = value if value else None
     for w in want:
+        if w == "*":
+            return True
         if w is None and norm is None:
             return True
         if isinstance(w, str) and w == "":
@@ -674,10 +764,15 @@ def main(argv: list[str] | None = None) -> int:
                         and fz0 <= c["position"][2] <= fz1]
         xs = [c["position"][0] for _, c in chars]
         zs = [c["position"][2] for _, c in chars]
-        if not xs:
-            print(f"[warn] zone {z['title']!r} has 0 chars; skipping")
-            continue
         bbox_override = z.get("world_bbox_override")
+        # A zone with no kill chars is still renderable as long as it says
+        # where it is. Quest-only areas (e.g. the Zhentarim Hideout, whose
+        # apworld checks are all questsanity) have nothing to derive a bbox
+        # from, so they must supply world_bbox_override explicitly.
+        if not xs and bbox_override is None:
+            print(f"[warn] zone {z['title']!r} has 0 chars and no "
+                  f"world_bbox_override; skipping")
+            continue
         if bbox_override is not None:
             zone_bbox = tuple(bbox_override)
         else:
@@ -725,9 +820,20 @@ def main(argv: list[str] | None = None) -> int:
     final = Image.new("RGBA", (CANVAS_W, CANVAS_H), (18, 18, 22, 255))
     final_draw = ImageDraw.Draw(final)
 
+    # Zones carrying an `inset` are drawn as a cutout on top of the grid
+    # rather than taking a grid cell of their own -- for a small area that
+    # reads better as a corner callout than as an equal-sized panel (e.g.
+    # the Zhentarim Hideout over Waukeen's Rest). They are excluded from
+    # the grid sizing below and composited last so they land on top.
+    grid_zones = [zr for zr in zones_runtime if zr["def"].get("inset") is None]
+    inset_zones = [zr for zr in zones_runtime if zr["def"].get("inset") is not None]
+    if not grid_zones:
+        print("[err] every zone is an inset; need at least one grid zone")
+        return 1
+
     # Resolve each zone's cell, then derive the grid dimensions.
     resolved_cells: list[tuple[int, int, int, int]] = []
-    for i, zr in enumerate(zones_runtime):
+    for i, zr in enumerate(grid_zones):
         cell = zr["def"].get("cell")
         if cell is None:
             cell = (i, 0, 1, 1)
@@ -744,7 +850,7 @@ def main(argv: list[str] | None = None) -> int:
     # chars through the same math.
     zone_projs: list[dict] = []
 
-    for zr, (col, row, colspan, rowspan) in zip(zones_runtime, resolved_cells):
+    for zr, (col, row, colspan, rowspan) in zip(grid_zones, resolved_cells):
         origin_x = col * (cell_w + ZONE_GAP_PX)
         origin_y = row * (cell_h + ZONE_GAP_PX) + ZONE_LABEL_HEIGHT
         zone_w_px = cell_w * colspan + (colspan - 1) * ZONE_GAP_PX
@@ -781,6 +887,53 @@ def main(argv: list[str] | None = None) -> int:
         # last_light's three zones all accept building=null but live at
         # different z positions on SCL_Main_A. Pin computation needs this
         # to disambiguate, so persist it.
+        if zr["def"].get("world_bbox_filter") is not None:
+            zone_proj["world_bbox_filter"] = [
+                float(v) for v in zr["def"]["world_bbox_filter"]
+            ]
+        zone_projs.append(zone_proj)
+
+    # Inset zones: composited last so they sit above the grid. `inset` is
+    # (x_frac, y_frac, w_frac, h_frac) of the zones area, measured from the
+    # top-left of the canvas. A 2px border plus a label bar makes the
+    # cutout read as a callout rather than as part of the map underneath.
+    for zr in inset_zones:
+        fx, fy, fw, fh = zr["def"]["inset"]
+        ins_w = int(round(CANVAS_W * fw))
+        ins_h = int(round(zones_area_h * fh))
+        origin_x = int(round(CANVAS_W * fx))
+        origin_y = int(round(zones_area_h * fy)) + ZONE_LABEL_HEIGHT
+        body_h = ins_h - ZONE_LABEL_HEIGHT
+
+        sub_canvas, _ = render_zone(
+            zr["bbox"], zr["patches"], vt_index, dds_cache, (ins_w, body_h),
+        )
+        final.alpha_composite(sub_canvas, (origin_x, origin_y))
+
+        label_top = origin_y - ZONE_LABEL_HEIGHT
+        final_draw.rectangle(
+            (origin_x, label_top, origin_x + ins_w - 1,
+             label_top + ZONE_LABEL_HEIGHT - 1),
+            fill=(40, 40, 50, 255),
+        )
+        final_draw.text((origin_x + 4, label_top + 1), zr["def"]["title"],
+                        fill=(255, 255, 255, 255))
+        # Outline the whole cutout (label bar + body).
+        final_draw.rectangle(
+            (origin_x, label_top, origin_x + ins_w - 1, origin_y + body_h - 1),
+            outline=(255, 255, 255, 220), width=2,
+        )
+
+        zone_proj = {
+            "title": zr["def"]["title"],
+            "level": zr["def"].get("level", level),
+            "char_building": list(zr["def"]["char_building"]),
+            "patch_building": list(zr["def"]["patch_building"]),
+            "world_bbox": [float(v) for v in zr["bbox"]],
+            "canvas_rect": [origin_x, origin_y, ins_w, body_h],
+        }
+        if zr["def"].get("patch_floors") is not None:
+            zone_proj["patch_floors"] = list(zr["def"]["patch_floors"])
         if zr["def"].get("world_bbox_filter") is not None:
             zone_proj["world_bbox_filter"] = [
                 float(v) for v in zr["def"]["world_bbox_filter"]

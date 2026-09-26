@@ -40,8 +40,11 @@ REGION_DISPLAY_NAMES: dict[str, str] = {
     "crypt":            "Dank Crypt",
     "grove":            "Druid Grove",
     "blighted_village": "Blighted Village",
+    "underwell":        "Whispering Depths",
     "goblin_camp":      "Goblin Camp",
+    "inside_goblin_camp": "Shattered Sanctum",
     "waukeen":          "Waukeen's Rest",
+    "zhentarim_basement": "Zhentarim Hideout",
     "hag":              "Riverside",
     "underdark":        "Underdark",
     "grymforge":        "Grymforge",
@@ -49,8 +52,11 @@ REGION_DISPLAY_NAMES: dict[str, str] = {
     "creche":           "Creche Y'llek",
     "east_act2":        "Shadow-Cursed Lands (East)",
     "west_act2":        "Shadow-Cursed Lands (West)",
+    "masons_guild":     "Reithwin's Mason's Guild",
     "last_light":       "Last Light Inn",
+    "last_light_basement": "Last Light Basement",
     "moonrise":         "Moonrise Towers",
+    "moonrise_rooftop": "Moonrise Rooftop",
     "shar_gauntlet":    "Gauntlet of Shar",
     "mindflayer":       "Mindflayer Colony",
 }
@@ -60,14 +66,17 @@ REGION_DISPLAY_NAMES: dict[str, str] = {
 # of each act becoming the inner per-region tabs. Order within each list
 # is the inner tab order.
 #
-# Act 3 has no entries yet -- apworld regions.py:160-165 has them commented
-# out (design doc P8). We keep the tab so the structure is stable when
-# Act 3 lands; the stub layout below renders an explanatory message.
+# Act 3 regions exist in the apworld (v0.7.0) but carry no questsanity or
+# killsanity locations -- the only non-container Act 3 check is
+# "Endgame: Kill the Netherbrain". Supporting them properly means a full
+# worldmap carving pass for 11 regions to host a single pin, so Act 3 is
+# deliberately out of scope; see EXCLUDED_REGIONS.
 ACT_GROUPS: dict[str, list[str]] = {
     "Prologue": ["tutorial"],
     "Act 1": [
         "beach", "crypt", "grove", "blighted_village",
-        "waukeen", "goblin_camp", "hag", "underdark", "grymforge", "monastery", "creche",
+        "waukeen", "goblin_camp",
+        "hag", "underdark", "grymforge", "monastery", "creche",
     ],
     "Act 2": [
         "east_act2", "west_act2", "last_light", "moonrise",
@@ -75,6 +84,42 @@ ACT_GROUPS: dict[str, list[str]] = {
     ],
     "Act 3": [],
 }
+
+# apworld v0.7.0 split three Act 1 regions so the checks reachable before a
+# lockout separate from the ones behind it. Geographically each child is part
+# of its parent, and the parent's map already renders it as a labelled zone,
+# so the pack keeps one tab per physical area and folds the child's checks
+# into it. Giving each child its own tab would show the same space twice --
+# once with pins and once without.
+#
+# The child keeps its own gating: its checks are emitted with their own
+# access_rules (level threshold + gate items) rather than inheriting the
+# parent's, so pins behind a lockout still colour independently.
+#
+# apworld v0.7.1 applied the same split to three Act 2 areas. Each again
+# matches a zone the parent map already draws: the Mason's Guild is West Act
+# 2's "Town Basement", the Last Light Basement is Last Light Inn's "Meenlock
+# Cave", and the rooftop (Ketheric, the Necromites, the Squire) is part of
+# Moonrise Towers.
+MERGED_INTO: dict[str, str] = {
+    "underwell": "blighted_village",
+    "inside_goblin_camp": "goblin_camp",
+    "zhentarim_basement": "waukeen",
+    "masons_guild": "west_act2",
+    "last_light_basement": "last_light",
+    "moonrise_rooftop": "moonrise",
+}
+
+# Region slugs present in the apworld's location table that this pack
+# deliberately does not display. Locations in these regions are dropped
+# before validation, so `validate()` won't flag them as unmapped.
+#
+# `endgame` is the apworld's Act 3 terminal region (renamed from
+# `netherbrain` in v0.7.0). It holds exactly one non-container location,
+# "Endgame: Kill the Netherbrain" -- a goal check the player cannot miss.
+# Displaying it would require an Act 3 tab, an Act 3 map, and the region
+# plumbing for ten sibling regions that have no locations at all.
+EXCLUDED_REGIONS: set[str] = {"endgame"}
 
 # Overworld maps -- pre-composited from BG3 WorldMap patches and shipped
 # as image assets under images/maps/. Pin-less backdrop maps that go at
@@ -108,19 +153,29 @@ REGION_ORDER: list[str] = [slug for slugs in ACT_GROUPS.values() for slug in slu
 # to be visible. Tutorial + Act 1 base regions are always visible (any goal);
 # omitting a region from this map means "no goal restriction".
 # Apworld reference: locations.py:115-187 region inclusion by goal.
+# Act 3 goals (netherbrain, act3udf) reach every Act 1 and Act 2 region, so
+# they appear in every list here. The Act 3 regions those goals additionally
+# unlock are out of scope (see EXCLUDED_REGIONS).
+_NON_HALSIN_GOALS = ["goal_wwargaz", "goal_act1udf", "goal_myrkul", "goal_act2udf",
+                     "goal_netherbrain", "goal_act3udf"]
+_ACT2_PLUS_GOALS = ["goal_myrkul", "goal_act2udf", "goal_netherbrain", "goal_act3udf"]
+
 REGION_GOAL_VISIBILITY: dict[str, list[str]] = {
     # Act 1 underdark/mountain cluster: visible for goals other than Halsin.
-    "underdark":     ["goal_wwargaz", "goal_act1udf", "goal_myrkul", "goal_act2udf"],
-    "grymforge":     ["goal_wwargaz", "goal_act1udf", "goal_myrkul", "goal_act2udf"],
-    "monastery":     ["goal_wwargaz", "goal_act1udf", "goal_myrkul", "goal_act2udf"],
-    "creche":        ["goal_wwargaz", "goal_act1udf", "goal_myrkul", "goal_act2udf"],
-    # Act 2: visible only for Act 2-tier goals.
-    "east_act2":     ["goal_myrkul", "goal_act2udf"],
-    "west_act2":     ["goal_myrkul", "goal_act2udf"],
-    "last_light":    ["goal_myrkul", "goal_act2udf"],
-    "moonrise":      ["goal_myrkul", "goal_act2udf"],
-    "shar_gauntlet": ["goal_myrkul", "goal_act2udf"],
-    "mindflayer":    ["goal_myrkul", "goal_act2udf"],
+    "underdark":     _NON_HALSIN_GOALS,
+    "grymforge":     _NON_HALSIN_GOALS,
+    "monastery":     _NON_HALSIN_GOALS,
+    "creche":        _NON_HALSIN_GOALS,
+    # Act 2: visible only for Act 2-tier goals and later.
+    "east_act2":     _ACT2_PLUS_GOALS,
+    "west_act2":     _ACT2_PLUS_GOALS,
+    "last_light":    _ACT2_PLUS_GOALS,
+    "moonrise":      _ACT2_PLUS_GOALS,
+    "shar_gauntlet": _ACT2_PLUS_GOALS,
+    "mindflayer":    _ACT2_PLUS_GOALS,
+    # underwell / inside_goblin_camp / zhentarim_basement are reached by
+    # entrances outside the goal conditionals in regions.py, so they carry no
+    # goal restriction -- same as their parent regions.
 }
 
 REGION_ACCESS_GATE: dict[str, int] = {
@@ -129,8 +184,11 @@ REGION_ACCESS_GATE: dict[str, int] = {
     "crypt":             1,
     "grove":             3,
     "blighted_village":  3,
+    "underwell":         3,
     "waukeen":           6,
+    "zhentarim_basement": 6,
     "goblin_camp":       8,
+    "inside_goblin_camp": 8,
     "hag":              10,
     "underdark":        10,
     "grymforge":        14,
@@ -138,8 +196,13 @@ REGION_ACCESS_GATE: dict[str, int] = {
     "creche":           18,
     "east_act2":        22,
     "west_act2":        26,
+    "masons_guild":     26,
     "last_light":       26,
+    "last_light_basement": 26,
     "moonrise":         26,
+    # Reached from the Gauntlet of Shar; the edge has no level of its own,
+    # so it inherits the Gauntlet's cumulative threshold.
+    "moonrise_rooftop": 26,
     "shar_gauntlet":    26,
     "mindflayer":       30,
 }
@@ -149,8 +212,10 @@ REGION_ACCESS_GATE: dict[str, int] = {
 # AND'd: a region's pins gate green only when the player has received every
 # listed gate item plus the level-fragment threshold above. Values are
 # tracker item codes (matching items.json), with one count-bearing entry
-# `gate_progressive_moonlight_towers:N` for the Moonlight Towers progressive
-# (4 unlocks Moonrise, 5 unlocks Mindflayer).
+# `gate_progressive_moonlight_towers:N` for the Moonlight Towers progressive.
+# apworld v0.7.1 cut that item from 5 copies to 3, one per gate: 1 opens
+# Moonrise Towers, 2 the rooftop, 3 the Mindflayer Colony. (It was 4 and 5
+# for Moonrise and the colony before, with no rooftop gate.)
 #
 # `gate_blighted_village_well` is only in the pool on Rescue-Halsin slots;
 # `gate_underdark` is the equivalent gate for non-Halsin slots. The Lua
@@ -160,23 +225,33 @@ REGION_ACCESS_GATE: dict[str, int] = {
 # When BlockEntrances is OFF, all gate items are auto-enabled on connect so
 # these access_rules pass trivially -- the level-fragment threshold is the
 # only effective constraint.
+# apworld v0.7.0 moved three Act 1 gates off their parent region and onto a
+# new child region, so the checks reachable before the lockout separate from
+# the ones behind it. The parent is now ungated and the gate sits on the
+# child: Blighted Village -> Underwell, Goblin Camp -> Inside Goblin Camp,
+# Waukeen -> Zhentarim Basement. apworld v0.7.1 did the same in Act 2:
+# West Act 2 -> Mason's Guild, Last Light Inn -> Last Light Basement, and a
+# new Moonrise Rooftop between the Gauntlet of Shar and the colony.
 REGION_BLOCK_ITEMS: dict[str, list[str]] = {
     "beach":            ["gate_nautiloid_control_panel"],
     "crypt":            ["gate_withers_crypt"],
-    "blighted_village": ["gate_blighted_village_well", "gate_underdark"],
-    "waukeen":          ["gate_zhentarim_basement"],
-    "goblin_camp":      ["gate_goblin_camp"],
+    # blighted_village / goblin_camp / waukeen are ungated as of v0.7.0.
+    "underwell":        ["gate_blighted_village_well", "gate_underdark"],
+    "inside_goblin_camp": ["gate_goblin_camp"],
+    "zhentarim_basement": ["gate_zhentarim_basement"],
     "hag":              ["gate_hags_fireplace"],
     "underdark":        ["gate_underdark"],
     "grymforge":        ["gate_grymforge"],
     "monastery":        ["gate_goblin_camp", "gate_mountain_pass"],
     "creche":           ["gate_creche"],
     "east_act2":        ["gate_act2"],
-    "west_act2":        ["gate_reithwins_masons_guild"],
-    "last_light":       ["gate_last_light_basement"],
-    "moonrise":         ["gate_progressive_moonlight_towers:4"],
+    # west_act2 / last_light are ungated as of v0.7.1.
+    "masons_guild":     ["gate_reithwins_masons_guild"],
+    "last_light_basement": ["gate_last_light_basement"],
+    "moonrise":         ["gate_progressive_moonlight_towers:1"],
     "shar_gauntlet":    ["gate_underdark", "gate_grymforge", "gate_shar_trials"],
-    "mindflayer":       ["gate_progressive_moonlight_towers:5"],
+    "moonrise_rooftop": ["gate_progressive_moonlight_towers:2"],
+    "mindflayer":       ["gate_progressive_moonlight_towers:3"],
 }
 
 # Hand-curated item ID -> tracker code mapping for toggle-type items.
@@ -207,6 +282,11 @@ AP_ITEM_TOGGLE_IDS: dict[int, str] = {
     113: "gate_shar_trials",
     # 114 ("Progressive Moonlight Towers") is a consumable counter (max 5)
     # handled by integer-range logic in autotracking.lua, not this toggle map.
+    # 115 ("Act 3", apworld v0.7.0) gates Mindflayer Colony -> Astral Plane.
+    # No displayed region depends on it -- Act 3 is out of scope -- but it
+    # lands in the pool on netherbrain/act3udf goals, so it is mapped here to
+    # show in the Region Gates row instead of logging as an unhandled item.
+    115: "gate_act3",
 }
 
 # Regions that belong to Act 1 vs Act 2 for the UDF goal-progress block.
@@ -254,6 +334,10 @@ MAP_DIMS_OVERRIDES: dict[str, tuple[int, int]] = {
     "shar_gauntlet": (960, 640),
     "moonrise": (960, 640),
     "west_act2": (960, 640),
+    # apworld v0.7.0 Act 1 splits. waukeen moved onto the multi-zone canvas
+    # when it gained the Zhentarim Hideout inset -- it was 480x320 before,
+    # so this entry is load-bearing for pin placement, not cosmetic.
+    "waukeen": (960, 640),
 }
 
 # Per-map location_size override. Higher-resolution maps get larger pin
@@ -271,6 +355,7 @@ MAP_SIZE_OVERRIDES: dict[str, int] = {
     "shar_gauntlet": 16,
     "moonrise": 16,
     "west_act2": 16,
+    "waukeen": 16,
 }
 
 # Distinct-ish background colors per region. Cycled deterministically through
@@ -298,66 +383,128 @@ REGION_PALETTE: list[tuple[int, int, int]] = [
 ]
 
 
-# apworld 0.6.3 assigns these ten checks to the `mindflayer` region for logic,
-# but they physically sit on Moonrise Towers' rooftop -- apworld 0.7.1 later
-# split them into a dedicated `moonrise_rooftop` region to match. The
-# Mindflayer Colony map doesn't cover the rooftop, so on that tab their kills
-# fall back to grid positions. They are shown on the Moonrise tab, where the
-# map does cover them, and keep the mindflayer region's gating per check.
-LOCATION_TAB_OVERRIDE: dict[int, str] = {
-    375: "moonrise",    # Moonrise: Face Ketheric at Moonrise Towers
-    10587: "moonrise",  # Moonrise: Kill Necromite 1
-    10588: "moonrise",  # Moonrise: Kill Necromite 2
-    10589: "moonrise",  # Moonrise: Kill Necromite 3
-    10590: "moonrise",  # Moonrise: Kill Necromite 4
-    10591: "moonrise",  # Moonrise: Kill Necromite 5
-    10592: "moonrise",  # Moonrise: Kill Necromite 6
-    10593: "moonrise",  # Moonrise: Kill Necromite 7
-    10594: "moonrise",  # Moonrise: Kill Necromite 8
-    10595: "moonrise",  # Moonrise: Kill Squire
-}
+def parse_location_name_id_region(apworld_path: Path) -> list[tuple[str, int, str]]:
+    """AST-parse LOCATION_NAME_ID_REGION from locationids.py. Returns list of (name, id, slug).
 
+    Rows are indexed positionally, so the 4th field added in apworld v0.7.0
+    (the CharactersInLogic tag list) is read past harmlessly.
 
-def _raw_location_rows(apworld_path: Path) -> list:
+    Containersanity locations are not in this table -- the apworld keeps them
+    in containers.py / container_locations.py and merges them at runtime in
+    locations.py, so they are excluded here for free.
+
+    Returns every row, including EXCLUDED_REGIONS ones. Those are filtered at
+    the region-emission stage instead, so a location in an undisplayed region
+    can still back a goal-progress item -- "Endgame: Kill the Netherbrain" is
+    the Netherbrain user-defined fight, which needs to resolve here even
+    though the `endgame` region gets no tab or map.
+    """
     src = (apworld_path / "locationids.py").read_text(encoding="utf-8")
     tree = ast.parse(src)
     for node in ast.walk(tree):
         if isinstance(node, ast.Assign):
             for tgt in node.targets:
                 if isinstance(tgt, ast.Name) and tgt.id == "LOCATION_NAME_ID_REGION":
-                    return ast.literal_eval(node.value)
+                    raw = ast.literal_eval(node.value)
+                    return [(entry[0], int(entry[1]),
+                             MERGED_INTO.get(entry[2], entry[2]))
+                            for entry in raw]
     raise RuntimeError("LOCATION_NAME_ID_REGION not found in locationids.py")
 
 
-def parse_location_name_id_region(apworld_path: Path) -> list[tuple[str, int, str]]:
-    """AST-parse LOCATION_NAME_ID_REGION from locationids.py. Returns list of (name, id, slug).
+def merged_origin_by_id(apworld_path: Path) -> dict[int, str]:
+    """AP location id -> the MERGED_INTO child slug it came from.
 
-    Ids in LOCATION_TAB_OVERRIDE get their display tab in place of the
-    apworld region, so tabs and pin projection both follow the override.
+    parse_location_name_id_region rewrites merged children to their parent so
+    everything downstream (tabs, zone routing, pin projection) treats them as
+    the parent, exactly as it did before the apworld split them out. This
+    keeps the original slug for the one thing that must NOT be inherited:
+    the child's own access_rules.
     """
-    return [(entry[0], int(entry[1]),
-             LOCATION_TAB_OVERRIDE.get(int(entry[1]), entry[2]))
-            for entry in _raw_location_rows(apworld_path)]
+    src = (apworld_path / "locationids.py").read_text(encoding="utf-8")
+    tree = ast.parse(src)
+    for node in ast.walk(tree):
+        if isinstance(node, ast.Assign):
+            for tgt in node.targets:
+                if isinstance(tgt, ast.Name) and tgt.id == "LOCATION_NAME_ID_REGION":
+                    return {int(e[1]): e[2] for e in ast.literal_eval(node.value)
+                            if e[2] in MERGED_INTO}
+    raise RuntimeError("LOCATION_NAME_ID_REGION not found in locationids.py")
 
 
-def tab_override_origin(apworld_path: Path) -> dict[int, str]:
-    """AP location id -> the apworld region for each LOCATION_TAB_OVERRIDE id.
-
-    Keeps the one thing the override must not change: the check's gating,
-    which comes from its apworld region rather than the tab it is shown on.
-    """
-    return {int(e[1]): e[2] for e in _raw_location_rows(apworld_path)
-            if int(e[1]) in LOCATION_TAB_OVERRIDE}
+def _rule_terms(slug: str) -> tuple[int, list[str]]:
+    """(level-fragment threshold, gate item codes) for a region slug."""
+    return REGION_ACCESS_GATE.get(slug, 0), list(REGION_BLOCK_ITEMS.get(slug, []))
 
 
-def region_rule_for(slug: str) -> str | None:
-    """The AND-joined access_rule string for a region slug, or None."""
+def _join_rule(level: int, gates: list[str]) -> str | None:
     parts: list[str] = []
-    gate = REGION_ACCESS_GATE.get(slug, 0)
-    if gate > 0:
-        parts.append(f"level_fragment:{gate}")
-    parts.extend(REGION_BLOCK_ITEMS.get(slug, []))
+    if level > 0:
+        parts.append(f"level_fragment:{level}")
+    seen: set[str] = set()
+    for g in gates:
+        if g not in seen:
+            seen.add(g)
+            parts.append(g)
     return ",".join(parts) if parts else None
+
+
+def access_rule_for(slug: str, *, also: tuple[str, ...] = ()) -> str | None:
+    """The AND-joined access_rule string for a region slug, or None.
+
+    `also` names further region slugs whose requirements must ALSO hold --
+    the apworld's LOCATION_EXTRA_REGIONS layers a second reachable-region
+    check onto individual locations. Level thresholds combine by taking the
+    max (the stricter one subsumes the other); gate items union.
+    """
+    level, gates = _rule_terms(slug)
+    for extra in also:
+        e_level, e_gates = _rule_terms(extra)
+        level = max(level, e_level)
+        gates.extend(e_gates)
+    return _join_rule(level, gates)
+
+
+# apworld Region() name -> pack slug, for LOCATION_EXTRA_REGIONS lookups.
+APWORLD_REGION_TO_SLUG: dict[str, str] = {
+    "Creche": "creche",
+    "Monastery": "monastery",
+    "Underdark": "underdark",
+    "Grymforge": "grymforge",
+    "Goblin Camp": "goblin_camp",
+}
+
+
+def parse_location_extra_regions(apworld_path: Path) -> dict[str, tuple[str, ...]]:
+    """AST-parse LOCATION_EXTRA_REGIONS: AP location name -> extra pack slugs.
+
+    apworld v0.7.0 added this to layer a second required region onto
+    individual checks (rules.py set_all_location_rules). Currently the five
+    Reithwin gith-patrol kills, which also need the Creche reachable.
+    """
+    src = (apworld_path / "locationids.py").read_text(encoding="utf-8")
+    tree = ast.parse(src)
+    for node in ast.walk(tree):
+        target = None
+        if isinstance(node, ast.Assign):
+            target, value = getattr(node.targets[0], "id", None), node.value
+        elif isinstance(node, ast.AnnAssign):
+            target, value = getattr(node.target, "id", None), node.value
+        if target != "LOCATION_EXTRA_REGIONS":
+            continue
+        out: dict[str, tuple[str, ...]] = {}
+        for name, regions in ast.literal_eval(value).items():
+            slugs = []
+            for r in regions:
+                slug = APWORLD_REGION_TO_SLUG.get(r)
+                if slug is None:
+                    raise RuntimeError(
+                        f"LOCATION_EXTRA_REGIONS names region {r!r} with no "
+                        f"entry in APWORLD_REGION_TO_SLUG")
+                slugs.append(slug)
+            out[name] = tuple(slugs)
+        return out
+    return {}
 
 
 def parse_equipment_act_gates(apworld_path: Path) -> dict[int, int]:
@@ -448,7 +595,7 @@ def validate(locations: list[tuple[str, int, str]]) -> list[str]:
     for name, lid, slug in locations:
         if not name:
             errors.append(f"empty location name for id {lid}")
-        if slug not in REGION_DISPLAY_NAMES:
+        if slug not in REGION_DISPLAY_NAMES and slug not in EXCLUDED_REGIONS:
             errors.append(f"unmapped region slug {slug!r} (location {name!r} id={lid}). "
                           f"Add to REGION_DISPLAY_NAMES or update REGION_ORDER.")
         if lid in seen_ids:
@@ -466,7 +613,7 @@ def validate(locations: list[tuple[str, int, str]]) -> list[str]:
             errors.append(f"region {slug!r} is in REGION_ORDER but has no locations")
     # Slugs that exist in the data but aren't in REGION_ORDER are warnings, not errors.
     for slug in by_region:
-        if slug not in REGION_ORDER:
+        if slug not in REGION_ORDER and slug not in EXCLUDED_REGIONS:
             errors.append(f"region {slug!r} has data but isn't in REGION_ORDER (would not display)")
     return errors
 
@@ -753,7 +900,8 @@ def emit_locations_json(
     by_region: dict[str, list[tuple[str, int]]],
     npc_pins: dict[str, dict[str, dict]],
     overworld_pins: dict[str, dict] | None = None,
-    tab_origin: dict[int, str] | None = None,
+    merged_origin: dict[int, str] | None = None,
+    extra_regions: dict[str, tuple[str, ...]] | None = None,
 ) -> list:
     """Return the locations.json payload as a Python list.
 
@@ -782,7 +930,8 @@ def emit_locations_json(
     - Un-projected kills fall back to a grid layout (rare in practice).
     """
     overworld_pins = overworld_pins or {}
-    tab_origin = tab_origin or {}
+    merged_origin = merged_origin or {}
+    extra_regions = extra_regions or {}
     region_to_overworld = _act_overworld_for_region()
     payload = []
     for slug in REGION_ORDER:
@@ -807,14 +956,20 @@ def emit_locations_json(
                 "sections": [section],
                 "visibility_rules": [sanity_code],
             }
-            # A LOCATION_TAB_OVERRIDE check is shown on a different tab from
-            # its apworld region, so it carries that region's gating instead
-            # of inheriting the tab's.
-            origin = tab_origin.get(lid)
-            if origin is not None:
-                origin_rule = region_rule_for(origin)
-                if origin_rule:
-                    child["access_rules"] = [origin_rule]
+            # Per-check access rules, needed when a check is stricter than
+            # its tab's region rule:
+            #  - folded in from a MERGED_INTO child region, so it carries
+            #    that child's gating rather than inheriting the parent's;
+            #  - listed in the apworld's LOCATION_EXTRA_REGIONS, which
+            #    layers a second required region onto the check.
+            # group_by_region suffixes duplicate display names with
+            # ' #2'/'#3', so match LOCATION_EXTRA_REGIONS on the base name.
+            origin = merged_origin.get(lid)
+            extra = extra_regions.get(re.sub(r" #\d+$", "", name), ())
+            if origin is not None or extra:
+                child_rule = access_rule_for(origin or slug, also=extra)
+                if child_rule:
+                    child["access_rules"] = [child_rule]
             if lid >= 10000:
                 # Kill -> area map at the NPC's real position (or fallback grid).
                 # group_by_region appends ' #2'/'#3' to disambiguate duplicate
@@ -884,7 +1039,7 @@ def emit_locations_json(
                     }],
                 }
                 children.insert(0, overview_child)
-        region_rule = region_rule_for(slug)
+        region_rule = access_rule_for(slug)
         if region_rule:
             # PopTracker access_rules entries are AND-joined within a single
             # string and OR-joined across the list. We emit one string so
@@ -1180,7 +1335,8 @@ def main(argv: list[str] | None = None) -> int:
     # 1. locations/locations.json
     write_json(pack_root / "locations" / "locations.json",
                emit_locations_json(by_region, npc_pins, overworld_pins,
-                                   tab_override_origin(args.apworld)))
+                                   merged_origin_by_id(args.apworld),
+                                   parse_location_extra_regions(args.apworld)))
     print(f"[OK] Wrote locations/locations.json ({len(locations)} sections)")
 
     # 2. maps/maps.json

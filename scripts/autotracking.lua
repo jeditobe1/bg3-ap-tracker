@@ -22,7 +22,8 @@ local function code_for_item(item_id)
     if item_id == 1 then return "level_fragment", "consumable" end
     if item_id >= 5 and item_id <= 34 then return "stat_boost", "consumable" end
     -- Region-locking Progressive Moonlight Towers (apworld v0.6.0+, AP id
-    -- 114). Receivable up to 5 times: 4 unlocks Moonrise, 5 unlocks the
+    -- 114). Receivable up to 3 times (5 before apworld v0.7.1): 1 unlocks
+    -- Moonrise Towers, 2 the rooftop, 3 the
     -- Mindflayer Colony. Single-receive gates 100..113 are routed via
     -- AP_ITEM_ID_TO_CODE; 114 is the only counter and lands here.
     if item_id == 114 then return "gate_progressive_moonlight_towers", "consumable" end
@@ -57,6 +58,10 @@ end
 -- Goal stage codes from items.json Goal progressive (matches the values in
 -- apworld options.py: 0=Halsin, 1=Wwargaz, 2=Act1UDF, 3=Myrkul, 4=Act2UDF).
 local GOAL_HALSIN, GOAL_WWARGAZ, GOAL_ACT1_UDF, GOAL_MYRKUL, GOAL_ACT2_UDF = 0, 1, 2, 3, 4
+-- apworld v0.7.0 added the Act 3 goals. Their Act 3 regions are out of scope
+-- for this pack, but a player on one of these goals still plays Acts 1-2, so
+-- the goals must resolve to a valid Goal stage and gate pool.
+local GOAL_NETHERBRAIN, GOAL_ACT3_UDF = 5, 6
 
 -- Region-locking gate items (apworld v0.6.0+). When BlockEntrances is on,
 -- the items in this player's pool depend on goal -- the rest are auto-enabled
@@ -67,7 +72,7 @@ local ALL_GATE_TOGGLES = {
     "gate_underdark", "gate_hags_fireplace", "gate_zhentarim_basement",
     "gate_grymforge", "gate_mountain_pass", "gate_creche",
     "gate_act2", "gate_last_light_basement", "gate_reithwins_masons_guild",
-    "gate_shar_trials",
+    "gate_shar_trials", "gate_act3",
 }
 local ALL_GATE_COUNTERS = { "gate_progressive_moonlight_towers" }
 
@@ -75,17 +80,19 @@ local function pool_gates_for_goal(goal)
     -- Return the set of gate codes that ARE in the player's pool for this
     -- goal when BlockEntrances is on. Codes outside this set get
     -- auto-enabled so they don't block access_rules pointlessly.
+    -- apworld v0.7.0 promoted Hag's Fireplace and Zhentarim Basement out of
+    -- the non-Halsin branch (items.py) -- they are now placed for every goal.
     local pool = {
         gate_nautiloid_control_panel = true,
         gate_withers_crypt = true,
         gate_goblin_camp = true,
+        gate_hags_fireplace = true,
+        gate_zhentarim_basement = true,
     }
     if goal == GOAL_HALSIN then
         pool.gate_blighted_village_well = true
     else
         pool.gate_underdark = true
-        pool.gate_hags_fireplace = true
-        pool.gate_zhentarim_basement = true
         pool.gate_grymforge = true
         pool.gate_mountain_pass = true
         pool.gate_creche = true
@@ -94,7 +101,10 @@ local function pool_gates_for_goal(goal)
             pool.gate_last_light_basement = true
             pool.gate_reithwins_masons_guild = true
             pool.gate_shar_trials = true
-            pool.gate_progressive_moonlight_towers = true  -- counter, max 5
+            pool.gate_progressive_moonlight_towers = true  -- counter, max 3
+            if goal ~= GOAL_MYRKUL and goal ~= GOAL_ACT2_UDF then
+                pool.gate_act3 = true
+            end
         end
     end
     return pool
@@ -121,7 +131,7 @@ local function apply_gate_auto_enable()
     end
     for _, code in ipairs(ALL_GATE_COUNTERS) do
         local c = Tracker:FindObjectForCode(code)
-        if c and not pool[code] then c.AcquiredCount = 5 end
+        if c and not pool[code] then c.AcquiredCount = 3 end
     end
 end
 

@@ -31,7 +31,7 @@
     },
     {
         "name": "waukeen",
-        "location_size": 8,
+        "location_size": 16,
         "location_border_thickness": 2,
         "img": "images/maps/waukeen.png"
     },

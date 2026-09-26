@@ -1165,18 +1165,6 @@
                         "name": "Tadpole-Nettie: Talk to Nettie"
                     },
                     {
-                        "ref": "Druid Grove/Tadpole-Nettie: Be Poisoned by Nettie/Tadpole-Nettie: Be Poisoned by Nettie",
-                        "name": "Tadpole-Nettie: Be Poisoned by Nettie"
-                    },
-                    {
-                        "ref": "Druid Grove/Tadpole-Nettie: Learn about Antidote/Tadpole-Nettie: Learn about Antidote",
-                        "name": "Tadpole-Nettie: Learn about Antidote"
-                    },
-                    {
-                        "ref": "Druid Grove/Tadpole-Nettie: Cure the Poison/Tadpole-Nettie: Cure the Poison",
-                        "name": "Tadpole-Nettie: Cure the Poison"
-                    },
-                    {
                         "ref": "Druid Grove/Grove-Harpy: Hear Harpy Song/Grove-Harpy: Hear Harpy Song",
                         "name": "Grove-Harpy: Hear Harpy Song"
                     },
@@ -1317,8 +1305,8 @@
                         "name": "Grove: Help Alfira with her Song"
                     },
                     {
-                        "ref": "Druid Grove/Tadpole: Learned about Ethel/Tadpole: Learned about Ethel",
-                        "name": "Tadpole: Learned about Ethel"
+                        "ref": "Druid Grove/Tadpole: Talk to Ethel about Tadpole/Tadpole: Talk to Ethel about Tadpole",
+                        "name": "Tadpole: Talk to Ethel about Tadpole"
                     },
                     {
                         "ref": "Druid Grove/Astarion: Learned Vampire/Astarion: Learned Vampire",
@@ -1466,66 +1454,6 @@
                 ]
             },
             {
-                "name": "Tadpole-Nettie: Be Poisoned by Nettie",
-                "sections": [
-                    {
-                        "name": "Tadpole-Nettie: Be Poisoned by Nettie",
-                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
-                        "chest_opened_img": "images/items/quest_marker_opened.png"
-                    }
-                ],
-                "visibility_rules": [
-                    "questsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "grove",
-                        "x": 96,
-                        "y": 268
-                    }
-                ]
-            },
-            {
-                "name": "Tadpole-Nettie: Learn about Antidote",
-                "sections": [
-                    {
-                        "name": "Tadpole-Nettie: Learn about Antidote",
-                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
-                        "chest_opened_img": "images/items/quest_marker_opened.png"
-                    }
-                ],
-                "visibility_rules": [
-                    "questsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "grove",
-                        "x": 112,
-                        "y": 268
-                    }
-                ]
-            },
-            {
-                "name": "Tadpole-Nettie: Cure the Poison",
-                "sections": [
-                    {
-                        "name": "Tadpole-Nettie: Cure the Poison",
-                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
-                        "chest_opened_img": "images/items/quest_marker_opened.png"
-                    }
-                ],
-                "visibility_rules": [
-                    "questsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "grove",
-                        "x": 128,
-                        "y": 268
-                    }
-                ]
-            },
-            {
                 "name": "Grove-Harpy: Hear Harpy Song",
                 "sections": [
                     {
@@ -1540,7 +1468,7 @@
                 "map_locations": [
                     {
                         "map": "grove",
-                        "x": 144,
+                        "x": 96,
                         "y": 268
                     }
                 ]
@@ -1560,7 +1488,7 @@
                 "map_locations": [
                     {
                         "map": "grove",
-                        "x": 160,
+                        "x": 112,
                         "y": 268
                     }
                 ]
@@ -1580,7 +1508,7 @@
                 "map_locations": [
                     {
                         "map": "grove",
-                        "x": 176,
+                        "x": 128,
                         "y": 268
                     }
                 ]
@@ -1600,7 +1528,7 @@
                 "map_locations": [
                     {
                         "map": "grove",
-                        "x": 192,
+                        "x": 144,
                         "y": 268
                     }
                 ]
@@ -1620,7 +1548,7 @@
                 "map_locations": [
                     {
                         "map": "grove",
-                        "x": 208,
+                        "x": 160,
                         "y": 268
                     }
                 ]
@@ -1640,7 +1568,7 @@
                 "map_locations": [
                     {
                         "map": "grove",
-                        "x": 224,
+                        "x": 176,
                         "y": 268
                     }
                 ]
@@ -1660,7 +1588,7 @@
                 "map_locations": [
                     {
                         "map": "grove",
-                        "x": 240,
+                        "x": 192,
                         "y": 268
                     }
                 ]
@@ -1680,7 +1608,7 @@
                 "map_locations": [
                     {
                         "map": "grove",
-                        "x": 256,
+                        "x": 208,
                         "y": 268
                     }
                 ]
@@ -1700,7 +1628,7 @@
                 "map_locations": [
                     {
                         "map": "grove",
-                        "x": 272,
+                        "x": 224,
                         "y": 268
                     }
                 ]
@@ -1720,7 +1648,7 @@
                 "map_locations": [
                     {
                         "map": "grove",
-                        "x": 288,
+                        "x": 240,
                         "y": 268
                     }
                 ]
@@ -1740,7 +1668,7 @@
                 "map_locations": [
                     {
                         "map": "grove",
-                        "x": 304,
+                        "x": 256,
                         "y": 268
                     }
                 ]
@@ -1760,7 +1688,7 @@
                 "map_locations": [
                     {
                         "map": "grove",
-                        "x": 320,
+                        "x": 272,
                         "y": 268
                     }
                 ]
@@ -1780,7 +1708,7 @@
                 "map_locations": [
                     {
                         "map": "grove",
-                        "x": 336,
+                        "x": 288,
                         "y": 268
                     }
                 ]
@@ -1800,7 +1728,7 @@
                 "map_locations": [
                     {
                         "map": "grove",
-                        "x": 352,
+                        "x": 304,
                         "y": 268
                     }
                 ]
@@ -1820,7 +1748,7 @@
                 "map_locations": [
                     {
                         "map": "grove",
-                        "x": 368,
+                        "x": 320,
                         "y": 268
                     }
                 ]
@@ -1840,7 +1768,7 @@
                 "map_locations": [
                     {
                         "map": "grove",
-                        "x": 384,
+                        "x": 336,
                         "y": 268
                     }
                 ]
@@ -1860,7 +1788,7 @@
                 "map_locations": [
                     {
                         "map": "grove",
-                        "x": 400,
+                        "x": 352,
                         "y": 268
                     }
                 ]
@@ -1880,7 +1808,7 @@
                 "map_locations": [
                     {
                         "map": "grove",
-                        "x": 416,
+                        "x": 368,
                         "y": 268
                     }
                 ]
@@ -1900,7 +1828,7 @@
                 "map_locations": [
                     {
                         "map": "grove",
-                        "x": 432,
+                        "x": 384,
                         "y": 268
                     }
                 ]
@@ -1920,7 +1848,7 @@
                 "map_locations": [
                     {
                         "map": "grove",
-                        "x": 448,
+                        "x": 400,
                         "y": 268
                     }
                 ]
@@ -1940,7 +1868,7 @@
                 "map_locations": [
                     {
                         "map": "grove",
-                        "x": 464,
+                        "x": 416,
                         "y": 268
                     }
                 ]
@@ -1960,8 +1888,8 @@
                 "map_locations": [
                     {
                         "map": "grove",
-                        "x": 16,
-                        "y": 284
+                        "x": 432,
+                        "y": 268
                     }
                 ]
             },
@@ -1980,8 +1908,8 @@
                 "map_locations": [
                     {
                         "map": "grove",
-                        "x": 32,
-                        "y": 284
+                        "x": 448,
+                        "y": 268
                     }
                 ]
             },
@@ -2000,8 +1928,8 @@
                 "map_locations": [
                     {
                         "map": "grove",
-                        "x": 48,
-                        "y": 284
+                        "x": 464,
+                        "y": 268
                     }
                 ]
             },
@@ -2020,7 +1948,7 @@
                 "map_locations": [
                     {
                         "map": "grove",
-                        "x": 64,
+                        "x": 16,
                         "y": 284
                     }
                 ]
@@ -2040,7 +1968,7 @@
                 "map_locations": [
                     {
                         "map": "grove",
-                        "x": 80,
+                        "x": 32,
                         "y": 284
                     }
                 ]
@@ -2060,7 +1988,7 @@
                 "map_locations": [
                     {
                         "map": "grove",
-                        "x": 96,
+                        "x": 48,
                         "y": 284
                     }
                 ]
@@ -2080,7 +2008,7 @@
                 "map_locations": [
                     {
                         "map": "grove",
-                        "x": 112,
+                        "x": 64,
                         "y": 284
                     }
                 ]
@@ -2100,7 +2028,7 @@
                 "map_locations": [
                     {
                         "map": "grove",
-                        "x": 128,
+                        "x": 80,
                         "y": 284
                     }
                 ]
@@ -2120,7 +2048,7 @@
                 "map_locations": [
                     {
                         "map": "grove",
-                        "x": 144,
+                        "x": 96,
                         "y": 284
                     }
                 ]
@@ -2140,7 +2068,7 @@
                 "map_locations": [
                     {
                         "map": "grove",
-                        "x": 160,
+                        "x": 112,
                         "y": 284
                     }
                 ]
@@ -2160,7 +2088,7 @@
                 "map_locations": [
                     {
                         "map": "grove",
-                        "x": 176,
+                        "x": 128,
                         "y": 284
                     }
                 ]
@@ -2180,7 +2108,7 @@
                 "map_locations": [
                     {
                         "map": "grove",
-                        "x": 192,
+                        "x": 144,
                         "y": 284
                     }
                 ]
@@ -2200,7 +2128,7 @@
                 "map_locations": [
                     {
                         "map": "grove",
-                        "x": 208,
+                        "x": 160,
                         "y": 284
                     }
                 ]
@@ -2220,16 +2148,16 @@
                 "map_locations": [
                     {
                         "map": "grove",
-                        "x": 224,
+                        "x": 176,
                         "y": 284
                     }
                 ]
             },
             {
-                "name": "Tadpole: Learned about Ethel",
+                "name": "Tadpole: Talk to Ethel about Tadpole",
                 "sections": [
                     {
-                        "name": "Tadpole: Learned about Ethel",
+                        "name": "Tadpole: Talk to Ethel about Tadpole",
                         "chest_unopened_img": "images/items/quest_marker_unopened.png",
                         "chest_opened_img": "images/items/quest_marker_opened.png"
                     }
@@ -2240,7 +2168,7 @@
                 "map_locations": [
                     {
                         "map": "grove",
-                        "x": 240,
+                        "x": 192,
                         "y": 284
                     }
                 ]
@@ -2260,7 +2188,7 @@
                 "map_locations": [
                     {
                         "map": "grove",
-                        "x": 256,
+                        "x": 208,
                         "y": 284
                     }
                 ]
@@ -2455,10 +2383,6 @@
                     {
                         "ref": "Blighted Village/Village-Book: Learn about Gem/Village-Book: Learn about Gem",
                         "name": "Village-Book: Learn about Gem"
-                    },
-                    {
-                        "ref": "Blighted Village/Village-Forge: Find Journal/Village-Forge: Find Journal",
-                        "name": "Village-Forge: Find Journal"
                     },
                     {
                         "ref": "Blighted Village/Village-Forge: Find Plans/Village-Forge: Find Plans",
@@ -2685,6 +2609,9 @@
                 "visibility_rules": [
                     "questsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:3,gate_blighted_village_well,gate_underdark"
+                ],
                 "map_locations": [
                     {
                         "map": "blighted_village",
@@ -2704,6 +2631,9 @@
                 ],
                 "visibility_rules": [
                     "questsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:3,gate_blighted_village_well,gate_underdark"
                 ],
                 "map_locations": [
                     {
@@ -2725,6 +2655,9 @@
                 "visibility_rules": [
                     "questsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:3,gate_blighted_village_well,gate_underdark"
+                ],
                 "map_locations": [
                     {
                         "map": "blighted_village",
@@ -2744,6 +2677,9 @@
                 ],
                 "visibility_rules": [
                     "questsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:3,gate_blighted_village_well,gate_underdark"
                 ],
                 "map_locations": [
                     {
@@ -2765,6 +2701,9 @@
                 "visibility_rules": [
                     "questsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:3,gate_blighted_village_well,gate_underdark"
+                ],
                 "map_locations": [
                     {
                         "map": "blighted_village",
@@ -2785,30 +2724,13 @@
                 "visibility_rules": [
                     "questsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:3,gate_blighted_village_well,gate_underdark"
+                ],
                 "map_locations": [
                     {
                         "map": "blighted_village",
                         "x": 288,
-                        "y": 536
-                    }
-                ]
-            },
-            {
-                "name": "Village-Forge: Find Journal",
-                "sections": [
-                    {
-                        "name": "Village-Forge: Find Journal",
-                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
-                        "chest_opened_img": "images/items/quest_marker_opened.png"
-                    }
-                ],
-                "visibility_rules": [
-                    "questsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "blighted_village",
-                        "x": 320,
                         "y": 536
                     }
                 ]
@@ -2825,10 +2747,13 @@
                 "visibility_rules": [
                     "questsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:3,gate_blighted_village_well,gate_underdark"
+                ],
                 "map_locations": [
                     {
                         "map": "blighted_village",
-                        "x": 352,
+                        "x": 320,
                         "y": 536
                     }
                 ]
@@ -2848,7 +2773,7 @@
                 "map_locations": [
                     {
                         "map": "blighted_village",
-                        "x": 384,
+                        "x": 352,
                         "y": 536
                     }
                 ]
@@ -2868,7 +2793,7 @@
                 "map_locations": [
                     {
                         "map": "blighted_village",
-                        "x": 416,
+                        "x": 384,
                         "y": 536
                     }
                 ]
@@ -2888,7 +2813,7 @@
                 "map_locations": [
                     {
                         "map": "blighted_village",
-                        "x": 448,
+                        "x": 416,
                         "y": 536
                     }
                 ]
@@ -2908,7 +2833,7 @@
                 "map_locations": [
                     {
                         "map": "blighted_village",
-                        "x": 480,
+                        "x": 448,
                         "y": 536
                     }
                 ]
@@ -2928,7 +2853,7 @@
                 "map_locations": [
                     {
                         "map": "blighted_village",
-                        "x": 512,
+                        "x": 480,
                         "y": 536
                     }
                 ]
@@ -2948,7 +2873,7 @@
                 "map_locations": [
                     {
                         "map": "blighted_village",
-                        "x": 544,
+                        "x": 512,
                         "y": 536
                     }
                 ]
@@ -2968,7 +2893,7 @@
                 "map_locations": [
                     {
                         "map": "blighted_village",
-                        "x": 576,
+                        "x": 544,
                         "y": 536
                     }
                 ]
@@ -2988,7 +2913,7 @@
                 "map_locations": [
                     {
                         "map": "blighted_village",
-                        "x": 608,
+                        "x": 576,
                         "y": 536
                     }
                 ]
@@ -3008,7 +2933,7 @@
                 "map_locations": [
                     {
                         "map": "blighted_village",
-                        "x": 640,
+                        "x": 608,
                         "y": 536
                     }
                 ]
@@ -3028,7 +2953,7 @@
                 "map_locations": [
                     {
                         "map": "blighted_village",
-                        "x": 672,
+                        "x": 640,
                         "y": 536
                     }
                 ]
@@ -3045,10 +2970,13 @@
                 "visibility_rules": [
                     "questsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:3,gate_blighted_village_well,gate_underdark"
+                ],
                 "map_locations": [
                     {
                         "map": "blighted_village",
-                        "x": 704,
+                        "x": 672,
                         "y": 536
                     }
                 ]
@@ -3066,7 +2994,7 @@
                 "map_locations": [
                     {
                         "map": "blighted_village",
-                        "x": 679,
+                        "x": 193,
                         "y": 350
                     }
                 ]
@@ -3084,7 +3012,7 @@
                 "map_locations": [
                     {
                         "map": "blighted_village",
-                        "x": 566,
+                        "x": 80,
                         "y": 331
                     }
                 ]
@@ -3099,10 +3027,13 @@
                 "visibility_rules": [
                     "killsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:3,gate_blighted_village_well,gate_underdark"
+                ],
                 "map_locations": [
                     {
                         "map": "blighted_village",
-                        "x": 379,
+                        "x": 865,
                         "y": 347
                     }
                 ]
@@ -3117,10 +3048,13 @@
                 "visibility_rules": [
                     "killsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:3,gate_blighted_village_well,gate_underdark"
+                ],
                 "map_locations": [
                     {
                         "map": "blighted_village",
-                        "x": 406,
+                        "x": 892,
                         "y": 209
                     }
                 ]
@@ -3138,7 +3072,7 @@
                 "map_locations": [
                     {
                         "map": "blighted_village",
-                        "x": 572,
+                        "x": 86,
                         "y": 360
                     }
                 ]
@@ -3156,7 +3090,7 @@
                 "map_locations": [
                     {
                         "map": "blighted_village",
-                        "x": 686,
+                        "x": 200,
                         "y": 241
                     }
                 ]
@@ -3174,7 +3108,7 @@
                 "map_locations": [
                     {
                         "map": "blighted_village",
-                        "x": 666,
+                        "x": 180,
                         "y": 307
                     }
                 ]
@@ -3192,7 +3126,7 @@
                 "map_locations": [
                     {
                         "map": "blighted_village",
-                        "x": 596,
+                        "x": 110,
                         "y": 293
                     }
                 ]
@@ -3210,7 +3144,7 @@
                 "map_locations": [
                     {
                         "map": "blighted_village",
-                        "x": 634,
+                        "x": 148,
                         "y": 389
                     }
                 ]
@@ -3228,7 +3162,7 @@
                 "map_locations": [
                     {
                         "map": "blighted_village",
-                        "x": 663,
+                        "x": 177,
                         "y": 279
                     }
                 ]
@@ -3246,7 +3180,7 @@
                 "map_locations": [
                     {
                         "map": "blighted_village",
-                        "x": 664,
+                        "x": 178,
                         "y": 221
                     }
                 ]
@@ -3264,7 +3198,7 @@
                 "map_locations": [
                     {
                         "map": "blighted_village",
-                        "x": 638,
+                        "x": 152,
                         "y": 233
                     }
                 ]
@@ -3282,7 +3216,7 @@
                 "map_locations": [
                     {
                         "map": "blighted_village",
-                        "x": 606,
+                        "x": 120,
                         "y": 392
                     }
                 ]
@@ -3300,7 +3234,7 @@
                 "map_locations": [
                     {
                         "map": "blighted_village",
-                        "x": 654,
+                        "x": 168,
                         "y": 364
                     }
                 ]
@@ -3318,7 +3252,7 @@
                 "map_locations": [
                     {
                         "map": "blighted_village",
-                        "x": 543,
+                        "x": 57,
                         "y": 358
                     }
                 ]
@@ -3336,7 +3270,7 @@
                 "map_locations": [
                     {
                         "map": "blighted_village",
-                        "x": 631,
+                        "x": 145,
                         "y": 162
                     }
                 ]
@@ -3354,7 +3288,7 @@
                 "map_locations": [
                     {
                         "map": "blighted_village",
-                        "x": 627,
+                        "x": 141,
                         "y": 354
                     }
                 ]
@@ -3369,10 +3303,13 @@
                 "visibility_rules": [
                     "killsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:3,gate_blighted_village_well,gate_underdark"
+                ],
                 "map_locations": [
                     {
                         "map": "blighted_village",
-                        "x": 386,
+                        "x": 872,
                         "y": 284
                     }
                 ]
@@ -3387,10 +3324,13 @@
                 "visibility_rules": [
                     "killsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:3,gate_blighted_village_well,gate_underdark"
+                ],
                 "map_locations": [
                     {
                         "map": "blighted_village",
-                        "x": 246,
+                        "x": 732,
                         "y": 288
                     }
                 ]
@@ -3405,10 +3345,13 @@
                 "visibility_rules": [
                     "killsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:3,gate_blighted_village_well,gate_underdark"
+                ],
                 "map_locations": [
                     {
                         "map": "blighted_village",
-                        "x": 83,
+                        "x": 569,
                         "y": 319
                     }
                 ]
@@ -3423,10 +3366,13 @@
                 "visibility_rules": [
                     "killsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:3,gate_blighted_village_well,gate_underdark"
+                ],
                 "map_locations": [
                     {
                         "map": "blighted_village",
-                        "x": 386,
+                        "x": 872,
                         "y": 319
                     }
                 ]
@@ -3441,10 +3387,13 @@
                 "visibility_rules": [
                     "killsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:3,gate_blighted_village_well,gate_underdark"
+                ],
                 "map_locations": [
                     {
                         "map": "blighted_village",
-                        "x": 68,
+                        "x": 554,
                         "y": 264
                     }
                 ]
@@ -3462,7 +3411,7 @@
                 "map_locations": [
                     {
                         "map": "blighted_village",
-                        "x": 876,
+                        "x": 390,
                         "y": 150
                     }
                 ]
@@ -3480,14 +3429,14 @@
                 "map_locations": [
                     {
                         "map": "blighted_village",
-                        "x": 904,
+                        "x": 418,
                         "y": 157
                     }
                 ]
             }
         ],
         "access_rules": [
-            "level_fragment:3,gate_blighted_village_well,gate_underdark"
+            "level_fragment:3"
         ]
     },
     {
@@ -3748,8 +3697,8 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 16,
-                        "y": 268
+                        "x": 32,
+                        "y": 536
                     }
                 ]
             },
@@ -3768,8 +3717,8 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 32,
-                        "y": 268
+                        "x": 64,
+                        "y": 536
                     }
                 ]
             },
@@ -3785,11 +3734,14 @@
                 "visibility_rules": [
                     "questsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:6,gate_zhentarim_basement"
+                ],
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 48,
-                        "y": 268
+                        "x": 96,
+                        "y": 536
                     }
                 ]
             },
@@ -3805,11 +3757,14 @@
                 "visibility_rules": [
                     "questsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:6,gate_zhentarim_basement"
+                ],
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 64,
-                        "y": 268
+                        "x": 128,
+                        "y": 536
                     }
                 ]
             },
@@ -3825,11 +3780,14 @@
                 "visibility_rules": [
                     "questsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:6,gate_zhentarim_basement"
+                ],
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 80,
-                        "y": 268
+                        "x": 160,
+                        "y": 536
                     }
                 ]
             },
@@ -3845,11 +3803,14 @@
                 "visibility_rules": [
                     "questsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:6,gate_zhentarim_basement"
+                ],
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 96,
-                        "y": 268
+                        "x": 192,
+                        "y": 536
                     }
                 ]
             },
@@ -3868,8 +3829,8 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 112,
-                        "y": 268
+                        "x": 224,
+                        "y": 536
                     }
                 ]
             },
@@ -3888,8 +3849,8 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 128,
-                        "y": 268
+                        "x": 256,
+                        "y": 536
                     }
                 ]
             },
@@ -3908,8 +3869,8 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 144,
-                        "y": 268
+                        "x": 288,
+                        "y": 536
                     }
                 ]
             },
@@ -3928,8 +3889,8 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 160,
-                        "y": 268
+                        "x": 320,
+                        "y": 536
                     }
                 ]
             },
@@ -3948,8 +3909,8 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 176,
-                        "y": 268
+                        "x": 352,
+                        "y": 536
                     }
                 ]
             },
@@ -3968,8 +3929,8 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 192,
-                        "y": 268
+                        "x": 384,
+                        "y": 536
                     }
                 ]
             },
@@ -3988,8 +3949,8 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 208,
-                        "y": 268
+                        "x": 416,
+                        "y": 536
                     }
                 ]
             },
@@ -4008,8 +3969,8 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 224,
-                        "y": 268
+                        "x": 448,
+                        "y": 536
                     }
                 ]
             },
@@ -4028,8 +3989,8 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 240,
-                        "y": 268
+                        "x": 480,
+                        "y": 536
                     }
                 ]
             },
@@ -4048,8 +4009,8 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 256,
-                        "y": 268
+                        "x": 512,
+                        "y": 536
                     }
                 ]
             },
@@ -4068,8 +4029,8 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 272,
-                        "y": 268
+                        "x": 544,
+                        "y": 536
                     }
                 ]
             },
@@ -4088,8 +4049,8 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 288,
-                        "y": 268
+                        "x": 576,
+                        "y": 536
                     }
                 ]
             },
@@ -4108,8 +4069,8 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 304,
-                        "y": 268
+                        "x": 608,
+                        "y": 536
                     }
                 ]
             },
@@ -4128,8 +4089,8 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 320,
-                        "y": 268
+                        "x": 640,
+                        "y": 536
                     }
                 ]
             },
@@ -4148,8 +4109,8 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 336,
-                        "y": 268
+                        "x": 672,
+                        "y": 536
                     }
                 ]
             },
@@ -4168,8 +4129,8 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 352,
-                        "y": 268
+                        "x": 704,
+                        "y": 536
                     }
                 ]
             },
@@ -4188,8 +4149,8 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 368,
-                        "y": 268
+                        "x": 736,
+                        "y": 536
                     }
                 ]
             },
@@ -4208,8 +4169,8 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 384,
-                        "y": 268
+                        "x": 768,
+                        "y": 536
                     }
                 ]
             },
@@ -4228,8 +4189,8 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 400,
-                        "y": 268
+                        "x": 800,
+                        "y": 536
                     }
                 ]
             },
@@ -4248,8 +4209,8 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 416,
-                        "y": 268
+                        "x": 832,
+                        "y": 536
                     }
                 ]
             },
@@ -4268,8 +4229,8 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 432,
-                        "y": 268
+                        "x": 864,
+                        "y": 536
                     }
                 ]
             },
@@ -4285,11 +4246,14 @@
                 "visibility_rules": [
                     "questsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:6,gate_zhentarim_basement"
+                ],
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 448,
-                        "y": 268
+                        "x": 896,
+                        "y": 536
                     }
                 ]
             },
@@ -4308,8 +4272,8 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 464,
-                        "y": 268
+                        "x": 928,
+                        "y": 536
                     }
                 ]
             },
@@ -4328,8 +4292,8 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 16,
-                        "y": 284
+                        "x": 32,
+                        "y": 568
                     }
                 ]
             },
@@ -4348,8 +4312,8 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 32,
-                        "y": 284
+                        "x": 64,
+                        "y": 568
                     }
                 ]
             },
@@ -4368,8 +4332,8 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 48,
-                        "y": 284
+                        "x": 96,
+                        "y": 568
                     }
                 ]
             },
@@ -4388,8 +4352,8 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 64,
-                        "y": 284
+                        "x": 128,
+                        "y": 568
                     }
                 ]
             },
@@ -4408,8 +4372,8 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 80,
-                        "y": 284
+                        "x": 160,
+                        "y": 568
                     }
                 ]
             },
@@ -4428,8 +4392,8 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 96,
-                        "y": 284
+                        "x": 192,
+                        "y": 568
                     }
                 ]
             },
@@ -4448,8 +4412,8 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 112,
-                        "y": 284
+                        "x": 224,
+                        "y": 568
                     }
                 ]
             },
@@ -4468,8 +4432,8 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 128,
-                        "y": 284
+                        "x": 256,
+                        "y": 568
                     }
                 ]
             },
@@ -4486,8 +4450,8 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 197,
-                        "y": 57
+                        "x": 559,
+                        "y": 233
                     }
                 ]
             },
@@ -4504,8 +4468,8 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 172,
-                        "y": 49
+                        "x": 525,
+                        "y": 202
                     }
                 ]
             },
@@ -4522,8 +4486,8 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 221,
-                        "y": 44
+                        "x": 594,
+                        "y": 211
                     }
                 ]
             },
@@ -4540,8 +4504,8 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 192,
-                        "y": 29
+                        "x": 554,
+                        "y": 204
                     }
                 ]
             },
@@ -4558,8 +4522,8 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 197,
-                        "y": 43
+                        "x": 540,
+                        "y": 177
                     }
                 ]
             },
@@ -4576,8 +4540,8 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 209,
-                        "y": 36
+                        "x": 577,
+                        "y": 187
                     }
                 ]
             },
@@ -4594,8 +4558,8 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 155,
-                        "y": 202
+                        "x": 489,
+                        "y": 409
                     }
                 ]
             },
@@ -4612,8 +4576,8 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 176,
-                        "y": 211
+                        "x": 518,
+                        "y": 404
                     }
                 ]
             },
@@ -4630,8 +4594,8 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 150,
-                        "y": 220
+                        "x": 484,
+                        "y": 438
                     }
                 ]
             },
@@ -4648,8 +4612,8 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 169,
-                        "y": 227
+                        "x": 536,
+                        "y": 457
                     }
                 ]
             },
@@ -4666,8 +4630,8 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 116,
-                        "y": 157
+                        "x": 458,
+                        "y": 339
                     }
                 ]
             },
@@ -4684,8 +4648,8 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 105,
-                        "y": 169
+                        "x": 421,
+                        "y": 378
                     }
                 ]
             },
@@ -4702,8 +4666,8 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 118,
-                        "y": 174
+                        "x": 448,
+                        "y": 366
                     }
                 ]
             },
@@ -4720,8 +4684,8 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 129,
-                        "y": 165
+                        "x": 475,
+                        "y": 377
                     }
                 ]
             },
@@ -4738,8 +4702,8 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 163,
-                        "y": 214
+                        "x": 520,
+                        "y": 433
                     }
                 ]
             },
@@ -4756,8 +4720,8 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 164,
-                        "y": 37
+                        "x": 500,
+                        "y": 186
                     }
                 ]
             },
@@ -4774,8 +4738,8 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 182,
-                        "y": 39
+                        "x": 530,
+                        "y": 230
                     }
                 ]
             },
@@ -4792,8 +4756,8 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 367,
-                        "y": 135
+                        "x": 781,
+                        "y": 322
                     }
                 ]
             },
@@ -4810,8 +4774,8 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 360,
-                        "y": 123
+                        "x": 760,
+                        "y": 302
                     }
                 ]
             },
@@ -4828,14 +4792,14 @@
                 "map_locations": [
                     {
                         "map": "waukeen",
-                        "x": 372,
-                        "y": 148
+                        "x": 780,
+                        "y": 351
                     }
                 ]
             }
         ],
         "access_rules": [
-            "level_fragment:6,gate_zhentarim_basement"
+            "level_fragment:6"
         ]
     },
     {
@@ -4953,24 +4917,12 @@
                         "name": "Gobs-Nightsong: Find Clues to Nightsong"
                     },
                     {
-                        "ref": "Goblin Camp/Plot-Art: Hear Minthara talk about Artefact/Plot-Art: Hear Minthara talk about Artefact",
-                        "name": "Plot-Art: Hear Minthara talk about Artefact"
-                    },
-                    {
-                        "ref": "Goblin Camp/Plot-Art: Hear Ragzlin talk about Artefact/Plot-Art: Hear Ragzlin talk about Artefact",
-                        "name": "Plot-Art: Hear Ragzlin talk about Artefact"
-                    },
-                    {
                         "ref": "Goblin Camp/Tadpole: Told by Guardian to find Tadpoles/Tadpole: Told by Guardian to find Tadpoles",
                         "name": "Tadpole: Told by Guardian to find Tadpoles"
                     },
                     {
                         "ref": "Goblin Camp/Tadpole: Guardian Suggests Consuming Tadpole/Tadpole: Guardian Suggests Consuming Tadpole",
                         "name": "Tadpole: Guardian Suggests Consuming Tadpole"
-                    },
-                    {
-                        "ref": "Goblin Camp/Gobs: Follow Gut to her Quarters/Gobs: Follow Gut to her Quarters",
-                        "name": "Gobs: Follow Gut to her Quarters"
                     },
                     {
                         "ref": "Goblin Camp/Gobs-Halsin: Tell Ormn that Halsin was Saved/Gobs-Halsin: Tell Ormn that Halsin was Saved",
@@ -5085,10 +5037,6 @@
                         "name": "Gobs: Kill Krolla"
                     },
                     {
-                        "ref": "Goblin Camp/Gobs: Kill Larger Giant Spider/Gobs: Kill Larger Giant Spider",
-                        "name": "Gobs: Kill Larger Giant Spider"
-                    },
-                    {
                         "ref": "Goblin Camp/Gobs: Kill Lookout Grush/Gobs: Kill Lookout Grush",
                         "name": "Gobs: Kill Lookout Grush"
                     },
@@ -5167,10 +5115,6 @@
                     {
                         "ref": "Goblin Camp/Gobs: Kill Small Klaw/Gobs: Kill Small Klaw",
                         "name": "Gobs: Kill Small Klaw"
-                    },
-                    {
-                        "ref": "Goblin Camp/Gobs: Kill Smaller Giant Spider/Gobs: Kill Smaller Giant Spider",
-                        "name": "Gobs: Kill Smaller Giant Spider"
                     },
                     {
                         "ref": "Goblin Camp/Gobs: Kill Stimk/Gobs: Kill Stimk",
@@ -5287,6 +5231,10 @@
                     {
                         "ref": "Goblin Camp/Gobs: Kill Zurga/Gobs: Kill Zurga",
                         "name": "Gobs: Kill Zurga"
+                    },
+                    {
+                        "ref": "Goblin Camp/Gobs: Kill Brawler Rancer/Gobs: Kill Brawler Rancer",
+                        "name": "Gobs: Kill Brawler Rancer"
                     }
                 ],
                 "map_locations": [
@@ -5308,6 +5256,9 @@
                 ],
                 "visibility_rules": [
                     "questsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
                 ],
                 "map_locations": [
                     {
@@ -5349,6 +5300,9 @@
                 "visibility_rules": [
                     "questsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
                 "map_locations": [
                     {
                         "map": "goblin_camp",
@@ -5368,6 +5322,9 @@
                 ],
                 "visibility_rules": [
                     "questsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
                 ],
                 "map_locations": [
                     {
@@ -5389,6 +5346,9 @@
                 "visibility_rules": [
                     "questsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
                 "map_locations": [
                     {
                         "map": "goblin_camp",
@@ -5408,6 +5368,9 @@
                 ],
                 "visibility_rules": [
                     "questsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
                 ],
                 "map_locations": [
                     {
@@ -5449,6 +5412,9 @@
                 "visibility_rules": [
                     "questsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
                 "map_locations": [
                     {
                         "map": "goblin_camp",
@@ -5468,6 +5434,9 @@
                 ],
                 "visibility_rules": [
                     "questsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
                 ],
                 "map_locations": [
                     {
@@ -5489,6 +5458,9 @@
                 "visibility_rules": [
                     "questsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
                 "map_locations": [
                     {
                         "map": "goblin_camp",
@@ -5508,6 +5480,9 @@
                 ],
                 "visibility_rules": [
                     "questsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
                 ],
                 "map_locations": [
                     {
@@ -5529,6 +5504,9 @@
                 "visibility_rules": [
                     "questsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
                 "map_locations": [
                     {
                         "map": "goblin_camp",
@@ -5548,6 +5526,9 @@
                 ],
                 "visibility_rules": [
                     "questsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
                 ],
                 "map_locations": [
                     {
@@ -5569,6 +5550,9 @@
                 "visibility_rules": [
                     "questsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
                 "map_locations": [
                     {
                         "map": "goblin_camp",
@@ -5589,6 +5573,9 @@
                 "visibility_rules": [
                     "questsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
                 "map_locations": [
                     {
                         "map": "goblin_camp",
@@ -5608,6 +5595,9 @@
                 ],
                 "visibility_rules": [
                     "questsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
                 ],
                 "map_locations": [
                     {
@@ -5649,6 +5639,9 @@
                 "visibility_rules": [
                     "questsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
                 "map_locations": [
                     {
                         "map": "goblin_camp",
@@ -5669,6 +5662,9 @@
                 "visibility_rules": [
                     "questsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
                 "map_locations": [
                     {
                         "map": "goblin_camp",
@@ -5688,6 +5684,9 @@
                 ],
                 "visibility_rules": [
                     "questsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
                 ],
                 "map_locations": [
                     {
@@ -5729,6 +5728,9 @@
                 "visibility_rules": [
                     "questsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
                 "map_locations": [
                     {
                         "map": "goblin_camp",
@@ -5748,6 +5750,9 @@
                 ],
                 "visibility_rules": [
                     "questsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
                 ],
                 "map_locations": [
                     {
@@ -5769,6 +5774,9 @@
                 "visibility_rules": [
                     "questsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
                 "map_locations": [
                     {
                         "map": "goblin_camp",
@@ -5788,6 +5796,9 @@
                 ],
                 "visibility_rules": [
                     "questsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
                 ],
                 "map_locations": [
                     {
@@ -5809,6 +5820,9 @@
                 "visibility_rules": [
                     "questsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
                 "map_locations": [
                     {
                         "map": "goblin_camp",
@@ -5829,50 +5843,13 @@
                 "visibility_rules": [
                     "questsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
                 "map_locations": [
                     {
                         "map": "goblin_camp",
                         "x": 864,
-                        "y": 536
-                    }
-                ]
-            },
-            {
-                "name": "Plot-Art: Hear Minthara talk about Artefact",
-                "sections": [
-                    {
-                        "name": "Plot-Art: Hear Minthara talk about Artefact",
-                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
-                        "chest_opened_img": "images/items/quest_marker_opened.png"
-                    }
-                ],
-                "visibility_rules": [
-                    "questsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "goblin_camp",
-                        "x": 896,
-                        "y": 536
-                    }
-                ]
-            },
-            {
-                "name": "Plot-Art: Hear Ragzlin talk about Artefact",
-                "sections": [
-                    {
-                        "name": "Plot-Art: Hear Ragzlin talk about Artefact",
-                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
-                        "chest_opened_img": "images/items/quest_marker_opened.png"
-                    }
-                ],
-                "visibility_rules": [
-                    "questsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "goblin_camp",
-                        "x": 928,
                         "y": 536
                     }
                 ]
@@ -5892,8 +5869,8 @@
                 "map_locations": [
                     {
                         "map": "goblin_camp",
-                        "x": 32,
-                        "y": 568
+                        "x": 896,
+                        "y": 536
                     }
                 ]
             },
@@ -5912,28 +5889,8 @@
                 "map_locations": [
                     {
                         "map": "goblin_camp",
-                        "x": 64,
-                        "y": 568
-                    }
-                ]
-            },
-            {
-                "name": "Gobs: Follow Gut to her Quarters",
-                "sections": [
-                    {
-                        "name": "Gobs: Follow Gut to her Quarters",
-                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
-                        "chest_opened_img": "images/items/quest_marker_opened.png"
-                    }
-                ],
-                "visibility_rules": [
-                    "questsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "goblin_camp",
-                        "x": 96,
-                        "y": 568
+                        "x": 928,
+                        "y": 536
                     }
                 ]
             },
@@ -5949,10 +5906,13 @@
                 "visibility_rules": [
                     "questsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
                 "map_locations": [
                     {
                         "map": "goblin_camp",
-                        "x": 128,
+                        "x": 32,
                         "y": 568
                     }
                 ]
@@ -5972,7 +5932,7 @@
                 "map_locations": [
                     {
                         "map": "goblin_camp",
-                        "x": 160,
+                        "x": 64,
                         "y": 568
                     }
                 ]
@@ -5992,7 +5952,7 @@
                 "map_locations": [
                     {
                         "map": "goblin_camp",
-                        "x": 192,
+                        "x": 96,
                         "y": 568
                     }
                 ]
@@ -6009,10 +5969,13 @@
                 "visibility_rules": [
                     "questsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
                 "map_locations": [
                     {
                         "map": "goblin_camp",
-                        "x": 224,
+                        "x": 128,
                         "y": 568
                     }
                 ]
@@ -6029,10 +5992,13 @@
                 "visibility_rules": [
                     "questsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
                 "map_locations": [
                     {
                         "map": "goblin_camp",
-                        "x": 256,
+                        "x": 160,
                         "y": 568
                     }
                 ]
@@ -6049,10 +6015,13 @@
                 "visibility_rules": [
                     "questsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
                 "map_locations": [
                     {
                         "map": "goblin_camp",
-                        "x": 288,
+                        "x": 192,
                         "y": 568
                     }
                 ]
@@ -6069,10 +6038,13 @@
                 "visibility_rules": [
                     "questsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
                 "map_locations": [
                     {
                         "map": "goblin_camp",
-                        "x": 320,
+                        "x": 224,
                         "y": 568
                     }
                 ]
@@ -6089,10 +6061,13 @@
                 "visibility_rules": [
                     "questsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
                 "map_locations": [
                     {
                         "map": "goblin_camp",
-                        "x": 352,
+                        "x": 256,
                         "y": 568
                     }
                 ]
@@ -6109,10 +6084,13 @@
                 "visibility_rules": [
                     "questsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
                 "map_locations": [
                     {
                         "map": "goblin_camp",
-                        "x": 384,
+                        "x": 288,
                         "y": 568
                     }
                 ]
@@ -6163,11 +6141,14 @@
                 "visibility_rules": [
                     "killsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
                 "map_locations": [
                     {
                         "map": "goblin_camp",
-                        "x": 635,
-                        "y": 155
+                        "x": 644,
+                        "y": 149
                     }
                 ]
             },
@@ -6180,6 +6161,9 @@
                 ],
                 "visibility_rules": [
                     "killsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
                 ],
                 "map_locations": [
                     {
@@ -6199,11 +6183,14 @@
                 "visibility_rules": [
                     "killsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
                 "map_locations": [
                     {
                         "map": "goblin_camp",
                         "x": 585,
-                        "y": 174
+                        "y": 172
                     }
                 ]
             },
@@ -6271,11 +6258,14 @@
                 "visibility_rules": [
                     "killsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
                 "map_locations": [
                     {
                         "map": "goblin_camp",
-                        "x": 596,
-                        "y": 148
+                        "x": 612,
+                        "y": 161
                     }
                 ]
             },
@@ -6307,6 +6297,9 @@
                 "visibility_rules": [
                     "killsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
                 "map_locations": [
                     {
                         "map": "goblin_camp",
@@ -6324,6 +6317,9 @@
                 ],
                 "visibility_rules": [
                     "killsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
                 ],
                 "map_locations": [
                     {
@@ -6361,11 +6357,14 @@
                 "visibility_rules": [
                     "killsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
                 "map_locations": [
                     {
                         "map": "goblin_camp",
-                        "x": 642,
-                        "y": 112
+                        "x": 640,
+                        "y": 114
                     }
                 ]
             },
@@ -6460,24 +6459,6 @@
                 ]
             },
             {
-                "name": "Gobs: Kill Larger Giant Spider",
-                "sections": [
-                    {
-                        "name": "Gobs: Kill Larger Giant Spider"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "goblin_camp",
-                        "x": 614,
-                        "y": 175
-                    }
-                ]
-            },
-            {
                 "name": "Gobs: Kill Lookout Grush",
                 "sections": [
                     {
@@ -6486,6 +6467,9 @@
                 ],
                 "visibility_rules": [
                     "killsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
                 ],
                 "map_locations": [
                     {
@@ -6505,6 +6489,9 @@
                 "visibility_rules": [
                     "killsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
                 "map_locations": [
                     {
                         "map": "goblin_camp",
@@ -6523,6 +6510,9 @@
                 "visibility_rules": [
                     "killsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
                 "map_locations": [
                     {
                         "map": "goblin_camp",
@@ -6540,6 +6530,9 @@
                 ],
                 "visibility_rules": [
                     "killsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
                 ],
                 "map_locations": [
                     {
@@ -6577,11 +6570,14 @@
                 "visibility_rules": [
                     "killsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
                 "map_locations": [
                     {
                         "map": "goblin_camp",
-                        "x": 566,
-                        "y": 197
+                        "x": 567,
+                        "y": 195
                     }
                 ]
             },
@@ -6631,6 +6627,9 @@
                 "visibility_rules": [
                     "killsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
                 "map_locations": [
                     {
                         "map": "goblin_camp",
@@ -6648,6 +6647,9 @@
                 ],
                 "visibility_rules": [
                     "killsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
                 ],
                 "map_locations": [
                     {
@@ -6685,6 +6687,9 @@
                 "visibility_rules": [
                     "killsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
                 "map_locations": [
                     {
                         "map": "goblin_camp",
@@ -6703,6 +6708,9 @@
                 "visibility_rules": [
                     "killsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
                 "map_locations": [
                     {
                         "map": "goblin_camp",
@@ -6720,6 +6728,9 @@
                 ],
                 "visibility_rules": [
                     "killsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
                 ],
                 "map_locations": [
                     {
@@ -6757,11 +6768,14 @@
                 "visibility_rules": [
                     "killsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
                 "map_locations": [
                     {
                         "map": "goblin_camp",
-                        "x": 620,
-                        "y": 130
+                        "x": 619,
+                        "y": 133
                     }
                 ]
             },
@@ -6811,6 +6825,9 @@
                 "visibility_rules": [
                     "killsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
                 "map_locations": [
                     {
                         "map": "goblin_camp",
@@ -6834,24 +6851,6 @@
                         "map": "goblin_camp",
                         "x": 257,
                         "y": 391
-                    }
-                ]
-            },
-            {
-                "name": "Gobs: Kill Smaller Giant Spider",
-                "sections": [
-                    {
-                        "name": "Gobs: Kill Smaller Giant Spider"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "goblin_camp",
-                        "x": 643,
-                        "y": 183
                     }
                 ]
             },
@@ -6901,6 +6900,9 @@
                 "visibility_rules": [
                     "killsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
                 "map_locations": [
                     {
                         "map": "goblin_camp",
@@ -6918,6 +6920,9 @@
                 ],
                 "visibility_rules": [
                     "killsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
                 ],
                 "map_locations": [
                     {
@@ -6972,6 +6977,9 @@
                 ],
                 "visibility_rules": [
                     "killsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
                 ],
                 "map_locations": [
                     {
@@ -7099,6 +7107,9 @@
                 "visibility_rules": [
                     "killsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
                 "map_locations": [
                     {
                         "map": "goblin_camp",
@@ -7116,6 +7127,9 @@
                 ],
                 "visibility_rules": [
                     "killsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
                 ],
                 "map_locations": [
                     {
@@ -7135,6 +7149,9 @@
                 "visibility_rules": [
                     "killsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
                 "map_locations": [
                     {
                         "map": "goblin_camp",
@@ -7153,11 +7170,14 @@
                 "visibility_rules": [
                     "killsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
                 "map_locations": [
                     {
                         "map": "goblin_camp",
-                        "x": 664,
-                        "y": 132
+                        "x": 665,
+                        "y": 129
                     }
                 ]
             },
@@ -7170,6 +7190,9 @@
                 ],
                 "visibility_rules": [
                     "killsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
                 ],
                 "map_locations": [
                     {
@@ -7225,6 +7248,9 @@
                 "visibility_rules": [
                     "killsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
                 "map_locations": [
                     {
                         "map": "goblin_camp",
@@ -7243,11 +7269,14 @@
                 "visibility_rules": [
                     "killsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
                 "map_locations": [
                     {
                         "map": "goblin_camp",
-                        "x": 537,
-                        "y": 193
+                        "x": 538,
+                        "y": 194
                     }
                 ]
             },
@@ -7260,6 +7289,9 @@
                 ],
                 "visibility_rules": [
                     "killsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
                 ],
                 "map_locations": [
                     {
@@ -7279,11 +7311,14 @@
                 "visibility_rules": [
                     "killsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
                 "map_locations": [
                     {
                         "map": "goblin_camp",
-                        "x": 663,
-                        "y": 161
+                        "x": 636,
+                        "y": 177
                     }
                 ]
             },
@@ -7296,6 +7331,9 @@
                 ],
                 "visibility_rules": [
                     "killsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
                 ],
                 "map_locations": [
                     {
@@ -7351,6 +7389,9 @@
                 "visibility_rules": [
                     "killsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
                 "map_locations": [
                     {
                         "map": "goblin_camp",
@@ -7369,6 +7410,9 @@
                 "visibility_rules": [
                     "killsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:8,gate_goblin_camp"
+                ],
                 "map_locations": [
                     {
                         "map": "goblin_camp",
@@ -7376,10 +7420,28 @@
                         "y": 306
                     }
                 ]
+            },
+            {
+                "name": "Gobs: Kill Brawler Rancer",
+                "sections": [
+                    {
+                        "name": "Gobs: Kill Brawler Rancer"
+                    }
+                ],
+                "visibility_rules": [
+                    "killsanity"
+                ],
+                "map_locations": [
+                    {
+                        "map": "goblin_camp",
+                        "x": 30,
+                        "y": 58
+                    }
+                ]
             }
         ],
         "access_rules": [
-            "level_fragment:8,gate_goblin_camp"
+            "level_fragment:8"
         ]
     },
     {
@@ -7461,22 +7523,6 @@
                         "name": "Hag: Kill Mephit 4"
                     },
                     {
-                        "ref": "Riverside/Hag: Kill Redcap 1/Hag: Kill Redcap 1",
-                        "name": "Hag: Kill Redcap 1"
-                    },
-                    {
-                        "ref": "Riverside/Hag: Kill Redcap 2/Hag: Kill Redcap 2",
-                        "name": "Hag: Kill Redcap 2"
-                    },
-                    {
-                        "ref": "Riverside/Hag: Kill Redcap 3/Hag: Kill Redcap 3",
-                        "name": "Hag: Kill Redcap 3"
-                    },
-                    {
-                        "ref": "Riverside/Hag: Kill Redcap 4/Hag: Kill Redcap 4",
-                        "name": "Hag: Kill Redcap 4"
-                    },
-                    {
                         "ref": "Riverside/Hag: Kill Wood Woad 1/Hag: Kill Wood Woad 1",
                         "name": "Hag: Kill Wood Woad 1"
                     },
@@ -7488,8 +7534,8 @@
                 "map_locations": [
                     {
                         "map": "act1_overworld",
-                        "x": 1511,
-                        "y": 867
+                        "x": 1545,
+                        "y": 888
                     }
                 ]
             },
@@ -7844,78 +7890,6 @@
                 ]
             },
             {
-                "name": "Hag: Kill Redcap 1",
-                "sections": [
-                    {
-                        "name": "Hag: Kill Redcap 1"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "hag",
-                        "x": 196,
-                        "y": 80
-                    }
-                ]
-            },
-            {
-                "name": "Hag: Kill Redcap 2",
-                "sections": [
-                    {
-                        "name": "Hag: Kill Redcap 2"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "hag",
-                        "x": 181,
-                        "y": 101
-                    }
-                ]
-            },
-            {
-                "name": "Hag: Kill Redcap 3",
-                "sections": [
-                    {
-                        "name": "Hag: Kill Redcap 3"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "hag",
-                        "x": 153,
-                        "y": 74
-                    }
-                ]
-            },
-            {
-                "name": "Hag: Kill Redcap 4",
-                "sections": [
-                    {
-                        "name": "Hag: Kill Redcap 4"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "hag",
-                        "x": 190,
-                        "y": 50
-                    }
-                ]
-            },
-            {
                 "name": "Hag: Kill Wood Woad 1",
                 "sections": [
                     {
@@ -8031,10 +8005,6 @@
                         "name": "Grotto: Kill Duergar"
                     },
                     {
-                        "ref": "Underdark/Grotto: Tell Glut about Duergar/Grotto: Tell Glut about Duergar",
-                        "name": "Grotto: Tell Glut about Duergar"
-                    },
-                    {
                         "ref": "Underdark/Grotto: Hear Glut's Plan/Grotto: Hear Glut's Plan",
                         "name": "Grotto: Hear Glut's Plan"
                     },
@@ -8095,12 +8065,8 @@
                         "name": "Underdark: Activate Arcane Tower"
                     },
                     {
-                        "ref": "Underdark/Underdark: Put Flowers on the Pet Grave near Arcane Tower/Underdark: Put Flowers on the Pet Grave near Arcane Tower",
-                        "name": "Underdark: Put Flowers on the Pet Grave near Arcane Tower"
-                    },
-                    {
-                        "ref": "Underdark/Underdark: Identify Chest of the Mundane/Underdark: Identify Chest of the Mundane",
-                        "name": "Underdark: Identify Chest of the Mundane"
+                        "ref": "Underdark/Underdark: Put Something Into the Chest of the Mundane/Underdark: Put Something Into the Chest of the Mundane",
+                        "name": "Underdark: Put Something Into the Chest of the Mundane"
                     },
                     {
                         "ref": "Underdark/Underdark: Get Phalar Aluve/Underdark: Get Phalar Aluve",
@@ -8119,8 +8085,8 @@
                         "name": "Tower: Get Ring from Bernard"
                     },
                     {
-                        "ref": "Underdark/Underdark: Deal with Kuotoa/Underdark: Deal with Kuotoa",
-                        "name": "Underdark: Deal with Kuotoa"
+                        "ref": "Underdark/Underdark: Build a Kuotoa Army/Underdark: Build a Kuotoa Army",
+                        "name": "Underdark: Build a Kuotoa Army"
                     },
                     {
                         "ref": "Underdark/Underdark: Kill Animated Armor 1/Underdark: Kill Animated Armor 1",
@@ -8552,26 +8518,6 @@
                 ]
             },
             {
-                "name": "Grotto: Tell Glut about Duergar",
-                "sections": [
-                    {
-                        "name": "Grotto: Tell Glut about Duergar",
-                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
-                        "chest_opened_img": "images/items/quest_marker_opened.png"
-                    }
-                ],
-                "visibility_rules": [
-                    "questsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "underdark",
-                        "x": 288,
-                        "y": 268
-                    }
-                ]
-            },
-            {
                 "name": "Grotto: Hear Glut's Plan",
                 "sections": [
                     {
@@ -8586,7 +8532,7 @@
                 "map_locations": [
                     {
                         "map": "underdark",
-                        "x": 304,
+                        "x": 288,
                         "y": 268
                     }
                 ]
@@ -8606,7 +8552,7 @@
                 "map_locations": [
                     {
                         "map": "underdark",
-                        "x": 320,
+                        "x": 304,
                         "y": 268
                     }
                 ]
@@ -8626,7 +8572,7 @@
                 "map_locations": [
                     {
                         "map": "underdark",
-                        "x": 336,
+                        "x": 320,
                         "y": 268
                     }
                 ]
@@ -8646,7 +8592,7 @@
                 "map_locations": [
                     {
                         "map": "underdark",
-                        "x": 352,
+                        "x": 336,
                         "y": 268
                     }
                 ]
@@ -8666,7 +8612,7 @@
                 "map_locations": [
                     {
                         "map": "underdark",
-                        "x": 368,
+                        "x": 352,
                         "y": 268
                     }
                 ]
@@ -8686,7 +8632,7 @@
                 "map_locations": [
                     {
                         "map": "underdark",
-                        "x": 384,
+                        "x": 368,
                         "y": 268
                     }
                 ]
@@ -8706,7 +8652,7 @@
                 "map_locations": [
                     {
                         "map": "underdark",
-                        "x": 400,
+                        "x": 384,
                         "y": 268
                     }
                 ]
@@ -8726,7 +8672,7 @@
                 "map_locations": [
                     {
                         "map": "underdark",
-                        "x": 416,
+                        "x": 400,
                         "y": 268
                     }
                 ]
@@ -8746,7 +8692,7 @@
                 "map_locations": [
                     {
                         "map": "underdark",
-                        "x": 432,
+                        "x": 416,
                         "y": 268
                     }
                 ]
@@ -8766,7 +8712,7 @@
                 "map_locations": [
                     {
                         "map": "underdark",
-                        "x": 448,
+                        "x": 432,
                         "y": 268
                     }
                 ]
@@ -8786,7 +8732,7 @@
                 "map_locations": [
                     {
                         "map": "underdark",
-                        "x": 464,
+                        "x": 448,
                         "y": 268
                     }
                 ]
@@ -8806,8 +8752,8 @@
                 "map_locations": [
                     {
                         "map": "underdark",
-                        "x": 16,
-                        "y": 284
+                        "x": 464,
+                        "y": 268
                     }
                 ]
             },
@@ -8826,7 +8772,7 @@
                 "map_locations": [
                     {
                         "map": "underdark",
-                        "x": 32,
+                        "x": 16,
                         "y": 284
                     }
                 ]
@@ -8846,7 +8792,7 @@
                 "map_locations": [
                     {
                         "map": "underdark",
-                        "x": 48,
+                        "x": 32,
                         "y": 284
                     }
                 ]
@@ -8866,47 +8812,27 @@
                 "map_locations": [
                     {
                         "map": "underdark",
+                        "x": 48,
+                        "y": 284
+                    }
+                ]
+            },
+            {
+                "name": "Underdark: Put Something Into the Chest of the Mundane",
+                "sections": [
+                    {
+                        "name": "Underdark: Put Something Into the Chest of the Mundane",
+                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
+                        "chest_opened_img": "images/items/quest_marker_opened.png"
+                    }
+                ],
+                "visibility_rules": [
+                    "questsanity"
+                ],
+                "map_locations": [
+                    {
+                        "map": "underdark",
                         "x": 64,
-                        "y": 284
-                    }
-                ]
-            },
-            {
-                "name": "Underdark: Put Flowers on the Pet Grave near Arcane Tower",
-                "sections": [
-                    {
-                        "name": "Underdark: Put Flowers on the Pet Grave near Arcane Tower",
-                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
-                        "chest_opened_img": "images/items/quest_marker_opened.png"
-                    }
-                ],
-                "visibility_rules": [
-                    "questsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "underdark",
-                        "x": 80,
-                        "y": 284
-                    }
-                ]
-            },
-            {
-                "name": "Underdark: Identify Chest of the Mundane",
-                "sections": [
-                    {
-                        "name": "Underdark: Identify Chest of the Mundane",
-                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
-                        "chest_opened_img": "images/items/quest_marker_opened.png"
-                    }
-                ],
-                "visibility_rules": [
-                    "questsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "underdark",
-                        "x": 96,
                         "y": 284
                     }
                 ]
@@ -8926,7 +8852,7 @@
                 "map_locations": [
                     {
                         "map": "underdark",
-                        "x": 112,
+                        "x": 80,
                         "y": 284
                     }
                 ]
@@ -8946,7 +8872,7 @@
                 "map_locations": [
                     {
                         "map": "underdark",
-                        "x": 128,
+                        "x": 96,
                         "y": 284
                     }
                 ]
@@ -8966,7 +8892,7 @@
                 "map_locations": [
                     {
                         "map": "underdark",
-                        "x": 144,
+                        "x": 112,
                         "y": 284
                     }
                 ]
@@ -8986,16 +8912,16 @@
                 "map_locations": [
                     {
                         "map": "underdark",
-                        "x": 160,
+                        "x": 128,
                         "y": 284
                     }
                 ]
             },
             {
-                "name": "Underdark: Deal with Kuotoa",
+                "name": "Underdark: Build a Kuotoa Army",
                 "sections": [
                     {
-                        "name": "Underdark: Deal with Kuotoa",
+                        "name": "Underdark: Build a Kuotoa Army",
                         "chest_unopened_img": "images/items/quest_marker_unopened.png",
                         "chest_opened_img": "images/items/quest_marker_opened.png"
                     }
@@ -9006,7 +8932,7 @@
                 "map_locations": [
                     {
                         "map": "underdark",
-                        "x": 176,
+                        "x": 144,
                         "y": 284
                     }
                 ]
@@ -9379,7 +9305,9 @@
             "goal_wwargaz",
             "goal_act1udf",
             "goal_myrkul",
-            "goal_act2udf"
+            "goal_act2udf",
+            "goal_netherbrain",
+            "goal_act3udf"
         ]
     },
     {
@@ -9449,10 +9377,6 @@
                         "name": "Grym: Asked to Save Nere"
                     },
                     {
-                        "ref": "Grymforge/Forge: Find Rubble (to Grymforge)/Forge: Find Rubble (to Grymforge)",
-                        "name": "Forge: Find Rubble (to Grymforge)"
-                    },
-                    {
                         "ref": "Grymforge/Forge: Clear Rubble/Forge: Clear Rubble",
                         "name": "Forge: Clear Rubble"
                     },
@@ -9503,10 +9427,6 @@
                     {
                         "ref": "Grymforge/Grym: Find all Merregon Masks/Grym: Find all Merregon Masks",
                         "name": "Grym: Find all Merregon Masks"
-                    },
-                    {
-                        "ref": "Grymforge/Grym: Tell Thulla Gnomes were Rescued/Grym: Tell Thulla Gnomes were Rescued",
-                        "name": "Grym: Tell Thulla Gnomes were Rescued"
                     },
                     {
                         "ref": "Grymforge/Shart: Find Justiciar Bodies/Shart: Find Justiciar Bodies",
@@ -9978,26 +9898,6 @@
                 ]
             },
             {
-                "name": "Forge: Find Rubble (to Grymforge)",
-                "sections": [
-                    {
-                        "name": "Forge: Find Rubble (to Grymforge)",
-                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
-                        "chest_opened_img": "images/items/quest_marker_opened.png"
-                    }
-                ],
-                "visibility_rules": [
-                    "questsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "grymforge",
-                        "x": 512,
-                        "y": 536
-                    }
-                ]
-            },
-            {
                 "name": "Forge: Clear Rubble",
                 "sections": [
                     {
@@ -10012,7 +9912,7 @@
                 "map_locations": [
                     {
                         "map": "grymforge",
-                        "x": 544,
+                        "x": 512,
                         "y": 536
                     }
                 ]
@@ -10032,7 +9932,7 @@
                 "map_locations": [
                     {
                         "map": "grymforge",
-                        "x": 576,
+                        "x": 544,
                         "y": 536
                     }
                 ]
@@ -10052,7 +9952,7 @@
                 "map_locations": [
                     {
                         "map": "grymforge",
-                        "x": 608,
+                        "x": 576,
                         "y": 536
                     }
                 ]
@@ -10072,7 +9972,7 @@
                 "map_locations": [
                     {
                         "map": "grymforge",
-                        "x": 640,
+                        "x": 608,
                         "y": 536
                     }
                 ]
@@ -10092,7 +9992,7 @@
                 "map_locations": [
                     {
                         "map": "grymforge",
-                        "x": 672,
+                        "x": 640,
                         "y": 536
                     }
                 ]
@@ -10112,7 +10012,7 @@
                 "map_locations": [
                     {
                         "map": "grymforge",
-                        "x": 704,
+                        "x": 672,
                         "y": 536
                     }
                 ]
@@ -10132,7 +10032,7 @@
                 "map_locations": [
                     {
                         "map": "grymforge",
-                        "x": 736,
+                        "x": 704,
                         "y": 536
                     }
                 ]
@@ -10152,7 +10052,7 @@
                 "map_locations": [
                     {
                         "map": "grymforge",
-                        "x": 768,
+                        "x": 736,
                         "y": 536
                     }
                 ]
@@ -10172,7 +10072,7 @@
                 "map_locations": [
                     {
                         "map": "grymforge",
-                        "x": 800,
+                        "x": 768,
                         "y": 536
                     }
                 ]
@@ -10192,7 +10092,7 @@
                 "map_locations": [
                     {
                         "map": "grymforge",
-                        "x": 832,
+                        "x": 800,
                         "y": 536
                     }
                 ]
@@ -10212,7 +10112,7 @@
                 "map_locations": [
                     {
                         "map": "grymforge",
-                        "x": 864,
+                        "x": 832,
                         "y": 536
                     }
                 ]
@@ -10232,7 +10132,7 @@
                 "map_locations": [
                     {
                         "map": "grymforge",
-                        "x": 896,
+                        "x": 864,
                         "y": 536
                     }
                 ]
@@ -10252,28 +10152,8 @@
                 "map_locations": [
                     {
                         "map": "grymforge",
-                        "x": 928,
+                        "x": 896,
                         "y": 536
-                    }
-                ]
-            },
-            {
-                "name": "Grym: Tell Thulla Gnomes were Rescued",
-                "sections": [
-                    {
-                        "name": "Grym: Tell Thulla Gnomes were Rescued",
-                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
-                        "chest_opened_img": "images/items/quest_marker_opened.png"
-                    }
-                ],
-                "visibility_rules": [
-                    "questsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "grymforge",
-                        "x": 32,
-                        "y": 568
                     }
                 ]
             },
@@ -10292,8 +10172,8 @@
                 "map_locations": [
                     {
                         "map": "grymforge",
-                        "x": 64,
-                        "y": 568
+                        "x": 928,
+                        "y": 536
                     }
                 ]
             },
@@ -10312,7 +10192,7 @@
                 "map_locations": [
                     {
                         "map": "grymforge",
-                        "x": 96,
+                        "x": 32,
                         "y": 568
                     }
                 ]
@@ -10332,7 +10212,7 @@
                 "map_locations": [
                     {
                         "map": "grymforge",
-                        "x": 128,
+                        "x": 64,
                         "y": 568
                     }
                 ]
@@ -10352,7 +10232,7 @@
                 "map_locations": [
                     {
                         "map": "grymforge",
-                        "x": 160,
+                        "x": 96,
                         "y": 568
                     }
                 ]
@@ -10372,7 +10252,7 @@
                 "map_locations": [
                     {
                         "map": "grymforge",
-                        "x": 192,
+                        "x": 128,
                         "y": 568
                     }
                 ]
@@ -11015,7 +10895,9 @@
             "goal_wwargaz",
             "goal_act1udf",
             "goal_myrkul",
-            "goal_act2udf"
+            "goal_act2udf",
+            "goal_netherbrain",
+            "goal_act3udf"
         ]
     },
     {
@@ -11051,10 +10933,6 @@
                     {
                         "ref": "Rosymorn Monastery/Monastery: Accept Quest from Esther/Monastery: Accept Quest from Esther",
                         "name": "Monastery: Accept Quest from Esther"
-                    },
-                    {
-                        "ref": "Rosymorn Monastery/Monastery: Acquire Githyanki Egg/Monastery: Acquire Githyanki Egg",
-                        "name": "Monastery: Acquire Githyanki Egg"
                     },
                     {
                         "ref": "Rosymorn Monastery/Monastery: Resolve Esther's Quest/Monastery: Resolve Esther's Quest",
@@ -11370,26 +11248,6 @@
                 ]
             },
             {
-                "name": "Monastery: Acquire Githyanki Egg",
-                "sections": [
-                    {
-                        "name": "Monastery: Acquire Githyanki Egg",
-                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
-                        "chest_opened_img": "images/items/quest_marker_opened.png"
-                    }
-                ],
-                "visibility_rules": [
-                    "questsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "monastery",
-                        "x": 256,
-                        "y": 536
-                    }
-                ]
-            },
-            {
                 "name": "Monastery: Resolve Esther's Quest",
                 "sections": [
                     {
@@ -11404,7 +11262,7 @@
                 "map_locations": [
                     {
                         "map": "monastery",
-                        "x": 288,
+                        "x": 256,
                         "y": 536
                     }
                 ]
@@ -11424,7 +11282,7 @@
                 "map_locations": [
                     {
                         "map": "monastery",
-                        "x": 320,
+                        "x": 288,
                         "y": 536
                     }
                 ]
@@ -11444,7 +11302,7 @@
                 "map_locations": [
                     {
                         "map": "monastery",
-                        "x": 352,
+                        "x": 320,
                         "y": 536
                     }
                 ]
@@ -11464,7 +11322,7 @@
                 "map_locations": [
                     {
                         "map": "monastery",
-                        "x": 384,
+                        "x": 352,
                         "y": 536
                     }
                 ]
@@ -11484,7 +11342,7 @@
                 "map_locations": [
                     {
                         "map": "monastery",
-                        "x": 416,
+                        "x": 384,
                         "y": 536
                     }
                 ]
@@ -11504,7 +11362,7 @@
                 "map_locations": [
                     {
                         "map": "monastery",
-                        "x": 448,
+                        "x": 416,
                         "y": 536
                     }
                 ]
@@ -12147,7 +12005,9 @@
             "goal_wwargaz",
             "goal_act1udf",
             "goal_myrkul",
-            "goal_act2udf"
+            "goal_act2udf",
+            "goal_netherbrain",
+            "goal_act3udf"
         ]
     },
     {
@@ -12156,6 +12016,10 @@
             {
                 "name": "Creche Y'llek (Overview)",
                 "sections": [
+                    {
+                        "ref": "Creche Y'llek/Creche: Acquire Githyanki Egg/Creche: Acquire Githyanki Egg",
+                        "name": "Creche: Acquire Githyanki Egg"
+                    },
                     {
                         "ref": "Creche Y'llek/Creche: Reach Creche/Creche: Reach Creche",
                         "name": "Creche: Reach Creche"
@@ -12402,6 +12266,26 @@
                 ]
             },
             {
+                "name": "Creche: Acquire Githyanki Egg",
+                "sections": [
+                    {
+                        "name": "Creche: Acquire Githyanki Egg",
+                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
+                        "chest_opened_img": "images/items/quest_marker_opened.png"
+                    }
+                ],
+                "visibility_rules": [
+                    "questsanity"
+                ],
+                "map_locations": [
+                    {
+                        "map": "creche",
+                        "x": 32,
+                        "y": 536
+                    }
+                ]
+            },
+            {
                 "name": "Creche: Reach Creche",
                 "sections": [
                     {
@@ -12416,7 +12300,7 @@
                 "map_locations": [
                     {
                         "map": "creche",
-                        "x": 32,
+                        "x": 64,
                         "y": 536
                     }
                 ]
@@ -12436,7 +12320,7 @@
                 "map_locations": [
                     {
                         "map": "creche",
-                        "x": 64,
+                        "x": 96,
                         "y": 536
                     }
                 ]
@@ -12456,7 +12340,7 @@
                 "map_locations": [
                     {
                         "map": "creche",
-                        "x": 96,
+                        "x": 128,
                         "y": 536
                     }
                 ]
@@ -12476,7 +12360,7 @@
                 "map_locations": [
                     {
                         "map": "creche",
-                        "x": 128,
+                        "x": 160,
                         "y": 536
                     }
                 ]
@@ -12496,7 +12380,7 @@
                 "map_locations": [
                     {
                         "map": "creche",
-                        "x": 160,
+                        "x": 192,
                         "y": 536
                     }
                 ]
@@ -12516,7 +12400,7 @@
                 "map_locations": [
                     {
                         "map": "creche",
-                        "x": 192,
+                        "x": 224,
                         "y": 536
                     }
                 ]
@@ -12536,7 +12420,7 @@
                 "map_locations": [
                     {
                         "map": "creche",
-                        "x": 224,
+                        "x": 256,
                         "y": 536
                     }
                 ]
@@ -12556,7 +12440,7 @@
                 "map_locations": [
                     {
                         "map": "creche",
-                        "x": 256,
+                        "x": 288,
                         "y": 536
                     }
                 ]
@@ -12576,7 +12460,7 @@
                 "map_locations": [
                     {
                         "map": "creche",
-                        "x": 288,
+                        "x": 320,
                         "y": 536
                     }
                 ]
@@ -12596,7 +12480,7 @@
                 "map_locations": [
                     {
                         "map": "creche",
-                        "x": 320,
+                        "x": 352,
                         "y": 536
                     }
                 ]
@@ -12616,7 +12500,7 @@
                 "map_locations": [
                     {
                         "map": "creche",
-                        "x": 352,
+                        "x": 384,
                         "y": 536
                     }
                 ]
@@ -12636,7 +12520,7 @@
                 "map_locations": [
                     {
                         "map": "creche",
-                        "x": 384,
+                        "x": 416,
                         "y": 536
                     }
                 ]
@@ -12656,7 +12540,7 @@
                 "map_locations": [
                     {
                         "map": "creche",
-                        "x": 416,
+                        "x": 448,
                         "y": 536
                     }
                 ]
@@ -12676,7 +12560,7 @@
                 "map_locations": [
                     {
                         "map": "creche",
-                        "x": 448,
+                        "x": 480,
                         "y": 536
                     }
                 ]
@@ -12696,7 +12580,7 @@
                 "map_locations": [
                     {
                         "map": "creche",
-                        "x": 480,
+                        "x": 512,
                         "y": 536
                     }
                 ]
@@ -12716,7 +12600,7 @@
                 "map_locations": [
                     {
                         "map": "creche",
-                        "x": 512,
+                        "x": 544,
                         "y": 536
                     }
                 ]
@@ -12736,7 +12620,7 @@
                 "map_locations": [
                     {
                         "map": "creche",
-                        "x": 544,
+                        "x": 576,
                         "y": 536
                     }
                 ]
@@ -12756,7 +12640,7 @@
                 "map_locations": [
                     {
                         "map": "creche",
-                        "x": 576,
+                        "x": 608,
                         "y": 536
                     }
                 ]
@@ -13507,7 +13391,9 @@
             "goal_wwargaz",
             "goal_act1udf",
             "goal_myrkul",
-            "goal_act2udf"
+            "goal_act2udf",
+            "goal_netherbrain",
+            "goal_act3udf"
         ]
     },
     {
@@ -13527,10 +13413,6 @@
                     {
                         "ref": "Shadow-Cursed Lands (East)/Curse: Reach Last Light Inn/Curse: Reach Last Light Inn",
                         "name": "Curse: Reach Last Light Inn"
-                    },
-                    {
-                        "ref": "Shadow-Cursed Lands (East)/Curse: Talk to Jaheira/Curse: Talk to Jaheira",
-                        "name": "Curse: Talk to Jaheira"
                     },
                     {
                         "ref": "Shadow-Cursed Lands (East)/Curse: Get Isobel's blessing/Curse: Get Isobel's blessing",
@@ -13806,26 +13688,6 @@
                 ]
             },
             {
-                "name": "Curse: Talk to Jaheira",
-                "sections": [
-                    {
-                        "name": "Curse: Talk to Jaheira",
-                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
-                        "chest_opened_img": "images/items/quest_marker_opened.png"
-                    }
-                ],
-                "visibility_rules": [
-                    "questsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "east_act2",
-                        "x": 128,
-                        "y": 536
-                    }
-                ]
-            },
-            {
                 "name": "Curse: Get Isobel's blessing",
                 "sections": [
                     {
@@ -13840,7 +13702,7 @@
                 "map_locations": [
                     {
                         "map": "east_act2",
-                        "x": 160,
+                        "x": 128,
                         "y": 536
                     }
                 ]
@@ -13860,7 +13722,7 @@
                 "map_locations": [
                     {
                         "map": "east_act2",
-                        "x": 192,
+                        "x": 160,
                         "y": 536
                     }
                 ]
@@ -13880,7 +13742,7 @@
                 "map_locations": [
                     {
                         "map": "east_act2",
-                        "x": 224,
+                        "x": 192,
                         "y": 536
                     }
                 ]
@@ -13900,7 +13762,7 @@
                 "map_locations": [
                     {
                         "map": "east_act2",
-                        "x": 256,
+                        "x": 224,
                         "y": 536
                     }
                 ]
@@ -13920,7 +13782,7 @@
                 "map_locations": [
                     {
                         "map": "east_act2",
-                        "x": 288,
+                        "x": 256,
                         "y": 536
                     }
                 ]
@@ -13940,7 +13802,7 @@
                 "map_locations": [
                     {
                         "map": "east_act2",
-                        "x": 320,
+                        "x": 288,
                         "y": 536
                     }
                 ]
@@ -13960,7 +13822,7 @@
                 "map_locations": [
                     {
                         "map": "east_act2",
-                        "x": 352,
+                        "x": 320,
                         "y": 536
                     }
                 ]
@@ -13980,7 +13842,7 @@
                 "map_locations": [
                     {
                         "map": "east_act2",
-                        "x": 384,
+                        "x": 352,
                         "y": 536
                     }
                 ]
@@ -14000,7 +13862,7 @@
                 "map_locations": [
                     {
                         "map": "east_act2",
-                        "x": 416,
+                        "x": 384,
                         "y": 536
                     }
                 ]
@@ -14767,7 +14629,9 @@
         ],
         "visibility_rules": [
             "goal_myrkul",
-            "goal_act2udf"
+            "goal_act2udf",
+            "goal_netherbrain",
+            "goal_act3udf"
         ]
     },
     {
@@ -14799,6 +14663,10 @@
                     {
                         "ref": "Shadow-Cursed Lands (West)/Reithwin: Talk to Rolan at Last Light after rescue/Reithwin: Talk to Rolan at Last Light after rescue",
                         "name": "Reithwin: Talk to Rolan at Last Light after rescue"
+                    },
+                    {
+                        "ref": "Shadow-Cursed Lands (West)/Selunites: Investigate the Mason's Guild/Selunites: Investigate the Mason's Guild",
+                        "name": "Selunites: Investigate the Mason's Guild"
                     },
                     {
                         "ref": "Shadow-Cursed Lands (West)/Reithwin: Kill Shadow 1/Reithwin: Kill Shadow 1",
@@ -15067,14 +14935,6 @@
                     {
                         "ref": "Shadow-Cursed Lands (West)/Brewery: Kill Thisobald Thorm/Brewery: Kill Thisobald Thorm",
                         "name": "Brewery: Kill Thisobald Thorm"
-                    },
-                    {
-                        "ref": "Shadow-Cursed Lands (West)/Thaniel: Kill Mom/Thaniel: Kill Mom",
-                        "name": "Thaniel: Kill Mom"
-                    },
-                    {
-                        "ref": "Shadow-Cursed Lands (West)/Thaniel: Kill Dad/Thaniel: Kill Dad",
-                        "name": "Thaniel: Kill Dad"
                     }
                 ],
                 "map_locations": [
@@ -15206,6 +15066,29 @@
                 ]
             },
             {
+                "name": "Selunites: Investigate the Mason's Guild",
+                "sections": [
+                    {
+                        "name": "Selunites: Investigate the Mason's Guild",
+                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
+                        "chest_opened_img": "images/items/quest_marker_opened.png"
+                    }
+                ],
+                "visibility_rules": [
+                    "questsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:26,gate_reithwins_masons_guild"
+                ],
+                "map_locations": [
+                    {
+                        "map": "west_act2",
+                        "x": 224,
+                        "y": 536
+                    }
+                ]
+            },
+            {
                 "name": "Reithwin: Kill Shadow 1",
                 "sections": [
                     {
@@ -15218,8 +15101,8 @@
                 "map_locations": [
                     {
                         "map": "west_act2",
-                        "x": 247,
-                        "y": 363
+                        "x": 260,
+                        "y": 361
                     }
                 ]
             },
@@ -15236,8 +15119,8 @@
                 "map_locations": [
                     {
                         "map": "west_act2",
-                        "x": 302,
-                        "y": 363
+                        "x": 290,
+                        "y": 360
                     }
                 ]
             },
@@ -15255,7 +15138,7 @@
                     {
                         "map": "west_act2",
                         "x": 232,
-                        "y": 311
+                        "y": 315
                     }
                 ]
             },
@@ -15272,8 +15155,8 @@
                 "map_locations": [
                     {
                         "map": "west_act2",
-                        "x": 275,
-                        "y": 354
+                        "x": 272,
+                        "y": 334
                     }
                 ]
             },
@@ -15290,8 +15173,8 @@
                 "map_locations": [
                     {
                         "map": "west_act2",
-                        "x": 254,
-                        "y": 392
+                        "x": 250,
+                        "y": 388
                     }
                 ]
             },
@@ -15308,8 +15191,8 @@
                 "map_locations": [
                     {
                         "map": "west_act2",
-                        "x": 311,
-                        "y": 311
+                        "x": 296,
+                        "y": 318
                     }
                 ]
             },
@@ -15326,8 +15209,8 @@
                 "map_locations": [
                     {
                         "map": "west_act2",
-                        "x": 231,
-                        "y": 340
+                        "x": 237,
+                        "y": 343
                     }
                 ]
             },
@@ -15377,6 +15260,9 @@
                 "visibility_rules": [
                     "killsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:26,gate_creche"
+                ],
                 "map_locations": [
                     {
                         "map": "west_act2",
@@ -15394,6 +15280,9 @@
                 ],
                 "visibility_rules": [
                     "killsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:26,gate_creche"
                 ],
                 "map_locations": [
                     {
@@ -15413,6 +15302,9 @@
                 "visibility_rules": [
                     "killsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:26,gate_creche"
+                ],
                 "map_locations": [
                     {
                         "map": "west_act2",
@@ -15430,6 +15322,9 @@
                 ],
                 "visibility_rules": [
                     "killsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:26,gate_creche"
                 ],
                 "map_locations": [
                     {
@@ -15449,6 +15344,9 @@
                 "visibility_rules": [
                     "killsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:26,gate_creche"
+                ],
                 "map_locations": [
                     {
                         "map": "west_act2",
@@ -15466,6 +15364,9 @@
                 ],
                 "visibility_rules": [
                     "killsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:26,gate_reithwins_masons_guild"
                 ],
                 "map_locations": [
                     {
@@ -15485,6 +15386,9 @@
                 "visibility_rules": [
                     "killsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:26,gate_reithwins_masons_guild"
+                ],
                 "map_locations": [
                     {
                         "map": "west_act2",
@@ -15502,6 +15406,9 @@
                 ],
                 "visibility_rules": [
                     "killsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:26,gate_reithwins_masons_guild"
                 ],
                 "map_locations": [
                     {
@@ -15521,6 +15428,9 @@
                 "visibility_rules": [
                     "killsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:26,gate_reithwins_masons_guild"
+                ],
                 "map_locations": [
                     {
                         "map": "west_act2",
@@ -15539,6 +15449,9 @@
                 "visibility_rules": [
                     "killsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:26,gate_reithwins_masons_guild"
+                ],
                 "map_locations": [
                     {
                         "map": "west_act2",
@@ -15556,6 +15469,9 @@
                 ],
                 "visibility_rules": [
                     "killsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:26,gate_reithwins_masons_guild"
                 ],
                 "map_locations": [
                     {
@@ -16226,8 +16142,8 @@
                 "map_locations": [
                     {
                         "map": "west_act2",
-                        "x": 325,
-                        "y": 381
+                        "x": 324,
+                        "y": 380
                     }
                 ]
             },
@@ -16245,7 +16161,7 @@
                     {
                         "map": "west_act2",
                         "x": 305,
-                        "y": 417
+                        "y": 416
                     }
                 ]
             },
@@ -16280,7 +16196,7 @@
                 "map_locations": [
                     {
                         "map": "west_act2",
-                        "x": 354,
+                        "x": 353,
                         "y": 381
                     }
                 ]
@@ -16298,8 +16214,8 @@
                 "map_locations": [
                     {
                         "map": "west_act2",
-                        "x": 294,
-                        "y": 391
+                        "x": 296,
+                        "y": 388
                     }
                 ]
             },
@@ -16317,7 +16233,7 @@
                     {
                         "map": "west_act2",
                         "x": 329,
-                        "y": 433
+                        "y": 432
                     }
                 ]
             },
@@ -16410,50 +16326,16 @@
                         "y": 400
                     }
                 ]
-            },
-            {
-                "name": "Thaniel: Kill Mom",
-                "sections": [
-                    {
-                        "name": "Thaniel: Kill Mom"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "west_act2",
-                        "x": 262,
-                        "y": 312
-                    }
-                ]
-            },
-            {
-                "name": "Thaniel: Kill Dad",
-                "sections": [
-                    {
-                        "name": "Thaniel: Kill Dad"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "west_act2",
-                        "x": 286,
-                        "y": 327
-                    }
-                ]
             }
         ],
         "access_rules": [
-            "level_fragment:26,gate_reithwins_masons_guild"
+            "level_fragment:26"
         ],
         "visibility_rules": [
             "goal_myrkul",
-            "goal_act2udf"
+            "goal_act2udf",
+            "goal_netherbrain",
+            "goal_act3udf"
         ]
     },
     {
@@ -16487,10 +16369,6 @@
                         "name": "LL Inn: Recover Art's Lute"
                     },
                     {
-                        "ref": "Last Light Inn/LL Inn: Wake Art/LL Inn: Wake Art",
-                        "name": "LL Inn: Wake Art"
-                    },
-                    {
                         "ref": "Last Light Inn/LL Inn: Meet Halsin by the Lakeshore/LL Inn: Meet Halsin by the Lakeshore",
                         "name": "LL Inn: Meet Halsin by the Lakeshore"
                     },
@@ -16517,14 +16395,6 @@
                     {
                         "ref": "Last Light Inn/Selunites: Find LL Inn's Selunite Relics/Selunites: Find LL Inn's Selunite Relics",
                         "name": "Selunites: Find LL Inn's Selunite Relics"
-                    },
-                    {
-                        "ref": "Last Light Inn/Selunites: Investigate the Mason's Guild/Selunites: Investigate the Mason's Guild",
-                        "name": "Selunites: Investigate the Mason's Guild"
-                    },
-                    {
-                        "ref": "Last Light Inn/Selunites: Find Morfred's writings/Selunites: Find Morfred's writings",
-                        "name": "Selunites: Find Morfred's writings"
                     },
                     {
                         "ref": "Last Light Inn/LL Inn: Learn the Tieflings have been captured/LL Inn: Learn the Tieflings have been captured",
@@ -16597,162 +16467,6 @@
                     {
                         "ref": "Last Light Inn/LL Inn: Kill Meenlock 6/LL Inn: Kill Meenlock 6",
                         "name": "LL Inn: Kill Meenlock 6"
-                    },
-                    {
-                        "ref": "Last Light Inn/LL Inn: Kill Cursed Raven 1/LL Inn: Kill Cursed Raven 1",
-                        "name": "LL Inn: Kill Cursed Raven 1"
-                    },
-                    {
-                        "ref": "Last Light Inn/LL Inn: Kill Cursed Raven 2/LL Inn: Kill Cursed Raven 2",
-                        "name": "LL Inn: Kill Cursed Raven 2"
-                    },
-                    {
-                        "ref": "Last Light Inn/LL Inn: Kill Cursed Raven 3/LL Inn: Kill Cursed Raven 3",
-                        "name": "LL Inn: Kill Cursed Raven 3"
-                    },
-                    {
-                        "ref": "Last Light Inn/LL Inn: Kill Cursed Raven 4/LL Inn: Kill Cursed Raven 4",
-                        "name": "LL Inn: Kill Cursed Raven 4"
-                    },
-                    {
-                        "ref": "Last Light Inn/LL Inn: Kill Cursed Raven 5/LL Inn: Kill Cursed Raven 5",
-                        "name": "LL Inn: Kill Cursed Raven 5"
-                    },
-                    {
-                        "ref": "Last Light Inn/LL Inn: Kill Cursed Raven 6/LL Inn: Kill Cursed Raven 6",
-                        "name": "LL Inn: Kill Cursed Raven 6"
-                    },
-                    {
-                        "ref": "Last Light Inn/LL Inn: Kill Cursed Raven 7/LL Inn: Kill Cursed Raven 7",
-                        "name": "LL Inn: Kill Cursed Raven 7"
-                    },
-                    {
-                        "ref": "Last Light Inn/LL Inn: Kill Cursed Raven 8/LL Inn: Kill Cursed Raven 8",
-                        "name": "LL Inn: Kill Cursed Raven 8"
-                    },
-                    {
-                        "ref": "Last Light Inn/LL Inn: Kill Shadow 1/LL Inn: Kill Shadow 1",
-                        "name": "LL Inn: Kill Shadow 1"
-                    },
-                    {
-                        "ref": "Last Light Inn/LL Inn: Kill Shadow 2/LL Inn: Kill Shadow 2",
-                        "name": "LL Inn: Kill Shadow 2"
-                    },
-                    {
-                        "ref": "Last Light Inn/LL Inn: Kill Shadow 3/LL Inn: Kill Shadow 3",
-                        "name": "LL Inn: Kill Shadow 3"
-                    },
-                    {
-                        "ref": "Last Light Inn/LL Inn: Kill Wraith 1/LL Inn: Kill Wraith 1",
-                        "name": "LL Inn: Kill Wraith 1"
-                    },
-                    {
-                        "ref": "Last Light Inn/LL Inn: Kill Cursed Warrior 1/LL Inn: Kill Cursed Warrior 1",
-                        "name": "LL Inn: Kill Cursed Warrior 1"
-                    },
-                    {
-                        "ref": "Last Light Inn/LL Inn: Kill Cursed Warrior 2/LL Inn: Kill Cursed Warrior 2",
-                        "name": "LL Inn: Kill Cursed Warrior 2"
-                    },
-                    {
-                        "ref": "Last Light Inn/LL Inn: Kill Cursed Warrior 3/LL Inn: Kill Cursed Warrior 3",
-                        "name": "LL Inn: Kill Cursed Warrior 3"
-                    },
-                    {
-                        "ref": "Last Light Inn/LL Inn: Kill Cursed Warrior 4/LL Inn: Kill Cursed Warrior 4",
-                        "name": "LL Inn: Kill Cursed Warrior 4"
-                    },
-                    {
-                        "ref": "Last Light Inn/LL Inn: Kill Cursed Warrior 5/LL Inn: Kill Cursed Warrior 5",
-                        "name": "LL Inn: Kill Cursed Warrior 5"
-                    },
-                    {
-                        "ref": "Last Light Inn/LL Inn: Kill Cursed Zealot 1/LL Inn: Kill Cursed Zealot 1",
-                        "name": "LL Inn: Kill Cursed Zealot 1"
-                    },
-                    {
-                        "ref": "Last Light Inn/LL Inn: Kill Cursed Zealot 2/LL Inn: Kill Cursed Zealot 2",
-                        "name": "LL Inn: Kill Cursed Zealot 2"
-                    },
-                    {
-                        "ref": "Last Light Inn/LL Inn: Kill Cursed Zealot 3/LL Inn: Kill Cursed Zealot 3",
-                        "name": "LL Inn: Kill Cursed Zealot 3"
-                    },
-                    {
-                        "ref": "Last Light Inn/LL Inn: Kill Cursed Harper 1/LL Inn: Kill Cursed Harper 1",
-                        "name": "LL Inn: Kill Cursed Harper 1"
-                    },
-                    {
-                        "ref": "Last Light Inn/LL Inn: Kill Cursed Harper 2/LL Inn: Kill Cursed Harper 2",
-                        "name": "LL Inn: Kill Cursed Harper 2"
-                    },
-                    {
-                        "ref": "Last Light Inn/LL Inn: Kill Cursed Harper 3/LL Inn: Kill Cursed Harper 3",
-                        "name": "LL Inn: Kill Cursed Harper 3"
-                    },
-                    {
-                        "ref": "Last Light Inn/LL Inn: Kill Cursed Harper 4/LL Inn: Kill Cursed Harper 4",
-                        "name": "LL Inn: Kill Cursed Harper 4"
-                    },
-                    {
-                        "ref": "Last Light Inn/LL Inn: Kill Dark Vine Tentacle 1/LL Inn: Kill Dark Vine Tentacle 1",
-                        "name": "LL Inn: Kill Dark Vine Tentacle 1"
-                    },
-                    {
-                        "ref": "Last Light Inn/LL Inn: Kill Dark Vine Tentacle 2/LL Inn: Kill Dark Vine Tentacle 2",
-                        "name": "LL Inn: Kill Dark Vine Tentacle 2"
-                    },
-                    {
-                        "ref": "Last Light Inn/LL Inn: Kill Dark Vine Tentacle 3/LL Inn: Kill Dark Vine Tentacle 3",
-                        "name": "LL Inn: Kill Dark Vine Tentacle 3"
-                    },
-                    {
-                        "ref": "Last Light Inn/LL Inn: Kill Shadow 4/LL Inn: Kill Shadow 4",
-                        "name": "LL Inn: Kill Shadow 4"
-                    },
-                    {
-                        "ref": "Last Light Inn/LL Inn: Kill Wraith 2/LL Inn: Kill Wraith 2",
-                        "name": "LL Inn: Kill Wraith 2"
-                    },
-                    {
-                        "ref": "Last Light Inn/LL Inn: Kill Cursed Githyanki 1/LL Inn: Kill Cursed Githyanki 1",
-                        "name": "LL Inn: Kill Cursed Githyanki 1"
-                    },
-                    {
-                        "ref": "Last Light Inn/LL Inn: Kill Cursed Githyanki 2/LL Inn: Kill Cursed Githyanki 2",
-                        "name": "LL Inn: Kill Cursed Githyanki 2"
-                    },
-                    {
-                        "ref": "Last Light Inn/LL Inn: Kill Cursed Githyanki 3/LL Inn: Kill Cursed Githyanki 3",
-                        "name": "LL Inn: Kill Cursed Githyanki 3"
-                    },
-                    {
-                        "ref": "Last Light Inn/LL Inn: Kill Cursed Flaming Fist 1/LL Inn: Kill Cursed Flaming Fist 1",
-                        "name": "LL Inn: Kill Cursed Flaming Fist 1"
-                    },
-                    {
-                        "ref": "Last Light Inn/LL Inn: Kill Cursed Flaming Fist 2/LL Inn: Kill Cursed Flaming Fist 2",
-                        "name": "LL Inn: Kill Cursed Flaming Fist 2"
-                    },
-                    {
-                        "ref": "Last Light Inn/LL Inn: Kill Cursed Flaming Fist 3/LL Inn: Kill Cursed Flaming Fist 3",
-                        "name": "LL Inn: Kill Cursed Flaming Fist 3"
-                    },
-                    {
-                        "ref": "Last Light Inn/LL Inn: Kill Cursed Flaming Fist 4/LL Inn: Kill Cursed Flaming Fist 4",
-                        "name": "LL Inn: Kill Cursed Flaming Fist 4"
-                    },
-                    {
-                        "ref": "Last Light Inn/LL Inn: Kill Cursed Flaming Fist 5/LL Inn: Kill Cursed Flaming Fist 5",
-                        "name": "LL Inn: Kill Cursed Flaming Fist 5"
-                    },
-                    {
-                        "ref": "Last Light Inn/LL Inn: Kill Shadow Mastiff 1/LL Inn: Kill Shadow Mastiff 1",
-                        "name": "LL Inn: Kill Shadow Mastiff 1"
-                    },
-                    {
-                        "ref": "Last Light Inn/LL Inn: Kill Shadow Mastiff 2/LL Inn: Kill Shadow Mastiff 2",
-                        "name": "LL Inn: Kill Shadow Mastiff 2"
                     }
                 ],
                 "map_locations": [
@@ -16884,26 +16598,6 @@
                 ]
             },
             {
-                "name": "LL Inn: Wake Art",
-                "sections": [
-                    {
-                        "name": "LL Inn: Wake Art",
-                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
-                        "chest_opened_img": "images/items/quest_marker_opened.png"
-                    }
-                ],
-                "visibility_rules": [
-                    "questsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "last_light",
-                        "x": 224,
-                        "y": 536
-                    }
-                ]
-            },
-            {
                 "name": "LL Inn: Meet Halsin by the Lakeshore",
                 "sections": [
                     {
@@ -16918,7 +16612,7 @@
                 "map_locations": [
                     {
                         "map": "last_light",
-                        "x": 256,
+                        "x": 224,
                         "y": 536
                     }
                 ]
@@ -16938,7 +16632,7 @@
                 "map_locations": [
                     {
                         "map": "last_light",
-                        "x": 288,
+                        "x": 256,
                         "y": 536
                     }
                 ]
@@ -16958,7 +16652,7 @@
                 "map_locations": [
                     {
                         "map": "last_light",
-                        "x": 320,
+                        "x": 288,
                         "y": 536
                     }
                 ]
@@ -16978,7 +16672,7 @@
                 "map_locations": [
                     {
                         "map": "last_light",
-                        "x": 352,
+                        "x": 320,
                         "y": 536
                     }
                 ]
@@ -16998,7 +16692,7 @@
                 "map_locations": [
                     {
                         "map": "last_light",
-                        "x": 384,
+                        "x": 352,
                         "y": 536
                     }
                 ]
@@ -17015,10 +16709,13 @@
                 "visibility_rules": [
                     "questsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:26,gate_last_light_basement"
+                ],
                 "map_locations": [
                     {
                         "map": "last_light",
-                        "x": 416,
+                        "x": 384,
                         "y": 536
                     }
                 ]
@@ -17035,50 +16732,13 @@
                 "visibility_rules": [
                     "questsanity"
                 ],
-                "map_locations": [
-                    {
-                        "map": "last_light",
-                        "x": 448,
-                        "y": 536
-                    }
-                ]
-            },
-            {
-                "name": "Selunites: Investigate the Mason's Guild",
-                "sections": [
-                    {
-                        "name": "Selunites: Investigate the Mason's Guild",
-                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
-                        "chest_opened_img": "images/items/quest_marker_opened.png"
-                    }
-                ],
-                "visibility_rules": [
-                    "questsanity"
+                "access_rules": [
+                    "level_fragment:26,gate_last_light_basement"
                 ],
                 "map_locations": [
                     {
                         "map": "last_light",
-                        "x": 480,
-                        "y": 536
-                    }
-                ]
-            },
-            {
-                "name": "Selunites: Find Morfred's writings",
-                "sections": [
-                    {
-                        "name": "Selunites: Find Morfred's writings",
-                        "chest_unopened_img": "images/items/quest_marker_unopened.png",
-                        "chest_opened_img": "images/items/quest_marker_opened.png"
-                    }
-                ],
-                "visibility_rules": [
-                    "questsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "last_light",
-                        "x": 512,
+                        "x": 416,
                         "y": 536
                     }
                 ]
@@ -17098,7 +16758,7 @@
                 "map_locations": [
                     {
                         "map": "last_light",
-                        "x": 544,
+                        "x": 448,
                         "y": 536
                     }
                 ]
@@ -17118,7 +16778,7 @@
                 "map_locations": [
                     {
                         "map": "last_light",
-                        "x": 576,
+                        "x": 480,
                         "y": 536
                     }
                 ]
@@ -17138,7 +16798,7 @@
                 "map_locations": [
                     {
                         "map": "last_light",
-                        "x": 608,
+                        "x": 512,
                         "y": 536
                     }
                 ]
@@ -17158,7 +16818,7 @@
                 "map_locations": [
                     {
                         "map": "last_light",
-                        "x": 640,
+                        "x": 544,
                         "y": 536
                     }
                 ]
@@ -17178,7 +16838,7 @@
                 "map_locations": [
                     {
                         "map": "last_light",
-                        "x": 672,
+                        "x": 576,
                         "y": 536
                     }
                 ]
@@ -17319,6 +16979,9 @@
                 "visibility_rules": [
                     "killsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:26,gate_last_light_basement"
+                ],
                 "map_locations": [
                     {
                         "map": "last_light",
@@ -17336,6 +16999,9 @@
                 ],
                 "visibility_rules": [
                     "killsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:26,gate_last_light_basement"
                 ],
                 "map_locations": [
                     {
@@ -17355,6 +17021,9 @@
                 "visibility_rules": [
                     "killsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:26,gate_last_light_basement"
+                ],
                 "map_locations": [
                     {
                         "map": "last_light",
@@ -17372,6 +17041,9 @@
                 ],
                 "visibility_rules": [
                     "killsanity"
+                ],
+                "access_rules": [
+                    "level_fragment:26,gate_last_light_basement"
                 ],
                 "map_locations": [
                     {
@@ -17391,6 +17063,9 @@
                 "visibility_rules": [
                     "killsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:26,gate_last_light_basement"
+                ],
                 "map_locations": [
                     {
                         "map": "last_light",
@@ -17409,6 +17084,9 @@
                 "visibility_rules": [
                     "killsanity"
                 ],
+                "access_rules": [
+                    "level_fragment:26,gate_last_light_basement"
+                ],
                 "map_locations": [
                     {
                         "map": "last_light",
@@ -17416,716 +17094,16 @@
                         "y": 337
                     }
                 ]
-            },
-            {
-                "name": "LL Inn: Kill Cursed Raven 1",
-                "sections": [
-                    {
-                        "name": "LL Inn: Kill Cursed Raven 1"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "last_light",
-                        "x": 757,
-                        "y": 159
-                    }
-                ]
-            },
-            {
-                "name": "LL Inn: Kill Cursed Raven 2",
-                "sections": [
-                    {
-                        "name": "LL Inn: Kill Cursed Raven 2"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "last_light",
-                        "x": 728,
-                        "y": 157
-                    }
-                ]
-            },
-            {
-                "name": "LL Inn: Kill Cursed Raven 3",
-                "sections": [
-                    {
-                        "name": "LL Inn: Kill Cursed Raven 3"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "last_light",
-                        "x": 746,
-                        "y": 187
-                    }
-                ]
-            },
-            {
-                "name": "LL Inn: Kill Cursed Raven 4",
-                "sections": [
-                    {
-                        "name": "LL Inn: Kill Cursed Raven 4"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "last_light",
-                        "x": 717,
-                        "y": 185
-                    }
-                ]
-            },
-            {
-                "name": "LL Inn: Kill Cursed Raven 5",
-                "sections": [
-                    {
-                        "name": "LL Inn: Kill Cursed Raven 5"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "last_light",
-                        "x": 677,
-                        "y": 192
-                    }
-                ]
-            },
-            {
-                "name": "LL Inn: Kill Cursed Raven 6",
-                "sections": [
-                    {
-                        "name": "LL Inn: Kill Cursed Raven 6"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "last_light",
-                        "x": 648,
-                        "y": 189
-                    }
-                ]
-            },
-            {
-                "name": "LL Inn: Kill Cursed Raven 7",
-                "sections": [
-                    {
-                        "name": "LL Inn: Kill Cursed Raven 7"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "last_light",
-                        "x": 665,
-                        "y": 159
-                    }
-                ]
-            },
-            {
-                "name": "LL Inn: Kill Cursed Raven 8",
-                "sections": [
-                    {
-                        "name": "LL Inn: Kill Cursed Raven 8"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "last_light",
-                        "x": 675,
-                        "y": 220
-                    }
-                ]
-            },
-            {
-                "name": "LL Inn: Kill Shadow 1",
-                "sections": [
-                    {
-                        "name": "LL Inn: Kill Shadow 1"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "last_light",
-                        "x": 593,
-                        "y": 203
-                    }
-                ]
-            },
-            {
-                "name": "LL Inn: Kill Shadow 2",
-                "sections": [
-                    {
-                        "name": "LL Inn: Kill Shadow 2"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "last_light",
-                        "x": 627,
-                        "y": 168
-                    }
-                ]
-            },
-            {
-                "name": "LL Inn: Kill Shadow 3",
-                "sections": [
-                    {
-                        "name": "LL Inn: Kill Shadow 3"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "last_light",
-                        "x": 565,
-                        "y": 197
-                    }
-                ]
-            },
-            {
-                "name": "LL Inn: Kill Wraith 1",
-                "sections": [
-                    {
-                        "name": "LL Inn: Kill Wraith 1"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "last_light",
-                        "x": 592,
-                        "y": 232
-                    }
-                ]
-            },
-            {
-                "name": "LL Inn: Kill Cursed Warrior 1",
-                "sections": [
-                    {
-                        "name": "LL Inn: Kill Cursed Warrior 1"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "last_light",
-                        "x": 732,
-                        "y": 37
-                    }
-                ]
-            },
-            {
-                "name": "LL Inn: Kill Cursed Warrior 2",
-                "sections": [
-                    {
-                        "name": "LL Inn: Kill Cursed Warrior 2"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "last_light",
-                        "x": 790,
-                        "y": 44
-                    }
-                ]
-            },
-            {
-                "name": "LL Inn: Kill Cursed Warrior 3",
-                "sections": [
-                    {
-                        "name": "LL Inn: Kill Cursed Warrior 3"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "last_light",
-                        "x": 754,
-                        "y": 88
-                    }
-                ]
-            },
-            {
-                "name": "LL Inn: Kill Cursed Warrior 4",
-                "sections": [
-                    {
-                        "name": "LL Inn: Kill Cursed Warrior 4"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "last_light",
-                        "x": 777,
-                        "y": 106
-                    }
-                ]
-            },
-            {
-                "name": "LL Inn: Kill Cursed Warrior 5",
-                "sections": [
-                    {
-                        "name": "LL Inn: Kill Cursed Warrior 5"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "last_light",
-                        "x": 778,
-                        "y": 72
-                    }
-                ]
-            },
-            {
-                "name": "LL Inn: Kill Cursed Zealot 1",
-                "sections": [
-                    {
-                        "name": "LL Inn: Kill Cursed Zealot 1"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "last_light",
-                        "x": 736,
-                        "y": 111
-                    }
-                ]
-            },
-            {
-                "name": "LL Inn: Kill Cursed Zealot 2",
-                "sections": [
-                    {
-                        "name": "LL Inn: Kill Cursed Zealot 2"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "last_light",
-                        "x": 798,
-                        "y": 151
-                    }
-                ]
-            },
-            {
-                "name": "LL Inn: Kill Cursed Zealot 3",
-                "sections": [
-                    {
-                        "name": "LL Inn: Kill Cursed Zealot 3"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "last_light",
-                        "x": 736,
-                        "y": 66
-                    }
-                ]
-            },
-            {
-                "name": "LL Inn: Kill Cursed Harper 1",
-                "sections": [
-                    {
-                        "name": "LL Inn: Kill Cursed Harper 1"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "last_light",
-                        "x": 819,
-                        "y": 132
-                    }
-                ]
-            },
-            {
-                "name": "LL Inn: Kill Cursed Harper 2",
-                "sections": [
-                    {
-                        "name": "LL Inn: Kill Cursed Harper 2"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "last_light",
-                        "x": 800,
-                        "y": 180
-                    }
-                ]
-            },
-            {
-                "name": "LL Inn: Kill Cursed Harper 3",
-                "sections": [
-                    {
-                        "name": "LL Inn: Kill Cursed Harper 3"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "last_light",
-                        "x": 834,
-                        "y": 157
-                    }
-                ]
-            },
-            {
-                "name": "LL Inn: Kill Cursed Harper 4",
-                "sections": [
-                    {
-                        "name": "LL Inn: Kill Cursed Harper 4"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "last_light",
-                        "x": 773,
-                        "y": 135
-                    }
-                ]
-            },
-            {
-                "name": "LL Inn: Kill Dark Vine Tentacle 1",
-                "sections": [
-                    {
-                        "name": "LL Inn: Kill Dark Vine Tentacle 1"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "last_light",
-                        "x": 704,
-                        "y": 141
-                    }
-                ]
-            },
-            {
-                "name": "LL Inn: Kill Dark Vine Tentacle 2",
-                "sections": [
-                    {
-                        "name": "LL Inn: Kill Dark Vine Tentacle 2"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "last_light",
-                        "x": 645,
-                        "y": 219
-                    }
-                ]
-            },
-            {
-                "name": "LL Inn: Kill Dark Vine Tentacle 3",
-                "sections": [
-                    {
-                        "name": "LL Inn: Kill Dark Vine Tentacle 3"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "last_light",
-                        "x": 693,
-                        "y": 168
-                    }
-                ]
-            },
-            {
-                "name": "LL Inn: Kill Shadow 4",
-                "sections": [
-                    {
-                        "name": "LL Inn: Kill Shadow 4"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "last_light",
-                        "x": 621,
-                        "y": 234
-                    }
-                ]
-            },
-            {
-                "name": "LL Inn: Kill Wraith 2",
-                "sections": [
-                    {
-                        "name": "LL Inn: Kill Wraith 2"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "last_light",
-                        "x": 622,
-                        "y": 201
-                    }
-                ]
-            },
-            {
-                "name": "LL Inn: Kill Cursed Githyanki 1",
-                "sections": [
-                    {
-                        "name": "LL Inn: Kill Cursed Githyanki 1"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "last_light",
-                        "x": 803,
-                        "y": 95
-                    }
-                ]
-            },
-            {
-                "name": "LL Inn: Kill Cursed Githyanki 2",
-                "sections": [
-                    {
-                        "name": "LL Inn: Kill Cursed Githyanki 2"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "last_light",
-                        "x": 761,
-                        "y": 41
-                    }
-                ]
-            },
-            {
-                "name": "LL Inn: Kill Cursed Githyanki 3",
-                "sections": [
-                    {
-                        "name": "LL Inn: Kill Cursed Githyanki 3"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "last_light",
-                        "x": 808,
-                        "y": 66
-                    }
-                ]
-            },
-            {
-                "name": "LL Inn: Kill Cursed Flaming Fist 1",
-                "sections": [
-                    {
-                        "name": "LL Inn: Kill Cursed Flaming Fist 1"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "last_light",
-                        "x": 707,
-                        "y": 112
-                    }
-                ]
-            },
-            {
-                "name": "LL Inn: Kill Cursed Flaming Fist 2",
-                "sections": [
-                    {
-                        "name": "LL Inn: Kill Cursed Flaming Fist 2"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "last_light",
-                        "x": 859,
-                        "y": 121
-                    }
-                ]
-            },
-            {
-                "name": "LL Inn: Kill Cursed Flaming Fist 3",
-                "sections": [
-                    {
-                        "name": "LL Inn: Kill Cursed Flaming Fist 3"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "last_light",
-                        "x": 713,
-                        "y": 83
-                    }
-                ]
-            },
-            {
-                "name": "LL Inn: Kill Cursed Flaming Fist 4",
-                "sections": [
-                    {
-                        "name": "LL Inn: Kill Cursed Flaming Fist 4"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "last_light",
-                        "x": 866,
-                        "y": 93
-                    }
-                ]
-            },
-            {
-                "name": "LL Inn: Kill Cursed Flaming Fist 5",
-                "sections": [
-                    {
-                        "name": "LL Inn: Kill Cursed Flaming Fist 5"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "last_light",
-                        "x": 834,
-                        "y": 107
-                    }
-                ]
-            },
-            {
-                "name": "LL Inn: Kill Shadow Mastiff 1",
-                "sections": [
-                    {
-                        "name": "LL Inn: Kill Shadow Mastiff 1"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "last_light",
-                        "x": 859,
-                        "y": 61
-                    }
-                ]
-            },
-            {
-                "name": "LL Inn: Kill Shadow Mastiff 2",
-                "sections": [
-                    {
-                        "name": "LL Inn: Kill Shadow Mastiff 2"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "last_light",
-                        "x": 835,
-                        "y": 78
-                    }
-                ]
             }
         ],
         "access_rules": [
-            "level_fragment:26,gate_last_light_basement"
+            "level_fragment:26"
         ],
         "visibility_rules": [
             "goal_myrkul",
-            "goal_act2udf"
+            "goal_act2udf",
+            "goal_netherbrain",
+            "goal_act3udf"
         ]
     },
     {
@@ -18616,7 +17594,7 @@
                     "questsanity"
                 ],
                 "access_rules": [
-                    "level_fragment:30,gate_progressive_moonlight_towers:5"
+                    "level_fragment:26,gate_progressive_moonlight_towers:2"
                 ],
                 "map_locations": [
                     {
@@ -19123,7 +18101,7 @@
                     "killsanity"
                 ],
                 "access_rules": [
-                    "level_fragment:30,gate_progressive_moonlight_towers:5"
+                    "level_fragment:26,gate_progressive_moonlight_towers:2"
                 ],
                 "map_locations": [
                     {
@@ -19144,7 +18122,7 @@
                     "killsanity"
                 ],
                 "access_rules": [
-                    "level_fragment:30,gate_progressive_moonlight_towers:5"
+                    "level_fragment:26,gate_progressive_moonlight_towers:2"
                 ],
                 "map_locations": [
                     {
@@ -19165,7 +18143,7 @@
                     "killsanity"
                 ],
                 "access_rules": [
-                    "level_fragment:30,gate_progressive_moonlight_towers:5"
+                    "level_fragment:26,gate_progressive_moonlight_towers:2"
                 ],
                 "map_locations": [
                     {
@@ -19186,7 +18164,7 @@
                     "killsanity"
                 ],
                 "access_rules": [
-                    "level_fragment:30,gate_progressive_moonlight_towers:5"
+                    "level_fragment:26,gate_progressive_moonlight_towers:2"
                 ],
                 "map_locations": [
                     {
@@ -19207,7 +18185,7 @@
                     "killsanity"
                 ],
                 "access_rules": [
-                    "level_fragment:30,gate_progressive_moonlight_towers:5"
+                    "level_fragment:26,gate_progressive_moonlight_towers:2"
                 ],
                 "map_locations": [
                     {
@@ -19228,7 +18206,7 @@
                     "killsanity"
                 ],
                 "access_rules": [
-                    "level_fragment:30,gate_progressive_moonlight_towers:5"
+                    "level_fragment:26,gate_progressive_moonlight_towers:2"
                 ],
                 "map_locations": [
                     {
@@ -19249,7 +18227,7 @@
                     "killsanity"
                 ],
                 "access_rules": [
-                    "level_fragment:30,gate_progressive_moonlight_towers:5"
+                    "level_fragment:26,gate_progressive_moonlight_towers:2"
                 ],
                 "map_locations": [
                     {
@@ -19270,7 +18248,7 @@
                     "killsanity"
                 ],
                 "access_rules": [
-                    "level_fragment:30,gate_progressive_moonlight_towers:5"
+                    "level_fragment:26,gate_progressive_moonlight_towers:2"
                 ],
                 "map_locations": [
                     {
@@ -19291,7 +18269,7 @@
                     "killsanity"
                 ],
                 "access_rules": [
-                    "level_fragment:30,gate_progressive_moonlight_towers:5"
+                    "level_fragment:26,gate_progressive_moonlight_towers:2"
                 ],
                 "map_locations": [
                     {
@@ -19303,11 +18281,13 @@
             }
         ],
         "access_rules": [
-            "level_fragment:26,gate_progressive_moonlight_towers:4"
+            "level_fragment:26,gate_progressive_moonlight_towers:1"
         ],
         "visibility_rules": [
             "goal_myrkul",
-            "goal_act2udf"
+            "goal_act2udf",
+            "goal_netherbrain",
+            "goal_act3udf"
         ]
     },
     {
@@ -19329,20 +18309,20 @@
                         "name": "Shar: Find Balthazar"
                     },
                     {
-                        "ref": "Gauntlet of Shar/Shar: Complete the Gauntlet of Shar/Shar: Complete the Gauntlet of Shar",
-                        "name": "Shar: Complete the Gauntlet of Shar"
+                        "ref": "Gauntlet of Shar/Shart: Complete the Gauntlet of Shar/Shart: Complete the Gauntlet of Shar",
+                        "name": "Shart: Complete the Gauntlet of Shar"
                     },
                     {
-                        "ref": "Gauntlet of Shar/Shar: Complete the Clone Trial/Shar: Complete the Clone Trial",
-                        "name": "Shar: Complete the Clone Trial"
+                        "ref": "Gauntlet of Shar/Shart: Complete the Clone Trial/Shart: Complete the Clone Trial",
+                        "name": "Shart: Complete the Clone Trial"
                     },
                     {
-                        "ref": "Gauntlet of Shar/Shar: Complete the Darkness Trial/Shar: Complete the Darkness Trial",
-                        "name": "Shar: Complete the Darkness Trial"
+                        "ref": "Gauntlet of Shar/Shart: Complete the Darkness Trial/Shart: Complete the Darkness Trial",
+                        "name": "Shart: Complete the Darkness Trial"
                     },
                     {
-                        "ref": "Gauntlet of Shar/Shar: Complete the Stealth Trial/Shar: Complete the Stealth Trial",
-                        "name": "Shar: Complete the Stealth Trial"
+                        "ref": "Gauntlet of Shar/Shart: Complete the Stealth Trial/Shart: Complete the Stealth Trial",
+                        "name": "Shart: Complete the Stealth Trial"
                     },
                     {
                         "ref": "Gauntlet of Shar/Shar: Enter the Shadowfell/Shar: Enter the Shadowfell",
@@ -19574,10 +18554,10 @@
                 ]
             },
             {
-                "name": "Shar: Complete the Gauntlet of Shar",
+                "name": "Shart: Complete the Gauntlet of Shar",
                 "sections": [
                     {
-                        "name": "Shar: Complete the Gauntlet of Shar",
+                        "name": "Shart: Complete the Gauntlet of Shar",
                         "chest_unopened_img": "images/items/quest_marker_unopened.png",
                         "chest_opened_img": "images/items/quest_marker_opened.png"
                     }
@@ -19594,10 +18574,10 @@
                 ]
             },
             {
-                "name": "Shar: Complete the Clone Trial",
+                "name": "Shart: Complete the Clone Trial",
                 "sections": [
                     {
-                        "name": "Shar: Complete the Clone Trial",
+                        "name": "Shart: Complete the Clone Trial",
                         "chest_unopened_img": "images/items/quest_marker_unopened.png",
                         "chest_opened_img": "images/items/quest_marker_opened.png"
                     }
@@ -19614,10 +18594,10 @@
                 ]
             },
             {
-                "name": "Shar: Complete the Darkness Trial",
+                "name": "Shart: Complete the Darkness Trial",
                 "sections": [
                     {
-                        "name": "Shar: Complete the Darkness Trial",
+                        "name": "Shart: Complete the Darkness Trial",
                         "chest_unopened_img": "images/items/quest_marker_unopened.png",
                         "chest_opened_img": "images/items/quest_marker_opened.png"
                     }
@@ -19634,10 +18614,10 @@
                 ]
             },
             {
-                "name": "Shar: Complete the Stealth Trial",
+                "name": "Shart: Complete the Stealth Trial",
                 "sections": [
                     {
-                        "name": "Shar: Complete the Stealth Trial",
+                        "name": "Shart: Complete the Stealth Trial",
                         "chest_unopened_img": "images/items/quest_marker_unopened.png",
                         "chest_opened_img": "images/items/quest_marker_opened.png"
                     }
@@ -20385,7 +19365,9 @@
         ],
         "visibility_rules": [
             "goal_myrkul",
-            "goal_act2udf"
+            "goal_act2udf",
+            "goal_netherbrain",
+            "goal_act3udf"
         ]
     },
     {
@@ -21667,11 +20649,13 @@
             }
         ],
         "access_rules": [
-            "level_fragment:30,gate_progressive_moonlight_towers:5"
+            "level_fragment:30,gate_progressive_moonlight_towers:3"
         ],
         "visibility_rules": [
             "goal_myrkul",
-            "goal_act2udf"
+            "goal_act2udf",
+            "goal_netherbrain",
+            "goal_act3udf"
         ]
     }
 ]
