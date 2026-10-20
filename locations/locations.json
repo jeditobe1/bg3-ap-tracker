@@ -5240,7 +5240,7 @@
                 "map_locations": [
                     {
                         "map": "act1_overworld",
-                        "x": 1278,
+                        "x": 1279,
                         "y": 559
                     }
                 ]
@@ -7434,8 +7434,8 @@
                 "map_locations": [
                     {
                         "map": "goblin_camp",
-                        "x": 30,
-                        "y": 58
+                        "x": 292,
+                        "y": 257
                     }
                 ]
             }

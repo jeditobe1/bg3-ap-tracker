@@ -56,20 +56,6 @@
         252.91647
       ]
     },
-    "01e7cde6-a4df-403c-87c3-d5377682a6eb": {
-      "building": "",
-      "floor": 0,
-      "found_in": "Gustav/Mods/GustavDev/Levels/SCL_Main_A",
-      "icon": null,
-      "level": "SCL_Main_A",
-      "name": "S_HAV_Wave0_Shadow_008",
-      "patch": "Mods__GustavDev__Levels__SCL_Main_A__WorldMap__2e7eb872-999f-4f5a-9930-f65ff803498f",
-      "position": [
-        -74.67027,
-        18.17226,
-        196.60545
-      ]
-    },
     "021d2e7f-50b5-4b29-b468-fdf2ed347d8b": {
       "building": "Monastary",
       "floor": 3,
@@ -110,20 +96,6 @@
         -195.99721,
         21.268955,
         -58.21284
-      ]
-    },
-    "027755e5-86ff-4d55-8704-6ae3b46cb974": {
-      "building": "Shar",
-      "floor": 1,
-      "found_in": "Gustav/Mods/GustavDev/Levels/SCL_Main_A",
-      "icon": null,
-      "level": "SCL_Main_A",
-      "name": "S_SHA_TadpoledSkeletons_Justiciar_Caster_01",
-      "patch": "Mods__GustavDev__Levels__SCL_Main_A__WorldMap__3faa7bd0-5090-4a31-851e-341808913bf7",
-      "position": [
-        -722.38245,
-        8.438802,
-        -788.5623
       ]
     },
     "0296a9f6-b2bc-46a0-8632-ba72679a36d3": {
@@ -196,20 +168,6 @@
         -753.34766
       ]
     },
-    "03d2278d-f1fa-41ff-bdbe-03045725d990": {
-      "building": "GoblinCamp",
-      "floor": 0,
-      "found_in": "Gustav/Mods/Gustav/Levels/WLD_Main_A",
-      "icon": null,
-      "level": "WLD_Main_A",
-      "name": "S_GOB_GiantSpider_Tiny",
-      "patch": "Mods__GustavDev__Levels__WLD_Main_A__WorldMap__acccd394-1816-4ad7-b95f-1c75f60f4b84",
-      "position": [
-        296.89124,
-        31.158165,
-        27.359262
-      ]
-    },
     "04ea7782-2b12-4501-941d-269812313664": {
       "building": "",
       "floor": 0,
@@ -252,20 +210,6 @@
         -193.91902
       ]
     },
-    "06451f28-98fa-4ab9-9b6b-92edb5ceb9af": {
-      "building": "",
-      "floor": 0,
-      "found_in": "Gustav/Mods/GustavDev/Levels/SCL_Main_A",
-      "icon": "5266d326-7170-4be1-3fc0-de46f7b79a73-_(Icon_Shadow_Mastiff)",
-      "level": "SCL_Main_A",
-      "name": "S_HAV_Wave4_ShadowMastiff_004",
-      "patch": "Mods__GustavDev__Levels__SCL_Main_A__WorldMap__2e7eb872-999f-4f5a-9930-f65ff803498f",
-      "position": [
-        -39.983166,
-        23.43308,
-        217.62764
-      ]
-    },
     "066a27f7-4465-4b61-ba13-7b8d6358ad50": {
       "building": "",
       "floor": 0,
@@ -292,34 +236,6 @@
         -645.61053,
         14.56083,
         298.5775
-      ]
-    },
-    "06c47934-bc30-48f0-b297-4f99272d1241": {
-      "building": "",
-      "floor": 0,
-      "found_in": "Gustav/Mods/GustavDev/Levels/SCL_Main_A",
-      "icon": "5266d326-7170-4be1-3fc0-de46f7b79a73-_(Icon_Shadow_Mastiff)",
-      "level": "SCL_Main_A",
-      "name": "S_HAV_Wave4_ShadowMastiff_003",
-      "patch": "Mods__GustavDev__Levels__SCL_Main_A__WorldMap__2e7eb872-999f-4f5a-9930-f65ff803498f",
-      "position": [
-        -38.124966,
-        23.315128,
-        219.31064
-      ]
-    },
-    "06fe050e-86f5-47f8-bda9-53d91b9f6fdf": {
-      "building": "",
-      "floor": 0,
-      "found_in": "Gustav/Mods/GustavDev/Levels/SCL_Main_A",
-      "icon": "be1daf5d-eea7-6957-af91-b0a4fa0a9157-EQP_Greatsword_HalfPlate_Gith_(Icon_Githyanki_Male)",
-      "level": "SCL_Main_A",
-      "name": "S_HAV_Wave3_ShadowCursed_Warrior_Githyanki_003",
-      "patch": "Mods__GustavDev__Levels__SCL_Main_A__WorldMap__2e7eb872-999f-4f5a-9930-f65ff803498f",
-      "position": [
-        -49.695858,
-        19.560335,
-        217.77907
       ]
     },
     "07e9b38f-624c-45db-b3fa-b45737314796": {
@@ -616,20 +532,6 @@
         439.502
       ]
     },
-    "1108b8a5-0d22-4a0e-8973-37b0442f2070": {
-      "building": "",
-      "floor": 0,
-      "found_in": "Gustav/Mods/GustavDev/Levels/SCL_Main_A",
-      "icon": "f2f1e59a-cb02-5b29-2c38-2314fc8bbf83-EQP_Crossbow_Leather_(Icon_Elf_Female)",
-      "level": "SCL_Main_A",
-      "name": "S_HAV_Wave1_ShadowCursed_Ranger_Harper_006",
-      "patch": "Mods__GustavDev__Levels__SCL_Main_A__WorldMap__2e7eb872-999f-4f5a-9930-f65ff803498f",
-      "position": [
-        -44.417416,
-        20.37881,
-        205.6167
-      ]
-    },
     "11172575-a7e4-43b1-85a3-162a99a7e10b": {
       "building": "",
       "floor": 0,
@@ -658,20 +560,6 @@
         44.152363
       ]
     },
-    "11570320-e45b-480c-a92a-4734f560edcf": {
-      "building": "Dungeon",
-      "floor": 0,
-      "found_in": "Gustav/Mods/GustavDev/Levels/SCL_Main_A",
-      "icon": "dd44a2eb-2f8f-8aac-a937-4282c4c83475-EQP_MasterOfSouls_(Icon_Human_Female)",
-      "level": "SCL_Main_A",
-      "name": "S_MOO_Assault_PrisonMasterOfSouls_02",
-      "patch": "Mods__GustavDev__Levels__SCL_Main_A__WorldMap__ce87a036-9f0c-456f-9c45-8bc33aaa29c0",
-      "position": [
-        596.02075,
-        24.014942,
-        -651.3581
-      ]
-    },
     "126e39d1-7c38-453c-888b-4cddce7f3e41": {
       "building": "GoblinCamp",
       "floor": 1,
@@ -684,20 +572,6 @@
         310.48007,
         40.802696,
         -21.998611
-      ]
-    },
-    "1303ff46-5200-4986-9d73-d85ad7918ec5": {
-      "building": "",
-      "floor": 0,
-      "found_in": "Gustav/Mods/GustavDev/Levels/SCL_Main_A",
-      "icon": null,
-      "level": "SCL_Main_A",
-      "name": "S_HAV_Wave0_Raven_Dire_ShadowCursed_012",
-      "patch": "Mods__GustavDev__Levels__SCL_Main_A__WorldMap__2e7eb872-999f-4f5a-9930-f65ff803498f",
-      "position": [
-        -71.13203,
-        18.691229,
-        198.44258
       ]
     },
     "1358e104-c187-400e-b111-b2cf8581422d": {
@@ -726,20 +600,6 @@
         -44.876385,
         18.372925,
         -380.50146
-      ]
-    },
-    "14026955-2546-4d31-bc0c-4bfe0c34bd8a": {
-      "building": "",
-      "floor": 0,
-      "found_in": "Gustav/Mods/Gustav/Levels/WLD_Main_A",
-      "icon": "f190d7eb-16ee-03ea-40f2-217089365d04-_(Icon_Redcap)",
-      "level": "WLD_Main_A",
-      "name": "S_HAG_ForestIllusion_Redcap_03",
-      "patch": "Mods__GustavDev__Levels__WLD_Main_A__WorldMap__94df118d-9257-420c-8a4c-a068cbc057c0",
-      "position": [
-        -0.16966438,
-        0.071769714,
-        251.76566
       ]
     },
     "1535feb9-7ff9-4132-be09-191ba3f8c2e1": {
@@ -854,20 +714,6 @@
         268.42258
       ]
     },
-    "1987ecb9-9565-4fab-8b1f-0390ca250a01": {
-      "building": "Shar",
-      "floor": 2,
-      "found_in": "Gustav/Mods/GustavDev/Levels/SCL_Main_A",
-      "icon": "9e20c9c6-735e-73d8-1af8-ffa69e5379d8-SHA_Justiciar_Mace_Shield_Shar_(Icon_DarkJusticiar)",
-      "level": "SCL_Main_A",
-      "name": "S_SHA_TadpoledSkeletons_Justiciar_Melee_02",
-      "patch": "Mods__GustavDev__Levels__SCL_Main_A__WorldMap__2dbdcafe-bc29-4243-943d-6358ff24edf9",
-      "position": [
-        -733.4627,
-        7.9432745,
-        -797.5914
-      ]
-    },
     "19edd11d-fde0-4aa9-95f6-fb2e3f2bc570": {
       "building": "",
       "floor": 0,
@@ -894,20 +740,6 @@
         -149.62631,
         22.045258,
         -164.0568
-      ]
-    },
-    "1a9b065b-d2cd-44c5-95e4-307d6bd82fe7": {
-      "building": "",
-      "floor": 0,
-      "found_in": "Gustav/Mods/GustavDev/Levels/SCL_Main_A",
-      "icon": "abb2b766-59d3-1526-4014-8cf790069831-EQP_Dagger_(Icon_Human_Female)",
-      "level": "SCL_Main_A",
-      "name": "S_HAV_Wave0_ShadowCursed_Warrior_Pilgrim_003",
-      "patch": "Mods__GustavDev__Levels__SCL_Main_A__WorldMap__2e7eb872-999f-4f5a-9930-f65ff803498f",
-      "position": [
-        -52.444023,
-        18.842482,
-        219.38608
       ]
     },
     "1b294fe0-f1a1-4e81-9d4c-8d86bbda7d2b": {
@@ -1022,34 +854,6 @@
         383.58817
       ]
     },
-    "1e41607c-ed56-43bb-9bd2-98de3796d52a": {
-      "building": "",
-      "floor": 0,
-      "found_in": "Gustav/Mods/GustavDev/Levels/SCL_Main_A",
-      "icon": null,
-      "level": "SCL_Main_A",
-      "name": "S_HAV_Wave0_Raven_Dire_ShadowCursed_014",
-      "patch": "Mods__GustavDev__Levels__SCL_Main_A__WorldMap__2e7eb872-999f-4f5a-9930-f65ff803498f",
-      "position": [
-        -68.763695,
-        18.769312,
-        197.93584
-      ]
-    },
-    "1ede9b50-0b85-4a48-8872-738ddd1fc4cd": {
-      "building": "",
-      "floor": 0,
-      "found_in": "Gustav/Mods/GustavDev/Levels/SCL_Main_A",
-      "icon": "d47128dc-be87-f784-30d0-e2d162826bcb-EQP_Greatsword_ChainMail_(Icon_Elf_Male)",
-      "level": "SCL_Main_A",
-      "name": "S_HAV_Wave3_ShadowCursed_Melee_FlamingFist_004",
-      "patch": "Mods__GustavDev__Levels__SCL_Main_A__WorldMap__2e7eb872-999f-4f5a-9930-f65ff803498f",
-      "position": [
-        -60.254288,
-        18.528507,
-        212.94226
-      ]
-    },
     "1f3d846e-f26c-49d4-b917-d9f43fd137b4": {
       "building": "Apothercary",
       "floor": 0,
@@ -1118,20 +922,6 @@
         -849.258,
         8.492397,
         -790.01636
-      ]
-    },
-    "2112e248-7cbc-4db6-a629-34dd87dc2386": {
-      "building": "",
-      "floor": 0,
-      "found_in": "Gustav/Mods/GustavDev/Levels/SCL_Main_A",
-      "icon": "e58577d8-938b-6556-9437-ef9b89c628bc-EQP_Crossbow_Leather_(Icon_Elf_Female)",
-      "level": "SCL_Main_A",
-      "name": "S_HAV_Wave1_ShadowCursed_Ranger_Harper_007",
-      "patch": "Mods__GustavDev__Levels__SCL_Main_A__WorldMap__2e7eb872-999f-4f5a-9930-f65ff803498f",
-      "position": [
-        -47.170433,
-        18.528507,
-        206.4139
       ]
     },
     "2195ef75-14f8-4e69-8a0b-71a7d7493216": {
@@ -1414,34 +1204,6 @@
         209.51118
       ]
     },
-    "2ad074e8-a5a4-452e-bcfe-7a946887a539": {
-      "building": "",
-      "floor": 0,
-      "found_in": "Gustav/Mods/GustavDev/Levels/SCL_Main_A",
-      "icon": null,
-      "level": "SCL_Main_A",
-      "name": "S_HAV_Wave0_Raven_Dire_ShadowCursed_007",
-      "patch": "Mods__GustavDev__Levels__SCL_Main_A__WorldMap__2e7eb872-999f-4f5a-9930-f65ff803498f",
-      "position": [
-        -54.669617,
-        18.642492,
-        203.92001
-      ]
-    },
-    "2b08981e-5cb0-496d-98cf-15e6a92121ec": {
-      "building": "",
-      "floor": 0,
-      "found_in": "Gustav/Mods/Gustav/Levels/WLD_Main_A",
-      "icon": "b530b457-c792-981f-1921-4eea876dc004-EQP_Redcap_Sickle_(Icon_Redcap)",
-      "level": "WLD_Main_A",
-      "name": "S_HAG_ForestIllusion_Redcap_02",
-      "patch": "Mods__GustavDev__Levels__WLD_Main_A__WorldMap__94df118d-9257-420c-8a4c-a068cbc057c0",
-      "position": [
-        9.7483015,
-        -0.07000065,
-        242.09576
-      ]
-    },
     "2be9d074-245f-4f4f-9385-260d08f4ea73": {
       "building": "Hospital",
       "floor": 2,
@@ -1468,20 +1230,6 @@
         1313.2095,
         -2.3044257,
         -824.5329
-      ]
-    },
-    "2c25ec5b-c162-4579-9f1e-435fbdcfd6e3": {
-      "building": "",
-      "floor": 0,
-      "found_in": "Gustav/Mods/GustavDev/Levels/SCL_Main_A",
-      "icon": "88ee0271-170c-1c8a-0548-23c2a745c2ac-EQP_Dagger_(Icon_Human_Female)",
-      "level": "SCL_Main_A",
-      "name": "S_HAV_Wave0_ShadowCursed_Warrior_Pilgrim_006",
-      "patch": "Mods__GustavDev__Levels__SCL_Main_A__WorldMap__2e7eb872-999f-4f5a-9930-f65ff803498f",
-      "position": [
-        -50.99732,
-        18.997013,
-        217.38913
       ]
     },
     "2c9b967d-fbaa-43c0-9461-3e1598b5fbe1": {
@@ -1524,20 +1272,6 @@
         678.1296,
         18.849487,
         11.993392
-      ]
-    },
-    "2edb73bb-9831-44d3-bc6f-76b829e5d898": {
-      "building": "",
-      "floor": 0,
-      "found_in": "Gustav/Mods/GustavDev/Levels/SCL_Main_A",
-      "icon": null,
-      "level": "SCL_Main_A",
-      "name": "S_HAV_Wave0_Raven_Dire_ShadowCursed_009",
-      "patch": "Mods__GustavDev__Levels__SCL_Main_A__WorldMap__2e7eb872-999f-4f5a-9930-f65ff803498f",
-      "position": [
-        -57.629845,
-        18.772081,
-        200.79994
       ]
     },
     "2f00e363-09b2-4573-badc-f0995bef6610": {
@@ -1608,20 +1342,6 @@
         -29.75446,
         25.887493,
         -193.0966
-      ]
-    },
-    "30a871b1-9df3-42bb-87cb-c284cafd32eb": {
-      "building": "",
-      "floor": 0,
-      "found_in": "Gustav/Mods/Gustav/Levels/WLD_Main_A",
-      "icon": "dba5949c-0b52-d60a-8517-2c87580cc539-EQP_Redcap_Sickle_(Icon_Redcap)",
-      "level": "WLD_Main_A",
-      "name": "S_HAG_ForestIllusion_Redcap_04",
-      "patch": "Mods__GustavDev__Levels__WLD_Main_A__WorldMap__94df118d-9257-420c-8a4c-a068cbc057c0",
-      "position": [
-        12.943476,
-        0.16467857,
-        260.01816
       ]
     },
     "316417ee-9493-46c5-b05b-859130d480b3": {
@@ -1706,20 +1426,6 @@
         -240.40443,
         30.971237,
         10.169989
-      ]
-    },
-    "344388be-2ae5-4296-93f9-0c8f3451f436": {
-      "building": "Dungeon",
-      "floor": 0,
-      "found_in": "Gustav/Mods/GustavDev/Levels/SCL_Main_A",
-      "icon": "e06326f4-a5f9-2b33-b3ae-dde1ff7eb5a1-EQP_MasterOfSouls_(Icon_Human_Female)",
-      "level": "SCL_Main_A",
-      "name": "S_MOO_Assault_PrisonMasterOfSouls_01",
-      "patch": "Mods__GustavDev__Levels__SCL_Main_A__WorldMap__ce87a036-9f0c-456f-9c45-8bc33aaa29c0",
-      "position": [
-        596.6989,
-        24.014942,
-        -655.2668
       ]
     },
     "34464430-fed8-4f50-86d5-bd35846920a0": {
@@ -2044,20 +1750,6 @@
         -757.5662
       ]
     },
-    "3ef3995a-a195-4982-987d-4cdf22b98235": {
-      "building": "",
-      "floor": 0,
-      "found_in": "Gustav/Mods/GustavDev/Levels/SCL_Main_A",
-      "icon": "10fa6182-07eb-d3bc-2f6b-6b7b60f19055-EQP_Greatsword_HalfPlate_Gith_(Icon_Githyanki_Male)",
-      "level": "SCL_Main_A",
-      "name": "S_HAV_Wave3_ShadowCursed_Warrior_Githyanki_004",
-      "patch": "Mods__GustavDev__Levels__SCL_Main_A__WorldMap__2e7eb872-999f-4f5a-9930-f65ff803498f",
-      "position": [
-        -52.694336,
-        18.872927,
-        219.89351
-      ]
-    },
     "3efd4f36-05d3-4a30-80e8-59fd14215fd5": {
       "building": "",
       "floor": 0,
@@ -2168,20 +1860,6 @@
         66.22173,
         51.685925,
         99.817276
-      ]
-    },
-    "4337f668-9c2d-47cc-8530-b620109de1b4": {
-      "building": "",
-      "floor": 0,
-      "found_in": "Gustav/Mods/GustavDev/Levels/SCL_Main_A",
-      "icon": "227d096c-9895-5ffb-30c7-4a541fcaa299-EQP_Halberd_Plate_(Icon_Human_Male)",
-      "level": "SCL_Main_A",
-      "name": "S_HAV_Wave1_ShadowCursed_Warrior_Zealot_003",
-      "patch": "Mods__GustavDev__Levels__SCL_Main_A__WorldMap__2e7eb872-999f-4f5a-9930-f65ff803498f",
-      "position": [
-        -59.30735,
-        18.545025,
-        213.86285
       ]
     },
     "435289b8-97b5-4623-8cfb-a3b02e263841": {
@@ -2982,20 +2660,6 @@
         565.29675
       ]
     },
-    "5e59d1af-a2b7-43b7-8d6c-5a6439a129f6": {
-      "building": "",
-      "floor": 0,
-      "found_in": "Gustav/Mods/GustavDev/Levels/SCL_Main_A",
-      "icon": "9b5bd232-58a4-35ff-0c6b-db0d18f1f590-EQP_Crossbow_Leather_(Icon_Elf_Female)",
-      "level": "SCL_Main_A",
-      "name": "S_HAV_Wave1_ShadowCursed_Ranger_Harper_005",
-      "patch": "Mods__GustavDev__Levels__SCL_Main_A__WorldMap__2e7eb872-999f-4f5a-9930-f65ff803498f",
-      "position": [
-        -46.04312,
-        19.12987,
-        205.44228
-      ]
-    },
     "5e69ce97-2bd4-4216-a014-c5671dcd4238": {
       "building": "Underdark",
       "floor": 1,
@@ -3148,20 +2812,6 @@
         662.0006,
         18.582653,
         -62.622276
-      ]
-    },
-    "61dfdf61-6860-464a-8e38-bce3458846a7": {
-      "building": "",
-      "floor": 0,
-      "found_in": "Gustav/Mods/GustavDev/Levels/SCL_Main_A",
-      "icon": null,
-      "level": "SCL_Main_A",
-      "name": "S_HAV_Wave2_Shadow_001",
-      "patch": "Mods__GustavDev__Levels__SCL_Main_A__WorldMap__2e7eb872-999f-4f5a-9930-f65ff803498f",
-      "position": [
-        -75.96254,
-        17.790518,
-        195.04266
       ]
     },
     "627dfc1c-56e1-4e56-9920-56e381e72c53": {
@@ -3346,34 +2996,6 @@
         -654.59
       ]
     },
-    "66deff82-b495-489b-872a-4b544bc941bc": {
-      "building": "",
-      "floor": 0,
-      "found_in": "Gustav/Mods/GustavDev/Levels/SCL_Main_A",
-      "icon": "87abd77b-0822-249f-7efb-92a1ce15eeb8-EQP_Greatsword_ChainMail_(Icon_Elf_Male)",
-      "level": "SCL_Main_A",
-      "name": "S_HAV_Wave3_ShadowCursed_Melee_FlamingFist_007",
-      "patch": "Mods__GustavDev__Levels__SCL_Main_A__WorldMap__2e7eb872-999f-4f5a-9930-f65ff803498f",
-      "position": [
-        -38.150524,
-        23.179293,
-        212.97206
-      ]
-    },
-    "67e8eb20-2428-4c24-bdbd-bb19b962182a": {
-      "building": "Dungeon",
-      "floor": 0,
-      "found_in": "Gustav/Mods/GustavDev/Levels/SCL_Main_A",
-      "icon": "bca8a35e-1f7a-592f-1435-bd78dbb68406-EQP_MasterOfSouls_(Icon_Human_Female)",
-      "level": "SCL_Main_A",
-      "name": "S_MOO_Assault_PrisonMasterOfSouls_03",
-      "patch": "Mods__GustavDev__Levels__SCL_Main_A__WorldMap__ce87a036-9f0c-456f-9c45-8bc33aaa29c0",
-      "position": [
-        596.90295,
-        24.014942,
-        -647.44037
-      ]
-    },
     "6889f976-681d-4ce1-9af5-245717897eed": {
       "building": "",
       "floor": 0,
@@ -3542,34 +3164,6 @@
         16.2689
       ]
     },
-    "702751d5-1ac0-4399-b02e-972c7258e974": {
-      "building": "",
-      "floor": 0,
-      "found_in": "Gustav/Mods/GustavDev/Levels/SCL_Main_A",
-      "icon": null,
-      "level": "SCL_Main_A",
-      "name": "S_HAV_Wave0_Shadow_009",
-      "patch": "Mods__GustavDev__Levels__SCL_Main_A__WorldMap__2e7eb872-999f-4f5a-9930-f65ff803498f",
-      "position": [
-        -81.602135,
-        18.528507,
-        197.02962
-      ]
-    },
-    "7052676a-7ba6-442b-8e63-b9670e4384a9": {
-      "building": "",
-      "floor": 0,
-      "found_in": "Gustav/Mods/GustavDev/Levels/SCL_Main_A",
-      "icon": "9b1fd8bf-f4d4-59c3-8493-681206fc46f6-EQP_Greatsword_HalfPlate_Gith_(Icon_Githyanki_Male)",
-      "level": "SCL_Main_A",
-      "name": "S_HAV_Wave3_ShadowCursed_Warrior_Githyanki_005",
-      "patch": "Mods__GustavDev__Levels__SCL_Main_A__WorldMap__2e7eb872-999f-4f5a-9930-f65ff803498f",
-      "position": [
-        -51.026653,
-        18.978443,
-        219.02705
-      ]
-    },
     "70866004-4b9d-4dde-a9c7-9891229c47c7": {
       "building": "",
       "floor": 0,
@@ -3696,34 +3290,6 @@
         29.037754
       ]
     },
-    "77e2db6d-cdf7-4490-b444-37d49d3fb6e0": {
-      "building": "Shar",
-      "floor": 2,
-      "found_in": "Gustav/Mods/GustavDev/Levels/SCL_Main_A",
-      "icon": null,
-      "level": "SCL_Main_A",
-      "name": "S_SHA_TadpoledSkeletons_Justiciar_Melee_01",
-      "patch": "Mods__GustavDev__Levels__SCL_Main_A__WorldMap__2dbdcafe-bc29-4243-943d-6358ff24edf9",
-      "position": [
-        -732.9398,
-        7.9432745,
-        -794.3059
-      ]
-    },
-    "77f588f6-e792-4b41-a61c-09bfe44d0bdc": {
-      "building": "",
-      "floor": 0,
-      "found_in": "Gustav/Mods/GustavDev/Levels/SCL_Main_A",
-      "icon": null,
-      "level": "SCL_Main_A",
-      "name": "S_HAV_Wave0_Raven_Dire_ShadowCursed_011",
-      "patch": "Mods__GustavDev__Levels__SCL_Main_A__WorldMap__2e7eb872-999f-4f5a-9930-f65ff803498f",
-      "position": [
-        -66.96896,
-        18.528507,
-        199.67873
-      ]
-    },
     "783e0bd7-5e0e-47e6-b02b-7d06f4bc9f62": {
       "building": "",
       "floor": 0,
@@ -3808,20 +3374,6 @@
         120.618164
       ]
     },
-    "7c4c46d9-6d0d-4e8a-8473-476eb071bd49": {
-      "building": "",
-      "floor": 0,
-      "found_in": "Gustav/Mods/GustavDev/Levels/SCL_Main_A",
-      "icon": "333357bd-d6eb-e4c1-8f10-167142353664-EQP_Halberd_Plate_(Icon_Human_Male)",
-      "level": "SCL_Main_A",
-      "name": "S_HAV_Wave1_ShadowCursed_Warrior_Zealot_005",
-      "patch": "Mods__GustavDev__Levels__SCL_Main_A__WorldMap__2e7eb872-999f-4f5a-9930-f65ff803498f",
-      "position": [
-        -52.59388,
-        18.836859,
-        219.06471
-      ]
-    },
     "7cb5758d-6521-43f4-936d-b1e4ed91a1e2": {
       "building": "Monastary",
       "floor": 0,
@@ -3848,20 +3400,6 @@
         710.80383,
         13.738863,
         -76.19708
-      ]
-    },
-    "7e722c07-0bd0-4091-aa5a-d7391404229a": {
-      "building": "",
-      "floor": 0,
-      "found_in": "Gustav/Mods/GustavDev/Levels/SCL_Main_A",
-      "icon": null,
-      "level": "SCL_Main_A",
-      "name": "S_HAV_Wave0_Shadow_007",
-      "patch": "Mods__GustavDev__Levels__SCL_Main_A__WorldMap__2e7eb872-999f-4f5a-9930-f65ff803498f",
-      "position": [
-        -78.67804,
-        18.528507,
-        196.2824
       ]
     },
     "7e80dd2a-19f6-4411-8a52-35c3878ef4c8": {
@@ -4620,20 +4158,6 @@
         -63.046707
       ]
     },
-    "91b23b1d-0583-4118-81b6-a3f9c18e9fe8": {
-      "building": "",
-      "floor": 0,
-      "found_in": "Gustav/Mods/GustavDev/Levels/SCL_Main_A",
-      "icon": null,
-      "level": "SCL_Main_A",
-      "name": "S_HAV_Wave0_Raven_Dire_ShadowCursed_008",
-      "patch": "Mods__GustavDev__Levels__SCL_Main_A__WorldMap__2e7eb872-999f-4f5a-9930-f65ff803498f",
-      "position": [
-        -58.327797,
-        18.75733,
-        203.83627
-      ]
-    },
     "92489d69-dae8-4aa2-9a93-2053e809c0d0": {
       "building": "",
       "floor": 0,
@@ -4660,20 +4184,6 @@
         869.99506,
         -52.653217,
         -39.09498
-      ]
-    },
-    "9430b751-a5f9-40bc-888d-e3e8abe4dcf3": {
-      "building": "",
-      "floor": 0,
-      "found_in": "Gustav/Mods/GustavDev/Levels/SCL_Main_A",
-      "icon": "5f5bb186-3c11-dff8-90be-952b85d09859-EQP_Crossbow_Leather_(Icon_Elf_Female)",
-      "level": "SCL_Main_A",
-      "name": "S_HAV_Wave1_ShadowCursed_Ranger_Harper_004",
-      "patch": "Mods__GustavDev__Levels__SCL_Main_A__WorldMap__2e7eb872-999f-4f5a-9930-f65ff803498f",
-      "position": [
-        -45.15067,
-        20.15181,
-        206.00482
       ]
     },
     "9487bdb9-54b1-4e13-88cd-55340c8369d4": {
@@ -4886,20 +4396,6 @@
         -95.48406
       ]
     },
-    "98dde2d9-06c1-4cfd-83b9-a9d2338b514d": {
-      "building": "",
-      "floor": 0,
-      "found_in": "Gustav/Mods/GustavDev/Levels/SCL_Main_A",
-      "icon": null,
-      "level": "SCL_Main_A",
-      "name": "S_HAV_Wave2_Wraith_001",
-      "patch": "Mods__GustavDev__Levels__SCL_Main_A__WorldMap__2e7eb872-999f-4f5a-9930-f65ff803498f",
-      "position": [
-        -76.35214,
-        17.388374,
-        196.95601
-      ]
-    },
     "99439816-fcaa-4167-a20a-8f3dfff4e345": {
       "building": "",
       "floor": 0,
@@ -4926,20 +4422,6 @@
         -53.81722,
         33.058483,
         34.87937
-      ]
-    },
-    "997535c6-4c93-45cb-89d1-83d2f5bb78d1": {
-      "building": "Shar",
-      "floor": 1,
-      "found_in": "Gustav/Mods/GustavDev/Levels/SCL_Main_A",
-      "icon": null,
-      "level": "SCL_Main_A",
-      "name": "S_SHA_TadpoledSkeletons_Justiciar_Ranged_01",
-      "patch": "Mods__GustavDev__Levels__SCL_Main_A__WorldMap__3faa7bd0-5090-4a31-851e-341808913bf7",
-      "position": [
-        -709.95544,
-        7.949999,
-        -794.65027
       ]
     },
     "99a48b2b-05dc-42f8-86f1-65c26f9f13da": {
@@ -5110,20 +4592,6 @@
         53.8886
       ]
     },
-    "9f16d360-533a-43b2-8149-dc39632a4fed": {
-      "building": "",
-      "floor": 0,
-      "found_in": "Gustav/Mods/GustavDev/Levels/SCL_Main_A",
-      "icon": "163bf43d-7b47-172e-a35f-fb877980b581-EQP_Dagger_(Icon_Human_Female)",
-      "level": "SCL_Main_A",
-      "name": "S_HAV_Wave0_ShadowCursed_Warrior_Pilgrim_004",
-      "patch": "Mods__GustavDev__Levels__SCL_Main_A__WorldMap__2e7eb872-999f-4f5a-9930-f65ff803498f",
-      "position": [
-        -51.91519,
-        18.787537,
-        217.57681
-      ]
-    },
     "a063d18e-d513-4d30-80ea-40a5bffb4bd7": {
       "building": "GoblinCamp",
       "floor": 0,
@@ -5192,20 +4660,6 @@
         250.5493,
         5.500105,
         274.0869
-      ]
-    },
-    "a410b3f0-f025-4fd1-8b90-d8c0d8fd21e6": {
-      "building": "",
-      "floor": 0,
-      "found_in": "Gustav/Mods/GustavDev/Levels/SCL_Main_A",
-      "icon": "182bc5e9-b570-613f-f9ba-7b9c46f6dbfe-EQP_Greatsword_ChainMail_(Icon_Elf_Male)",
-      "level": "SCL_Main_A",
-      "name": "S_HAV_Wave3_ShadowCursed_Melee_FlamingFist_008",
-      "patch": "Mods__GustavDev__Levels__SCL_Main_A__WorldMap__2e7eb872-999f-4f5a-9930-f65ff803498f",
-      "position": [
-        -39.39718,
-        22.823824,
-        212.82758
       ]
     },
     "a43d1d6c-d397-4d2d-adb4-ead3b10cb189": {
@@ -5388,20 +4842,6 @@
         20.03175,
         0.0069999695,
         -1413.575
-      ]
-    },
-    "abd0896f-555c-43a1-b9d1-71144ff7e87d": {
-      "building": "",
-      "floor": 0,
-      "found_in": "Gustav/Mods/GustavDev/Levels/SCL_Main_A",
-      "icon": null,
-      "level": "SCL_Main_A",
-      "name": "S_HAV_Wave1_DarkVine_Tentacle_001",
-      "patch": "Mods__GustavDev__Levels__SCL_Main_A__WorldMap__2e7eb872-999f-4f5a-9930-f65ff803498f",
-      "position": [
-        -72.98441,
-        18.786343,
-        197.47235
       ]
     },
     "abdd3748-0834-46f3-8214-18dd4dca9d40": {
@@ -5614,20 +5054,6 @@
         -184.71683
       ]
     },
-    "b7660aea-e4c8-4140-8198-3f9d516d4518": {
-      "building": "Shar",
-      "floor": 1,
-      "found_in": "Gustav/Mods/GustavDev/Levels/SCL_Main_A",
-      "icon": "9e20c9c6-735e-73d8-1af8-ffa69e5379d8-SHA_Justiciar_Scimitar_Shar_Shield_Shar_(Icon_DarkJusticiar)",
-      "level": "SCL_Main_A",
-      "name": "S_SHA_TadpoledSkeletons_Justiciar_Melee_03",
-      "patch": "Mods__GustavDev__Levels__SCL_Main_A__WorldMap__3faa7bd0-5090-4a31-851e-341808913bf7",
-      "position": [
-        -709.916,
-        7.949998,
-        -797.28143
-      ]
-    },
     "b7e639ba-9e1d-42cd-8305-e8c02f00f1a1": {
       "building": "",
       "floor": 0,
@@ -5640,6 +5066,20 @@
         -248.74525,
         30.409962,
         -37.962574
+      ]
+    },
+    "b811fc94-bcd7-4be3-a53a-0663cbc16c34": {
+      "building": "",
+      "floor": 0,
+      "found_in": "Gustav/Mods/Gustav/Levels/WLD_Main_A",
+      "icon": "d6601e32-16ee-bbcb-350e-fbf4e280a0e5-EQP_Goblin_Scimitar_HelmetLeather_(Icon_Goblin_Male)",
+      "level": "WLD_Main_A",
+      "name": "S_GOB_SecludedSpot_Goblin",
+      "patch": "Mods__GustavDev__Levels__WLD_Main_A__WorldMap__94df118d-9257-420c-8a4c-a068cbc057c0",
+      "position": [
+        -74.52321,
+        11.411905,
+        412.14792
       ]
     },
     "b847c9ba-1b52-4afa-be10-accd07134245": {
@@ -5712,20 +5152,6 @@
         -782.3686
       ]
     },
-    "bb3e4ea7-7f7a-4c65-84c9-de788a2b3d7c": {
-      "building": "",
-      "floor": 0,
-      "found_in": "Gustav/Mods/GustavDev/Levels/SCL_Main_A",
-      "icon": null,
-      "level": "SCL_Main_A",
-      "name": "S_HAV_Wave1_DarkVine_Tentacle_000",
-      "patch": "Mods__GustavDev__Levels__SCL_Main_A__WorldMap__2e7eb872-999f-4f5a-9930-f65ff803498f",
-      "position": [
-        -62.094273,
-        18.963177,
-        207.06584
-      ]
-    },
     "bb9c82a2-7ed9-45ed-99b6-58f84520fb8c": {
       "building": "",
       "floor": 0,
@@ -5794,20 +5220,6 @@
         865.73846,
         -47.204353,
         -10.664507
-      ]
-    },
-    "be15abb7-2ea6-4cf8-bf56-bd8465b570e3": {
-      "building": "",
-      "floor": 0,
-      "found_in": "Gustav/Mods/GustavDev/Levels/SCL_Main_A",
-      "icon": "77e1717d-8580-16fc-cfee-98872800af12-EQP_Dagger_(Icon_Human_Female)",
-      "level": "SCL_Main_A",
-      "name": "S_HAV_Wave0_ShadowCursed_Warrior_Pilgrim_005",
-      "patch": "Mods__GustavDev__Levels__SCL_Main_A__WorldMap__2e7eb872-999f-4f5a-9930-f65ff803498f",
-      "position": [
-        -51.567047,
-        18.910456,
-        218.47604
       ]
     },
     "be85453e-867a-4f08-a959-c6551869ee1d": {
@@ -5894,20 +5306,6 @@
         273.2563
       ]
     },
-    "c172ed73-4f81-4dbe-a577-0d5a56b42ffb": {
-      "building": "",
-      "floor": 0,
-      "found_in": "Gustav/Mods/GustavDev/Levels/SCL_Main_A",
-      "icon": null,
-      "level": "SCL_Main_A",
-      "name": "S_HAV_Wave1_DarkVine_Tentacle_002",
-      "patch": "Mods__GustavDev__Levels__SCL_Main_A__WorldMap__2e7eb872-999f-4f5a-9930-f65ff803498f",
-      "position": [
-        -64.75926,
-        18.869774,
-        201.34076
-      ]
-    },
     "c176d94a-eaa6-4869-a344-88e44b31e17d": {
       "building": "",
       "floor": 0,
@@ -5990,20 +5388,6 @@
         -26.888504,
         53.48386,
         -272.46393
-      ]
-    },
-    "c3184d85-1e3f-4e64-85bd-5841fef2e27a": {
-      "building": "GoblinCamp",
-      "floor": 0,
-      "found_in": "Gustav/Mods/Gustav/Levels/WLD_Main_A",
-      "icon": null,
-      "level": "WLD_Main_A",
-      "name": "S_GOB_GiantSpider_Small",
-      "patch": "Mods__GustavDev__Levels__WLD_Main_A__WorldMap__acccd394-1816-4ad7-b95f-1c75f60f4b84",
-      "position": [
-        292.69952,
-        31.498306,
-        27.298286
       ]
     },
     "c3a7c696-9f82-4c0d-aedf-734bd2595060": {
@@ -6622,20 +6006,6 @@
         -694.36053
       ]
     },
-    "d51f412c-8b40-4141-a65f-057a81d549fb": {
-      "building": "",
-      "floor": 0,
-      "found_in": "Gustav/Mods/GustavDev/Levels/SCL_Main_A",
-      "icon": null,
-      "level": "SCL_Main_A",
-      "name": "S_HAV_Wave0_Wraith_001",
-      "patch": "Mods__GustavDev__Levels__SCL_Main_A__WorldMap__2e7eb872-999f-4f5a-9930-f65ff803498f",
-      "position": [
-        -80.22636,
-        17.146605,
-        194.32053
-      ]
-    },
     "d55e65a4-0663-46e5-8213-4ae5dd410e06": {
       "building": "",
       "floor": 0,
@@ -6804,20 +6174,6 @@
         -51.205517
       ]
     },
-    "da1e6ca1-6c54-4b82-b94a-901745d64f2e": {
-      "building": "",
-      "floor": 0,
-      "found_in": "Gustav/Mods/GustavDev/Levels/SCL_Main_A",
-      "icon": "9f0c8d8c-b8b8-ff63-9840-1744559415d4-EQP_Greatsword_ChainMail_(Icon_Elf_Male)",
-      "level": "SCL_Main_A",
-      "name": "S_HAV_Wave3_ShadowCursed_Melee_FlamingFist_005",
-      "patch": "Mods__GustavDev__Levels__SCL_Main_A__WorldMap__2e7eb872-999f-4f5a-9930-f65ff803498f",
-      "position": [
-        -37.05339,
-        23.4412,
-        212.23598
-      ]
-    },
     "da57be42-f01a-459d-96b0-93cea8a95489": {
       "building": "",
       "floor": 0,
@@ -6916,20 +6272,6 @@
         313.32663
       ]
     },
-    "ddb92490-a75d-496e-9b8d-78dcf1f9fef3": {
-      "building": "",
-      "floor": 0,
-      "found_in": "Gustav/Mods/GustavDev/Levels/SCL_Main_A",
-      "icon": null,
-      "level": "SCL_Main_A",
-      "name": "S_HAV_Wave0_Raven_Dire_ShadowCursed_010",
-      "patch": "Mods__GustavDev__Levels__SCL_Main_A__WorldMap__2e7eb872-999f-4f5a-9930-f65ff803498f",
-      "position": [
-        -61.26264,
-        18.776457,
-        201.1945
-      ]
-    },
     "debc6e8e-10c2-4f6f-866a-220f7e64c4b7": {
       "building": "KethericCity",
       "floor": 1,
@@ -6956,20 +6298,6 @@
         -45.991005,
         33.620182,
         50.888794
-      ]
-    },
-    "e0d36900-5a00-4f11-b19b-74512d1554c8": {
-      "building": "",
-      "floor": 0,
-      "found_in": "Gustav/Mods/GustavDev/Levels/SCL_Main_A",
-      "icon": "ad4adb39-7617-2f30-b5d7-082bcde1626a-EQP_Dagger_(Icon_Human_Female)",
-      "level": "SCL_Main_A",
-      "name": "S_HAV_Wave0_ShadowCursed_Warrior_Pilgrim_007",
-      "patch": "Mods__GustavDev__Levels__SCL_Main_A__WorldMap__2e7eb872-999f-4f5a-9930-f65ff803498f",
-      "position": [
-        -52.580063,
-        18.806324,
-        218.28038
       ]
     },
     "e16183ca-940f-4264-93f3-06e9df16f68e": {
@@ -7208,20 +6536,6 @@
         57.093433,
         24.255932,
         -979.8893
-      ]
-    },
-    "e81fbbc9-a2ec-40e4-800e-fe02acc4fc69": {
-      "building": "",
-      "floor": 0,
-      "found_in": "Gustav/Mods/GustavDev/Levels/SCL_Main_A",
-      "icon": "aa5de2d6-4bd0-8402-18ce-6d974dad1ec7-EQP_Greatsword_ChainMail_(Icon_Elf_Male)",
-      "level": "SCL_Main_A",
-      "name": "S_HAV_Wave3_ShadowCursed_Melee_FlamingFist_006",
-      "patch": "Mods__GustavDev__Levels__SCL_Main_A__WorldMap__2e7eb872-999f-4f5a-9930-f65ff803498f",
-      "position": [
-        -58.382256,
-        18.528507,
-        214.95033
       ]
     },
     "e988cfda-0890-4488-9778-0d207050abf9": {
@@ -7700,20 +7014,6 @@
         -21.33625
       ]
     },
-    "f72a9c81-7fac-4bc2-a6ce-b775e3ea7721": {
-      "building": "",
-      "floor": 0,
-      "found_in": "Gustav/Mods/GustavDev/Levels/SCL_Main_A",
-      "icon": "4406be57-7ea4-8530-bc43-a24750f67e45-EQP_Halberd_Plate_(Icon_Human_Male)",
-      "level": "SCL_Main_A",
-      "name": "S_HAV_Wave1_ShadowCursed_Warrior_Zealot_004",
-      "patch": "Mods__GustavDev__Levels__SCL_Main_A__WorldMap__2e7eb872-999f-4f5a-9930-f65ff803498f",
-      "position": [
-        -46.124306,
-        19.192757,
-        206.49219
-      ]
-    },
     "f76831bc-3065-40e8-ac07-0e2d088e1e46": {
       "building": "Shar",
       "floor": 3,
@@ -7754,6 +7054,20 @@
         729.0216,
         14.635267,
         37.046425
+      ]
+    },
+    "f8bb04a3-22e5-41b0-aed7-5dcf852343d1": {
+      "building": "",
+      "floor": 0,
+      "found_in": "Gustav/Mods/GustavDev/Levels/END_Main",
+      "icon": null,
+      "level": "END_Main",
+      "name": "S_END_MindBrain",
+      "patch": "Mods__GustavDev__Levels__END_Main__WorldMap__485b4fa5-7c92-4837-ab66-6050f172b1e1",
+      "position": [
+        214.65508,
+        -60.736683,
+        4259.006
       ]
     },
     "f8faf06b-f2af-4b33-a4fd-4aa1027e7545": {
@@ -7838,20 +7152,6 @@
         -655.50385,
         4.006263,
         -750.8804
-      ]
-    },
-    "fc6da3fd-f4d7-4ebf-b125-7d77387a746f": {
-      "building": "",
-      "floor": 0,
-      "found_in": "Gustav/Mods/GustavDev/Levels/SCL_Main_A",
-      "icon": null,
-      "level": "SCL_Main_A",
-      "name": "S_HAV_Wave0_Raven_Dire_ShadowCursed_013",
-      "patch": "Mods__GustavDev__Levels__SCL_Main_A__WorldMap__2e7eb872-999f-4f5a-9930-f65ff803498f",
-      "position": [
-        -69.32437,
-        18.642746,
-        200.37238
       ]
     },
     "fcb6ed15-2290-44fa-b0c4-5c8036b82c06": {
@@ -8006,20 +7306,6 @@
         -146.1279,
         18.503893,
         141.15575
-      ]
-    },
-    "ff840420-d46a-4837-868b-ac02f45e4586": {
-      "building": "",
-      "floor": 0,
-      "found_in": "Gustav/Mods/Gustav/Levels/WLD_Main_A",
-      "icon": null,
-      "level": "WLD_Main_A",
-      "name": "S_HAG_ForestIllusion_Redcap_01",
-      "patch": "Mods__GustavDev__Levels__WLD_Main_A__WorldMap__94df118d-9257-420c-8a4c-a068cbc057c0",
-      "position": [
-        15.048215,
-        2.6362948,
-        249.54832
       ]
     },
     "ffacce35-8921-429a-8266-6d4a7a98428d": {
@@ -13732,6 +13018,36 @@
         "world_z": 2915.6204
       },
       {
+        "building": "",
+        "floor": 0,
+        "pixel_h": 4096,
+        "pixel_w": 4096,
+        "render_patches": false,
+        "texture_uuid": "MiniMap_tools_basements.dds",
+        "trigger_id": "00000000-0000-0000-0000-000000000000",
+        "trigger_status": "trigger",
+        "uuid": "Mods__GustavDev__Levels__CTY_Main_A__WorldMap__MiniMap_tools_basements",
+        "world_h": 19990.852,
+        "world_w": 19990.852,
+        "world_x": -1136.315,
+        "world_z": 2872.0798
+      },
+      {
+        "building": "",
+        "floor": 0,
+        "pixel_h": 4096,
+        "pixel_w": 4096,
+        "render_patches": false,
+        "texture_uuid": "MiniMap_tools_city.dds",
+        "trigger_id": "00000000-0000-0000-0000-000000000000",
+        "trigger_status": "trigger",
+        "uuid": "Mods__GustavDev__Levels__CTY_Main_A__WorldMap__MiniMap_tools_city",
+        "world_h": 19990.852,
+        "world_w": 19990.852,
+        "world_x": -1136.315,
+        "world_z": 2872.0798
+      },
+      {
         "building": "Raz",
         "floor": 1,
         "pixel_h": 1300,
@@ -15125,36 +14441,6 @@
         "world_w": 16.34327,
         "world_x": 2.9012158,
         "world_z": -125.65457
-      },
-      {
-        "building": "",
-        "floor": 0,
-        "pixel_h": 4096,
-        "pixel_w": 4096,
-        "render_patches": false,
-        "texture_uuid": "MiniMap_tools_basements.dds",
-        "trigger_id": "00000000-0000-0000-0000-000000000000",
-        "trigger_status": "trigger",
-        "uuid": "Mods__GustavDev__Levels__CTY_Main_A__WorldMap__MiniMap_tools_basements",
-        "world_h": 19990.852,
-        "world_w": 19990.852,
-        "world_x": -1136.315,
-        "world_z": 2872.0798
-      },
-      {
-        "building": "",
-        "floor": 0,
-        "pixel_h": 4096,
-        "pixel_w": 4096,
-        "render_patches": false,
-        "texture_uuid": "MiniMap_tools_city.dds",
-        "trigger_id": "00000000-0000-0000-0000-000000000000",
-        "trigger_status": "trigger",
-        "uuid": "Mods__GustavDev__Levels__CTY_Main_A__WorldMap__MiniMap_tools_city",
-        "world_h": 19990.852,
-        "world_w": 19990.852,
-        "world_x": -1136.315,
-        "world_z": 2872.0798
       }
     ],
     "END_Main": [
@@ -18999,10 +18285,10 @@
   },
   "stats": {
     "characters_walked": 4156,
-    "kill_uuids_in_apworld": 576,
-    "kill_uuids_matched": 576,
-    "kill_uuids_with_building": 221,
-    "kill_uuids_with_position": 576,
+    "kill_uuids_in_apworld": 525,
+    "kill_uuids_matched": 525,
+    "kill_uuids_with_building": 211,
+    "kill_uuids_with_position": 525,
     "levels_indexed": 217,
     "patches_by_trigger_status": {
       "nav_portal": 88,
