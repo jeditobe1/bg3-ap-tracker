@@ -81,7 +81,7 @@ import os
 import re
 import subprocess
 import sys
-from pathlib import Path
+from pathlib import Path, PurePosixPath
 
 
 # Apworld bg3_locations.py rows look like:
@@ -155,8 +155,17 @@ def convert_lsf_dir(divine: Path, root: Path, glob: str, lsx_cache: Path) -> lis
     """Convert every matching LSF file under `root` to a sibling LSX in `lsx_cache`.
 
     Returns list of (original_lsf, output_lsx). Skips files already converted.
+
+    Also returns cached LSX files whose source LSF is no longer on disk, so a
+    re-run doesn't need the multi-GB pak extract to still be present. The
+    returned LSF path is reconstructed from the cache name and may not exist;
+    callers only use it for path arithmetic (level name, found_in). A cached
+    file is accepted only if its source directory still exists under `root`,
+    which ties it to this root and rejects stale cache entries written under a
+    different layout.
     """
     out: list[tuple[Path, Path]] = []
+    seen: set[Path] = set()
     lsx_cache.mkdir(parents=True, exist_ok=True)
     for lsf in root.rglob(glob):
         rel = lsf.relative_to(root).as_posix().replace("/", "__")
@@ -170,6 +179,21 @@ def convert_lsf_dir(divine: Path, root: Path, glob: str, lsx_cache: Path) -> lis
                 print(f"[warn] convert failed for {lsf.name}: {r.stderr.strip()[:120]}")
                 continue
         out.append((lsf, lsx))
+        seen.add(lsx)
+    cached: list[tuple[PurePosixPath, Path]] = []
+    for lsx in lsx_cache.glob("*.lsx"):
+        if lsx in seen:
+            continue
+        rel = PurePosixPath(*lsx.name[: -len(".lsx")].split("__"))
+        if rel.match(glob) and (root / rel).parent.is_dir():
+            cached.append((rel, lsx))
+    # Order by source path, not cache filename. Callers build last-one-wins
+    # tables (e.g. per-level minimap transforms), and a level shipped by both
+    # Gustav and GustavDev must resolve the way the rglob walk above would:
+    # Gustav first, GustavDev last. Filename order inverts that, because
+    # "GustavDev__" sorts before "Gustav__".
+    for rel, lsx in sorted(cached, key=lambda t: t[0].parts):
+        out.append((root / rel, lsx))
     return out
 
 
@@ -324,12 +348,14 @@ def collect_patch_trigger_status(level_extract_dirs: list[Path], lsx_cache: Path
     for level_dir in level_extract_dirs:
         for label, rel in TRIGGER_REF_SOURCES.items():
             lsf = level_dir / rel
-            if not lsf.is_file():
-                continue
             # Hash the absolute path so different paks/mods don't collide.
             key = hashlib.md5(str(lsf).encode()).hexdigest()[:16]
             lsx = lsx_cache / f"trigger_refs_{key}.lsx"
+            # Check the cache before the source: a re-run may have the
+            # converted LSX without the multi-GB pak extract it came from.
             if not lsx.exists():
+                if not lsf.is_file():
+                    continue
                 r = run_divine(divine, "--action", "convert-resource",
                                "--source", str(lsf), "--destination", str(lsx),
                                "--game", "bg3")
@@ -558,10 +584,15 @@ def main(argv: list[str] | None = None) -> int:
         meta = parse_minimap_lsx(lsx_path)
         if meta is None:
             continue
-        # If a level appears in both Gustav and GustavDev, prefer Gustav (earlier
-        # in iteration order); skip duplicates.
+        # A level can ship a minimap in both Gustav and GustavDev. Prefer
+        # GustavDev, which overrides Gustav in the game's own load order.
+        # This used to be first-wins by directory walk order, which made the
+        # winner depend on traversal order rather than on any rule.
         if level_name in levels:
-            continue
+            if "GustavDev" in levels[level_name]["found_in"].split("/"):
+                continue
+            if "GustavDev" not in found_in.split("/"):
+                continue
         meta["found_in"] = found_in
         levels[level_name] = meta
     print(f"[ok] levels: indexed {len(levels)}")
