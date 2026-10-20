@@ -18,7 +18,32 @@
     }
   },
   "char_position_overrides": {
-    "_doc": "Per-character world-coord overrides. Applied before zone filtering so the override determines which zone the char ends up in. Values are [world_x, world_z]. Use when an NPC has incorrect cached spawn coords (typically quest-trigger spawn vs actual fight position).",
+    "_doc": "Per-character world-coord overrides. Applied before zone filtering so the override determines which zone the char ends up in. Values are [world_x, world_z]. Use when an NPC has incorrect cached spawn coords (typically quest-trigger spawn vs actual fight position). Optional \"level\" also moves the char into another level's coordinate frame -- for global characters cached once in an earlier act's level.",
+    "b878a854-f790-4999-95c4-3f20f00f65ac": {
+      "position": [-10.5, 211.8],
+      "level": "BGO_Main_A",
+      "_why": "Gortash: global character with no Act 3 placement: its only cached position is a holding spot in an earlier act's level, shared with other bosses. Approximate -- placed at the centroid of the 22 Fort-tagged Wyrm's Rock kills, his coronation's guards."
+    },
+    "bf24e0ec-a3a6-4905-bd2d-45dc8edf8101": {
+      "position": [58.5, 1005.8],
+      "level": "CTY_Main_A",
+      "_why": "Orin: global character with no Act 3 placement: its only cached position is a holding spot in an earlier act's level, shared with other bosses. Approximate -- placed at the centroid of the 8 Reaper/Invoker of Bhaal kills in the Temple of Bhaal."
+    },
+    "f65becd6-5cd7-4c88-b85e-6dd06b60f7b8": {
+      "position": [-6483.9, 2926.7],
+      "level": "CTY_Main_A",
+      "_why": "Raphael: global character with no Act 3 placement: its only cached position is a holding spot in an earlier act's level, shared with other bosses. Approximate -- placed at the centroid of the 40 House of Hope kills."
+    },
+    "d432aafd-f728-4d9d-9707-732e1cdd8297": {
+      "position": [-6468.9, 2926.7],
+      "level": "CTY_Main_A",
+      "_why": "Korrilla: global character with no Act 3 placement: its only cached position is a holding spot in an earlier act's level, shared with other bosses. Approximate -- placed at the centroid of the 40 House of Hope kills, offset 15 east of Raphael so the two pins don't coincide."
+    },
+    "2f1880e6-1297-4ca3-a79c-9fabc7f179d3": {
+      "position": [-1927.0, 950.7],
+      "level": "CTY_Main_A",
+      "_why": "Cazador: global character with no Act 3 placement: its only cached position is a holding spot in an earlier act's level, shared with other bosses. Approximate -- placed at the centroid of the 14 kills in his ritual room."
+    },
     "06bf05c5-216b-4eaf-91f5-8f1dd3d57f30": {
       "position": [-655.0, 320.0],
       "_why": "Nere: spawns ~22 south of duergar cluster (Drar et al. at z~320). Place just left of Drar at actual fight position."
@@ -140,6 +165,8 @@
   },
   "overworld_centroid_filters": {
     "_doc": "When computing an overview centroid for a multi-zone region, restrict to chars matching this filter so the pin lands at the primary (entry) zone, not the averaged centroid of all zones (which would fall between them). buildings: null matches empty/exterior; world_bbox: [x0, z0, x1, z1] restricts to a region of the level.",
+    "lower_city_east": {"world_bbox": [-239.8, -249.0, 78.2, 0.8], "_why": "Lower City surface, NOT the averaged centroid of its scattered interiors (Counting House vault, Murder Tribunal), which fell in empty space."},
+    "lower_city_sewers": {"world_bbox": [-278.6, 755.9, -12.1, 1004.6], "_why": "The sewers, the tab's entry area, NOT the averaged centroid of the Undercity, Ancient Lair and Temple of Bhaal islands."},
     "goblin_camp": {
       "buildings": [null, "GoblinWalkway"],
       "_why": "Pin at exterior camp courtyard, NOT Shattered Sanctum."
@@ -175,6 +202,38 @@
   },
   "overworld_pin_overrides": {
     "_doc": "Per-overworld region-pin canvas-coord overrides. Use when the computed centroid doesn't make narrative sense -- typically for off-overview regions where the player enters via a specific landmark we want the pin to sit next to. Values are [canvas_x, canvas_y] in the overworld's canvas-pixel space. Hand-edited based on the rendered images/maps/<overworld>.png.",
+    "act3_overworld": {
+      "_canvas": [2400, 1113],
+      "_doc": "Areas this overview does not show sit in one column in the empty right-hand margin, so they read as \"elsewhere\" rather than as a guessed location.",
+      "astral": {
+        "position": [2320, 520],
+        "_why": "Not on the Act 3 overview (CTY_Main_A), which shows the Lower City; the Astral Plane is its own level."
+      },
+      "rivington": {
+        "position": [2320, 600],
+        "_why": "Not on the Act 3 overview (CTY_Main_A), which shows the Lower City; Rivington is on the outskirts level (BGO_Main_A)."
+      },
+      "wyrms_crossing": {
+        "position": [2320, 680],
+        "_why": "Not on the Act 3 overview (CTY_Main_A), which shows the Lower City; Wyrm's Crossing is on the outskirts level (BGO_Main_A)."
+      },
+      "house_of_hope": {
+        "position": [2320, 760],
+        "_why": "Not on the Act 3 overview (CTY_Main_A), which shows the Lower City; its interior sits thousands of units off this map, so the centroid clamped to the top-left corner."
+      },
+      "sorcerous_sundries": {
+        "position": [2320, 840],
+        "_why": "Not on the Act 3 overview (CTY_Main_A), which shows the Lower City; Ramazith's Tower sits thousands of units off this map, so the centroid clamped to the right edge."
+      },
+      "house_of_grief": {
+        "position": [2320, 920],
+        "_why": "Not on the Act 3 overview (CTY_Main_A), which shows the Lower City; its interior sits off this map, so the centroid clamped to the bottom edge."
+      },
+      "iron_throne": {
+        "position": [2320, 1000],
+        "_why": "Not on the Act 3 overview (CTY_Main_A), which shows the Lower City; the Iron Throne is its own level (IRN_Main_A)."
+      }
+    },
     "act1_overworld": {
       "_canvas": [2400, 2017],
       "grove": {

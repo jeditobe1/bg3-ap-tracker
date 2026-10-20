@@ -113,8 +113,14 @@ def apply_overrides_to_cache(npc_cache: dict, overrides: dict,
         ox, oz = entry["position"]
         existing = c.get("position") or [0.0, 0.0, 0.0]
         c["position"] = [ox, existing[1] if len(existing) > 1 else 0.0, oz]
+        # Optional "level": moves the char to another level's coordinate
+        # frame. For global characters cached once in an earlier act's level
+        # whose fight is somewhere else entirely.
+        if "level" in entry:
+            c["level"] = entry["level"]
         if verbose:
-            print(f"[ok] position override {uuid[:8]} -> ({ox}, {oz})")
+            lvl = f" on {entry['level']}" if "level" in entry else ""
+            print(f"[ok] position override {uuid[:8]} -> ({ox}, {oz}){lvl}")
 
     for uuid, entry in (overrides.get("char_building_overrides") or {}).items():
         c = chars.get(uuid)

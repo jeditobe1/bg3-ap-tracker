@@ -20486,6 +20486,58 @@
         "name": "Astral Plane",
         "children": [
             {
+                "name": "Astral Plane (Overview)",
+                "sections": [
+                    {
+                        "ref": "Astral Plane/Act 3: Reach Baldur's Gate/Act 3: Reach Baldur's Gate",
+                        "name": "Act 3: Reach Baldur's Gate"
+                    },
+                    {
+                        "ref": "Astral Plane/Act 3: Be Ambushed At Night/Act 3: Be Ambushed At Night",
+                        "name": "Act 3: Be Ambushed At Night"
+                    },
+                    {
+                        "ref": "Astral Plane/Orpheus: Learn Orpheus is trapped/Orpheus: Learn Orpheus is trapped",
+                        "name": "Orpheus: Learn Orpheus is trapped"
+                    },
+                    {
+                        "ref": "Astral Plane/Act 3: Defeat Gith in the Astral Prism/Act 3: Defeat Gith in the Astral Prism",
+                        "name": "Act 3: Defeat Gith in the Astral Prism"
+                    },
+                    {
+                        "ref": "Astral Plane/Astral Plane: Kill High Gish'ra Sh'ari/Astral Plane: Kill High Gish'ra Sh'ari",
+                        "name": "Astral Plane: Kill High Gish'ra Sh'ari"
+                    },
+                    {
+                        "ref": "Astral Plane/Astral Plane: Kill Ember Gish'ra Mir'ic/Astral Plane: Kill Ember Gish'ra Mir'ic",
+                        "name": "Astral Plane: Kill Ember Gish'ra Mir'ic"
+                    },
+                    {
+                        "ref": "Astral Plane/Astral Plane: Kill Prelate Lir'i'c/Astral Plane: Kill Prelate Lir'i'c",
+                        "name": "Astral Plane: Kill Prelate Lir'i'c"
+                    },
+                    {
+                        "ref": "Astral Plane/Astral Plane: Kill Zephyr Gish'ra Verik/Astral Plane: Kill Zephyr Gish'ra Verik",
+                        "name": "Astral Plane: Kill Zephyr Gish'ra Verik"
+                    },
+                    {
+                        "ref": "Astral Plane/Astral Plane: Kill High Gish'ra G'imre/Astral Plane: Kill High Gish'ra G'imre",
+                        "name": "Astral Plane: Kill High Gish'ra G'imre"
+                    },
+                    {
+                        "ref": "Astral Plane/Astral Plane: Kill Ember Gish'ra M'i'hayk/Astral Plane: Kill Ember Gish'ra M'i'hayk",
+                        "name": "Astral Plane: Kill Ember Gish'ra M'i'hayk"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "act3_overworld",
+                        "x": 2320,
+                        "y": 520
+                    }
+                ]
+            },
+            {
                 "name": "Act 3: Reach Baldur's Gate",
                 "sections": [
                     {
@@ -20685,6 +20737,166 @@
     {
         "name": "Rivington",
         "children": [
+            {
+                "name": "Rivington (Overview)",
+                "sections": [
+                    {
+                        "ref": "Rivington/Tome: Learn about Tharchiate Codex/Tome: Learn about Tharchiate Codex",
+                        "name": "Tome: Learn about Tharchiate Codex"
+                    },
+                    {
+                        "ref": "Rivington/Fireworks: Convince Arfur to Let the Refugees Stay/Fireworks: Convince Arfur to Let the Refugees Stay",
+                        "name": "Fireworks: Convince Arfur to Let the Refugees Stay"
+                    },
+                    {
+                        "ref": "Rivington/Fireworks: Find the Blackmail Letter in the Basement/Fireworks: Find the Blackmail Letter in the Basement",
+                        "name": "Fireworks: Find the Blackmail Letter in the Basement"
+                    },
+                    {
+                        "ref": "Rivington/Fireworks: Find the Explosive Donated Toys/Fireworks: Find the Explosive Donated Toys",
+                        "name": "Fireworks: Find the Explosive Donated Toys"
+                    },
+                    {
+                        "ref": "Rivington/Ox: Agree to Help Ox Enter City/Ox: Agree to Help Ox Enter City",
+                        "name": "Ox: Agree to Help Ox Enter City"
+                    },
+                    {
+                        "ref": "Rivington/Dribbles: Get Quest from Lucretious/Dribbles: Get Quest from Lucretious",
+                        "name": "Dribbles: Get Quest from Lucretious"
+                    },
+                    {
+                        "ref": "Rivington/Dribbles: Find Dribbles' Hand/Dribbles: Find Dribbles' Hand",
+                        "name": "Dribbles: Find Dribbles' Hand"
+                    },
+                    {
+                        "ref": "Rivington/Dribbles: Find Dribbles' Torso/Dribbles: Find Dribbles' Torso",
+                        "name": "Dribbles: Find Dribbles' Torso"
+                    },
+                    {
+                        "ref": "Rivington/Cazador: Get Quest from Gur/Cazador: Get Quest from Gur",
+                        "name": "Cazador: Get Quest from Gur"
+                    },
+                    {
+                        "ref": "Rivington/Mad Monk: Reach Open Hand Temple/Mad Monk: Reach Open Hand Temple",
+                        "name": "Mad Monk: Reach Open Hand Temple"
+                    },
+                    {
+                        "ref": "Rivington/Mad Monk: Learn Shirra Died/Mad Monk: Learn Shirra Died",
+                        "name": "Mad Monk: Learn Shirra Died"
+                    },
+                    {
+                        "ref": "Rivington/Mad Monk: Defeat the Mad Monk/Mad Monk: Defeat the Mad Monk",
+                        "name": "Mad Monk: Defeat the Mad Monk"
+                    },
+                    {
+                        "ref": "Rivington/Open Hand Murder: Meet Valeria/Open Hand Murder: Meet Valeria",
+                        "name": "Open Hand Murder: Meet Valeria"
+                    },
+                    {
+                        "ref": "Rivington/Open Hand Murder: Learn Father Lorgan is Missing a Hand/Open Hand Murder: Learn Father Lorgan is Missing a Hand",
+                        "name": "Open Hand Murder: Learn Father Lorgan is Missing a Hand"
+                    },
+                    {
+                        "ref": "Rivington/Open Hand Murder: Speak with Father Lorgan or Brilgor's Corpses/Open Hand Murder: Speak with Father Lorgan or Brilgor's Corpses",
+                        "name": "Open Hand Murder: Speak with Father Lorgan or Brilgor's Corpses"
+                    },
+                    {
+                        "ref": "Rivington/Open Hand Murder: Find Underground Chapel/Open Hand Murder: Find Underground Chapel",
+                        "name": "Open Hand Murder: Find Underground Chapel"
+                    },
+                    {
+                        "ref": "Rivington/Open Hand Murder: Find the Murder Weapon/Open Hand Murder: Find the Murder Weapon",
+                        "name": "Open Hand Murder: Find the Murder Weapon"
+                    },
+                    {
+                        "ref": "Rivington/Open Hand Murder: Learn Dolor Killed Father Lorgan/Open Hand Murder: Learn Dolor Killed Father Lorgan",
+                        "name": "Open Hand Murder: Learn Dolor Killed Father Lorgan"
+                    },
+                    {
+                        "ref": "Rivington/Open Hand Murder: Find the Key on Dopplegangers/Open Hand Murder: Find the Key on Dopplegangers",
+                        "name": "Open Hand Murder: Find the Key on Dopplegangers"
+                    },
+                    {
+                        "ref": "Rivington/Open Hand Murder: Search Fraygo's Flophouse/Open Hand Murder: Search Fraygo's Flophouse",
+                        "name": "Open Hand Murder: Search Fraygo's Flophouse"
+                    },
+                    {
+                        "ref": "Rivington/Open Hand Murder: Find Murder Target List/Open Hand Murder: Find Murder Target List",
+                        "name": "Open Hand Murder: Find Murder Target List"
+                    },
+                    {
+                        "ref": "Rivington/Open Hand Murder: Convince Valeria that Brilgor is Innocent/Open Hand Murder: Convince Valeria that Brilgor is Innocent",
+                        "name": "Open Hand Murder: Convince Valeria that Brilgor is Innocent"
+                    },
+                    {
+                        "ref": "Rivington/Orin: Meet Orin/Orin: Meet Orin",
+                        "name": "Orin: Meet Orin"
+                    },
+                    {
+                        "ref": "Rivington/Orin: Meet Orin Again/Orin: Meet Orin Again",
+                        "name": "Orin: Meet Orin Again"
+                    },
+                    {
+                        "ref": "Rivington/Guild: Defeat the Stone Lord Thugs at the Smuggler's Cave/Guild: Defeat the Stone Lord Thugs at the Smuggler's Cave",
+                        "name": "Guild: Defeat the Stone Lord Thugs at the Smuggler's Cave"
+                    },
+                    {
+                        "ref": "Rivington/Rivington: Kill Rudd/Rivington: Kill Rudd",
+                        "name": "Rivington: Kill Rudd"
+                    },
+                    {
+                        "ref": "Rivington/Rivington: Kill Zomm/Rivington: Kill Zomm",
+                        "name": "Rivington: Kill Zomm"
+                    },
+                    {
+                        "ref": "Rivington/Rivington: Kill Muzz/Rivington: Kill Muzz",
+                        "name": "Rivington: Kill Muzz"
+                    },
+                    {
+                        "ref": "Rivington/Rivington: Kill Dribbles the Clown  -  Fumm/Rivington: Kill Dribbles the Clown  -  Fumm",
+                        "name": "Rivington: Kill Dribbles the Clown  -  Fumm"
+                    },
+                    {
+                        "ref": "Rivington/Rivington: Kill Keren/Rivington: Kill Keren",
+                        "name": "Rivington: Kill Keren"
+                    },
+                    {
+                        "ref": "Rivington/Rivington: Kill Bitey Buddy/Rivington: Kill Bitey Buddy",
+                        "name": "Rivington: Kill Bitey Buddy"
+                    },
+                    {
+                        "ref": "Rivington/Rivington: Kill Ryland/Rivington: Kill Ryland",
+                        "name": "Rivington: Kill Ryland"
+                    },
+                    {
+                        "ref": "Rivington/Rivington: Kill Shiv Dahlia/Rivington: Kill Shiv Dahlia",
+                        "name": "Rivington: Kill Shiv Dahlia"
+                    },
+                    {
+                        "ref": "Rivington/Rivington: Kill Blunt Skuncher/Rivington: Kill Blunt Skuncher",
+                        "name": "Rivington: Kill Blunt Skuncher"
+                    },
+                    {
+                        "ref": "Rivington/Rivington: Kill Caïros/Rivington: Kill Caïros",
+                        "name": "Rivington: Kill Caïros"
+                    },
+                    {
+                        "ref": "Rivington/Rivington: Kill Funglesby/Rivington: Kill Funglesby",
+                        "name": "Rivington: Kill Funglesby"
+                    },
+                    {
+                        "ref": "Rivington/Rivington: Kill Old Flake-Eyes/Rivington: Kill Old Flake-Eyes",
+                        "name": "Rivington: Kill Old Flake-Eyes"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "act3_overworld",
+                        "x": 2320,
+                        "y": 600
+                    }
+                ]
+            },
             {
                 "name": "Tome: Learn about Tharchiate Codex",
                 "sections": [
@@ -21413,6 +21625,310 @@
     {
         "name": "Wyrm's Crossing",
         "children": [
+            {
+                "name": "Wyrm's Crossing (Overview)",
+                "sections": [
+                    {
+                        "ref": "Wyrm's Crossing/Netherbrain: Visit Gortash's Coronation/Netherbrain: Visit Gortash's Coronation",
+                        "name": "Netherbrain: Visit Gortash's Coronation"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Netherbrain: Get Gortash's Netherstone/Netherbrain: Get Gortash's Netherstone",
+                        "name": "Netherbrain: Get Gortash's Netherstone"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Orpheus: Arrive in Wyrm's Crossing/Orpheus: Arrive in Wyrm's Crossing",
+                        "name": "Orpheus: Arrive in Wyrm's Crossing"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Orpheus: Meet Voss at Sharess' Caress/Orpheus: Meet Voss at Sharess' Caress",
+                        "name": "Orpheus: Meet Voss at Sharess' Caress"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Orpheus: Turn down Raphael's Deal/Orpheus: Turn down Raphael's Deal",
+                        "name": "Orpheus: Turn down Raphael's Deal"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Orpheus: Learn about Helsik/Orpheus: Learn about Helsik",
+                        "name": "Orpheus: Learn about Helsik"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Wyrm's Crossing: Let Naaber Finish Talking/Wyrm's Crossing: Let Naaber Finish Talking",
+                        "name": "Wyrm's Crossing: Let Naaber Finish Talking"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Wyrm's Crossing: Save the Nymph/Wyrm's Crossing: Save the Nymph",
+                        "name": "Wyrm's Crossing: Save the Nymph"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Wyrm's Crossing: Experience the Nymph's Rapture/Wyrm's Crossing: Experience the Nymph's Rapture",
+                        "name": "Wyrm's Crossing: Experience the Nymph's Rapture"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Wyrmway: Solve the Wyrmway's Trials/Wyrmway: Solve the Wyrmway's Trials",
+                        "name": "Wyrmway: Solve the Wyrmway's Trials"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Wyrm's Crossing: Side with the Guild at the Smuggler's Cave/Wyrm's Crossing: Side with the Guild at the Smuggler's Cave",
+                        "name": "Wyrm's Crossing: Side with the Guild at the Smuggler's Cave"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Wyrm's Crossing: Find the Mindflayer Under the Windmill/Wyrm's Crossing: Find the Mindflayer Under the Windmill",
+                        "name": "Wyrm's Crossing: Find the Mindflayer Under the Windmill"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Wyrm's Crossing: Do Something With the Windmill Mindflayer/Wyrm's Crossing: Do Something With the Windmill Mindflayer",
+                        "name": "Wyrm's Crossing: Do Something With the Windmill Mindflayer"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Sharess' Caress: Get Asked to Find Ffion by Mamzell Amira/Sharess' Caress: Get Asked to Find Ffion by Mamzell Amira",
+                        "name": "Sharess' Caress: Get Asked to Find Ffion by Mamzell Amira"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Sharess' Caress: Find Ffion's Diary/Sharess' Caress: Find Ffion's Diary",
+                        "name": "Sharess' Caress: Find Ffion's Diary"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Sharess' Caress: Read Ffion's Diary/Sharess' Caress: Read Ffion's Diary",
+                        "name": "Sharess' Caress: Read Ffion's Diary"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Sharess' Caress: Find Ffion's Corpse/Sharess' Caress: Find Ffion's Corpse",
+                        "name": "Sharess' Caress: Find Ffion's Corpse"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Sharess' Caress: Tell Mamzell what happened to Ffion/Sharess' Caress: Tell Mamzell what happened to Ffion",
+                        "name": "Sharess' Caress: Tell Mamzell what happened to Ffion"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Posthouse: Get Asked by Postmaster Danzo to Find Pigeons/Posthouse: Get Asked by Postmaster Danzo to Find Pigeons",
+                        "name": "Posthouse: Get Asked by Postmaster Danzo to Find Pigeons"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Posthouse: Find Clues to Pigeon Locations/Posthouse: Find Clues to Pigeon Locations",
+                        "name": "Posthouse: Find Clues to Pigeon Locations"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Posthouse: Find the Tressym/Posthouse: Find the Tressym",
+                        "name": "Posthouse: Find the Tressym"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Posthouse: Recover Letters/Posthouse: Recover Letters",
+                        "name": "Posthouse: Recover Letters"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Posthouse: Return Letters/Posthouse: Return Letters",
+                        "name": "Posthouse: Return Letters"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Wyrm's Rock: Discover Florrick is to be Executed/Wyrm's Rock: Discover Florrick is to be Executed",
+                        "name": "Wyrm's Rock: Discover Florrick is to be Executed"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Wyrm's Rock: Convince Florrick to Escape/Wyrm's Rock: Convince Florrick to Escape",
+                        "name": "Wyrm's Rock: Convince Florrick to Escape"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Wyrm's Rock: Rescue Florrick/Wyrm's Rock: Rescue Florrick",
+                        "name": "Wyrm's Rock: Rescue Florrick"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Wyrm's Rock: Find a Way into Worm Rock/Wyrm's Rock: Find a Way into Worm Rock",
+                        "name": "Wyrm's Rock: Find a Way into Worm Rock"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Fireworks: Confront Arfur in Sharess' Caress/Fireworks: Confront Arfur in Sharess' Caress",
+                        "name": "Fireworks: Confront Arfur in Sharess' Caress"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Fireworks: Discover Banites at Felogyr's Fireworks/Fireworks: Discover Banites at Felogyr's Fireworks",
+                        "name": "Fireworks: Discover Banites at Felogyr's Fireworks"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Fireworks: Defeat the Banites/Fireworks: Defeat the Banites",
+                        "name": "Fireworks: Defeat the Banites"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Cazador: Meet Other Vampire Spawn/Cazador: Meet Other Vampire Spawn",
+                        "name": "Cazador: Meet Other Vampire Spawn"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Orin: Learn Somebody is Kidnapped/Orin: Learn Somebody is Kidnapped",
+                        "name": "Orin: Learn Somebody is Kidnapped"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Harper: Find Harpers/Harper: Find Harpers",
+                        "name": "Harper: Find Harpers"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Harper: Meet with Harpers/Harper: Meet with Harpers",
+                        "name": "Harper: Meet with Harpers"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Harper: Get Asked to Rescue Minsc/Harper: Get Asked to Rescue Minsc",
+                        "name": "Harper: Get Asked to Rescue Minsc"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Iron Throne: Talk to Mizora about Duke Ravengard's Location/Iron Throne: Talk to Mizora about Duke Ravengard's Location",
+                        "name": "Iron Throne: Talk to Mizora about Duke Ravengard's Location"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Wyrm's Crossing: Kill Fist Jara/Wyrm's Crossing: Kill Fist Jara",
+                        "name": "Wyrm's Crossing: Kill Fist Jara"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Wyrm's Crossing: Kill Harper Chelvin  -  Hemm/Wyrm's Crossing: Kill Harper Chelvin  -  Hemm",
+                        "name": "Wyrm's Crossing: Kill Harper Chelvin  -  Hemm"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Wyrm's Crossing: Kill Harper Leysin  -  Lunn/Wyrm's Crossing: Kill Harper Leysin  -  Lunn",
+                        "name": "Wyrm's Crossing: Kill Harper Leysin  -  Lunn"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Wyrm's Crossing: Kill Harper Leistine  -  Zoll/Wyrm's Crossing: Kill Harper Leistine  -  Zoll",
+                        "name": "Wyrm's Crossing: Kill Harper Leistine  -  Zoll"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Wyrm's Crossing: Kill Harper Thonos  -  Gavv/Wyrm's Crossing: Kill Harper Thonos  -  Gavv",
+                        "name": "Wyrm's Crossing: Kill Harper Thonos  -  Gavv"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Wyrm's Crossing: Kill Fist Loudstone/Wyrm's Crossing: Kill Fist Loudstone",
+                        "name": "Wyrm's Crossing: Kill Fist Loudstone"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Wyrm's Crossing: Kill Fist Callaway/Wyrm's Crossing: Kill Fist Callaway",
+                        "name": "Wyrm's Crossing: Kill Fist Callaway"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Wyrm's Crossing: Kill Arkleia Oloril/Wyrm's Crossing: Kill Arkleia Oloril",
+                        "name": "Wyrm's Crossing: Kill Arkleia Oloril"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Wyrm's Crossing: Kill Fist Broko/Wyrm's Crossing: Kill Fist Broko",
+                        "name": "Wyrm's Crossing: Kill Fist Broko"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Wyrm's Crossing: Kill Manip Cragbender/Wyrm's Crossing: Kill Manip Cragbender",
+                        "name": "Wyrm's Crossing: Kill Manip Cragbender"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Wyrm's Crossing: Kill Fist Dresten/Wyrm's Crossing: Kill Fist Dresten",
+                        "name": "Wyrm's Crossing: Kill Fist Dresten"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Wyrm's Crossing: Kill Blaze Savora/Wyrm's Crossing: Kill Blaze Savora",
+                        "name": "Wyrm's Crossing: Kill Blaze Savora"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Wyrm's Crossing: Kill Fist Reynash/Wyrm's Crossing: Kill Fist Reynash",
+                        "name": "Wyrm's Crossing: Kill Fist Reynash"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Wyrm's Crossing: Kill Fist Serrik/Wyrm's Crossing: Kill Fist Serrik",
+                        "name": "Wyrm's Crossing: Kill Fist Serrik"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Wyrm's Crossing: Kill Fist Larys/Wyrm's Crossing: Kill Fist Larys",
+                        "name": "Wyrm's Crossing: Kill Fist Larys"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Wyrm's Crossing: Kill Manip Bakshi/Wyrm's Crossing: Kill Manip Bakshi",
+                        "name": "Wyrm's Crossing: Kill Manip Bakshi"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Wyrm's Crossing: Kill Fist Oriona/Wyrm's Crossing: Kill Fist Oriona",
+                        "name": "Wyrm's Crossing: Kill Fist Oriona"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Wyrm's Crossing: Kill Fist Debin/Wyrm's Crossing: Kill Fist Debin",
+                        "name": "Wyrm's Crossing: Kill Fist Debin"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Wyrm's Crossing: Kill Black Gauntlet Ignur/Wyrm's Crossing: Kill Black Gauntlet Ignur",
+                        "name": "Wyrm's Crossing: Kill Black Gauntlet Ignur"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Wyrm's Crossing: Kill Black Gauntlet Aischa/Wyrm's Crossing: Kill Black Gauntlet Aischa",
+                        "name": "Wyrm's Crossing: Kill Black Gauntlet Aischa"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Wyrm's Crossing: Kill Black Gauntlet Mohlen/Wyrm's Crossing: Kill Black Gauntlet Mohlen",
+                        "name": "Wyrm's Crossing: Kill Black Gauntlet Mohlen"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Wyrm's Crossing: Kill Iron Consul Nuff/Wyrm's Crossing: Kill Iron Consul Nuff",
+                        "name": "Wyrm's Crossing: Kill Iron Consul Nuff"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Wyrm's Crossing: Kill Iron Consul Mian/Wyrm's Crossing: Kill Iron Consul Mian",
+                        "name": "Wyrm's Crossing: Kill Iron Consul Mian"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Wyrm's Crossing: Kill Black Gauntlet Greyward/Wyrm's Crossing: Kill Black Gauntlet Greyward",
+                        "name": "Wyrm's Crossing: Kill Black Gauntlet Greyward"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Wyrm's Crossing: Kill Iron Consul Lo/Wyrm's Crossing: Kill Iron Consul Lo",
+                        "name": "Wyrm's Crossing: Kill Iron Consul Lo"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Wyrm's Crossing: Kill Black Gauntlet Ulova/Wyrm's Crossing: Kill Black Gauntlet Ulova",
+                        "name": "Wyrm's Crossing: Kill Black Gauntlet Ulova"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Wyrm's Crossing: Kill Iron Consul Jaxbock/Wyrm's Crossing: Kill Iron Consul Jaxbock",
+                        "name": "Wyrm's Crossing: Kill Iron Consul Jaxbock"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Wyrm's Crossing: Kill Black Gauntlet Numia/Wyrm's Crossing: Kill Black Gauntlet Numia",
+                        "name": "Wyrm's Crossing: Kill Black Gauntlet Numia"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Wyrm's Crossing: Kill Gortash/Wyrm's Crossing: Kill Gortash",
+                        "name": "Wyrm's Crossing: Kill Gortash"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Wyrm's Crossing: Kill Breva Brightmoon/Wyrm's Crossing: Kill Breva Brightmoon",
+                        "name": "Wyrm's Crossing: Kill Breva Brightmoon"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Wyrm's Crossing: Kill Fist Ivarus/Wyrm's Crossing: Kill Fist Ivarus",
+                        "name": "Wyrm's Crossing: Kill Fist Ivarus"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Wyrm's Crossing: Kill Fist Saunder/Wyrm's Crossing: Kill Fist Saunder",
+                        "name": "Wyrm's Crossing: Kill Fist Saunder"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Wyrm's Crossing: Kill Fist Jagic/Wyrm's Crossing: Kill Fist Jagic",
+                        "name": "Wyrm's Crossing: Kill Fist Jagic"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Wyrm's Crossing: Kill Fist Creekrider/Wyrm's Crossing: Kill Fist Creekrider",
+                        "name": "Wyrm's Crossing: Kill Fist Creekrider"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Wyrmway: Kill Ansur/Wyrmway: Kill Ansur",
+                        "name": "Wyrmway: Kill Ansur"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Wyrmway: Kill Water Myrmidon 1/Wyrmway: Kill Water Myrmidon 1",
+                        "name": "Wyrmway: Kill Water Myrmidon 1"
+                    },
+                    {
+                        "ref": "Wyrm's Crossing/Wyrmway: Kill Water Myrmidon 2/Wyrmway: Kill Water Myrmidon 2",
+                        "name": "Wyrmway: Kill Water Myrmidon 2"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "act3_overworld",
+                        "x": 2320,
+                        "y": 680
+                    }
+                ]
+            },
             {
                 "name": "Netherbrain: Visit Gortash's Coronation",
                 "sections": [
@@ -22164,8 +22680,8 @@
                 "map_locations": [
                     {
                         "map": "wyrms_crossing",
-                        "x": 214,
-                        "y": 327
+                        "x": 213,
+                        "y": 328
                     }
                 ]
             },
@@ -22200,8 +22716,8 @@
                 "map_locations": [
                     {
                         "map": "wyrms_crossing",
-                        "x": 229,
-                        "y": 302
+                        "x": 230,
+                        "y": 304
                     }
                 ]
             },
@@ -22218,8 +22734,8 @@
                 "map_locations": [
                     {
                         "map": "wyrms_crossing",
-                        "x": 224,
-                        "y": 274
+                        "x": 228,
+                        "y": 275
                     }
                 ]
             },
@@ -22236,8 +22752,8 @@
                 "map_locations": [
                     {
                         "map": "wyrms_crossing",
-                        "x": 158,
-                        "y": 182
+                        "x": 163,
+                        "y": 179
                     }
                 ]
             },
@@ -22254,8 +22770,8 @@
                 "map_locations": [
                     {
                         "map": "wyrms_crossing",
-                        "x": 207,
-                        "y": 155
+                        "x": 204,
+                        "y": 153
                     }
                 ]
             },
@@ -22272,8 +22788,8 @@
                 "map_locations": [
                     {
                         "map": "wyrms_crossing",
-                        "x": 222,
-                        "y": 223
+                        "x": 210,
+                        "y": 221
                     }
                 ]
             },
@@ -22290,8 +22806,8 @@
                 "map_locations": [
                     {
                         "map": "wyrms_crossing",
-                        "x": 236,
-                        "y": 247
+                        "x": 224,
+                        "y": 246
                     }
                 ]
             },
@@ -22308,8 +22824,8 @@
                 "map_locations": [
                     {
                         "map": "wyrms_crossing",
-                        "x": 241,
-                        "y": 201
+                        "x": 239,
+                        "y": 221
                     }
                 ]
             },
@@ -22326,8 +22842,8 @@
                 "map_locations": [
                     {
                         "map": "wyrms_crossing",
-                        "x": 310,
-                        "y": 181
+                        "x": 307,
+                        "y": 182
                     }
                 ]
             },
@@ -22344,8 +22860,8 @@
                 "map_locations": [
                     {
                         "map": "wyrms_crossing",
-                        "x": 258,
-                        "y": 117
+                        "x": 255,
+                        "y": 113
                     }
                 ]
             },
@@ -22362,8 +22878,8 @@
                 "map_locations": [
                     {
                         "map": "wyrms_crossing",
-                        "x": 208,
-                        "y": 126
+                        "x": 211,
+                        "y": 124
                     }
                 ]
             },
@@ -22380,8 +22896,8 @@
                 "map_locations": [
                     {
                         "map": "wyrms_crossing",
-                        "x": 264,
-                        "y": 145
+                        "x": 268,
+                        "y": 139
                     }
                 ]
             },
@@ -22398,8 +22914,8 @@
                 "map_locations": [
                     {
                         "map": "wyrms_crossing",
-                        "x": 254,
-                        "y": 173
+                        "x": 258,
+                        "y": 166
                     }
                 ]
             },
@@ -22416,8 +22932,8 @@
                 "map_locations": [
                     {
                         "map": "wyrms_crossing",
-                        "x": 180,
-                        "y": 120
+                        "x": 181,
+                        "y": 125
                     }
                 ]
             },
@@ -22434,7 +22950,7 @@
                 "map_locations": [
                     {
                         "map": "wyrms_crossing",
-                        "x": 235,
+                        "x": 237,
                         "y": 138
                     }
                 ]
@@ -22452,8 +22968,8 @@
                 "map_locations": [
                     {
                         "map": "wyrms_crossing",
-                        "x": 178,
-                        "y": 149
+                        "x": 175,
+                        "y": 153
                     }
                 ]
             },
@@ -22470,8 +22986,8 @@
                 "map_locations": [
                     {
                         "map": "wyrms_crossing",
-                        "x": 289,
-                        "y": 212
+                        "x": 296,
+                        "y": 210
                     }
                 ]
             },
@@ -22488,8 +23004,8 @@
                 "map_locations": [
                     {
                         "map": "wyrms_crossing",
-                        "x": 290,
-                        "y": 157
+                        "x": 289,
+                        "y": 158
                     }
                 ]
             },
@@ -22506,8 +23022,8 @@
                 "map_locations": [
                     {
                         "map": "wyrms_crossing",
-                        "x": 262,
-                        "y": 222
+                        "x": 268,
+                        "y": 218
                     }
                 ]
             },
@@ -22524,8 +23040,8 @@
                 "map_locations": [
                     {
                         "map": "wyrms_crossing",
-                        "x": 226,
-                        "y": 177
+                        "x": 229,
+                        "y": 167
                     }
                 ]
             },
@@ -22542,8 +23058,8 @@
                 "map_locations": [
                     {
                         "map": "wyrms_crossing",
-                        "x": 206,
-                        "y": 198
+                        "x": 219,
+                        "y": 194
                     }
                 ]
             },
@@ -22560,8 +23076,8 @@
                 "map_locations": [
                     {
                         "map": "wyrms_crossing",
-                        "x": 281,
-                        "y": 184
+                        "x": 279,
+                        "y": 187
                     }
                 ]
             },
@@ -22578,8 +23094,8 @@
                 "map_locations": [
                     {
                         "map": "wyrms_crossing",
-                        "x": 192,
-                        "y": 230
+                        "x": 181,
+                        "y": 217
                     }
                 ]
             },
@@ -22596,8 +23112,8 @@
                 "map_locations": [
                     {
                         "map": "wyrms_crossing",
-                        "x": 150,
-                        "y": 153
+                        "x": 146,
+                        "y": 152
                     }
                 ]
             },
@@ -22614,8 +23130,8 @@
                 "map_locations": [
                     {
                         "map": "wyrms_crossing",
-                        "x": 187,
-                        "y": 176
+                        "x": 192,
+                        "y": 182
                     }
                 ]
             },
@@ -22632,8 +23148,8 @@
                 "map_locations": [
                     {
                         "map": "wyrms_crossing",
-                        "x": 177,
-                        "y": 205
+                        "x": 154,
+                        "y": 207
                     }
                 ]
             },
@@ -22650,8 +23166,8 @@
                 "map_locations": [
                     {
                         "map": "wyrms_crossing",
-                        "x": 30,
-                        "y": 58
+                        "x": 248,
+                        "y": 194
                     }
                 ]
             },
@@ -23338,8 +23854,8 @@
                 "map_locations": [
                     {
                         "map": "act3_overworld",
-                        "x": 1291,
-                        "y": 718
+                        "x": 1421,
+                        "y": 861
                     }
                 ]
             },
@@ -26525,8 +27041,8 @@
                 "map_locations": [
                     {
                         "map": "act3_overworld",
-                        "x": 1270,
-                        "y": 395
+                        "x": 1374,
+                        "y": 321
                     }
                 ]
             },
@@ -28262,8 +28778,8 @@
                 "map_locations": [
                     {
                         "map": "lower_city_sewers",
-                        "x": 931,
-                        "y": 64
+                        "x": 492,
+                        "y": 423
                     }
                 ]
             },
@@ -28283,8 +28799,8 @@
                 "map_locations": [
                     {
                         "map": "lower_city_sewers",
-                        "x": 30,
-                        "y": 58
+                        "x": 471,
+                        "y": 402
                     }
                 ]
             },
@@ -28304,8 +28820,8 @@
                 "map_locations": [
                     {
                         "map": "lower_city_sewers",
-                        "x": 908,
-                        "y": 89
+                        "x": 447,
+                        "y": 418
                     }
                 ]
             },
@@ -28325,8 +28841,8 @@
                 "map_locations": [
                     {
                         "map": "lower_city_sewers",
-                        "x": 897,
-                        "y": 116
+                        "x": 467,
+                        "y": 439
                     }
                 ]
             },
@@ -28346,8 +28862,8 @@
                 "map_locations": [
                     {
                         "map": "lower_city_sewers",
-                        "x": 903,
-                        "y": 32
+                        "x": 477,
+                        "y": 369
                     }
                 ]
             },
@@ -28367,8 +28883,8 @@
                 "map_locations": [
                     {
                         "map": "lower_city_sewers",
-                        "x": 501,
-                        "y": 417
+                        "x": 520,
+                        "y": 430
                     }
                 ]
             },
@@ -28389,7 +28905,7 @@
                     {
                         "map": "lower_city_sewers",
                         "x": 499,
-                        "y": 388
+                        "y": 394
                     }
                 ]
             },
@@ -28409,8 +28925,8 @@
                 "map_locations": [
                     {
                         "map": "lower_city_sewers",
-                        "x": 902,
-                        "y": 61
+                        "x": 448,
+                        "y": 384
                     }
                 ]
             },
@@ -28430,8 +28946,8 @@
                 "map_locations": [
                     {
                         "map": "lower_city_sewers",
-                        "x": 960,
-                        "y": 62
+                        "x": 524,
+                        "y": 378
                     }
                 ]
             },
@@ -30123,8 +30639,8 @@
                 "map_locations": [
                     {
                         "map": "act3_overworld",
-                        "x": 8,
-                        "y": 8
+                        "x": 2320,
+                        "y": 760
                     }
                 ]
             },
@@ -30419,7 +30935,7 @@
                 "map_locations": [
                     {
                         "map": "house_of_hope",
-                        "x": 372,
+                        "x": 371,
                         "y": 298
                     }
                 ]
@@ -30437,8 +30953,8 @@
                 "map_locations": [
                     {
                         "map": "house_of_hope",
-                        "x": 380,
-                        "y": 269
+                        "x": 378,
+                        "y": 268
                     }
                 ]
             },
@@ -30455,8 +30971,8 @@
                 "map_locations": [
                     {
                         "map": "house_of_hope",
-                        "x": 400,
-                        "y": 291
+                        "x": 398,
+                        "y": 289
                     }
                 ]
             },
@@ -30473,8 +30989,8 @@
                 "map_locations": [
                     {
                         "map": "house_of_hope",
-                        "x": 393,
-                        "y": 348
+                        "x": 392,
+                        "y": 347
                     }
                 ]
             },
@@ -30492,7 +31008,7 @@
                     {
                         "map": "house_of_hope",
                         "x": 424,
-                        "y": 274
+                        "y": 275
                     }
                 ]
             },
@@ -30509,7 +31025,7 @@
                 "map_locations": [
                     {
                         "map": "house_of_hope",
-                        "x": 432,
+                        "x": 433,
                         "y": 215
                     }
                 ]
@@ -30527,7 +31043,7 @@
                 "map_locations": [
                     {
                         "map": "house_of_hope",
-                        "x": 457,
+                        "x": 458,
                         "y": 230
                     }
                 ]
@@ -30545,8 +31061,8 @@
                 "map_locations": [
                     {
                         "map": "house_of_hope",
-                        "x": 486,
-                        "y": 229
+                        "x": 485,
+                        "y": 219
                     }
                 ]
             },
@@ -30563,7 +31079,7 @@
                 "map_locations": [
                     {
                         "map": "house_of_hope",
-                        "x": 448,
+                        "x": 447,
                         "y": 257
                     }
                 ]
@@ -30581,8 +31097,8 @@
                 "map_locations": [
                     {
                         "map": "house_of_hope",
-                        "x": 505,
-                        "y": 207
+                        "x": 509,
+                        "y": 203
                     }
                 ]
             },
@@ -30599,8 +31115,8 @@
                 "map_locations": [
                     {
                         "map": "house_of_hope",
-                        "x": 551,
-                        "y": 241
+                        "x": 554,
+                        "y": 239
                     }
                 ]
             },
@@ -30617,8 +31133,8 @@
                 "map_locations": [
                     {
                         "map": "house_of_hope",
-                        "x": 532,
-                        "y": 262
+                        "x": 534,
+                        "y": 261
                     }
                 ]
             },
@@ -30635,8 +31151,8 @@
                 "map_locations": [
                     {
                         "map": "house_of_hope",
-                        "x": 574,
-                        "y": 259
+                        "x": 577,
+                        "y": 257
                     }
                 ]
             },
@@ -30671,8 +31187,8 @@
                 "map_locations": [
                     {
                         "map": "house_of_hope",
-                        "x": 470,
-                        "y": 311
+                        "x": 464,
+                        "y": 322
                     }
                 ]
             },
@@ -30689,8 +31205,8 @@
                 "map_locations": [
                     {
                         "map": "house_of_hope",
-                        "x": 483,
-                        "y": 285
+                        "x": 470,
+                        "y": 275
                     }
                 ]
             },
@@ -30707,8 +31223,8 @@
                 "map_locations": [
                     {
                         "map": "house_of_hope",
-                        "x": 445,
-                        "y": 327
+                        "x": 437,
+                        "y": 331
                     }
                 ]
             },
@@ -30725,8 +31241,8 @@
                 "map_locations": [
                     {
                         "map": "house_of_hope",
-                        "x": 430,
-                        "y": 302
+                        "x": 421,
+                        "y": 306
                     }
                 ]
             },
@@ -30743,8 +31259,8 @@
                 "map_locations": [
                     {
                         "map": "house_of_hope",
-                        "x": 453,
-                        "y": 355
+                        "x": 454,
+                        "y": 354
                     }
                 ]
             },
@@ -30761,7 +31277,7 @@
                 "map_locations": [
                     {
                         "map": "house_of_hope",
-                        "x": 482,
+                        "x": 483,
                         "y": 350
                     }
                 ]
@@ -30779,8 +31295,8 @@
                 "map_locations": [
                     {
                         "map": "house_of_hope",
-                        "x": 454,
-                        "y": 286
+                        "x": 447,
+                        "y": 293
                     }
                 ]
             },
@@ -30797,8 +31313,8 @@
                 "map_locations": [
                     {
                         "map": "house_of_hope",
-                        "x": 556,
-                        "y": 284
+                        "x": 563,
+                        "y": 283
                     }
                 ]
             },
@@ -30815,8 +31331,8 @@
                 "map_locations": [
                     {
                         "map": "house_of_hope",
-                        "x": 525,
-                        "y": 229
+                        "x": 529,
+                        "y": 225
                     }
                 ]
             },
@@ -30851,8 +31367,8 @@
                 "map_locations": [
                     {
                         "map": "house_of_hope",
-                        "x": 528,
-                        "y": 291
+                        "x": 535,
+                        "y": 290
                     }
                 ]
             },
@@ -30869,8 +31385,8 @@
                 "map_locations": [
                     {
                         "map": "house_of_hope",
-                        "x": 505,
-                        "y": 251
+                        "x": 509,
+                        "y": 246
                     }
                 ]
             },
@@ -30887,8 +31403,8 @@
                 "map_locations": [
                     {
                         "map": "house_of_hope",
-                        "x": 477,
-                        "y": 257
+                        "x": 480,
+                        "y": 248
                     }
                 ]
             },
@@ -30923,8 +31439,8 @@
                 "map_locations": [
                     {
                         "map": "house_of_hope",
-                        "x": 422,
-                        "y": 348
+                        "x": 420,
+                        "y": 354
                     }
                 ]
             },
@@ -30941,8 +31457,8 @@
                 "map_locations": [
                     {
                         "map": "house_of_hope",
-                        "x": 467,
-                        "y": 203
+                        "x": 462,
+                        "y": 202
                     }
                 ]
             },
@@ -30960,7 +31476,7 @@
                     {
                         "map": "house_of_hope",
                         "x": 393,
-                        "y": 319
+                        "y": 318
                     }
                 ]
             },
@@ -30977,8 +31493,8 @@
                 "map_locations": [
                     {
                         "map": "house_of_hope",
-                        "x": 585,
-                        "y": 286
+                        "x": 592,
+                        "y": 287
                     }
                 ]
             },
@@ -30996,7 +31512,7 @@
                     {
                         "map": "house_of_hope",
                         "x": 423,
-                        "y": 243
+                        "y": 242
                     }
                 ]
             },
@@ -31013,8 +31529,8 @@
                 "map_locations": [
                     {
                         "map": "house_of_hope",
-                        "x": 30,
-                        "y": 58
+                        "x": 512,
+                        "y": 307
                     }
                 ]
             },
@@ -31139,8 +31655,8 @@
                 "map_locations": [
                     {
                         "map": "house_of_hope",
-                        "x": 58,
-                        "y": 58
+                        "x": 484,
+                        "y": 301
                     }
                 ]
             }
@@ -31247,8 +31763,8 @@
                 "map_locations": [
                     {
                         "map": "act3_overworld",
-                        "x": 2392,
-                        "y": 404
+                        "x": 2320,
+                        "y": 840
                     }
                 ]
             },
@@ -31829,7 +32345,7 @@
                 "map_locations": [
                     {
                         "map": "act3_overworld",
-                        "x": 566,
+                        "x": 560,
                         "y": 251
                     }
                 ]
@@ -32421,8 +32937,8 @@
                 "map_locations": [
                     {
                         "map": "cazador",
-                        "x": 692,
-                        "y": 284
+                        "x": 693,
+                        "y": 283
                     }
                 ]
             },
@@ -32458,7 +32974,7 @@
                     {
                         "map": "cazador",
                         "x": 710,
-                        "y": 261
+                        "y": 258
                     }
                 ]
             },
@@ -32475,7 +32991,7 @@
                 "map_locations": [
                     {
                         "map": "cazador",
-                        "x": 754,
+                        "x": 753,
                         "y": 284
                     }
                 ]
@@ -32494,7 +33010,7 @@
                     {
                         "map": "cazador",
                         "x": 739,
-                        "y": 260
+                        "y": 259
                     }
                 ]
             },
@@ -32529,8 +33045,8 @@
                 "map_locations": [
                     {
                         "map": "cazador",
-                        "x": 30,
-                        "y": 58
+                        "x": 722,
+                        "y": 286
                     }
                 ]
             }
@@ -33365,8 +33881,8 @@
                 "map_locations": [
                     {
                         "map": "act3_overworld",
-                        "x": 1242,
-                        "y": 1105
+                        "x": 2320,
+                        "y": 920
                     }
                 ]
             },
@@ -33822,6 +34338,54 @@
     {
         "name": "Iron Throne",
         "children": [
+            {
+                "name": "Iron Throne (Overview)",
+                "sections": [
+                    {
+                        "ref": "Iron Throne/Water Queen: Enter Flymm Cargo's Basement/Water Queen: Enter Flymm Cargo's Basement",
+                        "name": "Water Queen: Enter Flymm Cargo's Basement"
+                    },
+                    {
+                        "ref": "Iron Throne/Water Queen: Talk to Redhammer/Water Queen: Talk to Redhammer",
+                        "name": "Water Queen: Talk to Redhammer"
+                    },
+                    {
+                        "ref": "Iron Throne/Water Queen: Resolve Redhammer - Water Queen After Iron Throne/Water Queen: Resolve Redhammer - Water Queen After Iron Throne",
+                        "name": "Water Queen: Resolve Redhammer - Water Queen After Iron Throne"
+                    },
+                    {
+                        "ref": "Iron Throne/Iron Throne: Enter the Iron Throne/Iron Throne: Enter the Iron Throne",
+                        "name": "Iron Throne: Enter the Iron Throne"
+                    },
+                    {
+                        "ref": "Iron Throne/Iron Throne: Free Duke Ravengard From His Cell/Iron Throne: Free Duke Ravengard From His Cell",
+                        "name": "Iron Throne: Free Duke Ravengard From His Cell"
+                    },
+                    {
+                        "ref": "Iron Throne/Iron Throne: Escort Duke Ravengard to Freedom/Iron Throne: Escort Duke Ravengard to Freedom",
+                        "name": "Iron Throne: Escort Duke Ravengard to Freedom"
+                    },
+                    {
+                        "ref": "Iron Throne/Iron Throne: Free Omeluum/Iron Throne: Free Omeluum",
+                        "name": "Iron Throne: Free Omeluum"
+                    },
+                    {
+                        "ref": "Iron Throne/Iron Throne: Rescue Omeluum/Iron Throne: Rescue Omeluum",
+                        "name": "Iron Throne: Rescue Omeluum"
+                    },
+                    {
+                        "ref": "Iron Throne/Iron Throne: Rescue Gondians (Well, Most of Them at Least)/Iron Throne: Rescue Gondians (Well, Most of Them at Least)",
+                        "name": "Iron Throne: Rescue Gondians (Well, Most of Them at Least)"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "act3_overworld",
+                        "x": 2320,
+                        "y": 1000
+                    }
+                ]
+            },
             {
                 "name": "Water Queen: Enter Flymm Cargo's Basement",
                 "sections": [
