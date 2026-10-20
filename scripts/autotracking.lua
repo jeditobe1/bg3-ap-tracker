@@ -165,6 +165,10 @@ local function apply_status_badges()
     if ks then ks.Active = (SLOT_DATA.killsanity or 0) ~= 0 end
     local qs = Tracker:FindObjectForCode("questsanity")
     if qs then qs.Active = (SLOT_DATA.questsanity or 0) ~= 0 end
+    -- Containersanity creates locations only at its top option value (2,
+    -- "i_suppose_if_you_insist"); value 1 creates none.
+    local cs = Tracker:FindObjectForCode("containersanity")
+    if cs then cs.Active = (SLOT_DATA.containersanity or 0) == 2 end
     local be = Tracker:FindObjectForCode("block_entrances")
     if be then be.Active = (SLOT_DATA.block_entrances or 0) ~= 0 end
     apply_gate_auto_enable()
@@ -254,10 +258,10 @@ local function on_clear(slot_data)
     -- Suppress tab-following while the connect backlog replays. If frame handlers
     -- aren't available (older PopTracker), leave it at 0 so the feature still works.
     if ScriptHost.AddOnFrameHandler then TAB_FOLLOW_SETTLE = 2.0 end
-    print(string.format("BG3 AP: connected. %d locations already cleared. goal=%s ks=%s qs=%s be=%s",
+    print(string.format("BG3 AP: connected. %d locations already cleared. goal=%s ks=%s qs=%s be=%s cs=%s",
         cleared,
         tostring(SLOT_DATA.goal), tostring(SLOT_DATA.killsanity), tostring(SLOT_DATA.questsanity),
-        tostring(SLOT_DATA.block_entrances)))
+        tostring(SLOT_DATA.block_entrances), tostring(SLOT_DATA.containersanity)))
     Tracker.BulkUpdate = false
 end
 
@@ -302,6 +306,7 @@ Archipelago:AddLocationHandler("bg3_loc", on_location)
 ScriptHost:AddWatchForCode("bg3_lock_goal",             "goal",             lock_setting_if_ap)
 ScriptHost:AddWatchForCode("bg3_lock_killsanity",       "killsanity",       lock_setting_if_ap)
 ScriptHost:AddWatchForCode("bg3_lock_questsanity",      "questsanity",      lock_setting_if_ap)
+ScriptHost:AddWatchForCode("bg3_lock_containersanity",  "containersanity",  lock_setting_if_ap)
 ScriptHost:AddWatchForCode("bg3_lock_block_entrances",  "block_entrances",  lock_setting_if_ap)
 if ScriptHost.AddOnFrameHandler then
     ScriptHost:AddOnFrameHandler("bg3_tab_settle", function(elapsed)

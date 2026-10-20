@@ -1030,12 +1030,40 @@ def sanitize_for_code_path(name: str) -> str:
     return name.replace("/", " - ")
 
 
+def _container_rule(logic: str, tab: str) -> str | None:
+    """A container's own rule when its logic region isn't its tab: the logic
+    region's terms plus the tab's, exactly like a folded check."""
+    if logic == tab:
+        return None
+    return access_rule_for(logic, also=(tab,))
+
+
+def _container_children(slug, display, rows, used_xy, quest_slots, out):
+    import container_pins as CP  # local import: tools/container_pins.py
+    import project as P
+    proj = P.load_projections(PACK_ROOT)
+    kids, id_map, stats = CP.build_container_children(
+        {slug: rows}, proj, map_dims_for, map_size_for, _container_rule,
+        quest_grid_pin_position, {slug: quest_slots}, {slug: used_xy},
+        sanitize_for_code_path)
+    if out is not None:
+        for lid, _tab, child_name, sname in id_map:
+            out.setdefault("pairs", []).append((lid, f"@{display}/{child_name}/{sname}"))
+        agg = out.setdefault("stats", {})
+        for k, v in stats.items():
+            agg[k] = max(agg.get(k, 0), v) if k == "max" else agg.get(k, 0) + v
+        agg.setdefault("per_tab", {})[slug] = stats
+    return kids[slug]
+
+
 def emit_locations_json(
     by_region: dict[str, list[tuple[str, int]]],
     npc_pins: dict[str, dict[str, dict]],
     overworld_pins: dict[str, dict] | None = None,
     merged_origin: dict[int, str] | None = None,
     extra_regions: dict[str, tuple[str, ...]] | None = None,
+    container_rows: dict[str, list[dict]] | None = None,
+    container_out: dict | None = None,
 ) -> list:
     """Return the locations.json payload as a Python list.
 
@@ -1062,6 +1090,13 @@ def emit_locations_json(
     - Quest locations (id < 10000) project into the bottom quest-panel
       strip on the same per-region map.
     - Un-projected kills fall back to a grid layout (rare in practice).
+
+    Container locations (`container_rows`, by tab) are clustered pins built by
+    tools/container_pins.py after a tab's kills and quests are placed, so they
+    can avoid those pixels and continue the quest panel. They are appended
+    after the Overview child and deliberately left out of its refs: a Lower
+    City overview popup listing ~2,700 containers would be unusable.
+    `container_out` receives the (ap_id, section code) pairs and stats.
     """
     overworld_pins = overworld_pins or {}
     merged_origin = merged_origin or {}
@@ -1077,6 +1112,7 @@ def emit_locations_json(
         children = []
         kill_grid_idx = 0
         quest_grid_idx = 0
+        used_xy: set = set()
         for name, lid in entries:
             safe_name = sanitize_for_code_path(name)
             # Toggle-driven visibility: each AP location's ID range determines
@@ -1128,6 +1164,7 @@ def emit_locations_json(
                 section["chest_unopened_img"] = "images/items/quest_marker_unopened.png"
                 section["chest_opened_img"] = "images/items/quest_marker_opened.png"
             child["map_locations"] = [{"map": slug, "x": x, "y": y}]
+            used_xy.add((x, y))
             children.append(child)
         region_entry: dict = {
             "name": display,
@@ -1176,6 +1213,9 @@ def emit_locations_json(
                     }],
                 }
                 children.insert(0, overview_child)
+        if container_rows and container_rows.get(slug):
+            children.extend(_container_children(
+                slug, display, container_rows[slug], used_xy, quest_grid_idx, container_out))
         region_rule = access_rule_for(slug)
         if region_rule:
             # PopTracker access_rules entries are AND-joined within a single
@@ -1312,6 +1352,7 @@ def emit_autotracking_generated(
     by_region: dict[str, list[tuple[str, int]]],
     udf_resolved: list[tuple[str, str, int, str]],
     equipment_act_gates: dict[int, int],
+    container_pairs: list[tuple[int, str]] | None = None,
 ) -> str:
     """Return the contents of scripts/autotracking_generated.lua as a string."""
     lines: list[str] = [
@@ -1339,6 +1380,9 @@ def emit_autotracking_generated(
             code = f"@{region_display}/{safe_name}/{safe_name}"
             pairs.append((lid, code))
             region_codes.append(code)
+    # Containersanity checks: their section code is the cluster pin's path, so
+    # they're added from container_pins.py's output rather than by_region.
+    pairs.extend(container_pairs or [])
     for lid, code in sorted(pairs):
         lines.append(f"    [{lid}] = {code!r},")
     lines.append("}")
@@ -1410,6 +1454,8 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
     p.add_argument("--force-maps", action="store_true",
                    help="Overwrite existing region map PNGs with fresh placeholders. "
                         "Default behavior preserves textured/hand-built maps.")
+    p.add_argument("--no-containers", action="store_true",
+                   help="Leave Containersanity locations out of the pack.")
     return p.parse_args(argv)
 
 
@@ -1447,6 +1493,19 @@ def main(argv: list[str] | None = None) -> int:
     print(f"[OK] Equipment: {len(equipment_act_gates)} items, "
           + ", ".join(f"{gate_counts[t]} {ACT_GATE_CODES[t]}" for t in ACT_GATE_CODES))
 
+    container_by_tab: dict[str, list[dict]] = {}
+    if not args.no_containers:
+        import container_pins as CP  # local import: tools/container_pins.py
+        rows = CP.container_rows(args.apworld)
+        unknown = sorted({r["region"] for r in rows
+                          if MERGED_INTO.get(r["region"], r["region"]) not in REGION_DISPLAY_NAMES})
+        if unknown:
+            print(f"[FAIL] Container rows in unknown regions: {unknown}")
+            return 1
+        for r in rows:
+            container_by_tab.setdefault(MERGED_INTO.get(r["region"], r["region"]), []).append(r)
+        print(f"[OK] Containers: {len(rows)} selected rows across {len(container_by_tab)} tabs.")
+
     if args.check:
         print("[OK] --check passed; no files written.")
         return 0
@@ -1472,11 +1531,18 @@ def main(argv: list[str] | None = None) -> int:
                {"overworlds": overworld_pins})
 
     # 1. locations/locations.json
+    container_out: dict = {}
     write_json(pack_root / "locations" / "locations.json",
                emit_locations_json(by_region, npc_pins, overworld_pins,
                                    merged_origin_by_id(args.apworld),
-                                   parse_location_extra_regions(args.apworld)))
-    print(f"[OK] Wrote locations/locations.json ({len(locations)} sections)")
+                                   parse_location_extra_regions(args.apworld),
+                                   container_by_tab, container_out))
+    n_cont = len(container_out.get("pairs", []))
+    print(f"[OK] Wrote locations/locations.json ({len(locations)} sections + {n_cont} container sections)")
+    if n_cont:
+        st = container_out["stats"]
+        print(f"     containers: {st['placed']} on the map, {st['panel']} in bottom panels; "
+              f"{st['pins']} pins ({st['panel_pins']} panel), largest {st['max']}")
 
     # 2. maps/maps.json
     write_json(pack_root / "maps" / "maps.json", emit_maps_json(pack_root))
@@ -1488,7 +1554,8 @@ def main(argv: list[str] | None = None) -> int:
     print(f"[OK] Wrote layouts/regions.json")
 
     # 4. scripts/autotracking_generated.lua
-    lua = emit_autotracking_generated(by_region, udf_resolved, equipment_act_gates)
+    lua = emit_autotracking_generated(by_region, udf_resolved, equipment_act_gates,
+                                      container_out.get("pairs"))
     out_lua = pack_root / "scripts" / "autotracking_generated.lua"
     out_lua.parent.mkdir(parents=True, exist_ok=True)
     out_lua.write_text(lua, encoding="utf-8", newline="\n")

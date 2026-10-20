@@ -119,6 +119,14 @@ BG3_ICON_TARGETS = [
     # key icon (Item_CONT_KeyRing is one of the most "lock and key" silhouettes
     # in the atlas) as the ON state; OFF is derived via DERIVED_OFF_ICONS.
     ("block_entrances_on",             "Item_CONT_KeyRing",                          "Icons_Items_2.lsx"),
+    # Containersanity: one icon per container category (containers.py row
+    # field "category"), shown on each container check, plus the two
+    # settings toggles. The _opened / _off variants are derived below.
+    ("container_chest",                "Item_CONT_GEN_Chest_Common_A",               "Icons_Items.lsx"),
+    ("container_bag",                  "Item_CONT_GEN_Pouch_Leather_A",              "Icons_Items.lsx"),
+    ("container_clutter",              "Item_CONT_Barrel_A",                         "Icons_Items.lsx"),
+    ("containersanity_on",             "Item_CONT_GEN_Crate_Wood_A",                 "Icons_Items.lsx"),
+    ("show_clutter_on",                "Item_CONT_Barrel_A",                         "Icons_Items.lsx"),
 ]
 
 # Derived "_off" variants: produced by desaturating + dimming an existing icon.
@@ -127,6 +135,11 @@ DERIVED_OFF_ICONS = [
     ("killsanity_off",       "killsanity_on"),
     ("questsanity_off",      "questsanity_on"),
     ("block_entrances_off",  "block_entrances_on"),
+    ("container_chest_opened",   "container_chest"),
+    ("container_bag_opened",     "container_bag"),
+    ("container_clutter_opened", "container_clutter"),
+    ("containersanity_off",  "containersanity_on"),
+    ("show_clutter_off",     "show_clutter_on"),
 ]
 
 # Color-tinted variants: take a base icon and apply a color cast so the

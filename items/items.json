@@ -116,6 +116,22 @@
         "initial_active_state": true
     },
     {
+        "name": "Containersanity",
+        "type": "toggle",
+        "img": "images/items/containersanity_on.png",
+        "disabled_img": "images/items/containersanity_off.png",
+        "codes": "containersanity",
+        "initial_active_state": false
+    },
+    {
+        "name": "Show Clutter Containers",
+        "type": "toggle",
+        "img": "images/items/show_clutter_on.png",
+        "disabled_img": "images/items/show_clutter_off.png",
+        "codes": "show_clutter",
+        "initial_active_state": true
+    },
+    {
         "name": "Block Entrances (Region Locking)",
         "type": "toggle",
         "img": "images/items/block_entrances_on.png",
