@@ -6,7 +6,7 @@ Items received from the multiworld auto-track. Locations the slot has checked au
 
 ## Status
 
-**0.8.0.** Wired to BG3 apworld v0.7.1. Still on apworld v0.6.3? Use tracker 0.7.1. Tracks all items, all 876 displayed locations across 18 regions, with reachability colored by Level Fragment count plus per-region BlockEntrances gate items, and visibility filtered by the slot's goal + sanity options. The items grid includes an 18-toggle goal-progress row (Halsin rescue + 17 UDF fights) and a region-locking row for the 15 entrance gates + 1 Progressive Moonlight Towers counter.
+**0.8.1.** Wired to BG3 apworld v0.7.2. Still on apworld v0.6.3? Use tracker 0.7.1. Act 3 (apworld v0.8.0) is in progress for tracker 1.0. Tracks all items, all 868 displayed locations across 18 regions, with reachability colored by Level Fragment count plus per-region BlockEntrances gate items, and visibility filtered by the slot's goal + sanity options. The items grid includes an 18-toggle goal-progress row (Halsin rescue + 17 UDF fights) and a region-locking row for the 15 entrance gates + 1 Progressive Moonlight Towers counter.
 
 Act 3 and containersanity are out of scope for this release — see [Known limitations](#known-limitations).
 
@@ -16,7 +16,7 @@ Region maps render real BG3 worldmap textures composited from the game atlas. Ea
 
 ## Compatibility
 
-- **BG3 apworld**: v0.7.1. (For apworld v0.6.3, use tracker 0.7.1.) apworld v0.7.0 split Underwell out of Blighted Village, Inside Goblin Camp out of Goblin Camp and Zhentarim Basement out of Waukeen's Rest, and v0.7.1 split the Mason's Guild out of West Act 2, the Last Light Basement out of Last Light Inn, and added a Moonrise Rooftop; the pack folds each back into its parent tab (they are the same physical space, already drawn as a labelled zone on the parent's map) while keeping the child's own access rules on its checks. Older apworlds will mis-bucket equipment (the v0.7.0 equipment table dropped two duplicate entries, shifting ~426 AP item ids).
+- **BG3 apworld**: v0.7.2 (also works with v0.7.1, minus that release's eight removed kills and renames). For apworld v0.6.3, use tracker 0.7.1. apworld v0.7.0 split Underwell out of Blighted Village, Inside Goblin Camp out of Goblin Camp and Zhentarim Basement out of Waukeen's Rest, and v0.7.1 split the Mason's Guild out of West Act 2, the Last Light Basement out of Last Light Inn, and added a Moonrise Rooftop; the pack folds each back into its parent tab (they are the same physical space, already drawn as a labelled zone on the parent's map) while keeping the child's own access rules on its checks. Older apworlds will mis-bucket equipment (the v0.7.0 equipment table dropped two duplicate entries, shifting ~426 AP item ids).
 - **PopTracker**: any recent version. Tested against PopTracker 0.31.x.
 - **Universal Tracker**: any recent version. The apworld carries `tracker_world` + YAML-free re-gen support, so UT picks up the map tab and regenerates the world from slot_data without needing the player's YAML on disk.
 
@@ -31,7 +31,7 @@ Region maps render real BG3 worldmap textures composited from the game atlas. Ea
 
 ## Install — Universal Tracker
 
-1. Make sure the BG3 apworld (v0.7.1) is in UT's `custom_worlds/` directory.
+1. Make sure the BG3 apworld (v0.7.2) is in UT's `custom_worlds/` directory.
 2. Launch UT and connect to your BG3 slot as normal. The first time it loads a BG3 slot, UT pops a file-picker asking for the pack zip — point it at `bg3-poptracker-<version>+release.zip` from the Releases page (no need to unzip). The path is remembered for subsequent launches.
 3. To change the path later, edit `bg3_options.ut_pack_path` in `host.yaml` (UT only prompts once; clearing the value back to `""` makes it re-prompt on next launch).
 

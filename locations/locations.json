@@ -17245,28 +17245,16 @@
                         "name": "Moonrise: Kill Munish"
                     },
                     {
-                        "ref": "Moonrise Towers/Moonrise: Kill Willinx Jindlebee/Moonrise: Kill Willinx Jindlebee",
-                        "name": "Moonrise: Kill Willinx Jindlebee"
+                        "ref": "Moonrise Towers/Moonrise: Kill Necromite 2/Moonrise: Kill Necromite 2",
+                        "name": "Moonrise: Kill Necromite 2"
                     },
                     {
-                        "ref": "Moonrise Towers/Moonrise: Kill Sarabayle/Moonrise: Kill Sarabayle",
-                        "name": "Moonrise: Kill Sarabayle"
+                        "ref": "Moonrise Towers/Moonrise: Kill Necromite 3/Moonrise: Kill Necromite 3",
+                        "name": "Moonrise: Kill Necromite 3"
                     },
                     {
-                        "ref": "Moonrise Towers/Moonrise: Kill Duckie Verish/Moonrise: Kill Duckie Verish",
-                        "name": "Moonrise: Kill Duckie Verish"
-                    },
-                    {
-                        "ref": "Moonrise Towers/Moonrise: Kill Audience Guard 2 TBD/Moonrise: Kill Audience Guard 2 TBD",
-                        "name": "Moonrise: Kill Audience Guard 2 TBD"
-                    },
-                    {
-                        "ref": "Moonrise Towers/Moonrise: Kill Audience Guard 3 TBD/Moonrise: Kill Audience Guard 3 TBD",
-                        "name": "Moonrise: Kill Audience Guard 3 TBD"
-                    },
-                    {
-                        "ref": "Moonrise Towers/Moonrise: Kill Audience Guard 1 TBD/Moonrise: Kill Audience Guard 1 TBD",
-                        "name": "Moonrise: Kill Audience Guard 1 TBD"
+                        "ref": "Moonrise Towers/Moonrise: Kill Necromite 1/Moonrise: Kill Necromite 1",
+                        "name": "Moonrise: Kill Necromite 1"
                     },
                     {
                         "ref": "Moonrise Towers/Moonrise: Kill Radija/Moonrise: Kill Radija",
@@ -17277,36 +17265,36 @@
                         "name": "Moonrise: Kill Mimic"
                     },
                     {
-                        "ref": "Moonrise Towers/Moonrise: Kill Necromite 1/Moonrise: Kill Necromite 1",
-                        "name": "Moonrise: Kill Necromite 1"
+                        "ref": "Moonrise Towers/Moonrise: Kill Roof Necromite 1/Moonrise: Kill Roof Necromite 1",
+                        "name": "Moonrise: Kill Roof Necromite 1"
                     },
                     {
-                        "ref": "Moonrise Towers/Moonrise: Kill Necromite 2/Moonrise: Kill Necromite 2",
-                        "name": "Moonrise: Kill Necromite 2"
+                        "ref": "Moonrise Towers/Moonrise: Kill Roof Necromite 2/Moonrise: Kill Roof Necromite 2",
+                        "name": "Moonrise: Kill Roof Necromite 2"
                     },
                     {
-                        "ref": "Moonrise Towers/Moonrise: Kill Necromite 3/Moonrise: Kill Necromite 3",
-                        "name": "Moonrise: Kill Necromite 3"
+                        "ref": "Moonrise Towers/Moonrise: Kill Roof Necromite 3/Moonrise: Kill Roof Necromite 3",
+                        "name": "Moonrise: Kill Roof Necromite 3"
                     },
                     {
-                        "ref": "Moonrise Towers/Moonrise: Kill Necromite 4/Moonrise: Kill Necromite 4",
-                        "name": "Moonrise: Kill Necromite 4"
+                        "ref": "Moonrise Towers/Moonrise: Kill Roof Necromite 4/Moonrise: Kill Roof Necromite 4",
+                        "name": "Moonrise: Kill Roof Necromite 4"
                     },
                     {
-                        "ref": "Moonrise Towers/Moonrise: Kill Necromite 5/Moonrise: Kill Necromite 5",
-                        "name": "Moonrise: Kill Necromite 5"
+                        "ref": "Moonrise Towers/Moonrise: Kill Roof Necromite 5/Moonrise: Kill Roof Necromite 5",
+                        "name": "Moonrise: Kill Roof Necromite 5"
                     },
                     {
-                        "ref": "Moonrise Towers/Moonrise: Kill Necromite 6/Moonrise: Kill Necromite 6",
-                        "name": "Moonrise: Kill Necromite 6"
+                        "ref": "Moonrise Towers/Moonrise: Kill Roof Necromite 6/Moonrise: Kill Roof Necromite 6",
+                        "name": "Moonrise: Kill Roof Necromite 6"
                     },
                     {
-                        "ref": "Moonrise Towers/Moonrise: Kill Necromite 7/Moonrise: Kill Necromite 7",
-                        "name": "Moonrise: Kill Necromite 7"
+                        "ref": "Moonrise Towers/Moonrise: Kill Roof Necromite 7/Moonrise: Kill Roof Necromite 7",
+                        "name": "Moonrise: Kill Roof Necromite 7"
                     },
                     {
-                        "ref": "Moonrise Towers/Moonrise: Kill Necromite 8/Moonrise: Kill Necromite 8",
-                        "name": "Moonrise: Kill Necromite 8"
+                        "ref": "Moonrise Towers/Moonrise: Kill Roof Necromite 8/Moonrise: Kill Roof Necromite 8",
+                        "name": "Moonrise: Kill Roof Necromite 8"
                     },
                     {
                         "ref": "Moonrise Towers/Moonrise: Kill Squire/Moonrise: Kill Squire",
@@ -17947,64 +17935,10 @@
                 ]
             },
             {
-                "name": "Moonrise: Kill Willinx Jindlebee",
+                "name": "Moonrise: Kill Necromite 2",
                 "sections": [
                     {
-                        "name": "Moonrise: Kill Willinx Jindlebee"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "moonrise",
-                        "x": 882,
-                        "y": 272
-                    }
-                ]
-            },
-            {
-                "name": "Moonrise: Kill Sarabayle",
-                "sections": [
-                    {
-                        "name": "Moonrise: Kill Sarabayle"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "moonrise",
-                        "x": 890,
-                        "y": 320
-                    }
-                ]
-            },
-            {
-                "name": "Moonrise: Kill Duckie Verish",
-                "sections": [
-                    {
-                        "name": "Moonrise: Kill Duckie Verish"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "moonrise",
-                        "x": 892,
-                        "y": 224
-                    }
-                ]
-            },
-            {
-                "name": "Moonrise: Kill Audience Guard 2 TBD",
-                "sections": [
-                    {
-                        "name": "Moonrise: Kill Audience Guard 2 TBD"
+                        "name": "Moonrise: Kill Necromite 2"
                     }
                 ],
                 "visibility_rules": [
@@ -18019,10 +17953,10 @@
                 ]
             },
             {
-                "name": "Moonrise: Kill Audience Guard 3 TBD",
+                "name": "Moonrise: Kill Necromite 3",
                 "sections": [
                     {
-                        "name": "Moonrise: Kill Audience Guard 3 TBD"
+                        "name": "Moonrise: Kill Necromite 3"
                     }
                 ],
                 "visibility_rules": [
@@ -18037,10 +17971,10 @@
                 ]
             },
             {
-                "name": "Moonrise: Kill Audience Guard 1 TBD",
+                "name": "Moonrise: Kill Necromite 1",
                 "sections": [
                     {
-                        "name": "Moonrise: Kill Audience Guard 1 TBD"
+                        "name": "Moonrise: Kill Necromite 1"
                     }
                 ],
                 "visibility_rules": [
@@ -18091,10 +18025,10 @@
                 ]
             },
             {
-                "name": "Moonrise: Kill Necromite 1",
+                "name": "Moonrise: Kill Roof Necromite 1",
                 "sections": [
                     {
-                        "name": "Moonrise: Kill Necromite 1"
+                        "name": "Moonrise: Kill Roof Necromite 1"
                     }
                 ],
                 "visibility_rules": [
@@ -18112,10 +18046,10 @@
                 ]
             },
             {
-                "name": "Moonrise: Kill Necromite 2",
+                "name": "Moonrise: Kill Roof Necromite 2",
                 "sections": [
                     {
-                        "name": "Moonrise: Kill Necromite 2"
+                        "name": "Moonrise: Kill Roof Necromite 2"
                     }
                 ],
                 "visibility_rules": [
@@ -18133,10 +18067,10 @@
                 ]
             },
             {
-                "name": "Moonrise: Kill Necromite 3",
+                "name": "Moonrise: Kill Roof Necromite 3",
                 "sections": [
                     {
-                        "name": "Moonrise: Kill Necromite 3"
+                        "name": "Moonrise: Kill Roof Necromite 3"
                     }
                 ],
                 "visibility_rules": [
@@ -18154,10 +18088,10 @@
                 ]
             },
             {
-                "name": "Moonrise: Kill Necromite 4",
+                "name": "Moonrise: Kill Roof Necromite 4",
                 "sections": [
                     {
-                        "name": "Moonrise: Kill Necromite 4"
+                        "name": "Moonrise: Kill Roof Necromite 4"
                     }
                 ],
                 "visibility_rules": [
@@ -18175,10 +18109,10 @@
                 ]
             },
             {
-                "name": "Moonrise: Kill Necromite 5",
+                "name": "Moonrise: Kill Roof Necromite 5",
                 "sections": [
                     {
-                        "name": "Moonrise: Kill Necromite 5"
+                        "name": "Moonrise: Kill Roof Necromite 5"
                     }
                 ],
                 "visibility_rules": [
@@ -18196,10 +18130,10 @@
                 ]
             },
             {
-                "name": "Moonrise: Kill Necromite 6",
+                "name": "Moonrise: Kill Roof Necromite 6",
                 "sections": [
                     {
-                        "name": "Moonrise: Kill Necromite 6"
+                        "name": "Moonrise: Kill Roof Necromite 6"
                     }
                 ],
                 "visibility_rules": [
@@ -18217,10 +18151,10 @@
                 ]
             },
             {
-                "name": "Moonrise: Kill Necromite 7",
+                "name": "Moonrise: Kill Roof Necromite 7",
                 "sections": [
                     {
-                        "name": "Moonrise: Kill Necromite 7"
+                        "name": "Moonrise: Kill Roof Necromite 7"
                     }
                 ],
                 "visibility_rules": [
@@ -18238,10 +18172,10 @@
                 ]
             },
             {
-                "name": "Moonrise: Kill Necromite 8",
+                "name": "Moonrise: Kill Roof Necromite 8",
                 "sections": [
                     {
-                        "name": "Moonrise: Kill Necromite 8"
+                        "name": "Moonrise: Kill Roof Necromite 8"
                     }
                 ],
                 "visibility_rules": [
@@ -18337,28 +18271,8 @@
                         "name": "Shar: Rescue the Nightsong"
                     },
                     {
-                        "ref": "Gauntlet of Shar/Shar: Kill Skelly TBD/Shar: Kill Skelly TBD",
-                        "name": "Shar: Kill Skelly TBD"
-                    },
-                    {
-                        "ref": "Gauntlet of Shar/Shar: Kill Ranged Skeleton/Shar: Kill Ranged Skeleton",
-                        "name": "Shar: Kill Ranged Skeleton"
-                    },
-                    {
-                        "ref": "Gauntlet of Shar/Shar: Kill Melee Skeleton 1/Shar: Kill Melee Skeleton 1",
-                        "name": "Shar: Kill Melee Skeleton 1"
-                    },
-                    {
-                        "ref": "Gauntlet of Shar/Shar: Kill Melee Skeleton 2/Shar: Kill Melee Skeleton 2",
-                        "name": "Shar: Kill Melee Skeleton 2"
-                    },
-                    {
-                        "ref": "Gauntlet of Shar/Shar: Kill Melee Skeleton 3/Shar: Kill Melee Skeleton 3",
-                        "name": "Shar: Kill Melee Skeleton 3"
-                    },
-                    {
-                        "ref": "Gauntlet of Shar/Shar: Kill Caster Skeleton/Shar: Kill Caster Skeleton",
-                        "name": "Shar: Kill Caster Skeleton"
+                        "ref": "Gauntlet of Shar/Shar: Kill Reconstituted Duellist/Shar: Kill Reconstituted Duellist",
+                        "name": "Shar: Kill Reconstituted Duellist"
                     },
                     {
                         "ref": "Gauntlet of Shar/Shar: Kill Displacer/Shar: Kill Displacer",
@@ -18401,8 +18315,8 @@
                         "name": "Shar: Kill Yurgir"
                     },
                     {
-                        "ref": "Gauntlet of Shar/Shar: Kill Animated Justiciar TBD/Shar: Kill Animated Justiciar TBD",
-                        "name": "Shar: Kill Animated Justiciar TBD"
+                        "ref": "Gauntlet of Shar/Shar: Kill Justiciar Avenger/Shar: Kill Justiciar Avenger",
+                        "name": "Shar: Kill Justiciar Avenger"
                     },
                     {
                         "ref": "Gauntlet of Shar/Shar: Kill Ghoul 1/Shar: Kill Ghoul 1",
@@ -18694,10 +18608,10 @@
                 ]
             },
             {
-                "name": "Shar: Kill Skelly TBD",
+                "name": "Shar: Kill Reconstituted Duellist",
                 "sections": [
                     {
-                        "name": "Shar: Kill Skelly TBD"
+                        "name": "Shar: Kill Reconstituted Duellist"
                     }
                 ],
                 "visibility_rules": [
@@ -18706,98 +18620,8 @@
                 "map_locations": [
                     {
                         "map": "shar_gauntlet",
-                        "x": 548,
-                        "y": 282
-                    }
-                ]
-            },
-            {
-                "name": "Shar: Kill Ranged Skeleton",
-                "sections": [
-                    {
-                        "name": "Shar: Kill Ranged Skeleton"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "shar_gauntlet",
-                        "x": 587,
-                        "y": 264
-                    }
-                ]
-            },
-            {
-                "name": "Shar: Kill Melee Skeleton 1",
-                "sections": [
-                    {
-                        "name": "Shar: Kill Melee Skeleton 1"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "shar_gauntlet",
-                        "x": 528,
-                        "y": 259
-                    }
-                ]
-            },
-            {
-                "name": "Shar: Kill Melee Skeleton 2",
-                "sections": [
-                    {
-                        "name": "Shar: Kill Melee Skeleton 2"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "shar_gauntlet",
-                        "x": 528,
-                        "y": 303
-                    }
-                ]
-            },
-            {
-                "name": "Shar: Kill Melee Skeleton 3",
-                "sections": [
-                    {
-                        "name": "Shar: Kill Melee Skeleton 3"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "shar_gauntlet",
-                        "x": 585,
-                        "y": 293
-                    }
-                ]
-            },
-            {
-                "name": "Shar: Kill Caster Skeleton",
-                "sections": [
-                    {
-                        "name": "Shar: Kill Caster Skeleton"
-                    }
-                ],
-                "visibility_rules": [
-                    "killsanity"
-                ],
-                "map_locations": [
-                    {
-                        "map": "shar_gauntlet",
-                        "x": 560,
-                        "y": 256
+                        "x": 540,
+                        "y": 281
                     }
                 ]
             },
@@ -18982,10 +18806,10 @@
                 ]
             },
             {
-                "name": "Shar: Kill Animated Justiciar TBD",
+                "name": "Shar: Kill Justiciar Avenger",
                 "sections": [
                     {
-                        "name": "Shar: Kill Animated Justiciar TBD"
+                        "name": "Shar: Kill Justiciar Avenger"
                     }
                 ],
                 "visibility_rules": [
@@ -19561,8 +19385,8 @@
                         "name": "Colony: Kill Mindflayer 4"
                     },
                     {
-                        "ref": "Mindflayer Colony/Colony: Kill Mindflayer/Colony: Kill Mindflayer",
-                        "name": "Colony: Kill Mindflayer"
+                        "ref": "Mindflayer Colony/Colony Showdown: Kill Mindflayer/Colony Showdown: Kill Mindflayer",
+                        "name": "Colony Showdown: Kill Mindflayer"
                     },
                     {
                         "ref": "Mindflayer Colony/Colony Showdown: Kill Int. Devourer 1/Colony Showdown: Kill Int. Devourer 1",
@@ -20450,10 +20274,10 @@
                 ]
             },
             {
-                "name": "Colony: Kill Mindflayer",
+                "name": "Colony Showdown: Kill Mindflayer",
                 "sections": [
                     {
-                        "name": "Colony: Kill Mindflayer"
+                        "name": "Colony Showdown: Kill Mindflayer"
                     }
                 ],
                 "visibility_rules": [
