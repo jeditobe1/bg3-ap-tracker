@@ -59,6 +59,28 @@ REGION_DISPLAY_NAMES: dict[str, str] = {
     "moonrise_rooftop": "Moonrise Rooftop",
     "shar_gauntlet":    "Gauntlet of Shar",
     "mindflayer":       "Mindflayer Colony",
+    # Act 3 (apworld v0.8.0). Tab names first; regions folded into a tab (see
+    # MERGED_INTO) keep a display name for zone labels and docs.
+    "astral":           "Astral Plane",
+    "rivington":        "Rivington",
+    "wyrms_crossing":   "Wyrm's Crossing",
+    "lower_city_east":  "Lower City",
+    "lower_city_central": "Lower City Central",
+    "lower_city_west":  "Lower City West",
+    "blushing_mermaid": "Blushing Mermaid",
+    "murder_tribunal":  "Murder Tribunal",
+    "counting_house":   "Counting House",
+    "lower_city_sewers": "Sewers & Undercity",
+    "undercity_ruins":  "Undercity Ruins",
+    "ancient_lair":     "Ancient Lair",
+    "elfsong_basement": "Elfsong Basement",
+    "house_of_hope":    "House of Hope",
+    "sorcerous_sundries": "Sorcerous Sundries",
+    "cazador":          "Cazador's Palace",
+    "steel_watch_foundry": "Steel Watch Foundry",
+    "house_of_grief":   "House of Grief",
+    "iron_throne":      "Iron Throne",
+    "endgame":          "Endgame",
 }
 
 # Region tab groupings by act. The outer regions_block tabbed layout uses
@@ -66,11 +88,10 @@ REGION_DISPLAY_NAMES: dict[str, str] = {
 # of each act becoming the inner per-region tabs. Order within each list
 # is the inner tab order.
 #
-# Act 3 regions exist in the apworld (v0.7.0) but carry no questsanity or
-# killsanity locations -- the only non-container Act 3 check is
-# "Endgame: Kill the Netherbrain". Supporting them properly means a full
-# worldmap carving pass for 11 regions to host a single pin, so Act 3 is
-# deliberately out of scope; see EXCLUDED_REGIONS.
+# Act 3 (apworld v0.8.0) has 20 regions. They map onto 13 tabs, one per
+# physical area: the big interiors get their own tab, as the Underdark and
+# Grymforge do in Act 1, and the rest fold into the area they open off (see
+# MERGED_INTO).
 ACT_GROUPS: dict[str, list[str]] = {
     "Prologue": ["tutorial"],
     "Act 1": [
@@ -82,7 +103,12 @@ ACT_GROUPS: dict[str, list[str]] = {
         "east_act2", "west_act2", "last_light", "moonrise",
         "shar_gauntlet", "mindflayer",
     ],
-    "Act 3": [],
+    "Act 3": [
+        "astral", "rivington", "wyrms_crossing", "lower_city_east",
+        "lower_city_sewers", "elfsong_basement", "house_of_hope",
+        "sorcerous_sundries", "cazador", "steel_watch_foundry",
+        "house_of_grief", "iron_throne", "endgame",
+    ],
 }
 
 # apworld v0.7.0 split three Act 1 regions so the checks reachable before a
@@ -93,8 +119,11 @@ ACT_GROUPS: dict[str, list[str]] = {
 # once with pins and once without.
 #
 # The child keeps its own gating: its checks are emitted with their own
-# access_rules (level threshold + gate items) rather than inheriting the
-# parent's, so pins behind a lockout still colour independently.
+# access_rules, so pins behind a lockout still colour independently. A
+# child's rule is its own region's requirements combined with the tab's,
+# because the child is only reachable through the tab's area. That matters
+# for Lower City, whose tab region (Lower City East) is itself gated while
+# Central and West, which open off it, are not.
 #
 # apworld v0.7.1 applied the same split to three Act 2 areas. Each again
 # matches a zone the parent map already draws: the Mason's Guild is West Act
@@ -108,18 +137,23 @@ MERGED_INTO: dict[str, str] = {
     "masons_guild": "west_act2",
     "last_light_basement": "last_light",
     "moonrise_rooftop": "moonrise",
+    # Act 3: Lower City's three districts are one contiguous surface, and the
+    # smaller interiors open off it.
+    "lower_city_central": "lower_city_east",
+    "lower_city_west": "lower_city_east",
+    "blushing_mermaid": "lower_city_east",
+    "murder_tribunal": "lower_city_east",
+    "counting_house": "lower_city_east",
+    # The underground cluster beneath Lower City.
+    "undercity_ruins": "lower_city_sewers",
+    "ancient_lair": "lower_city_sewers",
 }
 
 # Region slugs present in the apworld's location table that this pack
 # deliberately does not display. Locations in these regions are dropped
-# before validation, so `validate()` won't flag them as unmapped.
-#
-# `endgame` is the apworld's Act 3 terminal region (renamed from
-# `netherbrain` in v0.7.0). It holds exactly one non-container location,
-# "Endgame: Kill the Netherbrain" -- a goal check the player cannot miss.
-# Displaying it would require an Act 3 tab, an Act 3 map, and the region
-# plumbing for ten sibling regions that have no locations at all.
-EXCLUDED_REGIONS: set[str] = {"endgame"}
+# before validation, so `validate()` won't flag them as unmapped. Empty since
+# Act 3 support; `endgame` was listed here while it held a single check.
+EXCLUDED_REGIONS: set[str] = set()
 
 # Overworld maps -- pre-composited from BG3 WorldMap patches and shipped
 # as image assets under images/maps/. Pin-less backdrop maps that go at
@@ -129,12 +163,8 @@ EXCLUDED_REGIONS: set[str] = {"endgame"}
 ACT_OVERWORLDS: list[tuple[str, str, str]] = [
     ("Act 1", "act1_overworld", "Overview"),
     ("Act 2", "act2_overworld", "Overview"),
-    # Act 3 overworld is shipped as a backdrop-only test case: the
-    # projection exists (CTY_Main_A geometry) but the apworld hasn't
-    # defined Act 3 regions yet, so the per-region centroids dict is
-    # empty. Useful as the proof-of-concept for the "no-checks-yet,
-    # backdrop only" path. Remove the entry if Act 3 regions land and
-    # you want to gate on at-least-one region being present.
+    # Act 3's overview is drawn from CTY_Main_A, so only regions whose kills
+    # are on that level get a callout pin there.
     ("Act 3", "act3_overworld", "Overview"),
 ]
 
@@ -154,11 +184,11 @@ REGION_ORDER: list[str] = [slug for slugs in ACT_GROUPS.values() for slug in slu
 # omitting a region from this map means "no goal restriction".
 # Apworld reference: locations.py:115-187 region inclusion by goal.
 # Act 3 goals (netherbrain, act3udf) reach every Act 1 and Act 2 region, so
-# they appear in every list here. The Act 3 regions those goals additionally
-# unlock are out of scope (see EXCLUDED_REGIONS).
+# they appear in every list here.
 _NON_HALSIN_GOALS = ["goal_wwargaz", "goal_act1udf", "goal_myrkul", "goal_act2udf",
                      "goal_netherbrain", "goal_act3udf"]
 _ACT2_PLUS_GOALS = ["goal_myrkul", "goal_act2udf", "goal_netherbrain", "goal_act3udf"]
+_ACT3_GOALS = ["goal_netherbrain", "goal_act3udf"]
 
 REGION_GOAL_VISIBILITY: dict[str, list[str]] = {
     # Act 1 underdark/mountain cluster: visible for goals other than Halsin.
@@ -176,6 +206,12 @@ REGION_GOAL_VISIBILITY: dict[str, list[str]] = {
     # underwell / inside_goblin_camp / zhentarim_basement are reached by
     # entrances outside the goal conditionals in regions.py, so they carry no
     # goal restriction -- same as their parent regions.
+    # Act 3: only the netherbrain / act3udf goals reach it.
+    **{slug: _ACT3_GOALS for slug in (
+        "astral", "rivington", "wyrms_crossing", "lower_city_east",
+        "lower_city_sewers", "elfsong_basement", "house_of_hope",
+        "sorcerous_sundries", "cazador", "steel_watch_foundry",
+        "house_of_grief", "iron_throne", "endgame")},
 }
 
 REGION_ACCESS_GATE: dict[str, int] = {
@@ -184,7 +220,8 @@ REGION_ACCESS_GATE: dict[str, int] = {
     "crypt":             1,
     "grove":             3,
     "blighted_village":  3,
-    "underwell":         3,
+    # apworld v0.8.0 raised Blighted Village -> Underwell from 3 to 6.
+    "underwell":         6,
     "waukeen":           6,
     "zhentarim_basement": 6,
     "goblin_camp":       8,
@@ -205,6 +242,18 @@ REGION_ACCESS_GATE: dict[str, int] = {
     "moonrise_rooftop": 26,
     "shar_gauntlet":    26,
     "mindflayer":       30,
+    # Act 3. Mindflayer Colony -> Astral Plane needs 34 and Wyrm's Crossing ->
+    # Lower City East needs 38; no other Act 3 edge has a level of its own, so
+    # everything past Lower City inherits 38.
+    "astral":           34,
+    "rivington":        34,
+    "wyrms_crossing":   34,
+    **{slug: 38 for slug in (
+        "lower_city_east", "lower_city_central", "lower_city_west",
+        "blushing_mermaid", "murder_tribunal", "counting_house",
+        "lower_city_sewers", "undercity_ruins", "ancient_lair",
+        "elfsong_basement", "house_of_hope", "sorcerous_sundries", "cazador",
+        "steel_watch_foundry", "house_of_grief", "iron_throne", "endgame")},
 }
 
 # Per-region gate items required when the slot has BlockEntrances enabled
@@ -252,6 +301,26 @@ REGION_BLOCK_ITEMS: dict[str, list[str]] = {
     "shar_gauntlet":    ["gate_underdark", "gate_grymforge", "gate_shar_trials"],
     "moonrise_rooftop": ["gate_progressive_moonlight_towers:2"],
     "mindflayer":       ["gate_progressive_moonlight_towers:3"],
+    # Act 3 (apworld v0.8.0). Rivington, Wyrm's Crossing, Lower City Central
+    # and West, and the Iron Throne are ungated: their block_items are still
+    # commented out upstream.
+    "astral":           ["gate_act3"],
+    "lower_city_east":  ["gate_lower_city_east"],
+    "lower_city_sewers": ["gate_lower_city_sewers"],
+    "elfsong_basement": ["gate_elfsong_basement"],
+    "sorcerous_sundries": ["gate_sorcerous_sundries"],
+    "house_of_hope":    ["gate_house_of_hope"],
+    "murder_tribunal":  ["gate_murder_tribunal"],
+    "blushing_mermaid": ["gate_blushing_mermaid"],
+    "cazador":          ["gate_cazadors_palace"],
+    "counting_house":   ["gate_counting_house"],
+    "steel_watch_foundry": ["gate_steel_watch_foundry"],
+    "house_of_grief":   ["gate_house_of_grief"],
+    # The only two-gate edge in Act 3: Sewers -> Undercity Ruins also needs
+    # the Murder Tribunal.
+    "undercity_ruins":  ["gate_murder_tribunal", "gate_undercity_ruins"],
+    "ancient_lair":     ["gate_ancient_lair"],
+    "endgame":          ["gate_endgame"],
 }
 
 # Hand-curated item ID -> tracker code mapping for toggle-type items.
@@ -283,10 +352,22 @@ AP_ITEM_TOGGLE_IDS: dict[int, str] = {
     # 114 ("Progressive Moonlight Towers") is a consumable counter (max 5)
     # handled by integer-range logic in autotracking.lua, not this toggle map.
     # 115 ("Act 3", apworld v0.7.0) gates Mindflayer Colony -> Astral Plane.
-    # No displayed region depends on it -- Act 3 is out of scope -- but it
-    # lands in the pool on netherbrain/act3udf goals, so it is mapped here to
-    # show in the Region Gates row instead of logging as an unhandled item.
     115: "gate_act3",
+    # 116-129: Act 3 region gates (apworld v0.8.0).
+    116: "gate_lower_city_east",
+    117: "gate_lower_city_sewers",
+    118: "gate_elfsong_basement",
+    119: "gate_sorcerous_sundries",
+    120: "gate_house_of_hope",
+    121: "gate_murder_tribunal",
+    122: "gate_blushing_mermaid",
+    123: "gate_cazadors_palace",
+    124: "gate_counting_house",
+    125: "gate_steel_watch_foundry",
+    126: "gate_house_of_grief",
+    127: "gate_undercity_ruins",
+    128: "gate_ancient_lair",
+    129: "gate_endgame",
 }
 
 # Regions that belong to Act 1 vs Act 2 for the UDF goal-progress block.
@@ -299,6 +380,7 @@ ACT1_REGIONS: set[str] = {
 ACT2_REGIONS: set[str] = {
     "east_act2", "west_act2", "last_light", "moonrise", "shar_gauntlet", "mindflayer",
 }
+ACT3_REGIONS: set[str] = set(ACT_GROUPS["Act 3"])
 
 # Map dimensions for the per-region placeholder PNGs. Fixed across regions so
 # kill pins projected from BG3 world coordinates (via tools/npc_pins.json) and
@@ -438,14 +520,28 @@ def _rule_terms(slug: str) -> tuple[int, list[str]]:
 
 
 def _join_rule(level: int, gates: list[str]) -> str | None:
+    """AND-join a level threshold and gate codes into one access_rule.
+
+    A counted code ("code:N") appearing more than once keeps only its
+    highest count, since the stricter one subsumes the rest -- e.g.
+    Moonrise Towers' Moonlight Towers x1 folded together with the rooftop's
+    x2 yields just x2.
+    """
     parts: list[str] = []
     if level > 0:
         parts.append(f"level_fragment:{level}")
-    seen: set[str] = set()
+    best: dict[str, int] = {}
+    order: list[str] = []
     for g in gates:
-        if g not in seen:
-            seen.add(g)
-            parts.append(g)
+        code, _, n = g.partition(":")
+        count = int(n) if n else 0
+        if code not in best:
+            order.append(code)
+            best[code] = count
+        else:
+            best[code] = max(best[code], count)
+    for code in order:
+        parts.append(f"{code}:{best[code]}" if best[code] else code)
     return ",".join(parts) if parts else None
 
 
@@ -468,6 +564,7 @@ def access_rule_for(slug: str, *, also: tuple[str, ...] = ()) -> str | None:
 # apworld Region() name -> pack slug, for LOCATION_EXTRA_REGIONS lookups.
 APWORLD_REGION_TO_SLUG: dict[str, str] = {
     "Creche": "creche",
+    "Counting House": "counting_house",
     "Monastery": "monastery",
     "Underdark": "underdark",
     "Grymforge": "grymforge",
@@ -543,22 +640,56 @@ def parse_user_defined_fights(apworld_path: Path) -> list[str]:
     raise RuntimeError("UserDefinedFights.valid_keys not found in options.py")
 
 
+def parse_bossmap(apworld_path: Path) -> dict[str, str] | None:
+    """AST-parse `bossmap` from bg3_client.py: UDF fight key -> AP location name.
+
+    This is the client's own record of which check each user-defined fight
+    is, so it is authoritative. Returns None for apworlds that predate it.
+    """
+    path = apworld_path / "bg3_client.py"
+    if not path.exists():
+        return None
+    for node in ast.walk(ast.parse(path.read_text(encoding="utf-8"))):
+        if isinstance(node, ast.Assign):
+            for tgt in node.targets:
+                if isinstance(tgt, ast.Name) and tgt.id == "bossmap":
+                    return ast.literal_eval(node.value)
+    return None
+
+
 def resolve_udf_to_locations(
     fights: list[str],
     locations: list[tuple[str, int, str]],
+    bossmap: dict[str, str] | None = None,
 ) -> list[tuple[str, str, int, str]]:
     """Match each UDF fight name to its AP kill-location entry.
 
     Returns list of (fight_name, ap_location_name, ap_location_id, region_slug),
     in the same order as `fights`.
 
-    Match rule: the location's AP id must be >= 10000 (kill-range) AND the
-    location name must end with the fight name, optionally preceded by extra
-    words after "Kill " (e.g. "Village: Kill Well Spider Queen" matches the
-    fight "Spider Queen"). Exactly one match per fight is required; ambiguous
-    or unmatched fights raise a hard error so the apworld and the tracker
-    don't silently drift apart.
+    With `bossmap` (the apworld client's fight -> location table), each fight
+    resolves to the exact location it names. A fight missing from bossmap, or
+    a bossmap location missing from the table, is a hard error, so the
+    apworld and the tracker can't silently drift apart.
+
+    Without it, falls back to matching by name: a kill-range location (id >=
+    10000) whose name ends with the fight name after "Kill " (e.g. "Village:
+    Kill Well Spider Queen" for "Spider Queen"), exactly one match required.
+    That stopped being unambiguous in apworld v0.8.0, which added a second
+    Spectator in the Endgame High Hall.
     """
+    if bossmap is not None:
+        by_name = {name: (lid, slug) for name, lid, slug in locations}
+        resolved_exact: list[tuple[str, str, int, str]] = []
+        for fight in fights:
+            if fight not in bossmap:
+                raise RuntimeError(f"UDF fight {fight!r}: not in the apworld client's bossmap")
+            name = bossmap[fight]
+            if name not in by_name:
+                raise RuntimeError(f"UDF fight {fight!r}: bossmap location {name!r} not in the location table")
+            lid, slug = by_name[name]
+            resolved_exact.append((fight, name, lid, slug))
+        return resolved_exact
     resolved: list[tuple[str, str, int, str]] = []
     for fight in fights:
         pattern = re.compile(
@@ -964,10 +1095,13 @@ def emit_locations_json(
             #    layers a second required region onto the check.
             # group_by_region suffixes duplicate display names with
             # ' #2'/'#3', so match LOCATION_EXTRA_REGIONS on the base name.
+            # A folded check also needs the tab's own area to be reachable,
+            # so its rule combines its origin region with the tab region.
             origin = merged_origin.get(lid)
             extra = extra_regions.get(re.sub(r" #\d+$", "", name), ())
             if origin is not None or extra:
-                child_rule = access_rule_for(origin or slug, also=extra)
+                tab = (slug,) if origin is not None else ()
+                child_rule = access_rule_for(origin or slug, also=tab + extra)
                 if child_rule:
                     child["access_rules"] = [child_rule]
             if lid >= 10000:
@@ -1294,10 +1428,12 @@ def main(argv: list[str] | None = None) -> int:
         print(f"     {slug:18s} {n:4d} locations")
 
     udf_fights = parse_user_defined_fights(args.apworld)
-    udf_resolved = resolve_udf_to_locations(udf_fights, locations)
+    udf_resolved = resolve_udf_to_locations(udf_fights, locations, parse_bossmap(args.apworld))
     n_act1 = sum(1 for _, _, _, slug in udf_resolved if slug in ACT1_REGIONS)
     n_act2 = sum(1 for _, _, _, slug in udf_resolved if slug in ACT2_REGIONS)
-    print(f"[OK] UDF: {len(udf_resolved)} fights resolved ({n_act1} Act 1 + {n_act2} Act 2).")
+    n_act3 = sum(1 for _, _, _, slug in udf_resolved if slug in ACT3_REGIONS)
+    print(f"[OK] UDF: {len(udf_resolved)} fights resolved "
+          f"({n_act1} Act 1 + {n_act2} Act 2 + {n_act3} Act 3).")
     for fight, name, lid, slug in udf_resolved:
         print(f"     {fight:24s} -> {name} (id={lid}, {slug})")
 

@@ -209,8 +209,135 @@
             {
                 "title": "Act 3",
                 "content": {
-                    "type": "group",
-                    "header": "Act 3 regions are not yet supported by the BG3 apworld."
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Overview",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "act3_overworld"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Astral Plane",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "astral"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Rivington",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "rivington"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Wyrm's Crossing",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "wyrms_crossing"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Lower City",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "lower_city_east"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Sewers & Undercity",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "lower_city_sewers"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Elfsong Basement",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "elfsong_basement"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "House of Hope",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "house_of_hope"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Sorcerous Sundries",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "sorcerous_sundries"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Cazador's Palace",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "cazador"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Steel Watch Foundry",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "steel_watch_foundry"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "House of Grief",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "house_of_grief"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Iron Throne",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "iron_throne"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Endgame",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "endgame"
+                                ]
+                            }
+                        }
+                    ]
                 }
             }
         ]

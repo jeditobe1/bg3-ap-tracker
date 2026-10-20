@@ -471,6 +471,368 @@ REGION_DEFINITIONS = {
     },
 }
 
+# BEGIN ACT3_REGION_DEFINITIONS (emitted from kill clusters; zone names are working names)
+ACT3_REGION_DEFINITIONS = {
+    "astral": {
+        "level": "INT_Main_A",
+        "zones": [
+            {
+                "title": 'Astral Plane',  # 6 kills
+                "level": "INT_Main_A",
+                "char_building": ["*"],
+                "patch_building": ["*"],
+                "world_bbox_override": (-204.8, -1207.6, -39.9, -1117.6),
+                "world_bbox_filter": (-204.8, -1207.6, -39.9, -1117.6),
+            },
+        ],
+    },
+    "rivington": {
+        "level": "BGO_Main_A",
+        "zones": [
+            {
+                "title": 'Kidnapper Cave',  # 5 kills
+                "level": "BGO_Main_A",
+                "char_building": ["*"],
+                "patch_building": ["*"],
+                "world_bbox_override": (-268.3, 57.3, -178.3, 147.3),
+                "world_bbox_filter": (-268.3, 57.3, -178.3, 147.3),
+                "cell": (0, 0, 1, 2),
+            },
+            {
+                "title": 'Circus',  # 4 kills
+                "level": "BGO_Main_A",
+                "char_building": ["*"],
+                "patch_building": ["*"],
+                "world_bbox_override": (-93.5, -78.1, -3.5, 11.9),
+                "world_bbox_filter": (-93.5, -78.1, -3.5, 11.9),
+                "cell": (1, 0, 1, 1),
+            },
+            {
+                "title": 'Outskirts',  # 3 kills
+                "level": "BGO_Main_A",
+                "char_building": ["*"],
+                "patch_building": ["*"],
+                "world_bbox_override": (18.1, -1073.4, 108.1, -983.4),
+                "world_bbox_filter": (18.1, -1073.4, 108.1, -983.4),
+                "cell": (1, 1, 1, 1),
+            },
+        ],
+    },
+    "wyrms_crossing": {
+        "level": "BGO_Main_A",
+        "zones": [
+            {
+                "title": "Wyrm's Rock",  # 28 kills
+                "level": "BGO_Main_A",
+                "char_building": ["*"],
+                "patch_building": ["*"],
+                "world_bbox_override": (-55.1, 29.4, 47.1, 292.6),
+                "world_bbox_filter": (-55.1, 29.4, 47.1, 292.6),
+                "cell": (0, 0, 1, 2),
+            },
+            {
+                "title": "Wyrm's Crossing",  # 5 kills
+                "level": "BGO_Main_A",
+                "char_building": ["*"],
+                "patch_building": ["*"],
+                "world_bbox_override": (12.2, -775.5, 102.2, -685.5),
+                "world_bbox_filter": (12.2, -775.5, 102.2, -685.5),
+                "cell": (1, 0, 1, 1),
+            },
+            {
+                "title": 'Wyrmway',  # 3 kills
+                "level": "BGO_Main_A",
+                "char_building": ["*"],
+                "patch_building": ["*"],
+                "world_bbox_override": (586.0, -1034.4, 690.8, -944.4),
+                "world_bbox_filter": (586.0, -1034.4, 690.8, -944.4),
+                "cell": (1, 1, 1, 1),
+            },
+        ],
+    },
+    "lower_city_east": {
+        "level": "CTY_Main_A",
+        "zones": [
+            {
+                "title": 'Lower City',  # 45 kills
+                "level": "CTY_Main_A",
+                "char_building": ["*"],
+                "patch_building": ["*"],
+                "world_bbox_override": (-334.1, -319.4, 172.5, 71.2),
+                "world_bbox_filter": (-334.1, -319.4, 172.5, 71.2),
+                "cell": (0, 0, 1, 2),
+            },
+            {
+                "title": 'Counting House Vault',  # 8 kills
+                "level": "CTY_Main_A",
+                "char_building": ["*"],
+                "patch_building": ["*"],
+                "world_bbox_override": (-757.4, 827.0, -667.4, 917.0),
+                "world_bbox_filter": (-757.4, 827.0, -667.4, 917.0),
+                "cell": (1, 0, 1, 1),
+            },
+            {
+                "title": 'Murder Tribunal',  # 7 kills
+                "level": "CTY_Main_A",
+                "char_building": ["*"],
+                "patch_building": ["*"],
+                "world_bbox_override": (-1316.3, 458.6, -1226.3, 548.6),
+                "world_bbox_filter": (-1316.3, 458.6, -1226.3, 548.6),
+                "cell": (2, 0, 1, 1),
+            },
+            {
+                "title": 'Lower City Central',  # 5 kills
+                "level": "CTY_Main_A",
+                "char_building": ["*"],
+                "patch_building": ["*"],
+                "world_bbox_override": (-1642.8, 222.4, -1552.8, 312.4),
+                "world_bbox_filter": (-1642.8, 222.4, -1552.8, 312.4),
+                "cell": (1, 1, 1, 1),
+            },
+            {
+                "title": 'Lower City East',  # 4 kills
+                "level": "CTY_Main_A",
+                "char_building": ["*"],
+                "patch_building": ["*"],
+                "world_bbox_override": (1173.8, 751.4, 1263.8, 841.4),
+                "world_bbox_filter": (1173.8, 751.4, 1263.8, 841.4),
+                "cell": (2, 1, 1, 1),
+            },
+        ],
+    },
+    "lower_city_sewers": {
+        "level": "CTY_Main_A",
+        "zones": [
+            {
+                "title": 'Undercity Ruins',  # 35 kills
+                "level": "CTY_Main_A",
+                "char_building": ["*"],
+                "patch_building": ["*"],
+                "world_bbox_override": (-128.1, 1100.2, -38.1, 1190.2),
+                "world_bbox_filter": (-128.1, 1100.2, -38.1, 1190.2),
+                "cell": (0, 0, 1, 1),
+            },
+            {
+                "title": 'Ancient Lair',  # 17 kills
+                "level": "CTY_Main_A",
+                "char_building": ["*"],
+                "patch_building": ["*"],
+                "world_bbox_override": (-1439.7, 14.3, -1349.7, 104.3),
+                "world_bbox_filter": (-1439.7, 14.3, -1349.7, 104.3),
+                "cell": (1, 0, 1, 1),
+            },
+            {
+                "title": 'Sewers',  # 15 kills
+                "level": "CTY_Main_A",
+                "char_building": ["*"],
+                "patch_building": ["*"],
+                "world_bbox_override": (-354.8, 685.8, 64.2, 1074.7),
+                "world_bbox_filter": (-354.8, 685.8, 64.2, 1074.7),
+                "cell": (2, 0, 1, 1),
+            },
+            {
+                "title": 'Mystic Carrion',  # 9 kills
+                "level": "CTY_Main_A",
+                "char_building": ["*"],
+                "patch_building": ["*"],
+                "world_bbox_override": (-38.7, -204.9, 51.3, -114.9),
+                "world_bbox_filter": (-38.7, -204.9, 51.3, -114.9),
+                "cell": (0, 1, 1, 1),
+            },
+            {
+                "title": 'Temple of Bhaal',  # 8 kills
+                "level": "CTY_Main_A",
+                "char_building": ["*"],
+                "patch_building": ["*"],
+                "world_bbox_override": (12.3, 961.3, 102.3, 1051.3),
+                "world_bbox_filter": (12.3, 961.3, 102.3, 1051.3),
+                "cell": (1, 1, 1, 1),
+            },
+            {
+                "title": "'Jaheira'",  # 1 kills
+                "level": "CTY_Main_A",
+                "char_building": ["*"],
+                "patch_building": ["*"],
+                "world_bbox_override": (-757.0, 823.0, -667.0, 913.0),
+                "world_bbox_filter": (-757.0, 823.0, -667.0, 913.0),
+                "cell": (2, 1, 1, 1),
+            },
+        ],
+    },
+    "elfsong_basement": {
+        "level": "CTY_Main_A",
+        "zones": [
+            {
+                "title": 'Elfsong Basement',  # 42 kills
+                "level": "CTY_Main_A",
+                "char_building": ["*"],
+                "patch_building": ["*"],
+                "world_bbox_override": (-924.0, 496.5, -668.1, 586.5),
+                "world_bbox_filter": (-924.0, 496.5, -668.1, 586.5),
+            },
+        ],
+    },
+    "house_of_hope": {
+        "level": "CTY_Main_A",
+        "zones": [
+            {
+                "title": 'House of Hope',  # 40 kills
+                "level": "CTY_Main_A",
+                "char_building": ["*"],
+                "patch_building": ["*"],
+                "world_bbox_override": (-6544.0, 2838.0, -6418.5, 3033.6),
+                "world_bbox_filter": (-6544.0, 2838.0, -6418.5, 3033.6),
+            },
+        ],
+    },
+    "sorcerous_sundries": {
+        "level": "CTY_Main_A",
+        "zones": [
+            {
+                "title": 'Sorcerous Sundries',  # 7 kills
+                "level": "CTY_Main_A",
+                "char_building": ["*"],
+                "patch_building": ["*"],
+                "world_bbox_override": (4920.0, 660.2, 5010.0, 750.2),
+                "world_bbox_filter": (4920.0, 660.2, 5010.0, 750.2),
+            },
+        ],
+    },
+    "cazador": {
+        "level": "CTY_Main_A",
+        "zones": [
+            {
+                "title": 'Palace',  # 15 kills
+                "level": "CTY_Main_A",
+                "char_building": ["*"],
+                "patch_building": ["*"],
+                "world_bbox_override": (-1328.8, 951.9, -1238.8, 1041.9),
+                "world_bbox_filter": (-1328.8, 951.9, -1238.8, 1041.9),
+                "cell": (0, 0, 1, 1),
+            },
+            {
+                "title": 'Ritual Room',  # 14 kills
+                "level": "CTY_Main_A",
+                "char_building": ["*"],
+                "patch_building": ["*"],
+                "world_bbox_override": (-1971.6, 907.4, -1881.6, 997.4),
+                "world_bbox_filter": (-1971.6, 907.4, -1881.6, 997.4),
+                "cell": (1, 0, 1, 1),
+            },
+        ],
+    },
+    "steel_watch_foundry": {
+        "level": "CTY_Main_A",
+        "zones": [
+            {
+                "title": 'Control Center',  # 13 kills
+                "level": "CTY_Main_A",
+                "char_building": ["*"],
+                "patch_building": ["*"],
+                "world_bbox_override": (-2000.3, 393.9, -1910.3, 483.9),
+                "world_bbox_filter": (-2000.3, 393.9, -1910.3, 483.9),
+                "cell": (0, 0, 1, 2),
+            },
+            {
+                "title": 'Foundry',  # 9 kills
+                "level": "CTY_Main_A",
+                "char_building": ["*"],
+                "patch_building": ["*"],
+                "world_bbox_override": (-333.9, -193.5, -215.9, -103.5),
+                "world_bbox_filter": (-333.9, -193.5, -215.9, -103.5),
+                "cell": (1, 0, 1, 1),
+            },
+            {
+                "title": 'Hellfire Watchers',  # 4 kills
+                "level": "CTY_Main_A",
+                "char_building": ["*"],
+                "patch_building": ["*"],
+                "world_bbox_override": (-1983.9, 161.2, -1893.9, 251.2),
+                "world_bbox_filter": (-1983.9, 161.2, -1893.9, 251.2),
+                "cell": (1, 1, 1, 1),
+            },
+        ],
+    },
+    "house_of_grief": {
+        "level": "CTY_Main_A",
+        "zones": [
+            {
+                "title": 'House of Grief',  # 20 kills
+                "level": "CTY_Main_A",
+                "char_building": ["*"],
+                "patch_building": ["*"],
+                "world_bbox_override": (-446.6, -1696.0, -322.1, -1606.0),
+                "world_bbox_filter": (-446.6, -1696.0, -322.1, -1606.0),
+            },
+        ],
+    },
+    "iron_throne": {
+        "level": "IRN_Main_A",
+        "zones": [
+            {
+                "title": 'Iron Throne',  # 0 kills
+                "level": "IRN_Main_A",
+                "char_building": ["*"],
+                "patch_building": ["*"],
+                "world_bbox_override": (-80.0, -10.0, 65.0, 125.0),
+                "world_bbox_filter": (-80.0, -10.0, 65.0, 125.0),
+            },
+        ],
+    },
+    "endgame": {
+        "level": "END_Main",
+        "zones": [
+            {
+                "title": 'High Hall',  # 38 kills
+                "level": "END_Main",
+                "char_building": ["*"],
+                "patch_building": ["*"],
+                "world_bbox_override": (197.9, 12.6, 367.5, 139.5),
+                "world_bbox_filter": (197.9, 12.6, 367.5, 139.5),
+                "cell": (0, 0, 1, 2),
+            },
+            {
+                "title": 'Intellect Devourers',  # 22 kills
+                "level": "END_Main",
+                "char_building": ["*"],
+                "patch_building": ["*"],
+                "world_bbox_override": (-972.1, 3716.5, -882.1, 3806.5),
+                "world_bbox_filter": (-972.1, 3716.5, -882.1, 3806.5),
+                "cell": (1, 0, 1, 1),
+            },
+            {
+                "title": 'Arcanists',  # 5 kills
+                "level": "END_Main",
+                "char_building": ["*"],
+                "patch_building": ["*"],
+                "world_bbox_override": (5514.0, 434.1, 5604.0, 524.1),
+                "world_bbox_filter": (5514.0, 434.1, 5604.0, 524.1),
+                "cell": (2, 0, 1, 1),
+            },
+            {
+                "title": 'Lower City Invasion',  # 6 kills
+                "level": "CTY_Main_A",
+                "char_building": ["*"],
+                "patch_building": ["*"],
+                "world_bbox_override": (-314.0, -95.1, 241.1, 38.6),
+                "world_bbox_filter": (-314.0, -95.1, 241.1, 38.6),
+                "cell": (1, 1, 1, 1),
+            },
+            {
+                "title": 'Netherbrain',  # 1 kills
+                "level": "END_Main",
+                "char_building": ["*"],
+                "patch_building": ["*"],
+                "world_bbox_override": (170.0, 4214.0, 260.0, 4304.0),
+                "world_bbox_filter": (170.0, 4214.0, 260.0, 4304.0),
+                "cell": (2, 1, 1, 1),
+            },
+        ],
+    },
+}
+REGION_DEFINITIONS.update(ACT3_REGION_DEFINITIONS)
+# END ACT3_REGION_DEFINITIONS
+
 
 # Most apworld kill entries are tagged `Kill-S_<level>_<creature>_<UUID>`
 # (the S_ prefix is Larian's convention for spawned characters), but the

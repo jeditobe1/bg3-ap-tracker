@@ -73,6 +73,11 @@ local ALL_GATE_TOGGLES = {
     "gate_grymforge", "gate_mountain_pass", "gate_creche",
     "gate_act2", "gate_last_light_basement", "gate_reithwins_masons_guild",
     "gate_shar_trials", "gate_act3",
+    -- Act 3 region gates (apworld v0.8.0).
+    "gate_lower_city_east", "gate_lower_city_sewers", "gate_elfsong_basement", "gate_sorcerous_sundries",
+    "gate_house_of_hope", "gate_murder_tribunal", "gate_blushing_mermaid", "gate_cazadors_palace",
+    "gate_counting_house", "gate_steel_watch_foundry", "gate_house_of_grief", "gate_undercity_ruins",
+    "gate_ancient_lair", "gate_endgame",
 }
 local ALL_GATE_COUNTERS = { "gate_progressive_moonlight_towers" }
 
@@ -104,6 +109,22 @@ local function pool_gates_for_goal(goal)
             pool.gate_progressive_moonlight_towers = true  -- counter, max 3
             if goal ~= GOAL_MYRKUL and goal ~= GOAL_ACT2_UDF then
                 pool.gate_act3 = true
+                -- apworld v0.8.0: the Act 3 region gates join the pool on the
+                -- same goals as the Act 3 gate itself.
+                pool.gate_lower_city_east = true
+                pool.gate_lower_city_sewers = true
+                pool.gate_elfsong_basement = true
+                pool.gate_sorcerous_sundries = true
+                pool.gate_house_of_hope = true
+                pool.gate_murder_tribunal = true
+                pool.gate_blushing_mermaid = true
+                pool.gate_cazadors_palace = true
+                pool.gate_counting_house = true
+                pool.gate_steel_watch_foundry = true
+                pool.gate_house_of_grief = true
+                pool.gate_undercity_ruins = true
+                pool.gate_ancient_lair = true
+                pool.gate_endgame = true
             end
         end
     end

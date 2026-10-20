@@ -45,7 +45,11 @@
                                     [ "gate_nautiloid_control_panel", "gate_withers_crypt", "gate_blighted_village_well", "gate_goblin_camp" ],
                                     [ "gate_underdark", "gate_hags_fireplace", "gate_zhentarim_basement", "gate_grymforge" ],
                                     [ "gate_mountain_pass", "gate_creche", "gate_act2", "gate_last_light_basement" ],
-                                    [ "gate_reithwins_masons_guild", "gate_shar_trials", "gate_progressive_moonlight_towers" ]
+                                    [ "gate_reithwins_masons_guild", "gate_shar_trials", "gate_progressive_moonlight_towers", "gate_act3" ],
+                                    [ "gate_lower_city_east", "gate_lower_city_sewers", "gate_elfsong_basement", "gate_sorcerous_sundries" ],
+                                    [ "gate_house_of_hope", "gate_murder_tribunal", "gate_blushing_mermaid", "gate_cazadors_palace" ],
+                                    [ "gate_counting_house", "gate_steel_watch_foundry", "gate_house_of_grief", "gate_undercity_ruins" ],
+                                    [ "gate_ancient_lair", "gate_endgame" ]
                                 ]
                             }
                         },
@@ -61,7 +65,10 @@
                                     [ "udf_bulette", "udf_nere", "udf_grym", "udf_ch_r_ai_w_wargaz" ],
                                     [ "udf_shambling_mound", "udf_cursed_kuo_toa_chief", "udf_malus_thorm", "udf_gerringothe_thorm" ],
                                     [ "udf_thisobald_thorm", "udf_ch_r_ai_tska_an", "udf_yurgir", "udf_balthazar" ],
-                                    [ "udf_myrkul", "udf_netherbrain" ]
+                                    [ "udf_myrkul", "udf_jaheira", "udf_ch_r_ai_har_rak", "udf_lorroakan" ],
+                                    [ "udf_raphael", "udf_mystic_carrion", "udf_ansur", "udf_sarevok" ],
+                                    [ "udf_cazador", "udf_steel_watcher_titan", "udf_viconia", "udf_orin" ],
+                                    [ "udf_gortash", "udf_netherbrain" ]
                                 ]
                             }
                         }

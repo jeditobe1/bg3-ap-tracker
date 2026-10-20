@@ -29,6 +29,14 @@ LSX_TO_RELATIVE_DDS = {
     "Icons_Items_4.lsx": "Public/Shared/Assets/Textures/Icons/Icons_Items_4.dds",
     "Icons_Items_5.lsx": "Public/Shared/Assets/Textures/Icons/Icons_Items_5.dds",
     "Icons_Items_6.lsx": "Public/Shared/Assets/Textures/Icons/Icons_Items_6.dds",
+    "Icons_Items_Dev.lsx": "Public/SharedDev/Assets/Textures/Icons/Icons_Items_Dev.dds",
+}
+
+# Where each .lsx sits relative to --shared-gui-root, when that isn't simply
+# "<root>/<name>". The developer atlas ships under Public/SharedDev/GUI, a
+# sibling of the Public/Shared/GUI directory the root normally points at.
+LSX_GUI_PATHS = {
+    "Icons_Items_Dev.lsx": "../../SharedDev/GUI/Icons_Items_Dev.lsx",
 }
 
 # Tracker code -> (atlas MapKey, lsx file containing the UV).
@@ -92,6 +100,21 @@ BG3_ICON_TARGETS = [
     # Act 3 gate (apworld v0.7.0) opens Mindflayer Colony -> Astral Plane, so
     # the githyanki portal tool stands in for the usual key silhouette.
     ("gate_act3",                      "Item_TOOL_GTY_Portal_A",                     "Icons_Items_4.lsx"),
+    # Act 3 region gates (apworld v0.8.0), themed on each area.
+    ("gate_lower_city_east",           "Item_DEC_GEN_Fireworks_Rocket_A",            "Icons_Items.lsx"),     # the fireworks shop
+    ("gate_lower_city_sewers",         "Item_DEC_GEN_Manhole_A",                     "Icons_Items_Dev.lsx"),
+    ("gate_elfsong_basement",          "Item_FUR_GEN_Tavern_Barrel_Beer_Small_A_Interactable", "Icons_Items_2.lsx"),
+    ("gate_sorcerous_sundries",        "Item_BOOK_Tome_Thayan_Necromancy_A_Gem_A",   "Icons_Items.lsx"),     # read in its vault
+    ("gate_house_of_hope",             "Item_LOW_MephistosVault_OrphicHammer",       "Icons_Items_Dev.lsx"), # retrieved there
+    ("gate_murder_tribunal",           "Item_UNI_DarkUrge_Bhaal_Dagger_1",           "Icons_Items_2.lsx"),
+    ("gate_blushing_mermaid",          "Item_DEC_Harbour_Shell_Conch_B",             "Icons_Items.lsx"),
+    ("gate_cazadors_palace",           "Item_UNI_LOW_SzarrRing",                     "Icons_Items_2.lsx"),
+    ("gate_counting_house",            "Item_LOW_CountingHouse_BankPass",            "Icons_Items_3.lsx"),
+    ("gate_steel_watch_foundry",       "Item_LOOT_Foundry_Misc_Gear_A",              "Icons_Items_4.lsx"),
+    ("gate_house_of_grief",            "Item_WPN_HUM_Sword_Shar_A",                  "Icons_Items.lsx"),
+    ("gate_undercity_ruins",           "Item_DEC_Dungeon_Skeleton_Skull_A",          "Icons_Items.lsx"),
+    ("gate_ancient_lair",              "Item_WPN_HUM_Staff_Carrion_A",               "Icons_Items_2.lsx"),   # Mystic Carrion's
+    ("gate_endgame",                   "Item_DEC_MF_Brain_Jar_A",                    "Icons_Items_2.lsx"),
     # Block Entrances toggle (Randomizer Options popup). Reuses an existing
     # key icon (Item_CONT_KeyRing is one of the most "lock and key" silhouettes
     # in the atlas) as the ON state; OFF is derived via DERIVED_OFF_ICONS.
@@ -158,6 +181,20 @@ PORTRAIT_ICON_TARGETS = [
     ("udf_yurgir",               "Mods/GustavDev/GUI/Assets/Portraits/c3c1482a-ef9e-c05e-093e-3e75b6581b0e-EQP_Orthon_Crossbow_Shortsword_(Icon_Orthon).DDS", "gustav"),
     ("udf_balthazar",            "Mods/GustavDev/GUI/Assets/Portraits/5dbde3ef-2023-bbbf-b24a-d23e25575d8b-SHA_Necromancer_(Icon_Necromancer).DDS", "gustav"),
     ("udf_myrkul",               "Mods/GustavDev/GUI/Assets/Portraits/6a7ff3a3-e87a-1e36-986f-0513f5ec085a-EQP_Apostle_(Icon_ApostleOfMyrkul).DDS", "gustav"),
+    # Act 3 UDF (apworld v0.8.0). Ansur and Ch'r'ai Har'rak have no portrait
+    # of their own: Ansur gets the generic dragon, Har'rak a githyanki.
+    ("udf_jaheira",              "Mods/GustavDev/GUI/Assets/Portraits/b90c6552-4529-e6ef-1084-34c56eca1521-EQP_Jaheira_Not_(Icon_Jaheira).DDS", "gustav"),
+    ("udf_ch_r_ai_har_rak",      "Mods/Gustav/GUI/Assets/Portraits/5a785ecb-4178-92c0-0087-ba8eef16d191-EQP_Longsword_HalfPlate_Gith_(Icon_Githyanki_Male).DDS", "gustav"),
+    ("udf_lorroakan",            "Mods/GustavDev/GUI/Assets/Portraits/8f2da811-730b-e734-7034-2a6734fe5a0e-EQP_LOW_RamazithsTower_Lorroakan_(Icon_Human_Male).DDS", "gustav"),
+    ("udf_raphael",              "Mods/Gustav/GUI/Assets/Portraits/45719593-64b2-bfd5-f15f-93ea77934993-_(Icon_Raphael_Devil).DDS", "gustav"),
+    ("udf_mystic_carrion",       "Mods/GustavDev/GUI/Assets/Portraits/1440bdf8-9993-d715-2db4-c7c848da94c1-EQP_LOW_MysticCarrion_(Icon_Mummy_FatherCarrion).DDS", "gustav"),
+    ("udf_ansur",                "Mods/GustavDev/GUI/Assets/Portraits/baa20049-2ec2-07a7-b4d6-02a38b25d6ac-_(Icon_Dragon).DDS", "gustav"),
+    ("udf_sarevok",              "Mods/GustavDev/GUI/Assets/Portraits/32e5b697-624d-5270-5634-433bfd15b9ec-EQP_LOW_Sarevok_(Icon_Sarevok).DDS", "gustav"),
+    ("udf_cazador",              "Mods/Gustav/GUI/Assets/Portraits/b13dd9f8-e9ee-52b2-e634-bfb9b1b7d94e-GLO_Cazador_(Icon_Cazador).DDS", "gustav"),
+    ("udf_steel_watcher_titan",  "Mods/GustavDev/GUI/Assets/Portraits/29872513-82d2-e2dc-2fcc-49dff69f3663-EQP_SteelWatcher_Greatsword_B_(Icon_SteelWatcher_Biped).DDS", "gustav"),
+    ("udf_viconia",              "Mods/GustavDev/GUI/Assets/Portraits/bd843e87-e62b-1007-83ce-4069e8ebc448-EQP_LOW_HouseOfGrief_Viconia_(Icon_Viconia).DDS", "gustav"),
+    ("udf_orin",                 "Mods/GustavDev/GUI/Assets/Portraits/b74fc4af-5a28-f467-f22a-b83c413975b9-_(Icon_Orin).DDS", "gustav"),
+    ("udf_gortash",              "Mods/GustavDev/GUI/Assets/Portraits/1e2e39a3-76f0-25b6-f117-8b34902ac677-EQP_WYR_HeavyCrossbow_Dagger_Gortash_(Icon_Gortash).DDS", "gustav"),
     # Act 3 UDF (apworld v0.7.0): udf_netherbrain is deliberately NOT here --
     # see the item-atlas entry in BG3_ICON_TARGETS for why.
 ]
@@ -245,6 +282,14 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
         default=64,
         help="Output icon edge length in pixels (default: 64).",
     )
+    p.add_argument(
+        "--only",
+        type=lambda v: {c.strip() for c in v.split(",") if c.strip()},
+        default=None,
+        help="Comma-separated icon codes to (re)generate; everything else is left "
+             "untouched. Without it every icon is rebuilt, which can quietly change "
+             "existing icons if the game's own art has changed since.",
+    )
     return p.parse_args(argv)
 
 
@@ -255,10 +300,15 @@ def main(argv: list[str] | None = None) -> int:
     uv_maps: dict[str, dict[str, tuple[float, float, float, float]]] = {}
     atlases: dict[str, Image.Image] = {}
 
+    def wanted(code: str) -> bool:
+        return args.only is None or code in args.only
+
     # Base-game icons.
     for code, map_key, lsx_name in BG3_ICON_TARGETS:
+        if not wanted(code):
+            continue
         if lsx_name not in uv_maps:
-            uv_maps[lsx_name] = load_uv_map(args.shared_gui_root / lsx_name)
+            uv_maps[lsx_name] = load_uv_map(args.shared_gui_root / LSX_GUI_PATHS.get(lsx_name, lsx_name))
             atlases[lsx_name] = Image.open(args.icons_root / LSX_TO_RELATIVE_DDS[lsx_name]).convert("RGBA")
         uv = uv_maps[lsx_name].get(map_key)
         if uv is None:
@@ -275,6 +325,8 @@ def main(argv: list[str] | None = None) -> int:
     ap_uv = load_uv_map(ap_lsx)
     ap_atlas = Image.open(ap_dds).convert("RGBA")
     for code, map_key in AP_ICON_TARGETS:
+        if not wanted(code):
+            continue
         uv = ap_uv.get(map_key)
         if uv is None:
             print(f"[WARN] {code}: MapKey {map_key!r} not found in apAtlas.lsx")
@@ -292,6 +344,8 @@ def main(argv: list[str] | None = None) -> int:
         "gustav": args.portraits_gustav_root,
     }
     for code, rel_path, source_id in PORTRAIT_ICON_TARGETS:
+        if not wanted(code):
+            continue
         root = portrait_roots.get(source_id)
         if root is None:
             print(f"[WARN] {code}: portrait source {source_id!r} root not provided, skipping")
@@ -307,6 +361,8 @@ def main(argv: list[str] | None = None) -> int:
     # Derived "_off" variants: desaturate + dim an existing icon. Used for
     # toggle items where ON/OFF need to be visually distinct.
     for code, source_code in DERIVED_OFF_ICONS:
+        if not wanted(code):
+            continue
         src_path = args.output_dir / f"{source_code}.png"
         if not src_path.exists():
             print(f"[WARN] {code}: source icon {source_code}.png not found, skipping")
@@ -320,6 +376,8 @@ def main(argv: list[str] | None = None) -> int:
     # Rarity-tinted variants: desaturate the source then multiply by the tint
     # color. Preserves alpha so the icon silhouette stays intact.
     for code, source_code, tint_hex in TINTED_ICONS:
+        if not wanted(code):
+            continue
         src_path = args.output_dir / f"{source_code}.png"
         if not src_path.exists():
             print(f"[WARN] {code}: source icon {source_code}.png not found, skipping")
@@ -344,6 +402,8 @@ def main(argv: list[str] | None = None) -> int:
                 | {code for code, _ in DERIVED_OFF_ICONS}
                 | {code for code, _, _ in PORTRAIT_ICON_TARGETS}
                 | {code for code, _, _ in TINTED_ICONS})
+    if args.only is not None:
+        expected &= args.only
     actual = {p.stem for p in args.output_dir.glob("*.png")}
     missing = expected - actual
     if missing:
