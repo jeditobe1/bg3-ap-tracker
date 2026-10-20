@@ -398,9 +398,12 @@ PIN_SLOT = 28           # px per pin in the fallback grid
 QUEST_GRID_COLS = 8
 QUEST_PANEL_HEIGHT_FRAC = 0.20   # bottom 20% of the map is the quest panel
 
-# Per-map pixel dimensions. Maps not listed here use (MAP_WIDTH, MAP_HEIGHT).
-# Multi-zone composites ship at 960x640 -- the shipped images/maps/<slug>.png
-# assets for those regions are pre-rendered at that resolution.
+# Per-map pixel dimensions, used ONLY to draw a placeholder for a region that
+# has no rendered map yet. Once images/maps/<slug>.png exists, map_dims_for()
+# reads its real size instead, so a rendered map can never disagree with
+# where its quest pins and pin sizes are computed. (Act 3's maps once did: 13
+# tabs rendered at 960x640 were laid out as 480x320, which put every quest
+# pin outside the quest gutter.)
 MAP_DIMS_OVERRIDES: dict[str, tuple[int, int]] = {
     "tutorial": (960, 640),
     "goblin_camp": (960, 640),
@@ -422,23 +425,23 @@ MAP_DIMS_OVERRIDES: dict[str, tuple[int, int]] = {
     "waukeen": (960, 640),
 }
 
-# Per-map location_size override. Higher-resolution maps get larger pin
-# sizes so pins look the same on screen across resolutions.
-MAP_SIZE_OVERRIDES: dict[str, int] = {
-    "tutorial": 16,
-    "goblin_camp": 16,
-    "blighted_village": 16,
-    "grymforge": 16,
-    "monastery": 16,
-    "creche": 16,
-    "last_light": 16,
-    "east_act2": 16,
-    "mindflayer": 16,
-    "shar_gauntlet": 16,
-    "moonrise": 16,
-    "west_act2": 16,
-    "waukeen": 16,
-}
+PACK_ROOT = Path(__file__).resolve().parent.parent
+
+
+def map_dims_for(slug: str) -> tuple[int, int]:
+    """Pixel size of a region's map: the rendered PNG's own size if it exists,
+    otherwise the placeholder size it will be drawn at."""
+    png = PACK_ROOT / "images" / "maps" / f"{slug}.png"
+    if png.is_file():
+        with Image.open(png) as im:
+            return im.size
+    return MAP_DIMS_OVERRIDES.get(slug, (MAP_WIDTH, MAP_HEIGHT))
+
+
+def map_size_for(slug: str) -> int:
+    """Pin size for a region map, scaled with its width so pins look the same
+    on screen at any resolution: 8 at the 480px default, 16 at 960px."""
+    return max(8, int(round(8 * map_dims_for(slug)[0] / MAP_WIDTH)))
 
 # Distinct-ish background colors per region. Cycled deterministically through
 # REGION_ORDER so neighboring tabs look different. Tones lean dark so white text
@@ -1069,8 +1072,8 @@ def emit_locations_json(
         entries = by_region.get(slug, [])
         display = REGION_DISPLAY_NAMES[slug]
         region_pins = npc_pins.get(slug, {})
-        map_dims = MAP_DIMS_OVERRIDES.get(slug, (MAP_WIDTH, MAP_HEIGHT))
-        map_size = MAP_SIZE_OVERRIDES.get(slug, 8)
+        map_dims = map_dims_for(slug)
+        map_size = map_size_for(slug)
         children = []
         kill_grid_idx = 0
         quest_grid_idx = 0
@@ -1221,7 +1224,7 @@ def emit_maps_json(pack_root: Path) -> list:
     region_maps = [
         {
             "name": slug,
-            "location_size": MAP_SIZE_OVERRIDES.get(slug, 8),
+            "location_size": map_size_for(slug),
             "location_border_thickness": 2,
             "img": f"images/maps/{slug}.png",
         }

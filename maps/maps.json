@@ -109,79 +109,79 @@
     },
     {
         "name": "astral",
-        "location_size": 8,
+        "location_size": 16,
         "location_border_thickness": 2,
         "img": "images/maps/astral.png"
     },
     {
         "name": "rivington",
-        "location_size": 8,
+        "location_size": 16,
         "location_border_thickness": 2,
         "img": "images/maps/rivington.png"
     },
     {
         "name": "wyrms_crossing",
-        "location_size": 8,
+        "location_size": 16,
         "location_border_thickness": 2,
         "img": "images/maps/wyrms_crossing.png"
     },
     {
         "name": "lower_city_east",
-        "location_size": 8,
+        "location_size": 16,
         "location_border_thickness": 2,
         "img": "images/maps/lower_city_east.png"
     },
     {
         "name": "lower_city_sewers",
-        "location_size": 8,
+        "location_size": 16,
         "location_border_thickness": 2,
         "img": "images/maps/lower_city_sewers.png"
     },
     {
         "name": "elfsong_basement",
-        "location_size": 8,
+        "location_size": 16,
         "location_border_thickness": 2,
         "img": "images/maps/elfsong_basement.png"
     },
     {
         "name": "house_of_hope",
-        "location_size": 8,
+        "location_size": 16,
         "location_border_thickness": 2,
         "img": "images/maps/house_of_hope.png"
     },
     {
         "name": "sorcerous_sundries",
-        "location_size": 8,
+        "location_size": 16,
         "location_border_thickness": 2,
         "img": "images/maps/sorcerous_sundries.png"
     },
     {
         "name": "cazador",
-        "location_size": 8,
+        "location_size": 16,
         "location_border_thickness": 2,
         "img": "images/maps/cazador.png"
     },
     {
         "name": "steel_watch_foundry",
-        "location_size": 8,
+        "location_size": 16,
         "location_border_thickness": 2,
         "img": "images/maps/steel_watch_foundry.png"
     },
     {
         "name": "house_of_grief",
-        "location_size": 8,
+        "location_size": 16,
         "location_border_thickness": 2,
         "img": "images/maps/house_of_grief.png"
     },
     {
         "name": "iron_throne",
-        "location_size": 8,
+        "location_size": 16,
         "location_border_thickness": 2,
         "img": "images/maps/iron_throne.png"
     },
     {
         "name": "endgame",
-        "location_size": 8,
+        "location_size": 16,
         "location_border_thickness": 2,
         "img": "images/maps/endgame.png"
     },
