@@ -111,6 +111,24 @@ ACT_GROUPS: dict[str, list[str]] = {
     ],
 }
 
+# Interiors tabs: map-only tabs with no apworld region of their own. They hold
+# the cellars, basements and sub-levels whose containers sit far from every
+# zone of their own tab (tools/plan_container_zones.py decides which; its zones
+# land in tools/container_zones.json). Only container pins go on them, each
+# routed from its own tab and keeping that tab's rule. Each sits last in its act.
+CONTAINER_ONLY_TABS: dict[str, tuple[str, str]] = {
+    "act1_interiors": ("Act 1", "Act 1 Interiors"),
+    "act2_interiors": ("Act 2", "Act 2 Interiors"),
+    "lower_city_interiors": ("Act 3", "Lower City Interiors"),
+    "act3_interiors": ("Act 3", "Act 3 Interiors"),
+}
+for _slug, (_act, _name) in CONTAINER_ONLY_TABS.items():
+    ACT_GROUPS[_act].append(_slug)
+    REGION_DISPLAY_NAMES[_slug] = _name
+# Interiors maps grow past 960px to fit their zones; their pins keep the
+# standard multi-zone size rather than scaling up with the canvas.
+PIN_SIZE_OVERRIDES: dict[str, int] = {slug: 16 for slug in CONTAINER_ONLY_TABS}
+
 # apworld v0.7.0 split three Act 1 regions so the checks reachable before a
 # lockout separate from the ones behind it. Geographically each child is part
 # of its parent, and the parent's map already renders it as a labelled zone,
@@ -441,6 +459,8 @@ def map_dims_for(slug: str) -> tuple[int, int]:
 def map_size_for(slug: str) -> int:
     """Pin size for a region map, scaled with its width so pins look the same
     on screen at any resolution: 8 at the 480px default, 16 at 960px."""
+    if slug in PIN_SIZE_OVERRIDES:
+        return PIN_SIZE_OVERRIDES[slug]
     return max(8, int(round(8 * map_dims_for(slug)[0] / MAP_WIDTH)))
 
 # Distinct-ish background colors per region. Cycled deterministically through
@@ -744,7 +764,8 @@ def validate(locations: list[tuple[str, int, str]]) -> list[str]:
         by_region[slug] = by_region.get(slug, 0) + 1
     for slug in REGION_ORDER:
         if slug not in by_region:
-            errors.append(f"region {slug!r} is in REGION_ORDER but has no locations")
+            if slug not in CONTAINER_ONLY_TABS:
+                errors.append(f"region {slug!r} is in REGION_ORDER but has no locations")
     # Slugs that exist in the data but aren't in REGION_ORDER are warnings, not errors.
     for slug in by_region:
         if slug not in REGION_ORDER and slug not in EXCLUDED_REGIONS:
@@ -1030,10 +1051,12 @@ def sanitize_for_code_path(name: str) -> str:
     return name.replace("/", " - ")
 
 
-def _container_rule(logic: str, tab: str) -> str | None:
-    """A container's own rule when its logic region isn't its tab: the logic
-    region's terms plus the tab's, exactly like a folded check."""
-    if logic == tab:
+def _container_rule(logic: str, tab: str, shown_on: str) -> str | None:
+    """A container's own rule: its logic region's terms plus its own tab's,
+    exactly like a folded check. None when the pin's tab already says it all
+    (logic region == tab, and the pin is on that tab rather than an Interiors
+    tab, which carries no rule of its own)."""
+    if logic == tab and shown_on == tab:
         return None
     return access_rule_for(logic, also=(tab,))
 
@@ -1043,7 +1066,8 @@ def _container_children(slug, display, rows, used_xy, quest_slots, out):
     import project as P
     proj = P.load_projections(PACK_ROOT)
     kids, id_map, stats = CP.build_container_children(
-        {slug: rows}, proj, map_dims_for, map_size_for, _container_rule,
+        {slug: rows}, proj, map_dims_for, map_size_for,
+        lambda logic, tab: _container_rule(logic, tab, slug),
         quest_grid_pin_position, {slug: quest_slots}, {slug: used_xy},
         sanitize_for_code_path)
     if out is not None:
@@ -1053,6 +1077,15 @@ def _container_children(slug, display, rows, used_xy, quest_slots, out):
         for k, v in stats.items():
             agg[k] = max(agg.get(k, 0), v) if k == "max" else agg.get(k, 0) + v
         agg.setdefault("per_tab", {})[slug] = stats
+    if slug in CONTAINER_ONLY_TABS:
+        # An Interiors tab has no goal visibility of its own, so each pin
+        # carries its source tab's: e.g. a monastery cellar stays hidden on a
+        # Halsin-goal slot, as the Monastery tab is.
+        by_name = {sanitize_for_code_path(r["name"]): r["rule_tab"] for r in rows}
+        for kid in kids[slug]:
+            goals = REGION_GOAL_VISIBILITY.get(by_name[kid["sections"][0]["name"]])
+            if goals:
+                kid["visibility_rules"] = [f"{v},{g}" for v in kid["visibility_rules"] for g in goals]
     return kids[slug]
 
 
@@ -1164,6 +1197,11 @@ def emit_locations_json(
                 section["chest_unopened_img"] = "images/items/quest_marker_unopened.png"
                 section["chest_opened_img"] = "images/items/quest_marker_opened.png"
             child["map_locations"] = [{"map": slug, "x": x, "y": y}]
+            if lid < 10000:
+                # One pin shape per check type: kills keep the map's default
+                # rect, quests are trapezoids, containers diamonds (see
+                # tools/container_pins.py). PopTracker has no circle.
+                child["map_locations"][0]["shape"] = "trapezoid"
             used_xy.add((x, y))
             children.append(child)
         region_entry: dict = {
@@ -1502,9 +1540,22 @@ def main(argv: list[str] | None = None) -> int:
         if unknown:
             print(f"[FAIL] Container rows in unknown regions: {unknown}")
             return 1
+        import project as P
+        proj_regions = P.load_projections(args.pack_root)["regions"]
+        moved = 0
         for r in rows:
-            container_by_tab.setdefault(MERGED_INTO.get(r["region"], r["region"]), []).append(r)
-        print(f"[OK] Containers: {len(rows)} selected rows across {len(container_by_tab)} tabs.")
+            tab = MERGED_INTO.get(r["region"], r["region"])
+            r["rule_tab"] = tab
+            if CP.zone_for_row(proj_regions.get(tab, {}).get("zones", []), r) is None:
+                # Off every zone of its own tab: an Interiors tab may hold it.
+                for annex in CONTAINER_ONLY_TABS:
+                    if CP.zone_for_row(proj_regions.get(annex, {}).get("zones", []), r) is not None:
+                        tab = annex
+                        moved += 1
+                        break
+            container_by_tab.setdefault(tab, []).append(r)
+        print(f"[OK] Containers: {len(rows)} selected rows across {len(container_by_tab)} tabs "
+              f"({moved} on Interiors tabs).")
 
     if args.check:
         print("[OK] --check passed; no files written.")

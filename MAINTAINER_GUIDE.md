@@ -270,6 +270,32 @@ A multi-zone region entry looks like:
 Canvas reserves 32 px for a per-zone title bar and 20% at the bottom
 for the quest panel (rendered separately at pack time).
 
+### Containersanity zones
+
+Zones were framed around kills, so the apworld's containers (read from
+its `containers.py`) need more of the map. `tools/plan_container_zones.py`
+routes every container against the current zones and writes
+`tools/container_zones.json`:
+
+- `include` widens a zone's frame to take in nearby containers;
+- `extra_zones` adds a zone (new right-hand column) for a big far island;
+- `define` moves a single-zone tab onto the multi-zone renderer;
+- `annex` builds the four map-only Interiors tabs (Act 1, Act 2, Act 3,
+  Lower City) out of small far islands, one zone per cellar.
+
+`render_multi_zone_map.py` applies it at render time only, and records each
+zone's pre-widening frame (`world_bbox_base`) so a re-plan is stable. After
+an apworld update that touches containers:
+
+```
+python tools/plan_container_zones.py --apworld <path>/worlds/bg3
+python tools/render_multi_zone_map.py <slug> --apworld <path>/worlds/bg3   # each tab the plan names
+python tools/generate_pack.py --apworld <path>/worlds/bg3
+```
+
+A zone whose kills all moved to another region has nothing to frame it
+from and needs a `world_bbox_override`, or the renderer skips it.
+
 ## Stage 4 — `pin_overrides.json` (hand-curated nudges)
 
 `tools/pin_overrides.json` is the human-edited source of truth for pin

@@ -131,6 +131,15 @@
                                     "creche"
                                 ]
                             }
+                        },
+                        {
+                            "title": "Act 1 Interiors",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "act1_interiors"
+                                ]
+                            }
                         }
                     ]
                 }
@@ -200,6 +209,15 @@
                                 "type": "map",
                                 "maps": [
                                     "mindflayer"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Act 2 Interiors",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "act2_interiors"
                                 ]
                             }
                         }
@@ -334,6 +352,24 @@
                                 "type": "map",
                                 "maps": [
                                     "endgame"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Lower City Interiors",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "lower_city_interiors"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Act 3 Interiors",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "act3_interiors"
                                 ]
                             }
                         }

@@ -1,0 +1,1809 @@
+{
+ "include": {
+  "tutorial": {
+   "Helm": [
+    -2.2,
+    -450.2,
+    68.6,
+    -352.5
+   ]
+  },
+  "beach": {
+   "Ravaged Beach": [
+    133.1,
+    229.3,
+    312.6,
+    394.7
+   ]
+  },
+  "crypt": {
+   "Dank Crypt": [
+    -307.6,
+    -236.4,
+    -279.9,
+    -218.8
+   ]
+  },
+  "grove": {
+   "Druid Grove": [
+    56.6,
+    349.0,
+    174.4,
+    407.3
+   ]
+  },
+  "blighted_village": {
+   "Village Surface": [
+    -53.5,
+    298.6,
+    113.0,
+    492.8
+   ],
+   "The Well": [
+    -706.8,
+    -418.6,
+    -420.4,
+    -305.8
+   ]
+  },
+  "waukeen": {
+   "Zhentarim Hideout": [
+    249.2,
+    -307.1,
+    405.4,
+    -154.3
+   ],
+   "Waukeen's Rest": [
+    -156.2,
+    468.5,
+    -131.9,
+    489.3
+   ]
+  },
+  "goblin_camp": {
+   "Camp": [
+    -160.5,
+    322.4,
+    -48.3,
+    474.9
+   ],
+   "Shattered Sanctum": [
+    290.1,
+    16.4,
+    454.3,
+    80.0
+   ]
+  },
+  "hag": {
+   "Riverside": [
+    -81.6,
+    212.7,
+    99.7,
+    315.2
+   ]
+  },
+  "underdark": {
+   "Underdark": [
+    -35.5,
+    -440.1,
+    172.3,
+    -57.3
+   ]
+  },
+  "grymforge": {
+   "Forge Approach": [
+    -655.5,
+    190.7,
+    -511.8,
+    485.0
+   ]
+  },
+  "monastery": {
+   "Mountain Pass": [
+    -11.3,
+    -18.0,
+    90.8,
+    14.4
+   ]
+  },
+  "east_act2": {
+   "Cursed Forest": [
+    -69.3,
+    -125.6,
+    175.2,
+    193.8
+   ]
+  },
+  "west_act2": {
+   "HoH Morgue": [
+    -6.2,
+    -1020.0,
+    100.2,
+    -877.5
+   ],
+   "Town Basement": [
+    81.4,
+    -766.3,
+    147.9,
+    -693.6
+   ]
+  },
+  "last_light": {
+   "Last Light Inn": [
+    -96.0,
+    109.3,
+    -0.2,
+    191.6
+   ],
+   "Defense": [
+    -33.4,
+    184.8,
+    -1.6,
+    236.0
+   ],
+   "Meenlock Cave": [
+    16.2,
+    -726.5,
+    39.6,
+    -701.8
+   ]
+  },
+  "moonrise": {
+   "Moonrise Towers": [
+    -179.7,
+    -234.0,
+    -99.8,
+    -115.3
+   ],
+   "Towers Dungeon": [
+    496.8,
+    -706.6,
+    649.5,
+    -592.7
+   ]
+  },
+  "shar_gauntlet": {
+   "Gauntlet of Shar": [
+    -731.1,
+    -947.9,
+    -238.1,
+    -801.8
+   ]
+  },
+  "mindflayer": {
+   "Mindflayer Colony": [
+    643.7,
+    -148.1,
+    663.6,
+    -129.9
+   ]
+  },
+  "rivington": {
+   "Outskirts": [
+    -10.5,
+    -1034.9,
+    25.6,
+    -973.7
+   ],
+   "Kidnapper Cave": [
+    -178.9,
+    73.0,
+    -105.8,
+    115.9
+   ]
+  },
+  "wyrms_crossing": {
+   "Wyrm's Rock": [
+    -102.6,
+    15.0,
+    80.9,
+    223.7
+   ],
+   "Wyrm's Crossing": [
+    3.7,
+    -754.2,
+    19.7,
+    -738.2
+   ]
+  },
+  "lower_city_east": {
+   "Lower City East": [
+    1063.1,
+    822.2,
+    1264.9,
+    909.1
+   ],
+   "Murder Tribunal": [
+    -1339.4,
+    442.4,
+    -1245.9,
+    557.6
+   ],
+   "Counting House Vault": [
+    -745.4,
+    1055.4,
+    -729.4,
+    1071.4
+   ],
+   "Lower City": [
+    -342.3,
+    -157.3,
+    -326.3,
+    -141.3
+   ]
+  },
+  "lower_city_sewers": {
+   "Sewers": [
+    -84.6,
+    1081.3,
+    -58.3,
+    1102.9
+   ]
+  },
+  "elfsong_basement": {
+   "Elfsong Basement": [
+    -762.3,
+    578.6,
+    -717.2,
+    605.4
+   ]
+  },
+  "house_of_hope": {
+   "House of Hope": [
+    -6554.4,
+    2904.6,
+    -6537.5,
+    2937.2
+   ]
+  },
+  "cazador": {
+   "Ritual Room": [
+    -1995.9,
+    829.1,
+    -1915.7,
+    895.0
+   ]
+  },
+  "house_of_grief": {
+   "House of Grief": [
+    -477.0,
+    -1708.1,
+    -286.7,
+    -1581.4
+   ]
+  },
+  "endgame": {
+   "Intellect Devourers": [
+    -972.3,
+    3673.3,
+    -882.0,
+    3834.6
+   ],
+   "High Hall": [
+    379.6,
+    71.4,
+    396.9,
+    88.8
+   ]
+  }
+ },
+ "define": {
+  "beach": {
+   "level": "WLD_Main_A",
+   "zones": [
+    {
+     "title": "Ravaged Beach",
+     "char_building": [
+      "*"
+     ],
+     "patch_building": [
+      "*"
+     ],
+     "world_bbox_override": [
+      169.7,
+      240.0,
+      300.9,
+      310.0
+     ]
+    }
+   ]
+  },
+  "crypt": {
+   "level": "WLD_Main_A",
+   "zones": [
+    {
+     "title": "Dank Crypt",
+     "char_building": [
+      "*"
+     ],
+     "patch_building": [
+      "*"
+     ],
+     "world_bbox_override": [
+      -373.2,
+      -376.7,
+      -97.6,
+      -229.7
+     ]
+    }
+   ]
+  },
+  "grove": {
+   "level": "WLD_Main_A",
+   "zones": [
+    {
+     "title": "Druid Grove",
+     "char_building": [
+      "*"
+     ],
+     "patch_building": [
+      "*"
+     ],
+     "world_bbox_override": [
+      146.4,
+      387.5,
+      277.7,
+      457.5
+     ]
+    }
+   ]
+  },
+  "hag": {
+   "level": "WLD_Main_A",
+   "zones": [
+    {
+     "title": "Riverside",
+     "char_building": [
+      "*"
+     ],
+     "patch_building": [
+      "*"
+     ],
+     "world_bbox_override": [
+      -54.2,
+      187.3,
+      115.4,
+      277.8
+     ]
+    }
+   ]
+  },
+  "underdark": {
+   "level": "WLD_Main_A",
+   "zones": [
+    {
+     "title": "Underdark",
+     "char_building": [
+      "*"
+     ],
+     "patch_building": [
+      "*"
+     ],
+     "world_bbox_override": [
+      -188.3,
+      -330.7,
+      302.0,
+      -69.2
+     ]
+    }
+   ]
+  }
+ },
+ "extra_zones": {
+  "grove": [
+   {
+    "title": "Emerald Grove",
+    "level": "WLD_Main_A",
+    "char_building": [
+     "*"
+    ],
+    "patch_building": [
+     "*"
+    ],
+    "world_bbox_override": [
+     94.2,
+     422.0,
+     390.5,
+     640.1
+    ],
+    "world_bbox_filter": [
+     122.4,
+     441.2,
+     362.3,
+     621.0
+    ],
+    "source_tab": "grove",
+    "_containers": 154,
+    "_covered": 154
+   },
+   {
+    "title": "Grove Interiors",
+    "level": "WLD_Main_A",
+    "char_building": [
+     "*"
+    ],
+    "patch_building": [
+     "*"
+    ],
+    "world_bbox_override": [
+     -496.9,
+     -34.4,
+     -415.4,
+     50.2
+    ],
+    "world_bbox_filter": [
+     -493.5,
+     -30.6,
+     -418.8,
+     46.5
+    ],
+    "source_tab": "grove",
+    "_containers": 102,
+    "_covered": 102
+   }
+  ],
+  "waukeen": [
+   {
+    "title": "Toll House",
+    "level": "WLD_Main_A",
+    "char_building": [
+     "*"
+    ],
+    "patch_building": [
+     "*"
+    ],
+    "world_bbox_override": [
+     -686.7,
+     -431.9,
+     -643.6,
+     -389.4
+    ],
+    "world_bbox_filter": [
+     -684.7,
+     -429.9,
+     -645.6,
+     -391.4
+    ],
+    "source_tab": "waukeen",
+    "_containers": 134,
+    "_covered": 134
+   }
+  ],
+  "last_light": [
+   {
+    "title": "Inn Cellar",
+    "level": "SCL_Main_A",
+    "char_building": [
+     "*"
+    ],
+    "patch_building": [
+     "*"
+    ],
+    "world_bbox_override": [
+     -2.1,
+     -768.8,
+     55.0,
+     -712.3
+    ],
+    "world_bbox_filter": [
+     -0.1,
+     -766.8,
+     53.0,
+     -714.3
+    ],
+    "source_tab": "last_light",
+    "_containers": 81,
+    "_covered": 81
+   }
+  ],
+  "rivington": [
+   {
+    "title": "Rivington",
+    "level": "BGO_Main_A",
+    "char_building": [
+     "*"
+    ],
+    "patch_building": [
+     "*"
+    ],
+    "world_bbox_override": [
+     -137.5,
+     -175.2,
+     146.2,
+     44.1
+    ],
+    "world_bbox_filter": [
+     -110.8,
+     -155.9,
+     119.5,
+     24.8
+    ],
+    "source_tab": "rivington",
+    "_containers": 359,
+    "_covered": 359
+   }
+  ],
+  "lower_city_east": [
+   {
+    "title": "Thumbo Basement",
+    "level": "CTY_Main_A",
+    "char_building": [
+     "*"
+    ],
+    "patch_building": [
+     "*"
+    ],
+    "world_bbox_override": [
+     957.2,
+     1186.0,
+     1007.8,
+     1229.2
+    ],
+    "world_bbox_filter": [
+     959.2,
+     1188.0,
+     1005.8,
+     1227.2
+    ],
+    "source_tab": "lower_city_east",
+    "_containers": 62,
+    "_covered": 62
+   }
+  ],
+  "cazador": [
+   {
+    "title": "Side Rooms",
+    "level": "CTY_Main_A",
+    "char_building": [
+     "*"
+    ],
+    "patch_building": [
+     "*"
+    ],
+    "world_bbox_override": [
+     -765.0,
+     1043.0,
+     -705.2,
+     1093.2
+    ],
+    "world_bbox_filter": [
+     -763.0,
+     1045.0,
+     -707.2,
+     1091.2
+    ],
+    "source_tab": "cazador",
+    "_containers": 62,
+    "_covered": 62
+   }
+  ],
+  "iron_throne": [
+   {
+    "title": "Dock Warehouse",
+    "level": "CTY_Main_A",
+    "char_building": [
+     "*"
+    ],
+    "patch_building": [
+     "*"
+    ],
+    "world_bbox_override": [
+     -1105.5,
+     281.6,
+     -1008.3,
+     378.2
+    ],
+    "world_bbox_filter": [
+     -1100.3,
+     286.7,
+     -1013.5,
+     373.0
+    ],
+    "source_tab": "iron_throne",
+    "_containers": 106,
+    "_covered": 106
+   }
+  ]
+ },
+ "annex": {
+  "act1_interiors": {
+   "level": "WLD_Main_A",
+   "auto_grid": true,
+   "zones": [
+    {
+     "title": "Dank Crypt",
+     "level": "WLD_Main_A",
+     "char_building": [
+      "*"
+     ],
+     "patch_building": [
+      "*"
+     ],
+     "world_bbox_override": [
+      270.0,
+      302.5,
+      310.1,
+      366.7
+     ],
+     "world_bbox_filter": [
+      272.0,
+      304.5,
+      308.1,
+      364.7
+     ],
+     "source_tab": "crypt",
+     "_containers": 7,
+     "_covered": 7
+    },
+    {
+     "title": "Emerald Grove",
+     "level": "WLD_Main_A",
+     "char_building": [
+      "*"
+     ],
+     "patch_building": [
+      "*"
+     ],
+     "world_bbox_override": [
+      -73.8,
+      44.6,
+      -35.5,
+      89.5
+     ],
+     "world_bbox_filter": [
+      -71.8,
+      46.6,
+      -37.5,
+      87.5
+     ],
+     "source_tab": "grove",
+     "_containers": 36,
+     "_covered": 36
+    },
+    {
+     "title": "Emerald Grove 2",
+     "level": "WLD_Main_A",
+     "char_building": [
+      "*"
+     ],
+     "patch_building": [
+      "*"
+     ],
+     "world_bbox_override": [
+      166.8,
+      69.9,
+      194.1,
+      93.9
+     ],
+     "world_bbox_filter": [
+      168.8,
+      72.6,
+      192.1,
+      91.3
+     ],
+     "source_tab": "grove",
+     "_containers": 15,
+     "_covered": 15
+    },
+    {
+     "title": "Emerald Grove 3",
+     "level": "WLD_Main_A",
+     "char_building": [
+      "*"
+     ],
+     "patch_building": [
+      "*"
+     ],
+     "world_bbox_override": [
+      32.8,
+      56.8,
+      101.0,
+      88.6
+     ],
+     "world_bbox_filter": [
+      34.8,
+      58.8,
+      99.0,
+      86.6
+     ],
+     "source_tab": "grove",
+     "_containers": 10,
+     "_covered": 10
+    },
+    {
+     "title": "Grove Interiors",
+     "level": "WLD_Main_A",
+     "char_building": [
+      "*"
+     ],
+     "patch_building": [
+      "*"
+     ],
+     "world_bbox_override": [
+      -458.8,
+      -211.6,
+      -414.0,
+      -171.7
+     ],
+     "world_bbox_filter": [
+      -456.8,
+      -209.6,
+      -416.0,
+      -173.7
+     ],
+     "source_tab": "grove",
+     "_containers": 10,
+     "_covered": 10
+    },
+    {
+     "title": "Village Cellars",
+     "level": "WLD_Main_A",
+     "char_building": [
+      "*"
+     ],
+     "patch_building": [
+      "*"
+     ],
+     "world_bbox_override": [
+      -723.8,
+      -423.0,
+      -693.8,
+      -343.2
+     ],
+     "world_bbox_filter": [
+      -721.8,
+      -419.8,
+      -695.8,
+      -346.4
+     ],
+     "source_tab": "blighted_village",
+     "_containers": 36,
+     "_covered": 36
+    },
+    {
+     "title": "Owlbear Cave",
+     "level": "WLD_Main_A",
+     "char_building": [
+      "*"
+     ],
+     "patch_building": [
+      "*"
+     ],
+     "world_bbox_override": [
+      -366.7,
+      -143.6,
+      -320.3,
+      -94.6
+     ],
+     "world_bbox_filter": [
+      -364.7,
+      -141.6,
+      -322.3,
+      -96.6
+     ],
+     "source_tab": "blighted_village",
+     "_containers": 3,
+     "_covered": 3
+    },
+    {
+     "title": "Sunlit Wetlands",
+     "level": "WLD_Main_A",
+     "char_building": [
+      "*"
+     ],
+     "patch_building": [
+      "*"
+     ],
+     "world_bbox_override": [
+      -374.6,
+      535.5,
+      -280.5,
+      603.9
+     ],
+     "world_bbox_filter": [
+      -369.7,
+      537.5,
+      -285.3,
+      601.9
+     ],
+     "source_tab": "hag",
+     "_containers": 8,
+     "_covered": 8
+    },
+    {
+     "title": "Sunlit Wetlands 2",
+     "level": "WLD_Main_A",
+     "char_building": [
+      "*"
+     ],
+     "patch_building": [
+      "*"
+     ],
+     "world_bbox_override": [
+      -424.1,
+      589.1,
+      -400.1,
+      613.1
+     ],
+     "world_bbox_filter": [
+      -419.7,
+      592.4,
+      -404.6,
+      609.8
+     ],
+     "source_tab": "hag",
+     "_containers": 3,
+     "_covered": 3
+    },
+    {
+     "title": "Underdark",
+     "level": "WLD_Main_A",
+     "char_building": [
+      "*"
+     ],
+     "patch_building": [
+      "*"
+     ],
+     "world_bbox_override": [
+      -443.0,
+      218.4,
+      -388.4,
+      344.4
+     ],
+     "world_bbox_filter": [
+      -441.0,
+      226.9,
+      -390.4,
+      335.9
+     ],
+     "source_tab": "underdark",
+     "_containers": 9,
+     "_covered": 9
+    },
+    {
+     "title": "Gith Creche",
+     "level": "WLD_Main_A",
+     "char_building": [
+      "*"
+     ],
+     "patch_building": [
+      "*"
+     ],
+     "world_bbox_override": [
+      33.1,
+      -20.7,
+      138.0,
+      100.4
+     ],
+     "world_bbox_filter": [
+      39.2,
+      -12.7,
+      131.9,
+      92.4
+     ],
+     "source_tab": "monastery",
+     "_containers": 51,
+     "_covered": 48
+    }
+   ]
+  },
+  "act2_interiors": {
+   "level": "SCL_Main_A",
+   "auto_grid": true,
+   "zones": [
+    {
+     "title": "Reithwin Tollhouse Secret Cave",
+     "level": "SCL_Main_A",
+     "char_building": [
+      "*"
+     ],
+     "patch_building": [
+      "*"
+     ],
+     "world_bbox_override": [
+      287.1,
+      -734.6,
+      330.9,
+      -693.3
+     ],
+     "world_bbox_filter": [
+      289.1,
+      -732.6,
+      328.9,
+      -695.3
+     ],
+     "source_tab": "west_act2",
+     "_containers": 57,
+     "_covered": 57
+    },
+    {
+     "title": "Mason's Guild Basement",
+     "level": "SCL_Main_A",
+     "char_building": [
+      "*"
+     ],
+     "patch_building": [
+      "*"
+     ],
+     "world_bbox_override": [
+      94.8,
+      -707.3,
+      155.2,
+      -671.7
+     ],
+     "world_bbox_filter": [
+      96.8,
+      -705.3,
+      153.2,
+      -673.7
+     ],
+     "source_tab": "west_act2",
+     "_containers": 21,
+     "_covered": 21
+    },
+    {
+     "title": "Reithwin Town Shrine",
+     "level": "SCL_Main_A",
+     "char_building": [
+      "*"
+     ],
+     "patch_building": [
+      "*"
+     ],
+     "world_bbox_override": [
+      211.3,
+      -858.7,
+      256.8,
+      -828.2
+     ],
+     "world_bbox_filter": [
+      213.3,
+      -856.7,
+      254.8,
+      -830.2
+     ],
+     "source_tab": "west_act2",
+     "_containers": 9,
+     "_covered": 9
+    },
+    {
+     "title": "Moonrise Towers Prison",
+     "level": "SCL_Main_A",
+     "char_building": [
+      "*"
+     ],
+     "patch_building": [
+      "*"
+     ],
+     "world_bbox_override": [
+      558.0,
+      -607.5,
+      610.1,
+      -558.9
+     ],
+     "world_bbox_filter": [
+      560.0,
+      -605.5,
+      608.1,
+      -560.9
+     ],
+     "source_tab": "moonrise",
+     "_containers": 23,
+     "_covered": 23
+    }
+   ]
+  },
+  "act3_interiors": {
+   "level": "BGO_Main_A",
+   "auto_grid": true,
+   "zones": [
+    {
+     "title": "Smugglers Cave Basement",
+     "level": "BGO_Main_A",
+     "char_building": [
+      "*"
+     ],
+     "patch_building": [
+      "*"
+     ],
+     "world_bbox_override": [
+      -1373.0,
+      -870.9,
+      -1319.9,
+      -812.4
+     ],
+     "world_bbox_filter": [
+      -1371.0,
+      -868.9,
+      -1321.9,
+      -814.4
+     ],
+     "source_tab": "rivington",
+     "_containers": 29,
+     "_covered": 29
+    },
+    {
+     "title": "Ironhand",
+     "level": "BGO_Main_A",
+     "char_building": [
+      "*"
+     ],
+     "patch_building": [
+      "*"
+     ],
+     "world_bbox_override": [
+      -274.1,
+      -1093.7,
+      -231.3,
+      -1054.4
+     ],
+     "world_bbox_filter": [
+      -272.1,
+      -1091.7,
+      -233.3,
+      -1056.4
+     ],
+     "source_tab": "rivington",
+     "_containers": 29,
+     "_covered": 29
+    },
+    {
+     "title": "Merchant House Basement",
+     "level": "BGO_Main_A",
+     "char_building": [
+      "*"
+     ],
+     "patch_building": [
+      "*"
+     ],
+     "world_bbox_override": [
+      327.4,
+      -1008.1,
+      376.2,
+      -966.7
+     ],
+     "world_bbox_filter": [
+      329.4,
+      -1006.1,
+      374.2,
+      -968.7
+     ],
+     "source_tab": "rivington",
+     "_containers": 29,
+     "_covered": 29
+    },
+    {
+     "title": "Windmill Cellar",
+     "level": "BGO_Main_A",
+     "char_building": [
+      "*"
+     ],
+     "patch_building": [
+      "*"
+     ],
+     "world_bbox_override": [
+      -248.8,
+      -818.9,
+      -218.3,
+      -787.0
+     ],
+     "world_bbox_filter": [
+      -246.8,
+      -816.9,
+      -220.3,
+      -789.0
+     ],
+     "source_tab": "rivington",
+     "_containers": 21,
+     "_covered": 21
+    },
+    {
+     "title": "Rivington Well",
+     "level": "BGO_Main_A",
+     "char_building": [
+      "*"
+     ],
+     "patch_building": [
+      "*"
+     ],
+     "world_bbox_override": [
+      -1.4,
+      -885.6,
+      50.1,
+      -838.8
+     ],
+     "world_bbox_filter": [
+      0.6,
+      -883.6,
+      48.1,
+      -840.8
+     ],
+     "source_tab": "rivington",
+     "_containers": 5,
+     "_covered": 5
+    },
+    {
+     "title": "Wyrmsway",
+     "level": "BGO_Main_A",
+     "char_building": [
+      "*"
+     ],
+     "patch_building": [
+      "*"
+     ],
+     "world_bbox_override": [
+      -954.4,
+      -993.1,
+      -902.0,
+      -946.5
+     ],
+     "world_bbox_filter": [
+      -952.4,
+      -991.1,
+      -904.0,
+      -948.5
+     ],
+     "source_tab": "wyrms_crossing",
+     "_containers": 14,
+     "_covered": 14
+    },
+    {
+     "title": "Sorcerous Sundries",
+     "level": "CTY_Main_A",
+     "char_building": [
+      "*"
+     ],
+     "patch_building": [
+      "*"
+     ],
+     "world_bbox_override": [
+      303.8,
+      982.3,
+      429.4,
+      1064.2
+     ],
+     "world_bbox_filter": [
+      312.3,
+      985.8,
+      420.9,
+      1060.8
+     ],
+     "source_tab": "sorcerous_sundries",
+     "_containers": 29,
+     "_covered": 29
+    },
+    {
+     "title": "Sorcerous Sundries 2",
+     "level": "CTY_Main_A",
+     "char_building": [
+      "*"
+     ],
+     "patch_building": [
+      "*"
+     ],
+     "world_bbox_override": [
+      -1621.0,
+      98.0,
+      -1594.3,
+      122.0
+     ],
+     "world_bbox_filter": [
+      -1619.0,
+      100.1,
+      -1596.3,
+      120.0
+     ],
+     "source_tab": "sorcerous_sundries",
+     "_containers": 3,
+     "_covered": 3
+    },
+    {
+     "title": "House of Grief",
+     "level": "CTY_Main_A",
+     "char_building": [
+      "*"
+     ],
+     "patch_building": [
+      "*"
+     ],
+     "world_bbox_override": [
+      -283.1,
+      -12.0,
+      -250.4,
+      20.0
+     ],
+     "world_bbox_filter": [
+      -281.1,
+      -10.0,
+      -252.4,
+      18.0
+     ],
+     "source_tab": "house_of_grief",
+     "_containers": 4,
+     "_covered": 4
+    }
+   ]
+  },
+  "lower_city_interiors": {
+   "level": "CTY_Main_A",
+   "auto_grid": true,
+   "zones": [
+    {
+     "title": "Baldurs Mouth Basement",
+     "level": "CTY_Main_A",
+     "char_building": [
+      "*"
+     ],
+     "patch_building": [
+      "*"
+     ],
+     "world_bbox_override": [
+      -1046.3,
+      1003.4,
+      -989.2,
+      1076.1
+     ],
+     "world_bbox_filter": [
+      -1044.3,
+      1005.8,
+      -991.2,
+      1073.7
+     ],
+     "source_tab": "lower_city_east",
+     "_containers": 58,
+     "_covered": 58
+    },
+    {
+     "title": "Golbraith Basement",
+     "level": "CTY_Main_A",
+     "char_building": [
+      "*"
+     ],
+     "patch_building": [
+      "*"
+     ],
+     "world_bbox_override": [
+      -2363.3,
+      800.1,
+      -2315.0,
+      845.8
+     ],
+     "world_bbox_filter": [
+      -2361.3,
+      802.1,
+      -2317.0,
+      843.8
+     ],
+     "source_tab": "lower_city_east",
+     "_containers": 49,
+     "_covered": 49
+    },
+    {
+     "title": "Jaheira Basement",
+     "level": "CTY_Main_A",
+     "char_building": [
+      "*"
+     ],
+     "patch_building": [
+      "*"
+     ],
+     "world_bbox_override": [
+      -1586.5,
+      966.6,
+      -1513.0,
+      1039.3
+     ],
+     "world_bbox_filter": [
+      -1584.0,
+      969.0,
+      -1515.5,
+      1036.9
+     ],
+     "source_tab": "lower_city_east",
+     "_containers": 43,
+     "_covered": 43
+    },
+    {
+     "title": "Bonecloaks Apothecary Basement",
+     "level": "CTY_Main_A",
+     "char_building": [
+      "*"
+     ],
+     "patch_building": [
+      "*"
+     ],
+     "world_bbox_override": [
+      1403.0,
+      823.0,
+      1468.3,
+      867.7
+     ],
+     "world_bbox_filter": [
+      1405.0,
+      825.0,
+      1466.3,
+      865.7
+     ],
+     "source_tab": "lower_city_east",
+     "_containers": 42,
+     "_covered": 42
+    },
+    {
+     "title": "Heapside Prison",
+     "level": "CTY_Main_A",
+     "char_building": [
+      "*"
+     ],
+     "patch_building": [
+      "*"
+     ],
+     "world_bbox_override": [
+      -1297.4,
+      733.9,
+      -1254.8,
+      794.3
+     ],
+     "world_bbox_filter": [
+      -1295.4,
+      735.9,
+      -1256.8,
+      792.3
+     ],
+     "source_tab": "lower_city_east",
+     "_containers": 37,
+     "_covered": 37
+    },
+    {
+     "title": "Rainforest Basement",
+     "level": "CTY_Main_A",
+     "char_building": [
+      "*"
+     ],
+     "patch_building": [
+      "*"
+     ],
+     "world_bbox_override": [
+      1402.8,
+      1038.1,
+      1440.6,
+      1076.8
+     ],
+     "world_bbox_filter": [
+      1404.8,
+      1040.1,
+      1438.6,
+      1074.8
+     ],
+     "source_tab": "lower_city_east",
+     "_containers": 37,
+     "_covered": 37
+    },
+    {
+     "title": "Peartree Basement",
+     "level": "CTY_Main_A",
+     "char_building": [
+      "*"
+     ],
+     "patch_building": [
+      "*"
+     ],
+     "world_bbox_override": [
+      550.3,
+      739.8,
+      585.9,
+      777.4
+     ],
+     "world_bbox_filter": [
+      552.3,
+      741.8,
+      583.9,
+      775.4
+     ],
+     "source_tab": "lower_city_east",
+     "_containers": 36,
+     "_covered": 36
+    },
+    {
+     "title": "Hag Survivor Basement",
+     "level": "CTY_Main_A",
+     "char_building": [
+      "*"
+     ],
+     "patch_building": [
+      "*"
+     ],
+     "world_bbox_override": [
+      773.8,
+      734.5,
+      807.4,
+      774.9
+     ],
+     "world_bbox_filter": [
+      775.8,
+      736.5,
+      805.4,
+      772.9
+     ],
+     "source_tab": "lower_city_east",
+     "_containers": 35,
+     "_covered": 35
+    },
+    {
+     "title": "Gardener Store Room",
+     "level": "CTY_Main_A",
+     "char_building": [
+      "*"
+     ],
+     "patch_building": [
+      "*"
+     ],
+     "world_bbox_override": [
+      -1615.3,
+      499.0,
+      -1583.0,
+      530.2
+     ],
+     "world_bbox_filter": [
+      -1613.3,
+      501.0,
+      -1585.0,
+      528.2
+     ],
+     "source_tab": "lower_city_east",
+     "_containers": 34,
+     "_covered": 34
+    },
+    {
+     "title": "Guildhall Basement",
+     "level": "CTY_Main_A",
+     "char_building": [
+      "*"
+     ],
+     "patch_building": [
+      "*"
+     ],
+     "world_bbox_override": [
+      -2352.6,
+      1046.0,
+      -2318.3,
+      1074.3
+     ],
+     "world_bbox_filter": [
+      -2350.6,
+      1048.0,
+      -2320.3,
+      1072.3
+     ],
+     "source_tab": "lower_city_east",
+     "_containers": 33,
+     "_covered": 33
+    },
+    {
+     "title": "Blushing Mermaid Cellar",
+     "level": "CTY_Main_A",
+     "char_building": [
+      "*"
+     ],
+     "patch_building": [
+      "*"
+     ],
+     "world_bbox_override": [
+      -2369.6,
+      -162.3,
+      -2310.0,
+      -79.4
+     ],
+     "world_bbox_filter": [
+      -2367.6,
+      -158.7,
+      -2312.0,
+      -83.0
+     ],
+     "source_tab": "lower_city_east",
+     "_containers": 32,
+     "_covered": 32
+    },
+    {
+     "title": "Deviland Smith Basement",
+     "level": "CTY_Main_A",
+     "char_building": [
+      "*"
+     ],
+     "patch_building": [
+      "*"
+     ],
+     "world_bbox_override": [
+      368.5,
+      754.6,
+      411.8,
+      788.4
+     ],
+     "world_bbox_filter": [
+      370.5,
+      756.6,
+      409.8,
+      786.4
+     ],
+     "source_tab": "lower_city_east",
+     "_containers": 32,
+     "_covered": 32
+    },
+    {
+     "title": "General Store Basement",
+     "level": "CTY_Main_A",
+     "char_building": [
+      "*"
+     ],
+     "patch_building": [
+      "*"
+     ],
+     "world_bbox_override": [
+      -1969.9,
+      601.7,
+      -1934.6,
+      636.5
+     ],
+     "world_bbox_filter": [
+      -1967.9,
+      603.7,
+      -1936.6,
+      634.5
+     ],
+     "source_tab": "lower_city_east",
+     "_containers": 29,
+     "_covered": 29
+    },
+    {
+     "title": "Counting House Vault",
+     "level": "CTY_Main_A",
+     "char_building": [
+      "*"
+     ],
+     "patch_building": [
+      "*"
+     ],
+     "world_bbox_override": [
+      -1003.1,
+      750.9,
+      -935.1,
+      818.1
+     ],
+     "world_bbox_filter": [
+      -1001.1,
+      752.9,
+      -937.1,
+      816.1
+     ],
+     "source_tab": "lower_city_east",
+     "_containers": 26,
+     "_covered": 26
+    },
+    {
+     "title": "Fire Works Basement",
+     "level": "CTY_Main_A",
+     "char_building": [
+      "*"
+     ],
+     "patch_building": [
+      "*"
+     ],
+     "world_bbox_override": [
+      510.2,
+      1046.5,
+      552.1,
+      1086.4
+     ],
+     "world_bbox_filter": [
+      512.2,
+      1048.5,
+      550.1,
+      1084.4
+     ],
+     "source_tab": "lower_city_east",
+     "_containers": 25,
+     "_covered": 25
+    },
+    {
+     "title": "Music Store Basement",
+     "level": "CTY_Main_A",
+     "char_building": [
+      "*"
+     ],
+     "patch_building": [
+      "*"
+     ],
+     "world_bbox_override": [
+      -2400.7,
+      -465.6,
+      -2359.7,
+      -423.8
+     ],
+     "world_bbox_filter": [
+      -2398.7,
+      -463.6,
+      -2361.7,
+      -425.8
+     ],
+     "source_tab": "lower_city_east",
+     "_containers": 25,
+     "_covered": 25
+    },
+    {
+     "title": "Philgrave Basement",
+     "level": "CTY_Main_A",
+     "char_building": [
+      "*"
+     ],
+     "patch_building": [
+      "*"
+     ],
+     "world_bbox_override": [
+      -1526.5,
+      -150.6,
+      -1491.3,
+      -117.4
+     ],
+     "world_bbox_filter": [
+      -1524.5,
+      -148.6,
+      -1493.3,
+      -119.4
+     ],
+     "source_tab": "lower_city_east",
+     "_containers": 25,
+     "_covered": 25
+    },
+    {
+     "title": "Figaro Basement",
+     "level": "CTY_Main_A",
+     "char_building": [
+      "*"
+     ],
+     "patch_building": [
+      "*"
+     ],
+     "world_bbox_override": [
+      -2353.2,
+      1274.9,
+      -2319.0,
+      1314.1
+     ],
+     "world_bbox_filter": [
+      -2351.2,
+      1276.9,
+      -2321.0,
+      1312.1
+     ],
+     "source_tab": "lower_city_east",
+     "_containers": 24,
+     "_covered": 24
+    },
+    {
+     "title": "Blood Merchant Lab",
+     "level": "CTY_Main_A",
+     "char_building": [
+      "*"
+     ],
+     "patch_building": [
+      "*"
+     ],
+     "world_bbox_override": [
+      -1881.1,
+      -442.5,
+      -1846.6,
+      -409.1
+     ],
+     "world_bbox_filter": [
+      -1879.1,
+      -440.5,
+      -1848.6,
+      -411.1
+     ],
+     "source_tab": "lower_city_east",
+     "_containers": 23,
+     "_covered": 23
+    },
+    {
+     "title": "Tabernacle Basement",
+     "level": "CTY_Main_A",
+     "char_building": [
+      "*"
+     ],
+     "patch_building": [
+      "*"
+     ],
+     "world_bbox_override": [
+      771.7,
+      1146.2,
+      810.9,
+      1175.9
+     ],
+     "world_bbox_filter": [
+      773.7,
+      1148.2,
+      808.9,
+      1173.9
+     ],
+     "source_tab": "lower_city_east",
+     "_containers": 17,
+     "_covered": 17
+    },
+    {
+     "title": "Groundkeeper Basement",
+     "level": "CTY_Main_A",
+     "char_building": [
+      "*"
+     ],
+     "patch_building": [
+      "*"
+     ],
+     "world_bbox_override": [
+      781.9,
+      980.2,
+      810.4,
+      1011.8
+     ],
+     "world_bbox_filter": [
+      783.9,
+      982.2,
+      808.4,
+      1009.8
+     ],
+     "source_tab": "lower_city_east",
+     "_containers": 16,
+     "_covered": 16
+    },
+    {
+     "title": "Highberrys cellar",
+     "level": "CTY_Main_A",
+     "char_building": [
+      "*"
+     ],
+     "patch_building": [
+      "*"
+     ],
+     "world_bbox_override": [
+      -599.7,
+      752.0,
+      -565.4,
+      786.1
+     ],
+     "world_bbox_filter": [
+      -597.7,
+      754.0,
+      -567.4,
+      784.1
+     ],
+     "source_tab": "lower_city_east",
+     "_containers": 12,
+     "_covered": 12
+    },
+    {
+     "title": "Murder Tribunal",
+     "level": "CTY_Main_A",
+     "char_building": [
+      "*"
+     ],
+     "patch_building": [
+      "*"
+     ],
+     "world_bbox_override": [
+      50.8,
+      964.6,
+      117.7,
+      1018.7
+     ],
+     "world_bbox_filter": [
+      52.8,
+      966.6,
+      115.7,
+      1016.7
+     ],
+     "source_tab": "lower_city_east",
+     "_containers": 6,
+     "_covered": 6
+    }
+   ]
+  }
+ }
+}

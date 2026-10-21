@@ -7,19 +7,19 @@
     },
     {
         "name": "beach",
-        "location_size": 8,
+        "location_size": 16,
         "location_border_thickness": 2,
         "img": "images/maps/beach.png"
     },
     {
         "name": "crypt",
-        "location_size": 8,
+        "location_size": 16,
         "location_border_thickness": 2,
         "img": "images/maps/crypt.png"
     },
     {
         "name": "grove",
-        "location_size": 8,
+        "location_size": 16,
         "location_border_thickness": 2,
         "img": "images/maps/grove.png"
     },
@@ -43,13 +43,13 @@
     },
     {
         "name": "hag",
-        "location_size": 8,
+        "location_size": 16,
         "location_border_thickness": 2,
         "img": "images/maps/hag.png"
     },
     {
         "name": "underdark",
-        "location_size": 8,
+        "location_size": 16,
         "location_border_thickness": 2,
         "img": "images/maps/underdark.png"
     },
@@ -70,6 +70,12 @@
         "location_size": 16,
         "location_border_thickness": 2,
         "img": "images/maps/creche.png"
+    },
+    {
+        "name": "act1_interiors",
+        "location_size": 16,
+        "location_border_thickness": 2,
+        "img": "images/maps/act1_interiors.png"
     },
     {
         "name": "east_act2",
@@ -106,6 +112,12 @@
         "location_size": 16,
         "location_border_thickness": 2,
         "img": "images/maps/mindflayer.png"
+    },
+    {
+        "name": "act2_interiors",
+        "location_size": 16,
+        "location_border_thickness": 2,
+        "img": "images/maps/act2_interiors.png"
     },
     {
         "name": "astral",
@@ -184,6 +196,18 @@
         "location_size": 16,
         "location_border_thickness": 2,
         "img": "images/maps/endgame.png"
+    },
+    {
+        "name": "lower_city_interiors",
+        "location_size": 16,
+        "location_border_thickness": 2,
+        "img": "images/maps/lower_city_interiors.png"
+    },
+    {
+        "name": "act3_interiors",
+        "location_size": 16,
+        "location_border_thickness": 2,
+        "img": "images/maps/act3_interiors.png"
     },
     {
         "name": "act1_overworld",

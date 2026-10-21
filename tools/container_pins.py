@@ -32,15 +32,15 @@ from pathlib import Path
 
 CLUSTER_CAP = 25
 LOOT = ("chest", "bag")   # category class 1; "clutter" is class 2
-ICON = {
-    "chest": "container_chest",
-    "bag": "container_bag",
-    "clutter": "container_clutter",
-}
+# One icon and one pin look for every container, whatever its category or
+# however many a pin holds, so a container pin always reads as "container".
+ICON = "container_chest"
 KIND_LABEL = {"loot": "Chests & bags", "clutter": "Clutter"}
-# PopTracker pin shapes (UT ignores shape and draws squares). Kills and quests
-# keep the default rect.
-KIND_SHAPE = {"loot": "diamond", "clutter": "trapezoid"}
+# PopTracker pin shapes, one per check type: kills keep the default rect,
+# quests are trapezoids (generate_pack.py), containers are diamonds. UT ignores
+# shape and draws squares. PopTracker has no circle shape.
+SHAPE = "diamond"
+PIN_FRAC = 0.75   # container pins are 75% of a kill pin, at every cluster size
 
 
 def load_container_module(apworld_path: Path):
@@ -88,6 +88,14 @@ def _zone_for(zones: list[dict], x: float, z: float) -> dict | None:
     framed = [zn for zn in zones if holds(zn["world_bbox"])]
     pick = routed or framed
     return min(pick, key=area) if pick else None
+
+
+def zone_for_row(zones: list[dict], row: dict) -> dict | None:
+    """_zone_for, limited to the zones this row may use: a zone that names a
+    `source_tab` (an Interiors zone) only takes containers from that tab."""
+    tab = row.get("rule_tab")
+    usable = [zn for zn in zones if zn.get("source_tab") in (None, tab)]
+    return _zone_for(usable, row["x"], row["z"])
 
 
 def _project(x: float, z: float, zone: dict) -> tuple[float, float]:
@@ -159,7 +167,7 @@ def _panel_slots(n: int, quests: int, dims, pin: int, quest_slot_pos) -> list[tu
     top = (last_quest_y + quest_slot // 2) if last_quest_y is not None else first[1] - quest_slot // 2
     left, right, bottom = first[0] - quest_slot // 2, w - (first[0] - quest_slot // 2), h - 2
     slot = quest_slot
-    small = max(6, int(round(pin * 0.6)))
+    small = max(6, int(round(pin * PIN_FRAC)))
     while slot > small + 2:
         cols = max(1, (right - left) // slot)
         rows = max(0, (bottom - top) // slot)
@@ -187,8 +195,9 @@ def build_container_children(
 ) -> tuple[dict[str, list[dict]], list[tuple[int, str, str, str]], dict]:
     """Return ({tab: [location child, ...]}, [(ap_id, tab, child_name, section_name)], stats).
 
-    `rule_for(logic_slug, tab_slug)` gives the access_rule string (or None) for a
-    container whose logic region differs from its tab. `used_xy[tab]` holds pixel
+    `rule_for(logic_slug, own_tab_slug)` gives a pin's access_rule string (or
+    None); a row's own tab is its "rule_tab" (it differs from `tab` on an
+    Interiors tab). `used_xy[tab]` holds pixel
     coords already taken on that map (kills, quests) and is updated in place.
     """
     children: dict[str, list[dict]] = {}
@@ -199,15 +208,18 @@ def build_container_children(
         zones = projections.get("regions", {}).get(tab, {}).get("zones", [])
         pin = map_size_for(tab)
         used = used_xy.setdefault(tab, set())
-        groups: dict[tuple, list] = {}     # (logic, kind) -> [(px, py, row)]
-        panel: dict[tuple, list] = {}      # (logic, kind, level) -> [row]
+        # Keys carry the container's own tab (rule_tab) so an Interiors pin
+        # never mixes containers that get different rules.
+        groups: dict[tuple, list] = {}     # (logic, rule_tab, kind) -> [(px, py, row)]
+        panel: dict[tuple, list] = {}      # (logic, rule_tab, kind, level) -> [row]
         for r in rows:
-            zn = _zone_for(zones, r["x"], r["z"])
+            rt = r.get("rule_tab", tab)
+            zn = zone_for_row(zones, {**r, "rule_tab": rt})
             if zn is None:
-                panel.setdefault((r["logic"], r["kind"], r["level"]), []).append(r)
+                panel.setdefault((r["logic"], rt, r["kind"], r["level"]), []).append(r)
                 continue
             px, py = _project(r["x"], r["z"], zn)
-            groups.setdefault((r["logic"], r["kind"]), []).append((px, py, r))
+            groups.setdefault((r["logic"], rt, r["kind"]), []).append((px, py, r))
 
         pins: list[tuple[tuple, int, int, list[dict], bool]] = []
         for key in sorted(groups):
@@ -228,7 +240,7 @@ def build_container_children(
                     pins.append((key, int(round(x)), int(round(y)), [q[2] for q in piece], False))
 
         dims = map_dims_for(tab)
-        pieces = [((key[0], key[1]), [q[2] for q in piece])
+        pieces = [((key[0], key[1], key[2]), [q[2] for q in piece])
                   for key in sorted(panel)
                   for piece in _chunks([(0, 0, r) for r in sorted(panel[key], key=lambda r: r["id"])],
                                        CLUSTER_CAP)]
@@ -239,7 +251,7 @@ def build_container_children(
         out = []
         name_count: dict[str, int] = {}
         w, h = dims
-        for (logic, kind), x, y, members, in_panel in pins:
+        for (logic, rule_tab, kind), x, y, members, in_panel in pins:
             x = max(1, min(w - 2, x))
             y = max(1, min(h - 2, y))
             x, y = _free_pixel(x, y, used, w, h)   # UT keys pins by exact pixel
@@ -256,23 +268,18 @@ def build_container_children(
                 sname = sanitize(m["name"])
                 sections.append({
                     "name": sname,
-                    "chest_unopened_img": f"images/items/{ICON[m['category']]}.png",
-                    "chest_opened_img": f"images/items/{ICON[m['category']]}_opened.png",
+                    "chest_unopened_img": f"images/items/{ICON}.png",
+                    "chest_opened_img": f"images/items/{ICON}_opened.png",
                 })
                 id_map.append((m["id"], tab, name, sname))
-            # Container pins run smaller than kill pins (60% for a single
-            # container, up to 100% at the cap), so the much denser container
-            # layer doesn't bury the kills. Panel pins sit on a tight grid
-            # and keep the small size.
-            frac = 0.6 if in_panel else 0.6 + 0.4 * min(len(members), CLUSTER_CAP) / CLUSTER_CAP
-            size = max(6, int(round(pin * frac)))
+            size = max(6, int(round(pin * PIN_FRAC)))
             child = {
                 "name": name,
                 "sections": sections,
                 "visibility_rules": ["containersanity" if kind == "loot" else "containersanity,show_clutter"],
-                "map_locations": [{"map": tab, "x": x, "y": y, "size": size, "shape": KIND_SHAPE[kind]}],
+                "map_locations": [{"map": tab, "x": x, "y": y, "size": size, "shape": SHAPE}],
             }
-            rule = rule_for(logic, tab)
+            rule = rule_for(logic, rule_tab)
             if rule:
                 child["access_rules"] = [rule]
             out.append(child)

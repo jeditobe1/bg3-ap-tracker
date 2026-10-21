@@ -35,6 +35,7 @@ import argparse
 import ast
 import json
 import os
+import math
 import re
 from pathlib import Path
 
@@ -345,6 +346,10 @@ REGION_DEFINITIONS = {
                 "char_building": [None],
                 "patch_building": [""],
                 "world_bbox_filter": (60, -800, 200, -700),
+                # apworld v0.7.1 moved this zone's kills to a child region, so no
+                # chars route here any more; the override is the bbox it last
+                # rendered with (as goblin_camp's Shattered Sanctum does).
+                "world_bbox_override": (90.2, -755.3, 121.8, -748.2),
                 "cell": (1, 0, 1, 1),
             },
             {
@@ -443,6 +448,10 @@ REGION_DEFINITIONS = {
                 "char_building": [None],
                 "patch_building": [""],
                 "world_bbox_filter": (-100, 190, 0, 230),
+                # apworld v0.7.1 moved this zone's kills to a child region, so no
+                # chars route here any more; the override is the bbox it last
+                # rendered with (as goblin_camp's Shattered Sanctum does).
+                "world_bbox_override": (-90.5, 189.2, -28.1, 225.0),
                 "cell": (1, 0, 1, 1),
             },
             {
@@ -450,6 +459,10 @@ REGION_DEFINITIONS = {
                 "char_building": [None],
                 "patch_building": [""],
                 "world_bbox_filter": (-50, -720, 60, -670),
+                # apworld v0.7.1 moved this zone's kills to a child region, so no
+                # chars route here any more; the override is the bbox it last
+                # rendered with (as goblin_camp's Shattered Sanctum does).
+                "world_bbox_override": (3.2, -706.8, 40.7, -682.4),
                 "cell": (1, 1, 1, 1),
             },
         ],
@@ -843,6 +856,61 @@ REGION_DEFINITIONS.update(ACT3_REGION_DEFINITIONS)
 KILL_RE = re.compile(r"^Kill-(.+?)_([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})$")
 
 
+# Containersanity zones. tools/plan_container_zones.py writes
+# tools/container_zones.json from the apworld's container positions; it is
+# applied here, at render time only, so the planner always reads the
+# hand-maintained definitions above rather than its own output.
+CONTAINER_ZONES_PATH = TOOLS / "container_zones.json"
+# Interiors tabs: the canvas grows with the zone count so each cell stays
+# at least this big (and the canvas at least the standard 960x640).
+ANNEX_CELL_W, ANNEX_CELL_H = 240, 190
+
+
+def apply_container_zones(defs: dict) -> dict:
+    """Return a copy of `defs` with tools/container_zones.json applied."""
+    import copy
+    defs = copy.deepcopy(defs)
+    if not CONTAINER_ZONES_PATH.is_file():
+        return defs
+    plan = json.loads(CONTAINER_ZONES_PATH.read_text(encoding="utf-8"))
+    for slug, rd in plan.get("define", {}).items():
+        defs.setdefault(slug, rd)
+    for slug, by_title in plan.get("include", {}).items():
+        for z in defs[slug]["zones"]:
+            if z["title"] in by_title:
+                z["world_bbox_include"] = tuple(by_title[z["title"]])
+    for slug, extra in plan.get("extra_zones", {}).items():
+        rd = defs[slug]
+        grid = [z for z in rd["zones"] if z.get("inset") is None]
+        cells = [tuple(z.get("cell") or (i, 0, 1, 1)) for i, z in enumerate(grid)]
+        n_cols = max(c[0] + c[2] for c in cells)
+        n_rows = max(c[1] + c[3] for c in cells)
+        # New zones take a new right-hand column. Rows are subdivided so the
+        # column splits evenly among them without moving existing zones.
+        m = len(extra)
+        for z, (c, r, cs, rs) in zip(grid, cells):
+            z["cell"] = (c, r * m, cs, rs * m)
+        for j, ez in enumerate(extra):
+            z = {k: v for k, v in ez.items() if not k.startswith("_")}
+            z["cell"] = (n_cols, j * n_rows, 1, n_rows)
+            rd["zones"].append(z)
+    for slug, ad in plan.get("annex", {}).items():
+        rd = {k: v for k, v in ad.items() if k != "zones"}
+        zones = [{k: v for k, v in z.items() if not k.startswith("_")} for z in ad["zones"]]
+        n = len(zones)
+        cols = max(1, math.ceil(math.sqrt(n * 1.5)))
+        rows = math.ceil(n / cols)
+        for i, z in enumerate(zones):
+            z["cell"] = (i % cols, i // cols, 1, 1)
+        w = max(CANVAS_W, cols * ANNEX_CELL_W)
+        h = max(CANVAS_H, rows * ANNEX_CELL_H)
+        rd["canvas"] = (w, h)
+        rd["quest_panel"] = False
+        rd["zones"] = zones
+        defs[slug] = rd
+    return defs
+
+
 def load_apworld_indexes(apworld: Path) -> tuple[dict[str, str], dict[str, str]]:
     """Returns ({char_uuid: ap_location_name}, {ap_location_name: region_slug})."""
     src = (apworld / "bg3_locations.py").read_text(encoding="utf-8")
@@ -1078,10 +1146,12 @@ def main(argv: list[str] | None = None) -> int:
 
     dds_cache: Path = args.dds_cache
 
-    if args.region not in REGION_DEFINITIONS:
+    defs = apply_container_zones(REGION_DEFINITIONS)
+    if args.region not in defs:
         print(f"[err] no zone definition for region {args.region!r}")
         return 1
-    rd = REGION_DEFINITIONS[args.region]
+    rd = defs[args.region]
+    canvas_w, canvas_h = rd.get("canvas", (CANVAS_W, CANVAS_H))
     level = rd["level"]
 
     cache = json.loads((TOOLS / "bg3_npc_data.json").read_text(encoding="utf-8"))
@@ -1143,6 +1213,13 @@ def main(argv: list[str] | None = None) -> int:
             pad_w = max(1.0, x1 - x0) * ZONE_PAD_FRAC
             pad_h = max(1.0, z1 - z0) * ZONE_PAD_FRAC
             zone_bbox = (x0 - pad_w, z0 - pad_h, x1 + pad_w, z1 + pad_h)
+        # The frame before Containersanity widening, recorded so the planner
+        # can re-plan from it (see apply_container_zones).
+        base_bbox = zone_bbox
+        inc = z.get("world_bbox_include")
+        if inc is not None:
+            zone_bbox = (min(zone_bbox[0], inc[0]), min(zone_bbox[1], inc[1]),
+                         max(zone_bbox[2], inc[2]), max(zone_bbox[3], inc[3]))
 
         patches = [pp for pp in cache["patches"][z_level]
                    if matches_building(pp["building"], z["patch_building"])]
@@ -1165,7 +1242,8 @@ def main(argv: list[str] | None = None) -> int:
         patches = [pp for pp in patches if overlaps(pp)]
         print(f"  zone {z['title']:20s} {len(chars):>3d} chars, {len(patches):>3d} patches, "
               f"bbox x[{zone_bbox[0]:.0f},{zone_bbox[2]:.0f}] z[{zone_bbox[1]:.0f},{zone_bbox[3]:.0f}]")
-        zones_runtime.append({"def": z, "chars": chars, "patches": patches, "bbox": zone_bbox})
+        zones_runtime.append({"def": z, "chars": chars, "patches": patches, "bbox": zone_bbox,
+                              "base_bbox": base_bbox})
 
     if not zones_runtime:
         print(f"[err] no zones with chars")
@@ -1177,9 +1255,10 @@ def main(argv: list[str] | None = None) -> int:
     # behavior of goblin_camp / grymforge / blighted_village / creche
     # which haven't migrated to cells). Grid dimensions = max extent
     # across all zones' cells.
-    quest_h = int(round(CANVAS_H * QUEST_PANEL_FRAC))
-    zones_area_h = CANVAS_H - quest_h
-    final = Image.new("RGBA", (CANVAS_W, CANVAS_H), (18, 18, 22, 255))
+    # Interiors tabs hold no quests, so they skip the quest strip.
+    quest_h = int(round(canvas_h * QUEST_PANEL_FRAC)) if rd.get("quest_panel", True) else 0
+    zones_area_h = canvas_h - quest_h
+    final = Image.new("RGBA", (canvas_w, canvas_h), (18, 18, 22, 255))
     final_draw = ImageDraw.Draw(final)
 
     # Zones carrying an `inset` are drawn as a cutout on top of the grid
@@ -1203,7 +1282,7 @@ def main(argv: list[str] | None = None) -> int:
     n_cols = max(c[0] + c[2] for c in resolved_cells)
     n_rows = max(c[1] + c[3] for c in resolved_cells)
     # Per-cell pixel sizes (equal split with gaps between cells).
-    cell_w = (CANVAS_W - (n_cols - 1) * ZONE_GAP_PX) // n_cols
+    cell_w = (canvas_w - (n_cols - 1) * ZONE_GAP_PX) // n_cols
     cell_h = (zones_area_h - (n_rows - 1) * ZONE_GAP_PX) // n_rows
 
     # Per-zone projection metadata for projections.json. Each zone records
@@ -1240,10 +1319,13 @@ def main(argv: list[str] | None = None) -> int:
             "char_building": list(zr["def"]["char_building"]),
             "patch_building": list(zr["def"]["patch_building"]),
             "world_bbox": [float(v) for v in zr["bbox"]],
+            "world_bbox_base": [float(v) for v in zr["base_bbox"]],
             "canvas_rect": [origin_x, origin_y, zone_w_px, zone_h_px],
         }
         if zr["def"].get("patch_floors") is not None:
             zone_proj["patch_floors"] = list(zr["def"]["patch_floors"])
+        if zr["def"].get("source_tab"):
+            zone_proj["source_tab"] = zr["def"]["source_tab"]
         # world_bbox_filter restricts which chars route to this zone when
         # multiple zones share the same (level, char_building) -- e.g.
         # last_light's three zones all accept building=null but live at
@@ -1261,9 +1343,9 @@ def main(argv: list[str] | None = None) -> int:
     # cutout read as a callout rather than as part of the map underneath.
     for zr in inset_zones:
         fx, fy, fw, fh = zr["def"]["inset"]
-        ins_w = int(round(CANVAS_W * fw))
+        ins_w = int(round(canvas_w * fw))
         ins_h = int(round(zones_area_h * fh))
-        origin_x = int(round(CANVAS_W * fx))
+        origin_x = int(round(canvas_w * fx))
         origin_y = int(round(zones_area_h * fy)) + ZONE_LABEL_HEIGHT
         body_h = ins_h - ZONE_LABEL_HEIGHT
 
@@ -1292,6 +1374,7 @@ def main(argv: list[str] | None = None) -> int:
             "char_building": list(zr["def"]["char_building"]),
             "patch_building": list(zr["def"]["patch_building"]),
             "world_bbox": [float(v) for v in zr["bbox"]],
+            "world_bbox_base": [float(v) for v in zr["base_bbox"]],
             "canvas_rect": [origin_x, origin_y, ins_w, body_h],
         }
         if zr["def"].get("patch_floors") is not None:
@@ -1303,20 +1386,21 @@ def main(argv: list[str] | None = None) -> int:
         zone_projs.append(zone_proj)
 
     # Paint the quest panel strip at the bottom of the canvas.
-    quest_top = CANVAS_H - quest_h
-    final_draw.rectangle((0, quest_top, CANVAS_W - 1, CANVAS_H - 1),
-                         fill=(28, 24, 24, 255))
-    final_draw.line((0, quest_top, CANVAS_W - 1, quest_top),
-                    fill=(255, 255, 255, 200), width=1)
-    final_draw.text((10, quest_top + 6), "Quests",
-                    fill=(255, 255, 255, 220))
+    quest_top = canvas_h - quest_h
+    if quest_h:
+        final_draw.rectangle((0, quest_top, canvas_w - 1, canvas_h - 1),
+                             fill=(28, 24, 24, 255))
+        final_draw.line((0, quest_top, canvas_w - 1, quest_top),
+                        fill=(255, 255, 255, 200), width=1)
+        final_draw.text((10, quest_top + 6), "Quests",
+                        fill=(255, 255, 255, 220))
 
     out_png = PACK / "images" / "maps" / f"{args.region}.png"
     final.save(out_png)
     print(f"[done] wrote {out_png}")
 
     region_proj = {
-        "canvas": [CANVAS_W, CANVAS_H],
+        "canvas": [canvas_w, canvas_h],
         "zones": zone_projs,
     }
     proj_path = P.upsert_region_projection(PACK, args.region, region_proj)
