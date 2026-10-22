@@ -283,10 +283,9 @@ def build_container_children(
             child = {
                 "name": name,
                 "sections": sections,
-                # Visible in the Map View's "All" or "Containers" view.
-                "visibility_rules": [f"{base},{v}" for v in ("view_all", "view_containers")
-                                     for base in (["containersanity"] if kind == "loot"
-                                                  else ["containersanity,show_clutter"])],
+                # Show Containers / Show Clutter (main display) are display-only.
+                "visibility_rules": ["containersanity,show_containers" if kind == "loot"
+                                     else "containersanity,show_containers,show_clutter"],
                 "map_locations": [{"map": mp, "x": x, "y": y, "size": size, "shape": SHAPE}],
             }
             rule = rule_for(logic, rule_tab)

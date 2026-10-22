@@ -17,7 +17,7 @@
                                 "type": "itemgrid",
                                 "h_alignment": "center",
                                 "rows": [
-                                    [ "view_filter", "show_clutter" ]
+                                    [ "show_kills", "show_containers", "show_quests", "show_clutter" ]
                                 ]
                             }
                         },
