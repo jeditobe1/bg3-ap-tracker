@@ -96,7 +96,7 @@ ACT_GROUPS: dict[str, list[str]] = {
     "Prologue": ["tutorial"],
     "Act 1": [
         "beach", "crypt", "grove", "blighted_village",
-        "waukeen", "goblin_camp",
+        "waukeen", "zhentarim_basement", "goblin_camp",
         "hag", "underdark", "grymforge", "monastery", "creche",
     ],
     "Act 2": [
@@ -125,6 +125,19 @@ CONTAINER_ONLY_TABS: dict[str, tuple[str, str]] = {
 for _slug, (_act, _name) in CONTAINER_ONLY_TABS.items():
     ACT_GROUPS[_act].append(_slug)
     REGION_DISPLAY_NAMES[_slug] = _name
+# Tabs drawn over two maps. The tab's own map keeps its main area at full
+# size; the secondary map, shown as the next tab, holds the outlying zones.
+# Every check stays in the parent tab's location group (same rules, same
+# visibility); only its pin moves to whichever map its zone is on.
+MAP_SPLITS: dict[str, tuple[str, str]] = {
+    "lower_city_east": ("lower_city_areas", "Lower City Areas"),
+}
+for _parent, (_slug, _name) in MAP_SPLITS.items():
+    _group = next(v for v in ACT_GROUPS.values() if _parent in v)
+    _group.insert(_group.index(_parent) + 1, _slug)
+    REGION_DISPLAY_NAMES[_slug] = _name
+# Tabs with no apworld region of their own.
+MAP_ONLY_TABS: set[str] = set(CONTAINER_ONLY_TABS) | {s for s, _ in MAP_SPLITS.values()}
 # Interiors maps grow past 960px to fit their zones; their pins keep the
 # standard multi-zone size rather than scaling up with the canvas.
 PIN_SIZE_OVERRIDES: dict[str, int] = {slug: 16 for slug in CONTAINER_ONLY_TABS}
@@ -151,7 +164,6 @@ PIN_SIZE_OVERRIDES: dict[str, int] = {slug: 16 for slug in CONTAINER_ONLY_TABS}
 MERGED_INTO: dict[str, str] = {
     "underwell": "blighted_village",
     "inside_goblin_camp": "goblin_camp",
-    "zhentarim_basement": "waukeen",
     "masons_guild": "west_act2",
     "last_light_basement": "last_light",
     "moonrise_rooftop": "moonrise",
@@ -393,7 +405,7 @@ AP_ITEM_TOGGLE_IDS: dict[int, str] = {
 # requires all 16 fights (Act 1 + Act 2).
 ACT1_REGIONS: set[str] = {
     "tutorial", "beach", "crypt", "grove", "blighted_village", "goblin_camp",
-    "waukeen", "hag", "underdark", "grymforge", "monastery", "creche",
+    "waukeen", "zhentarim_basement", "hag", "underdark", "grymforge", "monastery", "creche",
 }
 ACT2_REGIONS: set[str] = {
     "east_act2", "west_act2", "last_light", "moonrise", "shar_gauntlet", "mindflayer",
@@ -764,7 +776,7 @@ def validate(locations: list[tuple[str, int, str]]) -> list[str]:
         by_region[slug] = by_region.get(slug, 0) + 1
     for slug in REGION_ORDER:
         if slug not in by_region:
-            if slug not in CONTAINER_ONLY_TABS:
+            if slug not in MAP_ONLY_TABS:
                 errors.append(f"region {slug!r} is in REGION_ORDER but has no locations")
     # Slugs that exist in the data but aren't in REGION_ORDER are warnings, not errors.
     for slug in by_region:
@@ -913,6 +925,13 @@ def compute_pin_outputs(pack_root: Path, apworld_path: Path
         pins = P.compute_region_pins(slug, region_proj, chars,
                                      overrides=overrides,
                                      declutter_min_dist=declutter_min)
+        split = MAP_SPLITS.get(slug)
+        if split and split[0] in proj["regions"]:
+            rest = {n: c for n, c in chars.items() if n not in pins}
+            for n, pin in P.compute_region_pins(split[0], proj["regions"][split[0]], rest,
+                                                overrides=overrides,
+                                                declutter_min_dist=declutter_min).items():
+                pins[n] = {**pin, "map": split[0]}
         if pins:
             npc_pins[slug] = pins
 
@@ -1065,11 +1084,16 @@ def _container_children(slug, display, rows, used_xy, quest_slots, out):
     import container_pins as CP  # local import: tools/container_pins.py
     import project as P
     proj = P.load_projections(PACK_ROOT)
+    split = MAP_SPLITS.get(slug)
+    extra = {}
+    if split:
+        extra[slug] = [{**z, "_map": split[0]}
+                       for z in proj["regions"].get(split[0], {}).get("zones", [])]
     kids, id_map, stats = CP.build_container_children(
         {slug: rows}, proj, map_dims_for, map_size_for,
         lambda logic, tab: _container_rule(logic, tab, slug),
-        quest_grid_pin_position, {slug: quest_slots}, {slug: used_xy},
-        sanitize_for_code_path)
+        quest_grid_pin_position, {slug: quest_slots}, used_xy,
+        sanitize_for_code_path, extra)
     if out is not None:
         for lid, _tab, child_name, sname in id_map:
             out.setdefault("pairs", []).append((lid, f"@{display}/{child_name}/{sname}"))
@@ -1145,7 +1169,7 @@ def emit_locations_json(
         children = []
         kill_grid_idx = 0
         quest_grid_idx = 0
-        used_xy: set = set()
+        used_xy: dict[str, set] = {}
         for name, lid in entries:
             safe_name = sanitize_for_code_path(name)
             # Toggle-driven visibility: each AP location's ID range determines
@@ -1183,8 +1207,10 @@ def emit_locations_json(
                 # the base AP name, so strip the suffix before lookup.
                 base_name = re.sub(r" #\d+$", "", name)
                 projection = region_pins.get(name) or region_pins.get(base_name)
+                pin_map = slug
                 if projection is not None:
                     x, y = projection["x"], projection["y"]
+                    pin_map = projection.get("map", slug)
                 else:
                     x, y = grid_pin_position(kill_grid_idx)
                     kill_grid_idx += 1
@@ -1196,13 +1222,13 @@ def emit_locations_json(
                 quest_grid_idx += 1
                 section["chest_unopened_img"] = "images/items/quest_marker_unopened.png"
                 section["chest_opened_img"] = "images/items/quest_marker_opened.png"
-            child["map_locations"] = [{"map": slug, "x": x, "y": y}]
+            child["map_locations"] = [{"map": slug if lid < 10000 else pin_map, "x": x, "y": y}]
             if lid < 10000:
                 # One pin shape per check type: kills keep the map's default
                 # rect, quests are trapezoids, containers diamonds (see
                 # tools/container_pins.py). PopTracker has no circle.
                 child["map_locations"][0]["shape"] = "trapezoid"
-            used_xy.add((x, y))
+            used_xy.setdefault(child["map_locations"][0]["map"], set()).add((x, y))
             children.append(child)
         region_entry: dict = {
             "name": display,
@@ -1546,7 +1572,10 @@ def main(argv: list[str] | None = None) -> int:
         for r in rows:
             tab = MERGED_INTO.get(r["region"], r["region"])
             r["rule_tab"] = tab
-            if CP.zone_for_row(proj_regions.get(tab, {}).get("zones", []), r) is None:
+            own = proj_regions.get(tab, {}).get("zones", [])
+            if tab in MAP_SPLITS:
+                own = own + proj_regions.get(MAP_SPLITS[tab][0], {}).get("zones", [])
+            if CP.zone_for_row(own, r) is None:
                 # Off every zone of its own tab: an Interiors tab may hold it.
                 for annex in CONTAINER_ONLY_TABS:
                     if CP.zone_for_row(proj_regions.get(annex, {}).get("zones", []), r) is not None:

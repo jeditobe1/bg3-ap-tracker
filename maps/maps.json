@@ -36,6 +36,12 @@
         "img": "images/maps/waukeen.png"
     },
     {
+        "name": "zhentarim_basement",
+        "location_size": 16,
+        "location_border_thickness": 2,
+        "img": "images/maps/zhentarim_basement.png"
+    },
+    {
         "name": "goblin_camp",
         "location_size": 16,
         "location_border_thickness": 2,
@@ -142,6 +148,12 @@
         "location_size": 16,
         "location_border_thickness": 2,
         "img": "images/maps/lower_city_east.png"
+    },
+    {
+        "name": "lower_city_areas",
+        "location_size": 16,
+        "location_border_thickness": 2,
+        "img": "images/maps/lower_city_areas.png"
     },
     {
         "name": "lower_city_sewers",

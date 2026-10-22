@@ -79,6 +79,15 @@
                             }
                         },
                         {
+                            "title": "Zhentarim Hideout",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "zhentarim_basement"
+                                ]
+                            }
+                        },
+                        {
                             "title": "Goblin Camp",
                             "content": {
                                 "type": "map",
@@ -271,6 +280,15 @@
                                 "type": "map",
                                 "maps": [
                                     "lower_city_east"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Lower City Areas",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "lower_city_areas"
                                 ]
                             }
                         },

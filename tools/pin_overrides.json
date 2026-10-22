@@ -255,6 +255,10 @@
       "creche": {
         "position": [200, 250],
         "_why": "Creche is on CRE_Main_A (no WLD chars) -- never in computed centroid dict. Seeded so override-only path can add it; mountain pass entrance is on NW edge of wilderness."
+      },
+      "zhentarim_basement": {
+        "position": [1042, 342],
+        "_why": "Zhentarim Hideout became its own tab in 0.9.1. Its kills sit at the hideout's own off-map coordinates, so the pin goes beside Waukeen's Rest (962, 297), where the hideout is entered."
       }
     },
     "act2_overworld": {

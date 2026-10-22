@@ -192,25 +192,31 @@ def build_container_children(
     first_free_quest_slot: dict[str, int],
     used_xy: dict[str, set],
     sanitize,
+    extra_zones: dict[str, list[dict]] | None = None,
 ) -> tuple[dict[str, list[dict]], list[tuple[int, str, str, str]], dict]:
     """Return ({tab: [location child, ...]}, [(ap_id, tab, child_name, section_name)], stats).
 
     `rule_for(logic_slug, own_tab_slug)` gives a pin's access_rule string (or
     None); a row's own tab is its "rule_tab" (it differs from `tab` on an
-    Interiors tab). `used_xy[tab]` holds pixel
-    coords already taken on that map (kills, quests) and is updated in place.
+    Interiors tab). `used_xy[map]` holds pixel coords already taken on each
+    map (kills, quests) and is updated in place.
+
+    A zone may carry "_map": it is drawn on another map than the tab's own (a
+    tab split over two maps, see generate_pack.MAP_SPLITS). Pins in it go on
+    that map; the bottom panel always stays on the tab's own map.
     """
+    extra_zones = extra_zones or {}
     children: dict[str, list[dict]] = {}
     id_map: list[tuple[int, str, str, str]] = []
     stats = {"placed": 0, "panel": 0, "pins": 0, "panel_pins": 0, "max": 0}
 
     for tab, rows in tab_rows.items():
         zones = projections.get("regions", {}).get(tab, {}).get("zones", [])
+        zones = zones + extra_zones.get(tab, [])
         pin = map_size_for(tab)
-        used = used_xy.setdefault(tab, set())
         # Keys carry the container's own tab (rule_tab) so an Interiors pin
         # never mixes containers that get different rules.
-        groups: dict[tuple, list] = {}     # (logic, rule_tab, kind) -> [(px, py, row)]
+        groups: dict[tuple, list] = {}     # (logic, rule_tab, kind, map) -> [(px, py, row)]
         panel: dict[tuple, list] = {}      # (logic, rule_tab, kind, level) -> [row]
         for r in rows:
             rt = r.get("rule_tab", tab)
@@ -219,7 +225,7 @@ def build_container_children(
                 panel.setdefault((r["logic"], rt, r["kind"], r["level"]), []).append(r)
                 continue
             px, py = _project(r["x"], r["z"], zn)
-            groups.setdefault((r["logic"], rt, r["kind"]), []).append((px, py, r))
+            groups.setdefault((r["logic"], rt, r["kind"], zn.get("_map", tab)), []).append((px, py, r))
 
         pins: list[tuple[tuple, int, int, list[dict], bool]] = []
         for key in sorted(groups):
@@ -240,7 +246,7 @@ def build_container_children(
                     pins.append((key, int(round(x)), int(round(y)), [q[2] for q in piece], False))
 
         dims = map_dims_for(tab)
-        pieces = [((key[0], key[1], key[2]), [q[2] for q in piece])
+        pieces = [((key[0], key[1], key[2], tab), [q[2] for q in piece])
                   for key in sorted(panel)
                   for piece in _chunks([(0, 0, r) for r in sorted(panel[key], key=lambda r: r["id"])],
                                        CLUSTER_CAP)]
@@ -250,8 +256,9 @@ def build_container_children(
 
         out = []
         name_count: dict[str, int] = {}
-        w, h = dims
-        for (logic, rule_tab, kind), x, y, members, in_panel in pins:
+        for (logic, rule_tab, kind, mp), x, y, members, in_panel in pins:
+            w, h = map_dims_for(mp)
+            used = used_xy.setdefault(mp, set())
             x = max(1, min(w - 2, x))
             y = max(1, min(h - 2, y))
             x, y = _free_pixel(x, y, used, w, h)   # UT keys pins by exact pixel
@@ -272,12 +279,12 @@ def build_container_children(
                     "chest_opened_img": f"images/items/{ICON}_opened.png",
                 })
                 id_map.append((m["id"], tab, name, sname))
-            size = max(6, int(round(pin * PIN_FRAC)))
+            size = max(6, int(round(map_size_for(mp) * PIN_FRAC)))
             child = {
                 "name": name,
                 "sections": sections,
                 "visibility_rules": ["containersanity" if kind == "loot" else "containersanity,show_clutter"],
-                "map_locations": [{"map": tab, "x": x, "y": y, "size": size, "shape": SHAPE}],
+                "map_locations": [{"map": mp, "x": x, "y": y, "size": size, "shape": SHAPE}],
             }
             rule = rule_for(logic, rule_tab)
             if rule:

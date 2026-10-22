@@ -93,7 +93,7 @@ REGION_DEFINITIONS = {
             {
                 "title": "Shattered Sanctum",
                 "char_building": ["GoblinCamp", "GoblinCampPrison"],
-                "patch_building": ["GoblinCamp", "GoblinCampPrison"],
+                "patch_building": ["GoblinCamp", "GoblinCampPrison", ""],
                 "world_bbox_override": (242.998, -87.559, 414.359, 66.898),
             },
         ],
@@ -110,7 +110,9 @@ REGION_DEFINITIONS = {
             {
                 "title": "Forge Approach",
                 "char_building": ["KethericCity"],
-                "patch_building": ["KethericCity"],
+                # Exterior ("") art too: ~40 containers sit on open ground
+                # around the ruined city and showed on a black background.
+                "patch_building": ["KethericCity", ""],
             },
             {
                 "title": "The Adamantine Forge",
@@ -182,7 +184,9 @@ REGION_DEFINITIONS = {
             {
                 "title": "Zhentarim Hideout",
                 "char_building": ["ZhentarimLowerFloor", "ZhenatrimBasementLowerFloor"],
-                "patch_building": ["ZhentarimLowerFloor", "ZhenatrimBasementLowerFloor"],
+                # Exterior ("") art too, for the containers outside the two
+                # tagged floors.
+                "patch_building": ["ZhentarimLowerFloor", "ZhenatrimBasementLowerFloor", ""],
                 "world_bbox_override": (227.0, -296.0, 414.0, -168.0),
             },
         ],
@@ -193,6 +197,9 @@ REGION_DEFINITIONS = {
     # after sits at x[-137,-34] -- entirely west of them. Framing on kills
     # alone clips the inn, which is where the quest checks are. The
     # override covers the kills, the serai and the Tollhouse.
+    # The Zhentarim Hideout used to be an inset on this map; since 0.9.1 it is
+    # its own tab (zhentarim_basement above), because its containers
+    # overlapped the inset.
     "waukeen": {
         "level": "WLD_Main_A",
         "zones": [
@@ -201,21 +208,6 @@ REGION_DEFINITIONS = {
                 "char_building": ["*"],
                 "patch_building": ["*"],
                 "world_bbox_override": (-160.0, 495.0, 175.0, 665.0),
-            },
-            # The hideout is a separate underground space ~750 units north
-            # on the worldmap; as a corner cutout it stays visible without
-            # taking half the canvas from the surface area.
-            # Inset frames the main hideout floor only. The separate
-            # ZhenatrimBasementLowerFloor cluster sits ~45 units further
-            # east with a gap between; including it would nearly double the
-            # bbox width to show one small blob. The standalone
-            # zhentarim_basement map has the canvas room for both.
-            {
-                "title": "Zhentarim Hideout",
-                "char_building": ["ZhentarimLowerFloor"],
-                "patch_building": ["ZhentarimLowerFloor"],
-                "world_bbox_override": (227.0, -269.0, 324.0, -168.0),
-                "inset": (0.02, 0.54, 0.30, 0.44),
             },
         ],
     },
@@ -573,8 +565,16 @@ ACT3_REGION_DEFINITIONS = {
                 "patch_building": ["*"],
                 "world_bbox_override": (-334.1, -319.4, 172.5, 71.2),
                 "world_bbox_filter": (-239.8, -249.0, 78.2, 0.8),
-                "cell": (0, 0, 1, 2),
             },
+        ],
+    },
+    # The outlying Lower City zones, shown as their own tab so the main
+    # district above can fill its map. Pins here still belong to the
+    # Lower City tab's checks (generate_pack.MAP_SPLITS).
+    "lower_city_areas": {
+        "level": "CTY_Main_A",
+        "quest_panel": False,   # its quests stay on the Lower City map
+        "zones": [
             {
                 "title": 'Counting House Vault',  # 8 kills
                 "level": "CTY_Main_A",
@@ -582,7 +582,7 @@ ACT3_REGION_DEFINITIONS = {
                 "patch_building": ["*"],
                 "world_bbox_override": (-757.4, 827.0, -667.4, 917.0),
                 "world_bbox_filter": (-736.2, 844.5, -688.5, 899.5),
-                "cell": (1, 0, 1, 1),
+                "cell": (0, 0, 1, 1),
             },
             {
                 "title": 'Murder Tribunal',  # 7 kills
@@ -591,7 +591,7 @@ ACT3_REGION_DEFINITIONS = {
                 "patch_building": ["*"],
                 "world_bbox_override": (-1316.3, 458.6, -1226.3, 548.6),
                 "world_bbox_filter": (-1304.0, 491.0, -1238.5, 516.2),
-                "cell": (2, 0, 1, 1),
+                "cell": (1, 0, 1, 1),
             },
             {
                 "title": 'Lower City Central',  # 5 kills
@@ -600,7 +600,7 @@ ACT3_REGION_DEFINITIONS = {
                 "patch_building": ["*"],
                 "world_bbox_override": (-1642.8, 222.4, -1552.8, 312.4),
                 "world_bbox_filter": (-1607.9, 252.3, -1587.7, 282.6),
-                "cell": (1, 1, 1, 1),
+                "cell": (0, 1, 1, 1),
             },
             {
                 "title": 'Lower City East',  # 4 kills
@@ -609,7 +609,7 @@ ACT3_REGION_DEFINITIONS = {
                 "patch_building": ["*"],
                 "world_bbox_override": (1173.8, 751.4, 1263.8, 841.4),
                 "world_bbox_filter": (1197.3, 781.7, 1240.3, 811.1),
-                "cell": (2, 1, 1, 1),
+                "cell": (1, 1, 1, 1),
             },
         ],
     },
@@ -672,16 +672,29 @@ ACT3_REGION_DEFINITIONS = {
             },
         ],
     },
+    # Two pieces ~100 m apart (x -872..-852 and x -754..-721). One zone
+    # framing both drew each at a fraction of the canvas, so each piece gets
+    # its own zone.
     "elfsong_basement": {
         "level": "CTY_Main_A",
         "zones": [
             {
-                "title": 'Elfsong Basement',  # 42 kills
+                "title": "Elfsong Basement (west)",
                 "level": "CTY_Main_A",
                 "char_building": ["*"],
                 "patch_building": ["*"],
-                "world_bbox_override": (-924.0, 496.5, -668.1, 586.5),
-                "world_bbox_filter": (-881.3, 513.7, -710.8, 569.4),
+                "world_bbox_override": (-884.0, 503.0, -840.0, 560.0),
+                "world_bbox_filter": (-877.0, 510.0, -847.0, 553.0),
+                "cell": (0, 0, 1, 1),
+            },
+            {
+                "title": "Elfsong Basement (east)",
+                "level": "CTY_Main_A",
+                "char_building": ["*"],
+                "patch_building": ["*"],
+                "world_bbox_override": (-766.0, 517.0, -709.0, 609.0),
+                "world_bbox_filter": (-759.0, 524.0, -716.0, 602.0),
+                "cell": (1, 0, 1, 1),
             },
         ],
     },

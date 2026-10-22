@@ -3,14 +3,14 @@
     "act1_overworld": {
       "canvas": [
         2400,
-        2270
+        2017
       ],
       "level": "WLD_Main_A",
       "world_bbox": [
-        -885.8296236749999,
-        -638.774913,
-        595.4231971749999,
-        762.116953
+        -248.89,
+        62.18,
+        454.7,
+        653.49
       ]
     },
     "act2_overworld": {
@@ -64,16 +64,16 @@
           "source_tab": "crypt",
           "title": "Dank Crypt",
           "world_bbox": [
-            270.0,
-            302.5,
-            310.1,
-            366.7
+            263.0,
+            295.5,
+            317.1,
+            373.7
           ],
           "world_bbox_base": [
-            270.0,
-            302.5,
-            310.1,
-            366.7
+            263.0,
+            295.5,
+            317.1,
+            373.7
           ],
           "world_bbox_filter": [
             272.0,
@@ -99,16 +99,16 @@
           "source_tab": "grove",
           "title": "Emerald Grove",
           "world_bbox": [
-            -73.8,
-            44.6,
-            -35.5,
-            89.5
+            -80.8,
+            37.6,
+            -28.5,
+            96.5
           ],
           "world_bbox_base": [
-            -73.8,
-            44.6,
-            -35.5,
-            89.5
+            -80.8,
+            37.6,
+            -28.5,
+            96.5
           ],
           "world_bbox_filter": [
             -71.8,
@@ -134,16 +134,16 @@
           "source_tab": "grove",
           "title": "Emerald Grove 2",
           "world_bbox": [
-            166.8,
-            69.9,
-            194.1,
-            93.9
+            159.8,
+            63.6,
+            201.1,
+            100.3
           ],
           "world_bbox_base": [
-            166.8,
-            69.9,
-            194.1,
-            93.9
+            159.8,
+            63.6,
+            201.1,
+            100.3
           ],
           "world_bbox_filter": [
             168.8,
@@ -169,16 +169,16 @@
           "source_tab": "grove",
           "title": "Emerald Grove 3",
           "world_bbox": [
-            32.8,
-            56.8,
-            101.0,
-            88.6
+            25.8,
+            49.8,
+            108.0,
+            95.6
           ],
           "world_bbox_base": [
-            32.8,
-            56.8,
-            101.0,
-            88.6
+            25.8,
+            49.8,
+            108.0,
+            95.6
           ],
           "world_bbox_filter": [
             34.8,
@@ -204,16 +204,16 @@
           "source_tab": "grove",
           "title": "Grove Interiors",
           "world_bbox": [
-            -458.8,
-            -211.6,
-            -414.0,
-            -171.7
+            -465.8,
+            -218.6,
+            -407.0,
+            -164.7
           ],
           "world_bbox_base": [
-            -458.8,
-            -211.6,
-            -414.0,
-            -171.7
+            -465.8,
+            -218.6,
+            -407.0,
+            -164.7
           ],
           "world_bbox_filter": [
             -456.8,
@@ -236,25 +236,25 @@
           "patch_building": [
             "*"
           ],
-          "source_tab": "blighted_village",
-          "title": "Village Cellars",
+          "source_tab": "grove",
+          "title": "Emerald Grove 4",
           "world_bbox": [
-            -723.8,
-            -423.0,
-            -693.8,
-            -343.2
+            134.2,
+            342.0,
+            181.4,
+            384.1
           ],
           "world_bbox_base": [
-            -723.8,
-            -423.0,
-            -693.8,
-            -343.2
+            134.2,
+            342.0,
+            181.4,
+            384.1
           ],
           "world_bbox_filter": [
-            -721.8,
-            -419.8,
-            -695.8,
-            -346.4
+            143.2,
+            351.0,
+            172.4,
+            375.1
           ]
         },
         {
@@ -272,24 +272,24 @@
             "*"
           ],
           "source_tab": "blighted_village",
-          "title": "Owlbear Cave",
+          "title": "Village Cellars",
           "world_bbox": [
-            -366.7,
-            -143.6,
-            -320.3,
-            -94.6
+            -730.8,
+            -428.8,
+            -686.8,
+            -337.4
           ],
           "world_bbox_base": [
-            -366.7,
-            -143.6,
-            -320.3,
-            -94.6
+            -730.8,
+            -428.8,
+            -686.8,
+            -337.4
           ],
           "world_bbox_filter": [
-            -364.7,
-            -141.6,
-            -322.3,
-            -96.6
+            -721.8,
+            -419.8,
+            -695.8,
+            -346.4
           ]
         },
         {
@@ -306,25 +306,25 @@
           "patch_building": [
             "*"
           ],
-          "source_tab": "hag",
-          "title": "Sunlit Wetlands",
+          "source_tab": "blighted_village",
+          "title": "Owlbear Cave",
           "world_bbox": [
-            -374.6,
-            535.5,
-            -280.5,
-            603.9
+            -373.7,
+            -150.6,
+            -313.3,
+            -87.6
           ],
           "world_bbox_base": [
-            -374.6,
-            535.5,
-            -280.5,
-            603.9
+            -373.7,
+            -150.6,
+            -313.3,
+            -87.6
           ],
           "world_bbox_filter": [
-            -369.7,
-            537.5,
-            -285.3,
-            601.9
+            -364.7,
+            -141.6,
+            -322.3,
+            -96.6
           ]
         },
         {
@@ -341,25 +341,25 @@
           "patch_building": [
             "*"
           ],
-          "source_tab": "hag",
-          "title": "Sunlit Wetlands 2",
+          "source_tab": "goblin_camp",
+          "title": "Goblin Camp",
           "world_bbox": [
-            -424.1,
-            589.1,
-            -400.1,
-            613.1
+            423.2,
+            9.4,
+            461.3,
+            66.3
           ],
           "world_bbox_base": [
-            -424.1,
-            589.1,
-            -400.1,
-            613.1
+            423.2,
+            9.4,
+            461.3,
+            66.3
           ],
           "world_bbox_filter": [
-            -419.7,
-            592.4,
-            -404.6,
-            609.8
+            432.2,
+            18.4,
+            452.3,
+            57.3
           ]
         },
         {
@@ -376,25 +376,25 @@
           "patch_building": [
             "*"
           ],
-          "source_tab": "underdark",
-          "title": "Underdark",
+          "source_tab": "hag",
+          "title": "Sunlit Wetlands",
           "world_bbox": [
-            -443.0,
-            218.4,
-            -388.4,
-            344.4
+            -98.4,
+            205.7,
+            116.5,
+            322.2
           ],
           "world_bbox_base": [
-            -443.0,
-            218.4,
-            -388.4,
-            344.4
+            -98.4,
+            205.7,
+            116.5,
+            322.2
           ],
           "world_bbox_filter": [
-            -441.0,
-            226.9,
-            -390.4,
-            335.9
+            -79.6,
+            214.7,
+            97.7,
+            313.2
           ]
         },
         {
@@ -411,19 +411,159 @@
           "patch_building": [
             "*"
           ],
+          "source_tab": "hag",
+          "title": "Sunlit Wetlands 2",
+          "world_bbox": [
+            -378.7,
+            528.5,
+            -276.3,
+            610.9
+          ],
+          "world_bbox_base": [
+            -378.7,
+            528.5,
+            -276.3,
+            610.9
+          ],
+          "world_bbox_filter": [
+            -369.7,
+            537.5,
+            -285.3,
+            601.9
+          ]
+        },
+        {
+          "canvas_rect": [
+            242,
+            466,
+            230,
+            173
+          ],
+          "char_building": [
+            "*"
+          ],
+          "level": "WLD_Main_A",
+          "patch_building": [
+            "*"
+          ],
+          "source_tab": "hag",
+          "title": "Sunlit Wetlands 3",
+          "world_bbox": [
+            -428.7,
+            583.4,
+            -395.6,
+            618.8
+          ],
+          "world_bbox_base": [
+            -428.7,
+            583.4,
+            -395.6,
+            618.8
+          ],
+          "world_bbox_filter": [
+            -419.7,
+            592.4,
+            -404.6,
+            609.8
+          ]
+        },
+        {
+          "canvas_rect": [
+            484,
+            466,
+            230,
+            173
+          ],
+          "char_building": [
+            "*"
+          ],
+          "level": "WLD_Main_A",
+          "patch_building": [
+            "*"
+          ],
+          "source_tab": "underdark",
+          "title": "Underdark",
+          "world_bbox": [
+            -450.0,
+            217.9,
+            -381.4,
+            344.9
+          ],
+          "world_bbox_base": [
+            -450.0,
+            217.9,
+            -381.4,
+            344.9
+          ],
+          "world_bbox_filter": [
+            -441.0,
+            226.9,
+            -390.4,
+            335.9
+          ]
+        },
+        {
+          "canvas_rect": [
+            726,
+            466,
+            230,
+            173
+          ],
+          "char_building": [
+            "*"
+          ],
+          "level": "WLD_Main_A",
+          "patch_building": [
+            "*"
+          ],
+          "source_tab": "grymforge",
+          "title": "Grymforge",
+          "world_bbox": [
+            -662.5,
+            183.7,
+            -586.8,
+            276.1
+          ],
+          "world_bbox_base": [
+            -662.5,
+            183.7,
+            -586.8,
+            276.1
+          ],
+          "world_bbox_filter": [
+            -653.5,
+            192.7,
+            -595.8,
+            267.1
+          ]
+        },
+        {
+          "canvas_rect": [
+            968,
+            466,
+            230,
+            173
+          ],
+          "char_building": [
+            "*"
+          ],
+          "level": "WLD_Main_A",
+          "patch_building": [
+            "*"
+          ],
           "source_tab": "monastery",
           "title": "Gith Creche",
           "world_bbox": [
-            33.1,
-            -20.7,
-            138.0,
-            100.4
+            30.2,
+            -21.7,
+            140.9,
+            101.4
           ],
           "world_bbox_base": [
-            33.1,
-            -20.7,
-            138.0,
-            100.4
+            30.2,
+            -21.7,
+            140.9,
+            101.4
           ],
           "world_bbox_filter": [
             39.2,
@@ -444,8 +584,148 @@
           "canvas_rect": [
             0,
             32,
-            312,
-            282
+            231,
+            173
+          ],
+          "char_building": [
+            "*"
+          ],
+          "level": "SCL_Main_A",
+          "patch_building": [
+            "*"
+          ],
+          "source_tab": "east_act2",
+          "title": "East Act 2",
+          "world_bbox": [
+            64.6,
+            -115.6,
+            182.2,
+            15.2
+          ],
+          "world_bbox_base": [
+            64.6,
+            -115.6,
+            182.2,
+            15.2
+          ],
+          "world_bbox_filter": [
+            73.6,
+            -106.5,
+            173.2,
+            6.1
+          ]
+        },
+        {
+          "canvas_rect": [
+            243,
+            32,
+            231,
+            173
+          ],
+          "char_building": [
+            "*"
+          ],
+          "level": "SCL_Main_A",
+          "patch_building": [
+            "*"
+          ],
+          "source_tab": "east_act2",
+          "title": "East Act 2 2",
+          "world_bbox": [
+            -77.4,
+            -132.6,
+            62.0,
+            -11.1
+          ],
+          "world_bbox_base": [
+            -77.4,
+            -132.6,
+            62.0,
+            -11.1
+          ],
+          "world_bbox_filter": [
+            -67.3,
+            -123.6,
+            51.9,
+            -20.1
+          ]
+        },
+        {
+          "canvas_rect": [
+            486,
+            32,
+            231,
+            173
+          ],
+          "char_building": [
+            "*"
+          ],
+          "level": "SCL_Main_A",
+          "patch_building": [
+            "*"
+          ],
+          "source_tab": "east_act2",
+          "title": "East Act 2 3",
+          "world_bbox": [
+            8.9,
+            132.6,
+            153.2,
+            200.8
+          ],
+          "world_bbox_base": [
+            8.9,
+            132.6,
+            153.2,
+            200.8
+          ],
+          "world_bbox_filter": [
+            19.5,
+            141.6,
+            142.5,
+            191.8
+          ]
+        },
+        {
+          "canvas_rect": [
+            729,
+            32,
+            231,
+            173
+          ],
+          "char_building": [
+            "*"
+          ],
+          "level": "SCL_Main_A",
+          "patch_building": [
+            "*"
+          ],
+          "source_tab": "east_act2",
+          "title": "East Act 2 4",
+          "world_bbox": [
+            90.1,
+            45.3,
+            156.3,
+            119.5
+          ],
+          "world_bbox_base": [
+            90.1,
+            45.3,
+            156.3,
+            119.5
+          ],
+          "world_bbox_filter": [
+            99.1,
+            54.3,
+            147.3,
+            110.5
+          ]
+        },
+        {
+          "canvas_rect": [
+            0,
+            249,
+            231,
+            173
           ],
           "char_building": [
             "*"
@@ -457,16 +737,16 @@
           "source_tab": "west_act2",
           "title": "Reithwin Tollhouse Secret Cave",
           "world_bbox": [
-            287.1,
-            -734.6,
-            330.9,
-            -693.3
+            280.1,
+            -741.6,
+            337.9,
+            -686.3
           ],
           "world_bbox_base": [
-            287.1,
-            -734.6,
-            330.9,
-            -693.3
+            280.1,
+            -741.6,
+            337.9,
+            -686.3
           ],
           "world_bbox_filter": [
             289.1,
@@ -477,10 +757,45 @@
         },
         {
           "canvas_rect": [
-            324,
-            32,
-            312,
-            282
+            243,
+            249,
+            231,
+            173
+          ],
+          "char_building": [
+            "*"
+          ],
+          "level": "SCL_Main_A",
+          "patch_building": [
+            "*"
+          ],
+          "source_tab": "west_act2",
+          "title": "House of Healing Morgue",
+          "world_bbox": [
+            28.5,
+            -1027.0,
+            107.2,
+            -985.6
+          ],
+          "world_bbox_base": [
+            28.5,
+            -1027.0,
+            107.2,
+            -985.6
+          ],
+          "world_bbox_filter": [
+            37.5,
+            -1018.0,
+            98.2,
+            -994.6
+          ]
+        },
+        {
+          "canvas_rect": [
+            486,
+            249,
+            231,
+            173
           ],
           "char_building": [
             "*"
@@ -492,16 +807,16 @@
           "source_tab": "west_act2",
           "title": "Mason's Guild Basement",
           "world_bbox": [
-            94.8,
-            -707.3,
-            155.2,
-            -671.7
+            87.8,
+            -714.3,
+            162.2,
+            -664.7
           ],
           "world_bbox_base": [
-            94.8,
-            -707.3,
-            155.2,
-            -671.7
+            87.8,
+            -714.3,
+            162.2,
+            -664.7
           ],
           "world_bbox_filter": [
             96.8,
@@ -512,10 +827,10 @@
         },
         {
           "canvas_rect": [
-            648,
-            32,
-            312,
-            282
+            729,
+            249,
+            231,
+            173
           ],
           "char_building": [
             "*"
@@ -527,345 +842,22 @@
           "source_tab": "west_act2",
           "title": "Reithwin Town Shrine",
           "world_bbox": [
-            211.3,
-            -858.7,
-            256.8,
-            -828.2
+            204.3,
+            -865.7,
+            263.8,
+            -821.2
           ],
           "world_bbox_base": [
-            211.3,
-            -858.7,
-            256.8,
-            -828.2
+            204.3,
+            -865.7,
+            263.8,
+            -821.2
           ],
           "world_bbox_filter": [
             213.3,
             -856.7,
             254.8,
             -830.2
-          ]
-        },
-        {
-          "canvas_rect": [
-            0,
-            358,
-            312,
-            282
-          ],
-          "char_building": [
-            "*"
-          ],
-          "level": "SCL_Main_A",
-          "patch_building": [
-            "*"
-          ],
-          "source_tab": "moonrise",
-          "title": "Moonrise Towers Prison",
-          "world_bbox": [
-            558.0,
-            -607.5,
-            610.1,
-            -558.9
-          ],
-          "world_bbox_base": [
-            558.0,
-            -607.5,
-            610.1,
-            -558.9
-          ],
-          "world_bbox_filter": [
-            560.0,
-            -605.5,
-            608.1,
-            -560.9
-          ]
-        }
-      ]
-    },
-    "act3_interiors": {
-      "canvas": [
-        960,
-        640
-      ],
-      "zones": [
-        {
-          "canvas_rect": [
-            0,
-            32,
-            231,
-            173
-          ],
-          "char_building": [
-            "*"
-          ],
-          "level": "BGO_Main_A",
-          "patch_building": [
-            "*"
-          ],
-          "source_tab": "rivington",
-          "title": "Smugglers Cave Basement",
-          "world_bbox": [
-            -1373.0,
-            -870.9,
-            -1319.9,
-            -812.4
-          ],
-          "world_bbox_base": [
-            -1373.0,
-            -870.9,
-            -1319.9,
-            -812.4
-          ],
-          "world_bbox_filter": [
-            -1371.0,
-            -868.9,
-            -1321.9,
-            -814.4
-          ]
-        },
-        {
-          "canvas_rect": [
-            243,
-            32,
-            231,
-            173
-          ],
-          "char_building": [
-            "*"
-          ],
-          "level": "BGO_Main_A",
-          "patch_building": [
-            "*"
-          ],
-          "source_tab": "rivington",
-          "title": "Ironhand",
-          "world_bbox": [
-            -274.1,
-            -1093.7,
-            -231.3,
-            -1054.4
-          ],
-          "world_bbox_base": [
-            -274.1,
-            -1093.7,
-            -231.3,
-            -1054.4
-          ],
-          "world_bbox_filter": [
-            -272.1,
-            -1091.7,
-            -233.3,
-            -1056.4
-          ]
-        },
-        {
-          "canvas_rect": [
-            486,
-            32,
-            231,
-            173
-          ],
-          "char_building": [
-            "*"
-          ],
-          "level": "BGO_Main_A",
-          "patch_building": [
-            "*"
-          ],
-          "source_tab": "rivington",
-          "title": "Merchant House Basement",
-          "world_bbox": [
-            327.4,
-            -1008.1,
-            376.2,
-            -966.7
-          ],
-          "world_bbox_base": [
-            327.4,
-            -1008.1,
-            376.2,
-            -966.7
-          ],
-          "world_bbox_filter": [
-            329.4,
-            -1006.1,
-            374.2,
-            -968.7
-          ]
-        },
-        {
-          "canvas_rect": [
-            729,
-            32,
-            231,
-            173
-          ],
-          "char_building": [
-            "*"
-          ],
-          "level": "BGO_Main_A",
-          "patch_building": [
-            "*"
-          ],
-          "source_tab": "rivington",
-          "title": "Windmill Cellar",
-          "world_bbox": [
-            -248.8,
-            -818.9,
-            -218.3,
-            -787.0
-          ],
-          "world_bbox_base": [
-            -248.8,
-            -818.9,
-            -218.3,
-            -787.0
-          ],
-          "world_bbox_filter": [
-            -246.8,
-            -816.9,
-            -220.3,
-            -789.0
-          ]
-        },
-        {
-          "canvas_rect": [
-            0,
-            249,
-            231,
-            173
-          ],
-          "char_building": [
-            "*"
-          ],
-          "level": "BGO_Main_A",
-          "patch_building": [
-            "*"
-          ],
-          "source_tab": "rivington",
-          "title": "Rivington Well",
-          "world_bbox": [
-            -1.4,
-            -885.6,
-            50.1,
-            -838.8
-          ],
-          "world_bbox_base": [
-            -1.4,
-            -885.6,
-            50.1,
-            -838.8
-          ],
-          "world_bbox_filter": [
-            0.6,
-            -883.6,
-            48.1,
-            -840.8
-          ]
-        },
-        {
-          "canvas_rect": [
-            243,
-            249,
-            231,
-            173
-          ],
-          "char_building": [
-            "*"
-          ],
-          "level": "BGO_Main_A",
-          "patch_building": [
-            "*"
-          ],
-          "source_tab": "wyrms_crossing",
-          "title": "Wyrmsway",
-          "world_bbox": [
-            -954.4,
-            -993.1,
-            -902.0,
-            -946.5
-          ],
-          "world_bbox_base": [
-            -954.4,
-            -993.1,
-            -902.0,
-            -946.5
-          ],
-          "world_bbox_filter": [
-            -952.4,
-            -991.1,
-            -904.0,
-            -948.5
-          ]
-        },
-        {
-          "canvas_rect": [
-            486,
-            249,
-            231,
-            173
-          ],
-          "char_building": [
-            "*"
-          ],
-          "level": "CTY_Main_A",
-          "patch_building": [
-            "*"
-          ],
-          "source_tab": "sorcerous_sundries",
-          "title": "Sorcerous Sundries",
-          "world_bbox": [
-            303.8,
-            982.3,
-            429.4,
-            1064.2
-          ],
-          "world_bbox_base": [
-            303.8,
-            982.3,
-            429.4,
-            1064.2
-          ],
-          "world_bbox_filter": [
-            312.3,
-            985.8,
-            420.9,
-            1060.8
-          ]
-        },
-        {
-          "canvas_rect": [
-            729,
-            249,
-            231,
-            173
-          ],
-          "char_building": [
-            "*"
-          ],
-          "level": "CTY_Main_A",
-          "patch_building": [
-            "*"
-          ],
-          "source_tab": "sorcerous_sundries",
-          "title": "Sorcerous Sundries 2",
-          "world_bbox": [
-            -1621.0,
-            98.0,
-            -1594.3,
-            122.0
-          ],
-          "world_bbox_base": [
-            -1621.0,
-            98.0,
-            -1594.3,
-            122.0
-          ],
-          "world_bbox_filter": [
-            -1619.0,
-            100.1,
-            -1596.3,
-            120.0
           ]
         },
         {
@@ -878,6 +870,539 @@
           "char_building": [
             "*"
           ],
+          "level": "SCL_Main_A",
+          "patch_building": [
+            "*"
+          ],
+          "source_tab": "moonrise",
+          "title": "Moonrise Towers Prison",
+          "world_bbox": [
+            551.0,
+            -614.5,
+            617.1,
+            -551.9
+          ],
+          "world_bbox_base": [
+            551.0,
+            -614.5,
+            617.1,
+            -551.9
+          ],
+          "world_bbox_filter": [
+            560.0,
+            -605.5,
+            608.1,
+            -560.9
+          ]
+        }
+      ]
+    },
+    "act3_interiors": {
+      "canvas": [
+        1440,
+        640
+      ],
+      "zones": [
+        {
+          "canvas_rect": [
+            0,
+            32,
+            230,
+            173
+          ],
+          "char_building": [
+            "*"
+          ],
+          "level": "BGO_Main_A",
+          "patch_building": [
+            "*"
+          ],
+          "source_tab": "rivington",
+          "title": "Open Hand Temple",
+          "world_bbox": [
+            -17.5,
+            -1041.9,
+            32.6,
+            -966.7
+          ],
+          "world_bbox_base": [
+            -17.5,
+            -1041.9,
+            32.6,
+            -966.7
+          ],
+          "world_bbox_filter": [
+            -8.5,
+            -1032.9,
+            23.6,
+            -975.7
+          ]
+        },
+        {
+          "canvas_rect": [
+            242,
+            32,
+            230,
+            173
+          ],
+          "char_building": [
+            "*"
+          ],
+          "level": "BGO_Main_A",
+          "patch_building": [
+            "*"
+          ],
+          "source_tab": "rivington",
+          "title": "Smugglers Cave Basement",
+          "world_bbox": [
+            -1380.0,
+            -877.9,
+            -1312.9,
+            -805.4
+          ],
+          "world_bbox_base": [
+            -1380.0,
+            -877.9,
+            -1312.9,
+            -805.4
+          ],
+          "world_bbox_filter": [
+            -1371.0,
+            -868.9,
+            -1321.9,
+            -814.4
+          ]
+        },
+        {
+          "canvas_rect": [
+            484,
+            32,
+            230,
+            173
+          ],
+          "char_building": [
+            "*"
+          ],
+          "level": "BGO_Main_A",
+          "patch_building": [
+            "*"
+          ],
+          "source_tab": "rivington",
+          "title": "Ironhand",
+          "world_bbox": [
+            -281.1,
+            -1100.7,
+            -224.3,
+            -1047.4
+          ],
+          "world_bbox_base": [
+            -281.1,
+            -1100.7,
+            -224.3,
+            -1047.4
+          ],
+          "world_bbox_filter": [
+            -272.1,
+            -1091.7,
+            -233.3,
+            -1056.4
+          ]
+        },
+        {
+          "canvas_rect": [
+            726,
+            32,
+            230,
+            173
+          ],
+          "char_building": [
+            "*"
+          ],
+          "level": "BGO_Main_A",
+          "patch_building": [
+            "*"
+          ],
+          "source_tab": "rivington",
+          "title": "Merchant House Basement",
+          "world_bbox": [
+            320.4,
+            -1015.1,
+            383.2,
+            -959.7
+          ],
+          "world_bbox_base": [
+            320.4,
+            -1015.1,
+            383.2,
+            -959.7
+          ],
+          "world_bbox_filter": [
+            329.4,
+            -1006.1,
+            374.2,
+            -968.7
+          ]
+        },
+        {
+          "canvas_rect": [
+            968,
+            32,
+            230,
+            173
+          ],
+          "char_building": [
+            "*"
+          ],
+          "level": "BGO_Main_A",
+          "patch_building": [
+            "*"
+          ],
+          "source_tab": "rivington",
+          "title": "Windmill Cellar",
+          "world_bbox": [
+            -255.8,
+            -825.9,
+            -211.3,
+            -780.0
+          ],
+          "world_bbox_base": [
+            -255.8,
+            -825.9,
+            -211.3,
+            -780.0
+          ],
+          "world_bbox_filter": [
+            -246.8,
+            -816.9,
+            -220.3,
+            -789.0
+          ]
+        },
+        {
+          "canvas_rect": [
+            1210,
+            32,
+            230,
+            173
+          ],
+          "char_building": [
+            "*"
+          ],
+          "level": "BGO_Main_A",
+          "patch_building": [
+            "*"
+          ],
+          "source_tab": "rivington",
+          "title": "Rivington",
+          "world_bbox": [
+            -185.9,
+            66.0,
+            -98.8,
+            122.9
+          ],
+          "world_bbox_base": [
+            -185.9,
+            66.0,
+            -98.8,
+            122.9
+          ],
+          "world_bbox_filter": [
+            -176.9,
+            75.0,
+            -107.8,
+            113.9
+          ]
+        },
+        {
+          "canvas_rect": [
+            0,
+            249,
+            230,
+            173
+          ],
+          "char_building": [
+            "*"
+          ],
+          "level": "BGO_Main_A",
+          "patch_building": [
+            "*"
+          ],
+          "source_tab": "rivington",
+          "title": "Rivington Well",
+          "world_bbox": [
+            -8.4,
+            -892.6,
+            57.1,
+            -831.8
+          ],
+          "world_bbox_base": [
+            -8.4,
+            -892.6,
+            57.1,
+            -831.8
+          ],
+          "world_bbox_filter": [
+            0.6,
+            -883.6,
+            48.1,
+            -840.8
+          ]
+        },
+        {
+          "canvas_rect": [
+            242,
+            249,
+            230,
+            173
+          ],
+          "char_building": [
+            "*"
+          ],
+          "level": "BGO_Main_A",
+          "patch_building": [
+            "*"
+          ],
+          "source_tab": "wyrms_crossing",
+          "title": "Wyrmsway",
+          "world_bbox": [
+            -961.4,
+            -1000.1,
+            -895.0,
+            -939.5
+          ],
+          "world_bbox_base": [
+            -961.4,
+            -1000.1,
+            -895.0,
+            -939.5
+          ],
+          "world_bbox_filter": [
+            -952.4,
+            -991.1,
+            -904.0,
+            -948.5
+          ]
+        },
+        {
+          "canvas_rect": [
+            484,
+            249,
+            230,
+            173
+          ],
+          "char_building": [
+            "*"
+          ],
+          "level": "CTY_Main_A",
+          "patch_building": [
+            "*"
+          ],
+          "source_tab": "sorcerous_sundries",
+          "title": "Sorcerous Sundries",
+          "world_bbox": [
+            303.3,
+            976.8,
+            429.9,
+            1069.8
+          ],
+          "world_bbox_base": [
+            303.3,
+            976.8,
+            429.9,
+            1069.8
+          ],
+          "world_bbox_filter": [
+            312.3,
+            985.8,
+            420.9,
+            1060.8
+          ]
+        },
+        {
+          "canvas_rect": [
+            726,
+            249,
+            230,
+            173
+          ],
+          "char_building": [
+            "*"
+          ],
+          "level": "CTY_Main_A",
+          "patch_building": [
+            "*"
+          ],
+          "source_tab": "sorcerous_sundries",
+          "title": "Sorcerous Sundries 2",
+          "world_bbox": [
+            -1628.0,
+            91.1,
+            -1587.3,
+            129.0
+          ],
+          "world_bbox_base": [
+            -1628.0,
+            91.1,
+            -1587.3,
+            129.0
+          ],
+          "world_bbox_filter": [
+            -1619.0,
+            100.1,
+            -1596.3,
+            120.0
+          ]
+        },
+        {
+          "canvas_rect": [
+            968,
+            249,
+            230,
+            173
+          ],
+          "char_building": [
+            "*"
+          ],
+          "level": "CTY_Main_A",
+          "patch_building": [
+            "*"
+          ],
+          "source_tab": "cazador",
+          "title": "UC Cazador Chapel",
+          "world_bbox": [
+            -2002.9,
+            822.1,
+            -1908.7,
+            902.0
+          ],
+          "world_bbox_base": [
+            -2002.9,
+            822.1,
+            -1908.7,
+            902.0
+          ],
+          "world_bbox_filter": [
+            -1993.9,
+            831.1,
+            -1917.7,
+            893.0
+          ]
+        },
+        {
+          "canvas_rect": [
+            1210,
+            249,
+            230,
+            173
+          ],
+          "char_building": [
+            "*"
+          ],
+          "level": "CTY_Main_A",
+          "patch_building": [
+            "*"
+          ],
+          "source_tab": "house_of_grief",
+          "title": "Sharran Grotto",
+          "world_bbox": [
+            -350.7,
+            -1625.5,
+            -279.7,
+            -1576.2
+          ],
+          "world_bbox_base": [
+            -350.7,
+            -1625.5,
+            -279.7,
+            -1576.2
+          ],
+          "world_bbox_filter": [
+            -341.7,
+            -1616.5,
+            -288.7,
+            -1585.2
+          ]
+        },
+        {
+          "canvas_rect": [
+            0,
+            466,
+            230,
+            173
+          ],
+          "char_building": [
+            "*"
+          ],
+          "level": "CTY_Main_A",
+          "patch_building": [
+            "*"
+          ],
+          "source_tab": "house_of_grief",
+          "title": "Sharran Grotto 2",
+          "world_bbox": [
+            -484.0,
+            -1689.5,
+            -433.2,
+            -1623.1
+          ],
+          "world_bbox_base": [
+            -484.0,
+            -1689.5,
+            -433.2,
+            -1623.1
+          ],
+          "world_bbox_filter": [
+            -475.0,
+            -1680.5,
+            -442.2,
+            -1632.1
+          ]
+        },
+        {
+          "canvas_rect": [
+            242,
+            466,
+            230,
+            173
+          ],
+          "char_building": [
+            "*"
+          ],
+          "level": "CTY_Main_A",
+          "patch_building": [
+            "*"
+          ],
+          "source_tab": "house_of_grief",
+          "title": "Sharran Grotto 3",
+          "world_bbox": [
+            -422.1,
+            -1619.7,
+            -381.2,
+            -1574.4
+          ],
+          "world_bbox_base": [
+            -422.1,
+            -1619.7,
+            -381.2,
+            -1574.4
+          ],
+          "world_bbox_filter": [
+            -413.1,
+            -1610.7,
+            -390.2,
+            -1583.4
+          ]
+        },
+        {
+          "canvas_rect": [
+            484,
+            466,
+            230,
+            173
+          ],
+          "char_building": [
+            "*"
+          ],
           "level": "CTY_Main_A",
           "patch_building": [
             "*"
@@ -885,22 +1410,92 @@
           "source_tab": "house_of_grief",
           "title": "House of Grief",
           "world_bbox": [
-            -283.1,
-            -12.0,
-            -250.4,
-            20.0
+            -290.1,
+            -19.0,
+            -243.4,
+            27.0
           ],
           "world_bbox_base": [
-            -283.1,
-            -12.0,
-            -250.4,
-            20.0
+            -290.1,
+            -19.0,
+            -243.4,
+            27.0
           ],
           "world_bbox_filter": [
             -281.1,
             -10.0,
             -252.4,
             18.0
+          ]
+        },
+        {
+          "canvas_rect": [
+            726,
+            466,
+            230,
+            173
+          ],
+          "char_building": [
+            "*"
+          ],
+          "level": "END_Main",
+          "patch_building": [
+            "*"
+          ],
+          "source_tab": "endgame",
+          "title": "Netherbrain",
+          "world_bbox": [
+            -979.3,
+            3666.3,
+            -875.0,
+            3731.3
+          ],
+          "world_bbox_base": [
+            -979.3,
+            3666.3,
+            -875.0,
+            3731.3
+          ],
+          "world_bbox_filter": [
+            -970.3,
+            3675.3,
+            -884.0,
+            3722.3
+          ]
+        },
+        {
+          "canvas_rect": [
+            968,
+            466,
+            230,
+            173
+          ],
+          "char_building": [
+            "*"
+          ],
+          "level": "END_Main",
+          "patch_building": [
+            "*"
+          ],
+          "source_tab": "endgame",
+          "title": "Netherbrain 2",
+          "world_bbox": [
+            -925.0,
+            3797.8,
+            -880.5,
+            3841.6
+          ],
+          "world_bbox_base": [
+            -925.0,
+            3797.8,
+            -880.5,
+            3841.6
+          ],
+          "world_bbox_filter": [
+            -916.0,
+            3806.8,
+            -889.5,
+            3832.6
           ]
         }
       ]
@@ -963,10 +1558,10 @@
           ],
           "title": "Ravaged Beach",
           "world_bbox": [
-            133.1,
-            229.3,
-            312.6,
-            394.7
+            169.7,
+            222.3,
+            319.6,
+            310.0
           ],
           "world_bbox_base": [
             169.7,
@@ -1005,10 +1600,10 @@
           ],
           "title": "Village Surface",
           "world_bbox": [
-            -53.5,
-            298.6,
+            -60.5,
+            291.6,
             167.11967356000002,
-            492.8
+            499.8
           ],
           "world_bbox_base": [
             -25.398061360000003,
@@ -1039,10 +1634,10 @@
           ],
           "title": "The Well",
           "world_bbox": [
-            -706.8,
-            -418.6,
-            -420.4,
-            -305.8
+            -713.8,
+            -425.6,
+            -413.4,
+            -298.8
           ],
           "world_bbox_base": [
             -582.407,
@@ -1115,8 +1710,8 @@
           ],
           "title": "Ritual Room",
           "world_bbox": [
-            -1995.9,
-            829.1,
+            -1971.6,
+            907.4,
             -1881.6,
             997.4
           ],
@@ -1150,16 +1745,16 @@
           "source_tab": "cazador",
           "title": "Side Rooms",
           "world_bbox": [
-            -765.0,
-            1043.0,
-            -705.2,
-            1093.2
+            -772.0,
+            1036.0,
+            -698.2,
+            1100.2
           ],
           "world_bbox_base": [
-            -765.0,
-            1043.0,
-            -705.2,
-            1093.2
+            -772.0,
+            1036.0,
+            -698.2,
+            1100.2
           ],
           "world_bbox_filter": [
             -763.0,
@@ -1231,7 +1826,7 @@
             -373.2,
             -376.7,
             -97.6,
-            -218.8
+            -211.8
           ],
           "world_bbox_base": [
             -373.2,
@@ -1269,9 +1864,9 @@
           "title": "Cursed Forest",
           "world_bbox": [
             -79.787656,
-            -125.6,
-            175.2,
-            193.8
+            -20.3930198,
+            102.005396,
+            147.0239033
           ],
           "world_bbox_base": [
             -79.787656,
@@ -1292,7 +1887,7 @@
           "canvas_rect": [
             0,
             32,
-            960,
+            474,
             480
           ],
           "char_building": [
@@ -1302,24 +1897,58 @@
           "patch_building": [
             "*"
           ],
-          "title": "Elfsong Basement",
+          "title": "Elfsong Basement (west)",
           "world_bbox": [
-            -924.0,
-            496.5,
-            -668.1,
-            605.4
+            -884.0,
+            503.0,
+            -840.0,
+            560.0
           ],
           "world_bbox_base": [
-            -924.0,
-            496.5,
-            -668.1,
-            586.5
+            -884.0,
+            503.0,
+            -840.0,
+            560.0
           ],
           "world_bbox_filter": [
-            -881.3,
-            513.7,
-            -710.8,
-            569.4
+            -877.0,
+            510.0,
+            -847.0,
+            553.0
+          ]
+        },
+        {
+          "canvas_rect": [
+            486,
+            32,
+            474,
+            480
+          ],
+          "char_building": [
+            "*"
+          ],
+          "level": "CTY_Main_A",
+          "patch_building": [
+            "*"
+          ],
+          "title": "Elfsong Basement (east)",
+          "world_bbox": [
+            -766.0,
+            517.0,
+            -709.0,
+            609.0
+          ],
+          "world_bbox_base": [
+            -766.0,
+            517.0,
+            -709.0,
+            609.0
+          ],
+          "world_bbox_filter": [
+            -759.0,
+            524.0,
+            -716.0,
+            602.0
           ]
         }
       ]
@@ -1348,7 +1977,7 @@
           "world_bbox": [
             197.9,
             12.6,
-            396.9,
+            403.9,
             139.5
           ],
           "world_bbox_base": [
@@ -1380,10 +2009,10 @@
           ],
           "title": "Intellect Devourers",
           "world_bbox": [
-            -972.3,
-            3673.3,
-            -882.0,
-            3834.6
+            -972.1,
+            3716.5,
+            -882.1,
+            3806.5
           ],
           "world_bbox_base": [
             -972.1,
@@ -1525,9 +2154,9 @@
           ],
           "title": "Camp",
           "world_bbox": [
-            -160.5,
-            318.221406,
-            -48.3,
+            -167.5,
+            315.4,
+            -41.3,
             494.935664
           ],
           "world_bbox_base": [
@@ -1551,14 +2180,15 @@
           "level": "WLD_Main_A",
           "patch_building": [
             "GoblinCamp",
-            "GoblinCampPrison"
+            "GoblinCampPrison",
+            ""
           ],
           "title": "Shattered Sanctum",
           "world_bbox": [
             242.998,
             -87.559,
-            454.3,
-            80.0
+            414.359,
+            87.0
           ],
           "world_bbox_base": [
             242.998,
@@ -1591,8 +2221,8 @@
           ],
           "title": "Druid Grove",
           "world_bbox": [
-            56.6,
-            349.0,
+            146.4,
+            387.5,
             277.7,
             457.5
           ],
@@ -1655,16 +2285,16 @@
           "source_tab": "grove",
           "title": "Grove Interiors",
           "world_bbox": [
-            -496.9,
-            -34.4,
-            -415.4,
-            50.2
+            -502.5,
+            -39.6,
+            -409.8,
+            55.5
           ],
           "world_bbox_base": [
-            -496.9,
-            -34.4,
-            -415.4,
-            50.2
+            -502.5,
+            -39.6,
+            -409.8,
+            55.5
           ],
           "world_bbox_filter": [
             -493.5,
@@ -1693,14 +2323,15 @@
           ],
           "level": "WLD_Main_A",
           "patch_building": [
-            "KethericCity"
+            "KethericCity",
+            ""
           ],
           "title": "Forge Approach",
           "world_bbox": [
             -729.679,
-            190.7,
-            -511.8,
-            485.0
+            268.0,
+            -504.8,
+            492.0
           ],
           "world_bbox_base": [
             -729.679,
@@ -1761,10 +2392,10 @@
           ],
           "title": "Riverside",
           "world_bbox": [
-            -81.6,
+            -54.2,
             187.3,
             115.4,
-            315.2
+            277.8
           ],
           "world_bbox_base": [
             -54.2,
@@ -1797,10 +2428,10 @@
           ],
           "title": "House of Grief",
           "world_bbox": [
-            -477.0,
-            -1708.1,
-            -286.7,
-            -1581.4
+            -446.6,
+            -1715.1,
+            -322.1,
+            -1606.0
           ],
           "world_bbox_base": [
             -446.6,
@@ -1839,7 +2470,7 @@
           ],
           "title": "House of Hope",
           "world_bbox": [
-            -6554.4,
+            -6561.4,
             2838.0,
             -6418.5,
             3033.6
@@ -1948,16 +2579,16 @@
           "source_tab": "iron_throne",
           "title": "Dock Warehouse",
           "world_bbox": [
-            -1105.5,
-            281.6,
-            -1008.3,
-            378.2
+            -1109.3,
+            277.7,
+            -1004.5,
+            382.0
           ],
           "world_bbox_base": [
-            -1105.5,
-            281.6,
-            -1008.3,
-            378.2
+            -1109.3,
+            277.7,
+            -1004.5,
+            382.0
           ],
           "world_bbox_filter": [
             -1100.3,
@@ -1992,10 +2623,10 @@
           ],
           "title": "Last Light Inn",
           "world_bbox": [
-            -96.0,
-            109.3,
-            -0.2,
-            191.6
+            -103.0,
+            102.3,
+            6.8,
+            198.6
           ],
           "world_bbox_base": [
             -83.950896,
@@ -2027,9 +2658,9 @@
           "title": "Defense",
           "world_bbox": [
             -90.5,
-            184.8,
-            -1.6,
-            236.0
+            177.8,
+            5.4,
+            243.0
           ],
           "world_bbox_base": [
             -90.5,
@@ -2061,8 +2692,8 @@
           "title": "Meenlock Cave",
           "world_bbox": [
             3.2,
-            -726.5,
-            40.7,
+            -733.5,
+            46.6,
             -682.4
           ],
           "world_bbox_base": [
@@ -2095,16 +2726,16 @@
           "source_tab": "last_light",
           "title": "Inn Cellar",
           "world_bbox": [
-            -2.1,
-            -768.8,
-            55.0,
-            -712.3
+            -9.1,
+            -775.8,
+            62.0,
+            -705.3
           ],
           "world_bbox_base": [
-            -2.1,
-            -768.8,
-            55.0,
-            -712.3
+            -9.1,
+            -775.8,
+            62.0,
+            -705.3
           ],
           "world_bbox_filter": [
             -0.1,
@@ -2115,7 +2746,7 @@
         }
       ]
     },
-    "lower_city_east": {
+    "lower_city_areas": {
       "canvas": [
         960,
         640
@@ -2125,42 +2756,8 @@
           "canvas_rect": [
             0,
             32,
-            231,
-            480
-          ],
-          "char_building": [
-            "*"
-          ],
-          "level": "CTY_Main_A",
-          "patch_building": [
-            "*"
-          ],
-          "title": "Lower City",
-          "world_bbox": [
-            -342.3,
-            -319.4,
-            172.5,
-            71.2
-          ],
-          "world_bbox_base": [
-            -334.1,
-            -319.4,
-            172.5,
-            71.2
-          ],
-          "world_bbox_filter": [
-            -239.8,
-            -249.0,
-            78.2,
-            0.8
-          ]
-        },
-        {
-          "canvas_rect": [
-            243,
-            32,
-            231,
-            218
+            474,
+            282
           ],
           "char_building": [
             "*"
@@ -2174,7 +2771,7 @@
             -757.4,
             827.0,
             -667.4,
-            1071.4
+            917.0
           ],
           "world_bbox_base": [
             -757.4,
@@ -2193,8 +2790,8 @@
           "canvas_rect": [
             486,
             32,
-            231,
-            218
+            474,
+            282
           ],
           "char_building": [
             "*"
@@ -2205,10 +2802,10 @@
           ],
           "title": "Murder Tribunal",
           "world_bbox": [
-            -1339.4,
-            442.4,
+            -1316.3,
+            435.4,
             -1226.3,
-            557.6
+            548.6
           ],
           "world_bbox_base": [
             -1316.3,
@@ -2225,10 +2822,10 @@
         },
         {
           "canvas_rect": [
-            243,
-            294,
-            231,
-            218
+            0,
+            358,
+            474,
+            282
           ],
           "char_building": [
             "*"
@@ -2260,9 +2857,9 @@
         {
           "canvas_rect": [
             486,
-            294,
-            231,
-            218
+            358,
+            474,
+            282
           ],
           "char_building": [
             "*"
@@ -2273,10 +2870,10 @@
           ],
           "title": "Lower City East",
           "world_bbox": [
-            1063.1,
+            1173.8,
             751.4,
-            1264.9,
-            909.1
+            1263.8,
+            841.4
           ],
           "world_bbox_base": [
             1173.8,
@@ -2290,13 +2887,63 @@
             1240.3,
             811.1
           ]
-        },
+        }
+      ]
+    },
+    "lower_city_east": {
+      "canvas": [
+        960,
+        640
+      ],
+      "zones": [
         {
           "canvas_rect": [
-            729,
+            0,
             32,
-            231,
+            960,
             480
+          ],
+          "char_building": [
+            "*"
+          ],
+          "level": "CTY_Main_A",
+          "patch_building": [
+            "*"
+          ],
+          "title": "Lower City",
+          "world_bbox": [
+            -349.3,
+            -319.4,
+            172.5,
+            71.2
+          ],
+          "world_bbox_base": [
+            -334.1,
+            -319.4,
+            172.5,
+            71.2
+          ],
+          "world_bbox_filter": [
+            -239.8,
+            -249.0,
+            78.2,
+            0.8
+          ]
+        }
+      ]
+    },
+    "lower_city_interiors": {
+      "canvas": [
+        1680,
+        760
+      ],
+      "zones": [
+        {
+          "canvas_rect": [
+            0,
+            32,
+            229,
+            149
           ],
           "char_building": [
             "*"
@@ -2308,16 +2955,16 @@
           "source_tab": "lower_city_east",
           "title": "Thumbo Basement",
           "world_bbox": [
-            957.2,
-            1186.0,
-            1007.8,
-            1229.2
+            950.2,
+            1179.0,
+            1014.8,
+            1236.2
           ],
           "world_bbox_base": [
-            957.2,
-            1186.0,
-            1007.8,
-            1229.2
+            950.2,
+            1179.0,
+            1014.8,
+            1236.2
           ],
           "world_bbox_filter": [
             959.2,
@@ -2325,20 +2972,12 @@
             1005.8,
             1227.2
           ]
-        }
-      ]
-    },
-    "lower_city_interiors": {
-      "canvas": [
-        1440,
-        760
-      ],
-      "zones": [
+        },
         {
           "canvas_rect": [
-            0,
+            241,
             32,
-            230,
+            229,
             149
           ],
           "char_building": [
@@ -2351,16 +2990,16 @@
           "source_tab": "lower_city_east",
           "title": "Baldurs Mouth Basement",
           "world_bbox": [
-            -1046.3,
-            1003.4,
-            -989.2,
-            1076.1
+            -1053.3,
+            996.8,
+            -982.2,
+            1082.7
           ],
           "world_bbox_base": [
-            -1046.3,
-            1003.4,
-            -989.2,
-            1076.1
+            -1053.3,
+            996.8,
+            -982.2,
+            1082.7
           ],
           "world_bbox_filter": [
             -1044.3,
@@ -2371,9 +3010,9 @@
         },
         {
           "canvas_rect": [
-            242,
+            482,
             32,
-            230,
+            229,
             149
           ],
           "char_building": [
@@ -2386,16 +3025,16 @@
           "source_tab": "lower_city_east",
           "title": "Golbraith Basement",
           "world_bbox": [
-            -2363.3,
-            800.1,
-            -2315.0,
-            845.8
+            -2370.3,
+            793.1,
+            -2308.0,
+            852.8
           ],
           "world_bbox_base": [
-            -2363.3,
-            800.1,
-            -2315.0,
-            845.8
+            -2370.3,
+            793.1,
+            -2308.0,
+            852.8
           ],
           "world_bbox_filter": [
             -2361.3,
@@ -2406,9 +3045,9 @@
         },
         {
           "canvas_rect": [
-            484,
+            723,
             32,
-            230,
+            229,
             149
           ],
           "char_building": [
@@ -2421,16 +3060,16 @@
           "source_tab": "lower_city_east",
           "title": "Jaheira Basement",
           "world_bbox": [
-            -1586.5,
-            966.6,
-            -1513.0,
-            1039.3
+            -1593.0,
+            960.0,
+            -1506.5,
+            1045.9
           ],
           "world_bbox_base": [
-            -1586.5,
-            966.6,
-            -1513.0,
-            1039.3
+            -1593.0,
+            960.0,
+            -1506.5,
+            1045.9
           ],
           "world_bbox_filter": [
             -1584.0,
@@ -2441,9 +3080,9 @@
         },
         {
           "canvas_rect": [
-            726,
+            964,
             32,
-            230,
+            229,
             149
           ],
           "char_building": [
@@ -2456,16 +3095,16 @@
           "source_tab": "lower_city_east",
           "title": "Bonecloaks Apothecary Basement",
           "world_bbox": [
-            1403.0,
-            823.0,
-            1468.3,
-            867.7
+            1396.0,
+            816.0,
+            1475.3,
+            874.7
           ],
           "world_bbox_base": [
-            1403.0,
-            823.0,
-            1468.3,
-            867.7
+            1396.0,
+            816.0,
+            1475.3,
+            874.7
           ],
           "world_bbox_filter": [
             1405.0,
@@ -2476,9 +3115,44 @@
         },
         {
           "canvas_rect": [
-            968,
+            1205,
             32,
-            230,
+            229,
+            149
+          ],
+          "char_building": [
+            "*"
+          ],
+          "level": "CTY_Main_A",
+          "patch_building": [
+            "*"
+          ],
+          "source_tab": "lower_city_east",
+          "title": "Catacombs",
+          "world_bbox": [
+            1129.7,
+            866.7,
+            1209.0,
+            916.1
+          ],
+          "world_bbox_base": [
+            1129.7,
+            866.7,
+            1209.0,
+            916.1
+          ],
+          "world_bbox_filter": [
+            1138.7,
+            875.7,
+            1200.0,
+            907.1
+          ]
+        },
+        {
+          "canvas_rect": [
+            1446,
+            32,
+            229,
             149
           ],
           "char_building": [
@@ -2491,16 +3165,16 @@
           "source_tab": "lower_city_east",
           "title": "Heapside Prison",
           "world_bbox": [
-            -1297.4,
-            733.9,
-            -1254.8,
-            794.3
+            -1304.4,
+            726.9,
+            -1247.8,
+            801.3
           ],
           "world_bbox_base": [
-            -1297.4,
-            733.9,
-            -1254.8,
-            794.3
+            -1304.4,
+            726.9,
+            -1247.8,
+            801.3
           ],
           "world_bbox_filter": [
             -1295.4,
@@ -2511,9 +3185,44 @@
         },
         {
           "canvas_rect": [
-            1210,
-            32,
-            230,
+            0,
+            225,
+            229,
+            149
+          ],
+          "char_building": [
+            "*"
+          ],
+          "level": "CTY_Main_A",
+          "patch_building": [
+            "*"
+          ],
+          "source_tab": "lower_city_east",
+          "title": "Catacombs 2",
+          "world_bbox": [
+            1056.1,
+            815.2,
+            1117.4,
+            870.2
+          ],
+          "world_bbox_base": [
+            1056.1,
+            815.2,
+            1117.4,
+            870.2
+          ],
+          "world_bbox_filter": [
+            1065.1,
+            824.2,
+            1108.4,
+            861.2
+          ]
+        },
+        {
+          "canvas_rect": [
+            241,
+            225,
+            229,
             149
           ],
           "char_building": [
@@ -2526,16 +3235,16 @@
           "source_tab": "lower_city_east",
           "title": "Rainforest Basement",
           "world_bbox": [
-            1402.8,
-            1038.1,
-            1440.6,
-            1076.8
+            1395.8,
+            1031.1,
+            1447.6,
+            1083.8
           ],
           "world_bbox_base": [
-            1402.8,
-            1038.1,
-            1440.6,
-            1076.8
+            1395.8,
+            1031.1,
+            1447.6,
+            1083.8
           ],
           "world_bbox_filter": [
             1404.8,
@@ -2546,9 +3255,9 @@
         },
         {
           "canvas_rect": [
-            0,
+            482,
             225,
-            230,
+            229,
             149
           ],
           "char_building": [
@@ -2561,16 +3270,16 @@
           "source_tab": "lower_city_east",
           "title": "Peartree Basement",
           "world_bbox": [
-            550.3,
-            739.8,
-            585.9,
-            777.4
+            543.3,
+            732.8,
+            592.9,
+            784.4
           ],
           "world_bbox_base": [
-            550.3,
-            739.8,
-            585.9,
-            777.4
+            543.3,
+            732.8,
+            592.9,
+            784.4
           ],
           "world_bbox_filter": [
             552.3,
@@ -2581,9 +3290,9 @@
         },
         {
           "canvas_rect": [
-            242,
+            723,
             225,
-            230,
+            229,
             149
           ],
           "char_building": [
@@ -2596,16 +3305,16 @@
           "source_tab": "lower_city_east",
           "title": "Hag Survivor Basement",
           "world_bbox": [
-            773.8,
-            734.5,
-            807.4,
-            774.9
+            766.8,
+            727.5,
+            814.4,
+            781.9
           ],
           "world_bbox_base": [
-            773.8,
-            734.5,
-            807.4,
-            774.9
+            766.8,
+            727.5,
+            814.4,
+            781.9
           ],
           "world_bbox_filter": [
             775.8,
@@ -2616,9 +3325,9 @@
         },
         {
           "canvas_rect": [
-            484,
+            964,
             225,
-            230,
+            229,
             149
           ],
           "char_building": [
@@ -2631,16 +3340,16 @@
           "source_tab": "lower_city_east",
           "title": "Gardener Store Room",
           "world_bbox": [
-            -1615.3,
-            499.0,
-            -1583.0,
-            530.2
+            -1622.3,
+            492.0,
+            -1576.0,
+            537.2
           ],
           "world_bbox_base": [
-            -1615.3,
-            499.0,
-            -1583.0,
-            530.2
+            -1622.3,
+            492.0,
+            -1576.0,
+            537.2
           ],
           "world_bbox_filter": [
             -1613.3,
@@ -2651,9 +3360,9 @@
         },
         {
           "canvas_rect": [
-            726,
+            1205,
             225,
-            230,
+            229,
             149
           ],
           "char_building": [
@@ -2666,16 +3375,16 @@
           "source_tab": "lower_city_east",
           "title": "Guildhall Basement",
           "world_bbox": [
-            -2352.6,
-            1046.0,
-            -2318.3,
-            1074.3
+            -2359.6,
+            1039.0,
+            -2311.3,
+            1081.3
           ],
           "world_bbox_base": [
-            -2352.6,
-            1046.0,
-            -2318.3,
-            1074.3
+            -2359.6,
+            1039.0,
+            -2311.3,
+            1081.3
           ],
           "world_bbox_filter": [
             -2350.6,
@@ -2686,9 +3395,9 @@
         },
         {
           "canvas_rect": [
-            968,
+            1446,
             225,
-            230,
+            229,
             149
           ],
           "char_building": [
@@ -2701,16 +3410,16 @@
           "source_tab": "lower_city_east",
           "title": "Blushing Mermaid Cellar",
           "world_bbox": [
-            -2369.6,
-            -162.3,
-            -2310.0,
-            -79.4
+            -2376.6,
+            -167.7,
+            -2303.0,
+            -74.0
           ],
           "world_bbox_base": [
-            -2369.6,
-            -162.3,
-            -2310.0,
-            -79.4
+            -2376.6,
+            -167.7,
+            -2303.0,
+            -74.0
           ],
           "world_bbox_filter": [
             -2367.6,
@@ -2721,9 +3430,9 @@
         },
         {
           "canvas_rect": [
-            1210,
-            225,
-            230,
+            0,
+            418,
+            229,
             149
           ],
           "char_building": [
@@ -2736,16 +3445,16 @@
           "source_tab": "lower_city_east",
           "title": "Deviland Smith Basement",
           "world_bbox": [
-            368.5,
-            754.6,
-            411.8,
-            788.4
+            361.5,
+            747.6,
+            418.8,
+            795.4
           ],
           "world_bbox_base": [
-            368.5,
-            754.6,
-            411.8,
-            788.4
+            361.5,
+            747.6,
+            418.8,
+            795.4
           ],
           "world_bbox_filter": [
             370.5,
@@ -2756,9 +3465,9 @@
         },
         {
           "canvas_rect": [
-            0,
+            241,
             418,
-            230,
+            229,
             149
           ],
           "char_building": [
@@ -2771,16 +3480,16 @@
           "source_tab": "lower_city_east",
           "title": "General Store Basement",
           "world_bbox": [
-            -1969.9,
-            601.7,
-            -1934.6,
-            636.5
+            -1976.9,
+            594.7,
+            -1927.6,
+            643.5
           ],
           "world_bbox_base": [
-            -1969.9,
-            601.7,
-            -1934.6,
-            636.5
+            -1976.9,
+            594.7,
+            -1927.6,
+            643.5
           ],
           "world_bbox_filter": [
             -1967.9,
@@ -2791,9 +3500,9 @@
         },
         {
           "canvas_rect": [
-            242,
+            482,
             418,
-            230,
+            229,
             149
           ],
           "char_building": [
@@ -2806,16 +3515,16 @@
           "source_tab": "lower_city_east",
           "title": "Counting House Vault",
           "world_bbox": [
-            -1003.1,
-            750.9,
-            -935.1,
-            818.1
+            -1010.1,
+            743.9,
+            -928.1,
+            825.1
           ],
           "world_bbox_base": [
-            -1003.1,
-            750.9,
-            -935.1,
-            818.1
+            -1010.1,
+            743.9,
+            -928.1,
+            825.1
           ],
           "world_bbox_filter": [
             -1001.1,
@@ -2826,9 +3535,9 @@
         },
         {
           "canvas_rect": [
-            484,
+            723,
             418,
-            230,
+            229,
             149
           ],
           "char_building": [
@@ -2841,16 +3550,16 @@
           "source_tab": "lower_city_east",
           "title": "Fire Works Basement",
           "world_bbox": [
-            510.2,
-            1046.5,
-            552.1,
-            1086.4
+            503.2,
+            1039.5,
+            559.1,
+            1093.4
           ],
           "world_bbox_base": [
-            510.2,
-            1046.5,
-            552.1,
-            1086.4
+            503.2,
+            1039.5,
+            559.1,
+            1093.4
           ],
           "world_bbox_filter": [
             512.2,
@@ -2861,9 +3570,9 @@
         },
         {
           "canvas_rect": [
-            726,
+            964,
             418,
-            230,
+            229,
             149
           ],
           "char_building": [
@@ -2876,16 +3585,16 @@
           "source_tab": "lower_city_east",
           "title": "Music Store Basement",
           "world_bbox": [
-            -2400.7,
-            -465.6,
-            -2359.7,
-            -423.8
+            -2407.7,
+            -472.6,
+            -2352.7,
+            -416.8
           ],
           "world_bbox_base": [
-            -2400.7,
-            -465.6,
-            -2359.7,
-            -423.8
+            -2407.7,
+            -472.6,
+            -2352.7,
+            -416.8
           ],
           "world_bbox_filter": [
             -2398.7,
@@ -2896,9 +3605,9 @@
         },
         {
           "canvas_rect": [
-            968,
+            1205,
             418,
-            230,
+            229,
             149
           ],
           "char_building": [
@@ -2911,16 +3620,16 @@
           "source_tab": "lower_city_east",
           "title": "Philgrave Basement",
           "world_bbox": [
-            -1526.5,
-            -150.6,
-            -1491.3,
-            -117.4
+            -1533.5,
+            -157.6,
+            -1484.3,
+            -110.4
           ],
           "world_bbox_base": [
-            -1526.5,
-            -150.6,
-            -1491.3,
-            -117.4
+            -1533.5,
+            -157.6,
+            -1484.3,
+            -110.4
           ],
           "world_bbox_filter": [
             -1524.5,
@@ -2931,9 +3640,9 @@
         },
         {
           "canvas_rect": [
-            1210,
+            1446,
             418,
-            230,
+            229,
             149
           ],
           "char_building": [
@@ -2946,16 +3655,16 @@
           "source_tab": "lower_city_east",
           "title": "Figaro Basement",
           "world_bbox": [
-            -2353.2,
-            1274.9,
-            -2319.0,
-            1314.1
+            -2360.2,
+            1267.9,
+            -2312.0,
+            1321.1
           ],
           "world_bbox_base": [
-            -2353.2,
-            1274.9,
-            -2319.0,
-            1314.1
+            -2360.2,
+            1267.9,
+            -2312.0,
+            1321.1
           ],
           "world_bbox_filter": [
             -2351.2,
@@ -2968,7 +3677,7 @@
           "canvas_rect": [
             0,
             611,
-            230,
+            229,
             149
           ],
           "char_building": [
@@ -2981,16 +3690,16 @@
           "source_tab": "lower_city_east",
           "title": "Blood Merchant Lab",
           "world_bbox": [
-            -1881.1,
-            -442.5,
-            -1846.6,
-            -409.1
+            -1888.1,
+            -449.5,
+            -1839.6,
+            -402.1
           ],
           "world_bbox_base": [
-            -1881.1,
-            -442.5,
-            -1846.6,
-            -409.1
+            -1888.1,
+            -449.5,
+            -1839.6,
+            -402.1
           ],
           "world_bbox_filter": [
             -1879.1,
@@ -3001,9 +3710,44 @@
         },
         {
           "canvas_rect": [
-            242,
+            241,
             611,
-            230,
+            229,
+            149
+          ],
+          "char_building": [
+            "*"
+          ],
+          "level": "CTY_Main_A",
+          "patch_building": [
+            "*"
+          ],
+          "source_tab": "lower_city_east",
+          "title": "Catacombs 3",
+          "world_bbox": [
+            1231.8,
+            844.5,
+            1271.9,
+            884.8
+          ],
+          "world_bbox_base": [
+            1231.8,
+            844.5,
+            1271.9,
+            884.8
+          ],
+          "world_bbox_filter": [
+            1240.8,
+            853.5,
+            1262.9,
+            875.8
+          ]
+        },
+        {
+          "canvas_rect": [
+            482,
+            611,
+            229,
             149
           ],
           "char_building": [
@@ -3016,16 +3760,16 @@
           "source_tab": "lower_city_east",
           "title": "Tabernacle Basement",
           "world_bbox": [
-            771.7,
-            1146.2,
-            810.9,
-            1175.9
+            764.7,
+            1139.2,
+            817.9,
+            1182.9
           ],
           "world_bbox_base": [
-            771.7,
-            1146.2,
-            810.9,
-            1175.9
+            764.7,
+            1139.2,
+            817.9,
+            1182.9
           ],
           "world_bbox_filter": [
             773.7,
@@ -3036,9 +3780,9 @@
         },
         {
           "canvas_rect": [
-            484,
+            723,
             611,
-            230,
+            229,
             149
           ],
           "char_building": [
@@ -3051,16 +3795,16 @@
           "source_tab": "lower_city_east",
           "title": "Groundkeeper Basement",
           "world_bbox": [
-            781.9,
-            980.2,
-            810.4,
-            1011.8
+            774.9,
+            973.2,
+            817.4,
+            1018.8
           ],
           "world_bbox_base": [
-            781.9,
-            980.2,
-            810.4,
-            1011.8
+            774.9,
+            973.2,
+            817.4,
+            1018.8
           ],
           "world_bbox_filter": [
             783.9,
@@ -3071,9 +3815,9 @@
         },
         {
           "canvas_rect": [
-            726,
+            964,
             611,
-            230,
+            229,
             149
           ],
           "char_building": [
@@ -3086,16 +3830,16 @@
           "source_tab": "lower_city_east",
           "title": "Highberrys cellar",
           "world_bbox": [
-            -599.7,
-            752.0,
-            -565.4,
-            786.1
+            -606.7,
+            745.0,
+            -558.4,
+            793.1
           ],
           "world_bbox_base": [
-            -599.7,
-            752.0,
-            -565.4,
-            786.1
+            -606.7,
+            745.0,
+            -558.4,
+            793.1
           ],
           "world_bbox_filter": [
             -597.7,
@@ -3106,9 +3850,9 @@
         },
         {
           "canvas_rect": [
-            968,
+            1205,
             611,
-            230,
+            229,
             149
           ],
           "char_building": [
@@ -3121,16 +3865,51 @@
           "source_tab": "lower_city_east",
           "title": "Murder Tribunal",
           "world_bbox": [
-            50.8,
-            964.6,
-            117.7,
-            1018.7
+            -1346.4,
+            484.6,
+            -1301.7,
+            564.6
           ],
           "world_bbox_base": [
-            50.8,
-            964.6,
-            117.7,
-            1018.7
+            -1346.4,
+            484.6,
+            -1301.7,
+            564.6
+          ],
+          "world_bbox_filter": [
+            -1337.4,
+            493.6,
+            -1310.7,
+            555.6
+          ]
+        },
+        {
+          "canvas_rect": [
+            1446,
+            611,
+            229,
+            149
+          ],
+          "char_building": [
+            "*"
+          ],
+          "level": "CTY_Main_A",
+          "patch_building": [
+            "*"
+          ],
+          "source_tab": "lower_city_east",
+          "title": "Murder Tribunal 2",
+          "world_bbox": [
+            43.8,
+            957.6,
+            124.7,
+            1025.7
+          ],
+          "world_bbox_base": [
+            43.8,
+            957.6,
+            124.7,
+            1025.7
           ],
           "world_bbox_filter": [
             52.8,
@@ -3234,7 +4013,7 @@
             -354.8,
             685.8,
             64.2,
-            1102.9
+            1109.9
           ],
           "world_bbox_base": [
             -354.8,
@@ -3378,7 +4157,7 @@
           "title": "Mindflayer Colony",
           "world_bbox": [
             612.895276,
-            -148.1,
+            -155.1,
             912.845024,
             68.8728756
           ],
@@ -3443,8 +4222,8 @@
           "world_bbox": [
             -200.0,
             -250.0,
-            90.8,
-            14.4
+            97.8,
+            21.4
           ],
           "world_bbox_base": [
             -200.0,
@@ -3511,9 +4290,9 @@
           "title": "Moonrise Towers",
           "world_bbox": [
             -227.41700600000001,
-            -234.0,
+            -241.0,
             -36.36505399999999,
-            -115.3
+            -108.3
           ],
           "world_bbox_base": [
             -227.41700600000001,
@@ -3545,10 +4324,10 @@
           ],
           "title": "Towers Dungeon",
           "world_bbox": [
-            496.8,
-            -706.6,
-            649.5,
-            -592.7
+            489.8,
+            -713.6,
+            656.5,
+            -585.7
           ],
           "world_bbox_base": [
             568.86244,
@@ -3589,7 +4368,7 @@
           "world_bbox": [
             -268.3,
             57.3,
-            -105.8,
+            -178.3,
             147.3
           ],
           "world_bbox_base": [
@@ -3655,10 +4434,10 @@
           ],
           "title": "Outskirts",
           "world_bbox": [
-            -10.5,
+            18.1,
             -1073.4,
             108.1,
-            -973.7
+            -983.4
           ],
           "world_bbox_base": [
             18.1,
@@ -3720,7 +4499,7 @@
           "canvas_rect": [
             0,
             32,
-            960,
+            474,
             480
           ],
           "char_building": [
@@ -3735,8 +4514,8 @@
           "title": "Gauntlet of Shar",
           "world_bbox": [
             -904.9658000000001,
-            -947.9,
-            -238.1,
+            -954.9,
+            -610.8747999999999,
             -683.50968
           ],
           "world_bbox_base": [
@@ -3750,6 +4529,41 @@
             -900.0,
             -600.0,
             -650.0
+          ]
+        },
+        {
+          "canvas_rect": [
+            486,
+            32,
+            474,
+            480
+          ],
+          "char_building": [
+            "*"
+          ],
+          "level": "SCL_Main_A",
+          "patch_building": [
+            "*"
+          ],
+          "source_tab": "shar_gauntlet",
+          "title": "Grand Mausoleum",
+          "world_bbox": [
+            -324.2,
+            -920.4,
+            -231.1,
+            -794.8
+          ],
+          "world_bbox_base": [
+            -324.2,
+            -920.4,
+            -231.1,
+            -794.8
+          ],
+          "world_bbox_filter": [
+            -315.2,
+            -911.4,
+            -240.1,
+            -803.8
           ]
         }
       ]
@@ -3939,9 +4753,9 @@
           "title": "Helm",
           "world_bbox": [
             -115.0,
-            -450.2,
-            68.6,
-            -352.5
+            -415.0,
+            20.8,
+            -347.5
           ],
           "world_bbox_base": [
             -115.0,
@@ -3975,9 +4789,9 @@
           "title": "Underdark",
           "world_bbox": [
             -188.3,
-            -440.1,
+            -447.1,
             302.0,
-            -57.3
+            -50.3
           ],
           "world_bbox_base": [
             -188.3,
@@ -4046,8 +4860,8 @@
           ],
           "title": "Waukeen's Rest",
           "world_bbox": [
-            -160.0,
-            468.5,
+            -163.2,
+            461.5,
             175.0,
             665.0
           ],
@@ -4075,50 +4889,22 @@
           "source_tab": "waukeen",
           "title": "Toll House",
           "world_bbox": [
-            -686.7,
-            -431.9,
-            -643.6,
-            -389.4
+            -693.7,
+            -438.9,
+            -636.6,
+            -382.4
           ],
           "world_bbox_base": [
-            -686.7,
-            -431.9,
-            -643.6,
-            -389.4
+            -693.7,
+            -438.9,
+            -636.6,
+            -382.4
           ],
           "world_bbox_filter": [
             -684.7,
             -429.9,
             -645.6,
             -391.4
-          ]
-        },
-        {
-          "canvas_rect": [
-            19,
-            308,
-            288,
-            193
-          ],
-          "char_building": [
-            "ZhentarimLowerFloor"
-          ],
-          "level": "WLD_Main_A",
-          "patch_building": [
-            "ZhentarimLowerFloor"
-          ],
-          "title": "Zhentarim Hideout",
-          "world_bbox": [
-            227.0,
-            -307.1,
-            405.4,
-            -154.3
-          ],
-          "world_bbox_base": [
-            227.0,
-            -269.0,
-            324.0,
-            -168.0
           ]
         }
       ]
@@ -4187,10 +4973,10 @@
           ],
           "title": "Town Basement",
           "world_bbox": [
-            81.4,
-            -766.3,
-            147.9,
-            -693.6
+            74.4,
+            -773.3,
+            154.9,
+            -686.6
           ],
           "world_bbox_base": [
             90.2,
@@ -4223,10 +5009,10 @@
           ],
           "title": "HoH Morgue",
           "world_bbox": [
-            -6.2,
-            -1020.0,
-            100.2,
-            -877.5
+            -13.2,
+            -1014.9,
+            104.5,
+            -922.9569799999999
           ],
           "world_bbox_base": [
             27.6573332,
@@ -4265,9 +5051,9 @@
           ],
           "title": "Wyrm's Rock",
           "world_bbox": [
-            -102.6,
-            15.0,
-            80.9,
+            -109.6,
+            8.0,
+            87.9,
             292.6
           ],
           "world_bbox_base": [
@@ -4299,7 +5085,7 @@
           ],
           "title": "Wyrm's Crossing",
           "world_bbox": [
-            3.7,
+            -3.3,
             -775.5,
             102.2,
             -685.5
@@ -4373,10 +5159,17 @@
           "level": "WLD_Main_A",
           "patch_building": [
             "ZhentarimLowerFloor",
-            "ZhenatrimBasementLowerFloor"
+            "ZhenatrimBasementLowerFloor",
+            ""
           ],
           "title": "Zhentarim Hideout",
           "world_bbox": [
+            227.0,
+            -314.1,
+            414.0,
+            -147.3
+          ],
+          "world_bbox_base": [
             227.0,
             -296.0,
             414.0,

@@ -10,12 +10,15 @@ its REGION_DEFINITIONS:
   include      {tab: {zone title: [x0, z0, x1, z1]}}
                Widen an existing zone's frame to take in nearby containers: an
                island whose union with the zone's frame is at most NEAR_GROWTH
-               times the frame's area, and containers routed to the zone by its
-               filter box but sitting outside its frame.
+               times the frame's area and pushes it out by no more than
+               NEAR_REACH_FRAC of its longer side (so a small room keeps its
+               scale), and containers routed to the zone by its filter box but
+               sitting outside its frame.
   define       {tab: region definition}
                Single-zone tabs drawn by render_region_map.py (Beach, Crypt, ...)
-               that need a zone change are taken over by the multi-zone renderer,
-               starting from the frame they render with today.
+               are taken over by the multi-zone renderer, starting from the frame
+               they last rendered with. Always, even when no zone changes, so
+               every tab with containers renders the same way each time.
   extra_zones  {tab: [zone definition, ...]}
                A far island with at least OWN_MIN containers becomes a new zone on
                its own tab, in a new right-hand column.
@@ -53,9 +56,11 @@ import render_multi_zone_map as R    # noqa: E402
 
 ISLAND_GAP = 40.0      # world units: containers closer than this share an island
 NEAR_GROWTH = 3.0      # max frame-area growth for folding an island into a zone
+NEAR_REACH_FRAC = 0.25 # ... and it may push the frame out by at most this share of
+NEAR_REACH_MIN = 30.0  # the zone's longer side, or this many world units if more
 OWN_MIN = 60           # a far island this big gets a zone on its own tab
 ANNEX_MIN = 3          # smaller than this stays in the bottom panel
-PAD = 8.0              # world units of padding around an island's containers
+PAD = 15.0             # world units of padding around an island's containers
 MIN_SIDE = 24.0        # smallest zone frame side, so a cupboard isn't zoomed to fill a cell
 FILTER_PAD = 6.0       # routing box = island extent +- this
 
@@ -200,19 +205,25 @@ def main(argv=None) -> int:
             # Frames before any widening this plan applied: the override, or a
             # kill-derived zone's frame as the renderer computed it. Using the
             # widened frames would make the next run drop its own widening.
-            rendered = {z["title"]: z for z in proj[tab]["zones"]}
+            maps = [(tab, rd)]
+            if tab in G.MAP_SPLITS and G.MAP_SPLITS[tab][0] in R.REGION_DEFINITIONS:
+                sec = G.MAP_SPLITS[tab][0]
+                maps.append((sec, R.REGION_DEFINITIONS[sec]))
             zones_now = []
-            for zd in rd["zones"]:
-                rz = rendered.get(zd["title"])
-                if rz is None and not zd.get("world_bbox_override"):
-                    print(f"[warn] {tab}: zone {zd['title']!r} has no frame (not rendered, "
-                          f"no override); skipped")
-                    continue
-                bb = zd.get("world_bbox_override") or rz.get("world_bbox_base", rz["world_bbox"])
-                zn = {"title": zd["title"], "level": zd.get("level", rd["level"]), "world_bbox": list(bb)}
-                if zd.get("world_bbox_filter"):
-                    zn["world_bbox_filter"] = list(zd["world_bbox_filter"])
-                zones_now.append(zn)
+            for mp, mrd in maps:
+                rendered = {z["title"]: z for z in proj.get(mp, {"zones": []})["zones"]}
+                for zd in mrd["zones"]:
+                    rz = rendered.get(zd["title"])
+                    if rz is None and not zd.get("world_bbox_override"):
+                        print(f"[warn] {mp}: zone {zd['title']!r} has no frame (not rendered, "
+                              f"no override); skipped")
+                        continue
+                    bb = zd.get("world_bbox_override") or rz.get("world_bbox_base", rz["world_bbox"])
+                    zn = {"title": zd["title"], "level": zd.get("level", mrd["level"]),
+                          "world_bbox": list(bb), "_map": mp}
+                    if zd.get("world_bbox_filter"):
+                        zn["world_bbox_filter"] = list(zd["world_bbox_filter"])
+                    zones_now.append(zn)
 
         include: dict[str, tuple] = {}
         off = []
@@ -224,7 +235,7 @@ def main(argv=None) -> int:
             b = zn["world_bbox"]
             if not (b[0] <= r["x"] <= b[2] and b[1] <= r["z"] <= b[3]):
                 pt = (r["x"] - PAD, r["z"] - PAD, r["x"] + PAD, r["z"] + PAD)
-                include[zn["title"]] = union(include.get(zn["title"], pt), pt)
+                include[(zn.get("_map", tab), zn["title"])] = union(include.get((zn.get("_map", tab), zn["title"]), pt), pt)
                 report["clamped"] += 1
 
         extra, col = [], []
@@ -232,11 +243,15 @@ def main(argv=None) -> int:
             lv, covered = best_root(isl, patches_by_level, rd["level"],
                                     prefer=list(dict.fromkeys(z["level"] for z in zones_now)))
             ib = extent(isl, PAD)
+            def reach_ok(z):
+                b = z["world_bbox"]
+                reach = max(b[0] - ib[0], ib[2] - b[2], b[1] - ib[1], ib[3] - b[3], 0.0)
+                return reach <= max(NEAR_REACH_MIN, NEAR_REACH_FRAC * max(b[2] - b[0], b[3] - b[1]))
             cands = [(area(union(z["world_bbox"], ib)) / area(z["world_bbox"]), z)
-                     for z in zones_now if z["level"] == lv]
+                     for z in zones_now if z["level"] == lv and reach_ok(z)]
             growth, zbest = min(cands, key=lambda c: c[0]) if cands else (math.inf, None)
             if growth <= NEAR_GROWTH:
-                include[zbest["title"]] = union(include.get(zbest["title"], ib), ib)
+                include[(zbest.get("_map", tab), zbest["title"])] = union(include.get((zbest.get("_map", tab), zbest["title"]), ib), ib)
                 report["near"] += len(isl)
                 continue
             if len(isl) < ANNEX_MIN:
@@ -254,7 +269,7 @@ def main(argv=None) -> int:
                     "world_bbox_override": frame_for(isl),
                     "world_bbox_filter": [round(v, 1) for v in extent(isl, FILTER_PAD)],
                     "source_tab": tab, "_containers": len(isl), "_covered": covered}
-            if len(isl) >= OWN_MIN:
+            if len(isl) >= OWN_MIN and tab not in LOWER_CITY_TABS:
                 extra.append(zone)
                 report["own"] += len(isl)
             else:
@@ -262,14 +277,12 @@ def main(argv=None) -> int:
                 plan["annex"].setdefault(annex, {"level": lv, "auto_grid": True, "zones": []})["zones"].append(zone)
                 report["annex"] += len(isl)
 
-        if include:
-            plan["include"][tab] = {t: [round(v, 1) for v in b] for t, b in include.items()}
+        for (mp, title), b in include.items():
+            plan["include"].setdefault(mp, {})[title] = [round(v, 1) for v in b]
         if extra:
             plan["extra_zones"][tab] = extra
 
-    # Only take over a single-zone tab whose zones actually change.
-    plan["define"] = {t: d for t, d in plan["define"].items()
-                      if t in plan["include"] or t in plan["extra_zones"]}
+    plan["include"] = dict(sorted(plan["include"].items()))
 
     # Unique titles within each annex.
     for adef in plan["annex"].values():
