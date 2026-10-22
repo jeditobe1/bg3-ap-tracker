@@ -569,6 +569,8 @@ ACT3_REGION_DEFINITIONS = {
         ],
     },
     # The outlying Lower City zones, shown as their own tab so the main
+    # (Lower City Central's zone was dropped: it only framed the holding
+    # spot of Figaro's doppelgangers, which pin_overrides.json now places.)
     # district above can fill its map. Pins here still belong to the
     # Lower City tab's checks (generate_pack.MAP_SPLITS).
     "lower_city_areas": {
@@ -594,22 +596,13 @@ ACT3_REGION_DEFINITIONS = {
                 "cell": (1, 0, 1, 1),
             },
             {
-                "title": 'Lower City Central',  # 5 kills
-                "level": "CTY_Main_A",
-                "char_building": ["*"],
-                "patch_building": ["*"],
-                "world_bbox_override": (-1642.8, 222.4, -1552.8, 312.4),
-                "world_bbox_filter": (-1607.9, 252.3, -1587.7, 282.6),
-                "cell": (0, 1, 1, 1),
-            },
-            {
                 "title": 'Lower City East',  # 4 kills
                 "level": "CTY_Main_A",
                 "char_building": ["*"],
                 "patch_building": ["*"],
                 "world_bbox_override": (1173.8, 751.4, 1263.8, 841.4),
                 "world_bbox_filter": (1197.3, 781.7, 1240.3, 811.1),
-                "cell": (1, 1, 1, 1),
+                "cell": (0, 1, 2, 1),
             },
         ],
     },

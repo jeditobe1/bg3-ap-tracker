@@ -2824,41 +2824,7 @@
           "canvas_rect": [
             0,
             358,
-            474,
-            282
-          ],
-          "char_building": [
-            "*"
-          ],
-          "level": "CTY_Main_A",
-          "patch_building": [
-            "*"
-          ],
-          "title": "Lower City Central",
-          "world_bbox": [
-            -1642.8,
-            222.4,
-            -1552.8,
-            312.4
-          ],
-          "world_bbox_base": [
-            -1642.8,
-            222.4,
-            -1552.8,
-            312.4
-          ],
-          "world_bbox_filter": [
-            -1607.9,
-            252.3,
-            -1587.7,
-            282.6
-          ]
-        },
-        {
-          "canvas_rect": [
-            486,
-            358,
-            474,
+            960,
             282
           ],
           "char_building": [

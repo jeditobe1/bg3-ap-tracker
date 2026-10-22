@@ -91744,8 +91744,8 @@
                 "map_locations": [
                     {
                         "map": "act3_overworld",
-                        "x": 1421,
-                        "y": 861
+                        "x": 1415,
+                        "y": 857
                     }
                 ]
             },
@@ -93376,7 +93376,7 @@
                 "map_locations": [
                     {
                         "map": "lower_city_areas",
-                        "x": 753,
+                        "x": 510,
                         "y": 504
                     }
                 ]
@@ -93394,7 +93394,7 @@
                 "map_locations": [
                     {
                         "map": "lower_city_areas",
-                        "x": 728,
+                        "x": 485,
                         "y": 519
                     }
                 ]
@@ -93412,7 +93412,7 @@
                 "map_locations": [
                     {
                         "map": "lower_city_areas",
-                        "x": 762,
+                        "x": 519,
                         "y": 476
                     }
                 ]
@@ -93430,7 +93430,7 @@
                 "map_locations": [
                     {
                         "map": "lower_city_areas",
-                        "x": 687,
+                        "x": 444,
                         "y": 497
                     }
                 ]
@@ -93742,7 +93742,7 @@
                 "map_locations": [
                     {
                         "map": "lower_city_east",
-                        "x": 504,
+                        "x": 505,
                         "y": 153
                     }
                 ]
@@ -93763,8 +93763,8 @@
                 "map_locations": [
                     {
                         "map": "lower_city_east",
-                        "x": 447,
-                        "y": 142
+                        "x": 449,
+                        "y": 140
                     }
                 ]
             },
@@ -93785,7 +93785,7 @@
                     {
                         "map": "lower_city_east",
                         "x": 459,
-                        "y": 115
+                        "y": 113
                     }
                 ]
             },
@@ -93805,7 +93805,7 @@
                 "map_locations": [
                     {
                         "map": "lower_city_east",
-                        "x": 475,
+                        "x": 476,
                         "y": 150
                     }
                 ]
@@ -93826,8 +93826,8 @@
                 "map_locations": [
                     {
                         "map": "lower_city_east",
-                        "x": 451,
-                        "y": 172
+                        "x": 460,
+                        "y": 176
                     }
                 ]
             },
@@ -93867,9 +93867,9 @@
                 ],
                 "map_locations": [
                     {
-                        "map": "lower_city_areas",
-                        "x": 237,
-                        "y": 530
+                        "map": "lower_city_east",
+                        "x": 317,
+                        "y": 165
                     }
                 ]
             },
@@ -93888,9 +93888,9 @@
                 ],
                 "map_locations": [
                     {
-                        "map": "lower_city_areas",
-                        "x": 237,
-                        "y": 559
+                        "map": "lower_city_east",
+                        "x": 433,
+                        "y": 165
                     }
                 ]
             },
@@ -93909,9 +93909,9 @@
                 ],
                 "map_locations": [
                     {
-                        "map": "lower_city_areas",
-                        "x": 237,
-                        "y": 501
+                        "map": "lower_city_east",
+                        "x": 346,
+                        "y": 165
                     }
                 ]
             },
@@ -93951,9 +93951,9 @@
                 ],
                 "map_locations": [
                     {
-                        "map": "lower_city_areas",
-                        "x": 237,
-                        "y": 443
+                        "map": "lower_city_east",
+                        "x": 404,
+                        "y": 167
                     }
                 ]
             },
@@ -93972,9 +93972,9 @@
                 ],
                 "map_locations": [
                     {
-                        "map": "lower_city_areas",
-                        "x": 237,
-                        "y": 472
+                        "map": "lower_city_east",
+                        "x": 375,
+                        "y": 164
                     }
                 ]
             },
@@ -100280,7 +100280,7 @@
                 "map_locations": [
                     {
                         "map": "lower_city_areas",
-                        "x": 691,
+                        "x": 448,
                         "y": 472,
                         "size": 12,
                         "shape": "diamond"
@@ -100317,7 +100317,7 @@
                 "map_locations": [
                     {
                         "map": "lower_city_areas",
-                        "x": 757,
+                        "x": 514,
                         "y": 474,
                         "size": 12,
                         "shape": "diamond"
@@ -100339,7 +100339,7 @@
                 "map_locations": [
                     {
                         "map": "lower_city_areas",
-                        "x": 710,
+                        "x": 467,
                         "y": 524,
                         "size": 12,
                         "shape": "diamond"
@@ -104276,7 +104276,7 @@
                 "map_locations": [
                     {
                         "map": "lower_city_areas",
-                        "x": 668,
+                        "x": 425,
                         "y": 476,
                         "size": 12,
                         "shape": "diamond"
@@ -104298,7 +104298,7 @@
                 "map_locations": [
                     {
                         "map": "lower_city_areas",
-                        "x": 724,
+                        "x": 481,
                         "y": 535,
                         "size": 12,
                         "shape": "diamond"
@@ -104320,7 +104320,7 @@
                 "map_locations": [
                     {
                         "map": "lower_city_areas",
-                        "x": 740,
+                        "x": 497,
                         "y": 520,
                         "size": 12,
                         "shape": "diamond"
@@ -104342,7 +104342,7 @@
                 "map_locations": [
                     {
                         "map": "lower_city_areas",
-                        "x": 755,
+                        "x": 512,
                         "y": 506,
                         "size": 12,
                         "shape": "diamond"
@@ -104364,7 +104364,7 @@
                 "map_locations": [
                     {
                         "map": "lower_city_areas",
-                        "x": 769,
+                        "x": 526,
                         "y": 484,
                         "size": 12,
                         "shape": "diamond"

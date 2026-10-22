@@ -19,6 +19,31 @@
   },
   "char_position_overrides": {
     "_doc": "Per-character world-coord overrides. Applied before zone filtering so the override determines which zone the char ends up in. Values are [world_x, world_z]. Use when an NPC has incorrect cached spawn coords (typically quest-trigger spawn vs actual fight position). Optional \"level\" also moves the char into another level's coordinate frame -- for global characters cached once in an earlier act's level.",
+    "a4f560e6-8869-4316-a674-aee94da4cee0": {
+      "position": [-178.0, -37.0],
+      "level": "CTY_Main_A",
+      "_why": "Figaro's doppelganger (1 of 5): its cached position is a holding spot (x -1597.9, five in a row 1.6 m apart, height 0, on a 'tools_basements' minimap patch), not where it is met. Approximate -- placed at Figaro's cosmetics shop in Lower City Central (BGH_FigaroCosmeticShop_A, world x -184..-159, z -48..-27), where the Follow the Murders quest sends the player."
+    },
+    "e1ea7d43-2b85-45da-9778-3e4f6197dd9a": {
+      "position": [-175.0, -37.0],
+      "level": "CTY_Main_A",
+      "_why": "Figaro's doppelganger (2 of 5): its cached position is a holding spot (x -1597.9, five in a row 1.6 m apart, height 0, on a 'tools_basements' minimap patch), not where it is met. Approximate -- placed at Figaro's cosmetics shop in Lower City Central (BGH_FigaroCosmeticShop_A, world x -184..-159, z -48..-27), where the Follow the Murders quest sends the player."
+    },
+    "d2ad989b-3e08-448e-bd66-ab132d83fafd": {
+      "position": [-172.0, -37.0],
+      "level": "CTY_Main_A",
+      "_why": "Figaro's doppelganger (3 of 5): its cached position is a holding spot (x -1597.9, five in a row 1.6 m apart, height 0, on a 'tools_basements' minimap patch), not where it is met. Approximate -- placed at Figaro's cosmetics shop in Lower City Central (BGH_FigaroCosmeticShop_A, world x -184..-159, z -48..-27), where the Follow the Murders quest sends the player."
+    },
+    "3344edd8-94a2-42f7-b2a3-4cd4aa639a12": {
+      "position": [-169.0, -37.0],
+      "level": "CTY_Main_A",
+      "_why": "Figaro's doppelganger (4 of 5): its cached position is a holding spot (x -1597.9, five in a row 1.6 m apart, height 0, on a 'tools_basements' minimap patch), not where it is met. Approximate -- placed at Figaro's cosmetics shop in Lower City Central (BGH_FigaroCosmeticShop_A, world x -184..-159, z -48..-27), where the Follow the Murders quest sends the player."
+    },
+    "15884103-c8b3-4c5f-b3b5-67ae481074c6": {
+      "position": [-166.0, -37.0],
+      "level": "CTY_Main_A",
+      "_why": "Figaro's doppelganger (5 of 5): its cached position is a holding spot (x -1597.9, five in a row 1.6 m apart, height 0, on a 'tools_basements' minimap patch), not where it is met. Approximate -- placed at Figaro's cosmetics shop in Lower City Central (BGH_FigaroCosmeticShop_A, world x -184..-159, z -48..-27), where the Follow the Murders quest sends the player."
+    },
     "b878a854-f790-4999-95c4-3f20f00f65ac": {
       "position": [-10.5, 211.8],
       "level": "BGO_Main_A",
