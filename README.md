@@ -82,7 +82,7 @@ These drive what locations are visible. When AP is connected, the values are set
 - Questsanity ON shows quest locations (IDs < 10000); OFF hides them.
 - Containersanity ON shows container locations (IDs ≥ 100000); OFF hides them. Show Clutter OFF hides the clutter ones.
 
-**Map View** (main display, top left) holds four display-only toggles: **Show Kills**, **Show Containers** and **Show Quests** hide a whole check type from the maps, so a dense area can be read one layer at a time, and **Show Clutter** hides just the crates, barrels, vases, sacks and other clutter containers (about 7,500 of the 10,575). They never change logic, and Universal Tracker ignores them (it shows every check the slot has). Container pins appear only with Containersanity on.
+**Display** (main display, top left) holds the display-only toggles: **Show Kills**, **Show Containers** and **Show Quests** hide a whole check type from the maps, so a dense area can be read one layer at a time, and **Show Clutter** hides just the crates, barrels, vases, sacks and other clutter containers (about 7,500 of the 10,575). They never change logic, and Universal Tracker ignores them (it shows every check the slot has). Container pins appear only with Containersanity on. **Follow Player Location** is there too: it switches to a region's tab when a check there is found.
 
 Pin shapes tell the check types apart: kills are squares, quests trapezoids, containers diamonds. (Universal Tracker draws every pin as a square.)
 

@@ -11,13 +11,13 @@
                     "content": [
                         {
                             "type": "group",
-                            "header": "Map View",
+                            "header": "Display",
                             "dock": "top",
                             "content": {
                                 "type": "itemgrid",
                                 "h_alignment": "center",
                                 "rows": [
-                                    [ "show_kills", "show_containers", "show_quests", "show_clutter" ]
+                                    [ "show_kills", "show_containers", "show_quests", "show_clutter", "opt_follow_tab" ]
                                 ]
                             }
                         },
@@ -161,18 +161,8 @@
                         ]
                     },
                     {
-                        "type": "array",
-                        "orientation": "horizontal",
-                        "v_alignment": "center",
-                        "margin": "0,8",
-                        "content": [
-                            { "type": "item", "item": "opt_follow_tab", "item_size": "48,48" },
-                            { "type": "text", "text": "  Follow Player Location  —  switch to a region's tab when a check there is found" }
-                        ]
-                    },
-                    {
                         "type": "text",
-                        "text": "Toggles: left = ON, right = OFF, middle = flip. Killsanity/Questsanity/Block Entrances auto-set from slot_data when AP is connected (manual changes revert until you disconnect). Follow Player Location is a local preference and is never overridden.",
+                        "text": "Toggles: left = ON, right = OFF, middle = flip. Killsanity/Questsanity/Containersanity/Block Entrances auto-set from slot_data when AP is connected (manual changes revert until you disconnect). Display toggles (Show Kills/Containers/Quests/Clutter, Follow Player Location) are on the main display.",
                         "margin": "0,16"
                     }
                 ]
