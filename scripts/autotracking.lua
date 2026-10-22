@@ -249,8 +249,7 @@ local function follow_tab_to_location(location_id)
     Tracker:UiHint("ActivateTab", region)
 end
 
-local function on_clear(slot_data)
-    Tracker.BulkUpdate = true
+local function on_clear_inner(slot_data)
     SLOT_DATA = slot_data or {}
     reset_all_items()
     local cleared = reconcile_sections()
@@ -262,7 +261,16 @@ local function on_clear(slot_data)
         cleared,
         tostring(SLOT_DATA.goal), tostring(SLOT_DATA.killsanity), tostring(SLOT_DATA.questsanity),
         tostring(SLOT_DATA.block_entrances), tostring(SLOT_DATA.containersanity)))
+end
+
+local function on_clear(slot_data)
+    -- BulkUpdate defers map redraws. If anything below raised and left it on,
+    -- the maps would stop responding to every later item change (including
+    -- the Display toggles), so it is always switched back off.
+    Tracker.BulkUpdate = true
+    local ok, err = pcall(on_clear_inner, slot_data)
     Tracker.BulkUpdate = false
+    if not ok then print("BG3 AP: error while syncing on connect: " .. tostring(err)) end
 end
 
 local function on_item(index, item_id, item_name, player_number)
