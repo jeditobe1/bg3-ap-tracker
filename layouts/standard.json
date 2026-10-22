@@ -11,6 +11,18 @@
                     "content": [
                         {
                             "type": "group",
+                            "header": "Map View",
+                            "dock": "top",
+                            "content": {
+                                "type": "itemgrid",
+                                "h_alignment": "center",
+                                "rows": [
+                                    [ "view_filter", "show_clutter" ]
+                                ]
+                            }
+                        },
+                        {
+                            "type": "group",
                             "header": "Progression",
                             "dock": "top",
                             "content": {
@@ -136,16 +148,6 @@
                         "content": [
                             { "type": "item", "item": "containersanity", "item_size": "48,48" },
                             { "type": "text", "text": "  Containersanity  —  container checks (IDs ≥ 100000)" }
-                        ]
-                    },
-                    {
-                        "type": "array",
-                        "orientation": "horizontal",
-                        "v_alignment": "center",
-                        "margin": "0,8",
-                        "content": [
-                            { "type": "item", "item": "show_clutter", "item_size": "48,48" },
-                            { "type": "text", "text": "  Show clutter  —  crates, barrels, vases, sacks (display only)" }
                         ]
                     },
                     {

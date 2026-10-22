@@ -52,7 +52,6 @@ On connect the pack:
 - **Killsanity** — toggle for creature-kill checks (IDs ≥ 10000): left-click ON, right-click OFF, middle-click flips.
 - **Questsanity** — toggle for quest-update checks (IDs < 10000): same click semantics.
 - **Containersanity** — toggle for container checks (IDs ≥ 100000). Set from slot_data: on only at the option's top value (`i_suppose_if_you_insist`), which is the only value that creates container checks.
-- **Show Clutter** — display-only toggle that hides crates, barrels, vases, sacks and other clutter containers (about 7,500 of the 10,575). It does not change logic.
 
 These drive what locations are visible. When AP is connected, the values are set automatically from `slot_data` and **manual clicks revert** until you disconnect (so they always reflect the slot's actual configuration). In offline / non-AP mode they're freely user-editable for planning.
 
@@ -82,6 +81,8 @@ These drive what locations are visible. When AP is connected, the values are set
 - Killsanity ON shows kill locations (IDs ≥ 10000); OFF hides them.
 - Questsanity ON shows quest locations (IDs < 10000); OFF hides them.
 - Containersanity ON shows container locations (IDs ≥ 100000); OFF hides them. Show Clutter OFF hides the clutter ones.
+
+**Map View** (main display, top left) is display-only: click to cycle All checks → Kills only → Containers only → Quests only, to read dense areas one layer at a time. Next to it, **Show Clutter** hides crates, barrels, vases, sacks and other clutter containers (about 7,500 of the 10,575). Neither changes logic, and Universal Tracker ignores both (it shows every check the slot has).
 
 Pin shapes tell the check types apart: kills are squares, quests trapezoids, containers diamonds. (Universal Tracker draws every pin as a square.)
 

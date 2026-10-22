@@ -1177,11 +1177,14 @@ def emit_locations_json(
             #  - IDs < 10000 are quest checkpoints; gated by the Questsanity toggle.
             #  - IDs >= 10000 are creature kill checks; gated by the Killsanity toggle.
             sanity_code = "questsanity" if lid < 10000 else "killsanity"
+            # The Map View item (main display) narrows the map to one check
+            # type: a pin shows in "All" or in its own type's view.
+            view = "view_quests" if lid < 10000 else "view_kills"
             section: dict = {"name": safe_name}
             child: dict = {
                 "name": safe_name,
                 "sections": [section],
-                "visibility_rules": [sanity_code],
+                "visibility_rules": [f"{sanity_code},view_all", f"{sanity_code},{view}"],
             }
             # Per-check access rules, needed when a check is stricter than
             # its tab's region rule:

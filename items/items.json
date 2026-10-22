@@ -124,6 +124,19 @@
         "initial_active_state": false
     },
     {
+        "name": "Map View",
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
+        "initial_stage_idx": 0,
+        "stages": [
+            { "name": "Map View: All checks",      "img": "images/items/view_all.png",        "codes": "view_filter,view_all" },
+            { "name": "Map View: Kills only",      "img": "images/items/view_kills.png",      "codes": "view_filter,view_kills" },
+            { "name": "Map View: Containers only", "img": "images/items/view_containers.png", "codes": "view_filter,view_containers" },
+            { "name": "Map View: Quests only",     "img": "images/items/view_quests.png",     "codes": "view_filter,view_quests" }
+        ]
+    },
+    {
         "name": "Show Clutter Containers",
         "type": "toggle",
         "img": "images/items/show_clutter_on.png",
