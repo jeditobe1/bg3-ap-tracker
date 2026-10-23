@@ -6,7 +6,7 @@ Items received from the multiworld auto-track. Locations the slot has checked au
 
 ## Status
 
-**0.9.1-alpha (draft for review).** Wired to BG3 apworld v0.8.0, which its author still calls a beta. 0.9.0 added Act 3; 0.9.1 adds Containersanity. For the stable apworld v0.7.2, use tracker 0.8.1; for v0.6.3, tracker 0.7.1. Tracks all items, all 1530 locations across 31 regions plus the 10,575 Containersanity checks, with reachability colored by Level Fragment count plus per-region BlockEntrances gate items, and visibility filtered by the slot's goal + sanity options. The items grid includes a 30-toggle goal-progress row (Halsin rescue + 29 UDF fights) and a region-locking row for the 29 entrance gates + 1 Progressive Moonlight Towers counter.
+**0.9.1 (pre-release).** Wired to BG3 apworld v0.8.0, which its author still calls a beta. 0.9.0 added Act 3; 0.9.1 adds Containersanity. For the stable apworld v0.7.2, use tracker 0.8.1; for v0.6.3, tracker 0.7.1. Tracks all items, all 1530 locations across 31 regions plus the 10,575 Containersanity checks, with reachability colored by Level Fragment count plus per-region BlockEntrances gate items, and visibility filtered by the slot's goal + sanity options. The items grid includes a 30-toggle goal-progress row (Halsin rescue + 29 UDF fights) and a region-locking row for the 29 entrance gates + 1 Progressive Moonlight Towers counter.
 
 Containersanity's 10,575 container checks are tracked as clustered map pins — see [Containersanity](#containersanity) and [Known limitations](#known-limitations).
 
@@ -111,8 +111,8 @@ Cellars, basements and other sub-levels sit far from their area on the game's ma
 - **Act 3 overview:** areas that map doesn't show (the Astral Plane, Rivington, Wyrm's Crossing, the Iron Throne and three far-flung interiors) sit in a column in its right-hand margin rather than at a location.
 - **Act 3 questsanity and BlockEntrances are untested upstream** — the apworld author notes both may not be playable yet in v0.8.0.
 - **Containersanity is untested against a live seed.** The pack's container data matches the apworld's, but nobody has played a containersanity slot with it yet.
-- **4 containers have no map position** — islands of one or two that sit away from every zone. They are in their tab's bottom panel.
-- **Dense spots stay crowded**, Lower City's main zone most of all. In PopTracker, zooming in spreads pins apart; in Universal Tracker it doesn't.
+- **12 containers have no map position** — islands of one or two that sit away from every zone. They are in their tab's bottom panel.
+- **Dense spots stay crowded**, Lower City's main zone most of all. In PopTracker, zooming in spreads pins apart and the Display toggles hide whole layers; in Universal Tracker neither helps.
 - **Interiors tabs show even with Containersanity off** (empty). Zone names on them are working names taken from the game's level names.
 - **Overview pins don't count containers.** A Lower City overview listing ~2,700 containers would be unusable, so an overview pin's colour reflects kills and quests only.
 - **`characters_in_logic` is not applied** — apworld v0.7.0 can drop 55 character-specific locations when a companion is excluded. The pack still displays them; on a slot that excludes a tagged companion those checks are unobtainable.
