@@ -125,35 +125,47 @@
     },
     {
         "name": "Show Kills",
-        "type": "toggle",
-        "img": "images/items/killsanity_on.png",
-        "disabled_img": "images/items/killsanity_off.png",
-        "codes": "show_kills",
-        "initial_active_state": true
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
+        "initial_stage_idx": 0,
+        "stages": [
+            { "name": "Show Kills: on",  "img": "images/items/killsanity_on.png",  "codes": "show_kills" },
+            { "name": "Show Kills: off", "img": "images/items/killsanity_off.png", "codes": "", "inherit_codes": false }
+        ]
     },
     {
         "name": "Show Containers",
-        "type": "toggle",
-        "img": "images/items/containersanity_on.png",
-        "disabled_img": "images/items/containersanity_off.png",
-        "codes": "show_containers",
-        "initial_active_state": true
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
+        "initial_stage_idx": 0,
+        "stages": [
+            { "name": "Show Containers: on",  "img": "images/items/containersanity_on.png",  "codes": "show_containers" },
+            { "name": "Show Containers: off", "img": "images/items/containersanity_off.png", "codes": "", "inherit_codes": false }
+        ]
     },
     {
         "name": "Show Quests",
-        "type": "toggle",
-        "img": "images/items/questsanity_on.png",
-        "disabled_img": "images/items/questsanity_off.png",
-        "codes": "show_quests",
-        "initial_active_state": true
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
+        "initial_stage_idx": 0,
+        "stages": [
+            { "name": "Show Quests: on",  "img": "images/items/questsanity_on.png",  "codes": "show_quests" },
+            { "name": "Show Quests: off", "img": "images/items/questsanity_off.png", "codes": "", "inherit_codes": false }
+        ]
     },
     {
         "name": "Show Clutter Containers",
-        "type": "toggle",
-        "img": "images/items/show_clutter_on.png",
-        "disabled_img": "images/items/show_clutter_off.png",
-        "codes": "show_clutter",
-        "initial_active_state": true
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
+        "initial_stage_idx": 0,
+        "stages": [
+            { "name": "Show Clutter Containers: on",  "img": "images/items/show_clutter_on.png",  "codes": "show_clutter" },
+            { "name": "Show Clutter Containers: off", "img": "images/items/show_clutter_off.png", "codes": "", "inherit_codes": false }
+        ]
     },
     {
         "name": "Block Entrances (Region Locking)",
@@ -165,11 +177,14 @@
     },
     {
         "name": "Follow Player Location",
-        "type": "toggle",
-        "img": "images/items/opt_follow_tab_on.png",
-        "disabled_img": "images/items/opt_follow_tab_off.png",
-        "codes": "opt_follow_tab",
-        "initial_active_state": true
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
+        "initial_stage_idx": 0,
+        "stages": [
+            { "name": "Follow Player Location: on",  "img": "images/items/opt_follow_tab_on.png",  "codes": "opt_follow_tab" },
+            { "name": "Follow Player Location: off", "img": "images/items/opt_follow_tab_off.png", "codes": "", "inherit_codes": false }
+        ]
     },
     { "name": "Fight: Auntie Ethel",         "type": "toggle", "img": "images/items/udf_auntie_ethel.png",         "codes": "udf_auntie_ethel" },
     { "name": "Fight: Spider Queen",         "type": "toggle", "img": "images/items/udf_spider_queen.png",         "codes": "udf_spider_queen" },

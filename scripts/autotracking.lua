@@ -235,8 +235,9 @@ local TAB_FOLLOW_SETTLE = 0  -- seconds remaining during which checks won't swit
 
 local function follow_tab_to_location(location_id)
     if TAB_FOLLOW_SETTLE > 0 then return end
-    local opt = Tracker:FindObjectForCode("opt_follow_tab")
-    if not (opt and opt.Active) then return end
+    -- A two-stage progressive (on / off) so one click flips it; its "on"
+    -- stage is the one that provides the code.
+    if Tracker:ProviderCountForCode("opt_follow_tab") == 0 then return end
     local section_code = AP_LOCATION_ID_TO_SECTION[location_id]
     if not section_code then return end
     local region = section_code:match("^@([^/]+)/")

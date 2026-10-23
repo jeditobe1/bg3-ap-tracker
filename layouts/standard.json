@@ -162,7 +162,7 @@
                     },
                     {
                         "type": "text",
-                        "text": "Toggles: left = ON, right = OFF, middle = flip. Killsanity/Questsanity/Containersanity/Block Entrances auto-set from slot_data when AP is connected (manual changes revert until you disconnect). Display toggles (Show Kills/Containers/Quests/Clutter, Follow Player Location) are on the main display.",
+                        "text": "Toggles: left = ON, right = OFF, middle = flip. Killsanity/Questsanity/Containersanity/Block Entrances auto-set from slot_data when AP is connected (manual changes revert until you disconnect). Display toggles (Show Kills/Containers/Quests/Clutter, Follow Player Location) are on the main display; any click flips them.",
                         "margin": "0,16"
                     }
                 ]
