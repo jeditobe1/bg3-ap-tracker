@@ -6,7 +6,7 @@ Items received from the multiworld auto-track. Locations the slot has checked au
 
 ## Status
 
-**0.9.1 (pre-release).** Wired to BG3 apworld v0.8.0, which its author still calls a beta. 0.9.0 added Act 3; 0.9.1 adds Containersanity. For the stable apworld v0.7.2, use tracker 0.8.1; for v0.6.3, tracker 0.7.1. Tracks all items, all 1530 locations across 31 regions plus the 10,575 Containersanity checks, with reachability colored by Level Fragment count plus per-region BlockEntrances gate items, and visibility filtered by the slot's goal + sanity options. The items grid includes a 30-toggle goal-progress row (Halsin rescue + 29 UDF fights) and a region-locking row for the 29 entrance gates + 1 Progressive Moonlight Towers counter.
+**0.9.1.** Wired to BG3 apworld v0.8.0 (titled a beta upstream). 0.9.0 added Act 3; 0.9.1 adds Containersanity. For the stable apworld v0.7.2, use tracker 0.8.1; for v0.6.3, tracker 0.7.1. Tracks all items, all 1530 locations across 31 regions plus the 10,575 Containersanity checks, with reachability colored by Level Fragment count plus per-region BlockEntrances gate items, and visibility filtered by the slot's goal + sanity options. The items grid includes a 30-toggle goal-progress row (Halsin rescue + 29 UDF fights) and a region-locking row for the 29 entrance gates + 1 Progressive Moonlight Towers counter.
 
 Containersanity's 10,575 container checks are tracked as clustered map pins — see [Containersanity](#containersanity) and [Known limitations](#known-limitations).
 
